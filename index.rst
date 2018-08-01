@@ -3,14 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Thunder Engine's documentation!
+Thunder Documentation
 ==========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Getting Started
+   :name: sec-start
 
-
+   getting_started/basics/index
 
 Indices and tables
 ==================
