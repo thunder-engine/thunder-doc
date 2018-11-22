@@ -1,3 +1,5 @@
+.. _doc_basics_index:
+
 Getting Started
 ==============================
 

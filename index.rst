@@ -8,10 +8,12 @@ Thunder Documentation
 
 .. toctree::
    :maxdepth: 1
-   :caption: Getting Started
+   :caption: Thunder Engine
    :name: sec-start
 
-   getting_started/basics/index
+   basics/index
+   graphics/index
+   audio/index
 
 Indices and tables
 ==================

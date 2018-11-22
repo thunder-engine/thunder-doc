@@ -44,20 +44,20 @@ At this moment Thunder Engine source code hosted at https://github.com/eprikazch
 Building for Windows
 ----------------------------------------------
 
-1. To build Thunder Engine from source on Windows you would need to set up an additional environment:
+#. To build Thunder Engine from source on Windows you would need to set up an additional environment:
 
 	* Microsoft Visual Studio 2015 or higher (You can download `Community Edition <https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15#>`_ version for free ) 
 	* Qt 5.10 and  QtCreator 4.5.1 or higher (`Offline installer <http://download.qt.io/archive/qt/5.10/5.10.1/qt-opensource-windows-x86-5.10.1.exe>`_)
 
-2. After setup, all required software, open "Command Prompt" console go to the directory with Thunder Engine source code and run sequence of commands below.
+#. After setup, all required software, open "Command Prompt" console go to the directory with Thunder Engine source code and run sequence of commands below.
 
-3. Add Qt framework to PATH. For example:
+#. Add Qt framework to PATH. For example:
 
 ::
 
     thunder> set PATH=%PATH%;C:\Qt\5.10.1\msvc2015\bin
 
-4. Run build procedure
+#. Run build procedure
 
 ::
 

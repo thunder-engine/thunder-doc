@@ -3,8 +3,7 @@
 Explore Thunder Engine
 ==============================
 
-Developing with World Builder
+Developing with World Editor
 ----------------------------------------------
 
-Reference Documentation
-----------------------------------------------
+
