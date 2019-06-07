@@ -13,9 +13,18 @@ Developing with World Editor
 ----------------------------------------------
 The World Editor tool is a main game development tool of Thunder Engine.
 
-The main window contains a flexible workspace which developers can adopt for their needs.
+A main window contains a flexible workspace which developers can adopt for their needs.
 
 
+
+The main window contains several main zones:
+
+	* Viewport - allows you to add and remove objects on scene, control position and rotation and do other basic operations.
+	* Properties - created for fine tuning of all object properties (assigned material, texture, color and many more).
+	* Content Browser - contains the list of assets which available for using in your project.
+	* Components - contains the list of components which is currently available for placing on scene.
+	* Hierarchy - represents the list of objects which placed on scene and relations between of them.
+	
 .. _doc_explore_builder:
 
 Building with Builder tool
