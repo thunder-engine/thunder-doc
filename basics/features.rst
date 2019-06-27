@@ -10,6 +10,7 @@ Supported Platforms
 	* Windows
 	* MacOS X
 	* Linux (Technical Preview)
+	* Android (Technical Preview)
 
 .. _doc_features_engine:
 
@@ -32,6 +33,7 @@ Render
 	* CookTorance Lighting model
 	* Cascaded Shadow Maps (PPSM)
 	* Frustum culling rendering optimization
+	* SDF Fonts
 
 .. _doc_features_scripting:
 	
@@ -60,6 +62,7 @@ Set of Tools
 ----------------------------------------------
 	* Multi-functional Scene Editor
 	* Node Based Material Editor with shader converter
+	* Code Editor
 	* Plug-ins mechanism
 	* Resource Management system with bunch of converters
 	* Ready for CI Project Builder
