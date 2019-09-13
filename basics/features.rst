@@ -11,6 +11,8 @@ Supported Platforms
 	* MacOS X
 	* Linux (Technical Preview)
 	* Android (Technical Preview)
+    * iOS (Technical Preview)
+    * tvOS (Technical Preview)
 
 .. _doc_features_engine:
 
@@ -54,7 +56,13 @@ Audio
 ----------------------------------------------
 	* 2D/3D Audio engine
 	* Ogg/Vorbis, MP3, WAV file formats support
-
+    
+.. _doc_features_physics:
+    
+Phusics Engine
+----------------------------------------------
+	* Rigid Body
+	* Bunch of volume colliders and triggers like Sphere, Box, Capsule and more
 
 .. _doc_features_tools:
 
