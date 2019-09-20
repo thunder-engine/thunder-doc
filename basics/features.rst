@@ -11,8 +11,8 @@ Supported Platforms
 	* MacOS X
 	* Linux (Technical Preview)
 	* Android (Technical Preview)
-    * iOS (Technical Preview)
-    * tvOS (Technical Preview)
+	* iOS (Technical Preview)
+	* tvOS (Technical Preview)
 
 .. _doc_features_engine:
 
@@ -42,7 +42,6 @@ Render
 Scripting
 ----------------------------------------------
 	* AngelScipt script engine (Technical Preview)
-
 	
 .. _doc_features_animation:
 
@@ -59,7 +58,7 @@ Audio
     
 .. _doc_features_physics:
     
-Phusics Engine
+Physics Engine
 ----------------------------------------------
 	* Rigid Body
 	* Bunch of volume colliders and triggers like Sphere, Box, Capsule and more
