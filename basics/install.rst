@@ -106,9 +106,10 @@ Building for Linux (Ubuntu - Experimental)
 .. attention:: This platform is not properly tested yet.
 
 Open Console go to the directory with Thunder Engine source code and run the sequence of commands below.
-Please to pay attention to your Ubuntu version in case you have Ubuntu 16 you need to set xenial at the end of the first step and bionic if you have Ubuntu 18
+Please to pay attention to your Ubuntu version in case you have Ubuntu 16 you need to set "xenial" at the end of the first step and "bionic" if you have Ubuntu 18
 
 ::
+
     user@host:~$ sudo add-apt-repository --yes ppa:beineri/opt-qt-5.12.3-xenial
     user@host:~$ sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
     user@host:~$ sudo apt-get update -qq
