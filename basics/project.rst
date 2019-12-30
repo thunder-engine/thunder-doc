@@ -1,10 +1,15 @@
-.. _doc_first_project:
+.. _doc_project:
 
-Create Your First Project
+Managing Projects
 ==============================
 
-Importing Assets
-----------------------------------------------
+World Editor allows a team of designers and developers to share a project across different development platforms with a common tool for design and development.
 
-Project Structure
-----------------------------------------------
+
+Creating Projects
+------------------------------
+
+
+
+Importing Projects
+------------------------------
