@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Vector3 class represents a vector or vertex in 3D space.
+
 Vectors are one of the main building blocks of 3D representation and drawing. They consist of three coordinates, traditionally called x, y, and z.
 
 The Vector3 class can also be used to represent vertices in 3D space. We therefore do not need to provide a separate vertex class.
@@ -21,15 +23,15 @@ Public Methods
 --------------
 
 +-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector3<api_Vector3_Vector3>` (const areal * v)                    |
-+-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector3<api_Vector3_Vector3>` (const Vector2 & v, areal  z)        |
-+-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector3<api_Vector3_Vector3>` (areal  x, areal  y, areal  z)       |
+|                               | :ref:`Vector3<api_Vector3_Vector3>` ()                                   |
 +-------------------------------+--------------------------------------------------------------------------+
 |                               | :ref:`Vector3<api_Vector3_Vector3>` (areal  v)                           |
 +-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector3<api_Vector3_Vector3>` ()                                   |
+|                               | :ref:`Vector3<api_Vector3_Vector3>` (areal  x, areal  y, areal  z)       |
++-------------------------------+--------------------------------------------------------------------------+
+|                               | :ref:`Vector3<api_Vector3_Vector3>` (const Vector2 & v, areal  z)        |
++-------------------------------+--------------------------------------------------------------------------+
+|                               | :ref:`Vector3<api_Vector3_Vector3>` (const areal * v)                    |
 +-------------------------------+--------------------------------------------------------------------------+
 |   :ref:`Vector3<api_Vector3>` | :ref:`abs<api_Vector3_abs>` () const                                     |
 +-------------------------------+--------------------------------------------------------------------------+
@@ -88,9 +90,25 @@ Methods Description
 
 .. _api_Vector3_Vector3:
 
-**Vector3::Vector3** (:ref:`areal<api_areal>` * *v*)
+**Vector3::Vector3** ()
 
-Constructs a 3D *v*ector from *v* (areal[3] array).
+Constructs a null vector, i.e. with coordinates (0, 0, 0).
+
+----
+
+.. _api_Vector3_Vector3:
+
+**Vector3::Vector3** (:ref:`areal<api_areal>`  *v*)
+
+Constructs a *v*ector with coordinates (v).
+
+----
+
+.. _api_Vector3_Vector3:
+
+**Vector3::Vector3** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*)
+
+Constructs a vector with coordinates (x, *y*, *z*).
 
 ----
 
@@ -106,25 +124,9 @@ Constructs a 3D *v*ector from the specified 2D *v*. The *z* coordinate is set to
 
 .. _api_Vector3_Vector3:
 
-**Vector3::Vector3** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*)
+**Vector3::Vector3** (:ref:`areal<api_areal>` * *v*)
 
-Constructs a vector with coordinates (x, *y*, *z*).
-
-----
-
-.. _api_Vector3_Vector3:
-
-**Vector3::Vector3** (:ref:`areal<api_areal>`  *v*)
-
-Constructs a *v*ector with coordinates (v).
-
-----
-
-.. _api_Vector3_Vector3:
-
-**Vector3::Vector3** ()
-
-Constructs a null vector, i.e. with coordinates (0, 0, 0).
+Constructs a 3D *v*ector from *v* (areal[3] array).
 
 ----
 

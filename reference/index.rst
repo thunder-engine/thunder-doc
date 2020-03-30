@@ -7,7 +7,8 @@ API Reference
    :maxdepth: 1
    :name: toc-api
    
-   anim-module
+   animation-module
    core-module
    engine-module
    math-module
+   resource-module

@@ -8,6 +8,8 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
+Base class for all entities in Thunder Engine.
+
 The Actor probably is the most important class in the Thunder Engine. It represents all objects on the scene like 3D meshes, light sources, effects and many more. You should think about Actor as a key chain for the various Components. You can add and remove any components you like at any time except the Transform component. The Transform component must persist constantly and you shoudn't remove it.
 
 
@@ -16,43 +18,67 @@ The Actor probably is the most important class in the Thunder Engine. It represe
 Public Methods
 --------------
 
-+-----------------------------------+-------------------------------------------------------------------------------+
-| :ref:`Component<api_Component>` * | :ref:`addComponent<api_Actor_addComponent>` (const std::string  type)         |
-+-----------------------------------+-------------------------------------------------------------------------------+
-| :ref:`Component<api_Component>` * | :ref:`component<api_Actor_component>` (const std::string  type)               |
-+-----------------------------------+-------------------------------------------------------------------------------+
-| :ref:`Component<api_Component>` * | :ref:`componentInChild<api_Actor_componentInChild>` (const std::string  type) |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|             :ref:`bool<api_bool>` | :ref:`isEnabled<api_Actor_isEnabled>` () const                                |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|             :ref:`bool<api_bool>` | :ref:`isPrefab<api_Actor_isPrefab>` () const                                  |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|       :ref:`uint8_t<api_uint8_t>` | :ref:`layers<api_Actor_layers>` () const                                      |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|         :ref:`Scene<api_Scene>` * | :ref:`scene<api_Actor_scene>` ()                                              |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setEnabled<api_Actor_setEnabled>` (const bool  enabled)                 |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setLayers<api_Actor_setLayers>` (const uint8_t  layers)                 |
-+-----------------------------------+-------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setParent<api_Actor_setParent>` (Object * parent)                       |
-+-----------------------------------+-------------------------------------------------------------------------------+
-| :ref:`Transform<api_Transform>` * | :ref:`transform<api_Actor_transform>` ()                                      |
-+-----------------------------------+-------------------------------------------------------------------------------+
++-----------------------------------+-----------------------------------------------------------------------+
+|                                   | :ref:`Actor<api_Actor_Actor>` ()                                      |
++-----------------------------------+-----------------------------------------------------------------------+
+|                                   | :ref:`~Actor<api_Actor_~Actor>` ()                                    |
++-----------------------------------+-----------------------------------------------------------------------+
+| :ref:`Component<api_Component>` * | :ref:`addComponent<api_Actor_addComponent>` (const int  type)         |
++-----------------------------------+-----------------------------------------------------------------------+
+| :ref:`Component<api_Component>` * | :ref:`component<api_Actor_component>` (const int  type)               |
++-----------------------------------+-----------------------------------------------------------------------+
+| :ref:`Component<api_Component>` * | :ref:`componentInChild<api_Actor_componentInChild>` (const int  type) |
++-----------------------------------+-----------------------------------------------------------------------+
+|             :ref:`bool<api_bool>` | :ref:`isEnabled<api_Actor_isEnabled>` () const                        |
++-----------------------------------+-----------------------------------------------------------------------+
+|             :ref:`bool<api_bool>` | :ref:`isPrefab<api_Actor_isPrefab>` () const                          |
++-----------------------------------+-----------------------------------------------------------------------+
+|               :ref:`int<api_int>` | :ref:`layers<api_Actor_layers>` () const                              |
++-----------------------------------+-----------------------------------------------------------------------+
+|         :ref:`Scene<api_Scene>` * | :ref:`scene<api_Actor_scene>` ()                                      |
++-----------------------------------+-----------------------------------------------------------------------+
+|             :ref:`void<api_void>` | :ref:`setEnabled<api_Actor_setEnabled>` (const bool  enabled)         |
++-----------------------------------+-----------------------------------------------------------------------+
+|             :ref:`void<api_void>` | :ref:`setLayers<api_Actor_setLayers>` (const int  layers)             |
++-----------------------------------+-----------------------------------------------------------------------+
+|             :ref:`void<api_void>` | :ref:`setParent<api_Actor_setParent>` (Object * parent)               |
++-----------------------------------+-----------------------------------------------------------------------+
+| :ref:`Transform<api_Transform>` * | :ref:`transform<api_Actor_transform>` ()                              |
++-----------------------------------+-----------------------------------------------------------------------+
 
 .. _api_Actor_static:
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+--------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Actor_methods>` ()       |
++-------------------------------------------------------------------+--------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Actor_properties>` () |
++-------------------------------------------------------------------+--------------------------------------------+
 
 .. _api_Actor_methods:
 Methods Description
 -------------------
 
+.. _api_Actor_Actor:
+
+**Actor::Actor** ()
+
+Default constructs an instance of Actor.
+
+----
+
+.. _api_Actor_~Actor:
+
+**Actor::~Actor** ()
+
+Destroys the instance of Actor. The destructor is virtual.
+
+----
+
 .. _api_Actor_addComponent:
 
-:ref:`Component<api_Component>` * **Actor::addComponent** (:ref:`std::string<api_std::string>`  *type*)
+:ref:`Component<api_Component>` * **Actor::addComponent** (:ref:`int<api_int>`  *type*)
 
 Returns created component with specified *type*;
 
@@ -60,7 +86,7 @@ Returns created component with specified *type*;
 
 .. _api_Actor_component:
 
-:ref:`Component<api_Component>` * **Actor::component** (:ref:`std::string<api_std::string>`  *type*)
+:ref:`Component<api_Component>` * **Actor::component** (:ref:`int<api_int>`  *type*)
 
 Returns the component with *type* if one is attached to this Actor; otherwise returns nullptr.
 
@@ -68,7 +94,7 @@ Returns the component with *type* if one is attached to this Actor; otherwise re
 
 .. _api_Actor_componentInChild:
 
-:ref:`Component<api_Component>` * **Actor::componentInChild** (:ref:`std::string<api_std::string>`  *type*)
+:ref:`Component<api_Component>` * **Actor::componentInChild** (:ref:`int<api_int>`  *type*)
 
 Returns the component with *type* in the Actor's children using depth search. A component is returned only if it's found on a current Actor; otherwise returns nullptr.
 
@@ -92,11 +118,23 @@ Returns true in case the current object is an instance of the serialized prefab 
 
 .. _api_Actor_layers:
 
-:ref:`uint8_t<api_uint8_t>`  **Actor::layers** () const
+:ref:`int<api_int>`  **Actor::layers** () const
 
 Returns the layers list for the this Actor as a bit mask. The layers used for the various purposes like filtering objects before rendering.
 
 **See also** setLayers().
+
+----
+
+.. _api_Actor_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Actor::methods** ()
+
+----
+
+.. _api_Actor_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Actor::properties** ()
 
 ----
 
@@ -120,7 +158,7 @@ Marks this Actor as *enabled* or disabled. Disabled Actors becomes invisible for
 
 .. _api_Actor_setLayers:
 
-:ref:`void<api_void>`  **Actor::setLayers** (:ref:`uint8_t<api_uint8_t>`  *layers*)
+:ref:`void<api_void>`  **Actor::setLayers** (:ref:`int<api_int>`  *layers*)
 
 Assigns the list of *layers* for this Actor as a bitmask.
 
@@ -132,7 +170,7 @@ Assigns the list of *layers* for this Actor as a bitmask.
 
 :ref:`void<api_void>`  **Actor::setParent** (:ref:`Object<api_Object>` * *parent*)
 
-Reimplements: Object::setParent(Object *parent).
+Reimplemented from Object::setParent().
 
 Makes the actor a child of the *parent*.
 

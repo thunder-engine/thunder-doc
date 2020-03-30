@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Log class provides an output stream for logging information.
+
 The Log is used whenever the developer needs to write out debugging or tracing information to a file or console.
 
 Common usecase:
@@ -25,21 +27,7 @@ Public Methods
 +-----------------------+-------------------------------------------------------------+
 | :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (bool  b)             |
 +-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (uint8_t  c)          |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int8_t  c)           |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (uint16_t  s)         |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int16_t  s)          |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (uint32_t  i)         |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int32_t  i)          |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (uint64_t  i)         |
-+-----------------------+-------------------------------------------------------------+
-| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int64_t  i)          |
+| :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int  i)              |
 +-----------------------+-------------------------------------------------------------+
 | :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (float  f)            |
 +-----------------------+-------------------------------------------------------------+
@@ -52,13 +40,13 @@ Public Methods
 Static Methods
 --------------
 
-+---------------------------------------+-------------------------------------------------------------------------+
-| :ref:`ILogHandler<api_ILogHandler>` * | :ref:`handler<api_Log_handler>` ()                                      |
-+---------------------------------------+-------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`overrideHandler<api_Log_overrideHandler>` (ILogHandler * handler) |
-+---------------------------------------+-------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`setLogLevel<api_Log_setLogLevel>` (Log::LogTypes  level)          |
-+---------------------------------------+-------------------------------------------------------------------------+
++-------------------------------------+------------------------------------------------------------------------+
+| :ref:`LogHandler<api_LogHandler>` * | :ref:`handler<api_Log_handler>` ()                                     |
++-------------------------------------+------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`overrideHandler<api_Log_overrideHandler>` (LogHandler * handler) |
++-------------------------------------+------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setLogLevel<api_Log_setLogLevel>` (Log::LogTypes  level)         |
++-------------------------------------+------------------------------------------------------------------------+
 
 .. _api_Log_methods:
 Methods Description
@@ -82,15 +70,15 @@ Flushes any pending data to be written and destroys the log stream.
 
 .. _api_Log_handler:
 
-:ref:`ILogHandler<api_ILogHandler>` * **Log::handler** ()
+:ref:`LogHandler<api_LogHandler>` * **Log::handler** ()
 
-Returns ILogHandler object if present; otherwise returns nullptr.
+Returns LogHandler object if present; otherwise returns nullptr.
 
 ----
 
 .. _api_Log_overrideHandler:
 
-:ref:`void<api_void>`  **Log::overrideHandler** (:ref:`ILogHandler<api_ILogHandler>` * *handler*)
+:ref:`void<api_void>`  **Log::overrideHandler** (:ref:`LogHandler<api_LogHandler>` * *handler*)
 
 Set a new Log *handler*. This method can be used in case if a developer would need to move logging stream to someplace. For example to the console.
 
@@ -114,63 +102,7 @@ Writes the *b*oolean value, *b*, to the stream and returns a reference to the st
 
 .. _api_Log_operator<<:
 
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`uint8_t<api_uint8_t>`  *c*)
-
-Writes the unsinged 8 bit integer value, *c*, to the stream and returns a reference to the stream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`int8_t<api_int8_t>`  *c*)
-
-Writes the singed 8 bit integer value, *c*, to the stream and returns a reference to the stream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`uint16_t<api_uint16_t>`  *s*)
-
-Writes the unsinged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`int16_t<api_int16_t>`  *s*)
-
-Writes the *s*inged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`uint32_t<api_uint32_t>`  *i*)
-
-Writes the unsinged 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`int32_t<api_int32_t>`  *i*)
-
-Writes the singed 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`uint64_t<api_uint64_t>`  *i*)
-
-Writes the unsinged 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
-
-----
-
-.. _api_Log_operator<<:
-
-:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`int64_t<api_int64_t>`  *i*)
+:ref:`Log<api_Log>` & **Log::operator<<** (:ref:`int<api_int>`  *i*)
 
 Writes the singed 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
 

@@ -8,6 +8,8 @@ Inherited: :ref:`BaseLight<api_BaseLight>`
 Description
 -----------
 
+Point Lights works much like a real-world light bulb, emitting light in all directions.
+
 To determine the emiter position PointLight uses Transform component of the own Actor.
 
 
@@ -16,6 +18,10 @@ To determine the emiter position PointLight uses Transform component of the own 
 Public Methods
 --------------
 
++-------------------------+------------------------------------------------------------+
+|                         | :ref:`PointLight<api_PointLight_PointLight>` ()            |
++-------------------------+------------------------------------------------------------+
+|                         | :ref:`~PointLight<api_PointLight_~PointLight>` ()          |
 +-------------------------+------------------------------------------------------------+
 | :ref:`float<api_float>` | :ref:`radius<api_PointLight_radius>` () const              |
 +-------------------------+------------------------------------------------------------+
@@ -26,11 +32,35 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+-------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_PointLight_properties>` () |
++-------------------------------------------------------------------+-------------------------------------------------+
 
 .. _api_PointLight_methods:
 Methods Description
 -------------------
+
+.. _api_PointLight_PointLight:
+
+**PointLight::PointLight** ()
+
+Default constructs an instance of PointLight.
+
+----
+
+.. _api_PointLight_~PointLight:
+
+**PointLight::~PointLight** ()
+
+Destroys the instance of PointLight. The destructor is virtual.
+
+----
+
+.. _api_PointLight_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **PointLight::properties** ()
+
+----
 
 .. _api_PointLight_radius:
 

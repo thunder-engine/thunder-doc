@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The MetaProperty provides an interface to retrieve information about object property at runtime.
+
 This class is a part of Object-Introspection-Mechanism. MetaProperty provides information about one particular class property. Developers are able to retrieve information about property type, read and write values.
 
 To make properties visible in introspection mechanism, developers must declare those under A_PROPERTIES() macro.
@@ -32,6 +34,8 @@ Public Methods
 |                         :ref:`const MetaType<api_const MetaType>` | :ref:`type<api_MetaProperty_type>` () const                                            |
 +-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 |                                             :ref:`void<api_void>` | :ref:`write<api_MetaProperty_write>` (Object * object, const Variant & value) const    |
++-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+|                                             :ref:`void<api_void>` | :ref:`write<api_MetaProperty_write>` (Object * object, const T & value) const          |
 +-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 .. _api_MetaProperty_static:
@@ -97,6 +101,12 @@ Returns a type of property.
 :ref:`void<api_void>`  **MetaProperty::write** (:ref:`Object<api_Object>` * *object*, :ref:`Variant<api_Variant>` & *value*) const
 
 Tries to write a *value* as Variant to provided *object*.
+
+----
+
+.. _api_MetaProperty_write:
+
+:ref:`void<api_void>`  **MetaProperty::write** (:ref:`Object<api_Object>` * *object*, :ref:`T<api_T>` & *value*) const
 
 ----
 

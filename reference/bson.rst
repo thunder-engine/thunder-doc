@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+Binary JSON format parser.
+
 This class implements Binary JSON parser with Variant based DOM structure input/output. It allows to serialize and deserialize object structures represented in Variant DOM structure.
 
 Example:

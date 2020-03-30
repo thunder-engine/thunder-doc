@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The MetaMethod provides an interface to retrieve information about object method at runtime.
+
 This class is a part of Object-Introspection-Mechanism. MetaMethod provides information about one particular class method. Developers are able to retrieve information about method arguments, return types and etc.
 
 To make methods visible in introspection mechanism, developers must declare those under A_METHODS() macro.
@@ -33,7 +35,7 @@ Public Methods
 +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 |                                 :ref:`MetaType<api_MetaType>` | :ref:`returnType<api_MetaMethod_returnType>` () const                                                                |
 +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                           :ref:`std::string<api_std::string>` | :ref:`signature<api_MetaMethod_signature>` () const                                                                  |
+|                                           :ref:`int<api_int>` | :ref:`signature<api_MetaMethod_signature>` () const                                                                  |
 +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 | :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`table<api_MetaMethod_table>` () const                                                                          |
 +---------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
@@ -112,7 +114,7 @@ Returns a return type of method.
 
 .. _api_MetaMethod_signature:
 
-:ref:`std::string<api_std::string>`  **MetaMethod::signature** () const
+:ref:`int<api_int>`  **MetaMethod::signature** () const
 
 Returns method signature in text format.
 

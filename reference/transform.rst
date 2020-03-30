@@ -8,6 +8,8 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
+Position, rotation and scale of an Actor.
+
 Every Actor in a Scene has a Transform. It's used to store and manipulate the position, rotation and scale of the object. Every Transform can have a parent, which allows you to apply position, rotation and scale hierarchically.
 
 
@@ -16,6 +18,10 @@ Every Actor in a Scene has a Transform. It's used to store and manipulate the po
 Public Methods
 --------------
 
++-----------------------------------+-------------------------------------------------------------------------------------------------------+
+|                                   | :ref:`Transform<api_Transform_Transform>` ()                                                          |
++-----------------------------------+-------------------------------------------------------------------------------------------------------+
+|                                   | :ref:`~Transform<api_Transform_~Transform>` ()                                                        |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |       :ref:`Vector3<api_Vector3>` | :ref:`euler<api_Transform_euler>` () const                                                            |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
@@ -52,11 +58,31 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Transform_methods>` ()       |
++-------------------------------------------------------------------+------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Transform_properties>` () |
++-------------------------------------------------------------------+------------------------------------------------+
 
 .. _api_Transform_methods:
 Methods Description
 -------------------
+
+.. _api_Transform_Transform:
+
+**Transform::Transform** ()
+
+Default constructs an instance of Transform.
+
+----
+
+.. _api_Transform_~Transform:
+
+**Transform::~Transform** ()
+
+Destroys the instance of Transform. The destructor is virtual.
+
+----
 
 .. _api_Transform_euler:
 
@@ -65,6 +91,12 @@ Methods Description
 Returns current rotation of the Transform in local space as Euler angles in degrees.
 
 **See also** setEuler().
+
+----
+
+.. _api_Transform_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Transform::methods** ()
 
 ----
 
@@ -85,6 +117,12 @@ Returns parent of the transform.
 Returns current position of the Transform in local space.
 
 **See also** setPosition().
+
+----
+
+.. _api_Transform_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Transform::properties** ()
 
 ----
 

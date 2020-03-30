@@ -8,6 +8,8 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
+The ObjectSystem responds for object management.
+
 ObjectSystem helps to developers create new instances and serialize/deserialize them on disc or in memory.
 
 
@@ -16,33 +18,39 @@ ObjectSystem helps to developers create new instances and serialize/deserialize 
 Public Methods
 --------------
 
-+-----------------------------------------------------------+---------------------------------------------------------+
-|                                                           | :ref:`ObjectSystem<api_ObjectSystem_ObjectSystem>` ()   |
-+-----------------------------------------------------------+---------------------------------------------------------+
-|                                                           | :ref:`~ObjectSystem<api_ObjectSystem_~ObjectSystem>` () |
-+-----------------------------------------------------------+---------------------------------------------------------+
-| :ref:`ObjectSystem::GroupMap<api_ObjectSystem::GroupMap>` | :ref:`factories<api_ObjectSystem_factories>` () const   |
-+-----------------------------------------------------------+---------------------------------------------------------+
-|                                     :ref:`void<api_void>` | :ref:`processEvents<api_ObjectSystem_processEvents>` () |
-+-----------------------------------------------------------+---------------------------------------------------------+
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|                                                           | :ref:`ObjectSystem<api_ObjectSystem_ObjectSystem>` ()                                       |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|                                                           | :ref:`~ObjectSystem<api_ObjectSystem_~ObjectSystem>` ()                                     |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+| :ref:`ObjectSystem::GroupMap<api_ObjectSystem::GroupMap>` | :ref:`factories<api_ObjectSystem_factories>` () const                                       |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|                                     :ref:`void<api_void>` | :ref:`factoryAdd<api_ObjectSystem_factoryAdd>` (const int & group, const MetaObject * meta) |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|                                     :ref:`void<api_void>` | :ref:`factoryRemove<api_ObjectSystem_factoryRemove>` (const int & group)                    |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
+|                                     :ref:`void<api_void>` | :ref:`processEvents<api_ObjectSystem_processEvents>` ()                                     |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
 .. _api_ObjectSystem_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-|                                     :ref:`uint32_t<api_uint32_t>` | :ref:`generateUUID<api_ObjectSystem_generateUUID>` ()                                                                                        |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`ObjectSystem::FactoryPair<api_ObjectSystem::FactoryPair>` * | :ref:`metaFactory<api_ObjectSystem_metaFactory>` (const std::string & uri)                                                                   |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`Object<api_Object>` * | :ref:`objectCreate<api_ObjectSystem_objectCreate>` (const std::string & uri, const std::string & name = string(), Object * parent = nullptr) |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`void<api_void>` | :ref:`replaceUUID<api_ObjectSystem_replaceUUID>` (Object * object, uint32_t  uuid)                                                           |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`Object<api_Object>` * | :ref:`toObject<api_ObjectSystem_toObject>` (const Variant & variant, Object * root = nullptr)                                                |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`Variant<api_Variant>` | :ref:`toVariant<api_ObjectSystem_toVariant>` (const Object * object)                                                                         |
-+-------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                               :ref:`int<api_int>` | :ref:`generateUUID<api_ObjectSystem_generateUUID>` ()                                                                   |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+| :ref:`ObjectSystem::FactoryPair<api_ObjectSystem::FactoryPair>` * | :ref:`metaFactory<api_ObjectSystem_metaFactory>` (const int & uri)                                                      |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                                 :ref:`T<api_T>` * | :ref:`objectCreate<api_ObjectSystem_objectCreate>` (const int & name = ..., Object * parent = nullptr)                  |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Object<api_Object>` * | :ref:`objectCreate<api_ObjectSystem_objectCreate>` (const int & uri, const int & name = ..., Object * parent = nullptr) |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                             :ref:`void<api_void>` | :ref:`replaceUUID<api_ObjectSystem_replaceUUID>` (Object * object, int  uuid)                                           |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Object<api_Object>` * | :ref:`toObject<api_ObjectSystem_toObject>` (const Variant & variant, Object * root = nullptr)                           |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Variant<api_Variant>` | :ref:`toVariant<api_ObjectSystem_toVariant>` (const Object * object)                                                    |
++-------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_ObjectSystem_methods:
 Methods Description
@@ -72,9 +80,21 @@ Returns all registered classes.
 
 ----
 
+.. _api_ObjectSystem_factoryAdd:
+
+:ref:`void<api_void>`  **ObjectSystem::factoryAdd** (:ref:`int<api_int>` & *group*, :ref:`MetaObject<api_MetaObject>` * *meta*)
+
+----
+
+.. _api_ObjectSystem_factoryRemove:
+
+:ref:`void<api_void>`  **ObjectSystem::factoryRemove** (:ref:`int<api_int>` & *group*)
+
+----
+
 .. _api_ObjectSystem_generateUUID:
 
-:ref:`uint32_t<api_uint32_t>`  **ObjectSystem::generateUUID** ()
+:ref:`int<api_int>`  **ObjectSystem::generateUUID** ()
 
 Returns the new unique ID based on random number generator.
 
@@ -82,7 +102,7 @@ Returns the new unique ID based on random number generator.
 
 .. _api_ObjectSystem_metaFactory:
 
-:ref:`ObjectSystem::FactoryPair<api_ObjectSystem::FactoryPair>` * **ObjectSystem::metaFactory** (:ref:`std::string<api_std::string>` & *uri*)
+:ref:`ObjectSystem::FactoryPair<api_ObjectSystem::FactoryPair>` * **ObjectSystem::metaFactory** (:ref:`int<api_int>` & *uri*)
 
 Returns MetaObject for registered factory by provided *uri*.
 
@@ -90,7 +110,13 @@ Returns MetaObject for registered factory by provided *uri*.
 
 .. _api_ObjectSystem_objectCreate:
 
-:ref:`Object<api_Object>` * **ObjectSystem::objectCreate** (:ref:`std::string<api_std::string>` & *uri*, :ref:`std::string<api_std::string>` & *name* = string(), :ref:`Object<api_Object>` * *parent* = nullptr)
+:ref:`T<api_T>` * **ObjectSystem::objectCreate** (:ref:`int<api_int>` & *name* = ..., :ref:`Object<api_Object>` * *parent* = nullptr)
+
+----
+
+.. _api_ObjectSystem_objectCreate:
+
+:ref:`Object<api_Object>` * **ObjectSystem::objectCreate** (:ref:`int<api_int>` & *uri*, :ref:`int<api_int>` & *name* = ..., :ref:`Object<api_Object>` * *parent* = nullptr)
 
 Returns new instance of type represented in *uri* and *name* as child of *parent* object.
 
@@ -110,7 +136,7 @@ Updates all related objects.
 
 .. _api_ObjectSystem_replaceUUID:
 
-:ref:`void<api_void>`  **ObjectSystem::replaceUUID** (:ref:`Object<api_Object>` * *object*, :ref:`uint32_t<api_uint32_t>`  *uuid*)
+:ref:`void<api_void>`  **ObjectSystem::replaceUUID** (:ref:`Object<api_Object>` * *object*, :ref:`int<api_int>`  *uuid*)
 
 Replaces current *uuid* of the *object* with the new one.
 

@@ -8,6 +8,8 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
+Draws a text for the 2D and 3D graphics.
+
 The TextRender component allows you to display a text in both 2D and 3D scenes.
 
 
@@ -16,53 +18,77 @@ The TextRender component allows you to display a text in both 2D and 3D scenes.
 Public Methods
 --------------
 
-+-------------------------------------+---------------------------------------------------------------------------------+
-|                 :ref:`int<api_int>` | :ref:`align<api_TextRender_align>` () const                                     |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|         :ref:`Vector2<api_Vector2>` | :ref:`boundaries<api_TextRender_boundaries>` () const                           |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|         :ref:`Vector4<api_Vector4>` | :ref:`color<api_TextRender_color>` () const                                     |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|             :ref:`Font<api_Font>` * | :ref:`font<api_TextRender_font>` () const                                       |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|                 :ref:`int<api_int>` | :ref:`fontSize<api_TextRender_fontSize>` () const                               |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`bool<api_bool>` | :ref:`kerning<api_TextRender_kerning>` () const                                 |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|     :ref:`Material<api_Material>` * | :ref:`material<api_TextRender_material>` () const                               |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setAlign<api_TextRender_setAlign>` (int  alignment)                       |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setBoundaries<api_TextRender_setBoundaries>` (const Vector2 & boundaries) |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setColor<api_TextRender_setColor>` (const Vector4 & color)                |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setFont<api_TextRender_setFont>` (Font * font)                            |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setFontSize<api_TextRender_setFontSize>` (int  size)                      |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setKerning<api_TextRender_setKerning>` (const bool  kerning)              |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setMaterial<api_TextRender_setMaterial>` (Material * material)            |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setText<api_TextRender_setText>` (const std::string & text)               |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setWrap<api_TextRender_setWrap>` (bool  wrap)                             |
-+-------------------------------------+---------------------------------------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`text<api_TextRender_text>` () const                                       |
-+-------------------------------------+---------------------------------------------------------------------------------+
-|               :ref:`bool<api_bool>` | :ref:`wrap<api_TextRender_wrap>` () const                                       |
-+-------------------------------------+---------------------------------------------------------------------------------+
++---------------------------------+---------------------------------------------------------------------------------+
+|                                 | :ref:`TextRender<api_TextRender_TextRender>` ()                                 |
++---------------------------------+---------------------------------------------------------------------------------+
+|                                 | :ref:`~TextRender<api_TextRender_~TextRender>` ()                               |
++---------------------------------+---------------------------------------------------------------------------------+
+|             :ref:`int<api_int>` | :ref:`align<api_TextRender_align>` () const                                     |
++---------------------------------+---------------------------------------------------------------------------------+
+|     :ref:`Vector2<api_Vector2>` | :ref:`boundaries<api_TextRender_boundaries>` () const                           |
++---------------------------------+---------------------------------------------------------------------------------+
+|     :ref:`Vector4<api_Vector4>` | :ref:`color<api_TextRender_color>` () const                                     |
++---------------------------------+---------------------------------------------------------------------------------+
+|         :ref:`Font<api_Font>` * | :ref:`font<api_TextRender_font>` () const                                       |
++---------------------------------+---------------------------------------------------------------------------------+
+|             :ref:`int<api_int>` | :ref:`fontSize<api_TextRender_fontSize>` () const                               |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`bool<api_bool>` | :ref:`kerning<api_TextRender_kerning>` () const                                 |
++---------------------------------+---------------------------------------------------------------------------------+
+| :ref:`Material<api_Material>` * | :ref:`material<api_TextRender_material>` () const                               |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setAlign<api_TextRender_setAlign>` (int  alignment)                       |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setBoundaries<api_TextRender_setBoundaries>` (const Vector2 & boundaries) |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setColor<api_TextRender_setColor>` (const Vector4 & color)                |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setFont<api_TextRender_setFont>` (Font * font)                            |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setFontSize<api_TextRender_setFontSize>` (int  size)                      |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setKerning<api_TextRender_setKerning>` (const bool  kerning)              |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setMaterial<api_TextRender_setMaterial>` (Material * material)            |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setText<api_TextRender_setText>` (const int & text)                       |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setWrap<api_TextRender_setWrap>` (bool  wrap)                             |
++---------------------------------+---------------------------------------------------------------------------------+
+|             :ref:`int<api_int>` | :ref:`text<api_TextRender_text>` () const                                       |
++---------------------------------+---------------------------------------------------------------------------------+
+|           :ref:`bool<api_bool>` | :ref:`wrap<api_TextRender_wrap>` () const                                       |
++---------------------------------+---------------------------------------------------------------------------------+
 
 .. _api_TextRender_static:
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+-------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_TextRender_methods>` ()       |
++-------------------------------------------------------------------+-------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_TextRender_properties>` () |
++-------------------------------------------------------------------+-------------------------------------------------+
 
 .. _api_TextRender_methods:
 Methods Description
 -------------------
+
+.. _api_TextRender_TextRender:
+
+**TextRender::TextRender** ()
+
+Default constructs an instance of TextRender.
+
+----
+
+.. _api_TextRender_~TextRender:
+
+**TextRender::~TextRender** ()
+
+Destroys the instance of TextRender. The destructor is virtual.
+
+----
 
 .. _api_TextRender_align:
 
@@ -131,6 +157,18 @@ Returns true if glyph kerning enabled; otherwise returns false.
 Returns an instantiated Material assigned to TextRender.
 
 **See also** setMaterial().
+
+----
+
+.. _api_TextRender_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **TextRender::methods** ()
+
+----
+
+.. _api_TextRender_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **TextRender::properties** ()
 
 ----
 
@@ -208,7 +246,7 @@ Creates a new instance of *material* and assigns it.
 
 .. _api_TextRender_setText:
 
-:ref:`void<api_void>`  **TextRender::setText** (:ref:`std::string<api_std::string>` & *text*)
+:ref:`void<api_void>`  **TextRender::setText** (:ref:`int<api_int>` & *text*)
 
 Changes the *text* which will be drawn.
 
@@ -228,7 +266,7 @@ Sets the word *wrap* policy. Set true to enable word *wrap* and false to disable
 
 .. _api_TextRender_text:
 
-:ref:`std::string<api_std::string>`  **TextRender::text** () const
+:ref:`int<api_int>`  **TextRender::text** () const
 
 Returns the text which will be drawn.
 

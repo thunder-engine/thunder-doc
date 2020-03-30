@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Quaternion class represents rotations in 3D space.
+
 Quaternions consist of a 3D rotation axis specified by the x, y, and z coordinates, and a w representing the rotation angle.
 
 
@@ -17,13 +19,13 @@ Public Methods
 --------------
 
 +-----------------------------------+-----------------------------------------------------------------------------------------+
-|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Matrix3 & matrix)                   |
-+-----------------------------------+-----------------------------------------------------------------------------------------+
-|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & euler)                    |
+|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
 +-----------------------------------+-----------------------------------------------------------------------------------------+
 |                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & dir, areal  angle)        |
 +-----------------------------------+-----------------------------------------------------------------------------------------+
-|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
+|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & euler)                    |
++-----------------------------------+-----------------------------------------------------------------------------------------+
+|                                   | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Matrix3 & matrix)                   |
 +-----------------------------------+-----------------------------------------------------------------------------------------+
 |       :ref:`Vector3<api_Vector3>` | :ref:`euler<api_Quaternion_euler>` () const                                             |
 +-----------------------------------+-----------------------------------------------------------------------------------------+
@@ -58,17 +60,9 @@ Methods Description
 
 .. _api_Quaternion_Quaternion:
 
-**Quaternion::Quaternion** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+**Quaternion::Quaternion** ()
 
-Constructs a quaternion by rotation *matrix* represented by Matrix3 *matrix*.
-
-----
-
-.. _api_Quaternion_Quaternion:
-
-**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *euler*)
-
-Constructs a quaternion by Euler angles represented by Vector3(pitch, yaw, roll) *euler* in rotation degrees.
+Constructs an identity quaternion.
 
 ----
 
@@ -82,9 +76,17 @@ Constructs a quaternion with rotation axis *dir* and *angle* in rotation degrees
 
 .. _api_Quaternion_Quaternion:
 
-**Quaternion::Quaternion** ()
+**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *euler*)
 
-Constructs an identity quaternion.
+Constructs a quaternion by Euler angles represented by Vector3(pitch, yaw, roll) *euler* in rotation degrees.
+
+----
+
+.. _api_Quaternion_Quaternion:
+
+**Quaternion::Quaternion** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+
+Constructs a quaternion by rotation *matrix* represented by Matrix3 *matrix*.
 
 ----
 

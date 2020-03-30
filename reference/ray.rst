@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Ray class represents a ray in 3D space.
+
 Ray is an infinity line starting from position pos and going to some direction
 
 
