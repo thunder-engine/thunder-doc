@@ -8,8 +8,6 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
-Position, rotation and scale of an Actor.
-
 Every Actor in a Scene has a Transform. It's used to store and manipulate the position, rotation and scale of the object. Every Transform can have a parent, which allows you to apply position, rotation and scale hierarchically.
 
 
@@ -19,27 +17,25 @@ Public Methods
 --------------
 
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|                                   | :ref:`Transform<api_Transform_Transform>` ()                                                          |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|                                   | :ref:`~Transform<api_Transform_~Transform>` ()                                                        |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`euler<api_Transform_euler>` () const                                                            |
+|     :ref:`Matrix4<api_Matrix4>` & | :ref:`localTransform<api_Transform_localTransform>` ()                                                |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 | :ref:`Transform<api_Transform>` * | :ref:`parentTransform<api_Transform_parentTransform>` () const                                        |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |       :ref:`Vector3<api_Vector3>` | :ref:`position<api_Transform_position>` () const                                                      |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
-| :ref:`Quaternion<api_Quaternion>` | :ref:`rotation<api_Transform_rotation>` () const                                                      |
+| :ref:`Quaternion<api_Quaternion>` | :ref:`quaternion<api_Transform_quaternion>` () const                                                  |
++-----------------------------------+-------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` | :ref:`rotation<api_Transform_rotation>` () const                                                      |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |       :ref:`Vector3<api_Vector3>` | :ref:`scale<api_Transform_scale>` () const                                                            |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setEuler<api_Transform_setEuler>` (const Vector3 & angles)                                      |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |             :ref:`void<api_void>` | :ref:`setParentTransform<api_Transform_setParentTransform>` (Transform * parent, bool  force = false) |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |             :ref:`void<api_void>` | :ref:`setPosition<api_Transform_setPosition>` (const Vector3 & position)                              |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setRotation<api_Transform_setRotation>` (const Quaternion & rotation)                           |
+|             :ref:`void<api_void>` | :ref:`setQuaternion<api_Transform_setQuaternion>` (const Quaternion & quaternion)                     |
++-----------------------------------+-------------------------------------------------------------------------------------------------------+
+|             :ref:`void<api_void>` | :ref:`setRotation<api_Transform_setRotation>` (const Vector3 & angles)                                |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 |             :ref:`void<api_void>` | :ref:`setScale<api_Transform_setScale>` (const Vector3 & scale)                                       |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
@@ -54,49 +50,23 @@ Public Methods
 |     :ref:`Matrix4<api_Matrix4>` & | :ref:`worldTransform<api_Transform_worldTransform>` ()                                                |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------+
 
+
+
 .. _api_Transform_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Transform_methods>` ()       |
-+-------------------------------------------------------------------+------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Transform_properties>` () |
-+-------------------------------------------------------------------+------------------------------------------------+
+None
 
 .. _api_Transform_methods:
 Methods Description
 -------------------
 
-.. _api_Transform_Transform:
+.. _api_Transform_localTransform:
 
-**Transform::Transform** ()
+:ref:`Matrix4<api_Matrix4>` & **Transform::localTransform** ()
 
-Default constructs an instance of Transform.
-
-----
-
-.. _api_Transform_~Transform:
-
-**Transform::~Transform** ()
-
-Destroys the instance of Transform. The destructor is virtual.
-
-----
-
-.. _api_Transform_euler:
-
-:ref:`Vector3<api_Vector3>`  **Transform::euler** () const
-
-Returns current rotation of the Transform in local space as Euler angles in degrees.
-
-**See also** setEuler().
-
-----
-
-.. _api_Transform_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Transform::methods** ()
+Returns current transform matrix in local space.
 
 ----
 
@@ -120,17 +90,21 @@ Returns current position of the Transform in local space.
 
 ----
 
-.. _api_Transform_properties:
+.. _api_Transform_quaternion:
 
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Transform::properties** ()
+:ref:`Quaternion<api_Quaternion>`  **Transform::quaternion** () const
+
+Returns current rotation of the Transform in local space as Quaternion.
+
+**See also** setQuaternion().
 
 ----
 
 .. _api_Transform_rotation:
 
-:ref:`Quaternion<api_Quaternion>`  **Transform::rotation** () const
+:ref:`Vector3<api_Vector3>`  **Transform::rotation** () const
 
-Returns current rotation of the Transform in local space as Quaternion.
+Returns current rotation of the Transform in local space as Euler angles in degrees.
 
 **See also** setRotation().
 
@@ -143,16 +117,6 @@ Returns current rotation of the Transform in local space as Quaternion.
 Returns current scale of the Transform in local space.
 
 **See also** setScale().
-
-----
-
-.. _api_Transform_setEuler:
-
-:ref:`void<api_void>`  **Transform::setEuler** (:ref:`Vector3<api_Vector3>` & *angles*)
-
-Changes the rotation of the Transform in local space by provided Euler *angles* in degrees.
-
-**See also** euler().
 
 ----
 
@@ -176,13 +140,23 @@ Changes *position* of the Transform in local space.
 
 ----
 
+.. _api_Transform_setQuaternion:
+
+:ref:`void<api_void>`  **Transform::setQuaternion** (:ref:`Quaternion<api_Quaternion>` & *quaternion*)
+
+Changes the rotation *quaternion* of the Transform in local space by provided Quaternion.
+
+**See also** *quaternion*().
+
+----
+
 .. _api_Transform_setRotation:
 
-:ref:`void<api_void>`  **Transform::setRotation** (:ref:`Quaternion<api_Quaternion>` & *rotation*)
+:ref:`void<api_void>`  **Transform::setRotation** (:ref:`Vector3<api_Vector3>` & *angles*)
 
-Changes the *rotation* of the Transform in local space by provided Quaternion.
+Changes the rotation of the Transform in local space by provided Euler *angles* in degrees.
 
-**See also** *rotation*().
+**See also** rotation().
 
 ----
 

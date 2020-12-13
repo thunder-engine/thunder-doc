@@ -8,8 +8,6 @@ Inherited: :ref:`BaseLight<api_BaseLight>`
 Description
 -----------
 
-Point Lights works much like a real-world light bulb, emitting light in all directions.
-
 To determine the emiter position PointLight uses Transform component of the own Actor.
 
 
@@ -18,67 +16,89 @@ To determine the emiter position PointLight uses Transform component of the own 
 Public Methods
 --------------
 
-+-------------------------+------------------------------------------------------------+
-|                         | :ref:`PointLight<api_PointLight_PointLight>` ()            |
-+-------------------------+------------------------------------------------------------+
-|                         | :ref:`~PointLight<api_PointLight_~PointLight>` ()          |
-+-------------------------+------------------------------------------------------------+
-| :ref:`float<api_float>` | :ref:`radius<api_PointLight_radius>` () const              |
-+-------------------------+------------------------------------------------------------+
-|   :ref:`void<api_void>` | :ref:`setRadius<api_PointLight_setRadius>` (float  radius) |
-+-------------------------+------------------------------------------------------------+
++-------------------------+----------------------------------------------------------------------------------+
+| :ref:`float<api_float>` | :ref:`attenuationRadius<api_PointLight_attenuationRadius>` () const              |
++-------------------------+----------------------------------------------------------------------------------+
+|   :ref:`void<api_void>` | :ref:`setAttenuationRadius<api_PointLight_setAttenuationRadius>` (float  radius) |
++-------------------------+----------------------------------------------------------------------------------+
+|   :ref:`void<api_void>` | :ref:`setSourceLength<api_PointLight_setSourceLength>` (float  length)           |
++-------------------------+----------------------------------------------------------------------------------+
+|   :ref:`void<api_void>` | :ref:`setSourceRadius<api_PointLight_setSourceRadius>` (float  radius)           |
++-------------------------+----------------------------------------------------------------------------------+
+| :ref:`float<api_float>` | :ref:`sourceLength<api_PointLight_sourceLength>` () const                        |
++-------------------------+----------------------------------------------------------------------------------+
+| :ref:`float<api_float>` | :ref:`sourceRadius<api_PointLight_sourceRadius>` () const                        |
++-------------------------+----------------------------------------------------------------------------------+
+
+
 
 .. _api_PointLight_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_PointLight_properties>` () |
-+-------------------------------------------------------------------+-------------------------------------------------+
+None
 
 .. _api_PointLight_methods:
 Methods Description
 -------------------
 
-.. _api_PointLight_PointLight:
+.. _api_PointLight_attenuationRadius:
 
-**PointLight::PointLight** ()
-
-Default constructs an instance of PointLight.
-
-----
-
-.. _api_PointLight_~PointLight:
-
-**PointLight::~PointLight** ()
-
-Destroys the instance of PointLight. The destructor is virtual.
-
-----
-
-.. _api_PointLight_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **PointLight::properties** ()
-
-----
-
-.. _api_PointLight_radius:
-
-:ref:`float<api_float>`  **PointLight::radius** () const
+:ref:`float<api_float>`  **PointLight::attenuationRadius** () const
 
 Returns the attenuation radius of the light.
 
-**See also** setRadius().
+**See also** setAttenuationRadius().
 
 ----
 
-.. _api_PointLight_setRadius:
+.. _api_PointLight_setAttenuationRadius:
 
-:ref:`void<api_void>`  **PointLight::setRadius** (:ref:`float<api_float>`  *radius*)
+:ref:`void<api_void>`  **PointLight::setAttenuationRadius** (:ref:`float<api_float>`  *radius*)
 
 Changes the attenuation *radius* of the light.
 
-**See also** *radius*().
+**See also** attenuationRadius().
+
+----
+
+.. _api_PointLight_setSourceLength:
+
+:ref:`void<api_void>`  **PointLight::setSourceLength** (:ref:`float<api_float>`  *length*)
+
+Changes the source *length* of the light.
+
+**See also** sourceLength().
+
+----
+
+.. _api_PointLight_setSourceRadius:
+
+:ref:`void<api_void>`  **PointLight::setSourceRadius** (:ref:`float<api_float>`  *radius*)
+
+Changes the source *radius* of the light.
+
+**See also** sourceRadius().
+
+----
+
+.. _api_PointLight_sourceLength:
+
+:ref:`float<api_float>`  **PointLight::sourceLength** () const
+
+Returns the source length of the light.
+
+**See also** setSourceLength().
+
+----
+
+.. _api_PointLight_sourceRadius:
+
+:ref:`float<api_float>`  **PointLight::sourceRadius** () const
+
+Returns the source radius of the light.
+
+**See also** setSourceRadius().
 
 ----
 

@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Object class is the base calss for all object classes.
-
 The object is the central part of the Next library. For communication between objects two mechanisms was implemented the signals and slots also event based approach. To connect two objects between use connect() method and the sender object will notify the receiver object about necessary events.
 
 Objects can be organized into an object trees. Each object can have an unlimited number of children objects. When you assign parent to an object it automatically add itself to the parent children list. Parent object takes ownership of the child object. This means that the child will be automatically deleted if the parent object is deleted. Child object can be found in hierarchy of objects by path or by the type using find(), findChild() or findChildren().
@@ -29,13 +27,11 @@ Public Methods
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                                                 | :ref:`Object<api_Object_Object>` ()                                                              |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                                                 | :ref:`~Object<api_Object_~Object>` ()                                                            |
-+-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`void<api_void>` | :ref:`addChild<api_Object_addChild>` (Object * child)                                            |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                     :ref:`Object<api_Object>` * | :ref:`clone<api_Object_clone>` ()                                                                |
+|                                     :ref:`Object<api_Object>` * | :ref:`clone<api_Object_clone>` (Object * parent = nullptr)                                       |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             :ref:`int<api_int>` | :ref:`clonedFrom<api_Object_clonedFrom>` () const                                                |
+|                                   :ref:`uint32_t<api_uint32_t>` | :ref:`clonedFrom<api_Object_clonedFrom>` () const                                                |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`void<api_void>` | :ref:`deleteLater<api_Object_deleteLater>` ()                                                    |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -43,11 +39,11 @@ Public Methods
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`bool<api_bool>` | :ref:`event<api_Object_event>` (Event * event)                                                   |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                     :ref:`Object<api_Object>` * | :ref:`find<api_Object_find>` (const int & path)                                                  |
+|                                     :ref:`Object<api_Object>` * | :ref:`find<api_Object_find>` (const std::string & path)                                          |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                                 :ref:`T<api_T>` | :ref:`findChild<api_Object_findChild>` (bool  recursive = true)                                  |
+|     :ref:`template <typename T> T<api_template <typename T> T>` | :ref:`findChild<api_Object_findChild>` (bool  recursive = true)                                  |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             :ref:`int<api_int>` | :ref:`findChildren<api_Object_findChildren>` (boo  bool)                                         |
+| :ref:`template <typename T> int<api_template <typename T> int>` | :ref:`findChildren<api_Object_findChildren>` (boo  bool)                                         |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 | :ref:`const Object::ObjectList<api_const Object::ObjectList>` & | :ref:`getChildren<api_Object_getChildren>` () const                                              |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -57,11 +53,13 @@ Public Methods
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`void<api_void>` | :ref:`loadData<api_Object_loadData>` (const VariantList & data)                                  |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+|                                           :ref:`void<api_void>` | :ref:`loadObjectData<api_Object_loadObjectData>` (const VariantMap & data)                       |
++-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`void<api_void>` | :ref:`loadUserData<api_Object_loadUserData>` (const VariantMap & data)                           |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                 :ref:`const MetaObject<api_const MetaObject>` * | :ref:`metaObject<api_Object_metaObject>` () const                                                |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             :ref:`int<api_int>` | :ref:`name<api_Object_name>` () const                                                            |
+|                             :ref:`std::string<api_std::string>` | :ref:`name<api_Object_name>` () const                                                            |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                     :ref:`Object<api_Object>` * | :ref:`parent<api_Object_parent>` () const                                                        |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -77,22 +75,34 @@ Public Methods
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                     :ref:`Object<api_Object>` * | :ref:`sender<api_Object_sender>` () const                                                        |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                           :ref:`void<api_void>` | :ref:`setName<api_Object_setName>` (const int & name)                                            |
+|                                           :ref:`void<api_void>` | :ref:`setName<api_Object_setName>` (const std::string & name)                                    |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                           :ref:`void<api_void>` | :ref:`setParent<api_Object_setParent>` (Object * parent)                                         |
+|                                           :ref:`void<api_void>` | :ref:`setParent<api_Object_setParent>` (Object * parent, bool  force = false)                    |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                                           :ref:`void<api_void>` | :ref:`setProperty<api_Object_setProperty>` (const char * name, const Variant & value)            |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
 |                         :ref:`ObjectSystem<api_ObjectSystem>` * | :ref:`system<api_Object_system>` () const                                                        |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             :ref:`int<api_int>` | :ref:`typeName<api_Object_typeName>` () const                                                    |
+|                             :ref:`std::string<api_std::string>` | :ref:`typeName<api_Object_typeName>` () const                                                    |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             :ref:`int<api_int>` | :ref:`uuid<api_Object_uuid>` () const                                                            |
+|                                   :ref:`uint32_t<api_uint32_t>` | :ref:`uuid<api_Object_uuid>` () const                                                            |
 +-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                           :ref:`bool<api_bool>` | :ref:`operator!=<api_Object_operator!=>` (const Object & ) const                                 |
-+-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                           :ref:`bool<api_bool>` | :ref:`operator==<api_Object_operator==>` (const Object & ) const                                 |
-+-----------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+
+.. _api_Object_enums:
+Public Enums
+--------------
+
+.. _api_Object_LinkList:
+**enum Object::LinkList**
+
+Synonym for list<Link *>.
+
+.. _api_Object_ObjectList:
+**enum Object::ObjectList**
+
+Synonym for list<Object *>.
+
+
 
 .. _api_Object_static:
 Static Methods
@@ -122,14 +132,6 @@ By default Object create without parent to assign the parent object use setParen
 
 ----
 
-.. _api_Object_~Object:
-
-**Object::~Object** ()
-
-Destroys the instance of Object. The destructor is virtual.
-
-----
-
 .. _api_Object_addChild:
 
 :ref:`void<api_void>`  **Object::addChild** (:ref:`Object<api_Object>` * *child*)
@@ -140,11 +142,11 @@ Pushes a *child* object to the internal list of *child*ren.
 
 .. _api_Object_clone:
 
-:ref:`Object<api_Object>` * **Object::clone** ()
+:ref:`Object<api_Object>` * **Object::clone** (:ref:`Object<api_Object>` * *parent* = nullptr)
 
 Clones this object. Returns pointer to clone object.
 
-When you clone the Object or subclasses of it, all child objects also will be cloned. By default the parent for the new object will be nullptr. This clone will not have the name so you will need to set it manualy if required.
+When you clone the Object or subclasses of it, all child objects also will be cloned. By default the *parent* for the new object will be nullptr. This clone will not have the unique name so you will need to set it manualy if required.
 
 Connections will be recreated with the same objects as original.
 
@@ -154,7 +156,7 @@ Connections will be recreated with the same objects as original.
 
 .. _api_Object_clonedFrom:
 
-:ref:`int<api_int>`  **Object::clonedFrom** () const
+:ref:`uint32_t<api_uint32_t>`  **Object::clonedFrom** () const
 
 Returns the UUID of cloned object.
 
@@ -280,7 +282,7 @@ Abstract *event* handler. Developers should reimplement this method to handle *e
 
 .. _api_Object_find:
 
-:ref:`Object<api_Object>` * **Object::find** (:ref:`int<api_int>` & *path*)
+:ref:`Object<api_Object>` * **Object::find** (:ref:`std::string<api_std::string>` & *path*)
 
 Returns an object located along the *path*.
 
@@ -294,7 +296,7 @@ Returns an object located along the *path*.
     obj2.setParent(&obj1);
     
     // result will contain pointer to obj2
-    Object *result  = obj1.find("/MainObject/TestComponent2");
+    Object *result = obj1.find("/MainObject/TestComponent2");
 
 Returns nullptr if no such object.
 
@@ -304,13 +306,25 @@ Returns nullptr if no such object.
 
 .. _api_Object_findChild:
 
-:ref:`T<api_T>`  **Object::findChild** (:ref:`bool<api_bool>`  *recursive* = true)
+:ref:`template <typename T> T<api_template <typename T> T>`  **Object::findChild** (:ref:`bool<api_bool>`  *recursive* = true)
+
+Returns the first child of this object that can be cast to type T. The search is performed *recursive*ly, unless *recursive* option is false.
+
+Returns nullptr if no such object.
+
+**See also** find() and findChildren().
 
 ----
 
 .. _api_Object_findChildren:
 
-:ref:`int<api_int>`  **Object::findChildren** (:ref:`boo<api_boo>`  *bool*)
+:ref:`template <typename T> int<api_template <typename T> int>`  **Object::findChildren** (:ref:`boo<api_boo>`  *bool*)
+
+Returns all children of this object that can be cast to type T. The search is performed recursively, unless recursive option is false.
+
+Returns empty list if no such objects.
+
+**See also** find() and findChildren().
 
 ----
 
@@ -346,6 +360,14 @@ This method allows to DESERIALIZE *data* of object like properties, connections 
 
 ----
 
+.. _api_Object_loadObjectData:
+
+:ref:`void<api_void>`  **Object::loadObjectData** (:ref:`VariantMap<api_VariantMap>` & *data*)
+
+This method allows to DESERIALIZE *data*. It can be used to DESERIALIZE some specific *data* like prefabs.
+
+----
+
 .. _api_Object_loadUserData:
 
 :ref:`void<api_void>`  **Object::loadUserData** (:ref:`VariantMap<api_VariantMap>` & *data*)
@@ -376,7 +398,7 @@ Returns ponter MetaObject of this object. This method is used in MetaObject syst
 
 .. _api_Object_name:
 
-:ref:`int<api_int>`  **Object::name** () const
+:ref:`std::string<api_std::string>`  **Object::name** () const
 
 Returns name of the object.
 
@@ -450,7 +472,7 @@ Returns object which sent signal.
 
 .. _api_Object_setName:
 
-:ref:`void<api_void>`  **Object::setName** (:ref:`int<api_int>` & *name*)
+:ref:`void<api_void>`  **Object::setName** (:ref:`std::string<api_std::string>` & *name*)
 
 Set object *name* by provided *name*.
 
@@ -460,9 +482,11 @@ Set object *name* by provided *name*.
 
 .. _api_Object_setParent:
 
-:ref:`void<api_void>`  **Object::setParent** (:ref:`Object<api_Object>` * *parent*)
+:ref:`void<api_void>`  **Object::setParent** (:ref:`Object<api_Object>` * *parent*, :ref:`bool<api_bool>`  *force* = false)
 
 Makes the object a child of *parent*.
+
+**Note:** Please ignore the *force* flag it will be provided by the default.
 
 **See also** *parent*().
 
@@ -490,7 +514,7 @@ Returns System which handles this object.
 
 .. _api_Object_typeName:
 
-:ref:`int<api_int>`  **Object::typeName** () const
+:ref:`std::string<api_std::string>`  **Object::typeName** () const
 
 Returns class name the object.
 
@@ -498,21 +522,9 @@ Returns class name the object.
 
 .. _api_Object_uuid:
 
-:ref:`int<api_int>`  **Object::uuid** () const
+:ref:`uint32_t<api_uint32_t>`  **Object::uuid** () const
 
 Returns unique ID of the object.
-
-----
-
-.. _api_Object_operator!=:
-
-:ref:`bool<api_bool>`  **Object::operator!=** (:ref:`Object<api_Object>` & **) const
-
-----
-
-.. _api_Object_operator==:
-
-:ref:`bool<api_bool>`  **Object::operator==** (:ref:`Object<api_Object>` & **) const
 
 ----
 

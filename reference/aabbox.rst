@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The AABBox class represents a Axis Aligned Bounding Box in 3D space.
-
 Bounded volume in space in the form of a rectangular parallelepiped, with a period parallel to the coordinate axes in the world system. When the object rotates, the AABB changes its dimensions, but it always remains oriented along the coordinate axes. Axis Aligned Bounding Box represented by center of box and extent.
 
 
@@ -18,31 +16,37 @@ Bounded volume in space in the form of a rectangular parallelepiped, with a peri
 Public Methods
 --------------
 
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                                       | :ref:`AABBox<api_AABBox_AABBox>` ()                                                    |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                                       | :ref:`AABBox<api_AABBox_AABBox>` (const Vector3 & center, const Vector3 & extent)      |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`box<api_AABBox_box>` (Vector3 & min, Vector3 & max) const                        |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const Vector3 & point)                     |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const AABBox & box)                        |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Vector3 & position, areal  radius) const |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Plane * planes, areal  count) const      |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 & min, const Vector3 & max)            |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 * points, int  number)                 |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (areal  factor) const                           |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Vector3 & vector) const                  |
-+---------------------------------------+----------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Matrix4 & matrix) const                  |
-+---------------------------------------+----------------------------------------------------------------------------------------+
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                                       | :ref:`AABBox<api_AABBox_AABBox>` (const Vector3 & center, const Vector3 & extent)           |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                                       | :ref:`AABBox<api_AABBox_AABBox>` ()                                                         |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`void<api_void>` | :ref:`box<api_AABBox_box>` (Vector3 & min, Vector3 & max) const                             |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const Vector3 & position, areal  radius = 0.0f) |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const AABBox & box)                             |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Vector3 & position, areal  radius) const      |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Plane * planes, areal  count) const           |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 & min, const Vector3 & max)                 |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 * points, uint32_t  number)                 |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`bool<api_bool>` | :ref:`operator!=<api_AABBox_operator!=>` (const AABBox & box) const                         |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (areal  factor) const                                |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Vector3 & vector) const                       |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Matrix4 & matrix) const                       |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                 :ref:`bool<api_bool>` | :ref:`operator==<api_AABBox_operator==>` (const AABBox & box) const                         |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+
+
 
 .. _api_AABBox_static:
 Static Methods
@@ -56,17 +60,17 @@ Methods Description
 
 .. _api_AABBox_AABBox:
 
-**AABBox::AABBox** ()
+**AABBox::AABBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
 
-Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
+Constructs a bounding box with *center* and *extent*.
 
 ----
 
 .. _api_AABBox_AABBox:
 
-**AABBox::AABBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
+**AABBox::AABBox** ()
 
-Constructs a bounding box with *center* and *extent*.
+Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
 
 ----
 
@@ -82,9 +86,9 @@ Returns *min* and *max* points of bounding box as output arguments.
 
 .. _api_AABBox_encapsulate:
 
-:ref:`void<api_void>`  **AABBox::encapsulate** (:ref:`Vector3<api_Vector3>` & *point*)
+:ref:`void<api_void>`  **AABBox::encapsulate** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`areal<api_areal>`  *radius* = 0.0f)
 
-Grows the AABBox to include the *point*.
+Grow the AABBox to encapsulate a spehere with *position* and *radius*.
 
 ----
 
@@ -124,9 +128,17 @@ Set current bounding box by *min* and *max* points.
 
 .. _api_AABBox_setBox:
 
-:ref:`void<api_void>`  **AABBox::setBox** (:ref:`Vector3<api_Vector3>` * *points*, :ref:`int<api_int>`  *number*)
+:ref:`void<api_void>`  **AABBox::setBox** (:ref:`Vector3<api_Vector3>` * *points*, :ref:`uint32_t<api_uint32_t>`  *number*)
 
 Set curent bounding box by provided array of *points* and *number* of them.
+
+----
+
+.. _api_AABBox_operator!=:
+
+:ref:`bool<api_bool>`  **AABBox::operator!=** (:ref:`AABBox<api_AABBox>` & *box*) const
+
+Returns true if this bounding *box* is NOT equal to given bounding *box*; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
@@ -151,6 +163,14 @@ Returns a copy of this box, multiplied by the given *vector*.
 :ref:`const AABBox<api_const AABBox>`  **AABBox::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
 Returns a copy of this box, multiplied by the given *matrix*.
+
+----
+
+.. _api_AABBox_operator==:
+
+:ref:`bool<api_bool>`  **AABBox::operator==** (:ref:`AABBox<api_AABBox>` & *box*) const
+
+Returns true if this bounding *box* is equal to given bounding *box*; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 

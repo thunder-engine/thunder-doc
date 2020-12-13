@@ -15,6 +15,7 @@ Or create editor modules to help develop them.
    :name: toc-basics
    
    install
+   source
    explore
    project
    .. builder

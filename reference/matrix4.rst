@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Matrix4 class represents a 4x4 transform matrix in 3D space.
-
 Internally the data is stored as column-major format, so as to be optimal for passing to OpenGL functions, which expect column-major data.
 
 
@@ -19,11 +17,11 @@ Public Methods
 --------------
 
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
+|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Matrix3 & matrix)                                                       |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
+|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |       :ref:`areal<api_areal>` | :ref:`determinant<api_Matrix4_determinant>` () const                                                               |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -80,6 +78,8 @@ Public Methods
 |       :ref:`areal<api_areal>` | :ref:`operator[]<api_Matrix4_operator[]>` (int  i) const                                                           |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
+
+
 .. _api_Matrix4_static:
 Static Methods
 --------------
@@ -98,9 +98,9 @@ Methods Description
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** ()
+**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
 
-Constructs an identity matrix.
+Constructs matrix by given *position*, *rotation* and *scale*.
 
 ----
 
@@ -114,9 +114,9 @@ Constructs a transform *matrix* with rotation *matrix*.
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
+**Matrix4::Matrix4** ()
 
-Constructs matrix by given *position*, *rotation* and *scale*.
+Constructs an identity matrix.
 
 ----
 

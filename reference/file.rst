@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-Basic file system I/O module.
-
 The File class provides an interface for reading from and writing to files. File expects the file separator to be '/' regardless of operating system. The use of other separators (e.g., '') is not supported.
 
 You can check for a file's existence using _exists(), and remove a file using _delete(). You can create a directory using _mkdir(), list all files in directory using _flist() and retrive other basic information.
@@ -37,7 +35,7 @@ Public Methods
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
 |       :ref:`_size_t<api__size_t>` | :ref:`_fread<api_File__fread>` (void * ptr, _size_t  size, _size_t  count, _FILE * stream)         |
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
-|       :ref:`_size_t<api__size_t>` | :ref:`_fseek<api_File__fseek>` (_FILE * stream, int  origin)                                       |
+|       :ref:`_size_t<api__size_t>` | :ref:`_fseek<api_File__fseek>` (_FILE * stream, uint64_t  origin)                                  |
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
 |       :ref:`_size_t<api__size_t>` | :ref:`_fsize<api_File__fsize>` (_FILE * stream)                                                    |
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
@@ -53,6 +51,8 @@ Public Methods
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
 |             :ref:`void<api_void>` | :ref:`fsearchPathAdd<api_File_fsearchPathAdd>` (const char * path, bool  isFirst = false)          |
 +-----------------------------------+----------------------------------------------------------------------------------------------------+
+
+
 
 .. _api_File_static:
 Static Methods
@@ -134,7 +134,7 @@ Returns number of objects read.
 
 .. _api_File__fseek:
 
-:ref:`_size_t<api__size_t>`  **File::_fseek** (:ref:`_FILE<api__FILE>` * *stream*, :ref:`int<api_int>`  *origin*)
+:ref:`_size_t<api__size_t>`  **File::_fseek** (:ref:`_FILE<api__FILE>` * *stream*, :ref:`uint64_t<api_uint64_t>`  *origin*)
 
 Seek to a new position within a file *stream*. Returns 0 if succeeded; otherwise returns non-zero value. The next read or write will occur at that *origin* position. Seeking past the beginning or end of the file is not allowed, and causes an error.
 

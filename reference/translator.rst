@@ -8,21 +8,19 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Translator resource provides a translation table.
-
 
 
 .. _api_Translator_public:
 Public Methods
 --------------
 
-+---------------------+-----------------------------------------------------------------+
-|                     | :ref:`Translator<api_Translator_Translator>` ()                 |
-+---------------------+-----------------------------------------------------------------+
-|                     | :ref:`~Translator<api_Translator_~Translator>` ()               |
-+---------------------+-----------------------------------------------------------------+
-| :ref:`int<api_int>` | :ref:`translate<api_Translator_translate>` (const int & ) const |
-+---------------------+-----------------------------------------------------------------+
++-------------------------------------+------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setPair<api_Translator_setPair>` (const std::string & source, const std::string & translation) |
++-------------------------------------+------------------------------------------------------------------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`translate<api_Translator_translate>` (const std::string & source) const                        |
++-------------------------------------+------------------------------------------------------------------------------------------------------+
+
+
 
 .. _api_Translator_static:
 Static Methods
@@ -34,27 +32,19 @@ None
 Methods Description
 -------------------
 
-.. _api_Translator_Translator:
+.. _api_Translator_setPair:
 
-**Translator::Translator** ()
+:ref:`void<api_void>`  **Translator::setPair** (:ref:`std::string<api_std::string>` & *source*, :ref:`std::string<api_std::string>` & *translation*)
 
-Default constructs an instance of Translator.
-
-----
-
-.. _api_Translator_~Translator:
-
-**Translator::~Translator** ()
-
-Destroys the instance of Translator. The destructor is virtual.
+Sets new *translation* for the *source* string.
 
 ----
 
 .. _api_Translator_translate:
 
-:ref:`int<api_int>`  **Translator::translate** (:ref:`int<api_int>` & **) const
+:ref:`std::string<api_std::string>`  **Translator::translate** (:ref:`std::string<api_std::string>` & *source*) const
 
-Returns **the **translated **source **string.
+Returns the translated *source* string.
 
 ----
 

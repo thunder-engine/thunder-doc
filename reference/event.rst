@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Event class is the base calss for all event classes.
-
 Objects processing events by their virtual Object::event() function called. This function can be reimplemented in subclasses to add additional event handling or change existing.
 
 Base Event contain only event type parameter. Subclasses of Event may contain additional parameters to describe particular events.
@@ -20,13 +18,38 @@ Base Event contain only event type parameter. Subclasses of Event may contain ad
 Public Methods
 --------------
 
-+---------------------+-------------------------------------------+
-|                     | :ref:`Event<api_Event_Event>` (int  type) |
-+---------------------+-------------------------------------------+
-|                     | :ref:`~Event<api_Event_~Event>` ()        |
-+---------------------+-------------------------------------------+
-| :ref:`int<api_int>` | :ref:`type<api_Event_type>` () const      |
-+---------------------+-------------------------------------------+
++-------------------------------+------------------------------------------------+
+|                               | :ref:`Event<api_Event_Event>` (uint32_t  type) |
++-------------------------------+------------------------------------------------+
+| :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_Event_type>` () const           |
++-------------------------------+------------------------------------------------+
+
+.. _api_Event_enums:
+Public Enums
+--------------
+
+.. _api_Event_Type:
+**enum Event::Type**
+
+This enum type defines base event types and can be extended by the user defined types. User Defined type of Event should be bigger than Event::UserType.
+
++-----------------------+-------+---------------------------------------------------------+
+|              Constant | Value | Description                                             |
++-----------------------+-------+---------------------------------------------------------+
+|        Event::Invalid | 0     | Invalid event.                                          |
++-----------------------+-------+---------------------------------------------------------+
+|     Event::MethodCall | 1     | Receiver object should invoke method (MethodCallEvent). |
++-----------------------+-------+---------------------------------------------------------+
+|     Event::TimerEvent | 2     | Timer event (TimerEvent).                               |
++-----------------------+-------+---------------------------------------------------------+
+|        Event::Destroy | 3     | Reseiver object must be deleted immediately.            |
++-----------------------+-------+---------------------------------------------------------+
+| Event::LanguageChange | 4     | The application translation changed.                    |
++-----------------------+-------+---------------------------------------------------------+
+|       Event::UserType | 100   | User defined event.                                     |
++-----------------------+-------+---------------------------------------------------------+
+
+
 
 .. _api_Event_static:
 Static Methods
@@ -40,23 +63,15 @@ Methods Description
 
 .. _api_Event_Event:
 
-**Event::Event** (:ref:`int<api_int>`  *type*)
+**Event::Event** (:ref:`uint32_t<api_uint32_t>`  *type*)
 
 Constructs an Event with *type* of event.
 
 ----
 
-.. _api_Event_~Event:
-
-**Event::~Event** ()
-
-Destroys the instance of Event. The destructor is virtual.
-
-----
-
 .. _api_Event_type:
 
-:ref:`int<api_int>`  **Event::type** () const
+:ref:`uint32_t<api_uint32_t>`  **Event::type** () const
 
 Returns type of event.
 

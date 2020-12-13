@@ -8,8 +8,6 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-AnimationClip resource contains keyframe based animation data.
-
 An AnimationClip resource contains keyframe based animation data. The animation data split to a number of tracks that must be connected with the properties of Components. Each track can contain multiple curves or channels like X, Y and Z Which allows them to animate elements independently.
 
 
@@ -21,6 +19,8 @@ Public Methods
 +---------------------+------------------------------------------------------+
 | :ref:`int<api_int>` | :ref:`duration<api_AnimationClip_duration>` () const |
 +---------------------+------------------------------------------------------+
+
+
 
 .. _api_AnimationClip_static:
 Static Methods

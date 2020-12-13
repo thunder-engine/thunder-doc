@@ -8,105 +8,81 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
-The Camera represents the player's point of view; how the player sees the world.
-
 
 
 .. _api_Camera_public:
 Public Methods
 --------------
 
-+---------------------------------+-----------------------------------------------------------------------------------+
-|                                 | :ref:`Camera<api_Camera_Camera>` ()                                               |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|                                 | :ref:`~Camera<api_Camera_~Camera>` ()                                             |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|             :ref:`Ray<api_Ray>` | :ref:`castRay<api_Camera_castRay>` (float  x, float  y)                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|     :ref:`Vector4<api_Vector4>` | :ref:`color<api_Camera_color>` () const                                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`farPlane<api_Camera_farPlane>` () const                                     |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`focal<api_Camera_focal>` () const                                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`fov<api_Camera_fov>` () const                                               |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`matrices<api_Camera_matrices>` (Matrix4 & view, Matrix4 & projection) const |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`nearPlane<api_Camera_nearPlane>` () const                                   |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`orthoSize<api_Camera_orthoSize>` () const                                   |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`bool<api_bool>` | :ref:`orthographic<api_Camera_orthographic>` () const                             |
-+---------------------------------+-----------------------------------------------------------------------------------+
-| :ref:`Pipeline<api_Pipeline>` * | :ref:`pipeline<api_Camera_pipeline>` ()                                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|     :ref:`Matrix4<api_Matrix4>` | :ref:`projectionMatrix<api_Camera_projectionMatrix>` () const                     |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|         :ref:`float<api_float>` | :ref:`ratio<api_Camera_ratio>` () const                                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setColor<api_Camera_setColor>` (const Vector4 & color)                      |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setFar<api_Camera_setFar>` (const float  value)                             |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setFocal<api_Camera_setFocal>` (const float  focal)                         |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setFov<api_Camera_setFov>` (const float  value)                             |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setNear<api_Camera_setNear>` (const float  value)                           |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setOrthoSize<api_Camera_setOrthoSize>` (const float  size)                  |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setOrthographic<api_Camera_setOrthographic>` (const bool  mode)             |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setPipeline<api_Camera_setPipeline>` (Pipeline * pipeline)                  |
-+---------------------------------+-----------------------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setRatio<api_Camera_setRatio>` (float  ratio)                               |
-+---------------------------------+-----------------------------------------------------------------------------------+
++---------------------------------+-----------------------------------------------------------------------+
+|             :ref:`Ray<api_Ray>` | :ref:`castRay<api_Camera_castRay>` (float  x, float  y)               |
++---------------------------------+-----------------------------------------------------------------------+
+|     :ref:`Vector4<api_Vector4>` | :ref:`color<api_Camera_color>` () const                               |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`farPlane<api_Camera_farPlane>` () const                         |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`focal<api_Camera_focal>` () const                               |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`fov<api_Camera_fov>` () const                                   |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`nearPlane<api_Camera_nearPlane>` () const                       |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`orthoSize<api_Camera_orthoSize>` () const                       |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`bool<api_bool>` | :ref:`orthographic<api_Camera_orthographic>` () const                 |
++---------------------------------+-----------------------------------------------------------------------+
+| :ref:`Pipeline<api_Pipeline>` * | :ref:`pipeline<api_Camera_pipeline>` ()                               |
++---------------------------------+-----------------------------------------------------------------------+
+|     :ref:`Matrix4<api_Matrix4>` | :ref:`projectionMatrix<api_Camera_projectionMatrix>` () const         |
++---------------------------------+-----------------------------------------------------------------------+
+|         :ref:`float<api_float>` | :ref:`ratio<api_Camera_ratio>` () const                               |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setColor<api_Camera_setColor>` (const Vector4 & color)          |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setFar<api_Camera_setFar>` (const float  distance)              |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setFocal<api_Camera_setFocal>` (const float  focal)             |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setFov<api_Camera_setFov>` (const float  angle)                 |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setNear<api_Camera_setNear>` (const float  distance)            |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setOrthoSize<api_Camera_setOrthoSize>` (const float  size)      |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setOrthographic<api_Camera_setOrthographic>` (const bool  mode) |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setPipeline<api_Camera_setPipeline>` (Pipeline * pipeline)      |
++---------------------------------+-----------------------------------------------------------------------+
+|           :ref:`void<api_void>` | :ref:`setRatio<api_Camera_setRatio>` (float  ratio)                   |
++---------------------------------+-----------------------------------------------------------------------+
+|     :ref:`Matrix4<api_Matrix4>` | :ref:`viewMatrix<api_Camera_viewMatrix>` () const                     |
++---------------------------------+-----------------------------------------------------------------------+
+
+
 
 .. _api_Camera_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                             |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               :ref:`int<api_int>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & )                                                                                |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                               :ref:`int<api_int>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (boo  bool, floa  float, const Quaternion & )                                                    |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                 :ref:`Object::ObjectList<api_Object::ObjectList>` | :ref:`frustumCulling<api_Camera_frustumCulling>` (Object::ObjectList & list, const int & frustum)                                                 |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Camera_methods>` ()                                                                                                             |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`bool<api_bool>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace, const Matrix4 & modelView, const Matrix4 & projection, Vector3 & screenSpace)     |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Camera_properties>` ()                                                                                                       |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`void<api_void>` | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                       |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`bool<api_bool>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace, const Matrix4 & modelView, const Matrix4 & projection, Vector3 & worldSpace) |
-+-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                       :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                                                                |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & camera)                                                                                                             |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`Object::ObjectList<api_Object::ObjectList>` | :ref:`frustumCulling<api_Camera_frustumCulling>` (Object::ObjectList & list, const  array<Vector3, 8> & frustum = 8)                                                                 |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                       :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                               |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                             :ref:`void<api_void>` | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                                                          |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                       :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                          |
++---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Camera_methods:
 Methods Description
 -------------------
-
-.. _api_Camera_Camera:
-
-**Camera::Camera** ()
-
-Default constructs an instance of Camera.
-
-----
-
-.. _api_Camera_~Camera:
-
-**Camera::~Camera** ()
-
-Destroys the instance of Camera. The destructor is virtual.
-
-----
 
 .. _api_Camera_castRay:
 
@@ -166,39 +142,25 @@ Returns field of view angle for the camera in degrees.
 
 .. _api_Camera_frustumCorners:
 
-:ref:`int<api_int>`  **Camera::frustumCorners** (:ref:`Camera<api_Camera>` & **)
+:ref:`array<Vector3, 8><api_array<Vector3, 8>>`  **Camera::frustumCorners** (:ref:`Camera<api_Camera>` & *camera*)
 
-Returns **frustum **corners **for **the **camera.
+Returns frustum corners for the *camera*.
 
 ----
 
 .. _api_Camera_frustumCorners:
 
-:ref:`int<api_int>`  **Camera::frustumCorners** (:ref:`boo<api_boo>`  *bool*, :ref:`floa<api_floa>`  *float*, :ref:`Quaternion<api_Quaternion>` & **)
+:ref:`array<Vector3, 8><api_array<Vector3, 8>>`  **Camera::frustumCorners** (:ref:`bool<api_bool>`  *ortho*, :ref:`float<api_float>`  *sigma*, :ref:`float<api_float>`  *ratio*, :ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`float<api_float>`  *nearPlane*, :ref:`float<api_float>`  *farPlane*)
 
-Returns **frustum **corners **with **provided **parameters.
+Returns frustum corners with provided parameters.
 
 ----
 
 .. _api_Camera_frustumCulling:
 
-:ref:`Object::ObjectList<api_Object::ObjectList>`  **Camera::frustumCulling** (:ref:`Object::ObjectList<api_Object::ObjectList>` & *list*, :ref:`int<api_int>` & *frustum*)
+:ref:`Object::ObjectList<api_Object::ObjectList>`  **Camera::frustumCulling** (:ref:`Object::ObjectList<api_Object::ObjectList>` & *list*, :ref:`const<api_const>`  *array<Vector3*, :ref:`8><api_8>>` & *frustum* = 8)
 
 Filters out an incoming *list* which are not in the *frustum*. Returns filtered *list*.
-
-----
-
-.. _api_Camera_matrices:
-
-:ref:`void<api_void>`  **Camera::matrices** (:ref:`Matrix4<api_Matrix4>` & *view*, :ref:`Matrix4<api_Matrix4>` & *projection*) const
-
-Returns *view* and *projection* matrices using output parameters.
-
-----
-
-.. _api_Camera_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Camera::methods** ()
 
 ----
 
@@ -242,9 +204,9 @@ Returns render pipline which attached to the camera.
 
 .. _api_Camera_project:
 
-:ref:`bool<api_bool>`  **Camera::project** (:ref:`Vector3<api_Vector3>` & *worldSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*, :ref:`Vector3<api_Vector3>` & *screenSpace*)
+:ref:`Vector3<api_Vector3>`  **Camera::project** (:ref:`Vector3<api_Vector3>` & *worldSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*)
 
-Transforms position from *worldSpace* into *screenSpace* using *modelView* and *projection* matrices. Returns true if success; otherwise returns false.
+Transforms position from *worldSpace* into screen space using *modelView* and *projection* matrices. Returns result of transformation.
 
 ----
 
@@ -253,12 +215,6 @@ Transforms position from *worldSpace* into *screenSpace* using *modelView* and *
 :ref:`Matrix4<api_Matrix4>`  **Camera::projectionMatrix** () const
 
 Returns projection matrix for the camera.
-
-----
-
-.. _api_Camera_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Camera::properties** ()
 
 ----
 
@@ -294,9 +250,9 @@ Sets *current* active camera.
 
 .. _api_Camera_setFar:
 
-:ref:`void<api_void>`  **Camera::setFar** (:ref:`float<api_float>`  *value*)
+:ref:`void<api_void>`  **Camera::setFar** (:ref:`float<api_float>`  *distance*)
 
-Sets a distance to far cut plane.
+Sets a *distance* to far cut plane.
 
 ----
 
@@ -312,9 +268,9 @@ Sets a *focal* distance for the camera.
 
 .. _api_Camera_setFov:
 
-:ref:`void<api_void>`  **Camera::setFov** (:ref:`float<api_float>`  *value*)
+:ref:`void<api_void>`  **Camera::setFov** (:ref:`float<api_float>`  *angle*)
 
-Sets field of view angle for the camera in degrees.
+Sets field of view *angle* for the camera in degrees.
 
 **Note:** Applicable only for the perspective mode.
 
@@ -324,7 +280,9 @@ Sets field of view angle for the camera in degrees.
 
 .. _api_Camera_setNear:
 
-:ref:`void<api_void>`  **Camera::setNear** (:ref:`float<api_float>`  *value*)
+:ref:`void<api_void>`  **Camera::setNear** (:ref:`float<api_float>`  *distance*)
+
+Sets a *distance* to near cut plane.
 
 ----
 
@@ -370,9 +328,17 @@ Sets the aspect *ratio* (width divided by height).
 
 .. _api_Camera_unproject:
 
-:ref:`bool<api_bool>`  **Camera::unproject** (:ref:`Vector3<api_Vector3>` & *screenSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*, :ref:`Vector3<api_Vector3>` & *worldSpace*)
+:ref:`Vector3<api_Vector3>`  **Camera::unproject** (:ref:`Vector3<api_Vector3>` & *screenSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*)
 
-Transforms position from *worldSpace* into *screenSpace* using *modelView* and *projection* matrices. Returns true if success; otherwise returns false.
+Transforms position from *screenSpace* into world space using *modelView* and *projection* matrices. Returns result of transformation.
+
+----
+
+.. _api_Camera_viewMatrix:
+
+:ref:`Matrix4<api_Matrix4>`  **Camera::viewMatrix** () const
+
+Returns view matrix for the camera.
 
 ----
 

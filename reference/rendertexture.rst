@@ -8,18 +8,12 @@ Inherited: :ref:`Texture<api_Texture>`
 Description
 -----------
 
-Render textures are textures that can be rendered to.
-
 
 
 .. _api_RenderTexture_public:
 Public Methods
 --------------
 
-+-----------------------+-----------------------------------------------------------------------------+
-|                       | :ref:`RenderTexture<api_RenderTexture_RenderTexture>` ()                    |
-+-----------------------+-----------------------------------------------------------------------------+
-|                       | :ref:`~RenderTexture<api_RenderTexture_~RenderTexture>` ()                  |
 +-----------------------+-----------------------------------------------------------------------------+
 |   :ref:`int<api_int>` | :ref:`depth<api_RenderTexture_depth>` () const                              |
 +-----------------------+-----------------------------------------------------------------------------+
@@ -32,6 +26,8 @@ Public Methods
 | :ref:`void<api_void>` | :ref:`setTarget<api_RenderTexture_setTarget>` (Texture::FormatType  format) |
 +-----------------------+-----------------------------------------------------------------------------+
 
+
+
 .. _api_RenderTexture_static:
 Static Methods
 --------------
@@ -41,22 +37,6 @@ None
 .. _api_RenderTexture_methods:
 Methods Description
 -------------------
-
-.. _api_RenderTexture_RenderTexture:
-
-**RenderTexture::RenderTexture** ()
-
-Default constructs an instance of RenderTexture.
-
-----
-
-.. _api_RenderTexture_~RenderTexture:
-
-**RenderTexture::~RenderTexture** ()
-
-Destroys the instance of RenderTexture. The destructor is virtual.
-
-----
 
 .. _api_RenderTexture_depth:
 
@@ -98,7 +78,7 @@ Sets the *fixed* flag for the render texture. If true the resize() method will n
 
 :ref:`void<api_void>`  **RenderTexture::setTarget** (:ref:`Texture::FormatType<api_Texture::FormatType>`  *format*)
 
-Sets *format* type of texture and sets resource state to ResourceState::ToBeUpdated. For more details please see the Texture::FormatType enum.
+Sets the new *format* type for the texture and sets resource state to ResourceState::ToBeUpdated. For more details please see the Texture::FormatType enum.
 
 ----
 

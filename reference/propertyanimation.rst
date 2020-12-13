@@ -8,8 +8,6 @@ Inherited: :ref:`BlenderAnimation<api_BlenderAnimation>`
 Description
 -----------
 
-The PropertyAnimation class animates one particular Object property.
-
 PropertyAnimation interpolates animated property between key-frames.
 
 
@@ -18,10 +16,6 @@ PropertyAnimation interpolates animated property between key-frames.
 Public Methods
 --------------
 
-+-----------------------------------------+--------------------------------------------------------------------------------------------+
-|                                         | :ref:`PropertyAnimation<api_PropertyAnimation_PropertyAnimation>` ()                       |
-+-----------------------------------------+--------------------------------------------------------------------------------------------+
-|                                         | :ref:`~PropertyAnimation<api_PropertyAnimation_~PropertyAnimation>` ()                     |
 +-----------------------------------------+--------------------------------------------------------------------------------------------+
 |                   :ref:`void<api_void>` | :ref:`setCurrentValue<api_PropertyAnimation_setCurrentValue>` (const Variant & value)      |
 +-----------------------------------------+--------------------------------------------------------------------------------------------+
@@ -34,6 +28,8 @@ Public Methods
 |     :ref:`const char<api_const char>` * | :ref:`targetProperty<api_PropertyAnimation_targetProperty>` () const                       |
 +-----------------------------------------+--------------------------------------------------------------------------------------------+
 
+
+
 .. _api_PropertyAnimation_static:
 Static Methods
 --------------
@@ -44,27 +40,11 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_PropertyAnimation:
-
-**PropertyAnimation::PropertyAnimation** ()
-
-Default constructs an instance of PropertyAnimation.
-
-----
-
-.. _api_PropertyAnimation_~PropertyAnimation:
-
-**PropertyAnimation::~PropertyAnimation** ()
-
-Destroys the instance of PropertyAnimation. The destructor is virtual.
-
-----
-
 .. _api_PropertyAnimation_setCurrentValue:
 
 :ref:`void<api_void>`  **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
-Reimplemented from BlenderAnimation::setCurrentValue().
+Reimplements: BlenderAnimation::setCurrentValue(const Variant &value).
 
 This is an overloaded function.
 
@@ -86,7 +66,7 @@ Sets the new animated *property* of the *object*.
 
 :ref:`void<api_void>`  **PropertyAnimation::setValid** (:ref:`bool<api_bool>`  *valid*)
 
-Reimplemented from Animation::setValid().
+Reimplements: Animation::setValid(bool *valid*).
 
 This is an overloaded function.
 

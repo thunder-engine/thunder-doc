@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Vector4 class represents a vector or vertex in 4D space.
-
 Vectors are one of the main building blocks of 4D representation and drawing. They consist of three coordinates, traditionally called x, y, z and w.
 
 The Vector4 class can also be used to represent vertices in 4D space. We therefore do not need to provide a separate vertex class.
@@ -23,15 +21,15 @@ Public Methods
 --------------
 
 +-------------------------------+------------------------------------------------------------------------------+
-|                               | :ref:`Vector4<api_Vector4_Vector4>` ()                                       |
-+-------------------------------+------------------------------------------------------------------------------+
-|                               | :ref:`Vector4<api_Vector4_Vector4>` (areal  v)                               |
-+-------------------------------+------------------------------------------------------------------------------+
-|                               | :ref:`Vector4<api_Vector4_Vector4>` (areal  x, areal  y, areal  z, areal  w) |
+|                               | :ref:`Vector4<api_Vector4_Vector4>` (const Vector3 & v, areal  w)            |
 +-------------------------------+------------------------------------------------------------------------------+
 |                               | :ref:`Vector4<api_Vector4_Vector4>` (const Vector2 & v, areal  z, areal  w)  |
 +-------------------------------+------------------------------------------------------------------------------+
-|                               | :ref:`Vector4<api_Vector4_Vector4>` (const Vector3 & v, areal  w)            |
+|                               | :ref:`Vector4<api_Vector4_Vector4>` (areal  x, areal  y, areal  z, areal  w) |
++-------------------------------+------------------------------------------------------------------------------+
+|                               | :ref:`Vector4<api_Vector4_Vector4>` (areal  v)                               |
++-------------------------------+------------------------------------------------------------------------------+
+|                               | :ref:`Vector4<api_Vector4_Vector4>` ()                                       |
 +-------------------------------+------------------------------------------------------------------------------+
 |       :ref:`areal<api_areal>` | :ref:`dot<api_Vector4_dot>` (const Vector4 & vector) const                   |
 +-------------------------------+------------------------------------------------------------------------------+
@@ -74,6 +72,8 @@ Public Methods
 |       :ref:`areal<api_areal>` | :ref:`operator[]<api_Vector4_operator[]>` (int  i) const                     |
 +-------------------------------+------------------------------------------------------------------------------+
 
+
+
 .. _api_Vector4_static:
 Static Methods
 --------------
@@ -86,25 +86,11 @@ Methods Description
 
 .. _api_Vector4_Vector4:
 
-**Vector4::Vector4** ()
+**Vector4::Vector4** (:ref:`Vector3<api_Vector3>` & *v*, :ref:`areal<api_areal>`  *w*)
 
-Constructs a null vector, i.e. with coordinates (0, 0, 0, 1).
+Constructs a 4D *v*ector from the specified 3D *v*. The *w* coordinate is set to *w*.
 
-----
-
-.. _api_Vector4_Vector4:
-
-**Vector4::Vector4** (:ref:`areal<api_areal>`  *v*)
-
-Constructs a *v*ector with coordinates (v).
-
-----
-
-.. _api_Vector4_Vector4:
-
-**Vector4::Vector4** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*, :ref:`areal<api_areal>`  *w*)
-
-Constructs a vector *w*ith coordinates (x, *y*, *z*, *w*).
+**See also** Vector3::Vector3().
 
 ----
 
@@ -120,11 +106,25 @@ Constructs a 4D *v*ector from the specified 2D *v*. The *z* and *w* coordinates 
 
 .. _api_Vector4_Vector4:
 
-**Vector4::Vector4** (:ref:`Vector3<api_Vector3>` & *v*, :ref:`areal<api_areal>`  *w*)
+**Vector4::Vector4** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*, :ref:`areal<api_areal>`  *w*)
 
-Constructs a 4D *v*ector from the specified 3D *v*. The *w* coordinate is set to *w*.
+Constructs a vector *w*ith coordinates (x, *y*, *z*, *w*).
 
-**See also** Vector3::Vector3().
+----
+
+.. _api_Vector4_Vector4:
+
+**Vector4::Vector4** (:ref:`areal<api_areal>`  *v*)
+
+Constructs a *v*ector with coordinates (v).
+
+----
+
+.. _api_Vector4_Vector4:
+
+**Vector4::Vector4** ()
+
+Constructs a null vector, i.e. with coordinates (0, 0, 0, 1).
 
 ----
 

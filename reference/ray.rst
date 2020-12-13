@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Ray class represents a ray in 3D space.
-
 Ray is an infinity line starting from position pos and going to some direction
 
 
@@ -20,6 +18,8 @@ Public Methods
 
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |                       | :ref:`Ray<api_Ray_Ray>` (const Vector3 & position, const Vector3 & direction)                                                      |
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
+|                       | :ref:`Ray<api_Ray_Ray>` ()                                                                                                         |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |   :ref:`Ray<api_Ray>` | :ref:`diffuse<api_Ray_diffuse>` (const Vector3 & normal, const Vector3 & point, areal  min, areal  max)                            |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -35,6 +35,12 @@ Public Methods
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |   :ref:`Ray<api_Ray>` | :ref:`refract<api_Ray_refract>` (const Vector3 & normal, const Vector3 & point, areal  ior)                                        |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`bool<api_bool>` | :ref:`operator!=<api_Ray_operator!=>` (const Ray & ray) const                                                                      |
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`bool<api_bool>` | :ref:`operator==<api_Ray_operator==>` (const Ray & ray) const                                                                      |
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
+
+
 
 .. _api_Ray_static:
 Static Methods
@@ -54,11 +60,19 @@ Constructs a ray with *position* and *direction*.
 
 ----
 
+.. _api_Ray_Ray:
+
+**Ray::Ray** ()
+
+Constructs an identity ray. pos at [0, 0, 0] and dir to [0, 0, 1]
+
+----
+
 .. _api_Ray_diffuse:
 
 :ref:`Ray<api_Ray>`  **Ray::diffuse** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*, :ref:`areal<api_areal>`  *min*, :ref:`areal<api_areal>`  *max*)
 
-Returns a new Ray object wich result of random directed reflection of current ray. Diffuse reflection calculating by *normal* vector of reflection surface and intersection *point*. With *min* and *max* constraints.
+Returns a new Ray object which result of random directed reflection of current ray. Diffuse reflection calculating by *normal* vector of reflection surface and intersection *point*. With *min* and *max* constraints.
 
 ----
 
@@ -98,7 +112,7 @@ Returns true if this ray intersects the given triangle between *v1*, *v2* and *v
 
 :ref:`Ray<api_Ray>`  **Ray::reflect** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*)
 
-Returns a new Ray object wich result of reflection of current ray. Reflection calculating by *normal* vector of reflection surface and intersection *point*.
+Returns a new Ray object which result of reflection of current ray. Reflection calculating by *normal* vector of reflection surface and intersection *point*.
 
 ----
 
@@ -106,7 +120,23 @@ Returns a new Ray object wich result of reflection of current ray. Reflection ca
 
 :ref:`Ray<api_Ray>`  **Ray::refract** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*, :ref:`areal<api_areal>`  *ior*)
 
-Returns a new Ray object wich result of refraction of current ray. Refraction calculating by *normal* vector of reflection surface and intersection *point* with *ior* (Index of Refraction).
+Returns a new Ray object which result of refraction of current ray. Refraction calculating by *normal* vector of reflection surface and intersection *point* with *ior* (Index of Refraction).
+
+----
+
+.. _api_Ray_operator!=:
+
+:ref:`bool<api_bool>`  **Ray::operator!=** (:ref:`Ray<api_Ray>` & *ray*) const
+
+Returns true if this *ray* is NOT equal to given *ray*; otherwise returns false. This operator uses an exact floating-point comparison.
+
+----
+
+.. _api_Ray_operator==:
+
+:ref:`bool<api_bool>`  **Ray::operator==** (:ref:`Ray<api_Ray>` & *ray*) const
+
+Returns true if this *ray* is equal to given *ray*; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 

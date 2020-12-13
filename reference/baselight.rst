@@ -8,8 +8,6 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
-Base class for every light source.
-
 Note: This class must be a superclass only and shouldn't be created manually.
 
 
@@ -18,57 +16,35 @@ Note: This class must be a superclass only and shouldn't be created manually.
 Public Methods
 --------------
 
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|                             | :ref:`BaseLight<api_BaseLight_BaseLight>` ()                                                                                    |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|                             | :ref:`~BaseLight<api_BaseLight_~BaseLight>` ()                                                                                  |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|     :ref:`float<api_float>` | :ref:`bias<api_BaseLight_bias>` () const                                                                                        |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|     :ref:`float<api_float>` | :ref:`brightness<api_BaseLight_brightness>` () const                                                                            |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`bool<api_bool>` | :ref:`castShadows<api_BaseLight_castShadows>` () const                                                                          |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_color>` () const                                                                                      |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`void<api_void>` | :ref:`setBias<api_BaseLight_setBias>` (const float  bias)                                                                       |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`void<api_void>` | :ref:`setBrightness<api_BaseLight_setBrightness>` (const float  brightness)                                                     |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`void<api_void>` | :ref:`setCastShadows<api_BaseLight_setCastShadows>` (const bool  shadows)                                                       |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`void<api_void>` | :ref:`setColor<api_BaseLight_setColor>` (const Vector4 & color)                                                                 |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`void<api_void>` | :ref:`shadowsUpdate<api_BaseLight_shadowsUpdate>` (const Camera & camera, Pipeline * pipeline, Object::ObjectList & components) |
-+-----------------------------+---------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------+-----------------------------------------------------------------------------+
+|     :ref:`float<api_float>` | :ref:`bias<api_BaseLight_bias>` () const                                    |
++-----------------------------+-----------------------------------------------------------------------------+
+|     :ref:`float<api_float>` | :ref:`brightness<api_BaseLight_brightness>` () const                        |
++-----------------------------+-----------------------------------------------------------------------------+
+|       :ref:`bool<api_bool>` | :ref:`castShadows<api_BaseLight_castShadows>` () const                      |
++-----------------------------+-----------------------------------------------------------------------------+
+| :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_color>` () const                                  |
++-----------------------------+-----------------------------------------------------------------------------+
+|       :ref:`void<api_void>` | :ref:`setBias<api_BaseLight_setBias>` (const float  bias)                   |
++-----------------------------+-----------------------------------------------------------------------------+
+|       :ref:`void<api_void>` | :ref:`setBrightness<api_BaseLight_setBrightness>` (const float  brightness) |
++-----------------------------+-----------------------------------------------------------------------------+
+|       :ref:`void<api_void>` | :ref:`setCastShadows<api_BaseLight_setCastShadows>` (const bool  shadows)   |
++-----------------------------+-----------------------------------------------------------------------------+
+|       :ref:`void<api_void>` | :ref:`setColor<api_BaseLight_setColor>` (const Vector4 & color)             |
++-----------------------------+-----------------------------------------------------------------------------+
+
+
 
 .. _api_BaseLight_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_BaseLight_properties>` () |
-+-------------------------------------------------------------------+------------------------------------------------+
+None
 
 .. _api_BaseLight_methods:
 Methods Description
 -------------------
-
-.. _api_BaseLight_BaseLight:
-
-**BaseLight::BaseLight** ()
-
-Default constructs an instance of BaseLight.
-
-----
-
-.. _api_BaseLight_~BaseLight:
-
-**BaseLight::~BaseLight** ()
-
-Destroys the instance of BaseLight. The destructor is virtual.
-
-----
 
 .. _api_BaseLight_bias:
 
@@ -110,12 +86,6 @@ Returns a color of emitting light.
 
 ----
 
-.. _api_BaseLight_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **BaseLight::properties** ()
-
-----
-
 .. _api_BaseLight_setBias:
 
 :ref:`void<api_void>`  **BaseLight::setBias** (:ref:`float<api_float>`  *bias*)
@@ -153,14 +123,6 @@ Enables or disables cast *shadows* ability for the light source.
 Changes a *color* of emitting light.
 
 **See also** *color*().
-
-----
-
-.. _api_BaseLight_shadowsUpdate:
-
-:ref:`void<api_void>`  **BaseLight::shadowsUpdate** (:ref:`Camera<api_Camera>` & *camera*, :ref:`Pipeline<api_Pipeline>` * *pipeline*, :ref:`Object::ObjectList<api_Object::ObjectList>` & *components*)
-
-Updates the shadowmaps for the particular lightsource.
 
 ----
 

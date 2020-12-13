@@ -8,27 +8,23 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Text file resource.
-
 
 
 .. _api_Text_public:
 Public Methods
 --------------
 
-+-------------------------+----------------------------------------------+
-|                         | :ref:`Text<api_Text_Text>` ()                |
-+-------------------------+----------------------------------------------+
-|                         | :ref:`~Text<api_Text_~Text>` ()              |
-+-------------------------+----------------------------------------------+
-| :ref:`char<api_char>` * | :ref:`data<api_Text_data>` () const          |
-+-------------------------+----------------------------------------------+
-|   :ref:`void<api_void>` | :ref:`setSize<api_Text_setSize>` (int  size) |
-+-------------------------+----------------------------------------------+
-|     :ref:`int<api_int>` | :ref:`size<api_Text_size>` () const          |
-+-------------------------+----------------------------------------------+
-|     :ref:`int<api_int>` | :ref:`text<api_Text_text>` ()                |
-+-------------------------+----------------------------------------------+
++-------------------------------------+---------------------------------------------------+
+|       :ref:`uint8_t<api_uint8_t>` * | :ref:`data<api_Text_data>` () const               |
++-------------------------------------+---------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setSize<api_Text_setSize>` (uint32_t  size) |
++-------------------------------------+---------------------------------------------------+
+|       :ref:`uint32_t<api_uint32_t>` | :ref:`size<api_Text_size>` () const               |
++-------------------------------------+---------------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`text<api_Text_text>` ()                     |
++-------------------------------------+---------------------------------------------------+
+
+
 
 .. _api_Text_static:
 Static Methods
@@ -40,25 +36,9 @@ None
 Methods Description
 -------------------
 
-.. _api_Text_Text:
-
-**Text::Text** ()
-
-Default constructs an instance of Text.
-
-----
-
-.. _api_Text_~Text:
-
-**Text::~Text** ()
-
-Destroys the instance of Text. The destructor is virtual.
-
-----
-
 .. _api_Text_data:
 
-:ref:`char<api_char>` * **Text::data** () const
+:ref:`uint8_t<api_uint8_t>` * **Text::data** () const
 
 Returns text content as a raw byte array.
 
@@ -66,7 +46,7 @@ Returns text content as a raw byte array.
 
 .. _api_Text_setSize:
 
-:ref:`void<api_void>`  **Text::setSize** (:ref:`int<api_int>`  *size*)
+:ref:`void<api_void>`  **Text::setSize** (:ref:`uint32_t<api_uint32_t>`  *size*)
 
 Sets the new *size* of the text resource.
 
@@ -76,7 +56,7 @@ Sets the new *size* of the text resource.
 
 .. _api_Text_size:
 
-:ref:`int<api_int>`  **Text::size** () const
+:ref:`uint32_t<api_uint32_t>`  **Text::size** () const
 
 Returns size of the text resource.
 
@@ -86,7 +66,7 @@ Returns size of the text resource.
 
 .. _api_Text_text:
 
-:ref:`int<api_int>`  **Text::text** ()
+:ref:`std::string<api_std::string>`  **Text::text** ()
 
 Returns text content as a tring.
 

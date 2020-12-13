@@ -9,6 +9,7 @@ Engine Module
    
    actor
    animationcontroller
+   arealight
    baselight
    camera
    component
@@ -21,6 +22,7 @@ Engine Module
    particlerender
    pointlight
    renderable
+   skinnedmeshrender
    spotlight
    spriterender
    textrender

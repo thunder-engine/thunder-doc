@@ -9,8 +9,15 @@ Resource Module
    
    animationclip
    font
+   lod
+   material
+   mesh
+   particleeffect
+   pose
+   prefab
    rendertexture
    resource
+   sprite
    text
    texture
    translator

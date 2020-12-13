@@ -5,12 +5,12 @@ World Editor Overview
 
 The World Editor tool is a main game development tool of Thunder Engine.
 
-It can be found at the bin directory of your instalation path of Thunder Engine.
+It can be found at the bin directory of your installation path of Thunder Engine.
 ::
 
     sdk/%version%/%platform%/x86_64/bin/WorldEditor
 
-Where %version% is a version of the Thunder Engine for example 2019.4, %platform% can be windows, linux or macos accordingly your operating system.
+Where %version% is a version of the Thunder Engine for example 2020.4, %platform% can be windows, linux or macos accordingly your operating system.
 
 .. _doc_explore_ui:
 
