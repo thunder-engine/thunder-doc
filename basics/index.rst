@@ -17,6 +17,5 @@ Or create editor modules to help develop them.
    install
    source
    explore
-   project
-   .. builder
+   builder
    features
