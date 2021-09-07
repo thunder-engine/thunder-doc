@@ -8,9 +8,23 @@ Inherited: None
 Description
 -----------
 
+Binary JSON format parser.
+
 This class implements Binary JSON parser with Variant based DOM structure input/output. It allows to serialize and deserialize object structures represented in Variant DOM structure.
 
 Example:
+
+::
+
+    VariantMap dictionary;
+    dictionary["bool"]    = true;
+    dictionary["str"]     = "string";
+    dictionary["int"]     = 1;
+    dictionary["float"]   = 2.0f;
+    
+    ByteArray data  = Bson::save(dictionary); // Serializing dictionary to binary format
+    ....
+    VariantMap result   = Bson::load(data).toMap(); // Resotoring it back
 
 
 

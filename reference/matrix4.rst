@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Matrix4 class represents a 4x4 transform matrix in 3D space.
+
 Internally the data is stored as column-major format, so as to be optimal for passing to OpenGL functions, which expect column-major data.
 
 
@@ -17,11 +19,11 @@ Public Methods
 --------------
 
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
+|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Matrix3 & matrix)                                                       |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
+|                               | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |       :ref:`areal<api_areal>` | :ref:`determinant<api_Matrix4_determinant>` () const                                                               |
 +-------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -85,7 +87,7 @@ Static Methods
 --------------
 
 +-----------------------------+-------------------------------------------------------------------------------------------------------------------+
-| :ref:`Matrix4<api_Matrix4>` | :ref:`lookAt<api_Matrix4_lookAt>` (Vector3 & eye, Vector3 & target, Vector3 & up)                                 |
+| :ref:`Matrix4<api_Matrix4>` | :ref:`lookAt<api_Matrix4_lookAt>` (const Vector3 & eye, const Vector3 & target, const Vector3 & up)               |
 +-----------------------------+-------------------------------------------------------------------------------------------------------------------+
 | :ref:`Matrix4<api_Matrix4>` | :ref:`ortho<api_Matrix4_ortho>` (areal  left, areal  right, areal  bottom, areal  top, areal  znear, areal  zfar) |
 +-----------------------------+-------------------------------------------------------------------------------------------------------------------+
@@ -98,9 +100,9 @@ Methods Description
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
+**Matrix4::Matrix4** ()
 
-Constructs matrix by given *position*, *rotation* and *scale*.
+Constructs an identity matrix.
 
 ----
 
@@ -114,9 +116,9 @@ Constructs a transform *matrix* with rotation *matrix*.
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** ()
+**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
 
-Constructs an identity matrix.
+Constructs matrix by given *position*, *rotation* and *scale*.
 
 ----
 

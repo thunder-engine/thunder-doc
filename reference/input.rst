@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The interface to inpust system of Thunder Engine.
+
 Use this class to get information from the inpute devices, like mouse, keyboard, joystick and etc.
 
 Note: All input data updates once per frame during Engine::update() method.
@@ -22,49 +24,77 @@ Public Methods
 
 None
 
+.. _api_Input_enums:
+Public Enums
+--------------
+
+.. _api_Input_JoystickButton:
+**enum Input::JoystickButton**
+
+.. _api_Input_KeyCode:
+**enum Input::KeyCode**
+
+.. _api_Input_MouseButton:
+**enum Input::MouseButton**
+
+.. _api_Input_TouchState:
+**enum Input::TouchState**
+
 
 
 .. _api_Input_static:
 Static Methods
 --------------
 
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isKey<api_Input_isKey>` (Input::KeyCode  code)                               |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isKeyDown<api_Input_isKeyDown>` (Input::KeyCode  code)                       |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isKeyUp<api_Input_isKeyUp>` (Input::KeyCode  code)                           |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isMouseButton<api_Input_isMouseButton>` (Input::MouseButton  button)         |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isMouseButtonDown<api_Input_isMouseButtonDown>` (Input::MouseButton  button) |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`isMouseButtonUp<api_Input_isMouseButtonUp>` (Input::MouseButton  button)     |
-+-------------------------------+------------------------------------------------------------------------------------+
-| :ref:`uint32_t<api_uint32_t>` | :ref:`joystickButtons<api_Input_joystickButtons>` (uint32_t  index)                |
-+-------------------------------+------------------------------------------------------------------------------------+
-| :ref:`uint32_t<api_uint32_t>` | :ref:`joystickCount<api_Input_joystickCount>` ()                                   |
-+-------------------------------+------------------------------------------------------------------------------------+
-|   :ref:`Vector4<api_Vector4>` | :ref:`joystickThumbs<api_Input_joystickThumbs>` (uint32_t  index)                  |
-+-------------------------------+------------------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`joystickTriggers<api_Input_joystickTriggers>` (uint32_t  index)              |
-+-------------------------------+------------------------------------------------------------------------------------+
-|   :ref:`Vector4<api_Vector4>` | :ref:`mouseDelta<api_Input_mouseDelta>` ()                                         |
-+-------------------------------+------------------------------------------------------------------------------------+
-|   :ref:`Vector4<api_Vector4>` | :ref:`mousePosition<api_Input_mousePosition>` ()                                   |
-+-------------------------------+------------------------------------------------------------------------------------+
-|         :ref:`void<api_void>` | :ref:`setMousePosition<api_Input_setMousePosition>` (int32_t  x, int32_t  y)       |
-+-------------------------------+------------------------------------------------------------------------------------+
-| :ref:`uint32_t<api_uint32_t>` | :ref:`touchCount<api_Input_touchCount>` ()                                         |
-+-------------------------------+------------------------------------------------------------------------------------+
-|   :ref:`Vector4<api_Vector4>` | :ref:`touchPosition<api_Input_touchPosition>` (uint32_t  index)                    |
-+-------------------------------+------------------------------------------------------------------------------------+
-| :ref:`uint32_t<api_uint32_t>` | :ref:`touchState<api_Input_touchState>` (uint32_t  index)                          |
-+-------------------------------+------------------------------------------------------------------------------------+
++-------------------------------------+------------------------------------------------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`inputString<api_Input_inputString>` ()                                       |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isKey<api_Input_isKey>` (Input::KeyCode  code)                               |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isKeyDown<api_Input_isKeyDown>` (Input::KeyCode  code)                       |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isKeyUp<api_Input_isKeyUp>` (Input::KeyCode  code)                           |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isMouseButton<api_Input_isMouseButton>` (Input::MouseButton  button)         |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isMouseButtonDown<api_Input_isMouseButtonDown>` (Input::MouseButton  button) |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isMouseButtonUp<api_Input_isMouseButtonUp>` (Input::MouseButton  button)     |
++-------------------------------------+------------------------------------------------------------------------------------+
+|       :ref:`uint32_t<api_uint32_t>` | :ref:`joystickButtons<api_Input_joystickButtons>` (uint32_t  index)                |
++-------------------------------------+------------------------------------------------------------------------------------+
+|       :ref:`uint32_t<api_uint32_t>` | :ref:`joystickCount<api_Input_joystickCount>` ()                                   |
++-------------------------------------+------------------------------------------------------------------------------------+
+|         :ref:`Vector4<api_Vector4>` | :ref:`joystickThumbs<api_Input_joystickThumbs>` (uint32_t  index)                  |
++-------------------------------------+------------------------------------------------------------------------------------+
+|         :ref:`Vector2<api_Vector2>` | :ref:`joystickTriggers<api_Input_joystickTriggers>` (uint32_t  index)              |
++-------------------------------------+------------------------------------------------------------------------------------+
+|         :ref:`Vector4<api_Vector4>` | :ref:`mouseDelta<api_Input_mouseDelta>` ()                                         |
++-------------------------------------+------------------------------------------------------------------------------------+
+|         :ref:`Vector4<api_Vector4>` | :ref:`mousePosition<api_Input_mousePosition>` ()                                   |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setKeyboardVisible<api_Input_setKeyboardVisible>` (bool  visible)            |
++-------------------------------------+------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setMousePosition<api_Input_setMousePosition>` (int32_t  x, int32_t  y)       |
++-------------------------------------+------------------------------------------------------------------------------------+
+|       :ref:`uint32_t<api_uint32_t>` | :ref:`touchCount<api_Input_touchCount>` ()                                         |
++-------------------------------------+------------------------------------------------------------------------------------+
+|         :ref:`Vector4<api_Vector4>` | :ref:`touchPosition<api_Input_touchPosition>` (uint32_t  index)                    |
++-------------------------------------+------------------------------------------------------------------------------------+
+|       :ref:`uint32_t<api_uint32_t>` | :ref:`touchState<api_Input_touchState>` (uint32_t  index)                          |
++-------------------------------------+------------------------------------------------------------------------------------+
 
 .. _api_Input_methods:
 Methods Description
 -------------------
+
+.. _api_Input_inputString:
+
+:ref:`std::string<api_std::string>`  **Input::inputString** ()
+
+Returns characters entered since the last frame.
+
+----
 
 .. _api_Input_isKey:
 
@@ -181,6 +211,16 @@ Returns the mouse position delta. The absolute position will be stored in x and 
 Returns the mouse position. The absolute position will be stored in x and y components. The normalized position will be stored in z and w components.
 
 **See also** setMousePosition().
+
+----
+
+.. _api_Input_setKeyboardVisible:
+
+:ref:`void<api_void>`  **Input::setKeyboardVisible** (:ref:`bool<api_bool>`  *visible*)
+
+Shows and hide a virtual keyboard.
+
+**Note:** Does nothing for the desktop platforms.
 
 ----
 

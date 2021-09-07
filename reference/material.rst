@@ -8,12 +8,18 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
+A Material is a resource which can be applied to a Mesh to control the visual look of the scene.
+
 
 
 .. _api_Material_public:
 Public Methods
 --------------
 
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+|                                                 | :ref:`Material<api_Material_Material>` ()                                                              |
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+|                                                 | :ref:`~Material<api_Material_~Material>` ()                                                            |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                             :ref:`int<api_int>` | :ref:`blendMode<api_Material_blendMode>` () const                                                      |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -22,6 +28,8 @@ Public Methods
 | :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`createInstance<api_Material_createInstance>` (Material::SurfaceType  type = SurfaceType::Static) |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                           :ref:`bool<api_bool>` | :ref:`depthTest<api_Material_depthTest>` () const                                                      |
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+|                           :ref:`bool<api_bool>` | :ref:`depthWrite<api_Material_depthWrite>` () const                                                    |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                           :ref:`bool<api_bool>` | :ref:`doubleSided<api_Material_doubleSided>` () const                                                  |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -33,6 +41,8 @@ Public Methods
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`setDepthTest<api_Material_setDepthTest>` (bool  test)                                            |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+|                           :ref:`void<api_void>` | :ref:`setDepthWrite<api_Material_setDepthWrite>` (bool  write)                                         |
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`setDoubleSided<api_Material_setDoubleSided>` (bool  flag)                                        |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`setLightModel<api_Material_setLightModel>` (int  model)                                          |
@@ -42,17 +52,61 @@ Public Methods
 |                           :ref:`void<api_void>` | :ref:`setTexture<api_Material_setTexture>` (const std::string & name, Texture * texture)               |
 +-------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 
+.. _api_Material_enums:
+Public Enums
+--------------
+
+.. _api_Material_BlendType:
+**enum Material::BlendType**
+
+.. _api_Material_LightModelType:
+**enum Material::LightModelType**
+
+.. _api_Material_MaterialType:
+**enum Material::MaterialType**
+
+.. _api_Material_SurfaceType:
+**enum Material::SurfaceType**
+
+.. _api_Material_TextureMap:
+**enum Material::TextureMap**
+
+.. _api_Material_UniformMap:
+**enum Material::UniformMap**
+
 
 
 .. _api_Material_static:
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+-----------------------------------------------+
+|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_Material_enums>` ()           |
++-------------------------------------------------------------------+-----------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Material_methods>` ()       |
++-------------------------------------------------------------------+-----------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Material_properties>` () |
++-------------------------------------------------------------------+-----------------------------------------------+
 
 .. _api_Material_methods:
 Methods Description
 -------------------
+
+.. _api_Material_Material:
+
+**Material::Material** ()
+
+Default constructs an instance of Material.
+
+----
+
+.. _api_Material_~Material:
+
+**Material::~Material** ()
+
+Destroys the instance of Material. The destructor is virtual.
+
+----
 
 .. _api_Material_blendMode:
 
@@ -90,6 +144,16 @@ Returns true if depth test was enabled; otherwise returns false.
 
 ----
 
+.. _api_Material_depthWrite:
+
+:ref:`bool<api_bool>`  **Material::depthWrite** () const
+
+Returns true if write opertaion to the depth buffer was enabled; otherwise returns false.
+
+**See also** setDepthWrite().
+
+----
+
 .. _api_Material_doubleSided:
 
 :ref:`bool<api_bool>`  **Material::doubleSided** () const
@@ -97,6 +161,12 @@ Returns true if depth test was enabled; otherwise returns false.
 Returns true if mas marked as double-sided; otherwise returns false.
 
 **See also** setDoubleSided().
+
+----
+
+.. _api_Material_enums:
+
+:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **Material::enums** ()
 
 ----
 
@@ -120,6 +190,18 @@ Returns current material type. For more detalse please refer to Material::Materi
 
 ----
 
+.. _api_Material_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Material::methods** ()
+
+----
+
+.. _api_Material_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Material::properties** ()
+
+----
+
 .. _api_Material_setBlendMode:
 
 :ref:`void<api_void>`  **Material::setBlendMode** (:ref:`int<api_int>`  *mode*)
@@ -137,6 +219,16 @@ Sets a new blend *mode* for the material. For more detalse please refer to Mater
 Enables or disables a depth *test* for the material.
 
 **See also** depthTest().
+
+----
+
+.. _api_Material_setDepthWrite:
+
+:ref:`void<api_void>`  **Material::setDepthWrite** (:ref:`bool<api_bool>`  *write*)
+
+Enables or disables a *write* operation to the depth buffer.
+
+**See also** depthWrite().
 
 ----
 

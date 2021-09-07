@@ -8,6 +8,8 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
+Represents 2D sprite.
+
 Sprites usually used in games to display environment and characters in 2D games. This class also supports sprite sheets to contain several images in one container to simplify animation or handle tile maps.
 
 
@@ -16,6 +18,10 @@ Sprites usually used in games to display environment and characters in 2D games.
 Public Methods
 --------------
 
++-------------------------------+--------------------------------------------------------------+
+|                               | :ref:`Sprite<api_Sprite_Sprite>` ()                          |
++-------------------------------+--------------------------------------------------------------+
+|                               | :ref:`~Sprite<api_Sprite_~Sprite>` ()                        |
 +-------------------------------+--------------------------------------------------------------+
 |           :ref:`int<api_int>` | :ref:`addElement<api_Sprite_addElement>` (Texture * texture) |
 +-------------------------------+--------------------------------------------------------------+
@@ -36,11 +42,29 @@ Public Methods
 Static Methods
 --------------
 
-None
++---------------------------------------------------------------+---------------------------------------+
+| :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Sprite_methods>` () |
++---------------------------------------------------------------+---------------------------------------+
 
 .. _api_Sprite_methods:
 Methods Description
 -------------------
+
+.. _api_Sprite_Sprite:
+
+**Sprite::Sprite** ()
+
+Default constructs an instance of Sprite.
+
+----
+
+.. _api_Sprite_~Sprite:
+
+**Sprite::~Sprite** ()
+
+Destroys the instance of Sprite. The destructor is virtual.
+
+----
 
 .. _api_Sprite_addElement:
 
@@ -59,6 +83,12 @@ Adds new sub *texture* as element to current sprite sheet. All elements will be 
 Returns a mesh which represents the sprite with *key*.
 
 **See also** setMesh().
+
+----
+
+.. _api_Sprite_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Sprite::methods** ()
 
 ----
 

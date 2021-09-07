@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Ray class represents a ray in 3D space.
+
 Ray is an infinity line starting from position pos and going to some direction
 
 
@@ -17,9 +19,9 @@ Public Methods
 --------------
 
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
-|                       | :ref:`Ray<api_Ray_Ray>` (const Vector3 & position, const Vector3 & direction)                                                      |
-+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |                       | :ref:`Ray<api_Ray_Ray>` ()                                                                                                         |
++-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
+|                       | :ref:`Ray<api_Ray_Ray>` (const Vector3 & position, const Vector3 & direction)                                                      |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
 |   :ref:`Ray<api_Ray>` | :ref:`diffuse<api_Ray_diffuse>` (const Vector3 & normal, const Vector3 & point, areal  min, areal  max)                            |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -54,17 +56,17 @@ Methods Description
 
 .. _api_Ray_Ray:
 
-**Ray::Ray** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Vector3<api_Vector3>` & *direction*)
+**Ray::Ray** ()
 
-Constructs a ray with *position* and *direction*.
+Constructs an identity ray. pos at [0, 0, 0] and dir to [0, 0, 1]
 
 ----
 
 .. _api_Ray_Ray:
 
-**Ray::Ray** ()
+**Ray::Ray** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Vector3<api_Vector3>` & *direction*)
 
-Constructs an identity ray. pos at [0, 0, 0] and dir to [0, 0, 1]
+Constructs a ray with *position* and *direction*.
 
 ----
 
@@ -88,7 +90,7 @@ Returns true if this ray intersects the given sphere at *position* and *radius*;
 
 :ref:`bool<api_bool>`  **Ray::intersect** (:ref:`Plane<api_Plane>` & *plane*, :ref:`Vector3<api_Vector3>` * *pt*, :ref:`bool<api_bool>`  *back* = false)
 
-Returns true if this ray intersects the given *plane*; otherwise returns false. Output argument *pt* contain a point of intersection. Argument *back* is a flag to use *back*face culling.
+Returns true if this ray intersects the given *plane*; otherwise returns false. Output argument *pt* contain a point of intersection. Argument *back* is a flag to ignore *back*face culling.
 
 ----
 

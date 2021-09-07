@@ -8,6 +8,8 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
+Draws a sprite for the 2D graphics.
+
 The SpriteRender component allows you to display images as sprites to use in both 2D and 3D scenes.
 
 
@@ -17,15 +19,27 @@ Public Methods
 --------------
 
 +-------------------------------------+------------------------------------------------------------------------+
-|         :ref:`Vector4<api_Vector4>` | :ref:`color<api_SpriteRender_color>` () const                          |
+|                                     | :ref:`SpriteRender<api_SpriteRender_SpriteRender>` ()                  |
++-------------------------------------+------------------------------------------------------------------------+
+|                                     | :ref:`~SpriteRender<api_SpriteRender_~SpriteRender>` ()                |
++-------------------------------------+------------------------------------------------------------------------+
+|       :ref:`Vector4<api_Vector4>` & | :ref:`color<api_SpriteRender_color>` () const                          |
++-------------------------------------+------------------------------------------------------------------------+
+|                 :ref:`int<api_int>` | :ref:`drawMode<api_SpriteRender_drawMode>` () const                    |
 +-------------------------------------+------------------------------------------------------------------------+
 | :ref:`std::string<api_std::string>` | :ref:`item<api_SpriteRender_item>` () const                            |
++-------------------------------------+------------------------------------------------------------------------+
+|                 :ref:`int<api_int>` | :ref:`layer<api_SpriteRender_layer>` () const                          |
 +-------------------------------------+------------------------------------------------------------------------+
 |     :ref:`Material<api_Material>` * | :ref:`material<api_SpriteRender_material>` () const                    |
 +-------------------------------------+------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`setColor<api_SpriteRender_setColor>` (const Vector4 & color)     |
 +-------------------------------------+------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setDrawMode<api_SpriteRender_setDrawMode>` (int  mode)           |
++-------------------------------------+------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`setItem<api_SpriteRender_setItem>` (const std::string & item)    |
++-------------------------------------+------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setLayer<api_SpriteRender_setLayer>` (int  layer)                |
 +-------------------------------------+------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`setMaterial<api_SpriteRender_setMaterial>` (Material * material) |
 +-------------------------------------+------------------------------------------------------------------------+
@@ -35,12 +49,27 @@ Public Methods
 +-------------------------------------+------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`setTexture<api_SpriteRender_setTexture>` (Texture * texture)     |
 +-------------------------------------+------------------------------------------------------------------------+
-|         :ref:`Vector2<api_Vector2>` | :ref:`size<api_SpriteRender_size>` () const                            |
+|       :ref:`Vector2<api_Vector2>` & | :ref:`size<api_SpriteRender_size>` () const                            |
 +-------------------------------------+------------------------------------------------------------------------+
 |         :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_SpriteRender_sprite>` () const                        |
 +-------------------------------------+------------------------------------------------------------------------+
 |       :ref:`Texture<api_Texture>` * | :ref:`texture<api_SpriteRender_texture>` () const                      |
 +-------------------------------------+------------------------------------------------------------------------+
+
+.. _api_SpriteRender_enums:
+Public Enums
+--------------
+
+.. _api_SpriteRender_DrawMode:
+**enum SpriteRender::DrawMode**
+
++----------------------+-------+------------------------------------------------------------------------------+
+|             Constant | Value | Description                                                                  |
++----------------------+-------+------------------------------------------------------------------------------+
+| SpriteRender::Sliced | 0     | The SpriteRender will respect 9 patch slicing rules for the size property.   |
++----------------------+-------+------------------------------------------------------------------------------+
+|  SpriteRender::Tiled | 1     | The SpriteRender will duplicate sprites to fill the size property rectangle. |
++----------------------+-------+------------------------------------------------------------------------------+
 
 
 
@@ -48,19 +77,57 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+---------------------------------------------------+
+|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_SpriteRender_enums>` ()           |
++-------------------------------------------------------------------+---------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_SpriteRender_methods>` ()       |
++-------------------------------------------------------------------+---------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_SpriteRender_properties>` () |
++-------------------------------------------------------------------+---------------------------------------------------+
 
 .. _api_SpriteRender_methods:
 Methods Description
 -------------------
 
+.. _api_SpriteRender_SpriteRender:
+
+**SpriteRender::SpriteRender** ()
+
+Default constructs an instance of SpriteRender.
+
+----
+
+.. _api_SpriteRender_~SpriteRender:
+
+**SpriteRender::~SpriteRender** ()
+
+Destroys the instance of SpriteRender. The destructor is virtual.
+
+----
+
 .. _api_SpriteRender_color:
 
-:ref:`Vector4<api_Vector4>`  **SpriteRender::color** () const
+:ref:`Vector4<api_Vector4>` & **SpriteRender::color** () const
 
 Returns the color of the sprite to be drawn.
 
 **See also** setColor().
+
+----
+
+.. _api_SpriteRender_drawMode:
+
+:ref:`int<api_int>`  **SpriteRender::drawMode** () const
+
+Returns a draw mode for the sprite. Please check SpriteRender::DrawMode for more details.
+
+**See also** setDrawMode().
+
+----
+
+.. _api_SpriteRender_enums:
+
+:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **SpriteRender::enums** ()
 
 ----
 
@@ -74,6 +141,16 @@ Returns the current item name of sprite from the sprite sheet.
 
 ----
 
+.. _api_SpriteRender_layer:
+
+:ref:`int<api_int>`  **SpriteRender::layer** () const
+
+Returns the order layer for the sprite.
+
+**See also** setLayer().
+
+----
+
 .. _api_SpriteRender_material:
 
 :ref:`Material<api_Material>` * **SpriteRender::material** () const
@@ -81,6 +158,18 @@ Returns the current item name of sprite from the sprite sheet.
 Returns an instantiated Material assigned to SpriteRender.
 
 **See also** setMaterial().
+
+----
+
+.. _api_SpriteRender_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **SpriteRender::methods** ()
+
+----
+
+.. _api_SpriteRender_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **SpriteRender::properties** ()
 
 ----
 
@@ -94,6 +183,16 @@ Changes the *color* of the sprite to be drawn.
 
 ----
 
+.. _api_SpriteRender_setDrawMode:
+
+:ref:`void<api_void>`  **SpriteRender::setDrawMode** (:ref:`int<api_int>`  *mode*)
+
+Sets a draw *mode* for the sprite. Please check SpriteRender::DrawMode for more details.
+
+**See also** drawMode().
+
+----
+
 .. _api_SpriteRender_setItem:
 
 :ref:`void<api_void>`  **SpriteRender::setItem** (:ref:`std::string<api_std::string>` & *item*)
@@ -101,6 +200,16 @@ Changes the *color* of the sprite to be drawn.
 Sets the current sub *item* name of sprite from the sprite sheet.
 
 **See also** *item*().
+
+----
+
+.. _api_SpriteRender_setLayer:
+
+:ref:`void<api_void>`  **SpriteRender::setLayer** (:ref:`int<api_int>`  *layer*)
+
+Sets the order *layer* for the sprite.
+
+**See also** *layer*().
 
 ----
 
@@ -146,7 +255,7 @@ Replaces current *texture* with a new one.
 
 .. _api_SpriteRender_size:
 
-:ref:`Vector2<api_Vector2>`  **SpriteRender::size** () const
+:ref:`Vector2<api_Vector2>` & **SpriteRender::size** () const
 
 Returns size of sprite.
 

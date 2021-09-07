@@ -8,6 +8,8 @@ Resource Module
    :name: toc-api
    
    animationclip
+   animationstatemachine
+   animationtrack
    font
    lod
    material
@@ -15,7 +17,7 @@ Resource Module
    particleeffect
    pose
    prefab
-   rendertexture
+   rendertarget
    resource
    sprite
    text

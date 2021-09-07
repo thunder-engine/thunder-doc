@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The OBBox class represents a Oriented Bounding Box in 3D space.
+
 An arbitrarily oriented bounded volume in space in the form of a rectangular parallelepiped (Bounding Box). Unlike AABB, OBB rotates with the object and does not change its size. Collision testing with OBB is somewhat more complicated and slower than AABB, but more often it is more preferable. Oriented Bounding Box represented by center of box, size and rotation quaternion.
 
 
@@ -17,11 +19,11 @@ Public Methods
 --------------
 
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
+|                                     | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------+
 |                                     | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size)                              |
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
+|                                     | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`box<api_OBBox_box>` (Vector3 & min, Vector3 & max) const                                            |
 +-------------------------------------+-----------------------------------------------------------------------------------------------------------+
@@ -46,9 +48,9 @@ Methods Description
 
 .. _api_OBBox_OBBox:
 
-**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *size*, :ref:`Quaternion<api_Quaternion>` & *rotation*)
+**OBBox::OBBox** ()
 
-Constructs a bounding box with *center*, *size* and *rotation*.
+Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity rotation.
 
 ----
 
@@ -62,9 +64,9 @@ Constructs a bounding box with *center*, *size* and identity rotation.
 
 .. _api_OBBox_OBBox:
 
-**OBBox::OBBox** ()
+**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *size*, :ref:`Quaternion<api_Quaternion>` & *rotation*)
 
-Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity rotation.
+Constructs a bounding box with *center*, *size* and *rotation*.
 
 ----
 

@@ -8,6 +8,8 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
+Position, rotation and scale of an Actor.
+
 Every Actor in a Scene has a Transform. It's used to store and manipulate the position, rotation and scale of the object. Every Transform can have a parent, which allows you to apply position, rotation and scale hierarchically.
 
 
@@ -16,39 +18,45 @@ Every Actor in a Scene has a Transform. It's used to store and manipulate the po
 Public Methods
 --------------
 
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|     :ref:`Matrix4<api_Matrix4>` & | :ref:`localTransform<api_Transform_localTransform>` ()                                                |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-| :ref:`Transform<api_Transform>` * | :ref:`parentTransform<api_Transform_parentTransform>` () const                                        |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`position<api_Transform_position>` () const                                                      |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-| :ref:`Quaternion<api_Quaternion>` | :ref:`quaternion<api_Transform_quaternion>` () const                                                  |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`rotation<api_Transform_rotation>` () const                                                      |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`scale<api_Transform_scale>` () const                                                            |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setParentTransform<api_Transform_setParentTransform>` (Transform * parent, bool  force = false) |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setPosition<api_Transform_setPosition>` (const Vector3 & position)                              |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setQuaternion<api_Transform_setQuaternion>` (const Quaternion & quaternion)                     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setRotation<api_Transform_setRotation>` (const Vector3 & angles)                                |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` | :ref:`setScale<api_Transform_setScale>` (const Vector3 & scale)                                       |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`worldEuler<api_Transform_worldEuler>` () const                                                  |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`worldPosition<api_Transform_worldPosition>` () const                                            |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-| :ref:`Quaternion<api_Quaternion>` | :ref:`worldRotation<api_Transform_worldRotation>` () const                                            |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|       :ref:`Vector3<api_Vector3>` | :ref:`worldScale<api_Transform_worldScale>` () const                                                  |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
-|     :ref:`Matrix4<api_Matrix4>` & | :ref:`worldTransform<api_Transform_worldTransform>` ()                                                |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------+
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|                                     | :ref:`Transform<api_Transform_Transform>` ()                                                             |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|                                     | :ref:`~Transform<api_Transform_~Transform>` ()                                                           |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Matrix4<api_Matrix4>` & | :ref:`localTransform<api_Transform_localTransform>` () const                                             |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|   :ref:`Transform<api_Transform>` * | :ref:`parentTransform<api_Transform_parentTransform>` () const                                           |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`position<api_Transform_position>` () const                                                         |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+| :ref:`Quaternion<api_Quaternion>` & | :ref:`quaternion<api_Transform_quaternion>` () const                                                     |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`rotation<api_Transform_rotation>` () const                                                         |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`scale<api_Transform_scale>` () const                                                               |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setParent<api_Transform_setParent>` (Object * parent, int32_t  position = -1, bool  force = false) |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setParentTransform<api_Transform_setParentTransform>` (Transform * parent, bool  force = false)    |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setPosition<api_Transform_setPosition>` (const Vector3 & position)                                 |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setQuaternion<api_Transform_setQuaternion>` (const Quaternion & quaternion)                        |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setRotation<api_Transform_setRotation>` (const Vector3 & angles)                                   |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|               :ref:`void<api_void>` | :ref:`setScale<api_Transform_setScale>` (const Vector3 & scale)                                          |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`worldPosition<api_Transform_worldPosition>` () const                                               |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+| :ref:`Quaternion<api_Quaternion>` & | :ref:`worldQuaternion<api_Transform_worldQuaternion>` () const                                           |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`worldRotation<api_Transform_worldRotation>` () const                                               |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Vector3<api_Vector3>` & | :ref:`worldScale<api_Transform_worldScale>` () const                                                     |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
+|       :ref:`Matrix4<api_Matrix4>` & | :ref:`worldTransform<api_Transform_worldTransform>` () const                                             |
++-------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 
 
@@ -56,17 +64,43 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Transform_methods>` ()       |
++-------------------------------------------------------------------+------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Transform_properties>` () |
++-------------------------------------------------------------------+------------------------------------------------+
 
 .. _api_Transform_methods:
 Methods Description
 -------------------
 
+.. _api_Transform_Transform:
+
+**Transform::Transform** ()
+
+Default constructs an instance of Transform.
+
+----
+
+.. _api_Transform_~Transform:
+
+**Transform::~Transform** ()
+
+Destroys the instance of Transform. The destructor is virtual.
+
+----
+
 .. _api_Transform_localTransform:
 
-:ref:`Matrix4<api_Matrix4>` & **Transform::localTransform** ()
+:ref:`Matrix4<api_Matrix4>` & **Transform::localTransform** () const
 
 Returns current transform matrix in local space.
+
+----
+
+.. _api_Transform_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Transform::methods** ()
 
 ----
 
@@ -82,7 +116,7 @@ Returns parent of the transform.
 
 .. _api_Transform_position:
 
-:ref:`Vector3<api_Vector3>`  **Transform::position** () const
+:ref:`Vector3<api_Vector3>` & **Transform::position** () const
 
 Returns current position of the Transform in local space.
 
@@ -90,9 +124,15 @@ Returns current position of the Transform in local space.
 
 ----
 
+.. _api_Transform_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Transform::properties** ()
+
+----
+
 .. _api_Transform_quaternion:
 
-:ref:`Quaternion<api_Quaternion>`  **Transform::quaternion** () const
+:ref:`Quaternion<api_Quaternion>` & **Transform::quaternion** () const
 
 Returns current rotation of the Transform in local space as Quaternion.
 
@@ -102,7 +142,7 @@ Returns current rotation of the Transform in local space as Quaternion.
 
 .. _api_Transform_rotation:
 
-:ref:`Vector3<api_Vector3>`  **Transform::rotation** () const
+:ref:`Vector3<api_Vector3>` & **Transform::rotation** () const
 
 Returns current rotation of the Transform in local space as Euler angles in degrees.
 
@@ -112,11 +152,23 @@ Returns current rotation of the Transform in local space as Euler angles in degr
 
 .. _api_Transform_scale:
 
-:ref:`Vector3<api_Vector3>`  **Transform::scale** () const
+:ref:`Vector3<api_Vector3>` & **Transform::scale** () const
 
 Returns current scale of the Transform in local space.
 
 **See also** setScale().
+
+----
+
+.. _api_Transform_setParent:
+
+:ref:`void<api_void>`  **Transform::setParent** (:ref:`Object<api_Object>` * *parent*, :ref:`int32_t<api_int32_t>`  *position* = -1, :ref:`bool<api_bool>`  *force* = false)
+
+Reimplemented from Object::setParent().
+
+Makes the Transform a child of *parent* at given *position*.
+
+**Note:** Please ignore the *force* flag it will be provided by the default.
 
 ----
 
@@ -170,33 +222,33 @@ Changes the *scale* of the Transform in local space.
 
 ----
 
-.. _api_Transform_worldEuler:
-
-:ref:`Vector3<api_Vector3>`  **Transform::worldEuler** () const
-
-Returns current rotation of the transform in world space as Euler angles in degrees.
-
-----
-
 .. _api_Transform_worldPosition:
 
-:ref:`Vector3<api_Vector3>`  **Transform::worldPosition** () const
+:ref:`Vector3<api_Vector3>` & **Transform::worldPosition** () const
 
 Returns current position of the transform in world space.
 
 ----
 
-.. _api_Transform_worldRotation:
+.. _api_Transform_worldQuaternion:
 
-:ref:`Quaternion<api_Quaternion>`  **Transform::worldRotation** () const
+:ref:`Quaternion<api_Quaternion>` & **Transform::worldQuaternion** () const
 
 Returns current rotation of the transform in world space as Quaternion.
 
 ----
 
+.. _api_Transform_worldRotation:
+
+:ref:`Vector3<api_Vector3>` & **Transform::worldRotation** () const
+
+Returns current rotation of the transform in world space as Euler angles in degrees.
+
+----
+
 .. _api_Transform_worldScale:
 
-:ref:`Vector3<api_Vector3>`  **Transform::worldScale** () const
+:ref:`Vector3<api_Vector3>` & **Transform::worldScale** () const
 
 Returns current scale of the transform in world space.
 
@@ -204,7 +256,7 @@ Returns current scale of the transform in world space.
 
 .. _api_Transform_worldTransform:
 
-:ref:`Matrix4<api_Matrix4>` & **Transform::worldTransform** ()
+:ref:`Matrix4<api_Matrix4>` & **Transform::worldTransform** () const
 
 Returns current transform matrix in world space.
 

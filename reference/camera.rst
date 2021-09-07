@@ -8,6 +8,8 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
+The Camera represents the player's point of view; how the player sees the world.
+
 
 
 .. _api_Camera_public:
@@ -15,9 +17,13 @@ Public Methods
 --------------
 
 +---------------------------------+-----------------------------------------------------------------------+
+|                                 | :ref:`Camera<api_Camera_Camera>` ()                                   |
++---------------------------------+-----------------------------------------------------------------------+
+|                                 | :ref:`~Camera<api_Camera_~Camera>` ()                                 |
++---------------------------------+-----------------------------------------------------------------------+
 |             :ref:`Ray<api_Ray>` | :ref:`castRay<api_Camera_castRay>` (float  x, float  y)               |
 +---------------------------------+-----------------------------------------------------------------------+
-|     :ref:`Vector4<api_Vector4>` | :ref:`color<api_Camera_color>` () const                               |
+|   :ref:`Vector4<api_Vector4>` & | :ref:`color<api_Camera_color>` () const                               |
 +---------------------------------+-----------------------------------------------------------------------+
 |         :ref:`float<api_float>` | :ref:`farPlane<api_Camera_farPlane>` () const                         |
 +---------------------------------+-----------------------------------------------------------------------+
@@ -64,25 +70,45 @@ Public Methods
 Static Methods
 --------------
 
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                       :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                                                                |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & camera)                                                                                                             |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`Object::ObjectList<api_Object::ObjectList>` | :ref:`frustumCulling<api_Camera_frustumCulling>` (Object::ObjectList & list, const  array<Vector3, 8> & frustum = 8)                                                                 |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                       :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                               |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                             :ref:`void<api_void>` | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                                                          |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                       :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                          |
-+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                                                                |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & camera)                                                                                                             |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                   :ref:`array<Vector3, 8><api_array<Vector3, 8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                 :ref:`RenderList<api_RenderList>` | :ref:`frustumCulling<api_Camera_frustumCulling>` (RenderList & list, const  array<Vector3, 8> & frustum = 8)                                                                         |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Camera_methods>` ()                                                                                                                                                |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                               |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Camera_properties>` ()                                                                                                                                          |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                             :ref:`void<api_void>` | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                                                          |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                       :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                          |
++-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Camera_methods:
 Methods Description
 -------------------
+
+.. _api_Camera_Camera:
+
+**Camera::Camera** ()
+
+Default constructs an instance of Camera.
+
+----
+
+.. _api_Camera_~Camera:
+
+**Camera::~Camera** ()
+
+Destroys the instance of Camera. The destructor is virtual.
+
+----
 
 .. _api_Camera_castRay:
 
@@ -94,7 +120,7 @@ Returns ray with origin point in camera position and direction to projection pla
 
 .. _api_Camera_color:
 
-:ref:`Vector4<api_Vector4>`  **Camera::color** () const
+:ref:`Vector4<api_Vector4>` & **Camera::color** () const
 
 Returns the color with which the screen will be cleared.
 
@@ -158,9 +184,15 @@ Returns frustum corners with provided parameters.
 
 .. _api_Camera_frustumCulling:
 
-:ref:`Object::ObjectList<api_Object::ObjectList>`  **Camera::frustumCulling** (:ref:`Object::ObjectList<api_Object::ObjectList>` & *list*, :ref:`const<api_const>`  *array<Vector3*, :ref:`8><api_8>>` & *frustum* = 8)
+:ref:`RenderList<api_RenderList>`  **Camera::frustumCulling** (:ref:`RenderList<api_RenderList>` & *list*, :ref:`const<api_const>`  *array<Vector3*, :ref:`8><api_8>>` & *frustum* = 8)
 
 Filters out an incoming *list* which are not in the *frustum*. Returns filtered *list*.
+
+----
+
+.. _api_Camera_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Camera::methods** ()
 
 ----
 
@@ -215,6 +247,12 @@ Transforms position from *worldSpace* into screen space using *modelView* and *p
 :ref:`Matrix4<api_Matrix4>`  **Camera::projectionMatrix** () const
 
 Returns projection matrix for the camera.
+
+----
+
+.. _api_Camera_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Camera::properties** ()
 
 ----
 

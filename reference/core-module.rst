@@ -9,6 +9,7 @@ Core Module
    
    bson
    event
+   json
    metaenum
    metamethod
    metaobject

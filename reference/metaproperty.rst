@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The MetaProperty provides an interface to retrieve information about object property at runtime.
+
 This class is a part of Object-Introspection-Mechanism. MetaProperty provides information about one particular class property. Developers are able to retrieve information about property type, read and write values.
 
 To make properties visible in introspection mechanism, developers must declare those under A_PROPERTIES() macro.
@@ -33,20 +35,31 @@ Public Methods
 +-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 |                                             :ref:`void<api_void>` | :ref:`write<api_MetaProperty_write>` (void * object, const Variant & value) const      |
 +-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+|                                             :ref:`void<api_void>` | :ref:`write<api_MetaProperty_write>` (void * object, const T & value) const            |
++-------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 .. _api_MetaProperty_enums:
 Public Enums
 --------------
+
+.. _api_MetaProperty_AddressMem:
+**enum MetaProperty::AddressMem**
 
 .. _api_MetaProperty_ReadMem:
 **enum MetaProperty::ReadMem**
 
 Callback which contain address to getter method of property.
 
+.. _api_MetaProperty_ReadProperty:
+**enum MetaProperty::ReadProperty**
+
 .. _api_MetaProperty_WriteMem:
 **enum MetaProperty::WriteMem**
 
 Callback which contain address to setter method of property.
+
+.. _api_MetaProperty_WriteProperty:
+**enum MetaProperty::WriteProperty**
 
 
 
@@ -113,6 +126,12 @@ Returns a type of property.
 :ref:`void<api_void>`  **MetaProperty::write** (:ref:`void<api_void>` * *object*, :ref:`Variant<api_Variant>` & *value*) const
 
 Tries to write a *value* as Variant to provided *object*.
+
+----
+
+.. _api_MetaProperty_write:
+
+:ref:`void<api_void>`  **MetaProperty::write** (:ref:`void<api_void>` * *object*, :ref:`T<api_T>` & *value*) const
 
 ----
 

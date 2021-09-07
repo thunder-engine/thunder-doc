@@ -8,6 +8,8 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
+Base class for everything attached to Actor.
+
 The Component class is a base class for each aspect of the actor, and how it interacts with the world.
 
 Note: This class must be a superclass only and shouldn't be created manually.
@@ -19,9 +21,15 @@ Public Methods
 --------------
 
 +-------------------------------------+-------------------------------------------------------------+
+|                                     | :ref:`Component<api_Component_Component>` ()                |
++-------------------------------------+-------------------------------------------------------------+
+|                                     | :ref:`~Component<api_Component_~Component>` ()              |
++-------------------------------------+-------------------------------------------------------------+
 |           :ref:`Actor<api_Actor>` * | :ref:`actor<api_Component_actor>` () const                  |
 +-------------------------------------+-------------------------------------------------------------+
 |               :ref:`bool<api_bool>` | :ref:`isEnabled<api_Component_isEnabled>` () const          |
++-------------------------------------+-------------------------------------------------------------+
+|               :ref:`bool<api_bool>` | :ref:`isRenderable<api_Component_isRenderable>` () const    |
 +-------------------------------------+-------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`setEnabled<api_Component_setEnabled>` (bool  enabled) |
 +-------------------------------------+-------------------------------------------------------------+
@@ -34,11 +42,31 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Component_methods>` ()       |
++-------------------------------------------------------------------+------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Component_properties>` () |
++-------------------------------------------------------------------+------------------------------------------------+
 
 .. _api_Component_methods:
 Methods Description
 -------------------
+
+.. _api_Component_Component:
+
+**Component::Component** ()
+
+Default constructs an instance of Component.
+
+----
+
+.. _api_Component_~Component:
+
+**Component::~Component** ()
+
+Destroys the instance of Component. The destructor is virtual.
+
+----
 
 .. _api_Component_actor:
 
@@ -53,6 +81,26 @@ Returns a pointer to the actor to which the component is attached.
 :ref:`bool<api_bool>`  **Component::isEnabled** () const
 
 Returns true if the component is enabled; otherwise returns false.
+
+----
+
+.. _api_Component_isRenderable:
+
+:ref:`bool<api_bool>`  **Component::isRenderable** () const
+
+Returns true in case of the component can be rendered on the screen; otherwise returns false.
+
+----
+
+.. _api_Component_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Component::methods** ()
+
+----
+
+.. _api_Component_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Component::properties** ()
 
 ----
 

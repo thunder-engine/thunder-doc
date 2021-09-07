@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The Event class is the base calss for all event classes.
+
 Objects processing events by their virtual Object::event() function called. This function can be reimplemented in subclasses to add additional event handling or change existing.
 
 Base Event contain only event type parameter. Subclasses of Event may contain additional parameters to describe particular events.
@@ -20,6 +22,8 @@ Public Methods
 
 +-------------------------------+------------------------------------------------+
 |                               | :ref:`Event<api_Event_Event>` (uint32_t  type) |
++-------------------------------+------------------------------------------------+
+|                               | :ref:`~Event<api_Event_~Event>` ()             |
 +-------------------------------+------------------------------------------------+
 | :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_Event_type>` () const           |
 +-------------------------------+------------------------------------------------+
@@ -66,6 +70,14 @@ Methods Description
 **Event::Event** (:ref:`uint32_t<api_uint32_t>`  *type*)
 
 Constructs an Event with *type* of event.
+
+----
+
+.. _api_Event_~Event:
+
+**Event::~Event** ()
+
+Destroys the instance of Event. The destructor is virtual.
 
 ----
 

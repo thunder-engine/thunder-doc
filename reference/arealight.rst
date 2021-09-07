@@ -8,6 +8,8 @@ Inherited: :ref:`BaseLight<api_BaseLight>`
 Description
 -----------
 
+Point Lights works much like a real-world light bulb, emitting light in all directions.
+
 To determine the emiter position AreaLight uses Transform component of the own Actor.
 
 
@@ -16,6 +18,10 @@ To determine the emiter position AreaLight uses Transform component of the own A
 Public Methods
 --------------
 
++-------------------------+-----------------------------------------------------------------------+
+|                         | :ref:`AreaLight<api_AreaLight_AreaLight>` ()                          |
++-------------------------+-----------------------------------------------------------------------+
+|                         | :ref:`~AreaLight<api_AreaLight_~AreaLight>` ()                        |
 +-------------------------+-----------------------------------------------------------------------+
 | :ref:`float<api_float>` | :ref:`radius<api_AreaLight_radius>` () const                          |
 +-------------------------+-----------------------------------------------------------------------+
@@ -36,11 +42,43 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_AreaLight_methods>` ()       |
++-------------------------------------------------------------------+------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_AreaLight_properties>` () |
++-------------------------------------------------------------------+------------------------------------------------+
 
 .. _api_AreaLight_methods:
 Methods Description
 -------------------
+
+.. _api_AreaLight_AreaLight:
+
+**AreaLight::AreaLight** ()
+
+Default constructs an instance of AreaLight.
+
+----
+
+.. _api_AreaLight_~AreaLight:
+
+**AreaLight::~AreaLight** ()
+
+Destroys the instance of AreaLight. The destructor is virtual.
+
+----
+
+.. _api_AreaLight_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **AreaLight::methods** ()
+
+----
+
+.. _api_AreaLight_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **AreaLight::properties** ()
+
+----
 
 .. _api_AreaLight_radius:
 

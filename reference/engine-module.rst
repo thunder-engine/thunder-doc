@@ -10,6 +10,7 @@ Engine Module
    actor
    animationcontroller
    arealight
+   armature
    baselight
    camera
    component
@@ -19,12 +20,18 @@ Engine Module
    input
    log
    meshrender
+   module
+   nativebehaviour
    particlerender
    pointlight
+   postprocessvolume
+   postprocessor
    renderable
+   scene
    skinnedmeshrender
    spotlight
    spriterender
+   system
    textrender
    timer
    transform

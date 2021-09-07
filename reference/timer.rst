@@ -8,6 +8,8 @@ Inherited: None
 Description
 -----------
 
+The interface to get time information from Thunder Engine.
+
 The Timer class helps to make your game more smooth and accurate. This class is used in all systems which doing any animation Using deltaTime() method developers are able to calculate a logic based on delays for example shots or movements of your character. Time scale value can be used for the slow-motion effects because it applied for all deltaTime() values.
 
 

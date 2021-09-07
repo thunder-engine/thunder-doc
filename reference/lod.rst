@@ -8,12 +8,16 @@ Inherited: None
 Description
 -----------
 
+This class contains all necessary data of Level Of Detail for the Mesh.
+
 
 
 .. _api_Lod_public:
 Public Methods
 --------------
 
++-------------------------------------------+--------------------------------------------------------------------------+
+|                                           | :ref:`Lod<api_Lod_Lod>` ()                                               |
 +-------------------------------------------+--------------------------------------------------------------------------+
 | :ref:`Vector4Vector<api_Vector4Vector>` & | :ref:`bones<api_Lod_bones>` ()                                           |
 +-------------------------------------------+--------------------------------------------------------------------------+
@@ -55,6 +59,8 @@ Public Methods
 +-------------------------------------------+--------------------------------------------------------------------------+
 | :ref:`Vector4Vector<api_Vector4Vector>` & | :ref:`weights<api_Lod_weights>` ()                                       |
 +-------------------------------------------+--------------------------------------------------------------------------+
+|                     :ref:`bool<api_bool>` | :ref:`operator==<api_Lod_operator==>` (const Lod & right) const          |
++-------------------------------------------+--------------------------------------------------------------------------+
 
 
 
@@ -62,11 +68,23 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Lod_methods>` ()       |
++-------------------------------------------------------------------+------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Lod_properties>` () |
++-------------------------------------------------------------------+------------------------------------------+
 
 .. _api_Lod_methods:
 Methods Description
 -------------------
+
+.. _api_Lod_Lod:
+
+**Lod::Lod** ()
+
+Default constructs an instance of Lod.
+
+----
 
 .. _api_Lod_bones:
 
@@ -108,6 +126,12 @@ Returns a material for the particular Lod.
 
 ----
 
+.. _api_Lod_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Lod::methods** ()
+
+----
+
 .. _api_Lod_normals:
 
 :ref:`Vector3Vector<api_Vector3Vector>` & **Lod::normals** ()
@@ -115,6 +139,12 @@ Returns a material for the particular Lod.
 Returns an array of mesh normals for the particular Lod.
 
 **See also** setNormals().
+
+----
+
+.. _api_Lod_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Lod::properties** ()
 
 ----
 
@@ -265,6 +295,12 @@ Returns an array of mesh vertices for the particular Lod.
 Returns an array of bone weights for the particular Lod.
 
 **See also** setWeights().
+
+----
+
+.. _api_Lod_operator==:
+
+:ref:`bool<api_bool>`  **Lod::operator==** (:ref:`Lod<api_Lod>` & *right*) const
 
 ----
 

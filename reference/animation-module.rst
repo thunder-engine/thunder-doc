@@ -8,6 +8,5 @@ Animation Module
    :name: toc-api
    
    animation
-   blenderanimation
    propertyanimation
    variantanimation

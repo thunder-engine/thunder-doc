@@ -8,6 +8,8 @@ Inherited: :ref:`NativeBehaviour<api_NativeBehaviour>`
 Description
 -----------
 
+Manages all animations in the engine.
+
 The animation controller allows to control different animation states from AnimationStateMachine assets. To use any animations in the Thunder Engine the AnimationController must be attached to a root Actor in the hierarchy. The animation controller processes an AnimationStateMachine resource type. The animation controller can use parametric values to decide when transition between states must happen.
 
 
@@ -16,6 +18,10 @@ The animation controller allows to control different animation states from Anima
 Public Methods
 --------------
 
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+|                                                           | :ref:`AnimationController<api_AnimationController_AnimationController>` ()                         |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+|                                                           | :ref:`~AnimationController<api_AnimationController_~AnimationController>` ()                       |
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
 |                 :ref:`AnimationClip<api_AnimationClip>` * | :ref:`clip<api_AnimationController_clip>` () const                                                 |
 +-----------------------------------------------------------+----------------------------------------------------------------------------------------------------+
@@ -54,11 +60,31 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+----------------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_AnimationController_methods>` ()       |
++-------------------------------------------------------------------+----------------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_AnimationController_properties>` () |
++-------------------------------------------------------------------+----------------------------------------------------------+
 
 .. _api_AnimationController_methods:
 Methods Description
 -------------------
+
+.. _api_AnimationController_AnimationController:
+
+**AnimationController::AnimationController** ()
+
+Default constructs an instance of AnimationController.
+
+----
+
+.. _api_AnimationController_~AnimationController:
+
+**AnimationController::~AnimationController** ()
+
+Destroys the instance of AnimationController. The destructor is virtual.
+
+----
 
 .. _api_AnimationController_clip:
 
@@ -91,6 +117,18 @@ Smoothly changes current state using crossfade interpolation from the previous s
 :ref:`int<api_int>`  **AnimationController::duration** () const
 
 Returns duration of the animation clip for the current state.
+
+----
+
+.. _api_AnimationController_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **AnimationController::methods** ()
+
+----
+
+.. _api_AnimationController_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **AnimationController::properties** ()
 
 ----
 

@@ -8,6 +8,8 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
+Draws an animated skeletal mesh for the 3D graphics.
+
 The SkinnedMeshRender component allows you to display 3D Skeletal Mesh to use in both 2D and 3D scenes.
 
 
@@ -16,6 +18,10 @@ The SkinnedMeshRender component allows you to display 3D Skeletal Mesh to use in
 Public Methods
 --------------
 
++---------------------------------+-----------------------------------------------------------------------------+
+|                                 | :ref:`SkinnedMeshRender<api_SkinnedMeshRender_SkinnedMeshRender>` ()        |
++---------------------------------+-----------------------------------------------------------------------------+
+|                                 | :ref:`~SkinnedMeshRender<api_SkinnedMeshRender_~SkinnedMeshRender>` ()      |
 +---------------------------------+-----------------------------------------------------------------------------+
 | :ref:`Armature<api_Armature>` * | :ref:`armature<api_SkinnedMeshRender_armature>` () const                    |
 +---------------------------------+-----------------------------------------------------------------------------+
@@ -36,11 +42,31 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+--------------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_SkinnedMeshRender_methods>` ()       |
++-------------------------------------------------------------------+--------------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_SkinnedMeshRender_properties>` () |
++-------------------------------------------------------------------+--------------------------------------------------------+
 
 .. _api_SkinnedMeshRender_methods:
 Methods Description
 -------------------
+
+.. _api_SkinnedMeshRender_SkinnedMeshRender:
+
+**SkinnedMeshRender::SkinnedMeshRender** ()
+
+Default constructs an instance of SkinnedMeshRender.
+
+----
+
+.. _api_SkinnedMeshRender_~SkinnedMeshRender:
+
+**SkinnedMeshRender::~SkinnedMeshRender** ()
+
+Destroys the instance of SkinnedMeshRender. The destructor is virtual.
+
+----
 
 .. _api_SkinnedMeshRender_armature:
 
@@ -69,6 +95,18 @@ Returns an instantiated Material assigned to SkinnedMeshRender.
 Returns a Mesh assigned to this component.
 
 **See also** setMesh().
+
+----
+
+.. _api_SkinnedMeshRender_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **SkinnedMeshRender::methods** ()
+
+----
+
+.. _api_SkinnedMeshRender_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **SkinnedMeshRender::properties** ()
 
 ----
 

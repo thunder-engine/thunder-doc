@@ -8,6 +8,8 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
+Draws a mesh for the 3D graphics.
+
 The MeshRender component allows you to display 3D Mesh to use in both 2D and 3D scenes.
 
 
@@ -16,6 +18,10 @@ The MeshRender component allows you to display 3D Mesh to use in both 2D and 3D 
 Public Methods
 --------------
 
++---------------------------------+----------------------------------------------------------------------+
+|                                 | :ref:`MeshRender<api_MeshRender_MeshRender>` ()                      |
++---------------------------------+----------------------------------------------------------------------+
+|                                 | :ref:`~MeshRender<api_MeshRender_~MeshRender>` ()                    |
 +---------------------------------+----------------------------------------------------------------------+
 | :ref:`Material<api_Material>` * | :ref:`material<api_MeshRender_material>` () const                    |
 +---------------------------------+----------------------------------------------------------------------+
@@ -32,11 +38,31 @@ Public Methods
 Static Methods
 --------------
 
-None
++-------------------------------------------------------------------+-------------------------------------------------+
+|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_MeshRender_methods>` ()       |
++-------------------------------------------------------------------+-------------------------------------------------+
+| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_MeshRender_properties>` () |
++-------------------------------------------------------------------+-------------------------------------------------+
 
 .. _api_MeshRender_methods:
 Methods Description
 -------------------
+
+.. _api_MeshRender_MeshRender:
+
+**MeshRender::MeshRender** ()
+
+Default constructs an instance of MeshRender.
+
+----
+
+.. _api_MeshRender_~MeshRender:
+
+**MeshRender::~MeshRender** ()
+
+Destroys the instance of MeshRender. The destructor is virtual.
+
+----
 
 .. _api_MeshRender_material:
 
@@ -55,6 +81,18 @@ Returns an instantiated Material assigned to MeshRender.
 Returns a Mesh assigned to this component.
 
 **See also** setMesh().
+
+----
+
+.. _api_MeshRender_methods:
+
+:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **MeshRender::methods** ()
+
+----
+
+.. _api_MeshRender_properties:
+
+:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **MeshRender::properties** ()
 
 ----
 
