@@ -8,8 +8,6 @@ Inherited: :ref:`ObjectSystem<api_ObjectSystem>`
 Description
 -----------
 
-The Engine one of the central parts of Thunder Engine.
-
 The Engine class is one of the central parts of the Thunder Engine. This class is created first and removed last in your game. It is responsible for many basic functions, such as game cycle, management of game modules, loading and unloading of game resources, work with game settings.
 
 

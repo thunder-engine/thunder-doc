@@ -8,8 +8,6 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
-The Animation class provides base class interface for animations.
-
 The Animation class contain basic state machine to control animation processing.
 
 
@@ -18,10 +16,6 @@ The Animation class contain basic state machine to control animation processing.
 Public Methods
 --------------
 
-+-----------------------------------------------+-----------------------------------------------------------------------+
-|                                               | :ref:`Animation<api_Animation_Animation>` ()                          |
-+-----------------------------------------------+-----------------------------------------------------------------------+
-|                                               | :ref:`~Animation<api_Animation_~Animation>` ()                        |
 +-----------------------------------------------+-----------------------------------------------------------------------+
 |                 :ref:`uint32_t<api_uint32_t>` | :ref:`currentLoop<api_Animation_currentLoop>` () const                |
 +-----------------------------------------------+-----------------------------------------------------------------------+
@@ -79,31 +73,11 @@ This enum defines the state of animation track.
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Animation_methods>` ()       |
-+-------------------------------------------------------------------+------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Animation_properties>` () |
-+-------------------------------------------------------------------+------------------------------------------------+
+None
 
 .. _api_Animation_methods:
 Methods Description
 -------------------
-
-.. _api_Animation_Animation:
-
-**Animation::Animation** ()
-
-Default constructs an instance of Animation.
-
-----
-
-.. _api_Animation_~Animation:
-
-**Animation::~Animation** ()
-
-Destroys the instance of Animation. The destructor is virtual.
-
-----
 
 .. _api_Animation_currentLoop:
 
@@ -157,12 +131,6 @@ Returns the current time for the current loop (in milliseconds).
 
 ----
 
-.. _api_Animation_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Animation::methods** ()
-
-----
-
 .. _api_Animation_pause:
 
 :ref:`void<api_void>`  **Animation::pause** ()
@@ -170,12 +138,6 @@ Returns the current time for the current loop (in milliseconds).
 Stops the animation.
 
 **Note:** Animation CAN be continued by resume().
-
-----
-
-.. _api_Animation_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Animation::properties** ()
 
 ----
 

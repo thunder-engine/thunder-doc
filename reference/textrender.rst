@@ -8,8 +8,6 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
-Draws a text for the 2D and 3D graphics.
-
 The TextRender component allows you to display a text in both 2D and 3D scenes.
 
 
@@ -18,10 +16,6 @@ The TextRender component allows you to display a text in both 2D and 3D scenes.
 Public Methods
 --------------
 
-+-------------------------------------+----------------------------------------------------------------------+
-|                                     | :ref:`TextRender<api_TextRender_TextRender>` ()                      |
-+-------------------------------------+----------------------------------------------------------------------+
-|                                     | :ref:`~TextRender<api_TextRender_~TextRender>` ()                    |
 +-------------------------------------+----------------------------------------------------------------------+
 |                 :ref:`int<api_int>` | :ref:`align<api_TextRender_align>` () const                          |
 +-------------------------------------+----------------------------------------------------------------------+
@@ -66,31 +60,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_TextRender_methods>` ()       |
-+-------------------------------------------------------------------+-------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_TextRender_properties>` () |
-+-------------------------------------------------------------------+-------------------------------------------------+
+None
 
 .. _api_TextRender_methods:
 Methods Description
 -------------------
-
-.. _api_TextRender_TextRender:
-
-**TextRender::TextRender** ()
-
-Default constructs an instance of TextRender.
-
-----
-
-.. _api_TextRender_~TextRender:
-
-**TextRender::~TextRender** ()
-
-Destroys the instance of TextRender. The destructor is virtual.
-
-----
 
 .. _api_TextRender_align:
 
@@ -149,18 +123,6 @@ Returns true if glyph kerning enabled; otherwise returns false.
 Returns an instantiated Material assigned to TextRender.
 
 **See also** setMaterial().
-
-----
-
-.. _api_TextRender_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **TextRender::methods** ()
-
-----
-
-.. _api_TextRender_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **TextRender::properties** ()
 
 ----
 

@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The AABBox class represents a Axis Aligned Bounding Box in 3D space.
-
 Bounded volume in space in the form of a rectangular parallelepiped, with a period parallel to the coordinate axes in the world system. When the object rotates, the AABB changes its dimensions, but it always remains oriented along the coordinate axes. Axis Aligned Bounding Box represented by center of box and extent.
 
 
@@ -19,9 +17,9 @@ Public Methods
 --------------
 
 +---------------------------------------+---------------------------------------------------------------------------------------------+
-|                                       | :ref:`AABBox<api_AABBox_AABBox>` ()                                                         |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
 |                                       | :ref:`AABBox<api_AABBox_AABBox>` (const Vector3 & center, const Vector3 & extent)           |
++---------------------------------------+---------------------------------------------------------------------------------------------+
+|                                       | :ref:`AABBox<api_AABBox_AABBox>` ()                                                         |
 +---------------------------------------+---------------------------------------------------------------------------------------------+
 |                 :ref:`void<api_void>` | :ref:`box<api_AABBox_box>` (Vector3 & min, Vector3 & max) const                             |
 +---------------------------------------+---------------------------------------------------------------------------------------------+
@@ -64,17 +62,17 @@ Methods Description
 
 .. _api_AABBox_AABBox:
 
-**AABBox::AABBox** ()
+**AABBox::AABBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
 
-Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
+Constructs a bounding box with *center* and *extent*.
 
 ----
 
 .. _api_AABBox_AABBox:
 
-**AABBox::AABBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
+**AABBox::AABBox** ()
 
-Constructs a bounding box with *center* and *extent*.
+Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
 
 ----
 

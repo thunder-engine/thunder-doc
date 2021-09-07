@@ -8,8 +8,6 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
-Base class for every resource in Thunder Engine.
-
 Note: This class must be a superclass only and shouldn't be created manually.
 
 
@@ -18,10 +16,6 @@ Note: This class must be a superclass only and shouldn't be created manually.
 Public Methods
 --------------
 
-+-------------------------------------------------------------+-------------------------------------------------------------------------------+
-|                                                             | :ref:`Resource<api_Resource_Resource>` ()                                     |
-+-------------------------------------------------------------+-------------------------------------------------------------------------------+
-|                                                             | :ref:`~Resource<api_Resource_~Resource>` ()                                   |
 +-------------------------------------------------------------+-------------------------------------------------------------------------------+
 |                                       :ref:`void<api_void>` | :ref:`decRef<api_Resource_decRef>` ()                                         |
 +-------------------------------------------------------------+-------------------------------------------------------------------------------+
@@ -67,31 +61,11 @@ Status for the resource.
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-----------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Resource_methods>` ()       |
-+-------------------------------------------------------------------+-----------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Resource_properties>` () |
-+-------------------------------------------------------------------+-----------------------------------------------+
+None
 
 .. _api_Resource_methods:
 Methods Description
 -------------------
-
-.. _api_Resource_Resource:
-
-**Resource::Resource** ()
-
-Default constructs an instance of Resource.
-
-----
-
-.. _api_Resource_~Resource:
-
-**Resource::~Resource** ()
-
-Destroys the instance of Resource. The destructor is virtual.
-
-----
 
 .. _api_Resource_decRef:
 
@@ -106,18 +80,6 @@ Decreases the reference counter for the resource. In case of the reference count
 :ref:`void<api_void>`  **Resource::incRef** ()
 
 Increases the reference counter for the resource.
-
-----
-
-.. _api_Resource_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Resource::methods** ()
-
-----
-
-.. _api_Resource_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Resource::properties** ()
 
 ----
 

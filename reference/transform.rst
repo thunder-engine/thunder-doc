@@ -8,8 +8,6 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
-Position, rotation and scale of an Actor.
-
 Every Actor in a Scene has a Transform. It's used to store and manipulate the position, rotation and scale of the object. Every Transform can have a parent, which allows you to apply position, rotation and scale hierarchically.
 
 
@@ -18,10 +16,6 @@ Every Actor in a Scene has a Transform. It's used to store and manipulate the po
 Public Methods
 --------------
 
-+-------------------------------------+----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`Transform<api_Transform_Transform>` ()                                                             |
-+-------------------------------------+----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`~Transform<api_Transform_~Transform>` ()                                                           |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------+
 |       :ref:`Matrix4<api_Matrix4>` & | :ref:`localTransform<api_Transform_localTransform>` () const                                             |
 +-------------------------------------+----------------------------------------------------------------------------------------------------------+
@@ -64,43 +58,17 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Transform_methods>` ()       |
-+-------------------------------------------------------------------+------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Transform_properties>` () |
-+-------------------------------------------------------------------+------------------------------------------------+
+None
 
 .. _api_Transform_methods:
 Methods Description
 -------------------
-
-.. _api_Transform_Transform:
-
-**Transform::Transform** ()
-
-Default constructs an instance of Transform.
-
-----
-
-.. _api_Transform_~Transform:
-
-**Transform::~Transform** ()
-
-Destroys the instance of Transform. The destructor is virtual.
-
-----
 
 .. _api_Transform_localTransform:
 
 :ref:`Matrix4<api_Matrix4>` & **Transform::localTransform** () const
 
 Returns current transform matrix in local space.
-
-----
-
-.. _api_Transform_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Transform::methods** ()
 
 ----
 
@@ -121,12 +89,6 @@ Returns parent of the transform.
 Returns current position of the Transform in local space.
 
 **See also** setPosition().
-
-----
-
-.. _api_Transform_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Transform::properties** ()
 
 ----
 
@@ -164,7 +126,7 @@ Returns current scale of the Transform in local space.
 
 :ref:`void<api_void>`  **Transform::setParent** (:ref:`Object<api_Object>` * *parent*, :ref:`int32_t<api_int32_t>`  *position* = -1, :ref:`bool<api_bool>`  *force* = false)
 
-Reimplemented from Object::setParent().
+Reimplements: Object::setParent(Object *parent, int32_t *position*, bool *force*).
 
 Makes the Transform a child of *parent* at given *position*.
 

@@ -1,6 +1,6 @@
 .. _doc_source:
 
-Building from the source
+Building engine from the source
 ==============================
 
 .. _doc_build_source:
@@ -92,14 +92,13 @@ Building for Linux
 --------------------------------------------------
 
 Open Console go to the directory with Thunder Engine source code and run the sequence of commands below.
-Please to pay attention to your Ubuntu version in case you have Ubuntu 16 you need to set "xenial" at the end of the first step and "bionic" if you have Ubuntu 18
 
 ::
 
     $ export QT_INSTALL_DIR=~/Qt
     $ export QT_VERSION=5.12.10
     $ export QT_BIN=${QT_INSTALL_DIR}/${QT_VERSION}/gcc_64/bin
-    $ export PATH=$QT_INSTALL_DIR/Tools/QtCreator/bin:$QT_BIN:$PATH"
+    $ export PATH="$QT_INSTALL_DIR/Tools/QtCreator/bin:$QT_BIN:$PATH"
     $ bash ./build/install-qt.sh -d $QT_INSTALL_DIR --version $QT_VERSION qtbase qtmultimedia qtscript qtsvg qtimageformats qtgraphicaleffects qtquickcontrols2 qttools qtxmlpatterns qtdeclarative icu
     $ wget https://download.qt.io/official_releases/qtcreator/4.9/4.9.2/installer_source/linux_gcc_64_rhel72/qtcreator.7z
     $ 7z x -y -o${QT_INSTALL_DIR}/Tools/QtCreator qtcreator.7z

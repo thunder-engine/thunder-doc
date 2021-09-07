@@ -8,18 +8,12 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Represents offscreen render pass.
-
 
 
 .. _api_RenderTarget_public:
 Public Methods
 --------------
 
-+-------------------------------+-----------------------------------------------------------------------------------------------------+
-|                               | :ref:`RenderTarget<api_RenderTarget_RenderTarget>` ()                                               |
-+-------------------------------+-----------------------------------------------------------------------------------------------------+
-|                               | :ref:`~RenderTarget<api_RenderTarget_~RenderTarget>` ()                                             |
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
 | :ref:`Texture<api_Texture>` * | :ref:`colorAttachment<api_RenderTarget_colorAttachment>` (uint32_t  index) const                    |
 +-------------------------------+-----------------------------------------------------------------------------------------------------+
@@ -38,33 +32,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+---------------------------------------------------+
-|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_RenderTarget_enums>` ()           |
-+-------------------------------------------------------------------+---------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_RenderTarget_methods>` ()       |
-+-------------------------------------------------------------------+---------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_RenderTarget_properties>` () |
-+-------------------------------------------------------------------+---------------------------------------------------+
+None
 
 .. _api_RenderTarget_methods:
 Methods Description
 -------------------
-
-.. _api_RenderTarget_RenderTarget:
-
-**RenderTarget::RenderTarget** ()
-
-Default constructs an instance of RenderTarget.
-
-----
-
-.. _api_RenderTarget_~RenderTarget:
-
-**RenderTarget::~RenderTarget** ()
-
-Destroys the instance of RenderTarget. The destructor is virtual.
-
-----
 
 .. _api_RenderTarget_colorAttachment:
 
@@ -91,24 +63,6 @@ Returns the number of attached color textures.
 Returns an attached depth texture if exist.
 
 **See also** setDepthAttachment().
-
-----
-
-.. _api_RenderTarget_enums:
-
-:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **RenderTarget::enums** ()
-
-----
-
-.. _api_RenderTarget_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **RenderTarget::methods** ()
-
-----
-
-.. _api_RenderTarget_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **RenderTarget::properties** ()
 
 ----
 

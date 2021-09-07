@@ -8,16 +8,12 @@ Inherited: None
 Description
 -----------
 
-A structure that describes an animation track that will affect an object's property.
-
 
 
 .. _api_AnimationTrack_public:
 Public Methods
 --------------
 
-+-------------------------------------+-----------------------------------------------------------------------------------+
-|                                     | :ref:`AnimationTrack<api_AnimationTrack_AnimationTrack>` ()                       |
 +-------------------------------------+-----------------------------------------------------------------------------------+
 |                 :ref:`int<api_int>` | :ref:`duration<api_AnimationTrack_duration>` () const                             |
 +-------------------------------------+-----------------------------------------------------------------------------------+
@@ -34,36 +30,17 @@ Public Methods
 |               :ref:`void<api_void>` | :ref:`setProperty<api_AnimationTrack_setProperty>` (const std::string & property) |
 +-------------------------------------+-----------------------------------------------------------------------------------+
 
-.. _api_AnimationTrack_enums:
-Public Enums
---------------
-
-.. _api_AnimationTrack_CurveMap:
-**enum AnimationTrack::CurveMap**
-
 
 
 .. _api_AnimationTrack_static:
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-----------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_AnimationTrack_methods>` ()       |
-+-------------------------------------------------------------------+-----------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_AnimationTrack_properties>` () |
-+-------------------------------------------------------------------+-----------------------------------------------------+
+None
 
 .. _api_AnimationTrack_methods:
 Methods Description
 -------------------
-
-.. _api_AnimationTrack_AnimationTrack:
-
-**AnimationTrack::AnimationTrack** ()
-
-Default constructs an instance of AnimationTrack.
-
-----
 
 .. _api_AnimationTrack_duration:
 
@@ -83,12 +60,6 @@ Returns a hash of path and name for quick access.
 
 ----
 
-.. _api_AnimationTrack_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **AnimationTrack::methods** ()
-
-----
-
 .. _api_AnimationTrack_path:
 
 :ref:`std::string<api_std::string>`  **AnimationTrack::path** () const
@@ -96,12 +67,6 @@ Returns a hash of path and name for quick access.
 Returns a path to the object in the hierarchy.
 
 **See also** setPath().
-
-----
-
-.. _api_AnimationTrack_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **AnimationTrack::properties** ()
 
 ----
 

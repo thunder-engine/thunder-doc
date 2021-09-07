@@ -8,8 +8,6 @@ Inherited: :ref:`VariantAnimation<api_VariantAnimation>`
 Description
 -----------
 
-The PropertyAnimation class animates one particular Object property.
-
 PropertyAnimation interpolates animated property between key-frames.
 
 ::
@@ -30,10 +28,6 @@ PropertyAnimation interpolates animated property between key-frames.
 Public Methods
 --------------
 
-+-----------------------------------------+--------------------------------------------------------------------------------------------+
-|                                         | :ref:`PropertyAnimation<api_PropertyAnimation_PropertyAnimation>` ()                       |
-+-----------------------------------------+--------------------------------------------------------------------------------------------+
-|                                         | :ref:`~PropertyAnimation<api_PropertyAnimation_~PropertyAnimation>` ()                     |
 +-----------------------------------------+--------------------------------------------------------------------------------------------+
 |             :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_defaultValue>` () const                           |
 +-----------------------------------------+--------------------------------------------------------------------------------------------+
@@ -60,22 +54,6 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_PropertyAnimation:
-
-**PropertyAnimation::PropertyAnimation** ()
-
-Default constructs an instance of PropertyAnimation.
-
-----
-
-.. _api_PropertyAnimation_~PropertyAnimation:
-
-**PropertyAnimation::~PropertyAnimation** ()
-
-Destroys the instance of PropertyAnimation. The destructor is virtual.
-
-----
-
 .. _api_PropertyAnimation_defaultValue:
 
 :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
@@ -88,7 +66,7 @@ Returns the default value of the animated property.
 
 :ref:`void<api_void>`  **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
-Reimplemented from VariantAnimation::setCurrentValue().
+Reimplements: VariantAnimation::setCurrentValue(const Variant &value).
 
 This is an overloaded function.
 
@@ -110,7 +88,7 @@ Sets the new animated *property* of the *object*.
 
 :ref:`void<api_void>`  **PropertyAnimation::setValid** (:ref:`bool<api_bool>`  *valid*)
 
-Reimplemented from Animation::setValid().
+Reimplements: Animation::setValid(bool *valid*).
 
 This is an overloaded function.
 

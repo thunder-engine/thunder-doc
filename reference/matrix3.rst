@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Matrix3 class represents a 3x3 rotation matrix in 3D space.
-
 Internally the data is stored as column-major format, so as to be optimal for passing to OpenGL functions, which expect column-major data.
 
 

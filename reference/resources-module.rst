@@ -1,6 +1,6 @@
-.. _doc_api_resource_module:
+.. _doc_api_resources_module:
 
-Resource Module
+Resources Module
 ==============================
 
 .. toctree::

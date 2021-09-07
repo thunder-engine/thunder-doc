@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Quaternion class represents rotations in 3D space.
-
 Quaternions consist of a 3D rotation axis specified by the x, y, and z coordinates, and a w representing the rotation angle.
 
 
@@ -19,15 +17,15 @@ Public Methods
 --------------
 
 +-------------------------------------+-----------------------------------------------------------------------------------------+
-|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
-+-------------------------------------+-----------------------------------------------------------------------------------------+
-|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (areal  x, areal  y, areal  z, areal  w)   |
-+-------------------------------------+-----------------------------------------------------------------------------------------+
-|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & axis, areal  angle)       |
+|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Matrix3 & matrix)                   |
 +-------------------------------------+-----------------------------------------------------------------------------------------+
 |                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & euler)                    |
 +-------------------------------------+-----------------------------------------------------------------------------------------+
-|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Matrix3 & matrix)                   |
+|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & axis, areal  angle)       |
++-------------------------------------+-----------------------------------------------------------------------------------------+
+|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` (areal  x, areal  y, areal  z, areal  w)   |
++-------------------------------------+-----------------------------------------------------------------------------------------+
+|                                     | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
 +-------------------------------------+-----------------------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`axisAngle<api_Quaternion_axisAngle>` (Vector3 & axis, areal & angle)              |
 +-------------------------------------+-----------------------------------------------------------------------------------------+
@@ -84,25 +82,9 @@ Methods Description
 
 .. _api_Quaternion_Quaternion:
 
-**Quaternion::Quaternion** ()
+**Quaternion::Quaternion** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
-Constructs an identity quaternion.
-
-----
-
-.. _api_Quaternion_Quaternion:
-
-**Quaternion::Quaternion** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*, :ref:`areal<api_areal>`  *w*)
-
-Constructs a quaternion *w*ith values (x, *y*, *z*, *w*).
-
-----
-
-.. _api_Quaternion_Quaternion:
-
-**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *axis*, :ref:`areal<api_areal>`  *angle*)
-
-Constructs a quaternion with rotation *axis* and *angle* in rotation degrees.
+Constructs a quaternion by rotation *matrix* represented by Matrix3 *matrix*.
 
 ----
 
@@ -116,9 +98,25 @@ Constructs a quaternion by Euler angles represented by Vector3(pitch, yaw, roll)
 
 .. _api_Quaternion_Quaternion:
 
-**Quaternion::Quaternion** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *axis*, :ref:`areal<api_areal>`  *angle*)
 
-Constructs a quaternion by rotation *matrix* represented by Matrix3 *matrix*.
+Constructs a quaternion with rotation *axis* and *angle* in rotation degrees.
+
+----
+
+.. _api_Quaternion_Quaternion:
+
+**Quaternion::Quaternion** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*, :ref:`areal<api_areal>`  *z*, :ref:`areal<api_areal>`  *w*)
+
+Constructs a quaternion *w*ith values (x, *y*, *z*, *w*).
+
+----
+
+.. _api_Quaternion_Quaternion:
+
+**Quaternion::Quaternion** ()
+
+Constructs an identity quaternion.
 
 ----
 

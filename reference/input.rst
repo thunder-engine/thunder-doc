@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The interface to inpust system of Thunder Engine.
-
 Use this class to get information from the inpute devices, like mouse, keyboard, joystick and etc.
 
 Note: All input data updates once per frame during Engine::update() method.
@@ -23,22 +21,6 @@ Public Methods
 --------------
 
 None
-
-.. _api_Input_enums:
-Public Enums
---------------
-
-.. _api_Input_JoystickButton:
-**enum Input::JoystickButton**
-
-.. _api_Input_KeyCode:
-**enum Input::KeyCode**
-
-.. _api_Input_MouseButton:
-**enum Input::MouseButton**
-
-.. _api_Input_TouchState:
-**enum Input::TouchState**
 
 
 
@@ -218,7 +200,7 @@ Returns the mouse position. The absolute position will be stored in x and y comp
 
 :ref:`void<api_void>`  **Input::setKeyboardVisible** (:ref:`bool<api_bool>`  *visible*)
 
-Shows and hide a virtual keyboard.
+Sets virtual keyboard *visible*.
 
 **Note:** Does nothing for the desktop platforms.
 

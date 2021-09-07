@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-A base class for all post effects.
-
 All post effects must be inherited from this class.
 
 
@@ -18,10 +16,6 @@ All post effects must be inherited from this class.
 Public Methods
 --------------
 
-+-------------------------------------+------------------------------------------------------------------------------------------+
-|                                     | :ref:`PostProcessor<api_PostProcessor_PostProcessor>` ()                                 |
-+-------------------------------------+------------------------------------------------------------------------------------------+
-|                                     | :ref:`~PostProcessor<api_PostProcessor_~PostProcessor>` ()                               |
 +-------------------------------------+------------------------------------------------------------------------------------------+
 |       :ref:`Texture<api_Texture>` * | :ref:`draw<api_PostProcessor_draw>` (Texture * source, Pipeline * pipeline)              |
 +-------------------------------------+------------------------------------------------------------------------------------------+
@@ -49,22 +43,6 @@ None
 .. _api_PostProcessor_methods:
 Methods Description
 -------------------
-
-.. _api_PostProcessor_PostProcessor:
-
-**PostProcessor::PostProcessor** ()
-
-Default constructs an instance of PostProcessor.
-
-----
-
-.. _api_PostProcessor_~PostProcessor:
-
-**PostProcessor::~PostProcessor** ()
-
-Destroys the instance of PostProcessor. The destructor is virtual.
-
-----
 
 .. _api_PostProcessor_draw:
 

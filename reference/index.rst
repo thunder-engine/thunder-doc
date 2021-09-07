@@ -11,4 +11,4 @@ API Reference
    core-module
    engine-module
    math-module
-   resource-module
+   resources-module

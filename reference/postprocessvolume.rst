@@ -8,8 +8,6 @@ Inherited: :ref:`Component<api_Component>`
 Description
 -----------
 
-A post process settings volume.
-
 Used to affect post process settings in the game and editor.
 
 
@@ -18,10 +16,6 @@ Used to affect post process settings in the game and editor.
 Public Methods
 --------------
 
-+-------------------------+-----------------------------------------------------------------------------+
-|                         | :ref:`PostProcessVolume<api_PostProcessVolume_PostProcessVolume>` ()        |
-+-------------------------+-----------------------------------------------------------------------------+
-|                         | :ref:`~PostProcessVolume<api_PostProcessVolume_~PostProcessVolume>` ()      |
 +-------------------------+-----------------------------------------------------------------------------+
 | :ref:`float<api_float>` | :ref:`blendWeight<api_PostProcessVolume_blendWeight>` () const              |
 +-------------------------+-----------------------------------------------------------------------------+
@@ -42,31 +36,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+--------------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_PostProcessVolume_methods>` ()       |
-+-------------------------------------------------------------------+--------------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_PostProcessVolume_properties>` () |
-+-------------------------------------------------------------------+--------------------------------------------------------+
+None
 
 .. _api_PostProcessVolume_methods:
 Methods Description
 -------------------
-
-.. _api_PostProcessVolume_PostProcessVolume:
-
-**PostProcessVolume::PostProcessVolume** ()
-
-Default constructs an instance of PostProcessVolume.
-
-----
-
-.. _api_PostProcessVolume_~PostProcessVolume:
-
-**PostProcessVolume::~PostProcessVolume** ()
-
-Destroys the instance of PostProcessVolume. The destructor is virtual.
-
-----
 
 .. _api_PostProcessVolume_blendWeight:
 
@@ -78,12 +52,6 @@ Returns the weight of settings for blending process.
 
 ----
 
-.. _api_PostProcessVolume_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **PostProcessVolume::methods** ()
-
-----
-
 .. _api_PostProcessVolume_priority:
 
 :ref:`int<api_int>`  **PostProcessVolume::priority** () const
@@ -91,12 +59,6 @@ Returns the weight of settings for blending process.
 Returns the priority of volume in the list.
 
 **See also** setPriority().
-
-----
-
-.. _api_PostProcessVolume_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **PostProcessVolume::properties** ()
 
 ----
 

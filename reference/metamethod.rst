@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The MetaMethod provides an interface to retrieve information about object method at runtime.
-
 This class is a part of Object-Introspection-Mechanism. MetaMethod provides information about one particular class method. Developers are able to retrieve information about method arguments, return types and etc.
 
 To make methods visible in introspection mechanism, developers must declare those under A_METHODS() macro.

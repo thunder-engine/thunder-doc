@@ -8,8 +8,6 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Texture resource contains all necessary texture data.
-
 This class can be used to handle texture resource or create them at runtime.
 
 
@@ -18,10 +16,6 @@ This class can be used to handle texture resource or create them at runtime.
 Public Methods
 --------------
 
-+-------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                                 | :ref:`Texture<api_Texture_Texture>` ()                                              |
-+-------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                                 | :ref:`~Texture<api_Texture_~Texture>` ()                                            |
 +-------------------------------------------------+-------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`addSurface<api_Texture_addSurface>` (const Texture::Surface & surface)        |
 +-------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -44,8 +38,6 @@ Public Methods
 |                           :ref:`void<api_void>` | :ref:`readPixels<api_Texture_readPixels>` (int  x, int  y, int  width, int  height) |
 +-------------------------------------------------+-------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`resize<api_Texture_resize>` (int  width, int  height)                         |
-+-------------------------------------------------+-------------------------------------------------------------------------------------+
-|               :ref:`VariantMap<api_VariantMap>` | :ref:`saveUserData<api_Texture_saveUserData>` () const                              |
 +-------------------------------------------------+-------------------------------------------------------------------------------------+
 |                           :ref:`void<api_void>` | :ref:`setDepthBits<api_Texture_setDepthBits>` (int  depth)                          |
 +-------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -71,9 +63,6 @@ Public Methods
 .. _api_Texture_enums:
 Public Enums
 --------------
-
-.. _api_Texture_CompressionType:
-**enum Texture::CompressionType**
 
 .. _api_Texture_FilteringType:
 **enum Texture::FilteringType**
@@ -111,12 +100,6 @@ Public Enums
 |          Texture::Depth | 6     | Depth buffer texture format. Number bits per pixel depend on graphical settings and hardware. Can be 16, 24 or 32-bit per pixel.         |
 +-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _api_Texture_Sides:
-**enum Texture::Sides**
-
-.. _api_Texture_Surface:
-**enum Texture::Surface**
-
 .. _api_Texture_WrapType:
 **enum Texture::WrapType**
 
@@ -138,33 +121,11 @@ Wrap mode for textures.
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+----------------------------------------------+
-|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_Texture_enums>` ()           |
-+-------------------------------------------------------------------+----------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Texture_methods>` ()       |
-+-------------------------------------------------------------------+----------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Texture_properties>` () |
-+-------------------------------------------------------------------+----------------------------------------------+
+None
 
 .. _api_Texture_methods:
 Methods Description
 -------------------
-
-.. _api_Texture_Texture:
-
-**Texture::Texture** ()
-
-Default constructs an instance of Texture.
-
-----
-
-.. _api_Texture_~Texture:
-
-**Texture::~Texture** ()
-
-Destroys the instance of Texture. The destructor is virtual.
-
-----
 
 .. _api_Texture_addSurface:
 
@@ -183,12 +144,6 @@ Returns the number of depth bits.
 **Note:** This value is valid only for the depth textures.
 
 **See also** setDepthBits().
-
-----
-
-.. _api_Texture_enums:
-
-:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **Texture::enums** ()
 
 ----
 
@@ -256,18 +211,6 @@ Returns true if the texture is a cube map; otherwise returns false.
 
 ----
 
-.. _api_Texture_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Texture::methods** ()
-
-----
-
-.. _api_Texture_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Texture::properties** ()
-
-----
-
 .. _api_Texture_readPixels:
 
 :ref:`void<api_void>`  **Texture::readPixels** (:ref:`int<api_int>`  *x*, :ref:`int<api_int>`  *y*, :ref:`int<api_int>`  *width*, :ref:`int<api_int>`  *height*)
@@ -281,12 +224,6 @@ Read pixels from GPU at *x* and *y* position with *width* and *height* dimension
 :ref:`void<api_void>`  **Texture::resize** (:ref:`int<api_int>`  *width*, :ref:`int<api_int>`  *height*)
 
 Sets new *width* and *height* for the texture.
-
-----
-
-.. _api_Texture_saveUserData:
-
-:ref:`VariantMap<api_VariantMap>`  **Texture::saveUserData** () const
 
 ----
 

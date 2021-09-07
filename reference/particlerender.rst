@@ -8,8 +8,6 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
-Draws a particle effect on the scene.
-
 The ParticleRender component allows you to display Particle Effects such as fire and explosions.
 
 
@@ -18,10 +16,6 @@ The ParticleRender component allows you to display Particle Effects such as fire
 Public Methods
 --------------
 
-+---------------------------------------------+--------------------------------------------------------------------------+
-|                                             | :ref:`ParticleRender<api_ParticleRender_ParticleRender>` ()              |
-+---------------------------------------------+--------------------------------------------------------------------------+
-|                                             | :ref:`~ParticleRender<api_ParticleRender_~ParticleRender>` ()            |
 +---------------------------------------------+--------------------------------------------------------------------------+
 | :ref:`ParticleEffect<api_ParticleEffect>` * | :ref:`effect<api_ParticleRender_effect>` () const                        |
 +---------------------------------------------+--------------------------------------------------------------------------+
@@ -34,31 +28,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-----------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_ParticleRender_methods>` ()       |
-+-------------------------------------------------------------------+-----------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_ParticleRender_properties>` () |
-+-------------------------------------------------------------------+-----------------------------------------------------+
+None
 
 .. _api_ParticleRender_methods:
 Methods Description
 -------------------
-
-.. _api_ParticleRender_ParticleRender:
-
-**ParticleRender::ParticleRender** ()
-
-Default constructs an instance of ParticleRender.
-
-----
-
-.. _api_ParticleRender_~ParticleRender:
-
-**ParticleRender::~ParticleRender** ()
-
-Destroys the instance of ParticleRender. The destructor is virtual.
-
-----
 
 .. _api_ParticleRender_effect:
 
@@ -67,18 +41,6 @@ Destroys the instance of ParticleRender. The destructor is virtual.
 Returns a ParticleEffect assigned to the this component.
 
 **See also** setEffect().
-
-----
-
-.. _api_ParticleRender_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **ParticleRender::methods** ()
-
-----
-
-.. _api_ParticleRender_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **ParticleRender::properties** ()
 
 ----
 

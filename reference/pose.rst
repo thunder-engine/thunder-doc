@@ -8,18 +8,12 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Representation of pose of an animated character.
-
 
 
 .. _api_Pose_public:
 Public Methods
 --------------
 
-+-------------------------------------+------------------------------------------------+
-|                                     | :ref:`Pose<api_Pose_Pose>` ()                  |
-+-------------------------------------+------------------------------------------------+
-|                                     | :ref:`~Pose<api_Pose_~Pose>` ()                |
 +-------------------------------------+------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`addBone<api_Pose_addBone>` (Bone * bone) |
 +-------------------------------------+------------------------------------------------+
@@ -34,31 +28,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Pose_methods>` ()       |
-+-------------------------------------------------------------------+-------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Pose_properties>` () |
-+-------------------------------------------------------------------+-------------------------------------------+
+None
 
 .. _api_Pose_methods:
 Methods Description
 -------------------
-
-.. _api_Pose_Pose:
-
-**Pose::Pose** ()
-
-Default constructs an instance of Pose.
-
-----
-
-.. _api_Pose_~Pose:
-
-**Pose::~Pose** ()
-
-Destroys the instance of Pose. The destructor is virtual.
-
-----
 
 .. _api_Pose_addBone:
 
@@ -83,18 +57,6 @@ Returns a bone with *index*.
 :ref:`int<api_int>`  **Pose::boneCount** () const
 
 Returns the count of bones for the current pose which was affected.
-
-----
-
-.. _api_Pose_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Pose::methods** ()
-
-----
-
-.. _api_Pose_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Pose::properties** ()
 
 ----
 

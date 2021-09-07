@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Log class provides an output stream for logging information.
-
 The Log is used whenever the developer needs to write out debugging or tracing information to a file or console.
 
 Common usecase:

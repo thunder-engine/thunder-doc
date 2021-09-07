@@ -8,8 +8,6 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Contains all necessary information about the effect.
-
 PartcileEffect alows developer to create or modify a complex particle effects.
 
 
@@ -18,10 +16,6 @@ PartcileEffect alows developer to create or modify a complex particle effects.
 Public Methods
 --------------
 
-+-----------------------------------------------+------------------------------------------------------------------------------+
-|                                               | :ref:`ParticleEffect<api_ParticleEffect_ParticleEffect>` ()                  |
-+-----------------------------------------------+------------------------------------------------------------------------------+
-|                                               | :ref:`~ParticleEffect<api_ParticleEffect_~ParticleEffect>` ()                |
 +-----------------------------------------------+------------------------------------------------------------------------------+
 |                         :ref:`void<api_void>` | :ref:`addEmitter<api_ParticleEffect_addEmitter>` (ParticleEmitter * emitter) |
 +-----------------------------------------------+------------------------------------------------------------------------------+
@@ -38,31 +32,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-----------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_ParticleEffect_methods>` ()       |
-+-------------------------------------------------------------------+-----------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_ParticleEffect_properties>` () |
-+-------------------------------------------------------------------+-----------------------------------------------------+
+None
 
 .. _api_ParticleEffect_methods:
 Methods Description
 -------------------
-
-.. _api_ParticleEffect_ParticleEffect:
-
-**ParticleEffect::ParticleEffect** ()
-
-Default constructs an instance of ParticleEffect.
-
-----
-
-.. _api_ParticleEffect_~ParticleEffect:
-
-**ParticleEffect::~ParticleEffect** ()
-
-Destroys the instance of ParticleEffect. The destructor is virtual.
-
-----
 
 .. _api_ParticleEffect_addEmitter:
 
@@ -93,18 +67,6 @@ Returns an emitter with *index*.
 :ref:`int<api_int>`  **ParticleEffect::emittersCount** () const
 
 Returns a count of the emitters for effect.
-
-----
-
-.. _api_ParticleEffect_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **ParticleEffect::methods** ()
-
-----
-
-.. _api_ParticleEffect_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **ParticleEffect::properties** ()
 
 ----
 

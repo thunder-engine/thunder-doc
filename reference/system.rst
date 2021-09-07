@@ -8,8 +8,6 @@ Inherited: :ref:`ObjectSystem<api_ObjectSystem>`
 Description
 -----------
 
-A base interface for all in-game systems.
-
 Systems are a basic processors for each Component in the game.
 
 Note: All methods will be called internaly in the engine.
@@ -24,8 +22,6 @@ Note: Systems can be executed one by one or in parallel based on thread policy.
 Public Methods
 --------------
 
-+-------------------------------------+------------------------------------------------------------------------------------+
-|                                     | :ref:`System<api_System_System>` ()                                                |
 +-------------------------------------+------------------------------------------------------------------------------------+
 |               :ref:`void<api_void>` | :ref:`composeComponent<api_System_composeComponent>` (Component * component) const |
 +-------------------------------------+------------------------------------------------------------------------------------+
@@ -71,14 +67,6 @@ None
 Methods Description
 -------------------
 
-.. _api_System_System:
-
-**System::System** ()
-
-Default constructs an instance of System.
-
-----
-
 .. _api_System_composeComponent:
 
 :ref:`void<api_void>`  **System::composeComponent** (:ref:`Component<api_Component>` * *component*) const
@@ -91,11 +79,15 @@ This method is a helper to initialize specifically a new *component*. Usually us
 
 :ref:`bool<api_bool>`  **System::init** ()
 
+Can be used to initialize and execute necessary routines. This method will be called automatically just after the engine started. Returns true if success.
+
 ----
 
 .. _api_System_name:
 
 :ref:`const char<api_const char>` * **System::name** () const
+
+Returns the name of system.
 
 ----
 
@@ -103,7 +95,7 @@ This method is a helper to initialize specifically a new *component*. Usually us
 
 :ref:`void<api_void>`  **System::processEvents** ()
 
-Reimplemented from ObjectSystem::processEvents().
+Reimplements: ObjectSystem::processEvents().
 
 Processes all incoming events and executes the System::update method.
 
@@ -129,11 +121,15 @@ This method is a callback to react on saving game settings.
 
 :ref:`int<api_int>`  **System::threadPolicy** () const
 
+Returns the thread policy of the system. For more details please refer to System::ThreadPolicy enum.
+
 ----
 
 .. _api_System_update:
 
 :ref:`void<api_void>`  **System::update** (:ref:`Scene<api_Scene>` * *scene*)
+
+All processing operations for the current *scene* must be done in this method.
 
 ----
 

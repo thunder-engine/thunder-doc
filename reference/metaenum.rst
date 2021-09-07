@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The MetaEnum provides an interface to retrieve information about object enumerator at runtime.
-
 This class is a part of Object-Introspection-Mechanism. MetaEnum provides information about one particular class enumerator.
 
 To make enumerators visible in introspection mechanism, developers must declare those under A_ENUMS() macro.

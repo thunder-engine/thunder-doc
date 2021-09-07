@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The MetaObject provides an interface to retrieve information about Object at runtime.
-
 This class is a part of Object-Introspection-Mechanism. MetaObject provides information about one particular class inherited from base Object class. Developers are able to retrieve information about properties, methods and inheritance chains.
 
 This class is actively used in Signal-Slot mechanism.

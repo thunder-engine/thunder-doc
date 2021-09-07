@@ -8,18 +8,12 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
-The ThreadPool class manages a collection of threads.
-
 
 
 .. _api_ThreadPool_public:
 Public Methods
 --------------
 
-+-------------------------------+-----------------------------------------------------------------------+
-|                               | :ref:`ThreadPool<api_ThreadPool_ThreadPool>` ()                       |
-+-------------------------------+-----------------------------------------------------------------------+
-|                               | :ref:`~ThreadPool<api_ThreadPool_~ThreadPool>` ()                     |
 +-------------------------------+-----------------------------------------------------------------------+
 | :ref:`uint32_t<api_uint32_t>` | :ref:`maxThreads<api_ThreadPool_maxThreads>` () const                 |
 +-------------------------------+-----------------------------------------------------------------------+
@@ -43,22 +37,6 @@ Static Methods
 .. _api_ThreadPool_methods:
 Methods Description
 -------------------
-
-.. _api_ThreadPool_ThreadPool:
-
-**ThreadPool::ThreadPool** ()
-
-Default constructs an instance of ThreadPool.
-
-----
-
-.. _api_ThreadPool_~ThreadPool:
-
-**ThreadPool::~ThreadPool** ()
-
-Destroys the instance of ThreadPool. The destructor is virtual.
-
-----
 
 .. _api_ThreadPool_maxThreads:
 

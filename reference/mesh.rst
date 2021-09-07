@@ -8,18 +8,12 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-A class that allows creating or modifying meshes at the runtime.
-
 
 
 .. _api_Mesh_public:
 Public Methods
 --------------
 
-+---------------------------+-----------------------------------------------------------------------------------+
-|                           | :ref:`Mesh<api_Mesh_Mesh>` ()                                                     |
-+---------------------------+-----------------------------------------------------------------------------------+
-|                           | :ref:`~Mesh<api_Mesh_~Mesh>` ()                                                   |
 +---------------------------+-----------------------------------------------------------------------------------+
 |       :ref:`int<api_int>` | :ref:`addLod<api_Mesh_addLod>` (Lod * lod)                                        |
 +---------------------------+-----------------------------------------------------------------------------------+
@@ -98,33 +92,11 @@ Public Enums
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-------------------------------------------+
-|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_Mesh_enums>` ()           |
-+-------------------------------------------------------------------+-------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Mesh_methods>` ()       |
-+-------------------------------------------------------------------+-------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Mesh_properties>` () |
-+-------------------------------------------------------------------+-------------------------------------------+
+None
 
 .. _api_Mesh_methods:
 Methods Description
 -------------------
-
-.. _api_Mesh_Mesh:
-
-**Mesh::Mesh** ()
-
-Default constructs an instance of Mesh.
-
-----
-
-.. _api_Mesh_~Mesh:
-
-**Mesh::~Mesh** ()
-
-Destroys the instance of Mesh. The destructor is virtual.
-
-----
 
 .. _api_Mesh_addLod:
 
@@ -157,12 +129,6 @@ Returns bounding box for the Mesh.
 :ref:`void<api_void>`  **Mesh::clear** ()
 
 Removes all attached Levels Of Detal
-
-----
-
-.. _api_Mesh_enums:
-
-:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **Mesh::enums** ()
 
 ----
 
@@ -207,18 +173,6 @@ Returns the number of Levels Of Details
 :ref:`void<api_void>`  **Mesh::makeDynamic** ()
 
 Marks mesh as dynamic that means it's can be changed at the runtime.
-
-----
-
-.. _api_Mesh_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Mesh::methods** ()
-
-----
-
-.. _api_Mesh_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Mesh::properties** ()
 
 ----
 

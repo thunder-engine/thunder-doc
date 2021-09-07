@@ -8,18 +8,12 @@ Inherited: :ref:`Resource<api_Resource>`
 Description
 -----------
 
-Text file resource.
-
 
 
 .. _api_Text_public:
 Public Methods
 --------------
 
-+-------------------------------------+---------------------------------------------------+
-|                                     | :ref:`Text<api_Text_Text>` ()                     |
-+-------------------------------------+---------------------------------------------------+
-|                                     | :ref:`~Text<api_Text_~Text>` ()                   |
 +-------------------------------------+---------------------------------------------------+
 |       :ref:`uint8_t<api_uint8_t>` * | :ref:`data<api_Text_data>` () const               |
 +-------------------------------------+---------------------------------------------------+
@@ -36,49 +30,17 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+-------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Text_methods>` ()       |
-+-------------------------------------------------------------------+-------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Text_properties>` () |
-+-------------------------------------------------------------------+-------------------------------------------+
+None
 
 .. _api_Text_methods:
 Methods Description
 -------------------
-
-.. _api_Text_Text:
-
-**Text::Text** ()
-
-Default constructs an instance of Text.
-
-----
-
-.. _api_Text_~Text:
-
-**Text::~Text** ()
-
-Destroys the instance of Text. The destructor is virtual.
-
-----
 
 .. _api_Text_data:
 
 :ref:`uint8_t<api_uint8_t>` * **Text::data** () const
 
 Returns text content as a raw byte array.
-
-----
-
-.. _api_Text_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Text::methods** ()
-
-----
-
-.. _api_Text_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Text::properties** ()
 
 ----
 

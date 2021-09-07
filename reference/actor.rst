@@ -8,8 +8,6 @@ Inherited: :ref:`Object<api_Object>`
 Description
 -----------
 
-Base class for all entities in Thunder Engine.
-
 The Actor probably is the most important class in the Thunder Engine. It represents all objects on the scene like 3D meshes, light sources, effects and many more. You should think about Actor as a key chain for the various Components. You can add and remove any components you like at any time except the Transform component. The Transform component must persist constantly and you shoudn't remove it.
 
 
@@ -18,10 +16,6 @@ The Actor probably is the most important class in the Thunder Engine. It represe
 Public Methods
 --------------
 
-+-----------------------------------+------------------------------------------------------------------------------------------------------+
-|                                   | :ref:`Actor<api_Actor_Actor>` ()                                                                     |
-+-----------------------------------+------------------------------------------------------------------------------------------------------+
-|                                   | :ref:`~Actor<api_Actor_~Actor>` ()                                                                   |
 +-----------------------------------+------------------------------------------------------------------------------------------------------+
 | :ref:`Component<api_Component>` * | :ref:`addComponent<api_Actor_addComponent>` (const std::string  type)                                |
 +-----------------------------------+------------------------------------------------------------------------------------------------------+
@@ -60,31 +54,11 @@ Public Methods
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+--------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_Actor_methods>` ()       |
-+-------------------------------------------------------------------+--------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_Actor_properties>` () |
-+-------------------------------------------------------------------+--------------------------------------------+
+None
 
 .. _api_Actor_methods:
 Methods Description
 -------------------
-
-.. _api_Actor_Actor:
-
-**Actor::Actor** ()
-
-Default constructs an instance of Actor.
-
-----
-
-.. _api_Actor_~Actor:
-
-**Actor::~Actor** ()
-
-Destroys the instance of Actor. The destructor is virtual.
-
-----
 
 .. _api_Actor_addComponent:
 
@@ -160,18 +134,6 @@ Returns the layers list for the this Actor as a bit mask. The layers used for th
 
 ----
 
-.. _api_Actor_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **Actor::methods** ()
-
-----
-
-.. _api_Actor_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **Actor::properties** ()
-
-----
-
 .. _api_Actor_scene:
 
 :ref:`Scene<api_Scene>` * **Actor::scene** ()
@@ -204,7 +166,7 @@ Assigns the list of *layers* for this Actor as a bitmask.
 
 :ref:`void<api_void>`  **Actor::setParent** (:ref:`Object<api_Object>` * *parent*, :ref:`int32_t<api_int32_t>`  *position* = -1, :ref:`bool<api_bool>`  *force* = false)
 
-Reimplemented from Object::setParent().
+Reimplements: Object::setParent(Object *parent, int32_t *position*, bool *force*).
 
 Makes the actor a child of the *parent* at given *position*.
 

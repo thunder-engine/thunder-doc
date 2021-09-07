@@ -8,8 +8,6 @@ Inherited: None
 Description
 -----------
 
-The Vector2 class represents a vector or vertex in 2D space.
-
 Vectors are one of the main building blocks of 2D representation and drawing. They consist of three coordinates, traditionally called x and y.
 
 The Vector2 class can also be used to represent vertices in 2D space. We therefore do not need to provide a separate vertex class.
@@ -23,11 +21,11 @@ Public Methods
 --------------
 
 +-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
+|                               | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
 +-------------------------------+--------------------------------------------------------------------------+
 |                               | :ref:`Vector2<api_Vector2_Vector2>` (areal  v)                           |
 +-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
+|                               | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
 +-------------------------------+--------------------------------------------------------------------------+
 |       :ref:`areal<api_areal>` | :ref:`cross<api_Vector2_cross>` (const Vector2 & vector) const           |
 +-------------------------------+--------------------------------------------------------------------------+
@@ -86,9 +84,9 @@ Methods Description
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** ()
+**Vector2::Vector2** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*)
 
-Constructs a null vector, i.e. with coordinates (0, 0).
+Constructs a vector with coordinates (x, *y*).
 
 ----
 
@@ -102,9 +100,9 @@ Constructs a *v*ector with coordinates (v).
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*)
+**Vector2::Vector2** ()
 
-Constructs a vector with coordinates (x, *y*).
+Constructs a null vector, i.e. with coordinates (0, 0).
 
 ----
 

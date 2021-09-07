@@ -8,37 +8,31 @@ Inherited: None
 Description
 -----------
 
-Uri class provides an interface for working with URI's.
-
 
 
 .. _api_Uri_public:
 Public Methods
 --------------
 
-+-------------------------------------+---------------------------------------------------+
-|                                     | :ref:`Uri<api_Uri_Uri>` (const std::string & uri) |
-+-------------------------------------+---------------------------------------------------+
-|                                     | :ref:`~Uri<api_Uri_~Uri>` ()                      |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`baseName<api_Uri_baseName>` () const        |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`dir<api_Uri_dir>` () const                  |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`fragment<api_Uri_fragment>` () const        |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`host<api_Uri_host>` () const                |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`name<api_Uri_name>` () const                |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`path<api_Uri_path>` () const                |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`query<api_Uri_query>` () const              |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`scheme<api_Uri_scheme>` () const            |
-+-------------------------------------+---------------------------------------------------+
-| :ref:`std::string<api_std::string>` | :ref:`suffix<api_Uri_suffix>` () const            |
-+-------------------------------------+---------------------------------------------------+
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`baseName<api_Uri_baseName>` () const |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`dir<api_Uri_dir>` () const           |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`fragment<api_Uri_fragment>` () const |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`host<api_Uri_host>` () const         |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`name<api_Uri_name>` () const         |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`path<api_Uri_path>` () const         |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`query<api_Uri_query>` () const       |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`scheme<api_Uri_scheme>` () const     |
++-------------------------------------+--------------------------------------------+
+| :ref:`std::string<api_std::string>` | :ref:`suffix<api_Uri_suffix>` () const     |
++-------------------------------------+--------------------------------------------+
 
 
 
@@ -51,22 +45,6 @@ None
 .. _api_Uri_methods:
 Methods Description
 -------------------
-
-.. _api_Uri_Uri:
-
-**Uri::Uri** (:ref:`std::string<api_std::string>` & *uri*)
-
-Default constructs an instance of Uri.
-
-----
-
-.. _api_Uri_~Uri:
-
-**Uri::~Uri** ()
-
-Destroys the instance of Uri.
-
-----
 
 .. _api_Uri_baseName:
 

@@ -8,8 +8,6 @@ Inherited: :ref:`Renderable<api_Renderable>`
 Description
 -----------
 
-Draws a sprite for the 2D graphics.
-
 The SpriteRender component allows you to display images as sprites to use in both 2D and 3D scenes.
 
 
@@ -18,10 +16,6 @@ The SpriteRender component allows you to display images as sprites to use in bot
 Public Methods
 --------------
 
-+-------------------------------------+------------------------------------------------------------------------+
-|                                     | :ref:`SpriteRender<api_SpriteRender_SpriteRender>` ()                  |
-+-------------------------------------+------------------------------------------------------------------------+
-|                                     | :ref:`~SpriteRender<api_SpriteRender_~SpriteRender>` ()                |
 +-------------------------------------+------------------------------------------------------------------------+
 |       :ref:`Vector4<api_Vector4>` & | :ref:`color<api_SpriteRender_color>` () const                          |
 +-------------------------------------+------------------------------------------------------------------------+
@@ -77,33 +71,11 @@ Public Enums
 Static Methods
 --------------
 
-+-------------------------------------------------------------------+---------------------------------------------------+
-|         :ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * | :ref:`enums<api_SpriteRender_enums>` ()           |
-+-------------------------------------------------------------------+---------------------------------------------------+
-|     :ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * | :ref:`methods<api_SpriteRender_methods>` ()       |
-+-------------------------------------------------------------------+---------------------------------------------------+
-| :ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * | :ref:`properties<api_SpriteRender_properties>` () |
-+-------------------------------------------------------------------+---------------------------------------------------+
+None
 
 .. _api_SpriteRender_methods:
 Methods Description
 -------------------
-
-.. _api_SpriteRender_SpriteRender:
-
-**SpriteRender::SpriteRender** ()
-
-Default constructs an instance of SpriteRender.
-
-----
-
-.. _api_SpriteRender_~SpriteRender:
-
-**SpriteRender::~SpriteRender** ()
-
-Destroys the instance of SpriteRender. The destructor is virtual.
-
-----
 
 .. _api_SpriteRender_color:
 
@@ -122,12 +94,6 @@ Returns the color of the sprite to be drawn.
 Returns a draw mode for the sprite. Please check SpriteRender::DrawMode for more details.
 
 **See also** setDrawMode().
-
-----
-
-.. _api_SpriteRender_enums:
-
-:ref:`const MetaEnum::Table<api_const MetaEnum::Table>` * **SpriteRender::enums** ()
 
 ----
 
@@ -158,18 +124,6 @@ Returns the order layer for the sprite.
 Returns an instantiated Material assigned to SpriteRender.
 
 **See also** setMaterial().
-
-----
-
-.. _api_SpriteRender_methods:
-
-:ref:`const MetaMethod::Table<api_const MetaMethod::Table>` * **SpriteRender::methods** ()
-
-----
-
-.. _api_SpriteRender_properties:
-
-:ref:`const MetaProperty::Table<api_const MetaProperty::Table>` * **SpriteRender::properties** ()
 
 ----
 
