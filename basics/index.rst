@@ -15,7 +15,7 @@ Or create editor modules to help develop them.
    :name: toc-basics
    
    install
-   explore
+   hub
+   interface
    builder
    features
-   source
