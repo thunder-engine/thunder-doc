@@ -9,6 +9,7 @@ Thunder Documentation
    basics/index
    .. graphics/index
    .. audio/index
+   scripting/index
    reference/index
 
 Indices and tables

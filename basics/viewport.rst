@@ -38,7 +38,7 @@ The toolbar contains a various controls to move, rotate and scale selected objec
    * - **Show**
      - Switches the viewport position and shows various buffers used during rendering.
 
-Navigation
+Key Scheme
 ----------
 
 Hold :kbd:`RMB` and move the mouse in the direction you want to look.
@@ -61,3 +61,5 @@ Hold :kbd:`RMB` and move the mouse in the direction you want to look.
      - Zoom viewport camera In.
    * - :kbd:`WheelDown`
      - Zoom viewport camera Out.
+   * - :kbd:`Del`
+     - To delete selected object
