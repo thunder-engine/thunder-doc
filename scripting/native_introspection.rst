@@ -1,7 +1,7 @@
 .. _doc_native_introspection:
 
 Native Introspection
-==============================
+====================
 
 The introspection mechanism allows making Script bindings in transparent mode.
 Unfortunately, not all programming languages provide it out of the box.
@@ -45,7 +45,7 @@ In the example below developer defines all required fields:
 .. _doc_native_metaobject:
 
 Meta Object
-------------------------------
+-----------
 
 Thunder Engine Meta-object system provides runtime type information like methods, properties, signals, and slots for inter-object communication.
 
@@ -58,7 +58,7 @@ The meta-object system is based on two things:
 .. _doc_native_properties:
 
 Native Properties
-------------------------------
+-----------------
     
 In the provided example developer specified an introspection definition of property *speed*.
 
@@ -83,7 +83,7 @@ Please find the description of parameters for A_PROPERTY bellow:
 .. _doc_native_methods:
 
 Native Methods
-------------------------------
+--------------
 
 In scripts, the developer can use not only properties but also call some functions for the component.
 In the example above, the developer has specified a *jump* method for introspection.
@@ -107,7 +107,7 @@ Please find the description of parameters for A_PROPERTY bellow:
 .. _doc_native_signals:
 
 Native Signals and Slots
-------------------------------
+------------------------
 
 In gameplay programming, if one object was changed, we often want another object will be notified.
 Signals and slots are used for communication between objects.
@@ -141,7 +141,7 @@ For example:
 .. code-block:: c++
 
     MyComponent component1;
-	MyComponent component2;
+    MyComponent component2;
 	
     connect(&component1, _SIGNAL(signal(int)), &component2, _SLOT(slot(int)));
 	

@@ -1,7 +1,7 @@
 .. _doc_scripting_overview:
 
 Overview
-==============================
+========
 
 Thunder Engine was designed to be a modular.
 This means developers are enable or disable a various modules.
@@ -12,7 +12,7 @@ The conceps below are common across programming modules.
 
 
 Actor
-------------------------------
+-----
 
 This simple object is a key ring for all related Components.
 
@@ -29,7 +29,7 @@ They can be united into hierarchies.
 
 
 Components
-------------------------------
+----------
 
 Components is a blood of any game in Thunder Engine.
 Components contain information how your game Actors look like or how they interact with other Actors.
@@ -79,7 +79,7 @@ The example of custom component:
         };
     
 Property
-------------------------------
+--------
 
 A variable that can be changed from Editor or in game.
 
@@ -93,7 +93,7 @@ For a specific programming language please refer:
 * :ref:`doc_native_properties`
    
 Signals and Slots
-------------------------------
+-----------------
 
 When developing gameplay, sometimes it becomes necessary for one object to communicate something to another object.
 For example, a player has been killed and the "Game Over" window needs to be displayed.
@@ -110,7 +110,7 @@ For a specific programming language please refer:
 * :ref:`doc_native_signals`
 
 Resource
-------------------------------
+--------
 
 Any data set that can be loaded from the file system.
 Some Components like MeshRender uses Resources.
