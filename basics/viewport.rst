@@ -26,7 +26,7 @@ As you probably noticed the created object is automatically selected.
 The selected object has an orange highlight around it.
 A developer has the ability to change the color and thickness of a highlighter or completely disable it.
 During development, you would need to select objects on the scene.
-Just click by LBM on an object and it will be selected.
+Just click by ``LBM`` on an object and it will be selected.
 
 Toolbar
 -------
@@ -88,20 +88,20 @@ Hold :kbd:`RMB` and move the mouse in the direction you want to look.
 .. list-table::
    :widths: 10 90
 
-   * - :kbd:`W`/:kbd:`Up`
+   * - ``W``/``Up``
      - Accelerate forward.
-   * - :kbd:`S`/:kbd:`Down`
+   * - ``S``/``Down``
      - Accelerate backwards.
-   * - :kbd:`A`/:kbd:`Left`
+   * - ``A``/``Left``
      - Accelerate left.
-   * - :kbd:`D`/:kbd:`Right`
+   * - ``D``/``Right``
      - Accelerate right.
-   * - :kbd:`MMB`
+   * - ``MMB``
      - Drag to pan the view.
        In this case the view can move laterally on its local axis at the moment you drag the mouse.
-   * - :kbd:`WheelUp`
+   * - ``WheelUp``
      - Zoom viewport camera In.
-   * - :kbd:`WheelDown`
+   * - ``WheelDown``
      - Zoom viewport camera Out.
-   * - :kbd:`Del`
+   * - ``Del``
      - To delete selected object

@@ -25,7 +25,7 @@ In the example below developer defines all required fields:
         )
         
     public:
-        int speed() {
+        int speed() const {
             return m_speed;
         }
     
