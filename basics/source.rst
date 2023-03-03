@@ -97,11 +97,11 @@ Open Console go to the directory with Thunder Engine source code and run the seq
 
     $ export QT_INSTALL_DIR=~/Qt
     $ export QT_VERSION=5.12.10
+    $ export QTCREATOR_VERSION=5.0.3
     $ export QT_BIN=${QT_INSTALL_DIR}/${QT_VERSION}/gcc_64/bin
     $ export PATH="$QT_INSTALL_DIR/Tools/QtCreator/bin:$QT_BIN:$PATH"
-    $ bash ./build/install-qt.sh -d $QT_INSTALL_DIR --version $QT_VERSION qtbase qtmultimedia qtscript qtsvg qtimageformats qtgraphicaleffects qtquickcontrols2 qttools qtxmlpatterns qtdeclarative icu
-    $ wget https://download.qt.io/official_releases/qtcreator/4.9/4.9.2/installer_source/linux_gcc_64_rhel72/qtcreator.7z
-    $ 7z x -y -o${QT_INSTALL_DIR}/Tools/QtCreator qtcreator.7z
+    $ bash ./build/install-qt.sh -d $QT_INSTALL_DIR --version ${QT_VERSION} qtbase qtmultimedia qtscript qtsvg qtimageformats qtgraphicaleffects qtquickcontrols2 qttools qtxmlpatterns qtdeclarative qtgamepad icu
+    $ bash ./build/install-qt.sh -d $QT_INSTALL_DIR --version ${QTCREATOR_VERSION} qtcreator
     $ qbs setup-toolchains --detect
     $ qbs setup-qt --detect
     $ qbs config defaultProfile
