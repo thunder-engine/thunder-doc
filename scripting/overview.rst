@@ -114,7 +114,7 @@ Resource
 
 Any data set that can be loaded from the file system.
 Some Components like MeshRender uses Resources.
-An asstes in the Content Brouser a good example of the resources.
+An asstes in the :ref:`doc_content` a good example of the resources.
 Any Resources must be controlled by the Resource System.
 This system controls the life cicle of the resource.
 Loads them on demand and unloads when it not needed anymore.

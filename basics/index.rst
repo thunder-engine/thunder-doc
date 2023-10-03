@@ -16,6 +16,5 @@ Or create editor modules to help develop them.
    
    install
    hub
-   interface
    builder
    features
