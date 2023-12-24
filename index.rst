@@ -7,6 +7,7 @@ Thunder Documentation
    :name: sec-start
 
    basics/index
+   editor/index
    .. graphics/index
    .. audio/index
    scripting/index
