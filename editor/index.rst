@@ -36,3 +36,4 @@ Explore the documentation sections below to learn more about the individual comp
    properties
    content
    hierarchy
+   plugins

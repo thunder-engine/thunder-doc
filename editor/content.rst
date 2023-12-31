@@ -66,7 +66,7 @@ Users can open assets for viewing and editing by double-clicking on the asset wi
 This intuitive feature provides a quick way to inspect and modify assets directly from the Editor.
 
 .. note::
-   The World Editor comes equipped with a variety of Embedded Editors, providing specialized tools for specific asset types.
+   The World Editor comes equipped with a variety of embedded Editors, providing specialized tools for specific asset types.
    These Embedded Editors allow for a more in-depth and focused editing experience tailored to each asset category.
 
    Additionally, the extensibility of the World Editor is enhanced through the use of Plugins.
