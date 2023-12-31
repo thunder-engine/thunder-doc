@@ -59,6 +59,20 @@ Whether you're a designer, developer, or content creator, this tool is invaluabl
 Make the most of the Content Browser to streamline your workflow and ensure a seamless integration of assets into your project.
 
 
+Opening Assets
+--------------
+
+Users can open assets for viewing and editing by double-clicking on the asset within the Content Browser.
+This intuitive feature provides a quick way to inspect and modify assets directly from the Editor.
+
+.. note::
+   The World Editor comes equipped with a variety of Embedded Editors, providing specialized tools for specific asset types.
+   These Embedded Editors allow for a more in-depth and focused editing experience tailored to each asset category.
+
+   Additionally, the extensibility of the World Editor is enhanced through the use of Plugins.
+   Developers can create custom Plugins to add new features, tools, or support for specific asset types, expanding the capabilities of the World Editor to suit diverse project needs.
+
+
 Filtering Content
 -----------------
 
