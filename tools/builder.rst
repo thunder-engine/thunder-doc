@@ -1,4 +1,4 @@
-.. _doc_explore_builder:
+.. _doc_tools_builder:
 
 Building Project
 ================

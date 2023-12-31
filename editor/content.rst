@@ -1,7 +1,7 @@
 .. _doc_content:
 
 Content Browser
-==============================
+===============
 
 The Content Browser is a central component of your project, offering a convenient way to access and manage the assets available for use.
 
@@ -29,5 +29,44 @@ Using the Content Browser, you can perform various tasks:
    * - **Drag and Drop**
      - Easily drag and drop assets from the Content Browser into your project workspace.
 
+
+Creating New Assets
+-------------------
+
+The Content Browser supports the creation of new assets directly from the context menu. Follow these steps:
+
+1. Right-click in the Content Browser.
+2. Select the type of asset you want to create (e.g., animation, material, behaviours).
+
+.. figure:: media/asset_creation.gif
+   :alt: Asset Creation
+
+This functionality simplifies the asset creation process, allowing you to generate new resources seamlessly within the Content Browser.
+
+
+Importing Assets
+----------------
+
+Effortlessly expand your project's asset library by importing assets through the Content Browser. Follow these steps:
+
+1. Open a context menu.
+2. Click on the **Import New Asset...** option.
+3. In the prompted dialog, browse and select the assets you want to import.
+
 The Content Browser is designed to simplify asset management, helping you efficiently work with your project's resources.
 Whether you're a designer, developer, or content creator, this tool is invaluable for enhancing your productivity.
+
+Make the most of the Content Browser to streamline your workflow and ensure a seamless integration of assets into your project.
+
+
+Filtering Content
+-----------------
+
+The Content Browser allows you to filter assets based on their types.
+This feature enables you to focus on specific types of content, making it easier to manage and locate assets.
+To filter content by type:
+
+1. Navigate to the **Filter** menu in the Content Browser.
+2. Choose the desired content type from the available options.
+
+Now, you can efficiently narrow down your view to only the types of assets you currently need, enhancing your workflow and making content management even more streamlined.

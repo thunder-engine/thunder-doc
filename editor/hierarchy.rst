@@ -1,7 +1,7 @@
 .. _doc_hierarchy:
 
 Hierarchy
-==============================
+=========
 
 The Hierarchy widget is a crucial tool that provides an organized view of the objects placed within your scene and illustrates their relationships.
 
