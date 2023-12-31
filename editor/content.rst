@@ -69,7 +69,7 @@ This intuitive feature provides a quick way to inspect and modify assets directl
    The World Editor comes equipped with a variety of embedded Editors, providing specialized tools for specific asset types.
    These Embedded Editors allow for a more in-depth and focused editing experience tailored to each asset category.
 
-   Additionally, the extensibility of the World Editor is enhanced through the use of Plugins.
+   Additionally, the extensibility of the World Editor is enhanced through the use of :ref:`doc_plugin_manager`.
    Developers can create custom Plugins to add new features, tools, or support for specific asset types, expanding the capabilities of the World Editor to suit diverse project needs.
 
 

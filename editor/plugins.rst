@@ -1,6 +1,6 @@
 .. _doc_plugin_manager:
 
-Plugin Management in the Editor
+Plugin Managemer
 ===============================
 
 Plugins in the editor provide a powerful mechanism to extend and enhance the functionality of the World Editor.
