@@ -8,7 +8,7 @@ Thunder Documentation
 
    basics/index
    editor/index
-   .. graphics/index
+   graphics/index
    .. audio/index
    scripting/index
    reference/index
