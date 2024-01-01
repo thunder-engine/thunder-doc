@@ -18,6 +18,6 @@ Explore the following documentation sections to understand and leverage Thunder 
    :maxdepth: 1
    :name: toc-graphics
 
-	pipline
+	pipeline
 	lighting
 	vfx
