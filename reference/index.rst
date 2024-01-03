@@ -8,8 +8,10 @@ API Reference
    :name: toc-api
    
    animation-module
+   components-module
    core-module
    engine-module
    gui-module
    math-module
    resources-module
+   physicmaterial

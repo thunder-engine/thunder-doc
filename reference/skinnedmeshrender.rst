@@ -1,7 +1,7 @@
 .. _api_SkinnedMeshRender:
 
-SkinnedMeshRender Class
-=======================
+SkinnedMeshRender
+=================
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

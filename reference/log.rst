@@ -1,7 +1,7 @@
 .. _api_Log:
 
-Log Class
-=========
+Log
+===
 
 Inherited: None
 

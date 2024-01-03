@@ -1,7 +1,7 @@
 .. _api_Translator:
 
-Translator Class
-================
+Translator
+==========
 
 Inherited: :doc:`Resource<api_Resource>`
 

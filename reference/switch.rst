@@ -1,7 +1,7 @@
 .. _api_Switch:
 
-Switch Class
-============
+Switch
+======
 
 Inherited: :doc:`AbstractButton<api_AbstractButton>`
 

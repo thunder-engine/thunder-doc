@@ -1,7 +1,7 @@
 .. _api_Event:
 
-Event Class
-===========
+Event
+=====
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_TextInput:
 
-TextInput Class
-===============
+TextInput
+=========
 
 Inherited: :doc:`Frame<api_Frame>`
 

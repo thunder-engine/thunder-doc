@@ -1,7 +1,7 @@
 .. _api_Pose:
 
-Pose Class
-==========
+Pose
+====
 
 Inherited: :doc:`Resource<api_Resource>`
 

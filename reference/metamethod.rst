@@ -1,7 +1,7 @@
 .. _api_MetaMethod:
 
-MetaMethod Class
-================
+MetaMethod
+==========
 
 Inherited: None
 

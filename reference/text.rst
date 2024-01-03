@@ -1,7 +1,7 @@
 .. _api_Text:
 
-Text Class
-==========
+Text
+====
 
 Inherited: :doc:`Resource<api_Resource>`
 

@@ -1,7 +1,7 @@
 .. _api_AbstractButton:
 
-AbstractButton Class
-====================
+AbstractButton
+==============
 
 Inherited: :doc:`Widget<api_Widget>`
 

@@ -1,7 +1,7 @@
 .. _api_Frame:
 
-Frame Class
-===========
+Frame
+=====
 
 Inherited: :doc:`Image<api_Image>`
 

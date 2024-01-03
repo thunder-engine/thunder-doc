@@ -1,7 +1,7 @@
 .. _api_Pipeline:
 
-Pipeline Class
-==============
+Pipeline
+========
 
 Inherited: :doc:`Resource<api_Resource>`
 

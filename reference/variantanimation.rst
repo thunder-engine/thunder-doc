@@ -1,7 +1,7 @@
 .. _api_VariantAnimation:
 
-VariantAnimation Class
-======================
+VariantAnimation
+================
 
 Inherited: :doc:`Animation<api_Animation>`
 

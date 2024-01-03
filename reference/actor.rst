@@ -1,7 +1,7 @@
 .. _api_Actor:
 
-Actor Class
-===========
+Actor
+=====
 
 Inherited: :doc:`Object<api_Object>`
 

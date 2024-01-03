@@ -1,7 +1,7 @@
 .. _api_Component:
 
-Component Class
-===============
+Component
+=========
 
 Inherited: :doc:`Object<api_Object>`
 

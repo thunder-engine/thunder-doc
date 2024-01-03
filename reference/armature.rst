@@ -1,7 +1,7 @@
 .. _api_Armature:
 
-Armature Class
-==============
+Armature
+========
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

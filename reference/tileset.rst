@@ -1,7 +1,7 @@
 .. _api_TileSet:
 
-TileSet Class
-=============
+TileSet
+=======
 
 Inherited: :doc:`Resource<api_Resource>`
 

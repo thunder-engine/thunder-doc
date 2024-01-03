@@ -1,7 +1,7 @@
 .. _api_Vector4:
 
-Vector4 Class
-=============
+Vector4
+=======
 
 Inherited: None
 

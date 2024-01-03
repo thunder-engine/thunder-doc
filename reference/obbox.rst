@@ -1,7 +1,7 @@
 .. _api_OBBox:
 
-OBBox Class
-===========
+OBBox
+=====
 
 Inherited: None
 

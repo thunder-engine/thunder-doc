@@ -1,7 +1,7 @@
 .. _api_MetaEnum:
 
-MetaEnum Class
-==============
+MetaEnum
+========
 
 Inherited: None
 

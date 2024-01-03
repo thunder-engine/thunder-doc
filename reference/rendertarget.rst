@@ -1,7 +1,7 @@
 .. _api_RenderTarget:
 
-RenderTarget Class
-==================
+RenderTarget
+============
 
 Inherited: :doc:`Resource<api_Resource>`
 

@@ -1,7 +1,7 @@
 .. _api_TileMapRender:
 
-TileMapRender Class
-===================
+TileMapRender
+=============
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

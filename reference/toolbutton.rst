@@ -1,7 +1,7 @@
 .. _api_ToolButton:
 
-ToolButton Class
-================
+ToolButton
+==========
 
 Inherited: :doc:`AbstractButton<api_AbstractButton>`
 

@@ -1,7 +1,7 @@
 .. _api_Animator:
 
-Animator Class
-==============
+Animator
+========
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

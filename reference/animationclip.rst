@@ -1,7 +1,7 @@
 .. _api_AnimationClip:
 
-AnimationClip Class
-===================
+AnimationClip
+=============
 
 Inherited: :doc:`Resource<api_Resource>`
 

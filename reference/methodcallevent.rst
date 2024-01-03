@@ -1,7 +1,7 @@
 .. _api_MethodCallEvent:
 
-MethodCallEvent Class
-=====================
+MethodCallEvent
+===============
 
 Inherited: :doc:`Event<api_Event>`
 

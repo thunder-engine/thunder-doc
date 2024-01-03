@@ -1,7 +1,7 @@
 .. _api_Variant:
 
-Variant Class
-=============
+Variant
+=======
 
 Inherited: None
 

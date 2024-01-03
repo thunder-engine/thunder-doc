@@ -1,7 +1,7 @@
 .. _api_TextRender:
 
-TextRender Class
-================
+TextRender
+==========
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

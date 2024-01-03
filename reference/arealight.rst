@@ -1,7 +1,7 @@
 .. _api_AreaLight:
 
-AreaLight Class
-===============
+AreaLight
+=========
 
 Inherited: :doc:`BaseLight<api_BaseLight>`
 

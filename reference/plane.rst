@@ -1,7 +1,7 @@
 .. _api_Plane:
 
-Plane Class
-===========
+Plane
+=====
 
 Inherited: None
 

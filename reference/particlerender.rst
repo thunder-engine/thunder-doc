@@ -1,7 +1,7 @@
 .. _api_ParticleRender:
 
-ParticleRender Class
-====================
+ParticleRender
+==============
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

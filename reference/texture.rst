@@ -1,7 +1,7 @@
 .. _api_Texture:
 
-Texture Class
-=============
+Texture
+=======
 
 Inherited: :doc:`Resource<api_Resource>`
 

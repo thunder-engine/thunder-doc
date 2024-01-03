@@ -1,7 +1,7 @@
 .. _api_Resource:
 
-Resource Class
-==============
+Resource
+========
 
 Inherited: :doc:`Object<api_Object>`
 

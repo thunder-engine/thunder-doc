@@ -1,7 +1,7 @@
 .. _api_MetaProperty:
 
-MetaProperty Class
-==================
+MetaProperty
+============
 
 Inherited: None
 

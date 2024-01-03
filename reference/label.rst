@@ -1,7 +1,7 @@
 .. _api_Label:
 
-Label Class
-===========
+Label
+=====
 
 Inherited: :doc:`Widget<api_Widget>`
 

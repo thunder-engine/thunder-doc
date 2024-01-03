@@ -1,7 +1,7 @@
 .. _api_MetaObject:
 
-MetaObject Class
-================
+MetaObject
+==========
 
 Inherited: None
 

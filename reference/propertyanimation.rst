@@ -1,7 +1,7 @@
 .. _api_PropertyAnimation:
 
-PropertyAnimation Class
-=======================
+PropertyAnimation
+=================
 
 Inherited: :doc:`VariantAnimation<api_VariantAnimation>`
 

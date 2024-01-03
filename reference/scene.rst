@@ -1,7 +1,7 @@
 .. _api_Scene:
 
-Scene Class
-===========
+Scene
+=====
 
 Inherited: :doc:`Object<api_Object>`
 

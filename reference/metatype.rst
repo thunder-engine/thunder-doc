@@ -1,7 +1,7 @@
 .. _api_MetaType:
 
-MetaType Class
-==============
+MetaType
+========
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_Gizmos:
 
-Gizmos Class
-============
+Gizmos
+======
 
 Inherited: None
 

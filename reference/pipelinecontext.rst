@@ -1,7 +1,7 @@
 .. _api_PipelineContext:
 
-PipelineContext Class
-=====================
+PipelineContext
+===============
 
 Inherited: :doc:`Object<api_Object>`
 

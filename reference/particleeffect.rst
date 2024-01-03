@@ -1,7 +1,7 @@
 .. _api_ParticleEffect:
 
-ParticleEffect Class
-====================
+ParticleEffect
+==============
 
 Inherited: :doc:`Resource<api_Resource>`
 

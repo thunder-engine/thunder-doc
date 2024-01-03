@@ -1,7 +1,7 @@
 .. _api_FloatInput:
 
-FloatInput Class
-================
+FloatInput
+==========
 
 Inherited: :doc:`Widget<api_Widget>`
 

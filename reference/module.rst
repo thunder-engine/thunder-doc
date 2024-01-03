@@ -1,7 +1,7 @@
 .. _api_Module:
 
-Module Class
-============
+Module
+======
 
 Inherited: None
 

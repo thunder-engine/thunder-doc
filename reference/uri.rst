@@ -1,7 +1,7 @@
 .. _api_Uri:
 
-Uri Class
-=========
+Uri
+===
 
 Inherited: None
 

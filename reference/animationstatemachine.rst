@@ -1,7 +1,7 @@
 .. _api_AnimationStateMachine:
 
-AnimationStateMachine Class
-===========================
+AnimationStateMachine
+=====================
 
 Inherited: :doc:`Resource<api_Resource>`
 

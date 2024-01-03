@@ -1,7 +1,7 @@
 .. _api_ThreadPool:
 
-ThreadPool Class
-================
+ThreadPool
+==========
 
 Inherited: :doc:`Object<api_Object>`
 

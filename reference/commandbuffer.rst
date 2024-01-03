@@ -1,7 +1,7 @@
 .. _api_CommandBuffer:
 
-CommandBuffer Class
-===================
+CommandBuffer
+=============
 
 Inherited: :doc:`Object<api_Object>`
 

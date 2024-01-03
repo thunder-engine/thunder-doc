@@ -1,7 +1,7 @@
 .. _api_Sprite:
 
-Sprite Class
-============
+Sprite
+======
 
 Inherited: :doc:`Resource<api_Resource>`
 

@@ -1,7 +1,7 @@
 .. _api_SpotLight:
 
-SpotLight Class
-===============
+SpotLight
+=========
 
 Inherited: :doc:`BaseLight<api_BaseLight>`
 

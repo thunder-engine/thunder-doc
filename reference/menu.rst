@@ -1,7 +1,7 @@
 .. _api_Menu:
 
-Menu Class
-==========
+Menu
+====
 
 Inherited: :doc:`Frame<api_Frame>`
 

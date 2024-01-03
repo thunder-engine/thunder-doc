@@ -1,7 +1,7 @@
 .. _api_Json:
 
-Json Class
-==========
+Json
+====
 
 Inherited: None
 

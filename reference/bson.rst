@@ -1,7 +1,7 @@
 .. _api_Bson:
 
-Bson Class
-==========
+Bson
+====
 
 Inherited: None
 

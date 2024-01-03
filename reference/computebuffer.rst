@@ -1,7 +1,7 @@
 .. _api_ComputeBuffer:
 
-ComputeBuffer Class
-===================
+ComputeBuffer
+=============
 
 Inherited: :doc:`Resource<api_Resource>`
 

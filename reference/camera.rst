@@ -1,7 +1,7 @@
 .. _api_Camera:
 
-Camera Class
-============
+Camera
+======
 
 Inherited: :doc:`Component<api_Component>`
 

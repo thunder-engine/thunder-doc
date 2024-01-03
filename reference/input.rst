@@ -1,7 +1,7 @@
 .. _api_Input:
 
-Input Class
-===========
+Input
+=====
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_NativeBehaviour:
 
-NativeBehaviour Class
-=====================
+NativeBehaviour
+===============
 
 Inherited: :doc:`Component<api_Component>`
 

@@ -1,7 +1,7 @@
 .. _api_PipelineTask:
 
-PipelineTask Class
-==================
+PipelineTask
+============
 
 Inherited: :doc:`Object<api_Object>`
 

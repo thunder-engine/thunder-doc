@@ -1,7 +1,7 @@
 .. _api_MeshRender:
 
-MeshRender Class
-================
+MeshRender
+==========
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

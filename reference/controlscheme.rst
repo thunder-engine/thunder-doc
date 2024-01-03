@@ -1,7 +1,7 @@
 .. _api_ControlScheme:
 
-ControlScheme Class
-===================
+ControlScheme
+=============
 
 Inherited: :doc:`Resource<api_Resource>`
 

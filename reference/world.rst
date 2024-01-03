@@ -1,7 +1,7 @@
 .. _api_World:
 
-World Class
-===========
+World
+=====
 
 Inherited: :doc:`Object<api_Object>`
 

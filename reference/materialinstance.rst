@@ -1,7 +1,7 @@
 .. _api_MaterialInstance:
 
-MaterialInstance Class
-======================
+MaterialInstance
+================
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_Quaternion:
 
-Quaternion Class
-================
+Quaternion
+==========
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_Mesh:
 
-Mesh Class
-==========
+Mesh
+====
 
 Inherited: :doc:`Resource<api_Resource>`
 

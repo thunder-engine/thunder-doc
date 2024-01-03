@@ -1,7 +1,7 @@
 .. _api_Object:
 
-Object Class
-============
+Object
+======
 
 Inherited: None
 

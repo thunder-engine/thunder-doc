@@ -1,7 +1,7 @@
 .. _api_TileMap:
 
-TileMap Class
-=============
+TileMap
+=======
 
 Inherited: :doc:`Resource<api_Resource>`
 

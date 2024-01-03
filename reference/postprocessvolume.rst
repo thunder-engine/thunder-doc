@@ -1,7 +1,7 @@
 .. _api_PostProcessVolume:
 
-PostProcessVolume Class
-=======================
+PostProcessVolume
+=================
 
 Inherited: :doc:`Component<api_Component>`
 

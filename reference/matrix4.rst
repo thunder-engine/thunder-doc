@@ -1,7 +1,7 @@
 .. _api_Matrix4:
 
-Matrix4 Class
-=============
+Matrix4
+=======
 
 Inherited: None
 

@@ -10,6 +10,7 @@ Resources Module
    animationclip
    animationstatemachine
    animationtrack
+   audioclip
    bone
    computebuffer
    computeshader

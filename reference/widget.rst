@@ -1,7 +1,7 @@
 .. _api_Widget:
 
-Widget Class
-============
+Widget
+======
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

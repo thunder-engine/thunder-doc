@@ -1,7 +1,7 @@
 .. _api_Material:
 
-Material Class
-==============
+Material
+========
 
 Inherited: :doc:`Resource<api_Resource>`
 

@@ -1,7 +1,7 @@
 .. _api_Ray:
 
-Ray Class
-=========
+Ray
+===
 
 Inherited: None
 

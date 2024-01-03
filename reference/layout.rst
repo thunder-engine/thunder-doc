@@ -1,7 +1,7 @@
 .. _api_Layout:
 
-Layout Class
-============
+Layout
+======
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_BaseLight:
 
-BaseLight Class
-===============
+BaseLight
+=========
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

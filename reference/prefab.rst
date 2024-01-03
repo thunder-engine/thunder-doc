@@ -1,7 +1,7 @@
 .. _api_Prefab:
 
-Prefab Class
-============
+Prefab
+======
 
 Inherited: :doc:`Resource<api_Resource>`
 

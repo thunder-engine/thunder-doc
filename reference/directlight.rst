@@ -1,7 +1,7 @@
 .. _api_DirectLight:
 
-DirectLight Class
-=================
+DirectLight
+===========
 
 Inherited: :doc:`BaseLight<api_BaseLight>`
 

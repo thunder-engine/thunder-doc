@@ -1,7 +1,7 @@
 .. _api_File:
 
-File Class
-==========
+File
+====
 
 Inherited: None
 

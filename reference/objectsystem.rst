@@ -1,7 +1,7 @@
 .. _api_ObjectSystem:
 
-ObjectSystem Class
-==================
+ObjectSystem
+============
 
 Inherited: :doc:`Object<api_Object>`
 

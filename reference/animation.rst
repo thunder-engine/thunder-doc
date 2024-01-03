@@ -1,7 +1,7 @@
 .. _api_Animation:
 
-Animation Class
-===============
+Animation
+=========
 
 Inherited: :doc:`Object<api_Object>`
 

@@ -1,7 +1,7 @@
 .. _api_Transform:
 
-Transform Class
-===============
+Transform
+=========
 
 Inherited: :doc:`Component<api_Component>`
 

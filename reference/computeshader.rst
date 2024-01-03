@@ -1,7 +1,7 @@
 .. _api_ComputeShader:
 
-ComputeShader Class
-===================
+ComputeShader
+=============
 
 Inherited: :doc:`Resource<api_Resource>`
 

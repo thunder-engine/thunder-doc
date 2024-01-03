@@ -1,7 +1,7 @@
 .. _api_ProgressBar:
 
-ProgressBar Class
-=================
+ProgressBar
+===========
 
 Inherited: :doc:`Frame<api_Frame>`
 

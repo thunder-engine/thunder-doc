@@ -1,7 +1,7 @@
 .. _api_Bone:
 
-Bone Class
-==========
+Bone
+====
 
 Inherited: None
 

@@ -1,7 +1,7 @@
 .. _api_Button:
 
-Button Class
-============
+Button
+======
 
 Inherited: :doc:`AbstractButton<api_AbstractButton>`
 

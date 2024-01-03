@@ -1,7 +1,7 @@
 .. _api_AnimationTrack:
 
-AnimationTrack Class
-====================
+AnimationTrack
+==============
 
 Inherited: None
 

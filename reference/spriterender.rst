@@ -1,7 +1,7 @@
 .. _api_SpriteRender:
 
-SpriteRender Class
-==================
+SpriteRender
+============
 
 Inherited: :doc:`Renderable<api_Renderable>`
 

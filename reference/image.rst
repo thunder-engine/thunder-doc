@@ -1,7 +1,7 @@
 .. _api_Image:
 
-Image Class
-===========
+Image
+=====
 
 Inherited: :doc:`Widget<api_Widget>`
 

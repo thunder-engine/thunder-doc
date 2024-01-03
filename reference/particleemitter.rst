@@ -1,7 +1,7 @@
 .. _api_ParticleEmitter:
 
-ParticleEmitter Class
-=====================
+ParticleEmitter
+===============
 
 Inherited: None
 

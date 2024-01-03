@@ -1,7 +1,7 @@
 .. _api_Font:
 
-Font Class
-==========
+Font
+====
 
 Inherited: :doc:`Sprite<api_Sprite>`
 

@@ -1,7 +1,7 @@
 .. _api_Timer:
 
-Timer Class
-===========
+Timer
+=====
 
 Inherited: None
 

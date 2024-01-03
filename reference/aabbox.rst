@@ -1,7 +1,7 @@
 .. _api_AABBox:
 
-AABBox Class
-============
+AABBox
+======
 
 Inherited: None
 

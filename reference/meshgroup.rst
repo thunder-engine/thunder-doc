@@ -1,7 +1,7 @@
 .. _api_MeshGroup:
 
-MeshGroup Class
-===============
+MeshGroup
+=========
 
 Inherited: :doc:`Resource<api_Resource>`
 

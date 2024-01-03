@@ -1,7 +1,7 @@
 .. _api_Renderable:
 
-Renderable Class
-================
+Renderable
+==========
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

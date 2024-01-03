@@ -1,7 +1,7 @@
 .. _api_Engine:
 
-Engine Class
-============
+Engine
+======
 
 Inherited: :doc:`ObjectSystem<api_ObjectSystem>`
 

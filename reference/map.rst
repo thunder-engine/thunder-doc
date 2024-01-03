@@ -1,7 +1,7 @@
 .. _api_Map:
 
-Map Class
-=========
+Map
+===
 
 Inherited: :doc:`Resource<api_Resource>`
 

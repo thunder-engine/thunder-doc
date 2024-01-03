@@ -1,7 +1,7 @@
 .. _api_PlayerInput:
 
-PlayerInput Class
-=================
+PlayerInput
+===========
 
 Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 

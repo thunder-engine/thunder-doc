@@ -1,7 +1,7 @@
 .. _api_RectTransform:
 
-RectTransform Class
-===================
+RectTransform
+=============
 
 Inherited: :doc:`Transform<api_Transform>`
 

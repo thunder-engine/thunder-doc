@@ -1,7 +1,7 @@
 .. _api_ParticleModificator:
 
-ParticleModificator Class
-=========================
+ParticleModificator
+===================
 
 Inherited: None
 
