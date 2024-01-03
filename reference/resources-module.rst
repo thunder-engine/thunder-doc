@@ -10,11 +10,20 @@ Resources Module
    animationclip
    animationstatemachine
    animationtrack
+   bone
+   computebuffer
+   computeshader
+   controlscheme
    font
-   lod
+   map
    material
+   materialinstance
    mesh
+   meshgroup
    particleeffect
+   particleemitter
+   particlemodificator
+   pipeline
    pose
    prefab
    rendertarget
@@ -22,4 +31,6 @@ Resources Module
    sprite
    text
    texture
+   tilemap
+   tileset
    translator

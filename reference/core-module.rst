@@ -8,8 +8,8 @@ Core Module
    :name: toc-api
    
    bson
-   json
    event
+   json
    metaenum
    metamethod
    metaobject

@@ -21,11 +21,11 @@ Using the Content Browser, you can perform various tasks:
    * - **Search**
      - Use the search functionality to quickly locate specific assets by name or keyword.
    * - **Preview**
-	 - Get a visual preview assets directly within the Content Browser to ensure they are suitable for your project.
+     - Get a visual preview assets directly within the Content Browser to ensure they are suitable for your project.
    * - **Import**
-	 - Add new assets to your project by importing them through the Content Browser.
+     - Add new assets to your project by importing them through the Content Browser.
    * - **Organize**
-	 - Create folders and organize your assets to keep your project well-structured.
+     - Create folders and organize your assets to keep your project well-structured.
    * - **Drag and Drop**
      - Easily drag and drop assets from the Content Browser into your project workspace.
 

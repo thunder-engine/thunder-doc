@@ -1,10 +1,12 @@
 .. _api_Plane:
+
 Plane Class
-================
+===========
 
 Inherited: None
 
 .. _api_Plane_description:
+
 Description
 -----------
 
@@ -13,26 +15,29 @@ A Plane is a flat, 2D surface that extends infinitely far in 3D space.
 
 
 .. _api_Plane_public:
+
 Public Methods
 --------------
 
-+-------------------------+--------------------------------------------------------------------------------------------+
-|                         | :ref:`Plane<api_Plane_Plane>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
-+-------------------------+--------------------------------------------------------------------------------------------+
-|                         | :ref:`Plane<api_Plane_Plane>` ()                                                           |
-+-------------------------+--------------------------------------------------------------------------------------------+
-| :ref:`areal<api_areal>` | :ref:`sqrDistance<api_Plane_sqrDistance>` (const Vector3 & point) const                    |
-+-------------------------+--------------------------------------------------------------------------------------------+
++--------+--------------------------------------------------------------------------------------------+
+|        | :ref:`Plane<api_Plane_Plane>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
++--------+--------------------------------------------------------------------------------------------+
+|        | :ref:`Plane<api_Plane_Plane>` ()                                                           |
++--------+--------------------------------------------------------------------------------------------+
+|  areal | :ref:`sqrDistance<api_Plane_sqrDistance>` (const Vector3 & point) const                    |
++--------+--------------------------------------------------------------------------------------------+
 
 
 
 .. _api_Plane_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_Plane_methods:
+
 Methods Description
 -------------------
 
@@ -54,10 +59,8 @@ Default constructor.
 
 .. _api_Plane_sqrDistance:
 
-:ref:`areal<api_areal>`  **Plane::sqrDistance** (:ref:`Vector3<api_Vector3>` & *point*) const
+ areal **Plane::sqrDistance** (:ref:`Vector3<api_Vector3>` & *point*) const
 
 Calculate a squared distance between *point* and this Plane
-
-----
 
 

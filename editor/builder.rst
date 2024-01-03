@@ -24,7 +24,7 @@ If you cannot find this tab, please navigate to **Window -> Editor Preferences**
 
 Now, you are ready to build your project. Follow these steps:
 
-1. Click on the **Build Project** button in the toolbar::
+1. Click on the **Build Project** button in the toolbar:
 
    .. image:: media/build_project.png
       :alt: Build Project
@@ -42,15 +42,17 @@ Your game will be copied into the specified build directory.
 Builder Tool
 ------------
 
-The Builder tool is a console-friendly Continuous Integration (CI) tool that assists developers in creating a game binary and packaging required resources. Locate the Builder tool in the main binary directory near the World Builder executable::
+The Builder tool is a console-friendly Continuous Integration (CI) tool that assists developers in creating a game binary and packaging required resources. Locate the Builder tool in the main binary directory near the World Builder executable:
 
 ::
-    sdk/%version%/%platform%/x86_64/bin/Builder
 
-To start the build process, use the following command-line arguments::
+  sdk/%version%/%platform%/x86_64/bin/Builder
+
+To start the build process, use the following command-line arguments:
 
 ::
-    $ Builder -s project.forge -t target/directory -p platform
+
+  $ Builder -s project.forge -t target/directory -p platform
 
 Where:
 

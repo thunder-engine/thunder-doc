@@ -1,10 +1,12 @@
 .. _api_OBBox:
+
 OBBox Class
-================
+===========
 
 Inherited: None
 
 .. _api_OBBox_description:
+
 Description
 -----------
 
@@ -13,34 +15,37 @@ An arbitrarily oriented bounded volume in space in the form of a rectangular par
 
 
 .. _api_OBBox_public:
+
 Public Methods
 --------------
 
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size)                              |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                                     | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`box<api_OBBox_box>` (Vector3 & min, Vector3 & max) const                                            |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setBox<api_OBBox_setBox>` (const Vector3 & min, const Vector3 & max)                                |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-| :ref:`const OBBox<api_const OBBox>` | :ref:`operator*<api_OBBox_operator*>` (areal  factor) const                                               |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
-| :ref:`const OBBox<api_const OBBox>` | :ref:`operator*<api_OBBox_operator*>` (const Vector3 & vector) const                                      |
-+-------------------------------------+-----------------------------------------------------------------------------------------------------------+
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+|                               | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+|                               | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size)                              |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+|                               | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+|                          void | :ref:`box<api_OBBox_box>` (Vector3 & min, Vector3 & max) const                                            |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+|                          void | :ref:`setBox<api_OBBox_setBox>` (const Vector3 & min, const Vector3 & max)                                |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_operator*>` (areal  factor) const                                               |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
+| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_operator*>` (const Vector3 & vector) const                                      |
++-------------------------------+-----------------------------------------------------------------------------------------------------------+
 
 
 
 .. _api_OBBox_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_OBBox_methods:
+
 Methods Description
 -------------------
 
@@ -70,7 +75,7 @@ Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity ro
 
 .. _api_OBBox_box:
 
-:ref:`void<api_void>`  **OBBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
+ void **OBBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
 
 Returns *min* and *max* points of bounding box as output arguments.
 
@@ -80,7 +85,7 @@ Returns *min* and *max* points of bounding box as output arguments.
 
 .. _api_OBBox_setBox:
 
-:ref:`void<api_void>`  **OBBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
+ void **OBBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
 
 Set curent bounding box by *min* and *max* points.
 
@@ -90,18 +95,14 @@ Set curent bounding box by *min* and *max* points.
 
 .. _api_OBBox_operator*:
 
-:ref:`const OBBox<api_const OBBox>`  **OBBox::operator*** (:ref:`areal<api_areal>`  *factor*) const
+const :ref:`OBBox<api_OBBox>` **OBBox::operator*** (areal  *factor*) const
 
 Returns a copy of this vector, multiplied by the given *factor*.
 
-----
-
 .. _api_OBBox_operator*:
 
-:ref:`const OBBox<api_const OBBox>`  **OBBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+const :ref:`OBBox<api_OBBox>` **OBBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
 Returns a copy of this *vector*, multiplied by the given *vector*.
-
-----
 
 

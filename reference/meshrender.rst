@@ -1,10 +1,12 @@
 .. _api_MeshRender:
+
 MeshRender Class
 ================
 
-Inherited: :ref:`Renderable<api_Renderable>`
+Inherited: :doc:`Renderable<api_Renderable>`
 
 .. _api_MeshRender_description:
+
 Description
 -----------
 
@@ -13,44 +15,47 @@ The MeshRender component allows you to display 3D Mesh to use in both 2D and 3D 
 
 
 .. _api_MeshRender_public:
+
 Public Methods
 --------------
 
-+---------------------------------+----------------------------------------------------------------------+
-| :ref:`Material<api_Material>` * | :ref:`material<api_MeshRender_material>` () const                    |
-+---------------------------------+----------------------------------------------------------------------+
-|         :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshRender_mesh>` () const                            |
-+---------------------------------+----------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setMaterial<api_MeshRender_setMaterial>` (Material * material) |
-+---------------------------------+----------------------------------------------------------------------+
-|           :ref:`void<api_void>` | :ref:`setMesh<api_MeshRender_setMesh>` (Mesh * mesh)                 |
-+---------------------------------+----------------------------------------------------------------------+
++--------------------------------------+---------------------------------------------------------------------------+
+|  :ref:`VariantList<api_VariantList>` | :ref:`materials<api_MeshRender_materials>` () const                       |
++--------------------------------------+---------------------------------------------------------------------------+
+|              :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshRender_mesh>` () const                                 |
++--------------------------------------+---------------------------------------------------------------------------+
+|                                 void | :ref:`setMaterials<api_MeshRender_setMaterials>` (VariantList  materials) |
++--------------------------------------+---------------------------------------------------------------------------+
+|                                 void | :ref:`setMesh<api_MeshRender_setMesh>` (Mesh * mesh)                      |
++--------------------------------------+---------------------------------------------------------------------------+
 
 
 
 .. _api_MeshRender_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_MeshRender_methods:
+
 Methods Description
 -------------------
 
-.. _api_MeshRender_material:
+.. _api_MeshRender_materials:
 
-:ref:`Material<api_Material>` * **MeshRender::material** () const
+ :ref:`VariantList<api_VariantList>` **MeshRender::materials** () const
 
-Returns an instantiated Material assigned to MeshRender.
+Returns a list of assigned materials.
 
-**See also** setMaterial().
+**See also** setMaterials().
 
 ----
 
 .. _api_MeshRender_mesh:
 
-:ref:`Mesh<api_Mesh>` * **MeshRender::mesh** () const
+ :ref:`Mesh<api_Mesh>`* **MeshRender::mesh** () const
 
 Returns a Mesh assigned to this component.
 
@@ -58,24 +63,22 @@ Returns a Mesh assigned to this component.
 
 ----
 
-.. _api_MeshRender_setMaterial:
+.. _api_MeshRender_setMaterials:
 
-:ref:`void<api_void>`  **MeshRender::setMaterial** (:ref:`Material<api_Material>` * *material*)
+ void **MeshRender::setMaterials** (:ref:`VariantList<api_VariantList>`  *materials*)
 
-Creates a new instance of *material* and assigns it.
+Assigns an array of the *materials* to the mesh.
 
-**See also** *material*().
+**See also** *materials*().
 
 ----
 
 .. _api_MeshRender_setMesh:
 
-:ref:`void<api_void>`  **MeshRender::setMesh** (:ref:`Mesh<api_Mesh>` * *mesh*)
+ void **MeshRender::setMesh** (:ref:`Mesh<api_Mesh>` * *mesh*)
 
 Assigns a new *mesh* to draw.
 
 **See also** *mesh*().
-
-----
 
 

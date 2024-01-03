@@ -1,10 +1,12 @@
 .. _api_System:
-System Class
-================
 
-Inherited: :ref:`ObjectSystem<api_ObjectSystem>`
+System Class
+============
+
+Inherited: :doc:`ObjectSystem<api_ObjectSystem>`
 
 .. _api_System_description:
+
 Description
 -----------
 
@@ -19,32 +21,33 @@ Note: Systems can be executed one by one or in parallel based on thread policy.
 
 
 .. _api_System_public:
+
 Public Methods
 --------------
 
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`composeComponent<api_System_composeComponent>` (Component * component) const |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`bool<api_bool>` | :ref:`init<api_System_init>` ()                                                    |
-+-------------------------------------+------------------------------------------------------------------------------------+
-| :ref:`const char<api_const char>` * | :ref:`name<api_System_name>` () const                                              |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`processEvents<api_System_processEvents>` ()                                  |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`setActiveScene<api_System_setActiveScene>` (Scene * scene)                   |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`syncSettings<api_System_syncSettings>` () const                              |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|                 :ref:`int<api_int>` | :ref:`threadPolicy<api_System_threadPolicy>` () const                              |
-+-------------------------------------+------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`update<api_System_update>` (Scene * scene)                                   |
-+-------------------------------------+------------------------------------------------------------------------------------+
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`composeComponent<api_System_composeComponent>` (Component * component) const |
++-------+------------------------------------------------------------------------------------+
+|  bool | :ref:`init<api_System_init>` ()                                                    |
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`processEvents<api_System_processEvents>` ()                                  |
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`setActiveWorld<api_System_setActiveWorld>` (World * world)                   |
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`syncSettings<api_System_syncSettings>` () const                              |
++-------+------------------------------------------------------------------------------------+
+|   int | :ref:`threadPolicy<api_System_threadPolicy>` () const                              |
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`update<api_System_update>` (World * world)                                   |
++-------+------------------------------------------------------------------------------------+
 
 .. _api_System_enums:
+
 Public Enums
---------------
+------------
 
 .. _api_System_ThreadPolicy:
+
 **enum System::ThreadPolicy**
 
 +--------------+-------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -58,18 +61,20 @@ Public Enums
 
 
 .. _api_System_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_System_methods:
+
 Methods Description
 -------------------
 
 .. _api_System_composeComponent:
 
-:ref:`void<api_void>`  **System::composeComponent** (:ref:`Component<api_Component>` * *component*) const
+ void **System::composeComponent** (:ref:`Component<api_Component>` * *component*) const
 
 This method is a helper to initialize specifically a new *component*. Usually used in the editor.
 
@@ -77,23 +82,15 @@ This method is a helper to initialize specifically a new *component*. Usually us
 
 .. _api_System_init:
 
-:ref:`bool<api_bool>`  **System::init** ()
+ bool **System::init** ()
 
 Can be used to initialize and execute necessary routines. This method will be called automatically just after the engine started. Returns true if success.
 
 ----
 
-.. _api_System_name:
-
-:ref:`const char<api_const char>` * **System::name** () const
-
-Returns the name of system.
-
-----
-
 .. _api_System_processEvents:
 
-:ref:`void<api_void>`  **System::processEvents** ()
+ void **System::processEvents** ()
 
 Reimplements: ObjectSystem::processEvents().
 
@@ -101,17 +98,17 @@ Processes all incoming events and executes the System::update method.
 
 ----
 
-.. _api_System_setActiveScene:
+.. _api_System_setActiveWorld:
 
-:ref:`void<api_void>`  **System::setActiveScene** (:ref:`Scene<api_Scene>` * *scene*)
+ void **System::setActiveWorld** (:ref:`World<api_World>` * *world*)
 
-Sets active *scene*.
+Sets active *world*.
 
 ----
 
 .. _api_System_syncSettings:
 
-:ref:`void<api_void>`  **System::syncSettings** () const
+ void **System::syncSettings** () const
 
 This method is a callback to react on saving game settings.
 
@@ -119,7 +116,7 @@ This method is a callback to react on saving game settings.
 
 .. _api_System_threadPolicy:
 
-:ref:`int<api_int>`  **System::threadPolicy** () const
+ int **System::threadPolicy** () const
 
 Returns the thread policy of the system. For more details please refer to System::ThreadPolicy enum.
 
@@ -127,10 +124,8 @@ Returns the thread policy of the system. For more details please refer to System
 
 .. _api_System_update:
 
-:ref:`void<api_void>`  **System::update** (:ref:`Scene<api_Scene>` * *scene*)
+ void **System::update** (:ref:`World<api_World>` * *world*)
 
-All processing operations for the current *scene* must be done in this method.
-
-----
+All processing operations for the current *world* must be done in this method.
 
 

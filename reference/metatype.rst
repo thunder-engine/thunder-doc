@@ -1,10 +1,12 @@
 .. _api_MetaType:
+
 MetaType Class
-================
+==============
 
 Inherited: None
 
 .. _api_MetaType_description:
+
 Description
 -----------
 
@@ -33,36 +35,39 @@ To convert values to other types developer should define own conversion type fun
 
 
 .. _api_MetaType_public:
+
 Public Methods
 --------------
 
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|                                     | :ref:`MetaType<api_MetaType_MetaType>` (const MetaType::Table * table)                     |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|               :ref:`bool<api_bool>` | :ref:`compare<api_MetaType_compare>` (const void * left, const void * right) const         |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` * | :ref:`construct<api_MetaType_construct>` (void * where, const void * copy = nullptr) const |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|             :ref:`void<api_void>` * | :ref:`create<api_MetaType_create>` (const void * copy = nullptr) const                     |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`destroy<api_MetaType_destroy>` (void * data) const                                   |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|               :ref:`void<api_void>` | :ref:`destruct<api_MetaType_destruct>` (void * data) const                                 |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|                 :ref:`int<api_int>` | :ref:`flags<api_MetaType_flags>` () const                                                  |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|               :ref:`bool<api_bool>` | :ref:`isValid<api_MetaType_isValid>` () const                                              |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-| :ref:`const char<api_const char>` * | :ref:`name<api_MetaType_name>` () const                                                    |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
-|                 :ref:`int<api_int>` | :ref:`size<api_MetaType_size>` () const                                                    |
-+-------------------------------------+--------------------------------------------------------------------------------------------+
++------------+--------------------------------------------------------------------------------------------+
+|            | :ref:`MetaType<api_MetaType_MetaType>` (const MetaType::Table * table)                     |
++------------+--------------------------------------------------------------------------------------------+
+|       bool | :ref:`compare<api_MetaType_compare>` (const void * left, const void * right) const         |
++------------+--------------------------------------------------------------------------------------------+
+|       void | :ref:`construct<api_MetaType_construct>` (void * where, const void * copy = nullptr) const |
++------------+--------------------------------------------------------------------------------------------+
+|       void | :ref:`create<api_MetaType_create>` (const void * copy = nullptr) const                     |
++------------+--------------------------------------------------------------------------------------------+
+|       void | :ref:`destroy<api_MetaType_destroy>` (void * data) const                                   |
++------------+--------------------------------------------------------------------------------------------+
+|       void | :ref:`destruct<api_MetaType_destruct>` (void * data) const                                 |
++------------+--------------------------------------------------------------------------------------------+
+|        int | :ref:`flags<api_MetaType_flags>` () const                                                  |
++------------+--------------------------------------------------------------------------------------------+
+|       bool | :ref:`isValid<api_MetaType_isValid>` () const                                              |
++------------+--------------------------------------------------------------------------------------------+
+| const char | :ref:`name<api_MetaType_name>` () const                                                    |
++------------+--------------------------------------------------------------------------------------------+
+|        int | :ref:`size<api_MetaType_size>` () const                                                    |
++------------+--------------------------------------------------------------------------------------------+
 
 .. _api_MetaType_enums:
+
 Public Enums
---------------
+------------
 
 .. _api_MetaType_converterCallback:
+
 **enum MetaType::converterCallback**
 
 Callback which contain address to converter function. This converter must be able to convert from value with fromType type to to value with type represented by this MetaType.
@@ -70,46 +75,48 @@ Callback which contain address to converter function. This converter must be abl
 
 
 .. _api_MetaType_static:
+
 Static Methods
 --------------
 
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`bool<api_bool>` | :ref:`compare<api_MetaType_compare>` (const void * left, const void * right, uint32_t  type)                                   |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                   :ref:`void<api_void>` * | :ref:`construct<api_MetaType_construct>` (uint32_t  type, void * where, const void * copy = nullptr)                           |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`bool<api_bool>` | :ref:`convert<api_MetaType_convert>` (const void * from, uint32_t  fromType, void * to, uint32_t  toType)                      |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                   :ref:`void<api_void>` * | :ref:`create<api_MetaType_create>` (uint32_t  type, const void * copy = nullptr)                                               |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`void<api_void>` | :ref:`destroy<api_MetaType_destroy>` (uint32_t  type, void * data)                                                             |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`void<api_void>` | :ref:`destruct<api_MetaType_destruct>` (uint32_t  type, void * data)                                                           |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`bool<api_bool>` | :ref:`hasConverter<api_MetaType_hasConverter>` (uint32_t  from, uint32_t  to)                                                  |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`const char<api_const char>` * | :ref:`name<api_MetaType_name>` (uint32_t  type)                                                                                |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`bool<api_bool>` | :ref:`registerConverter<api_MetaType_registerConverter>` (uint32_t  from, uint32_t  to, MetaType::converterCallback  function) |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`uint32_t<api_uint32_t>` | :ref:`registerType<api_MetaType_registerType>` (MetaType::Table & table)                                                       |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                       :ref:`int<api_int>` | :ref:`size<api_MetaType_size>` (uint32_t  type)                                                                                |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                             :ref:`MetaType::Table<api_MetaType::Table>` * | :ref:`table<api_MetaType_table>` (uint32_t  type)                                                                              |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_MetaType_type>` (const char * name)                                                                             |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                             :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_MetaType_type>` (const type_info & type)                                                                        |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| :ref:`template <typename T> uint32_t<api_template <typename T> uint32_t>` | :ref:`type<api_MetaType_type>` ()                                                                                              |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                           :ref:`MetaType::TypeMap<api_MetaType::TypeMap>` | :ref:`types<api_MetaType_types>` ()                                                                                            |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|                                                     :ref:`void<api_void>` | :ref:`unregisterType<api_MetaType_unregisterType>` (MetaType::Table & table)                                                   |
-+---------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             bool | :ref:`compare<api_MetaType_compare>` (const void * left, const void * right, int  type)                              |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             void | :ref:`construct<api_MetaType_construct>` (int  type, void * where, const void * copy = nullptr)                      |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             bool | :ref:`convert<api_MetaType_convert>` (const void * from, int  fromType, void * to, int  toType)                      |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             void | :ref:`create<api_MetaType_create>` (int  type, const void * copy = nullptr)                                          |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             void | :ref:`destroy<api_MetaType_destroy>` (int  type, void * data)                                                        |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             void | :ref:`destruct<api_MetaType_destruct>` (int  type, void * data)                                                      |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             bool | :ref:`hasConverter<api_MetaType_hasConverter>` (int  from, int  to)                                                  |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                       const char | :ref:`name<api_MetaType_name>` (int  type)                                                                           |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             bool | :ref:`registerConverter<api_MetaType_registerConverter>` (int  from, int  to, MetaType::converterCallback  function) |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                              int | :ref:`registerType<api_MetaType_registerType>` (MetaType::Table & )                                                  |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                              int | :ref:`size<api_MetaType_size>` (int  type)                                                                           |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|    :ref:`MetaType::Table<api_MetaType::Table>` * | :ref:`table<api_MetaType_table>` (int  type)                                                                         |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                              int | :ref:`type<api_MetaType_type>` (const char * )                                                                       |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                              int | :ref:`type<api_MetaType_type>` (const type_info & )                                                                  |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                        template <typename T> int | :ref:`type<api_MetaType_type>` ()                                                                                    |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|  :ref:`MetaType::TypeMap<api_MetaType::TypeMap>` | :ref:`types<api_MetaType_types>` ()                                                                                  |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                             void | :ref:`unregisterType<api_MetaType_unregisterType>` (MetaType::Table & table)                                         |
++--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 .. _api_MetaType_methods:
+
 Methods Description
 -------------------
 
@@ -123,7 +130,7 @@ Constructs MetaType object which will contain information provided in a *table*.
 
 .. _api_MetaType_compare:
 
-:ref:`bool<api_bool>`  **MetaType::compare** (:ref:`void<api_void>` * *left*, :ref:`void<api_void>` * *right*) const
+ bool **MetaType::compare** (void * *left*, void * *right*) const
 
 Returns true in case of *left* value is equal to *right* value; otherwise returns false.
 
@@ -131,7 +138,7 @@ Returns true in case of *left* value is equal to *right* value; otherwise return
 
 .. _api_MetaType_compare:
 
-:ref:`bool<api_bool>`  **MetaType::compare** (:ref:`void<api_void>` * *left*, :ref:`void<api_void>` * *right*, :ref:`uint32_t<api_uint32_t>`  *type*)
+ bool **MetaType::compare** (void * *left*, void * *right*, int  *type*)
 
 Returns true in case of *left* value is equal to *right* value with *type*; otherwise returns false.
 
@@ -139,7 +146,7 @@ Returns true in case of *left* value is equal to *right* value with *type*; othe
 
 .. _api_MetaType_construct:
 
-:ref:`void<api_void>` * **MetaType::construct** (:ref:`void<api_void>` * *where*, :ref:`void<api_void>` * *copy* = nullptr) const
+ void **MetaType::construct** (void * *where*, void * *copy* = nullptr) const
 
 Constructs a value of the given type, which represented by current MetaType object in the existing memory addressed by *where*, that is a *copy* of *copy*, and returns *where*. If *copy* is zero, the value is default constructed.
 
@@ -147,7 +154,7 @@ Constructs a value of the given type, which represented by current MetaType obje
 
 .. _api_MetaType_construct:
 
-:ref:`void<api_void>` * **MetaType::construct** (:ref:`uint32_t<api_uint32_t>`  *type*, :ref:`void<api_void>` * *where*, :ref:`void<api_void>` * *copy* = nullptr)
+ void **MetaType::construct** (int  *type*, void * *where*, void * *copy* = nullptr)
 
 Constructs a value of the given *type* in the existing memory addressed by *where*, that is a *copy* of *copy*, and returns *where*. If *copy* is zero, the value is default constructed.
 
@@ -155,7 +162,7 @@ Constructs a value of the given *type* in the existing memory addressed by *wher
 
 .. _api_MetaType_convert:
 
-:ref:`bool<api_bool>`  **MetaType::convert** (:ref:`void<api_void>` * *from*, :ref:`uint32_t<api_uint32_t>`  *fromType*, :ref:`void<api_void>` * *to*, :ref:`uint32_t<api_uint32_t>`  *toType*)
+ bool **MetaType::convert** (void * *from*, int  *fromType*, void * *to*, int  *toType*)
 
 Tries *to* convert value *from* with type *from*Type *to* type *to*Type and place the result *to* output value *to*. Returns true if conversion succeed; otherwise returns false.
 
@@ -165,7 +172,7 @@ Tries *to* convert value *from* with type *from*Type *to* type *to*Type and plac
 
 .. _api_MetaType_create:
 
-:ref:`void<api_void>` * **MetaType::create** (:ref:`void<api_void>` * *copy* = nullptr) const
+ void **MetaType::create** (void * *copy* = nullptr) const
 
 Returns a *copy* of *copy* value, with type, which represented by current MetaType object. If *copy* is null, creates a default constructed instance.
 
@@ -173,7 +180,7 @@ Returns a *copy* of *copy* value, with type, which represented by current MetaTy
 
 .. _api_MetaType_create:
 
-:ref:`void<api_void>` * **MetaType::create** (:ref:`uint32_t<api_uint32_t>`  *type*, :ref:`void<api_void>` * *copy* = nullptr)
+ void **MetaType::create** (int  *type*, void * *copy* = nullptr)
 
 Returns a *copy* of *copy* value, with *type*. If *copy* is null, creates a default constructed instance.
 
@@ -181,7 +188,7 @@ Returns a *copy* of *copy* value, with *type*. If *copy* is null, creates a defa
 
 .. _api_MetaType_destroy:
 
-:ref:`void<api_void>`  **MetaType::destroy** (:ref:`void<api_void>` * *data*) const
+ void **MetaType::destroy** (void * *data*) const
 
 Destroys the value with type, which represented by current MetaType object, located at *data*. This function calls delete operator.
 
@@ -189,7 +196,7 @@ Destroys the value with type, which represented by current MetaType object, loca
 
 .. _api_MetaType_destroy:
 
-:ref:`void<api_void>`  **MetaType::destroy** (:ref:`uint32_t<api_uint32_t>`  *type*, :ref:`void<api_void>` * *data*)
+ void **MetaType::destroy** (int  *type*, void * *data*)
 
 Destroys the value with *type*, located at *data*. This function calls delete operator.
 
@@ -197,7 +204,7 @@ Destroys the value with *type*, located at *data*. This function calls delete op
 
 .. _api_MetaType_destruct:
 
-:ref:`void<api_void>`  **MetaType::destruct** (:ref:`void<api_void>` * *data*) const
+ void **MetaType::destruct** (void * *data*) const
 
 Destructs the value with type, which represented by current MetaType object, located at *data*. Unlike destroy(), this function only invokes the type's destructor, it doesn't invoke the delete operator.
 
@@ -205,7 +212,7 @@ Destructs the value with type, which represented by current MetaType object, loc
 
 .. _api_MetaType_destruct:
 
-:ref:`void<api_void>`  **MetaType::destruct** (:ref:`uint32_t<api_uint32_t>`  *type*, :ref:`void<api_void>` * *data*)
+ void **MetaType::destruct** (int  *type*, void * *data*)
 
 Destructs the value with *type*, located at *data*. Unlike destroy(), this function only invokes the *type*'s destructor, it doesn't invoke the delete operator.
 
@@ -213,7 +220,7 @@ Destructs the value with *type*, located at *data*. Unlike destroy(), this funct
 
 .. _api_MetaType_flags:
 
-:ref:`int<api_int>`  **MetaType::flags** () const
+ int **MetaType::flags** () const
 
 Returns flags for the type.
 
@@ -221,7 +228,7 @@ Returns flags for the type.
 
 .. _api_MetaType_hasConverter:
 
-:ref:`bool<api_bool>`  **MetaType::hasConverter** (:ref:`uint32_t<api_uint32_t>`  *from*, :ref:`uint32_t<api_uint32_t>`  *to*)
+ bool **MetaType::hasConverter** (int  *from*, int  *to*)
 
 Returns true in case of type *from* can be converted *to* type *to*; otherwise returns false.
 
@@ -229,7 +236,7 @@ Returns true in case of type *from* can be converted *to* type *to*; otherwise r
 
 .. _api_MetaType_isValid:
 
-:ref:`bool<api_bool>`  **MetaType::isValid** () const
+ bool **MetaType::isValid** () const
 
 Returns true in case of this MetaType object contain valid information; otherwise returns false.
 
@@ -237,7 +244,7 @@ Returns true in case of this MetaType object contain valid information; otherwis
 
 .. _api_MetaType_name:
 
-:ref:`const char<api_const char>` * **MetaType::name** () const
+const char **MetaType::name** () const
 
 Returns the name of type.
 
@@ -245,7 +252,7 @@ Returns the name of type.
 
 .. _api_MetaType_name:
 
-:ref:`const char<api_const char>` * **MetaType::name** (:ref:`uint32_t<api_uint32_t>`  *type*)
+const char **MetaType::name** (int  *type*)
 
 Returns a name of *type* with *type* ID. Returns nullptr for unregistered *type*.
 
@@ -253,7 +260,7 @@ Returns a name of *type* with *type* ID. Returns nullptr for unregistered *type*
 
 .. _api_MetaType_registerConverter:
 
-:ref:`bool<api_bool>`  **MetaType::registerConverter** (:ref:`uint32_t<api_uint32_t>`  *from*, :ref:`uint32_t<api_uint32_t>`  *to*, :ref:`MetaType::converterCallback<api_MetaType::converterCallback>`  *function*)
+ bool **MetaType::registerConverter** (int  *from*, int  *to*, :ref:`MetaType::converterCallback<api_MetaType::converterCallback>`  *function*)
 
 Registers the possibility *to* convert value type *from* *to* type *to* with conversion *function*. Returns true in case of converter successfully registered; otherwise returns false.
 
@@ -263,15 +270,15 @@ Registers the possibility *to* convert value type *from* *to* type *to* with con
 
 .. _api_MetaType_registerType:
 
-:ref:`uint32_t<api_uint32_t>`  **MetaType::registerType** (:ref:`MetaType::Table<api_MetaType::Table>` & *table*)
+ int **MetaType::registerType** (:ref:`MetaType::Table<api_MetaType::Table>` & **)
 
-Registers type by type MetaType::Table *table*. Use registerMetaType() instead this function. Returns an ID of registered type.
+Registers type by type MetaType::Table table. Use registerMetaType() instead this function. Returns an ID of registered type.
 
 ----
 
 .. _api_MetaType_size:
 
-:ref:`int<api_int>`  **MetaType::size** () const
+ int **MetaType::size** () const
 
 Returns the size of type.
 
@@ -279,7 +286,7 @@ Returns the size of type.
 
 .. _api_MetaType_size:
 
-:ref:`int<api_int>`  **MetaType::size** (:ref:`uint32_t<api_uint32_t>`  *type*)
+ int **MetaType::size** (int  *type*)
 
 Returns a size of *type* with *type* ID. Returns 0 for unregistered *type*.
 
@@ -287,7 +294,7 @@ Returns a size of *type* with *type* ID. Returns 0 for unregistered *type*.
 
 .. _api_MetaType_table:
 
-:ref:`MetaType::Table<api_MetaType::Table>` * **MetaType::table** (:ref:`uint32_t<api_uint32_t>`  *type*)
+ :ref:`MetaType::Table<api_MetaType::Table>`* **MetaType::table** (int  *type*)
 
 Returns *type* information table if *type* registered; otherwise returns nullptr.
 
@@ -295,23 +302,23 @@ Returns *type* information table if *type* registered; otherwise returns nullptr
 
 .. _api_MetaType_type:
 
-:ref:`uint32_t<api_uint32_t>`  **MetaType::type** (:ref:`char<api_char>` * *name*)
+ int **MetaType::type** (char * **)
 
-Returns an ID of type with type *name*. Returns MetaType::INVALID for unregistered type.
-
-----
-
-.. _api_MetaType_type:
-
-:ref:`uint32_t<api_uint32_t>`  **MetaType::type** (:ref:`type_info<api_type_info>` & *type*)
-
-Returns an ID of *type* with *type* info. Returns MetaType::INVALID for unregistered *type*.
+Returns an ID of type with type name. Returns MetaType::INVALID for unregistered type.
 
 ----
 
 .. _api_MetaType_type:
 
-:ref:`template <typename T> uint32_t<api_template <typename T> uint32_t>`  **MetaType::type** ()
+ int **MetaType::type** (:ref:`type_info<api_type_info>` & **)
+
+Returns an ID of type with type info. Returns MetaType::INVALID for unregistered type.
+
+----
+
+.. _api_MetaType_type:
+
+template <typename T> int **MetaType::type** ()
 
 Returns the type ID for type T.
 
@@ -319,7 +326,7 @@ Returns the type ID for type T.
 
 .. _api_MetaType_types:
 
-:ref:`MetaType::TypeMap<api_MetaType::TypeMap>`  **MetaType::types** ()
+ :ref:`MetaType::TypeMap<api_MetaType::TypeMap>` **MetaType::types** ()
 
 Returns a table of registered types.
 
@@ -327,10 +334,8 @@ Returns a table of registered types.
 
 .. _api_MetaType_unregisterType:
 
-:ref:`void<api_void>`  **MetaType::unregisterType** (:ref:`MetaType::Table<api_MetaType::Table>` & *table*)
+ void **MetaType::unregisterType** (:ref:`MetaType::Table<api_MetaType::Table>` & *table*)
 
 Unregisters type by type MetaType::Table *table*. Use unregisterMetaType() instead this function.
-
-----
 
 

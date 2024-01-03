@@ -1,10 +1,12 @@
 .. _api_Armature:
-Armature Class
-================
 
-Inherited: :ref:`Renderable<api_Renderable>`
+Armature Class
+==============
+
+Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
 
 .. _api_Armature_description:
+
 Description
 -----------
 
@@ -13,30 +15,33 @@ An armature in Thunder Engine can be thought of as similar to the armature of a 
 
 
 .. _api_Armature_public:
+
 Public Methods
 --------------
 
-+-------------------------+------------------------------------------------------------+
-| :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_bindPose>` () const            |
-+-------------------------+------------------------------------------------------------+
-|   :ref:`void<api_void>` | :ref:`setBindPose<api_Armature_setBindPose>` (Pose * pose) |
-+-------------------------+------------------------------------------------------------+
++--------------------------+------------------------------------------------------------+
+|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_bindPose>` () const            |
++--------------------------+------------------------------------------------------------+
+|                     void | :ref:`setBindPose<api_Armature_setBindPose>` (Pose * pose) |
++--------------------------+------------------------------------------------------------+
 
 
 
 .. _api_Armature_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_Armature_methods:
+
 Methods Description
 -------------------
 
 .. _api_Armature_bindPose:
 
-:ref:`Pose<api_Pose>` * **Armature::bindPose** () const
+ :ref:`Pose<api_Pose>`* **Armature::bindPose** () const
 
 Returns a bind pose of the bone structure.
 
@@ -46,12 +51,10 @@ Returns a bind pose of the bone structure.
 
 .. _api_Armature_setBindPose:
 
-:ref:`void<api_void>`  **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
+ void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
 
 Sets a bind (initial) *pose* of the bone structure.
 
 **See also** bindPose().
-
-----
 
 

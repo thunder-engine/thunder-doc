@@ -1,10 +1,12 @@
 .. _api_Vector2:
+
 Vector2 Class
-================
+=============
 
 Inherited: None
 
 .. _api_Vector2_description:
+
 Description
 -----------
 
@@ -17,74 +19,89 @@ Note: By design values in the Vector2 instance are stored as float. This means t
 
 
 .. _api_Vector2_public:
+
 Public Methods
 --------------
 
-+-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
-+-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector2<api_Vector2_Vector2>` (areal  v)                           |
-+-------------------------------+--------------------------------------------------------------------------+
-|                               | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`cross<api_Vector2_cross>` (const Vector2 & vector) const           |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`dot<api_Vector2_dot>` (const Vector2 & vector) const               |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`length<api_Vector2_length>` () const                               |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`normalize<api_Vector2_normalize>` ()                               |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`sqrLength<api_Vector2_sqrLength>` () const                         |
-+-------------------------------+--------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`operator!=<api_Vector2_operator!=>` (const Vector2 & vector) const |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_operator*>` (areal  factor) const            |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_operator*>` (const Vector2 & vector) const   |
-+-------------------------------+--------------------------------------------------------------------------+
-| :ref:`Vector2<api_Vector2>` & | :ref:`operator*=<api_Vector2_operator*=>` (areal  factor)                |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator+<api_Vector2_operator+>` (const Vector2 & vector) const   |
-+-------------------------------+--------------------------------------------------------------------------+
-| :ref:`Vector2<api_Vector2>` & | :ref:`operator+=<api_Vector2_operator+=>` (const Vector2 & vector)       |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_operator->` () const                         |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_operator->` (const Vector2 & vector) const   |
-+-------------------------------+--------------------------------------------------------------------------+
-| :ref:`Vector2<api_Vector2>` & | :ref:`operator-=<api_Vector2_operator-=>` (const Vector2 & vector)       |
-+-------------------------------+--------------------------------------------------------------------------+
-|   :ref:`Vector2<api_Vector2>` | :ref:`operator/<api_Vector2_operator/>` (areal  divisor) const           |
-+-------------------------------+--------------------------------------------------------------------------+
-| :ref:`Vector2<api_Vector2>` & | :ref:`operator/=<api_Vector2_operator/=>` (areal  divisor)               |
-+-------------------------------+--------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`operator<<api_Vector2_operator<>` (const Vector2 & vector) const   |
-+-------------------------------+--------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`operator==<api_Vector2_operator==>` (const Vector2 & vector) const |
-+-------------------------------+--------------------------------------------------------------------------+
-|         :ref:`bool<api_bool>` | :ref:`operator><api_Vector2_operator>>` (const Vector2 & vector) const   |
-+-------------------------------+--------------------------------------------------------------------------+
-|     :ref:`areal<api_areal>` & | :ref:`operator[]<api_Vector2_operator[]>` (int  i)                       |
-+-------------------------------+--------------------------------------------------------------------------+
-|       :ref:`areal<api_areal>` | :ref:`operator[]<api_Vector2_operator[]>` (int  i) const                 |
-+-------------------------------+--------------------------------------------------------------------------+
++--------------------------------+--------------------------------------------------------------------------+
+|                                | :ref:`Vector2<api_Vector2_Vector2>` (const Vector2 & vector)             |
++--------------------------------+--------------------------------------------------------------------------+
+|                                | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
++--------------------------------+--------------------------------------------------------------------------+
+|                                | :ref:`Vector2<api_Vector2_Vector2>` (areal  v)                           |
++--------------------------------+--------------------------------------------------------------------------+
+|                                | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
++--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator=<api_Vector2_operator=>` (const Vector2 & value)          |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`cross<api_Vector2_cross>` (const Vector2 & vector) const           |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`dot<api_Vector2_dot>` (const Vector2 & vector) const               |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`length<api_Vector2_length>` () const                               |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`normalize<api_Vector2_normalize>` ()                               |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`sqrLength<api_Vector2_sqrLength>` () const                         |
++--------------------------------+--------------------------------------------------------------------------+
+|                           bool | :ref:`operator!=<api_Vector2_operator!=>` (const Vector2 & vector) const |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_operator*>` (areal  factor) const            |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_operator*>` (const Vector2 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator*=<api_Vector2_operator*=>` (areal  factor)                |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator+<api_Vector2_operator+>` (const Vector2 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator+=<api_Vector2_operator+=>` (const Vector2 & vector)       |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_operator->` () const                         |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_operator->` (const Vector2 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator-=<api_Vector2_operator-=>` (const Vector2 & vector)       |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator/<api_Vector2_operator/>` (areal  divisor) const           |
++--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator/=<api_Vector2_operator/=>` (areal  divisor)               |
++--------------------------------+--------------------------------------------------------------------------+
+|                           bool | :ref:`operator<<api_Vector2_operator<>` (const Vector2 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|                           bool | :ref:`operator==<api_Vector2_operator==>` (const Vector2 & vector) const |
++--------------------------------+--------------------------------------------------------------------------+
+|                           bool | :ref:`operator><api_Vector2_operator>>` (const Vector2 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`operator[]<api_Vector2_operator[]>` (int  i)                       |
++--------------------------------+--------------------------------------------------------------------------+
+|                          areal | :ref:`operator[]<api_Vector2_operator[]>` (int  i) const                 |
++--------------------------------+--------------------------------------------------------------------------+
 
 
 
 .. _api_Vector2_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_Vector2_methods:
+
 Methods Description
 -------------------
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** (:ref:`areal<api_areal>`  *x*, :ref:`areal<api_areal>`  *y*)
+**Vector2::Vector2** (:ref:`Vector2<api_Vector2>` & *vector*)
+
+Copy constructor.
+
+----
+
+.. _api_Vector2_Vector2:
+
+**Vector2::Vector2** (areal  *x*, areal  *y*)
 
 Constructs a vector with coordinates (x, *y*).
 
@@ -92,7 +109,7 @@ Constructs a vector with coordinates (x, *y*).
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** (:ref:`areal<api_areal>`  *v*)
+**Vector2::Vector2** (areal  *v*)
 
 Constructs a *v*ector with coordinates (v).
 
@@ -106,9 +123,17 @@ Constructs a null vector, i.e. with coordinates (0, 0).
 
 ----
 
+.. _api_Vector2_operator=:
+
+ :ref:`Vector2<api_Vector2>`& **Vector2::operator=** (:ref:`Vector2<api_Vector2>` & *value*)
+
+Assignment operator. The *value* will be assigned to this object.
+
+----
+
 .. _api_Vector2_cross:
 
-:ref:`areal<api_areal>`  **Vector2::cross** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ areal **Vector2::cross** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns the cross-product of this *vector* and given *vector*.
 
@@ -118,7 +143,7 @@ Returns the cross-product of this *vector* and given *vector*.
 
 .. _api_Vector2_dot:
 
-:ref:`areal<api_areal>`  **Vector2::dot** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ areal **Vector2::dot** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns the dot-product of this *vector* and given *vector*.
 
@@ -128,7 +153,7 @@ Returns the dot-product of this *vector* and given *vector*.
 
 .. _api_Vector2_length:
 
-:ref:`areal<api_areal>`  **Vector2::length** () const
+ areal **Vector2::length** () const
 
 Returns the length of this vector.
 
@@ -138,7 +163,7 @@ Returns the length of this vector.
 
 .. _api_Vector2_normalize:
 
-:ref:`areal<api_areal>`  **Vector2::normalize** ()
+ areal **Vector2::normalize** ()
 
 Normalizes the currect vector in place. Returns length of prenormalized vector.
 
@@ -148,7 +173,7 @@ Normalizes the currect vector in place. Returns length of prenormalized vector.
 
 .. _api_Vector2_sqrLength:
 
-:ref:`areal<api_areal>`  **Vector2::sqrLength** () const
+ areal **Vector2::sqrLength** () const
 
 Returns the squared length of this vector.
 
@@ -158,7 +183,7 @@ Returns the squared length of this vector.
 
 .. _api_Vector2_operator!=:
 
-:ref:`bool<api_bool>`  **Vector2::operator!=** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ bool **Vector2::operator!=** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns true if this *vector* is NOT equal to given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
 
@@ -166,7 +191,7 @@ Returns true if this *vector* is NOT equal to given *vector*; otherwise returns 
 
 .. _api_Vector2_operator*:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator*** (:ref:`areal<api_areal>`  *factor*) const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator*** (areal  *factor*) const
 
 Returns a copy of this vector, multiplied by the given *factor*.
 
@@ -176,7 +201,7 @@ Returns a copy of this vector, multiplied by the given *factor*.
 
 .. _api_Vector2_operator*:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator*** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator*** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a copy of this *vector*, multiplied by the given *vector*.
 
@@ -186,7 +211,7 @@ Returns a copy of this *vector*, multiplied by the given *vector*.
 
 .. _api_Vector2_operator*=:
 
-:ref:`Vector2<api_Vector2>` & **Vector2::operator*=** (:ref:`areal<api_areal>`  *factor*)
+ :ref:`Vector2<api_Vector2>`& **Vector2::operator*=** (areal  *factor*)
 
 Multiplies this vector's coordinates by the given *factor*, and returns a reference to this vector.
 
@@ -196,7 +221,7 @@ Multiplies this vector's coordinates by the given *factor*, and returns a refere
 
 .. _api_Vector2_operator+:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator+** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator+** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a Vector2 object that is the sum of the this *vector* and *vector*; each component is added separately.
 
@@ -206,7 +231,7 @@ Returns a Vector2 object that is the sum of the this *vector* and *vector*; each
 
 .. _api_Vector2_operator+=:
 
-:ref:`Vector2<api_Vector2>` & **Vector2::operator+=** (:ref:`Vector2<api_Vector2>` & *vector*)
+ :ref:`Vector2<api_Vector2>`& **Vector2::operator+=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
 Adds the given *vector* to this *vector* and returns a reference to this *vector*.
 
@@ -216,7 +241,7 @@ Adds the given *vector* to this *vector* and returns a reference to this *vector
 
 .. _api_Vector2_operator-:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator-** () const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator-** () const
 
 Returns a Vector2 object that is formed by changing the sign of all three components of the this vector.
 
@@ -226,7 +251,7 @@ Equivalent to Vector2(0,0) - vector.
 
 .. _api_Vector2_operator-:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator-** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator-** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a Vector2 object that is formed by subtracting *vector* from this *vector*; each component is subtracted separately.
 
@@ -236,7 +261,7 @@ Returns a Vector2 object that is formed by subtracting *vector* from this *vecto
 
 .. _api_Vector2_operator-=:
 
-:ref:`Vector2<api_Vector2>` & **Vector2::operator-=** (:ref:`Vector2<api_Vector2>` & *vector*)
+ :ref:`Vector2<api_Vector2>`& **Vector2::operator-=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
 Subtracts the given *vector* from this *vector* and returns a reference to this *vector*.
 
@@ -246,7 +271,7 @@ Subtracts the given *vector* from this *vector* and returns a reference to this 
 
 .. _api_Vector2_operator/:
 
-:ref:`Vector2<api_Vector2>`  **Vector2::operator/** (:ref:`areal<api_areal>`  *divisor*) const
+ :ref:`Vector2<api_Vector2>` **Vector2::operator/** (areal  *divisor*) const
 
 Returns a copy of this vector, divided by the given *divisor*.
 
@@ -256,7 +281,7 @@ Returns a copy of this vector, divided by the given *divisor*.
 
 .. _api_Vector2_operator/=:
 
-:ref:`Vector2<api_Vector2>` & **Vector2::operator/=** (:ref:`areal<api_areal>`  *divisor*)
+ :ref:`Vector2<api_Vector2>`& **Vector2::operator/=** (areal  *divisor*)
 
 Divides this vector's coordinates by the given *divisor*, and returns a reference to this vector.
 
@@ -266,7 +291,7 @@ Divides this vector's coordinates by the given *divisor*, and returns a referenc
 
 .. _api_Vector2_operator<:
 
-:ref:`bool<api_bool>`  **Vector2::operator<** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ bool **Vector2::operator<** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns true if this *vector* is less than *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
 
@@ -274,7 +299,7 @@ Returns true if this *vector* is less than *vector*; otherwise returns false. Th
 
 .. _api_Vector2_operator==:
 
-:ref:`bool<api_bool>`  **Vector2::operator==** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ bool **Vector2::operator==** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns true if this *vector* is equal to given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
 
@@ -282,7 +307,7 @@ Returns true if this *vector* is equal to given *vector*; otherwise returns fals
 
 .. _api_Vector2_operator>:
 
-:ref:`bool<api_bool>`  **Vector2::operator>** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ bool **Vector2::operator>** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns true if this *vector* is bigger than given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
 
@@ -290,18 +315,14 @@ Returns true if this *vector* is bigger than given *vector*; otherwise returns f
 
 .. _api_Vector2_operator[]:
 
-:ref:`areal<api_areal>` & **Vector2::operator[]** (:ref:`int<api_int>`  *i*)
+ areal **Vector2::operator[]** (int  *i*)
 
 Returns the component of the vector at *i*ndex position *i* as a modifiable reference. *i* must be a valid *i*ndex position *i*n the vector (i.e., 0 <= *i* < 2).
 
-----
-
 .. _api_Vector2_operator[]:
 
-:ref:`areal<api_areal>`  **Vector2::operator[]** (:ref:`int<api_int>`  *i*) const
+ areal **Vector2::operator[]** (int  *i*) const
 
 Returns the component of the vector at *i*ndex position. *i* must be a valid *i*ndex position *i*n the vector (i.e., 0 <= *i* < 2).
-
-----
 
 

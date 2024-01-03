@@ -1,10 +1,12 @@
 .. _api_NativeBehaviour:
-NativeBehaviour Class
-================
 
-Inherited: :ref:`Component<api_Component>`
+NativeBehaviour Class
+=====================
+
+Inherited: :doc:`Component<api_Component>`
 
 .. _api_NativeBehaviour_description:
+
 Description
 -----------
 
@@ -33,30 +35,33 @@ Example:
 
 
 .. _api_NativeBehaviour_public:
+
 Public Methods
 --------------
 
-+-----------------------+----------------------------------------------+
-| :ref:`void<api_void>` | :ref:`start<api_NativeBehaviour_start>` ()   |
-+-----------------------+----------------------------------------------+
-| :ref:`void<api_void>` | :ref:`update<api_NativeBehaviour_update>` () |
-+-----------------------+----------------------------------------------+
++-------+----------------------------------------------+
+|  void | :ref:`start<api_NativeBehaviour_start>` ()   |
++-------+----------------------------------------------+
+|  void | :ref:`update<api_NativeBehaviour_update>` () |
++-------+----------------------------------------------+
 
 
 
 .. _api_NativeBehaviour_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_NativeBehaviour_methods:
+
 Methods Description
 -------------------
 
 .. _api_NativeBehaviour_start:
 
-:ref:`void<api_void>`  **NativeBehaviour::start** ()
+ void **NativeBehaviour::start** ()
 
 Start is called on the same frame when a script is enabled just before the update method will be called the first time.
 
@@ -64,10 +69,8 @@ Start is called on the same frame when a script is enabled just before the updat
 
 .. _api_NativeBehaviour_update:
 
-:ref:`void<api_void>`  **NativeBehaviour::update** ()
+ void **NativeBehaviour::update** ()
 
 Update is called every frame, if the NativeBehaviour is enabled.
-
-----
 
 

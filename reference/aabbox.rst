@@ -1,10 +1,12 @@
 .. _api_AABBox:
+
 AABBox Class
-================
+============
 
 Inherited: None
 
 .. _api_AABBox_description:
+
 Description
 -----------
 
@@ -13,50 +15,59 @@ Bounded volume in space in the form of a rectangular parallelepiped, with a peri
 
 
 .. _api_AABBox_public:
+
 Public Methods
 --------------
 
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                                       | :ref:`AABBox<api_AABBox_AABBox>` (const Vector3 & center, const Vector3 & extent)           |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                                       | :ref:`AABBox<api_AABBox_AABBox>` ()                                                         |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`box<api_AABBox_box>` (Vector3 & min, Vector3 & max) const                             |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const Vector3 & position, areal  radius = 0.0f) |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`encapsulate<api_AABBox_encapsulate>` (const AABBox & aabb)                            |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Vector3 & position, areal  radius) const      |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`intersect<api_AABBox_intersect>` (const Plane * planes, areal  count) const           |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`isValid<api_AABBox_isValid>` () const                                                 |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 & min, const Vector3 & max)                 |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`void<api_void>` | :ref:`setBox<api_AABBox_setBox>` (const Vector3 * points, uint32_t  number)                 |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`operator!=<api_AABBox_operator!=>` (const AABBox & box) const                         |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (areal  factor) const                                |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Vector3 & vector) const                       |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-| :ref:`const AABBox<api_const AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Matrix4 & matrix) const                       |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
-|                 :ref:`bool<api_bool>` | :ref:`operator==<api_AABBox_operator==>` (const AABBox & box) const                         |
-+---------------------------------------+---------------------------------------------------------------------------------------------+
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                                 | :ref:`AABBox<api_AABBox_AABBox>` (const Vector3 & center, const Vector3 & extent)           |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                                 | :ref:`AABBox<api_AABBox_AABBox>` ()                                                         |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            void | :ref:`box<api_AABBox_box>` (Vector3 & min, Vector3 & max) const                             |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            void | :ref:`encapsulate<api_AABBox_encapsulate>` (const Vector3 & position, areal  radius = 0.0f) |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            void | :ref:`encapsulate<api_AABBox_encapsulate>` (const AABBox & aabb)                            |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            bool | :ref:`intersect<api_AABBox_intersect>` (const Vector3 & position, areal  radius) const      |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            bool | :ref:`intersect<api_AABBox_intersect>` (const Plane * planes, areal  count) const           |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            bool | :ref:`isValid<api_AABBox_isValid>` () const                                                 |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            void | :ref:`setBox<api_AABBox_setBox>` (const Vector3 & min, const Vector3 & max)                 |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            void | :ref:`setBox<api_AABBox_setBox>` (const Vector3 * points, int  number)                      |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            bool | :ref:`operator!=<api_AABBox_operator!=>` (const AABBox & box) const                         |
++---------------------------------+---------------------------------------------------------------------------------------------+
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_operator*>` (areal  factor) const                                |
++---------------------------------+---------------------------------------------------------------------------------------------+
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Vector3 & vector) const                       |
++---------------------------------+---------------------------------------------------------------------------------------------+
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Matrix3 & matrix) const                       |
++---------------------------------+---------------------------------------------------------------------------------------------+
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_operator*>` (const Matrix4 & matrix) const                       |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_operator*=>` (const Matrix3 & matrix)                           |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_operator*=>` (const Matrix4 & matrix)                           |
++---------------------------------+---------------------------------------------------------------------------------------------+
+|                            bool | :ref:`operator==<api_AABBox_operator==>` (const AABBox & box) const                         |
++---------------------------------+---------------------------------------------------------------------------------------------+
 
 
 
 .. _api_AABBox_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_AABBox_methods:
+
 Methods Description
 -------------------
 
@@ -78,7 +89,7 @@ Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
 
 .. _api_AABBox_box:
 
-:ref:`void<api_void>`  **AABBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
+ void **AABBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
 
 Returns *min* and *max* points of bounding box as output arguments.
 
@@ -88,7 +99,7 @@ Returns *min* and *max* points of bounding box as output arguments.
 
 .. _api_AABBox_encapsulate:
 
-:ref:`void<api_void>`  **AABBox::encapsulate** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`areal<api_areal>`  *radius* = 0.0f)
+ void **AABBox::encapsulate** (:ref:`Vector3<api_Vector3>` & *position*, areal  *radius* = 0.0f)
 
 Grow the AABBox to encapsulate a spehere with *position* and *radius*.
 
@@ -96,7 +107,7 @@ Grow the AABBox to encapsulate a spehere with *position* and *radius*.
 
 .. _api_AABBox_encapsulate:
 
-:ref:`void<api_void>`  **AABBox::encapsulate** (:ref:`AABBox<api_AABBox>` & *aabb*)
+ void **AABBox::encapsulate** (:ref:`AABBox<api_AABBox>` & *aabb*)
 
 Grow the AABBox to encapsulate the *aabb*.
 
@@ -104,7 +115,7 @@ Grow the AABBox to encapsulate the *aabb*.
 
 .. _api_AABBox_intersect:
 
-:ref:`bool<api_bool>`  **AABBox::intersect** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`areal<api_areal>`  *radius*) const
+ bool **AABBox::intersect** (:ref:`Vector3<api_Vector3>` & *position*, areal  *radius*) const
 
 Returns true if this bounding box intersects the given sphere at *position* and *radius*; otherwise returns false.
 
@@ -112,7 +123,7 @@ Returns true if this bounding box intersects the given sphere at *position* and 
 
 .. _api_AABBox_intersect:
 
-:ref:`bool<api_bool>`  **AABBox::intersect** (:ref:`Plane<api_Plane>` * *planes*, :ref:`areal<api_areal>`  *count*) const
+ bool **AABBox::intersect** (:ref:`Plane<api_Plane>` * *planes*, areal  *count*) const
 
 Returns true if this bounding box intersects the given *count* of *planes*; otherwise returns false.
 
@@ -120,7 +131,7 @@ Returns true if this bounding box intersects the given *count* of *planes*; othe
 
 .. _api_AABBox_isValid:
 
-:ref:`bool<api_bool>`  **AABBox::isValid** () const
+ bool **AABBox::isValid** () const
 
 Returns true in case of AABBox is valid; otherwise returns false.
 
@@ -128,7 +139,7 @@ Returns true in case of AABBox is valid; otherwise returns false.
 
 .. _api_AABBox_setBox:
 
-:ref:`void<api_void>`  **AABBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
+ void **AABBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
 
 Set current bounding box by *min* and *max* points.
 
@@ -138,7 +149,7 @@ Set current bounding box by *min* and *max* points.
 
 .. _api_AABBox_setBox:
 
-:ref:`void<api_void>`  **AABBox::setBox** (:ref:`Vector3<api_Vector3>` * *points*, :ref:`uint32_t<api_uint32_t>`  *number*)
+ void **AABBox::setBox** (:ref:`Vector3<api_Vector3>` * *points*, int  *number*)
 
 Set curent bounding box by provided array of *points* and *number* of them.
 
@@ -146,7 +157,7 @@ Set curent bounding box by provided array of *points* and *number* of them.
 
 .. _api_AABBox_operator!=:
 
-:ref:`bool<api_bool>`  **AABBox::operator!=** (:ref:`AABBox<api_AABBox>` & *box*) const
+ bool **AABBox::operator!=** (:ref:`AABBox<api_AABBox>` & *box*) const
 
 Returns true if this bounding *box* is NOT equal to given bounding *box*; otherwise returns false. This operator uses an exact floating-point comparison.
 
@@ -154,7 +165,7 @@ Returns true if this bounding *box* is NOT equal to given bounding *box*; otherw
 
 .. _api_AABBox_operator*:
 
-:ref:`const AABBox<api_const AABBox>`  **AABBox::operator*** (:ref:`areal<api_areal>`  *factor*) const
+const :ref:`AABBox<api_AABBox>` **AABBox::operator*** (areal  *factor*) const
 
 Returns a copy of this box, multiplied by the given *factor*.
 
@@ -162,7 +173,7 @@ Returns a copy of this box, multiplied by the given *factor*.
 
 .. _api_AABBox_operator*:
 
-:ref:`const AABBox<api_const AABBox>`  **AABBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+const :ref:`AABBox<api_AABBox>` **AABBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
 Returns a copy of this box, multiplied by the given *vector*.
 
@@ -170,18 +181,40 @@ Returns a copy of this box, multiplied by the given *vector*.
 
 .. _api_AABBox_operator*:
 
-:ref:`const AABBox<api_const AABBox>`  **AABBox::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
+const :ref:`AABBox<api_AABBox>` **AABBox::operator*** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
 
-Returns a copy of this box, multiplied by the given *matrix*.
+Returns a copy of this box, multiplied by the given rotation *matrix*.
+
+----
+
+.. _api_AABBox_operator*:
+
+const :ref:`AABBox<api_AABBox>` **AABBox::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
+
+Returns a copy of this box, multiplied by the given transform *matrix*.
+
+----
+
+.. _api_AABBox_operator*=:
+
+ :ref:`AABBox<api_AABBox>`& **AABBox::operator*=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+
+Multiplies this box by the given rotation *matrix*, and returns a reference to this vector.
+
+----
+
+.. _api_AABBox_operator*=:
+
+ :ref:`AABBox<api_AABBox>`& **AABBox::operator*=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
+
+Multiplies this box by the given transform *matrix*, and returns a reference to this vector.
 
 ----
 
 .. _api_AABBox_operator==:
 
-:ref:`bool<api_bool>`  **AABBox::operator==** (:ref:`AABBox<api_AABBox>` & *box*) const
+ bool **AABBox::operator==** (:ref:`AABBox<api_AABBox>` & *box*) const
 
 Returns true if this bounding *box* is equal to given bounding *box*; otherwise returns false. This operator uses an exact floating-point comparison.
-
-----
 
 

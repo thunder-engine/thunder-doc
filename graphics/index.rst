@@ -18,6 +18,32 @@ Explore the following documentation sections to understand and leverage Thunder 
    :maxdepth: 1
    :name: toc-graphics
 
-	pipeline
-	lighting
-	vfx
+   pipeline
+   lighting
+   vfx
+   
+Graphics Resources
+------------------
+
+Thunder Engine's graphics capabilities rely on a variety of resources to enhance the visual quality of your projects.
+Learn about the different types of graphics resources available in Thunder Engine and how to effectively use them:
+
+.. toctree::
+   :maxdepth: 2
+   :name: toc-graphics-resources
+
+   texture
+   mesh
+   material
+   
+Graphics Components
+-------------------
+
+Understand the role of graphics components in Thunder Engine and how they contribute to the overall visual representation of your application.
+Learn about the various graphics components available for use and how to integrate them into your projects:
+
+.. toctree::
+   :maxdepth: 2
+   :name: toc-graphics-components
+
+   meshrender

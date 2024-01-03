@@ -10,5 +10,6 @@ API Reference
    animation-module
    core-module
    engine-module
+   gui-module
    math-module
    resources-module

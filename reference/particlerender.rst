@@ -1,10 +1,12 @@
 .. _api_ParticleRender:
-ParticleRender Class
-================
 
-Inherited: :ref:`Renderable<api_Renderable>`
+ParticleRender Class
+====================
+
+Inherited: :doc:`Renderable<api_Renderable>`
 
 .. _api_ParticleRender_description:
+
 Description
 -----------
 
@@ -13,30 +15,33 @@ The ParticleRender component allows you to display Particle Effects such as fire
 
 
 .. _api_ParticleRender_public:
+
 Public Methods
 --------------
 
-+---------------------------------------------+--------------------------------------------------------------------------+
-| :ref:`ParticleEffect<api_ParticleEffect>` * | :ref:`effect<api_ParticleRender_effect>` () const                        |
-+---------------------------------------------+--------------------------------------------------------------------------+
-|                       :ref:`void<api_void>` | :ref:`setEffect<api_ParticleRender_setEffect>` (ParticleEffect * effect) |
-+---------------------------------------------+--------------------------------------------------------------------------+
++----------------------------------------------+--------------------------------------------------------------------------+
+|  :ref:`ParticleEffect<api_ParticleEffect>` * | :ref:`effect<api_ParticleRender_effect>` () const                        |
++----------------------------------------------+--------------------------------------------------------------------------+
+|                                         void | :ref:`setEffect<api_ParticleRender_setEffect>` (ParticleEffect * effect) |
++----------------------------------------------+--------------------------------------------------------------------------+
 
 
 
 .. _api_ParticleRender_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_ParticleRender_methods:
+
 Methods Description
 -------------------
 
 .. _api_ParticleRender_effect:
 
-:ref:`ParticleEffect<api_ParticleEffect>` * **ParticleRender::effect** () const
+ :ref:`ParticleEffect<api_ParticleEffect>`* **ParticleRender::effect** () const
 
 Returns a ParticleEffect assigned to the this component.
 
@@ -46,12 +51,10 @@ Returns a ParticleEffect assigned to the this component.
 
 .. _api_ParticleRender_setEffect:
 
-:ref:`void<api_void>`  **ParticleRender::setEffect** (:ref:`ParticleEffect<api_ParticleEffect>` * *effect*)
+ void **ParticleRender::setEffect** (:ref:`ParticleEffect<api_ParticleEffect>` * *effect*)
 
 Assgines a particle *effect* to the this component.
 
 **See also** *effect*().
-
-----
 
 

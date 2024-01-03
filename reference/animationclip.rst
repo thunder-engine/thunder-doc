@@ -1,10 +1,12 @@
 .. _api_AnimationClip:
-AnimationClip Class
-================
 
-Inherited: :ref:`Resource<api_Resource>`
+AnimationClip Class
+===================
+
+Inherited: :doc:`Resource<api_Resource>`
 
 .. _api_AnimationClip_description:
+
 Description
 -----------
 
@@ -13,31 +15,32 @@ An AnimationClip resource contains keyframe based animation data. The animation 
 
 
 .. _api_AnimationClip_public:
+
 Public Methods
 --------------
 
-+---------------------+------------------------------------------------------+
-| :ref:`int<api_int>` | :ref:`duration<api_AnimationClip_duration>` () const |
-+---------------------+------------------------------------------------------+
++------+------------------------------------------------------+
+|  int | :ref:`duration<api_AnimationClip_duration>` () const |
++------+------------------------------------------------------+
 
 
 
 .. _api_AnimationClip_static:
+
 Static Methods
 --------------
 
 None
 
 .. _api_AnimationClip_methods:
+
 Methods Description
 -------------------
 
 .. _api_AnimationClip_duration:
 
-:ref:`int<api_int>`  **AnimationClip::duration** () const
+ int **AnimationClip::duration** () const
 
 Returns duration of the animation clip in milliseconds.
-
-----
 
 
