@@ -1,7 +1,8 @@
 .. _doc_audio_overview:
 
 Audio Module Overview
-==============================
+=====================
+
 Perhaps you have already created your first game. Piles of characters and monsters are running around on the screen.
 Now listen! Do you hear? Nothing! Modern games can hardly be imagined without music and sound effects. Fortunately, Thunder Engine has a sound system to bring some noise to your game.
 Thunder Engine Audio Module supports 2D and 3D audio sources and several audio formats for import.

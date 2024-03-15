@@ -16,5 +16,6 @@ However it's preferebale to use only one scripting language in your project.
    :maxdepth: 1
    :name: sec-start
 
+   creating_scripts
    overview
    native_introspection
