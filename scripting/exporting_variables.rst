@@ -3,14 +3,14 @@
 Variables and Property Editor
 =============================
 
-Когда вы создаете скрипт, Редактор он автоматически создает его из специального шаблона.
-Скрипт будет унаследован от безового класса, для C++ **NativeBehaviour** а для AngelScript **AngelBehaviour**.
+When you create a script, the editor automatically generates it from a special template.
+The script will be inherited from a base class, **NativeBehaviour** for C++ and **AngelBehaviour** for AngelScript.
 
-Вы можете добавлять ваши переменые и объявлять их свойствами доступными для редактирования из виджета **Property** в Редакторе движка.
+You can add your own variables and declare them as properties accessible for editing from the **Property** widget in the engine editor.
 
-Приведенный ниже код объявляет переменную ``myVariable``.
-Когда в добавите компанент к любому Актору на Cцене и выберете его, это свойство будет видимо в редакторе Properties как поле с именем "My Variable".
-Значение по умолчанию "Some Text" станет значением в окне редактирования свойства.
+The code below declares the variable ``myVariable``.
+When you add the component to any Actor in the Scene and select it, this property will be visible in the Properties editor as a field named "My Variable".
+The default value "Some Text" will become the value in the property editing window.
 
 .. tabs::
     .. code-tab:: c++
@@ -55,22 +55,19 @@ Variables and Property Editor
             }
         };
 
-Каждый Актор к которому вы добавите ваш компанент будет содержать свое значение данного свойства.
-Обратите внимание что декларирование свойств в коде написаном на С++ существенно отличается.
-Более подробно об этом можно прочитать в секции :doc:`native_introspection`
+Each Actor to which you add your component will have its own value for this property.
+Note that property declaration in C++ code differs significantly. For more information, refer to the :doc:`native_introspection` section.
 
 .. image:: media/my_variable.png
     :alt: My Variable
     :width: 400
-	
-Для удобства пользователя Редактор Свойств меняет отображение имени вашего свойства добавляя пробел в между буквами нижнего и верхнего регистра.
-В коде вам все еще необходимо использовать имя переменной которую вы указали.
 
-Object reference proprties
+For user convenience, the Property Editor changes the display of your property name by adding spaces between lowercase and uppercase letters. However, in your code, you still need to use the variable name you specified.
+
+Object Reference Properties
 --------------------------
 
-Помимо базовых типов свойств таких как string, integer, bool и других, разработчику могут понадобится свойства ссылающиеся на другие объекты на Сцене (Transform, Lights, Actors) или ассеты (Texture, Mesh, Material).
-Приведенный внизу код покажет вам как это сделать:
+In addition to basic property types such as string, integer, bool, and others, developers may need properties that reference other objects in the Scene (Transforms, Lights, Actors) or assets (Textures, Meshes, Materials). The code snippet below demonstrates how to achieve this:
 
 .. tabs::
     .. code-tab:: c++
@@ -108,26 +105,25 @@ Object reference proprties
             }
         };
 
-Обратите внимание, что в коде написанном на С++ добавлено расширенное свойство.
-В этом свойстве есть возможно указать дополнительную мета информацию в виде текстовой строки.
-Она нужна для того, что бы редактор понимал с каким типом свойств он работает.
-Вданном прмере мы сообщаем что нужно создать специальный Edtor типа ``Component``.
-Существуют и другие редакторы:
-	* Color
-	* Component
-	* Asset
-	* Alignment
-	* Axises
-	
-В окне Свойств оно будет выглядеть седующим образом:
+Note that in C++ code, an extended property is added.
+In this property, you can specify additional metadata as a string.
+This is necessary for the editor to understand the type of property it is working with.
+In this example, we indicate that a special editor type ``Component`` should be created.
+There are other editors available:
+    * Color
+    * Component
+    * Asset
+    * Alignment
+    * Axes
+
+In the Properties window, it will look like this:
 
 .. image:: media/my_transform.png
     :alt: My Transform
     :width: 400
-	
-При нажати на кнопку в редакторе свойств появится специальное окно, которое позволит выбрать нужный вам Объект.
+
+Clicking the button in the property editor will bring up a special window that allows you to select the desired Object.
 
 .. image:: media/select_transform.png
     :alt: My Transform
     :width: 400
-	
