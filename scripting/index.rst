@@ -1,7 +1,7 @@
 .. _doc_scripting_index:
 
 Scripting
-==============================
+=========
 
 This section covers a various aspectecs related to code your game in Thunder Engine.
 
@@ -15,7 +15,7 @@ However it's preferebale to use only one scripting language in your project.
 .. toctree::
    :maxdepth: 1
    :name: sec-start
-
-   creating_scripts
+   
    overview
+   creating_scripts
    native_introspection

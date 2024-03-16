@@ -18,14 +18,14 @@ This simple object is a key ring for all related Components.
 
 .. image:: media/actor_scheme.png
     :alt: Actor Scheme
-    :width: 200
+    :width: 300
 
 Actors is a main objects on the scene.
 They can be united into hierarchies.
 
 .. image:: media/hierarhy.png
     :alt: Actor Scheme
-    :width: 200
+    :width: 300
 
 
 Components
@@ -37,47 +37,6 @@ This information called Properties and it can be modified in Editor or right fro
 Using Native version of API developers are able to create any type of Components.
 But at the same time using Scriptable API only Behaviour type of components are available.
 
-The example of custom component:
-
-.. tabs::
-    .. code-tab:: c++
-
-        #include <nativebehaviour.h>
-
-        class MyComponent : public NativeBehaviour {
-            A_REGISTER(MyComponent, NativeBehaviour, Components)
-
-            A_NOPROPERTIES()
-            A_NOMETHODS()
-
-        public:
-            // Use this to initialize behaviour
-            void start() {
-
-            }
-            
-            // Will be called each frame. Use this to write your game logic
-            void update() {
-                
-            }
-
-        };
-
-    .. code-tab:: java AngelScript
-
-        class Tube : Behaviour {
-            // Use this to initialize behaviour
-            void start() override {
-
-            }
-
-            // Will be called each frame. Use this to write your game logic
-            void update() override {
-
-            }
-
-        };
-    
 Property
 --------
 
@@ -103,7 +62,7 @@ The listener will catch it and will react on it.
 
 .. image:: media/signals_slots.png
     :alt: Signals and Slots
-    :width: 200
+    :width: 600
 
 For a specific programming language please refer:
 

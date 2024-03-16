@@ -19,7 +19,7 @@ A new script will be created in the **Content Browser** window in the folder you
 
 .. image:: media/new_script.png
     :alt: New Script
-    :width: 400
+    :width: 300
 
 It is good practice to give your component a meaningful name.
 The name you choose will be used throughout scenes and prefabs, and changing it afterward can be challenging.
@@ -108,13 +108,13 @@ After compiling the code, your component will appear in the drop-down menu of th
 
 .. image:: media/add_component.png
     :alt: Add Component
-    :width: 400
+    :width: 300
     
-Let's add it to the selected Actor and start the simulation (Ctrl+G):
+Let's add it to the selected Actor and start the simulation ``Ctrl+G``:
 
 .. image:: media/new_component.png
     :alt: Add Component
-    :width: 400
+    :width: 300
     
 If everything was done correctly, you will see a message in the **Console Output** window:
 
