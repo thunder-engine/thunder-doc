@@ -3,18 +3,18 @@
 Instantiating Prefabs
 =====================
 
-Prefabs могут оказаться очень полездными если вы хотите создать сложные Акторы во время игрового процесса.
-Создание игровых объектов из Префабов вместо создания игровых объектов с нуля во время игры имеет множество приемуществ:
-    * Создать сложный объект всего одной строкой вместо подробного описания всех компанент и их свойств в коде.
-    * Модифицировать Префаб в Редакторе и получить обновления без необходимости обновлять код.
-    * Всегда можно легко заменить Префаб на другой без внесения изменений в код.
-    
-Давай приступим
----------------
+Prefabs can be very useful if you want to create complex Actors during gameplay.
+Instantiating game objects from Prefabs instead of creating game objects from scratch during runtime has several advantages:
+    * Create a complex object with just one line instead of describing all components and their properties in detail in code.
+    * Modify the Prefab in the Editor and get updates without needing to update the code.
+    * Easily replace one Prefab with another without changing the code.
 
-Для того что-бы инстанцировать Префаб вам необходимо иметь ссылку на него в вашем коде.
-Вы можете использовать публичную переменную которая будет содержать эту ссылку.
-Эта переменная появится в Properties editor и вы сможете назначить нужный префаб из редактора:
+Let's Get Started
+-----------------
+
+To instantiate a Prefab, you need to have a reference to it in your code.
+You can use a public variable to hold this reference.
+This variable will appear in the Properties editor, allowing you to assign the desired Prefab from the editor:
 
 .. tabs::
     .. code-tab:: c++
@@ -59,27 +59,27 @@ Prefabs могут оказаться очень полездными если �
             }
         };
 
-Теперь добавим этот скрипт на любой Actor на сцене и назначим Префаб куб.
+Now, add this script to any Actor in the scene and assign a cube Prefab.
 
 .. image:: media/my_prefab.png
     :alt: My Prefab
     :width: 800
     
-После того как мы назначили префаб можно нажать ``Ctrl+G`` что бы запустить симуляцию.
+Once you've assigned the Prefab, you can press ``Ctrl+G`` to start the simulation.
 
-Если вы все сделали правильно на вашей сцене появится куб.
+If you've done everything correctly, a cube will appear in your scene.
 
 .. image:: media/instance_of_cube.png
     :alt: Instantiated Cube
     :width: 550
     
-Создание структуры
+Creating Structures
 ------------------
 
-Вы можете создать много копий Префаба практически мгновенно.
-Использовние кода для создание структур называется **Процедурной Генерацией**.
-Создайте новый скрипт и назовите его **Wall**.
-Код приведеный внизу описывает создание стены из блоков.
+You can create many copies of a Prefab almost instantly.
+Using code to create structures is called **Procedural Generation**.
+Create a new script and name it **Wall**.
+The code below describes creating a wall from blocks.
 
 .. tabs::
     .. code-tab:: c++
@@ -153,10 +153,10 @@ Prefabs могут оказаться очень полездными если �
             }
         };
 
-Когда вы закончите настройку вашего Актора и запустите симуляцию, вы увидите вашу стену на экране:
+Once you've set up your Actor and run the simulation, you'll see your wall on the screen:
 
 .. image:: media/wall_of_bricks.png
     :alt: Wall of bricks
     :width: 800
-	
-Белые Ходоки не пройдут! 7 королевств могут спать теперь спокойно.
+
+White Walkers shall not pass! The Seven Kingdoms can sleep peacefully now.
