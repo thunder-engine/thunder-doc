@@ -97,7 +97,7 @@ In addition to basic property types such as string, integer, bool, and others, d
     .. code-tab:: java AngelScript
 
         class NewAngelBehaviour : Behaviour {
-            Transform @m_myTransform = null;
+            Transform @myTransform = null;
 
             // Use this to initialize behaviour
             void start() override {
