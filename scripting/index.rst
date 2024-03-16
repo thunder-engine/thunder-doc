@@ -18,4 +18,5 @@ However it's preferebale to use only one scripting language in your project.
    
    overview
    creating_scripts
+   exporting_variables
    native_introspection
