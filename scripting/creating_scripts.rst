@@ -37,6 +37,8 @@ The initial content will look something like this:
 
         #include <nativebehaviour.h>
 
+        #include <log.h>
+
         class NewNative_Behaviour : public NativeBehaviour {
             A_REGISTER(NewNative_Behaviour, NativeBehaviour, Components)
 

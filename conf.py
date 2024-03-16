@@ -19,7 +19,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = u'Thunder Engine'
-copyright = u'2019, Evgeniy Prikazchikov'
+copyright = u'2024, Evgeniy Prikazchikov'
 author = u'Evgeniy Prikazchikov'
 
 # The short X.Y version
