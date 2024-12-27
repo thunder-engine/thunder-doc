@@ -67,8 +67,8 @@ Modifiers in the cascade control various aspects of particle behavior and their 
 #. **Adding a Modifier**
    To add a new modifier, click on "+" button in **Properties** and seclect one of the available modifier types
    
-.. image:: media/add_modificator.png
-    :alt: Add Modificator
+   .. image:: media/add_modificator.png
+       :alt: Add Modificator
 	
    Some of available modificators:
    
