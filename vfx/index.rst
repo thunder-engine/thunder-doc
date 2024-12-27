@@ -1,4 +1,4 @@
-.. _doc_graphics_vfx:
+.. _doc_vfx:
 
 Visual Effects (VFX)
 ====================
