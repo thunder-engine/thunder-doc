@@ -3,7 +3,7 @@
 RigidBody
 =========
 
-Inherited: :doc:`Collider<api_Collider>`
+Inherited: None
 
 .. _api_RigidBody_description:
 
@@ -131,7 +131,7 @@ Returns the mass of the rigid body.
 
 .. _api_RigidBody_material:
 
- :ref:`PhysicMaterial<api_PhysicMaterial>`* **RigidBody::material** () const
+ :ref:`PhysicMaterial<api_PhysicMaterial>` * **RigidBody::material** () const
 
 Returns the physical material associated with the rigid body.
 

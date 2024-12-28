@@ -3,7 +3,7 @@
 Material
 ========
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Material_description:
 
@@ -18,25 +18,13 @@ Public Methods
 --------------
 
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                              int | :ref:`blendMode<api_Material_blendMode>` () const                                                      |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |  :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`createInstance<api_Material_createInstance>` (Material::SurfaceType  type = SurfaceType::Static) |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                             bool | :ref:`depthTest<api_Material_depthTest>` () const                                                      |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                             bool | :ref:`depthWrite<api_Material_depthWrite>` () const                                                    |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                                             bool | :ref:`doubleSided<api_Material_doubleSided>` () const                                                  |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                                              int | :ref:`lightModel<api_Material_lightModel>` () const                                                    |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                                              int | :ref:`materialType<api_Material_materialType>` () const                                                |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setBlendMode<api_Material_setBlendMode>` (int  mode)                                             |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setDepthTest<api_Material_setDepthTest>` (bool  test)                                            |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setDepthWrite<api_Material_setDepthWrite>` (bool  depth)                                         |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 |                                             void | :ref:`setDoubleSided<api_Material_setDoubleSided>` (bool  flag)                                        |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -65,41 +53,11 @@ None
 Methods Description
 -------------------
 
-.. _api_Material_blendMode:
-
- int **Material::blendMode** () const
-
-Returns current blend mode for the material. For more detalse please refer to Material::BlendType enum.
-
-**See also** setBlendMode().
-
-----
-
 .. _api_Material_createInstance:
 
- :ref:`MaterialInstance<api_MaterialInstance>`* **Material::createInstance** (:ref:`Material::SurfaceType<api_Material::SurfaceType>`  *type* = SurfaceType::Static)
+ :ref:`MaterialInstance<api_MaterialInstance>` * **Material::createInstance** (:ref:`Material::SurfaceType<api_Material::SurfaceType>`  *type* = SurfaceType::Static)
 
 Returns a new instance for the material with the provided surface *type*.
-
-----
-
-.. _api_Material_depthTest:
-
- bool **Material::depthTest** () const
-
-Returns true if depth test was enabled; otherwise returns false.
-
-**See also** setDepthTest().
-
-----
-
-.. _api_Material_depthWrite:
-
- bool **Material::depthWrite** () const
-
-Returns true if write opertaion to the depth buffer was enabled; otherwise returns false.
-
-**See also** setDepthWrite().
 
 ----
 
@@ -127,39 +85,9 @@ Returns current light model for the material. For more detalse please refer to M
 
  int **Material::materialType** () const
 
-Returns current material type. For more detalse please refer to Material::MaterialType enum.
+Returns current material type. For more detalse please refer to Material::Type enum.
 
 **See also** setMaterialType().
-
-----
-
-.. _api_Material_setBlendMode:
-
- void **Material::setBlendMode** (int  *mode*)
-
-Sets a new blend *mode* for the material. For more detalse please refer to Material::BlendType enum.
-
-**See also** blendMode().
-
-----
-
-.. _api_Material_setDepthTest:
-
- void **Material::setDepthTest** (bool  *test*)
-
-Enables or disables a depth *test* for the material.
-
-**See also** depthTest().
-
-----
-
-.. _api_Material_setDepthWrite:
-
- void **Material::setDepthWrite** (bool  *depth*)
-
-Enables or disables *depth* write operation to the *depth* buffer.
-
-**See also** *depth*Write().
 
 ----
 
@@ -187,7 +115,7 @@ Sets a new light *model* for the material. For more detalse please refer to Mate
 
  void **Material::setMaterialType** (int  *type*)
 
-Sets new material *type*. For more detalse please refer to Material::MaterialType enum.
+Sets new material *type*. For more detalse please refer to Material::Type enum.
 
 **See also** materialType().
 

@@ -3,7 +3,7 @@
 TileMapRender
 =============
 
-Inherited: :doc:`Renderable<api_Renderable>`
+Inherited: None
 
 .. _api_TileMapRender_description:
 
@@ -19,17 +19,15 @@ TileMapRender is a class designed for rendering tile maps within Thunder Engine.
 Public Methods
 --------------
 
-+--------------------------------+-------------------------------------------------------------------------+
-|                            int | :ref:`layer<api_TileMapRender_layer>` () const                          |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           void | :ref:`setLayer<api_TileMapRender_setLayer>` (int  layer)                |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           void | :ref:`setMaterial<api_TileMapRender_setMaterial>` (Material * material) |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           void | :ref:`setTileMap<api_TileMapRender_setTileMap>` (TileMap * map)         |
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`TileMap<api_TileMap>` * | :ref:`tileMap<api_TileMapRender_tileMap>` () const                      |
-+--------------------------------+-------------------------------------------------------------------------+
++-------+-------------------------------------------------------------------------+
+|   int | :ref:`layer<api_TileMapRender_layer>` () const                          |
++-------+-------------------------------------------------------------------------+
+|  void | :ref:`setLayer<api_TileMapRender_setLayer>` (int  layer)                |
++-------+-------------------------------------------------------------------------+
+|  void | :ref:`setMaterial<api_TileMapRender_setMaterial>` (Material * material) |
++-------+-------------------------------------------------------------------------+
+|   int | :ref:`tileMap<api_TileMapRender_tileMap>` () const                      |
++-------+-------------------------------------------------------------------------+
 
 
 
@@ -75,22 +73,10 @@ Creates a new instance of *material* and assigns it.
 
 ----
 
-.. _api_TileMapRender_setTileMap:
-
- void **TileMapRender::setTileMap** (:ref:`TileMap<api_TileMap>` * *map*)
-
-Sets the tile *map* associated with this TileMapRender.
-
-**See also** tileMap().
-
-----
-
 .. _api_TileMapRender_tileMap:
 
- :ref:`TileMap<api_TileMap>`* **TileMapRender::tileMap** () const
+ int **TileMapRender::tileMap** () const
 
 Returns a pointer to the tile map associated with this TileMapRender.
-
-**See also** setTileMap().
 
 

@@ -20,6 +20,8 @@ Public Methods
 --------------
 
 +--------------------------------------+-----------------------------------------------------------------------------------------+
+|                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
++--------------------------------------+-----------------------------------------------------------------------------------------+
 |                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Matrix3 & matrix)                   |
 +--------------------------------------+-----------------------------------------------------------------------------------------+
 |                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & euler)                    |
@@ -27,8 +29,6 @@ Public Methods
 |                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` (const Vector3 & axis, areal  angle)       |
 +--------------------------------------+-----------------------------------------------------------------------------------------+
 |                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` (areal  x, areal  y, areal  z, areal  w)   |
-+--------------------------------------+-----------------------------------------------------------------------------------------+
-|                                      | :ref:`Quaternion<api_Quaternion_Quaternion>` ()                                         |
 +--------------------------------------+-----------------------------------------------------------------------------------------+
 |                                 void | :ref:`axisAngle<api_Quaternion_axisAngle>` (Vector3 & axis, areal & angle)              |
 +--------------------------------------+-----------------------------------------------------------------------------------------+
@@ -78,12 +78,22 @@ Public Methods
 Static Methods
 --------------
 
-None
++------------------------------------+------------------------------------------------------------------------------------------------+
+|  :ref:`Quaternion<api_Quaternion>` | :ref:`lookRotation<api_Quaternion_lookRotation>` (const Vector3 & forward, const Vector3 & up) |
++------------------------------------+------------------------------------------------------------------------------------------------+
 
 .. _api_Quaternion_methods:
 
 Methods Description
 -------------------
+
+.. _api_Quaternion_Quaternion:
+
+**Quaternion::Quaternion** ()
+
+Constructs an identity quaternion.
+
+----
 
 .. _api_Quaternion_Quaternion:
 
@@ -117,14 +127,6 @@ Constructs a quaternion *w*ith values (x, *y*, *z*, *w*).
 
 ----
 
-.. _api_Quaternion_Quaternion:
-
-**Quaternion::Quaternion** ()
-
-Constructs an identity quaternion.
-
-----
-
 .. _api_Quaternion_axisAngle:
 
  void **Quaternion::axisAngle** (:ref:`Vector3<api_Vector3>` & *axis*, areal & *angle*)
@@ -151,7 +153,7 @@ Returns true if *quaternion* approximately equal.
 
 .. _api_Quaternion_euler:
 
- :ref:`Vector3<api_Vector3>` **Quaternion::euler** () const
+ :ref:`Vector3<api_Vector3>`  **Quaternion::euler** () const
 
 Returns the Euler angles represented by Vector3(pitch, yaw, roll) in rotation degrees.
 
@@ -159,7 +161,7 @@ Returns the Euler angles represented by Vector3(pitch, yaw, roll) in rotation de
 
 .. _api_Quaternion_inverse:
 
- :ref:`Quaternion<api_Quaternion>` **Quaternion::inverse** () const
+ :ref:`Quaternion<api_Quaternion>`  **Quaternion::inverse** () const
 
 Returns the inverse of this quaternion.
 
@@ -172,6 +174,14 @@ Returns the inverse of this quaternion.
 Returns the length of this quaternion.
 
 **See also** sqrLength().
+
+----
+
+.. _api_Quaternion_lookRotation:
+
+ :ref:`Quaternion<api_Quaternion>`  **Quaternion::lookRotation** (:ref:`Vector3<api_Vector3>` & *forward*, :ref:`Vector3<api_Vector3>` & *up*)
+
+Creates a rotation with the specified *forward* and *up* directions.
 
 ----
 
@@ -205,7 +215,7 @@ Returns the squared length of this quaternion.
 
 .. _api_Quaternion_toMatrix:
 
- :ref:`Matrix3<api_Matrix3>` **Quaternion::toMatrix** () const
+ :ref:`Matrix3<api_Matrix3>`  **Quaternion::toMatrix** () const
 
 Returns the rotation matrix for this quaternion.
 
@@ -221,7 +231,7 @@ Returns true if this *quaternion* is NOT equal to given *quaternion*; otherwise 
 
 .. _api_Quaternion_operator*:
 
- :ref:`Quaternion<api_Quaternion>` **Quaternion::operator*** (areal  *factor*) const
+ :ref:`Quaternion<api_Quaternion>`  **Quaternion::operator*** (areal  *factor*) const
 
 Returns a copy of this quaternion, multiplied by the given *factor*.
 
@@ -231,7 +241,7 @@ Returns a copy of this quaternion, multiplied by the given *factor*.
 
 .. _api_Quaternion_operator*:
 
- :ref:`Quaternion<api_Quaternion>` **Quaternion::operator*** (:ref:`Quaternion<api_Quaternion>` & *quaternion*) const
+ :ref:`Quaternion<api_Quaternion>`  **Quaternion::operator*** (:ref:`Quaternion<api_Quaternion>` & *quaternion*) const
 
 Multiplies this *quaternion* and *quaternion* using *quaternion* multiplication. The result corresponds to applying both of the rotations specified by this *quaternion* and *quaternion*.
 
@@ -239,7 +249,7 @@ Multiplies this *quaternion* and *quaternion* using *quaternion* multiplication.
 
 .. _api_Quaternion_operator*:
 
- :ref:`Vector3<api_Vector3>` **Quaternion::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+ :ref:`Vector3<api_Vector3>`  **Quaternion::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
 Rotates a *vector* vec with this quaternion to produce a new *vector* in 3D space.
 
@@ -247,7 +257,7 @@ Rotates a *vector* vec with this quaternion to produce a new *vector* in 3D spac
 
 .. _api_Quaternion_operator*=:
 
- :ref:`Quaternion<api_Quaternion>`& **Quaternion::operator*=** (areal  *factor*)
+ :ref:`Quaternion<api_Quaternion>` & **Quaternion::operator*=** (areal  *factor*)
 
 Multiplies this quaternion's coordinates by the given *factor*, and returns a reference to this quaternion.
 
@@ -257,7 +267,7 @@ Multiplies this quaternion's coordinates by the given *factor*, and returns a re
 
 .. _api_Quaternion_operator/:
 
- :ref:`Quaternion<api_Quaternion>` **Quaternion::operator/** (areal  *divisor*) const
+ :ref:`Quaternion<api_Quaternion>`  **Quaternion::operator/** (areal  *divisor*) const
 
 Returns a copy of this quaternion, divided by the given *divisor*.
 
@@ -267,7 +277,7 @@ Returns a copy of this quaternion, divided by the given *divisor*.
 
 .. _api_Quaternion_operator/=:
 
- :ref:`Quaternion<api_Quaternion>`& **Quaternion::operator/=** (areal  *divisor*)
+ :ref:`Quaternion<api_Quaternion>` & **Quaternion::operator/=** (areal  *divisor*)
 
 Divides this quaternion's coordinates by the given *divisor*, and returns a reference to this quaternion.
 

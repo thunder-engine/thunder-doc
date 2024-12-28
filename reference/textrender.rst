@@ -3,7 +3,7 @@
 TextRender
 ==========
 
-Inherited: :doc:`Renderable<api_Renderable>`
+Inherited: None
 
 .. _api_TextRender_description:
 
@@ -24,7 +24,7 @@ Public Methods
 +------------------------------+----------------------------------------------------------------------+
 |  :ref:`Vector4<api_Vector4>` | :ref:`color<api_TextRender_color>` () const                          |
 +------------------------------+----------------------------------------------------------------------+
-|      :ref:`Font<api_Font>` * | :ref:`font<api_TextRender_font>` () const                            |
+|                          int | :ref:`font<api_TextRender_font>` () const                            |
 +------------------------------+----------------------------------------------------------------------+
 |                          int | :ref:`fontSize<api_TextRender_fontSize>` () const                    |
 +------------------------------+----------------------------------------------------------------------+
@@ -33,8 +33,6 @@ Public Methods
 |                         void | :ref:`setAlign<api_TextRender_setAlign>` (int  alignment)            |
 +------------------------------+----------------------------------------------------------------------+
 |                         void | :ref:`setColor<api_TextRender_setColor>` (const Vector4  color)      |
-+------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setFont<api_TextRender_setFont>` (Font * font)                 |
 +------------------------------+----------------------------------------------------------------------+
 |                         void | :ref:`setFontSize<api_TextRender_setFontSize>` (int  size)           |
 +------------------------------+----------------------------------------------------------------------+
@@ -62,9 +60,7 @@ Public Methods
 Static Methods
 --------------
 
-+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`cursorPosition<api_TextRender_cursorPosition>` (Font * font, int  size, const std::string & text, bool  kerning, const Vector2 & boundaries) |
-+------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+None
 
 .. _api_TextRender_methods:
 
@@ -83,7 +79,7 @@ Returns text alignment policy.
 
 .. _api_TextRender_color:
 
- :ref:`Vector4<api_Vector4>` **TextRender::color** () const
+ :ref:`Vector4<api_Vector4>`  **TextRender::color** () const
 
 Returns the color of the text to be drawn.
 
@@ -91,21 +87,11 @@ Returns the color of the text to be drawn.
 
 ----
 
-.. _api_TextRender_cursorPosition:
-
- :ref:`Vector2<api_Vector2>` **TextRender::cursorPosition** (:ref:`Font<api_Font>` * *font*, int  *size*, std::string & *text*, bool  *kerning*, :ref:`Vector2<api_Vector2>` & *boundaries*)
-
-Returns the cursor position for rendering *text* with specified *font* and *size*. Developer can also enable *kerning* and specify a *boundaries* for the *text*.
-
-----
-
 .. _api_TextRender_font:
 
- :ref:`Font<api_Font>`* **TextRender::font** () const
+ int **TextRender::font** () const
 
 Returns the font which will be used to draw a text.
-
-**See also** setFont().
 
 ----
 
@@ -149,16 +135,6 @@ Changes the *color* of the text to be drawn.
 
 ----
 
-.. _api_TextRender_setFont:
-
- void **TextRender::setFont** (:ref:`Font<api_Font>` * *font*)
-
-Changes the *font* which will be used to draw a text.
-
-**See also** *font*().
-
-----
-
 .. _api_TextRender_setFontSize:
 
  void **TextRender::setFontSize** (int  *size*)
@@ -175,7 +151,9 @@ Changes the *size* of the font.
 
 Set true to enable glyph *kerning* and false to disable.
 
+
 **Note:** Glyph *kerning* functionality depends on fonts which you are using. In case of font doesn't support *kerning*, you will not see the difference.
+
 
 **See also** *kerning*().
 
@@ -223,7 +201,7 @@ Sets the word *wrap* policy. Set true to enable word *wrap* and false to disable
 
 .. _api_TextRender_size:
 
- :ref:`Vector2<api_Vector2>` **TextRender::size** () const
+ :ref:`Vector2<api_Vector2>`  **TextRender::size** () const
 
 Returns the boundaries of the text area. This parameter is involved in Word Wrap calculations.
 

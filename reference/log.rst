@@ -25,35 +25,39 @@ Common usecase:
 Public Methods
 --------------
 
-+------------------------+---------------------------------------------------------------+
-|                        | :ref:`Log<api_Log_Log>` (Log::LogTypes  type)                 |
-+------------------------+---------------------------------------------------------------+
-|                        | :ref:`~Log<api_Log_~Log>` ()                                  |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (bool  b)               |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned char  c)      |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (char  c)               |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned short  s)     |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (short  s)              |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned int  i)       |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int  i)                |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned long long  i) |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (long long  i)          |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (float  f)              |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (double  d)             |
-+------------------------+---------------------------------------------------------------+
-|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (const char * string)   |
-+------------------------+---------------------------------------------------------------+
++------------------------+--------------------------------------------------------------------+
+|                        | :ref:`Log<api_Log_Log>` (Log::LogTypes  type)                      |
++------------------------+--------------------------------------------------------------------+
+|                        | :ref:`~Log<api_Log_~Log>` ()                                       |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (bool  b)                    |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (char  c)                    |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (const char * string)        |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (const std::string & string) |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (const void * value)         |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (double  d)                  |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (float  f)                   |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (int  i)                     |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (long long  i)               |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (short  s)                   |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned char  c)           |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned int  i)            |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned long long  i)      |
++------------------------+--------------------------------------------------------------------+
+|  :ref:`Log<api_Log>` & | :ref:`operator<<<api_Log_operator<<>` (unsigned short  s)          |
++------------------------+--------------------------------------------------------------------+
 
 .. _api_Log_enums:
 
@@ -118,7 +122,7 @@ Flushes any pending data to be written and destroys the log stream.
 
 .. _api_Log_handler:
 
- :ref:`LogHandler<api_LogHandler>`* **Log::handler** ()
+ :ref:`LogHandler<api_LogHandler>` * **Log::handler** ()
 
 Returns LogHandler object if present; otherwise returns nullptr.
 
@@ -142,74 +146,86 @@ Set current log *level* output. Messages wich are below this *level* will be des
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (bool  *b*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (bool  *b*)
 
 Writes the *b*oolean value, *b*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (char  *c*)
-
-Writes the unsinged 8 bit integer value, *c*, to the stream and returns a reference to the stream.
-
-.. _api_Log_operator<<:
-
- :ref:`Log<api_Log>`& **Log::operator<<** (char  *c*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (char  *c*)
 
 Writes the singed 8 bit integer value, *c*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (:ref:`short<api_short>`  *s*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (char * *string*)
 
-Writes the unsinged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
-
-.. _api_Log_operator<<:
-
- :ref:`Log<api_Log>`& **Log::operator<<** (:ref:`short<api_short>`  *s*)
-
-Writes the *s*inged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
+Writes the '\0'-terminated *string*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (int  *i*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (std::string & *string*)
 
-Writes the unsinged 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
-
-.. _api_Log_operator<<:
-
- :ref:`Log<api_Log>`& **Log::operator<<** (int  *i*)
-
-Writes the singed 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+Writes the text *string*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (:ref:`long<api_long>`  *i*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (void * *value*)
 
-Writes the unsinged 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
-
-.. _api_Log_operator<<:
-
- :ref:`Log<api_Log>`& **Log::operator<<** (:ref:`long<api_long>`  *i*)
-
-Writes the singed 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+Writes the pointer *value*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (float  *f*)
-
-Writes the *f*loat value, *f*, to the stream and returns a reference to the stream.
-
-.. _api_Log_operator<<:
-
- :ref:`Log<api_Log>`& **Log::operator<<** (:ref:`double<api_double>`  *d*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (:ref:`double<api_double>`  *d*)
 
 Writes the float value with *d*ouble precision, *d*, to the stream and returns a reference to the stream.
 
 .. _api_Log_operator<<:
 
- :ref:`Log<api_Log>`& **Log::operator<<** (char * *string*)
+ :ref:`Log<api_Log>` & **Log::operator<<** (float  *f*)
 
-Writes the '\0'-terminated *string*, to the stream and returns a reference to the stream.
+Writes the *f*loat value, *f*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (int  *i*)
+
+Writes the singed 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (:ref:`long<api_long>`  *i*)
+
+Writes the singed 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (:ref:`short<api_short>`  *s*)
+
+Writes the *s*inged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (char  *c*)
+
+Writes the unsinged 8 bit integer value, *c*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (int  *i*)
+
+Writes the unsinged 32 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (:ref:`long<api_long>`  *i*)
+
+Writes the unsinged 64 bit *i*nteger value, *i*, to the stream and returns a reference to the stream.
+
+.. _api_Log_operator<<:
+
+ :ref:`Log<api_Log>` & **Log::operator<<** (:ref:`short<api_short>`  *s*)
+
+Writes the unsinged 16 bit integer value, *s*, to the *s*tream and returns a reference to the *s*tream.
 
 

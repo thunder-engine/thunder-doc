@@ -8,7 +8,6 @@ Thunder Documentation
 
    basics/index
    editor/index
-   graphics/index
    lighting/index
    rendering/index
    vfx/index

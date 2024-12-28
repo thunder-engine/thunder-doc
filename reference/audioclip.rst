@@ -3,7 +3,7 @@
 AudioClip
 =========
 
-Inherited: :doc:`Object<api_Object>`
+Inherited: None
 
 .. _api_AudioClip_description:
 
@@ -19,15 +19,15 @@ The AudioClip class provides methods to access and manipulate audio data, suppor
 Public Methods
 --------------
 
-+-------+----------------------------------------------------+
-|   int | :ref:`channels<api_AudioClip_channels>` () const   |
-+-------+----------------------------------------------------+
-|   int | :ref:`duration<api_AudioClip_duration>` () const   |
-+-------+----------------------------------------------------+
-|   int | :ref:`frequency<api_AudioClip_frequency>` () const |
-+-------+----------------------------------------------------+
-|  bool | :ref:`isStream<api_AudioClip_isStream>` () const   |
-+-------+----------------------------------------------------+
++--------------------------------+----------------------------------------------------+
+|  :ref:`uint32_t<api_uint32_t>` | :ref:`channels<api_AudioClip_channels>` () const   |
++--------------------------------+----------------------------------------------------+
+|  :ref:`uint32_t<api_uint32_t>` | :ref:`duration<api_AudioClip_duration>` () const   |
++--------------------------------+----------------------------------------------------+
+|  :ref:`uint32_t<api_uint32_t>` | :ref:`frequency<api_AudioClip_frequency>` () const |
++--------------------------------+----------------------------------------------------+
+|                           bool | :ref:`isStream<api_AudioClip_isStream>` () const   |
++--------------------------------+----------------------------------------------------+
 
 
 
@@ -45,7 +45,7 @@ Methods Description
 
 .. _api_AudioClip_channels:
 
- int **AudioClip::channels** () const
+ :ref:`uint32_t<api_uint32_t>`  **AudioClip::channels** () const
 
 Returns the number of audio channels.
 
@@ -53,7 +53,7 @@ Returns the number of audio channels.
 
 .. _api_AudioClip_duration:
 
- int **AudioClip::duration** () const
+ :ref:`uint32_t<api_uint32_t>`  **AudioClip::duration** () const
 
 Returns the duration of audio clip.
 
@@ -61,7 +61,7 @@ Returns the duration of audio clip.
 
 .. _api_AudioClip_frequency:
 
- int **AudioClip::frequency** () const
+ :ref:`uint32_t<api_uint32_t>`  **AudioClip::frequency** () const
 
 Returns frequency of audio clip in Hz.
 

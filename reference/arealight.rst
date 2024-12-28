@@ -3,7 +3,7 @@
 AreaLight
 =========
 
-Inherited: :doc:`BaseLight<api_BaseLight>`
+Inherited: None
 
 .. _api_AreaLight_description:
 

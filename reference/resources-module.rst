@@ -13,6 +13,7 @@ Resources Module
    audioclip
    bone
    computebuffer
+   computeinstance
    computeshader
    controlscheme
    font
@@ -21,9 +22,6 @@ Resources Module
    materialinstance
    mesh
    meshgroup
-   particleeffect
-   particleemitter
-   particlemodificator
    pipeline
    pose
    prefab
@@ -35,3 +33,4 @@ Resources Module
    tilemap
    tileset
    translator
+   visualeffect

@@ -3,7 +3,7 @@
 TileSet
 =======
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_TileSet_description:
 
@@ -26,7 +26,7 @@ Public Methods
 +------------------------------+-------------------------------------------------------------------------+
 |                         void | :ref:`setColumns<api_TileSet_setColumns>` (int  columns)                |
 +------------------------------+-------------------------------------------------------------------------+
-|                         void | :ref:`setSpriteSheet<api_TileSet_setSpriteSheet>` (Sprite * sprite)     |
+|                         void | :ref:`setSpriteSheet<api_TileSet_setSpriteSheet>` (Sprite * sheet)      |
 +------------------------------+-------------------------------------------------------------------------+
 |                         void | :ref:`setTileHeight<api_TileSet_setTileHeight>` (int  height)           |
 +------------------------------+-------------------------------------------------------------------------+
@@ -81,7 +81,7 @@ Returns the number of columns in the tileset.
 
 .. _api_TileSet_getCorners:
 
- :ref:`Vector4<api_Vector4>` **TileSet::getCorners** (int  *index*)
+ :ref:`Vector4<api_Vector4>`  **TileSet::getCorners** (int  *index*)
 
 Calculates and returns the texture coordinates (corners) of a specific tile within the tileset based on its *index*. This method considers tile flipping (horizontal and vertical) if applicable.
 
@@ -99,11 +99,11 @@ Sets the number of *columns* in the tileset.
 
 .. _api_TileSet_setSpriteSheet:
 
- void **TileSet::setSpriteSheet** (:ref:`Sprite<api_Sprite>` * *sprite*)
+ void **TileSet::setSpriteSheet** (:ref:`Sprite<api_Sprite>` * *sheet*)
 
-Sets the *sprite* sheet containing the individual tiles.
+Sets the sprite *sheet* containing the individual tiles.
 
-**See also** *sprite*Sheet().
+**See also** spriteSheet().
 
 ----
 
@@ -169,7 +169,7 @@ Sets the *type* of the tileset, specifying the orientation or layout style of th
 
 .. _api_TileSet_spriteSheet:
 
- :ref:`Sprite<api_Sprite>`* **TileSet::spriteSheet** () const
+ :ref:`Sprite<api_Sprite>` * **TileSet::spriteSheet** () const
 
 Returns a pointer to the sprite sheet containing the individual tiles.
 
@@ -199,7 +199,7 @@ Returns the margin (border) around the tiles in pixels.
 
 .. _api_TileSet_tileOffset:
 
- :ref:`Vector2<api_Vector2>` **TileSet::tileOffset** () const
+ :ref:`Vector2<api_Vector2>`  **TileSet::tileOffset** () const
 
 Returns the offset used for tile positioning.
 

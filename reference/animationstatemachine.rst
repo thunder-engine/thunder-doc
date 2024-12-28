@@ -3,7 +3,7 @@
 AnimationStateMachine
 =====================
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_AnimationStateMachine_description:
 
@@ -39,7 +39,7 @@ Methods Description
 
 .. _api_AnimationStateMachine_findState:
 
- :ref:`AnimationState<api_AnimationState>`* **AnimationStateMachine::findState** (int  *hash*) const
+ :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::findState** (int  *hash*) const
 
 Returns a state for the provided *hash*.
 
@@ -47,7 +47,7 @@ Returns a state for the provided *hash*.
 
 .. _api_AnimationStateMachine_initialState:
 
- :ref:`AnimationState<api_AnimationState>`* **AnimationStateMachine::initialState** () const
+ :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::initialState** () const
 
 Returns an initial state for the state machine.
 

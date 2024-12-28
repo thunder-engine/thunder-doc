@@ -3,7 +3,7 @@
 Mesh
 ====
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Mesh_description:
 
@@ -109,7 +109,7 @@ Merges current with provided *mesh*. In the case of the *transform*, the matrix 
 
 .. _api_Mesh_bones:
 
- :ref:`Vector4Vector<api_Vector4Vector>`& **Mesh::bones** ()
+ :ref:`Vector4Vector<api_Vector4Vector>` & **Mesh::bones** ()
 
 Returns an array of bones for vertices for the particular Lod.
 
@@ -119,7 +119,7 @@ Returns an array of bones for vertices for the particular Lod.
 
 .. _api_Mesh_bound:
 
- :ref:`AABBox<api_AABBox>` **Mesh::bound** () const
+ :ref:`AABBox<api_AABBox>`  **Mesh::bound** () const
 
 Returns bounding box for the Mesh.
 
@@ -137,7 +137,7 @@ Removes all mesh data.
 
 .. _api_Mesh_colors:
 
- :ref:`Vector4Vector<api_Vector4Vector>`& **Mesh::colors** ()
+ :ref:`Vector4Vector<api_Vector4Vector>` & **Mesh::colors** ()
 
 Returns an array of colors for vertices for the particular Mesh.
 
@@ -147,7 +147,7 @@ Returns an array of colors for vertices for the particular Mesh.
 
 .. _api_Mesh_defaultMaterial:
 
- :ref:`Material<api_Material>`* **Mesh::defaultMaterial** (int  *sub* = 0) const
+ :ref:`Material<api_Material>` * **Mesh::defaultMaterial** (int  *sub* = 0) const
 
 Returns a default material for the *sub* mesh.
 
@@ -173,7 +173,7 @@ Returns starting point index for the *sub* mesh.
 
 .. _api_Mesh_indices:
 
- :ref:`IndexVector<api_IndexVector>`& **Mesh::indices** ()
+ :ref:`IndexVector<api_IndexVector>` & **Mesh::indices** ()
 
 Returns an array of mesh indices for the particular Mesh.
 
@@ -207,7 +207,7 @@ Marks mesh as dynamic that means it's can be changed at the runtime.
 
 .. _api_Mesh_normals:
 
- :ref:`Vector3Vector<api_Vector3Vector>`& **Mesh::normals** ()
+ :ref:`Vector3Vector<api_Vector3Vector>` & **Mesh::normals** ()
 
 Returns an array of mesh normals for the particular Lod.
 
@@ -359,7 +359,7 @@ Returns the number of sub-meshes inside the Mesh.
 
 .. _api_Mesh_tangents:
 
- :ref:`Vector3Vector<api_Vector3Vector>`& **Mesh::tangents** ()
+ :ref:`Vector3Vector<api_Vector3Vector>` & **Mesh::tangents** ()
 
 Returns an array of mesh tangents for the particular Lod.
 
@@ -369,7 +369,7 @@ Returns an array of mesh tangents for the particular Lod.
 
 .. _api_Mesh_uv0:
 
- :ref:`Vector2Vector<api_Vector2Vector>`& **Mesh::uv0** ()
+ :ref:`Vector2Vector<api_Vector2Vector>` & **Mesh::uv0** ()
 
 Returns an array of mesh uv0 (base) texture coordinates for the particular Lod.
 
@@ -379,7 +379,7 @@ Returns an array of mesh uv0 (base) texture coordinates for the particular Lod.
 
 .. _api_Mesh_uv1:
 
- :ref:`Vector2Vector<api_Vector2Vector>`& **Mesh::uv1** ()
+ :ref:`Vector2Vector<api_Vector2Vector>` & **Mesh::uv1** ()
 
 Returns an array of mesh uv1 texture coordinates for the particular Lod.
 
@@ -389,7 +389,7 @@ Returns an array of mesh uv1 texture coordinates for the particular Lod.
 
 .. _api_Mesh_vertices:
 
- :ref:`Vector3Vector<api_Vector3Vector>`& **Mesh::vertices** ()
+ :ref:`Vector3Vector<api_Vector3Vector>` & **Mesh::vertices** ()
 
 Returns an array of mesh vertices for the particular Lod.
 
@@ -399,7 +399,7 @@ Returns an array of mesh vertices for the particular Lod.
 
 .. _api_Mesh_weights:
 
- :ref:`Vector4Vector<api_Vector4Vector>`& **Mesh::weights** ()
+ :ref:`Vector4Vector<api_Vector4Vector>` & **Mesh::weights** ()
 
 Returns an array of bone weights for the particular Mesh.
 

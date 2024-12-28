@@ -3,7 +3,7 @@
 Pose
 ====
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Pose_description:
 
@@ -49,11 +49,13 @@ Adds a *bone* to the pose.
 
 .. _api_Pose_bone:
 
-const :ref:`Bone<api_Bone>`* **Pose::bone** (int  *index*) const
+const :ref:`Bone<api_Bone>` * **Pose::bone** (int  *index*) const
 
 Returns a bone with *index*.
 
+
 **Note:** Returns nullptr in case no such bone.
+
 
 ----
 

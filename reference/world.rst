@@ -3,14 +3,16 @@
 World
 =====
 
-Inherited: :doc:`Object<api_Object>`
+Inherited: None
 
 .. _api_World_description:
 
 Description
 -----------
 
+
 Note: A scene object creating automatically by the engine. Only one World instance can be created in the game. A scene object must be set as a parent for other game hierarchies to show them on the screen. The main scene graph object can be retrieved using Engine::sceneGraph()
+
 
 
 
@@ -19,29 +21,33 @@ Note: A scene object creating automatically by the engine. Only one World instan
 Public Methods
 --------------
 
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|  :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_activeScene>` () const                                                 |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|  :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_createScene>` (const std::string & name)                               |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       bool | :ref:`isToBeUpdated<api_World_isToBeUpdated>` ()                                                   |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|  :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_loadScene>` (const std::string & path, bool  additive)                   |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`makeDirty<api_World_makeDirty>` ()                                                           |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       bool | :ref:`rayCast<api_World_rayCast>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)            |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`setActiveScene<api_World_setActiveScene>` (Scene * scene)                                    |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`setRayCastHandler<api_World_setRayCastHandler>` (RayCastCallback  callback, System * system) |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`setToBeUpdated<api_World_setToBeUpdated>` (bool  flag)                                       |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`unloadAll<api_World_unloadAll>` ()                                                           |
-+----------------------------+----------------------------------------------------------------------------------------------------+
-|                       void | :ref:`unloadScene<api_World_unloadScene>` (Scene * scene)                                          |
-+----------------------------+----------------------------------------------------------------------------------------------------+
++------------------------------+----------------------------------------------------------------------------------------------------+
+|    :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_activeScene>` () const                                                 |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|    :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_createScene>` (const std::string & name)                               |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|  :ref:`Object<api_Object>` * | :ref:`gameController<api_World_gameController>` () const                                           |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         bool | :ref:`isToBeUpdated<api_World_isToBeUpdated>` ()                                                   |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_loadScene>` (const std::string & path, bool  additive)                   |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`makeDirty<api_World_makeDirty>` ()                                                           |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         bool | :ref:`rayCast<api_World_rayCast>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)            |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`setActiveScene<api_World_setActiveScene>` (Scene * scene)                                    |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`setGameController<api_World_setGameController>` (Object * controller)                        |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`setRayCastHandler<api_World_setRayCastHandler>` (RayCastCallback  callback, System * system) |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`setToBeUpdated<api_World_setToBeUpdated>` (bool  flag)                                       |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`unloadAll<api_World_unloadAll>` ()                                                           |
++------------------------------+----------------------------------------------------------------------------------------------------+
+|                         void | :ref:`unloadScene<api_World_unloadScene>` (Scene * scene)                                          |
++------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 
@@ -59,7 +65,7 @@ Methods Description
 
 .. _api_World_activeScene:
 
- :ref:`Scene<api_Scene>`* **World::activeScene** () const
+ :ref:`Scene<api_Scene>` * **World::activeScene** () const
 
 Returns an active Scene.
 
@@ -71,9 +77,21 @@ There must always be one Scene marked as the active at the same time.
 
 .. _api_World_createScene:
 
- :ref:`Scene<api_Scene>`* **World::createScene** (std::string & *name*)
+ :ref:`Scene<api_Scene>` * **World::createScene** (std::string & *name*)
 
 Create an empty new Scene at runtime with the given *name*.
+
+----
+
+.. _api_World_gameController:
+
+ :ref:`Object<api_Object>` * **World::gameController** () const
+
+Returns a game controller object.
+
+Game controller is abstract object respocible for various gameplay aspects.
+
+**See also** setGameController().
 
 ----
 
@@ -87,11 +105,13 @@ Returns in case of scene must be updated in the current frame; otherwise returns
 
 .. _api_World_loadScene:
 
- :ref:`Scene<api_Scene>`* **World::loadScene** (std::string & *path*, bool  *additive*)
+ :ref:`Scene<api_Scene>` * **World::loadScene** (std::string & *path*, bool  *additive*)
 
 Loads the scene stored in the .map files by the it's *path*.
 
+
 **Note:** The previous scenes will be not unloaded in the case of an *additive* flag is true.
+
 
 ----
 
@@ -120,6 +140,18 @@ Sets the *scene* to be active.
 There must always be one Scene marked as the active at the same time.
 
 **See also** activeScene().
+
+----
+
+.. _api_World_setGameController:
+
+ void **World::setGameController** (:ref:`Object<api_Object>` * *controller*)
+
+Sets the game *controller*.
+
+Game *controller* is abstract object respocible for various gameplay aspects.
+
+**See also** gameController().
 
 ----
 

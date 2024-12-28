@@ -65,7 +65,7 @@ Note that property declaration in C++ code differs significantly. For more infor
 For user convenience, the Property Editor changes the display of your property name by adding spaces between lowercase and uppercase letters. However, in your code, you still need to use the variable name you specified.
 
 Object Reference Properties
---------------------------
+---------------------------
 
 In addition to basic property types such as string, integer, bool, and others, developers may need properties that reference other objects in the Scene (Transforms, Lights, Actors) or assets (Textures, Meshes, Materials). The code snippet below demonstrates how to achieve this:
 

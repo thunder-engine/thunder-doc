@@ -3,7 +3,7 @@
 ToolButton
 ==========
 
-Inherited: :doc:`AbstractButton<api_AbstractButton>`
+Inherited: None
 
 .. _api_ToolButton_description:
 
@@ -53,7 +53,7 @@ Hides the associated popup menu.
 
 .. _api_ToolButton_menu:
 
- :ref:`Menu<api_Menu>`* **ToolButton::menu** () const
+ :ref:`Menu<api_Menu>` * **ToolButton::menu** () const
 
 Returns the associated menu, or nullptr if no menu has been defined.
 

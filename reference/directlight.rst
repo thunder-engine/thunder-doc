@@ -3,7 +3,7 @@
 DirectLight
 ===========
 
-Inherited: :doc:`BaseLight<api_BaseLight>`
+Inherited: None
 
 .. _api_DirectLight_description:
 

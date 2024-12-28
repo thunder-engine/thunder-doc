@@ -3,7 +3,7 @@
 ComputeBuffer
 =============
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_ComputeBuffer_description:
 
@@ -20,15 +20,15 @@ Public Methods
 --------------
 
 +----------------------------------+--------------------------------------------------------------------+
-|                              int | :ref:`count<api_ComputeBuffer_count>` () const                     |
+|    :ref:`uint32_t<api_uint32_t>` | :ref:`count<api_ComputeBuffer_count>` () const                     |
 +----------------------------------+--------------------------------------------------------------------+
 |  :ref:`ByteArray<api_ByteArray>` | :ref:`data<api_ComputeBuffer_data>` () const                       |
 +----------------------------------+--------------------------------------------------------------------+
 |                             void | :ref:`setData<api_ComputeBuffer_setData>` (const ByteArray & data) |
 +----------------------------------+--------------------------------------------------------------------+
-|                             void | :ref:`setStride<api_ComputeBuffer_setStride>` (int  stride)        |
+|                             void | :ref:`setStride<api_ComputeBuffer_setStride>` (uint32_t  stride)   |
 +----------------------------------+--------------------------------------------------------------------+
-|                              int | :ref:`stride<api_ComputeBuffer_stride>` () const                   |
+|    :ref:`uint32_t<api_uint32_t>` | :ref:`stride<api_ComputeBuffer_stride>` () const                   |
 +----------------------------------+--------------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ Methods Description
 
 .. _api_ComputeBuffer_count:
 
- int **ComputeBuffer::count** () const
+ :ref:`uint32_t<api_uint32_t>`  **ComputeBuffer::count** () const
 
 Gets the number of elements in the compute buffer.
 
@@ -55,7 +55,7 @@ Gets the number of elements in the compute buffer.
 
 .. _api_ComputeBuffer_data:
 
- :ref:`ByteArray<api_ByteArray>` **ComputeBuffer::data** () const
+ :ref:`ByteArray<api_ByteArray>`  **ComputeBuffer::data** () const
 
 Gets the data stored in the compute buffer.
 
@@ -69,7 +69,9 @@ Gets the data stored in the compute buffer.
 
 Sets the *data* of the compute buffer.
 
+
 **Note:** This method updates the buffer *data* and marks it as dirty.
+
 
 **See also** *data*().
 
@@ -77,7 +79,7 @@ Sets the *data* of the compute buffer.
 
 .. _api_ComputeBuffer_setStride:
 
- void **ComputeBuffer::setStride** (int  *stride*)
+ void **ComputeBuffer::setStride** (:ref:`uint32_t<api_uint32_t>`  *stride*)
 
 Sets the *stride* of the compute buffer.
 
@@ -87,7 +89,7 @@ Sets the *stride* of the compute buffer.
 
 .. _api_ComputeBuffer_stride:
 
- int **ComputeBuffer::stride** () const
+ :ref:`uint32_t<api_uint32_t>`  **ComputeBuffer::stride** () const
 
 Returns stride, representing the size of a single element in the buffer.
 

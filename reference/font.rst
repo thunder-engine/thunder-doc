@@ -3,7 +3,7 @@
 Font
 ====
 
-Inherited: :doc:`Sprite<api_Sprite>`
+Inherited: None
 
 .. _api_Font_description:
 
@@ -95,7 +95,9 @@ Requests *characters* to be added to the font atlas.
 
 Returns the kerning offset between a *glyph* and *previous* *glyph*.
 
+
 **Note:** In case of font doesn't support kerning this method will return 0.
+
 
 ----
 

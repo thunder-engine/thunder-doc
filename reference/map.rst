@@ -3,7 +3,7 @@
 Map
 ===
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Map_description:
 
@@ -37,7 +37,7 @@ Methods Description
 
 .. _api_Map_scene:
 
- :ref:`Scene<api_Scene>`* **Map::scene** () const
+ :ref:`Scene<api_Scene>` * **Map::scene** () const
 
 Returns a scene which can be added to the scene graph.
 

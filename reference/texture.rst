@@ -3,7 +3,7 @@
 Texture
 =======
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Texture_description:
 
@@ -40,7 +40,11 @@ Public Methods
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             bool | :ref:`isCubemap<api_Texture_isCubemap>` () const                                    |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isFramebuffer<api_Texture_isFramebuffer>` () const                            |
+|                                             bool | :ref:`isFeedback<api_Texture_isFeedback>` () const                                  |
++--------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                             bool | :ref:`isRender<api_Texture_isRender>` () const                                      |
++--------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                              int | :ref:`mipCount<api_Texture_mipCount>` () const                                      |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             void | :ref:`readPixels<api_Texture_readPixels>` (int  x, int  y, int  width, int  height) |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -52,6 +56,8 @@ Public Methods
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             void | :ref:`setFiltering<api_Texture_setFiltering>` (int  type)                           |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                             void | :ref:`setFlags<api_Texture_setFlags>` (int  flags)                                  |
++--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             void | :ref:`setFormat<api_Texture_setFormat>` (int  type)                                 |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             void | :ref:`setHeight<api_Texture_setHeight>` (int  height)                               |
@@ -60,7 +66,9 @@ Public Methods
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                             void | :ref:`setWrap<api_Texture_setWrap>` (int  type)                                     |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`Texture::Surface<api_Texture::Surface>` & | :ref:`surface<api_Texture_surface>` (int  face)                                     |
+|                                              int | :ref:`sides<api_Texture_sides>` () const                                            |
++--------------------------------------------------+-------------------------------------------------------------------------------------+
+|  :ref:`Texture::Surface<api_Texture::Surface>` & | :ref:`surface<api_Texture_surface>` (int  side)                                     |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
 |                                              int | :ref:`width<api_Texture_width>` () const                                            |
 +--------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -85,6 +93,18 @@ Public Enums
 +--------------------+-------+---------------------------------------------------------------------------------+
 | Texture::Trilinear | 2     | Texture samples are averaged and also interpolated from adjacent mipmap levels. |
 +--------------------+-------+---------------------------------------------------------------------------------+
+
+.. _api_Texture_Flags:
+
+**enum Texture::Flags**
+
++-------------------+--------+---------------------------------------------------------+
+|          Constant | Value  | Description                                             |
++-------------------+--------+---------------------------------------------------------+
+|   Texture::Render | (1<<0) | This texture is used as render target in frame buffers. |
++-------------------+--------+---------------------------------------------------------+
+| Texture::Feedback | (1<<1) | The feedback textures can read data from GPU to CPU.    |
++-------------------+--------+---------------------------------------------------------+
 
 .. _api_Texture_FormatType:
 
@@ -131,11 +151,11 @@ Wrap mode for textures.
 Static Methods
 --------------
 
-+------+------------------------------------------------------+
-|  int | :ref:`maxCubemapSize<api_Texture_maxCubemapSize>` () |
-+------+------------------------------------------------------+
-|  int | :ref:`maxTextureSize<api_Texture_maxTextureSize>` () |
-+------+------------------------------------------------------+
++--------------------------------+------------------------------------------------------+
+|  :ref:`uint32_t<api_uint32_t>` | :ref:`maxCubemapSize<api_Texture_maxCubemapSize>` () |
++--------------------------------+------------------------------------------------------+
+|  :ref:`uint32_t<api_uint32_t>` | :ref:`maxTextureSize<api_Texture_maxTextureSize>` () |
++--------------------------------+------------------------------------------------------+
 
 .. _api_Texture_methods:
 
@@ -146,7 +166,7 @@ Methods Description
 
  void **Texture::addSurface** (:ref:`Texture::Surface<api_Texture::Surface>` & *surface*)
 
-Adds *surface* to the texture. Each texture must contain at least one *surface*. Commonly used to set *surface*s for the cube maps.
+Adds *surface* to the texture. Each texture must contain at least one *surface*.
 
 ----
 
@@ -156,7 +176,9 @@ Adds *surface* to the texture. Each texture must contain at least one *surface*.
 
 Returns the number of depth bits.
 
+
 **Note:** This value is valid only for the depth textures.
+
 
 **See also** setDepthBits().
 
@@ -192,7 +214,7 @@ Returns pixel color from mip *level* at *x* and *y* position as RGBA integer for
 
 .. _api_Texture_getPixels:
 
- :ref:`ByteArray<api_ByteArray>` **Texture::getPixels** (int  *level*) const
+ :ref:`ByteArray<api_ByteArray>`  **Texture::getPixels** (int  *level*) const
 
 Returns texture data from a mip *level*.
 
@@ -214,7 +236,9 @@ Returns height for the texture.
 
 Returns true if texture provides a set of textures; otherwise returns false.
 
+
 **Note:** For now will always return false.
+
 
 ----
 
@@ -234,17 +258,25 @@ Returns true if the texture is a cube map; otherwise returns false.
 
 ----
 
-.. _api_Texture_isFramebuffer:
+.. _api_Texture_isFeedback:
 
- bool **Texture::isFramebuffer** () const
+ bool **Texture::isFeedback** () const
 
-Returns true if texture is attechecd to framebuffer; otherwise returns false.
+Returns true if texture marked as a feed back texture; otherwise returns false. The feedback textures can read data from GPU to CPU.
+
+----
+
+.. _api_Texture_isRender:
+
+ bool **Texture::isRender** () const
+
+Returns true if texture is can be attached to framebuffer; otherwise returns false.
 
 ----
 
 .. _api_Texture_maxCubemapSize:
 
- int **Texture::maxCubemapSize** ()
+ :ref:`uint32_t<api_uint32_t>`  **Texture::maxCubemapSize** ()
 
 Returns the maximum cubemap size.
 
@@ -252,9 +284,17 @@ Returns the maximum cubemap size.
 
 .. _api_Texture_maxTextureSize:
 
- int **Texture::maxTextureSize** ()
+ :ref:`uint32_t<api_uint32_t>`  **Texture::maxTextureSize** ()
 
 Returns the maximum texure size.
+
+----
+
+.. _api_Texture_mipCount:
+
+ int **Texture::mipCount** () const
+
+Returns the number of MIP levels.
 
 ----
 
@@ -280,7 +320,9 @@ Sets new *width* and *height* for the texture.
 
 Sets the number of *depth* bits.
 
+
 **Note:** This value is valid only for the *depth* textures.
+
 
 **See also** *depth*Bits().
 
@@ -301,6 +343,16 @@ Marks texture as dirty. That means this texture must be forcefully reloaded.
 Sets filtering *type* of texture. For more details please see the Texture::FilteringType enum.
 
 **See also** filtering().
+
+----
+
+.. _api_Texture_setFlags:
+
+ void **Texture::setFlags** (int  *flags*)
+
+Sets service *flags* for the texture.
+
+**See also** Texture::Flags.
 
 ----
 
@@ -344,11 +396,19 @@ Sets the *type* of warp policy. For more details please see the Texture::WrapTyp
 
 ----
 
+.. _api_Texture_sides:
+
+ int **Texture::sides** () const
+
+Returns the number of texture sides. In most cases returns 1 but for the cube map will return 6
+
+----
+
 .. _api_Texture_surface:
 
- :ref:`Texture::Surface<api_Texture::Surface>`& **Texture::surface** (int  *face*)
+ :ref:`Texture::Surface<api_Texture::Surface>` & **Texture::surface** (int  *side*)
 
-Returns a surface for the provided *face*. Each texture must contain at least one surface. Commonly used to set surfaces for the cube maps.
+Returns a surface for the provided *side*. Each texture must contain at least one surface. Commonly used to set surfaces for the cube maps.
 
 ----
 

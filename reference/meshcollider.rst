@@ -3,7 +3,7 @@
 MeshCollider
 ============
 
-Inherited: :doc:`Collider<api_Collider>`
+Inherited: None
 
 .. _api_MeshCollider_description:
 
@@ -45,7 +45,7 @@ Methods Description
 
 .. _api_MeshCollider_material:
 
- :ref:`PhysicMaterial<api_PhysicMaterial>`* **MeshCollider::material** () const
+ :ref:`PhysicMaterial<api_PhysicMaterial>` * **MeshCollider::material** () const
 
 Returns a pointer to the physical material associated with the collider.
 
@@ -55,7 +55,7 @@ Returns a pointer to the physical material associated with the collider.
 
 .. _api_MeshCollider_mesh:
 
- :ref:`Mesh<api_Mesh>`* **MeshCollider::mesh** () const
+ :ref:`Mesh<api_Mesh>` * **MeshCollider::mesh** () const
 
 Returns a pointer to the mesh used by the collider.
 

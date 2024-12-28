@@ -3,7 +3,7 @@
 Sprite
 ======
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Sprite_description:
 
@@ -19,19 +19,19 @@ Sprites usually used in games to display environment and characters in 2D games.
 Public Methods
 --------------
 
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|                            int | :ref:`addElement<api_Sprite_addElement>` (Texture * texture, const std::string & name = ...) |
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|        :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_Sprite_mesh>` (int  key) const                                                |
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|                           void | :ref:`pack<api_Sprite_pack>` (int  padding)                                                  |
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|                           void | :ref:`setMesh<api_Sprite_setMesh>` (int  key, Mesh * mesh)                                   |
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|                           void | :ref:`setTexture<api_Sprite_setTexture>` (Texture * texture)                                 |
-+--------------------------------+----------------------------------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_Sprite_texture>` () const                                                  |
-+--------------------------------+----------------------------------------------------------------------------------------------+
++--------------------------------+--------------------------------------------------------------+
+|                            int | :ref:`addElement<api_Sprite_addElement>` (Texture * texture) |
++--------------------------------+--------------------------------------------------------------+
+|                           void | :ref:`addPage<api_Sprite_addPage>` (Texture * texture)       |
++--------------------------------+--------------------------------------------------------------+
+|                           void | :ref:`packSheets<api_Sprite_packSheets>` (int  padding)      |
++--------------------------------+--------------------------------------------------------------+
+|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Sprite_page>` (int  key = -1) const           |
++--------------------------------+--------------------------------------------------------------+
+|                           void | :ref:`setShape<api_Sprite_setShape>` (int  key, Mesh * mesh) |
++--------------------------------+--------------------------------------------------------------+
+|        :ref:`Mesh<api_Mesh>` * | :ref:`shape<api_Sprite_shape>` (int  key) const              |
++--------------------------------+--------------------------------------------------------------+
 
 
 
@@ -49,60 +49,56 @@ Methods Description
 
 .. _api_Sprite_addElement:
 
- int **Sprite::addElement** (:ref:`Texture<api_Texture>` * *texture*, std::string & *name* = ...)
+ int **Sprite::addElement** (:ref:`Texture<api_Texture>` * *texture*)
 
-Adds new sub *texture* as element to current sprite sheet. All elements will be packed to a single sprite sheet *texture* using Sprite::pack() method. Returns the id of the new element. Optionally developer is able to provide a *name* of element. In this case method will return a hash of provided *name*.
+Adds new sub *texture* as element to current sprite sheet. All elements will be packed to a single sprite sheet *texture* using Sprite::pack() method. Returns the id of the new element.
 
-**See also** pack().
-
-----
-
-.. _api_Sprite_mesh:
-
- :ref:`Mesh<api_Mesh>`* **Sprite::mesh** (int  *key*) const
-
-Returns a mesh which represents the sprite with *key*.
-
-**See also** setMesh().
+**See also** packSheets().
 
 ----
 
-.. _api_Sprite_pack:
+.. _api_Sprite_addPage:
 
- void **Sprite::pack** (int  *padding*)
+ void **Sprite::addPage** (:ref:`Texture<api_Texture>` * *texture*)
 
-Packs all added elements int to a single sprite sheet. Parameter *padding* can be used to delimit elements.
+Adds a new sprite sheet *texture*.
+
+----
+
+.. _api_Sprite_packSheets:
+
+ void **Sprite::packSheets** (int  *padding*)
+
+Packs all added elements int to a sprite sheets. Parameter *padding* can be used to delimit elements.
 
 **See also** addElement().
 
 ----
 
-.. _api_Sprite_setMesh:
+.. _api_Sprite_page:
 
- void **Sprite::setMesh** (int  *key*, :ref:`Mesh<api_Mesh>` * *mesh*)
+ :ref:`Texture<api_Texture>` * **Sprite::page** (int  *key* = -1) const
+
+Returns a sprite sheet texture with *key*.
+
+----
+
+.. _api_Sprite_setShape:
+
+ void **Sprite::setShape** (int  *key*, :ref:`Mesh<api_Mesh>` * *mesh*)
 
 Sets a new *mesh* for the sprite with *key*. The old *mesh* will be deleted and no longer available.
 
-**See also** *mesh*().
+**See also** shape().
 
 ----
 
-.. _api_Sprite_setTexture:
+.. _api_Sprite_shape:
 
- void **Sprite::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
+ :ref:`Mesh<api_Mesh>` * **Sprite::shape** (int  *key*) const
 
-Sets a new sprite sheet *texture*.
+Returns a mesh which represents the sprite with *key*.
 
-**See also** *texture*().
-
-----
-
-.. _api_Sprite_texture:
-
- :ref:`Texture<api_Texture>`* **Sprite::texture** () const
-
-Returns a sprite sheet texture.
-
-**See also** setTexture().
+**See also** setShape().
 
 

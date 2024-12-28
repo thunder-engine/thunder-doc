@@ -20,11 +20,11 @@ Public Methods
 --------------
 
 +-------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                               | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
+|                               | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
 +-------------------------------+-----------------------------------------------------------------------------------------------------------+
 |                               | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size)                              |
 +-------------------------------+-----------------------------------------------------------------------------------------------------------+
-|                               | :ref:`OBBox<api_OBBox_OBBox>` ()                                                                          |
+|                               | :ref:`OBBox<api_OBBox_OBBox>` (const Vector3 & center, const Vector3 & size, const Quaternion & rotation) |
 +-------------------------------+-----------------------------------------------------------------------------------------------------------+
 |                          void | :ref:`box<api_OBBox_box>` (Vector3 & min, Vector3 & max) const                                            |
 +-------------------------------+-----------------------------------------------------------------------------------------------------------+
@@ -51,9 +51,9 @@ Methods Description
 
 .. _api_OBBox_OBBox:
 
-**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *size*, :ref:`Quaternion<api_Quaternion>` & *rotation*)
+**OBBox::OBBox** ()
 
-Constructs a bounding box with *center*, *size* and *rotation*.
+Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity rotation.
 
 ----
 
@@ -67,9 +67,9 @@ Constructs a bounding box with *center*, *size* and identity rotation.
 
 .. _api_OBBox_OBBox:
 
-**OBBox::OBBox** ()
+**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *size*, :ref:`Quaternion<api_Quaternion>` & *rotation*)
 
-Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity rotation.
+Constructs a bounding box with *center*, *size* and *rotation*.
 
 ----
 
@@ -95,13 +95,13 @@ Set curent bounding box by *min* and *max* points.
 
 .. _api_OBBox_operator*:
 
-const :ref:`OBBox<api_OBBox>` **OBBox::operator*** (areal  *factor*) const
+const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** (areal  *factor*) const
 
 Returns a copy of this vector, multiplied by the given *factor*.
 
 .. _api_OBBox_operator*:
 
-const :ref:`OBBox<api_OBBox>` **OBBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
 Returns a copy of this *vector*, multiplied by the given *vector*.
 

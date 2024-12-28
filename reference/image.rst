@@ -3,12 +3,14 @@
 Image
 =====
 
-Inherited: :doc:`Widget<api_Widget>`
+Inherited: None
 
 .. _api_Image_description:
 
 Description
 -----------
+
+The Image class represents an image or sprite that can be rendered and displayed on the screen within a graphical user interface (GUI). It is used to incorporate visual elements into the interface, such as icons, backgrounds, or illustrations, by loading and rendering image files.
 
 
 
@@ -34,7 +36,7 @@ Public Methods
 +----------------------------------+-----------------------------------------------------------------+
 |                             void | :ref:`setMaterial<api_Image_setMaterial>` (Material * material) |
 +----------------------------------+-----------------------------------------------------------------+
-|                             void | :ref:`setSprite<api_Image_setSprite>` (Sprite * sprite)         |
+|                             void | :ref:`setSprite<api_Image_setSprite>` (Sprite * sheet)          |
 +----------------------------------+-----------------------------------------------------------------+
 |                             void | :ref:`setTexture<api_Image_setTexture>` (Texture * image)       |
 +----------------------------------+-----------------------------------------------------------------+
@@ -57,7 +59,7 @@ Methods Description
 
 .. _api_Image_color:
 
- :ref:`Vector4<api_Vector4>` **Image::color** () const
+ :ref:`Vector4<api_Vector4>`  **Image::color** () const
 
 Returns the color of the image to be drawn.
 
@@ -87,7 +89,7 @@ Returns the current item name of sprite from the sprite sheet.
 
 .. _api_Image_material:
 
- :ref:`Material<api_Material>`* **Image::material** () const
+ :ref:`Material<api_Material>` * **Image::material** () const
 
 Returns an instantiated Material assigned to Image.
 
@@ -137,11 +139,11 @@ Creates a new instance of *material* and assigns it.
 
 .. _api_Image_setSprite:
 
- void **Image::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)
+ void **Image::setSprite** (:ref:`Sprite<api_Sprite>` * *sheet*)
 
-Replaces the current *sprite* with a new one.
+Replaces the current sprite *sheet* with a new one.
 
-**See also** *sprite*().
+**See also** sprite().
 
 ----
 
@@ -155,7 +157,7 @@ Replaces the current *image* with a new one.
 
 .. _api_Image_sprite:
 
- :ref:`Sprite<api_Sprite>`* **Image::sprite** () const
+ :ref:`Sprite<api_Sprite>` * **Image::sprite** () const
 
 Returns the sprite assigned to the Image.
 

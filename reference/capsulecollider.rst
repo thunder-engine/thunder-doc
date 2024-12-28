@@ -3,7 +3,7 @@
 CapsuleCollider
 ===============
 
-Inherited: :doc:`SphereCollider<api_SphereCollider>`
+Inherited: None
 
 .. _api_CapsuleCollider_description:
 

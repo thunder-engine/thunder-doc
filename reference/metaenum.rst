@@ -93,7 +93,7 @@ Returns a name of enumerator.
 
 .. _api_MetaEnum_table:
 
-const :ref:`MetaEnum::Table<api_MetaEnum::Table>`* **MetaEnum::table** () const
+const :ref:`MetaEnum::Table<api_MetaEnum::Table>` * **MetaEnum::table** () const
 
 Returns enumerator information table.
 

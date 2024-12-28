@@ -20,10 +20,10 @@ Components Module
    collider
    component
    directlight
+   effectrender
    meshcollider
    meshrender
    nativebehaviour
-   particlerender
    playerinput
    pointlight
    postprocessvolume

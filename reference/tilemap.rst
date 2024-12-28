@@ -3,7 +3,7 @@
 TileMap
 =======
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_TileMap_description:
 
@@ -245,7 +245,7 @@ Returns the tile ID at the specified grid cell coordinates (x, *y*).
 
 .. _api_TileMap_tileMesh:
 
- :ref:`Mesh<api_Mesh>`* **TileMap::tileMesh** () const
+ :ref:`Mesh<api_Mesh>` * **TileMap::tileMesh** () const
 
 Returns a pointer to a mesh representing the tile map's geometry. This mesh is updated and regenerated as needed.
 
@@ -253,7 +253,7 @@ Returns a pointer to a mesh representing the tile map's geometry. This mesh is u
 
 .. _api_TileMap_tileSet:
 
- :ref:`TileSet<api_TileSet>`* **TileMap::tileSet** () const
+ :ref:`TileSet<api_TileSet>` * **TileMap::tileSet** () const
 
 Returns a pointer to the associated TileSet that defines the available tiles for this tile map.
 

@@ -61,17 +61,6 @@ Public Methods
 | const :ref:`MetaObject<api_MetaObject>` * | :ref:`super<api_MetaObject_super>` () const                                                                                                                                                                                                 |
 +-------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _api_MetaObject_enums:
-
-Public Enums
-------------
-
-.. _api_MetaObject_Constructor:
-
-**enum MetaObject::Constructor**
-
-Callback which contain address to method to construct new Object with represented type.
-
 
 
 .. _api_MetaObject_static:
@@ -100,7 +89,9 @@ Constructs MetaObject object for Object with type *name*, inherited from *super*
 
 Checks the abillity to cast the current object to *type*.
 
+
 **Note:** This method tries to go through inheritance to find a common parent class.
+
 
 Returns true if object can be cast to *type*; otherwise returns false.
 
@@ -108,7 +99,7 @@ Returns true if object can be cast to *type*; otherwise returns false.
 
 .. _api_MetaObject_createInstance:
 
- :ref:`Object<api_Object>`* **MetaObject::createInstance** () const
+ :ref:`Object<api_Object>` * **MetaObject::createInstance** () const
 
 Constructs and return a new instance of associated class.
 
@@ -116,11 +107,13 @@ Constructs and return a new instance of associated class.
 
 .. _api_MetaObject_enumerator:
 
- :ref:`MetaEnum<api_MetaEnum>` **MetaObject::enumerator** (int  *index*) const
+ :ref:`MetaEnum<api_MetaEnum>`  **MetaObject::enumerator** (int  *index*) const
 
 Returns MetaEnum object by provided *index* of enumerator.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -146,7 +139,9 @@ Returns the first index of enumerator for current class. The offset is the sum o
 
 Returns index of class enumerator by provided *name*; otherwise returns -1.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -156,7 +151,9 @@ Returns index of class enumerator by provided *name*; otherwise returns -1.
 
 Returns index of class method by provided *signature*; otherwise returns -1.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -166,7 +163,9 @@ Returns index of class method by provided *signature*; otherwise returns -1.
 
 Returns index of class property by provided *name*; otherwise returns -1.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -176,7 +175,9 @@ Returns index of class property by provided *name*; otherwise returns -1.
 
 Returns index of class signal by provided *signature*; otherwise returns -1.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -186,17 +187,21 @@ Returns index of class signal by provided *signature*; otherwise returns -1.
 
 Returns index of class slot by provided *signature*; otherwise returns -1.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
 .. _api_MetaObject_method:
 
- :ref:`MetaMethod<api_MetaMethod>` **MetaObject::method** (int  *index*) const
+ :ref:`MetaMethod<api_MetaMethod>`  **MetaObject::method** (int  *index*) const
 
 Returns MetaMethod object by provided *index* of method.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -226,11 +231,13 @@ Returns the name of the object type.
 
 .. _api_MetaObject_property:
 
- :ref:`MetaProperty<api_MetaProperty>` **MetaObject::property** (int  *index*) const
+ :ref:`MetaProperty<api_MetaProperty>`  **MetaObject::property** (int  *index*) const
 
 Returns MetaProperty object by provided *index* of property.
 
+
 **Note:** This method looks through class hierarchy.
+
 
 ----
 
@@ -252,7 +259,7 @@ Returns the first index of property for current class. The offset is the sum of 
 
 .. _api_MetaObject_super:
 
-const :ref:`MetaObject<api_MetaObject>`* **MetaObject::super** () const
+const :ref:`MetaObject<api_MetaObject>` * **MetaObject::super** () const
 
 Returns an introspection object for parent class.
 

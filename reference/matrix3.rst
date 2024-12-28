@@ -32,9 +32,9 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------------+
 |                           void | :ref:`orthonormalize<api_Matrix3_orthonormalize>` ()                     |
 +--------------------------------+--------------------------------------------------------------------------+
-|                           void | :ref:`rotate<api_Matrix3_rotate>` (const Vector3 & axis, areal  angle)   |
-+--------------------------------+--------------------------------------------------------------------------+
 |                           void | :ref:`rotate<api_Matrix3_rotate>` (const Vector3 & angles)               |
++--------------------------------+--------------------------------------------------------------------------+
+|                           void | :ref:`rotate<api_Matrix3_rotate>` (const Vector3 & axis, areal  angle)   |
 +--------------------------------+--------------------------------------------------------------------------+
 |                           void | :ref:`scale<api_Matrix3_scale>` (const Vector3 & vector)                 |
 +--------------------------------+--------------------------------------------------------------------------+
@@ -44,13 +44,13 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------------+
 |                           bool | :ref:`operator!=<api_Matrix3_operator!=>` (const Matrix3 & matrix) const |
 +--------------------------------+--------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix3_operator*>` (const Vector3 & vector) const   |
-+--------------------------------+--------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix3_operator*>` (const Vector4 & vector) const   |
-+--------------------------------+--------------------------------------------------------------------------+
 |    :ref:`Matrix3<api_Matrix3>` | :ref:`operator*<api_Matrix3_operator*>` (areal  factor) const            |
 +--------------------------------+--------------------------------------------------------------------------+
 |    :ref:`Matrix3<api_Matrix3>` | :ref:`operator*<api_Matrix3_operator*>` (const Matrix3 & matrix) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix3_operator*>` (const Vector3 & vector) const   |
++--------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix3_operator*>` (const Vector4 & vector) const   |
 +--------------------------------+--------------------------------------------------------------------------+
 |  :ref:`Matrix3<api_Matrix3>` & | :ref:`operator*=<api_Matrix3_operator*=>` (areal  factor)                |
 +--------------------------------+--------------------------------------------------------------------------+
@@ -103,7 +103,7 @@ Returns the matrix determinant.
 
 .. _api_Matrix3_euler:
 
- :ref:`Vector3<api_Vector3>` **Matrix3::euler** ()
+ :ref:`Vector3<api_Vector3>`  **Matrix3::euler** ()
 
 Returns an Euler angles represented by Vector3(pitch, yaw, roll) in rotation degrees.
 
@@ -119,7 +119,7 @@ Resets this matrix to an identity matrix.
 
 .. _api_Matrix3_inverse:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix3::inverse** () const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::inverse** () const
 
 Returns an inverted copy of this matrix.
 
@@ -135,17 +135,17 @@ Orthonormalize this matrix.
 
 .. _api_Matrix3_rotate:
 
- void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  *angle*)
+ void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)
 
-Rotate this matrix around *axis* to *angle* in rotation degrees.
+Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw, roll) in rotation degrees.
 
 ----
 
 .. _api_Matrix3_rotate:
 
- void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)
+ void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  *angle*)
 
-Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw, roll) in rotation degrees.
+Rotate this matrix around *axis* to *angle* in rotation degrees.
 
 ----
 
@@ -159,7 +159,7 @@ Scales the coordinate system by *vector*.
 
 .. _api_Matrix3_transpose:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix3::transpose** () const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::transpose** () const
 
 Returns this matrix, transposed about its diagonal.
 
@@ -183,23 +183,7 @@ Returns true if this *matrix* is NOT equal to given *matrix*; otherwise returns 
 
 .. _api_Matrix3_operator*:
 
- :ref:`Vector3<api_Vector3>` **Matrix3::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
-
-Returns the result of multiplying this matrix and the given 3D *vector*.
-
-----
-
-.. _api_Matrix3_operator*:
-
- :ref:`Vector4<api_Vector4>` **Matrix3::operator*** (:ref:`Vector4<api_Vector4>` & *vector*) const
-
-Returns the result of multiplying this matrix and the given 4D *vector*.
-
-----
-
-.. _api_Matrix3_operator*:
-
- :ref:`Matrix3<api_Matrix3>` **Matrix3::operator*** (areal  *factor*) const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::operator*** (areal  *factor*) const
 
 Returns the result of multiplying this matrix and the given *factor*.
 
@@ -207,7 +191,7 @@ Returns the result of multiplying this matrix and the given *factor*.
 
 .. _api_Matrix3_operator*:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix3::operator*** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::operator*** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
 
 Returns the result of multiplying this *matrix* by the given *matrix*.
 
@@ -215,9 +199,25 @@ Note that *matrix* multiplication is not commutative, i.e. a*b != b*a.
 
 ----
 
+.. _api_Matrix3_operator*:
+
+ :ref:`Vector3<api_Vector3>`  **Matrix3::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+
+Returns the result of multiplying this matrix and the given 3D *vector*.
+
+----
+
+.. _api_Matrix3_operator*:
+
+ :ref:`Vector4<api_Vector4>`  **Matrix3::operator*** (:ref:`Vector4<api_Vector4>` & *vector*) const
+
+Returns the result of multiplying this matrix and the given 4D *vector*.
+
+----
+
 .. _api_Matrix3_operator*=:
 
- :ref:`Matrix3<api_Matrix3>`& **Matrix3::operator*=** (areal  *factor*)
+ :ref:`Matrix3<api_Matrix3>` & **Matrix3::operator*=** (areal  *factor*)
 
 Multiplies all elements of this matrix by *factor*.
 
@@ -225,7 +225,7 @@ Multiplies all elements of this matrix by *factor*.
 
 .. _api_Matrix3_operator*=:
 
- :ref:`Matrix3<api_Matrix3>`& **Matrix3::operator*=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+ :ref:`Matrix3<api_Matrix3>` & **Matrix3::operator*=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
 Returns the result of multiplying this *matrix* by the given *matrix*.
 
@@ -233,7 +233,7 @@ Returns the result of multiplying this *matrix* by the given *matrix*.
 
 .. _api_Matrix3_operator+:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix3::operator+** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::operator+** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
 
 Returns the sum of this *matrix* and the given *matrix*.
 
@@ -241,7 +241,7 @@ Returns the sum of this *matrix* and the given *matrix*.
 
 .. _api_Matrix3_operator+=:
 
- :ref:`Matrix3<api_Matrix3>`& **Matrix3::operator+=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+ :ref:`Matrix3<api_Matrix3>` & **Matrix3::operator+=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
 Adds the contents of *matrix* to this *matrix*.
 
@@ -249,7 +249,7 @@ Adds the contents of *matrix* to this *matrix*.
 
 .. _api_Matrix3_operator-:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix3::operator-** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix3::operator-** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
 
 Returns the difference of this *matrix* and the given *matrix*.
 
@@ -257,7 +257,7 @@ Returns the difference of this *matrix* and the given *matrix*.
 
 .. _api_Matrix3_operator-=:
 
- :ref:`Matrix3<api_Matrix3>`& **Matrix3::operator-=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
+ :ref:`Matrix3<api_Matrix3>` & **Matrix3::operator-=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
 Subtracts the contents of *matrix* from this *matrix*.
 

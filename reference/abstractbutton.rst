@@ -3,7 +3,7 @@
 AbstractButton
 ==============
 
-Inherited: :doc:`Widget<api_Widget>`
+Inherited: None
 
 .. _api_AbstractButton_description:
 
@@ -89,7 +89,7 @@ Methods Description
 
 .. _api_AbstractButton_background:
 
- :ref:`Frame<api_Frame>`* **AbstractButton::background** () const
+ :ref:`Frame<api_Frame>` * **AbstractButton::background** () const
 
 Returns the background frame object associated with the button.
 
@@ -109,7 +109,7 @@ Returns the fade duration used for visual effects.
 
 .. _api_AbstractButton_highlightedColor:
 
- :ref:`Vector4<api_Vector4>` **AbstractButton::highlightedColor** () const
+ :ref:`Vector4<api_Vector4>`  **AbstractButton::highlightedColor** () const
 
 Returns the color used when the button is highlighted.
 
@@ -119,7 +119,7 @@ Returns the color used when the button is highlighted.
 
 .. _api_AbstractButton_icon:
 
- :ref:`Image<api_Image>`* **AbstractButton::icon** () const
+ :ref:`Image<api_Image>` * **AbstractButton::icon** () const
 
 Returns the icon associated with the button.
 
@@ -129,7 +129,7 @@ Returns the icon associated with the button.
 
 .. _api_AbstractButton_iconSize:
 
- :ref:`Vector2<api_Vector2>` **AbstractButton::iconSize** () const
+ :ref:`Vector2<api_Vector2>`  **AbstractButton::iconSize** () const
 
 Returns the size of the icon.
 
@@ -171,7 +171,7 @@ Returns true if the button is mirrored; otherwise, false.
 
 .. _api_AbstractButton_label:
 
- :ref:`Label<api_Label>`* **AbstractButton::label** () const
+ :ref:`Label<api_Label>` * **AbstractButton::label** () const
 
 Returns the label object associated with the button.
 
@@ -181,7 +181,7 @@ Returns the label object associated with the button.
 
 .. _api_AbstractButton_normalColor:
 
- :ref:`Vector4<api_Vector4>` **AbstractButton::normalColor** () const
+ :ref:`Vector4<api_Vector4>`  **AbstractButton::normalColor** () const
 
 Returns the normal color of the button.
 
@@ -191,7 +191,7 @@ Returns the normal color of the button.
 
 .. _api_AbstractButton_pressedColor:
 
- :ref:`Vector4<api_Vector4>` **AbstractButton::pressedColor** () const
+ :ref:`Vector4<api_Vector4>`  **AbstractButton::pressedColor** () const
 
 Returns the color used when the button is pressed.
 

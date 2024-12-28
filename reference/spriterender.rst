@@ -3,7 +3,7 @@
 SpriteRender
 ============
 
-Inherited: :doc:`Renderable<api_Renderable>`
+Inherited: None
 
 .. _api_SpriteRender_description:
 
@@ -38,7 +38,7 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------+
 |                           void | :ref:`setSize<api_SpriteRender_setSize>` (const Vector2  size)     |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setSprite<api_SpriteRender_setSprite>` (Sprite * sprite)     |
+|                           void | :ref:`setSprite<api_SpriteRender_setSprite>` (Sprite * sheet)      |
 +--------------------------------+--------------------------------------------------------------------+
 |                           void | :ref:`setTexture<api_SpriteRender_setTexture>` (Texture * texture) |
 +--------------------------------+--------------------------------------------------------------------+
@@ -84,7 +84,7 @@ Methods Description
 
 .. _api_SpriteRender_color:
 
- :ref:`Vector4<api_Vector4>` **SpriteRender::color** () const
+ :ref:`Vector4<api_Vector4>`  **SpriteRender::color** () const
 
 Returns the color of the sprite to be drawn.
 
@@ -174,11 +174,11 @@ Sets a new *size* of sprite.
 
 .. _api_SpriteRender_setSprite:
 
- void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)
+ void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sheet*)
 
-Replaces current *sprite* with a new one.
+Replaces current sprite *sheet* with a new one.
 
-**See also** *sprite*().
+**See also** sprite().
 
 ----
 
@@ -194,7 +194,7 @@ Replaces current *texture* with a new one.
 
 .. _api_SpriteRender_size:
 
- :ref:`Vector2<api_Vector2>` **SpriteRender::size** () const
+ :ref:`Vector2<api_Vector2>`  **SpriteRender::size** () const
 
 Returns size of sprite.
 
@@ -204,9 +204,9 @@ Returns size of sprite.
 
 .. _api_SpriteRender_sprite:
 
- :ref:`Sprite<api_Sprite>`* **SpriteRender::sprite** () const
+ :ref:`Sprite<api_Sprite>` * **SpriteRender::sprite** () const
 
-Returns a sprite.
+Returns a sprite sheet.
 
 **See also** setSprite().
 
@@ -214,7 +214,7 @@ Returns a sprite.
 
 .. _api_SpriteRender_texture:
 
- :ref:`Texture<api_Texture>`* **SpriteRender::texture** () const
+ :ref:`Texture<api_Texture>` * **SpriteRender::texture** () const
 
 Returns current assigned texture.
 

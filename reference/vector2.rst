@@ -14,7 +14,9 @@ Vectors are one of the main building blocks of 2D representation and drawing. Th
 
 The Vector2 class can also be used to represent vertices in 2D space. We therefore do not need to provide a separate vertex class.
 
+
 Note: By design values in the Vector2 instance are stored as float. This means that on platforms where the areal arguments to Vector2 functions are represented by double values, it is possible to lose precision.
+
 
 
 
@@ -24,15 +26,13 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_Vector2>` (const Vector2 & vector)             |
-+--------------------------------+--------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
+|                                | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
 +--------------------------------+--------------------------------------------------------------------------+
 |                                | :ref:`Vector2<api_Vector2_Vector2>` (areal  v)                           |
 +--------------------------------+--------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_Vector2>` ()                                   |
+|                                | :ref:`Vector2<api_Vector2_Vector2>` (areal  x, areal  y)                 |
 +--------------------------------+--------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator=<api_Vector2_operator=>` (const Vector2 & value)          |
+|                                | :ref:`Vector2<api_Vector2_Vector2>` (const Vector2 & vector)             |
 +--------------------------------+--------------------------------------------------------------------------+
 |                          areal | :ref:`cross<api_Vector2_cross>` (const Vector2 & vector) const           |
 +--------------------------------+--------------------------------------------------------------------------+
@@ -68,6 +68,8 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------------+
 |                           bool | :ref:`operator<<api_Vector2_operator<>` (const Vector2 & vector) const   |
 +--------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator=<api_Vector2_operator=>` (const Vector2 & value)          |
++--------------------------------+--------------------------------------------------------------------------+
 |                           bool | :ref:`operator==<api_Vector2_operator==>` (const Vector2 & vector) const |
 +--------------------------------+--------------------------------------------------------------------------+
 |                           bool | :ref:`operator><api_Vector2_operator>>` (const Vector2 & vector) const   |
@@ -93,17 +95,9 @@ Methods Description
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** (:ref:`Vector2<api_Vector2>` & *vector*)
+**Vector2::Vector2** ()
 
-Copy constructor.
-
-----
-
-.. _api_Vector2_Vector2:
-
-**Vector2::Vector2** (areal  *x*, areal  *y*)
-
-Constructs a vector with coordinates (x, *y*).
+Constructs a null vector, i.e. with coordinates (0, 0).
 
 ----
 
@@ -117,17 +111,17 @@ Constructs a *v*ector with coordinates (v).
 
 .. _api_Vector2_Vector2:
 
-**Vector2::Vector2** ()
+**Vector2::Vector2** (areal  *x*, areal  *y*)
 
-Constructs a null vector, i.e. with coordinates (0, 0).
+Constructs a vector with coordinates (x, *y*).
 
 ----
 
-.. _api_Vector2_operator=:
+.. _api_Vector2_Vector2:
 
- :ref:`Vector2<api_Vector2>`& **Vector2::operator=** (:ref:`Vector2<api_Vector2>` & *value*)
+**Vector2::Vector2** (:ref:`Vector2<api_Vector2>` & *vector*)
 
-Assignment operator. The *value* will be assigned to this object.
+Copy constructor.
 
 ----
 
@@ -191,7 +185,7 @@ Returns true if this *vector* is NOT equal to given *vector*; otherwise returns 
 
 .. _api_Vector2_operator*:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator*** (areal  *factor*) const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator*** (areal  *factor*) const
 
 Returns a copy of this vector, multiplied by the given *factor*.
 
@@ -201,7 +195,7 @@ Returns a copy of this vector, multiplied by the given *factor*.
 
 .. _api_Vector2_operator*:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator*** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator*** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a copy of this *vector*, multiplied by the given *vector*.
 
@@ -211,7 +205,7 @@ Returns a copy of this *vector*, multiplied by the given *vector*.
 
 .. _api_Vector2_operator*=:
 
- :ref:`Vector2<api_Vector2>`& **Vector2::operator*=** (areal  *factor*)
+ :ref:`Vector2<api_Vector2>` & **Vector2::operator*=** (areal  *factor*)
 
 Multiplies this vector's coordinates by the given *factor*, and returns a reference to this vector.
 
@@ -221,7 +215,7 @@ Multiplies this vector's coordinates by the given *factor*, and returns a refere
 
 .. _api_Vector2_operator+:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator+** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator+** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a Vector2 object that is the sum of the this *vector* and *vector*; each component is added separately.
 
@@ -231,7 +225,7 @@ Returns a Vector2 object that is the sum of the this *vector* and *vector*; each
 
 .. _api_Vector2_operator+=:
 
- :ref:`Vector2<api_Vector2>`& **Vector2::operator+=** (:ref:`Vector2<api_Vector2>` & *vector*)
+ :ref:`Vector2<api_Vector2>` & **Vector2::operator+=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
 Adds the given *vector* to this *vector* and returns a reference to this *vector*.
 
@@ -241,7 +235,7 @@ Adds the given *vector* to this *vector* and returns a reference to this *vector
 
 .. _api_Vector2_operator-:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator-** () const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator-** () const
 
 Returns a Vector2 object that is formed by changing the sign of all three components of the this vector.
 
@@ -251,7 +245,7 @@ Equivalent to Vector2(0,0) - vector.
 
 .. _api_Vector2_operator-:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator-** (:ref:`Vector2<api_Vector2>` & *vector*) const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator-** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns a Vector2 object that is formed by subtracting *vector* from this *vector*; each component is subtracted separately.
 
@@ -261,7 +255,7 @@ Returns a Vector2 object that is formed by subtracting *vector* from this *vecto
 
 .. _api_Vector2_operator-=:
 
- :ref:`Vector2<api_Vector2>`& **Vector2::operator-=** (:ref:`Vector2<api_Vector2>` & *vector*)
+ :ref:`Vector2<api_Vector2>` & **Vector2::operator-=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
 Subtracts the given *vector* from this *vector* and returns a reference to this *vector*.
 
@@ -271,7 +265,7 @@ Subtracts the given *vector* from this *vector* and returns a reference to this 
 
 .. _api_Vector2_operator/:
 
- :ref:`Vector2<api_Vector2>` **Vector2::operator/** (areal  *divisor*) const
+ :ref:`Vector2<api_Vector2>`  **Vector2::operator/** (areal  *divisor*) const
 
 Returns a copy of this vector, divided by the given *divisor*.
 
@@ -281,7 +275,7 @@ Returns a copy of this vector, divided by the given *divisor*.
 
 .. _api_Vector2_operator/=:
 
- :ref:`Vector2<api_Vector2>`& **Vector2::operator/=** (areal  *divisor*)
+ :ref:`Vector2<api_Vector2>` & **Vector2::operator/=** (areal  *divisor*)
 
 Divides this vector's coordinates by the given *divisor*, and returns a reference to this vector.
 
@@ -294,6 +288,14 @@ Divides this vector's coordinates by the given *divisor*, and returns a referenc
  bool **Vector2::operator<** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
 Returns true if this *vector* is less than *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
+
+----
+
+.. _api_Vector2_operator=:
+
+ :ref:`Vector2<api_Vector2>` & **Vector2::operator=** (:ref:`Vector2<api_Vector2>` & *value*)
+
+Assignment operator. The *value* will be assigned to this object.
 
 ----
 

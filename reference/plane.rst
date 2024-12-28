@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------+--------------------------------------------------------------------------------------------+
-|        | :ref:`Plane<api_Plane_Plane>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
-+--------+--------------------------------------------------------------------------------------------+
 |        | :ref:`Plane<api_Plane_Plane>` ()                                                           |
++--------+--------------------------------------------------------------------------------------------+
+|        | :ref:`Plane<api_Plane_Plane>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
 +--------+--------------------------------------------------------------------------------------------+
 |  areal | :ref:`sqrDistance<api_Plane_sqrDistance>` (const Vector3 & point) const                    |
 +--------+--------------------------------------------------------------------------------------------+
@@ -43,17 +43,17 @@ Methods Description
 
 .. _api_Plane_Plane:
 
-**Plane::Plane** (:ref:`Vector3<api_Vector3>` & *v1*, :ref:`Vector3<api_Vector3>` & *v2*, :ref:`Vector3<api_Vector3>` & *v3*)
+**Plane::Plane** ()
 
-Cunstructs a Plane by three points *v1*, *v2* and *v3*
+Default constructor.
 
 ----
 
 .. _api_Plane_Plane:
 
-**Plane::Plane** ()
+**Plane::Plane** (:ref:`Vector3<api_Vector3>` & *v1*, :ref:`Vector3<api_Vector3>` & *v2*, :ref:`Vector3<api_Vector3>` & *v3*)
 
-Default constructor.
+Cunstructs a Plane by three points *v1*, *v2* and *v3*
 
 ----
 

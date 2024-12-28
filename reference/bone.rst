@@ -63,7 +63,7 @@ Gets the index of the bone.
 
 .. _api_Bone_position:
 
-const :ref:`Vector3<api_Vector3>`& **Bone::position** () const
+const :ref:`Vector3<api_Vector3>` & **Bone::position** () const
 
 Gets the position of the bone.
 
@@ -73,7 +73,7 @@ Gets the position of the bone.
 
 .. _api_Bone_rotation:
 
-const :ref:`Vector3<api_Vector3>`& **Bone::rotation** () const
+const :ref:`Vector3<api_Vector3>` & **Bone::rotation** () const
 
 Gets the rotation of the bone.
 
@@ -83,7 +83,7 @@ Gets the rotation of the bone.
 
 .. _api_Bone_scale:
 
-const :ref:`Vector3<api_Vector3>`& **Bone::scale** () const
+const :ref:`Vector3<api_Vector3>` & **Bone::scale** () const
 
 Gets the scale of the bone.
 

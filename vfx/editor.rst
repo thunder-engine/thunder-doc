@@ -1,7 +1,7 @@
 .. _doc_vfx_editor:
 
-User Documentation for the VFX Editor in the Game Engine
-========================================================
+VFX Editor
+==========
 
 Introduction
 ------------
@@ -36,13 +36,13 @@ Creating a New Effect
 
 #. Right-click and select **Visual Effect** from the context menu.
 
-.. image:: media/context_menu.png
-    :alt: Create Effect
+   .. image:: media/context_menu.png
+       :alt: Create Effect
 	
 #. Confirm the creation. The new effect will appear in the **Content Browser** and will be available for further editing.
 
-.. image:: media/new_effect.png
-    :alt: New Effect
+   .. image:: media/new_effect.png
+       :alt: New Effect
 
 Cascade of Particle Modifiers
 -----------------------------
@@ -59,13 +59,32 @@ An effect consists of a series of modifiers that control different aspects of pa
 
 Each modifier can be adjusted using a settings available in the **Parameter Editor**.
 
+Cascade of Particle Modifiers
+-----------------------------
+
+An effect consists of a series of modifiers that control different aspects of particle behavior. These modifiers can be divided into three types:
+
+#. **Spawn** - Modifier applied when a new particle is created:
+
+   These modifiers define the initial properties of a particle, such as its position, velocity, and other starting attributes when the particle is spawned.
+
+#. **Update** - Modifier applied to update the particle state every frame:
+
+   These modifiers are responsible for changing the state of the particle over time, affecting its movement, size, color, and other dynamic properties during its lifetime.
+
+#. **Render** - Modifier responsible for rendering the particle:
+
+   These modifiers control how the particle is drawn or rendered, including its appearance, texture, and any other visual characteristics that are applied during its display.
+
+Each modifier can be adjusted using the settings available in the **Parameter Editor**.
+
 Adding Modifiers to the Cascade
 -------------------------------
 
 Modifiers in the cascade control various aspects of particle behavior and their interaction with the environment. Properly configuring the modifiers is essential for achieving the desired visual effect.
 
 #. **Adding a Modifier**
-   To add a new modifier, click on "+" button in **Properties** and seclect one of the available modifier types
+   To add a new modifier, click on **Add Modificator** button in **Properties** and seclect one of the available modifier types
    
    .. image:: media/add_modificator.png
        :alt: Add Modificator
@@ -82,7 +101,6 @@ Modifiers in the cascade control various aspects of particle behavior and their 
 
 #. **Configuring Modifier Parameters**  
    After adding a modifier, you can adjust its parameters in the **Parameter Editor**. Depending on the modifier type, different settings will be available. For example:
-   
    - For the **Velocity** modifier, you can set the speed and direction.
    
    - For **Color Scale**, you can select the initial and final particle colors, as well as the duration of the color change.
@@ -93,16 +111,7 @@ Modifiers in the cascade control various aspects of particle behavior and their 
 #. **Removing a Modifier**  
    To remove a modifier, click on "X" button in **Properties** window. Removing the modifier will not affect other elements of the effect.
    
-.. image:: media/delete_modificator.png
-    :alt: Delete Modificator
+   .. image:: media/delete_modificator.png
+       :alt: Delete Modificator
 
 By following these steps, you can efficiently add and configure modifiers in the cascade to create complex and realistic visual effects.
-
-Configuring Materials in the Cascade of Modifiers
--------------------------------------------------
-
-Materials control the appearance of the objects involved in the effect. They are assigned in the **Render** section of the cascade of modifiers. In the editor, you can configure:
-
-- **Materials for 3D objects**, if they are used in the effect.
-
-- **Special effects**, such as fire, smoke, or water simulations.

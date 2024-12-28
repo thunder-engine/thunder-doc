@@ -3,7 +3,7 @@
 PostProcessVolume
 =================
 
-Inherited: :doc:`Component<api_Component>`
+Inherited: None
 
 .. _api_PostProcessVolume_description:
 

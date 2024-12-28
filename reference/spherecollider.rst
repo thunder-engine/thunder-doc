@@ -3,7 +3,7 @@
 SphereCollider
 ==============
 
-Inherited: :doc:`VolumeCollider<api_VolumeCollider>`
+Inherited: None
 
 .. _api_SphereCollider_description:
 

@@ -3,7 +3,7 @@
 MethodCallEvent
 ===============
 
-Inherited: :doc:`Event<api_Event>`
+Inherited: None
 
 .. _api_MethodCallEvent_description:
 
@@ -20,7 +20,7 @@ Public Methods
 +-------------------------------------+----------------------------------------------------+
 | const :ref:`Variant<api_Variant>` * | :ref:`args<api_MethodCallEvent_args>` () const     |
 +-------------------------------------+----------------------------------------------------+
-|                                 int | :ref:`method<api_MethodCallEvent_method>` () const |
+|                             int32_t | :ref:`method<api_MethodCallEvent_method>` () const |
 +-------------------------------------+----------------------------------------------------+
 |         :ref:`Object<api_Object>` * | :ref:`sender<api_MethodCallEvent_sender>` () const |
 +-------------------------------------+----------------------------------------------------+
@@ -41,7 +41,7 @@ Methods Description
 
 .. _api_MethodCallEvent_args:
 
-const :ref:`Variant<api_Variant>`* **MethodCallEvent::args** () const
+const :ref:`Variant<api_Variant>` * **MethodCallEvent::args** () const
 
 Returns an arguments array for method invocation.
 
@@ -49,7 +49,7 @@ Returns an arguments array for method invocation.
 
 .. _api_MethodCallEvent_method:
 
- int **MethodCallEvent::method** () const
+ int32_t **MethodCallEvent::method** () const
 
 Returns an index of method.
 
@@ -57,7 +57,7 @@ Returns an index of method.
 
 .. _api_MethodCallEvent_sender:
 
- :ref:`Object<api_Object>`* **MethodCallEvent::sender** () const
+ :ref:`Object<api_Object>` * **MethodCallEvent::sender** () const
 
 Returns the object that sent this event.
 

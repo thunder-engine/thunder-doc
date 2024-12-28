@@ -10,7 +10,7 @@ Inherited: None
 Description
 -----------
 
-The Layout class provides a flexible mechanism for managing the arrangement of widgets and child layouts within a graphical user interface. Child items can be widgets or nested layouts, and the layout can be configured with spacing, margins, and direction.
+The Layout class is a base class used for managing the layout and positioning of widgets within a graphical user interface (GUI). It provides a structured way to organize UI elements, ensuring that they are placed efficiently and consistently on the screen. The Layout class is essential for developers who need to arrange multiple components (such as buttons, labels, text fields, etc.) in a clean and organized manner.
 
 
 
@@ -19,39 +19,39 @@ The Layout class provides a flexible mechanism for managing the arrangement of w
 Public Methods
 --------------
 
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`addLayout<api_Layout_addLayout>` (Layout * layout)                                        |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`addWidget<api_Layout_addWidget>` (Widget * widget)                                        |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                          int | :ref:`count<api_Layout_count>` () const                                                         |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                          int | :ref:`direction<api_Layout_direction>` () const                                                 |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                          int | :ref:`indexOf<api_Layout_indexOf>` (const Layout * layout) const                                |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                          int | :ref:`indexOf<api_Layout_indexOf>` (const Widget * widget) const                                |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`insertLayout<api_Layout_insertLayout>` (int  index, Layout * layout)                      |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`insertWidget<api_Layout_insertWidget>` (int  index, Widget * widget)                      |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`invalidate<api_Layout_invalidate>` ()                                                     |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`removeLayout<api_Layout_removeLayout>` (Layout * layout)                                  |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`removeWidget<api_Layout_removeWidget>` (Widget * widget)                                  |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`setDirection<api_Layout_setDirection>` (int  direction)                                   |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`setMargins<api_Layout_setMargins>` (float  left, float  top, float  right, float  bottom) |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                         void | :ref:`setSpacing<api_Layout_setSpacing>` (float  spacing)                                       |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`sizeHint<api_Layout_sizeHint>` () const                                                   |
-+------------------------------+-------------------------------------------------------------------------------------------------+
-|                        float | :ref:`spacing<api_Layout_spacing>` () const                                                     |
-+------------------------------+-------------------------------------------------------------------------------------------------+
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`addLayout<api_Layout_addLayout>` (Layout * layout)                                   |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`addTransform<api_Layout_addTransform>` (RectTransform * transform)                   |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                        int | :ref:`count<api_Layout_count>` () const                                                    |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                        int | :ref:`direction<api_Layout_direction>` () const                                            |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                        int | :ref:`indexOf<api_Layout_indexOf>` (const Layout * layout) const                           |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                        int | :ref:`indexOf<api_Layout_indexOf>` (const RectTransform * transform) const                 |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`insertLayout<api_Layout_insertLayout>` (int  index, Layout * layout)                 |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`insertTransform<api_Layout_insertTransform>` (int  index, RectTransform * transform) |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`invalidate<api_Layout_invalidate>` ()                                                |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|  :ref:`RectTransform<api_RectTransform>` * | :ref:`rectTransform<api_Layout_rectTransform>` ()                                          |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`removeLayout<api_Layout_removeLayout>` (Layout * layout)                             |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`removeTransform<api_Layout_removeTransform>` (RectTransform * transform)             |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`setDirection<api_Layout_setDirection>` (int  direction)                              |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                       void | :ref:`setSpacing<api_Layout_setSpacing>` (float  spacing)                                  |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                :ref:`Vector2<api_Vector2>` | :ref:`sizeHint<api_Layout_sizeHint>` ()                                                    |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
+|                                      float | :ref:`spacing<api_Layout_spacing>` () const                                                |
++--------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
 
@@ -75,11 +75,11 @@ Adds a child *layout* to the current *layout*.
 
 ----
 
-.. _api_Layout_addWidget:
+.. _api_Layout_addTransform:
 
- void **Layout::addWidget** (:ref:`Widget<api_Widget>` * *widget*)
+ void **Layout::addTransform** (:ref:`RectTransform<api_RectTransform>` * *transform*)
 
-Adds a *widget* to the current layout.
+Adds a *transform* to the current layout.
 
 ----
 
@@ -111,9 +111,9 @@ Returns the index of the specified child *layout*.
 
 .. _api_Layout_indexOf:
 
- int **Layout::indexOf** (:ref:`Widget<api_Widget>` * *widget*) const
+ int **Layout::indexOf** (:ref:`RectTransform<api_RectTransform>` * *transform*) const
 
-Returns the index of the specified *widget*.
+Returns the index of the specified *transform*.
 
 ----
 
@@ -125,11 +125,11 @@ Inserts a child *layout* at the specified *index*. If -1, the *layout* is append
 
 ----
 
-.. _api_Layout_insertWidget:
+.. _api_Layout_insertTransform:
 
- void **Layout::insertWidget** (int  *index*, :ref:`Widget<api_Widget>` * *widget*)
+ void **Layout::insertTransform** (int  *index*, :ref:`RectTransform<api_RectTransform>` * *transform*)
 
-Inserts a *widget* at the specified *index*. If -1, the layout is appended to the end.
+Inserts a *transform* at the specified *index*. If -1, the layout is appended to the end.
 
 ----
 
@@ -141,6 +141,14 @@ Marks the layout as dirty, indicating that it needs to be recomputed.
 
 ----
 
+.. _api_Layout_rectTransform:
+
+ :ref:`RectTransform<api_RectTransform>` * **Layout::rectTransform** ()
+
+Returns the parent rect transform of this layout, or nullptr if this layout is not installed on any rect transform. If the layout is a sub-layout, this function returns the parent rect transform of the parent layout.
+
+----
+
 .. _api_Layout_removeLayout:
 
  void **Layout::removeLayout** (:ref:`Layout<api_Layout>` * *layout*)
@@ -149,11 +157,11 @@ Removes a child *layout* from the current *layout*.
 
 ----
 
-.. _api_Layout_removeWidget:
+.. _api_Layout_removeTransform:
 
- void **Layout::removeWidget** (:ref:`Widget<api_Widget>` * *widget*)
+ void **Layout::removeTransform** (:ref:`RectTransform<api_RectTransform>` * *transform*)
 
-Removes a *widget* from the current layout.
+Removes a *transform* from the current layout.
 
 ----
 
@@ -164,14 +172,6 @@ Removes a *widget* from the current layout.
 Sets the layout *direction*.
 
 **See also** *direction*().
-
-----
-
-.. _api_Layout_setMargins:
-
- void **Layout::setMargins** (float  *left*, float  *top*, float  *right*, float  *bottom*)
-
-Sets the *left*, *top*, *right* and *bottom* margins for the layout.
 
 ----
 
@@ -187,7 +187,7 @@ Sets the *spacing* between items in the layout.
 
 .. _api_Layout_sizeHint:
 
- :ref:`Vector2<api_Vector2>` **Layout::sizeHint** () const
+ :ref:`Vector2<api_Vector2>`  **Layout::sizeHint** ()
 
 Returns the size hint for the layout.
 

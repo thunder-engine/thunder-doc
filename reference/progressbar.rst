@@ -3,7 +3,7 @@
 ProgressBar
 ===========
 
-Inherited: :doc:`Frame<api_Frame>`
+Inherited: None
 
 .. _api_ProgressBar_description:
 
@@ -20,6 +20,8 @@ Public Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------------------------+
+|    :ref:`Frame<api_Frame>` * | :ref:`background<api_ProgressBar_background>` () const                               |
++------------------------------+--------------------------------------------------------------------------------------+
 |  :ref:`Vector4<api_Vector4>` | :ref:`backgroundColor<api_ProgressBar_backgroundColor>` () const                     |
 +------------------------------+--------------------------------------------------------------------------------------+
 |                        float | :ref:`from<api_ProgressBar_from>` () const                                           |
@@ -27,6 +29,8 @@ Public Methods
 |    :ref:`Frame<api_Frame>` * | :ref:`progress<api_ProgressBar_progress>` () const                                   |
 +------------------------------+--------------------------------------------------------------------------------------+
 |  :ref:`Vector4<api_Vector4>` | :ref:`progressColor<api_ProgressBar_progressColor>` () const                         |
++------------------------------+--------------------------------------------------------------------------------------+
+|                         void | :ref:`setBackground<api_ProgressBar_setBackground>` (Frame * frame)                  |
 +------------------------------+--------------------------------------------------------------------------------------+
 |                         void | :ref:`setBackgroundColor<api_ProgressBar_setBackgroundColor>` (const Vector4  color) |
 +------------------------------+--------------------------------------------------------------------------------------+
@@ -59,9 +63,19 @@ None
 Methods Description
 -------------------
 
+.. _api_ProgressBar_background:
+
+ :ref:`Frame<api_Frame>` * **ProgressBar::background** () const
+
+Returns the frame representing the background.
+
+**See also** setBackground().
+
+----
+
 .. _api_ProgressBar_backgroundColor:
 
- :ref:`Vector4<api_Vector4>` **ProgressBar::backgroundColor** () const
+ :ref:`Vector4<api_Vector4>`  **ProgressBar::backgroundColor** () const
 
 Returns the background color of the progress bar.
 
@@ -81,7 +95,7 @@ Returns the minimum value of the progress range.
 
 .. _api_ProgressBar_progress:
 
- :ref:`Frame<api_Frame>`* **ProgressBar::progress** () const
+ :ref:`Frame<api_Frame>` * **ProgressBar::progress** () const
 
 Returns the frame representing the progress bar.
 
@@ -91,11 +105,21 @@ Returns the frame representing the progress bar.
 
 .. _api_ProgressBar_progressColor:
 
- :ref:`Vector4<api_Vector4>` **ProgressBar::progressColor** () const
+ :ref:`Vector4<api_Vector4>`  **ProgressBar::progressColor** () const
 
 Returns the color of the progress indicator.
 
 **See also** setProgressColor().
+
+----
+
+.. _api_ProgressBar_setBackground:
+
+ void **ProgressBar::setBackground** (:ref:`Frame<api_Frame>` * *frame*)
+
+Sets the *frame* representing the background.
+
+**See also** background().
 
 ----
 

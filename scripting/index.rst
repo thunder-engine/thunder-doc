@@ -14,7 +14,7 @@ However it's preferebale to use only one scripting language in your project.
 
 .. toctree::
    :maxdepth: 1
-   :name: sec-start
+   :name: script-start
    
    overview
    creating_scripts

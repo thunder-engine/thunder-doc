@@ -3,7 +3,7 @@
 Armature
 ========
 
-Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
+Inherited: None
 
 .. _api_Armature_description:
 
@@ -19,11 +19,9 @@ An armature in Thunder Engine can be thought of as similar to the armature of a 
 Public Methods
 --------------
 
-+--------------------------+------------------------------------------------------------+
-|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_bindPose>` () const            |
-+--------------------------+------------------------------------------------------------+
-|                     void | :ref:`setBindPose<api_Armature_setBindPose>` (Pose * pose) |
-+--------------------------+------------------------------------------------------------+
++------+-------------------------------------------------+
+|  int | :ref:`bindPose<api_Armature_bindPose>` () const |
++------+-------------------------------------------------+
 
 
 
@@ -41,20 +39,8 @@ Methods Description
 
 .. _api_Armature_bindPose:
 
- :ref:`Pose<api_Pose>`* **Armature::bindPose** () const
+ int **Armature::bindPose** () const
 
 Returns a bind pose of the bone structure.
-
-**See also** setBindPose().
-
-----
-
-.. _api_Armature_setBindPose:
-
- void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
-
-Sets a bind (initial) *pose* of the bone structure.
-
-**See also** bindPose().
 
 

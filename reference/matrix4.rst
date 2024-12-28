@@ -20,11 +20,11 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
+|                                | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                                | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Matrix3 & matrix)                                                       |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                | :ref:`Matrix4<api_Matrix4_Matrix4>` ()                                                                             |
+|                                | :ref:`Matrix4<api_Matrix4_Matrix4>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                          areal | :ref:`determinant<api_Matrix4_determinant>` () const                                                               |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -38,9 +38,9 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                           void | :ref:`reflect<api_Matrix4_reflect>` (const Vector4 & plane)                                                        |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`rotate<api_Matrix4_rotate>` (const Vector3 & axis, areal  angle)                                             |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                           void | :ref:`rotate<api_Matrix4_rotate>` (const Vector3 & angles)                                                         |
++--------------------------------+--------------------------------------------------------------------------------------------------------------------+
+|                           void | :ref:`rotate<api_Matrix4_rotate>` (const Vector3 & axis, areal  angle)                                             |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |    :ref:`Matrix3<api_Matrix3>` | :ref:`rotation<api_Matrix4_rotation>` () const                                                                     |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -54,13 +54,13 @@ Public Methods
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |                           bool | :ref:`operator!=<api_Matrix4_operator!=>` (const Matrix4 & matrix) const                                           |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix4_operator*>` (const Vector3 & vector) const                                             |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix4_operator*>` (const Vector4 & vector) const                                             |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_operator*>` (areal  factor) const                                                      |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_operator*>` (const Matrix4 & matrix) const                                             |
++--------------------------------+--------------------------------------------------------------------------------------------------------------------+
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix4_operator*>` (const Vector3 & vector) const                                             |
++--------------------------------+--------------------------------------------------------------------------------------------------------------------+
+|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix4_operator*>` (const Vector4 & vector) const                                             |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
 |  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator*=<api_Matrix4_operator*=>` (areal  factor)                                                          |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -103,9 +103,9 @@ Methods Description
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
+**Matrix4::Matrix4** ()
 
-Constructs matrix by given *position*, *rotation* and *scale*.
+Constructs an identity matrix.
 
 ----
 
@@ -119,9 +119,9 @@ Constructs a transform *matrix* with rotation *matrix*.
 
 .. _api_Matrix4_Matrix4:
 
-**Matrix4::Matrix4** ()
+**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
 
-Constructs an identity matrix.
+Constructs matrix by given *position*, *rotation* and *scale*.
 
 ----
 
@@ -143,7 +143,7 @@ Creates a rotation matrix based on *direction* and *up* vectors.
 
 .. _api_Matrix4_euler:
 
- :ref:`Vector3<api_Vector3>` **Matrix4::euler** ()
+ :ref:`Vector3<api_Vector3>`  **Matrix4::euler** ()
 
 Returns an Euler angles represented by Vector3(pitch, yaw, roll) in rotation degrees.
 
@@ -159,7 +159,7 @@ Resets this matrix to an identity matrix.
 
 .. _api_Matrix4_inverse:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::inverse** () const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::inverse** () const
 
 Returns an inverted copy of this matrix.
 
@@ -167,7 +167,7 @@ Returns an inverted copy of this matrix.
 
 .. _api_Matrix4_lookAt:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::lookAt** (:ref:`Vector3<api_Vector3>` & *eye*, :ref:`Vector3<api_Vector3>` & *target*, :ref:`Vector3<api_Vector3>` & *up*)
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::lookAt** (:ref:`Vector3<api_Vector3>` & *eye*, :ref:`Vector3<api_Vector3>` & *target*, :ref:`Vector3<api_Vector3>` & *up*)
 
 Creates a transformation matrix that corresponds to a camera viewing the *target* from the source. Receiving *eye* point, a *target* point, and an *up* vector.
 
@@ -175,7 +175,7 @@ Creates a transformation matrix that corresponds to a camera viewing the *target
 
 .. _api_Matrix4_ortho:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::ortho** (areal  *left*, areal  *right*, areal  *bottom*, areal  *top*, areal  *znear*, areal  *zfar*)
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::ortho** (areal  *left*, areal  *right*, areal  *bottom*, areal  *top*, areal  *znear*, areal  *zfar*)
 
 Creates an orthogonal projection matrix. Creates a view showing the area between *left*, *right*, *top* and *bottom*, with *znear* and *zfar* set up the depth clipping planes.
 
@@ -183,7 +183,7 @@ Creates an orthogonal projection matrix. Creates a view showing the area between
 
 .. _api_Matrix4_perspective:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::perspective** (areal  *fov*, areal  *aspect*, areal  *znear*, areal  *zfar*)
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::perspective** (areal  *fov*, areal  *aspect*, areal  *znear*, areal  *zfar*)
 
 Creates a perspective projection matrix. *fov* is the vertical field-of-view in degrees of the perspective matrix, *aspect* is the *aspect* ratio (width divided by height). *znear* and *zfar* set up the depth clipping planes.
 
@@ -199,23 +199,23 @@ Constructs a matrix that reflects the coordinate system about the *plane*.
 
 .. _api_Matrix4_rotate:
 
- void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  *angle*)
-
-Rotate this matrix around *axis* to *angle* in degrees.
-
-----
-
-.. _api_Matrix4_rotate:
-
  void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)
 
 Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw, roll) in degrees.
 
 ----
 
+.. _api_Matrix4_rotate:
+
+ void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  *angle*)
+
+Rotate this matrix around *axis* to *angle* in degrees.
+
+----
+
 .. _api_Matrix4_rotation:
 
- :ref:`Matrix3<api_Matrix3>` **Matrix4::rotation** () const
+ :ref:`Matrix3<api_Matrix3>`  **Matrix4::rotation** () const
 
 Returns rotation matrix from this matrix.
 
@@ -239,7 +239,7 @@ Move the coordinate system to *vector*.
 
 .. _api_Matrix4_transpose:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::transpose** () const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::transpose** () const
 
 Returns this matrix, transposed about its diagonal.
 
@@ -263,23 +263,7 @@ Returns true if this *matrix* is NOT equal to given *matrix*; otherwise returns 
 
 .. _api_Matrix4_operator*:
 
- :ref:`Vector3<api_Vector3>` **Matrix4::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
-
-Returns the result of multiplying this matrix and the given 3D *vector*.
-
-----
-
-.. _api_Matrix4_operator*:
-
- :ref:`Vector4<api_Vector4>` **Matrix4::operator*** (:ref:`Vector4<api_Vector4>` & *vector*) const
-
-Returns the result of multiplying this matrix and the given 4D *vector*.
-
-----
-
-.. _api_Matrix4_operator*:
-
- :ref:`Matrix4<api_Matrix4>` **Matrix4::operator*** (areal  *factor*) const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** (areal  *factor*) const
 
 Returns the result of multiplying this matrix and the given *factor*.
 
@@ -287,7 +271,7 @@ Returns the result of multiplying this matrix and the given *factor*.
 
 .. _api_Matrix4_operator*:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
 Returns the result of multiplying this *matrix* by the given *matrix*.
 
@@ -295,9 +279,25 @@ Note that *matrix* multiplication is not commutative, i.e. a*b != b*a.
 
 ----
 
+.. _api_Matrix4_operator*:
+
+ :ref:`Vector3<api_Vector3>`  **Matrix4::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
+
+Returns the result of multiplying this matrix and the given 3D *vector*.
+
+----
+
+.. _api_Matrix4_operator*:
+
+ :ref:`Vector4<api_Vector4>`  **Matrix4::operator*** (:ref:`Vector4<api_Vector4>` & *vector*) const
+
+Returns the result of multiplying this matrix and the given 4D *vector*.
+
+----
+
 .. _api_Matrix4_operator*=:
 
- :ref:`Matrix4<api_Matrix4>`& **Matrix4::operator*=** (areal  *factor*)
+ :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** (areal  *factor*)
 
 Multiplies all elements of this matrix by *factor*.
 
@@ -305,7 +305,7 @@ Multiplies all elements of this matrix by *factor*.
 
 .. _api_Matrix4_operator*=:
 
- :ref:`Matrix4<api_Matrix4>`& **Matrix4::operator*=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
+ :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
 Returns the result of multiplying this *matrix* by the given *matrix*.
 
@@ -313,7 +313,7 @@ Returns the result of multiplying this *matrix* by the given *matrix*.
 
 .. _api_Matrix4_operator+:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::operator+** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator+** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
 Returns the sum of this *matrix* and the given *matrix*.
 
@@ -321,7 +321,7 @@ Returns the sum of this *matrix* and the given *matrix*.
 
 .. _api_Matrix4_operator+=:
 
- :ref:`Matrix4<api_Matrix4>`& **Matrix4::operator+=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
+ :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator+=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
 Adds the contents of *matrix* to this *matrix*.
 
@@ -329,7 +329,7 @@ Adds the contents of *matrix* to this *matrix*.
 
 .. _api_Matrix4_operator-:
 
- :ref:`Matrix4<api_Matrix4>` **Matrix4::operator-** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
+ :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator-** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
 Returns the difference of this *matrix* and the given *matrix*.
 
@@ -337,7 +337,7 @@ Returns the difference of this *matrix* and the given *matrix*.
 
 .. _api_Matrix4_operator-=:
 
- :ref:`Matrix4<api_Matrix4>`& **Matrix4::operator-=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
+ :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator-=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
 Subtracts the contents of *matrix* from this *matrix*.
 

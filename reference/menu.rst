@@ -3,14 +3,14 @@
 Menu
 ====
 
-Inherited: :doc:`Frame<api_Frame>`
+Inherited: None
 
 .. _api_Menu_description:
 
 Description
 -----------
 
-The Menu class is designed to manage and display a graphical menu with sections, widgets, and actions. It handles user interactions such as mouse hovering and clicking to trigger actions associated with menu items.
+The Menu class represents a graphical user interface (GUI) menu that contains a list of options or actions that users can select. It provides a way to organize and display commands or choices in a structured manner, typically within a dropdown or context menu format. Menus are essential in GUI design for providing users with accessible options and actions within an application.
 
 
 

@@ -3,7 +3,7 @@
 AnimationClip
 =============
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_AnimationClip_description:
 

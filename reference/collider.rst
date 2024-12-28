@@ -3,7 +3,7 @@
 Collider
 ========
 
-Inherited: :doc:`Component<api_Component>`
+Inherited: None
 
 .. _api_Collider_description:
 
@@ -53,7 +53,7 @@ Methods Description
 
 .. _api_Collider_attachedRigidBody:
 
- :ref:`RigidBody<api_RigidBody>`* **Collider::attachedRigidBody** () const
+ :ref:`RigidBody<api_RigidBody>` * **Collider::attachedRigidBody** () const
 
 Returns a pointer to the attached RigidBody if one is associated with.
 
@@ -105,7 +105,7 @@ Sets a new collision contact with another *collider*. Emits appropriate signals 
 
 .. _api_Collider_shape:
 
- :ref:`btCollisionShape<api_btCollisionShape>`* **Collider::shape** ()
+ :ref:`btCollisionShape<api_btCollisionShape>` * **Collider::shape** ()
 
 Returns a pointer to the Bullet Physics collision shape associated with the collider. Derived classes should implement this method to define specific collision shapes.
 

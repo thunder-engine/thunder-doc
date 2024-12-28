@@ -3,7 +3,7 @@
 CharacterController
 ===================
 
-Inherited: :doc:`Collider<api_Collider>`
+Inherited: None
 
 .. _api_CharacterController_description:
 
@@ -69,7 +69,7 @@ Methods Description
 
 .. _api_CharacterController_center:
 
- :ref:`Vector3<api_Vector3>` **CharacterController::center** () const
+ :ref:`Vector3<api_Vector3>`  **CharacterController::center** () const
 
 Returns the local center of the character controller.
 
@@ -79,7 +79,7 @@ Returns the local center of the character controller.
 
 .. _api_CharacterController_gravity:
 
- :ref:`Vector3<api_Vector3>` **CharacterController::gravity** () const
+ :ref:`Vector3<api_Vector3>`  **CharacterController::gravity** () const
 
 Returns the gravity vector applied to the character controller.
 

@@ -3,7 +3,7 @@
 Scene
 =====
 
-Inherited: :doc:`Object<api_Object>`
+Inherited: None
 
 .. _api_Scene_description:
 
@@ -39,7 +39,7 @@ Methods Description
 
 .. _api_Scene_world:
 
- :ref:`World<api_World>`* **Scene::world** () const
+ :ref:`World<api_World>` * **Scene::world** () const
 
 Returns the World to which the scene belongs.
 

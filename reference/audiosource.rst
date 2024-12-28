@@ -3,7 +3,7 @@
 AudioSource
 ===========
 
-Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
+Inherited: None
 
 .. _api_AudioSource_description:
 
@@ -63,7 +63,7 @@ Returns true if auto-play is enabled; otherwise, returns false.
 
 .. _api_AudioSource_clip:
 
- :ref:`AudioClip<api_AudioClip>`* **AudioSource::clip** () const
+ :ref:`AudioClip<api_AudioClip>` * **AudioSource::clip** () const
 
 Returns the audio clip associated with the audio source.
 

@@ -74,7 +74,7 @@ If you've done everything correctly, a cube will appear in your scene.
     :width: 550
     
 Creating Structures
-------------------
+-------------------
 
 You can create many copies of a Prefab almost instantly.
 Using code to create structures is called **Procedural Generation**.

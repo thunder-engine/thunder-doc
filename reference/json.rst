@@ -55,7 +55,7 @@ Methods Description
 
 .. _api_Json_load:
 
- :ref:`Variant<api_Variant>` **Json::load** (std::string & *data*)
+ :ref:`Variant<api_Variant>`  **Json::load** (std::string & *data*)
 
 Returns deserialized string *data* as Variant based DOM structure.
 

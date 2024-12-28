@@ -3,7 +3,7 @@
 ControlScheme
 =============
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_ControlScheme_description:
 

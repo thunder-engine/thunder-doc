@@ -63,6 +63,8 @@ This enum defines base method types.
 +--------------------+-------+--------------------------------------------------------------------------------------------+
 |   MetaMethod::Slot | 2     | Very similar to A_METHOD but with special flag to be used for Signals and Slots mechanism. |
 +--------------------+-------+--------------------------------------------------------------------------------------------+
+| MetaMethod::Static | 3     | This is a static method and doesn't requires an object to call.                            |
++--------------------+-------+--------------------------------------------------------------------------------------------+
 
 
 
@@ -94,7 +96,9 @@ Calls current method for *object*. Function recieves an argument count in *argc*
 
 Return true on succssed; otherwise returns false.
 
+
 **Note:** Function checks if current method can be invoked.
+
 
 ----
 
@@ -124,7 +128,7 @@ Returns a parameter count of method.
 
 .. _api_MetaMethod_parameterType:
 
- :ref:`MetaType<api_MetaType>` **MetaMethod::parameterType** (int  *index*) const
+ :ref:`MetaType<api_MetaType>`  **MetaMethod::parameterType** (int  *index*) const
 
 Returns the type of parameter at *index* position.
 
@@ -132,7 +136,7 @@ Returns the type of parameter at *index* position.
 
 .. _api_MetaMethod_returnType:
 
- :ref:`MetaType<api_MetaType>` **MetaMethod::returnType** () const
+ :ref:`MetaType<api_MetaType>`  **MetaMethod::returnType** () const
 
 Returns a return type of method.
 
@@ -148,7 +152,7 @@ Returns method signature in text format.
 
 .. _api_MetaMethod_table:
 
-const :ref:`MetaMethod::Table<api_MetaMethod::Table>`* **MetaMethod::table** () const
+const :ref:`MetaMethod::Table<api_MetaMethod::Table>` * **MetaMethod::table** () const
 
 Returns method information table.
 
@@ -156,7 +160,7 @@ Returns method information table.
 
 .. _api_MetaMethod_type:
 
- :ref:`MetaMethod::MethodType<api_MetaMethod::MethodType>` **MetaMethod::type** () const
+ :ref:`MetaMethod::MethodType<api_MetaMethod::MethodType>`  **MetaMethod::type** () const
 
 Returns a type of method.
 

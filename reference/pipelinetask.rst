@@ -3,7 +3,7 @@
 PipelineTask
 ============
 
-Inherited: :doc:`Object<api_Object>`
+Inherited: None
 
 .. _api_PipelineTask_description:
 
@@ -19,29 +19,33 @@ All render tasks must be inherited from this class.
 Public Methods
 --------------
 
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           void | :ref:`exec<api_PipelineTask_exec>` (PipelineContext & context)                          |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                            int | :ref:`inputCount<api_PipelineTask_inputCount>` () const                                 |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                    std::string | :ref:`inputName<api_PipelineTask_inputName>` (int  index) const                         |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           bool | :ref:`isEnabled<api_PipelineTask_isEnabled>` () const                                   |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`output<api_PipelineTask_output>` (int  index)                                     |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                            int | :ref:`outputCount<api_PipelineTask_outputCount>` () const                               |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                    std::string | :ref:`outputName<api_PipelineTask_outputName>` (int  index) const                       |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           void | :ref:`resize<api_PipelineTask_resize>` (int  width, int  height)                        |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           void | :ref:`setEnabled<api_PipelineTask_setEnabled>` (bool  enable)                           |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           void | :ref:`setInput<api_PipelineTask_setInput>` (int  index, Texture * source)               |
-+--------------------------------+-----------------------------------------------------------------------------------------+
-|                           void | :ref:`setSettings<api_PipelineTask_setSettings>` (const PostProcessSettings & settings) |
-+--------------------------------+-----------------------------------------------------------------------------------------+
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`analyze<api_PipelineTask_analyze>` (World * world)                                           |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`exec<api_PipelineTask_exec>` (PipelineContext & context)                                     |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                            int | :ref:`inputCount<api_PipelineTask_inputCount>` () const                                            |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                    std::string | :ref:`inputName<api_PipelineTask_inputName>` (int  index) const                                    |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           bool | :ref:`isEnabled<api_PipelineTask_isEnabled>` () const                                              |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|  :ref:`Texture<api_Texture>` * | :ref:`output<api_PipelineTask_output>` (int  index)                                                |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                            int | :ref:`outputCount<api_PipelineTask_outputCount>` () const                                          |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                    std::string | :ref:`outputName<api_PipelineTask_outputName>` (int  index) const                                  |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`resize<api_PipelineTask_resize>` (int  width, int  height)                                   |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`setEnabled<api_PipelineTask_setEnabled>` (bool  enable)                                      |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`setInput<api_PipelineTask_setInput>` (int  index, Texture * source)                          |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`setProperty<api_PipelineTask_setProperty>` (const std::string & name, const Variant & value) |
++--------------------------------+----------------------------------------------------------------------------------------------------+
+|                           void | :ref:`setSettings<api_PipelineTask_setSettings>` (const PostProcessSettings & settings)            |
++--------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 
@@ -56,6 +60,14 @@ None
 
 Methods Description
 -------------------
+
+.. _api_PipelineTask_analyze:
+
+ void **PipelineTask::analyze** (:ref:`World<api_World>` * *world*)
+
+This method can be used to analyze a scene graphs for the provided *world*.
+
+----
 
 .. _api_PipelineTask_exec:
 
@@ -91,7 +103,7 @@ Returns true if task is enabled; otherwise returns false.
 
 .. _api_PipelineTask_output:
 
- :ref:`Texture<api_Texture>`* **PipelineTask::output** (int  *index*)
+ :ref:`Texture<api_Texture>` * **PipelineTask::output** (int  *index*)
 
 Returns by *index* a result of task as a render texture.
 
@@ -136,6 +148,14 @@ Sets task to *enable* or disable. The disabled effect will not be executed.
  void **PipelineTask::setInput** (int  *index*, :ref:`Texture<api_Texture>` * *source*)
 
 Set a *source* texture with given *index* to use it in the render task.
+
+----
+
+.. _api_PipelineTask_setProperty:
+
+ void **PipelineTask::setProperty** (std::string & *name*, :ref:`Variant<api_Variant>` & *value*)
+
+Changes a property *value* with given *name*.
 
 ----
 

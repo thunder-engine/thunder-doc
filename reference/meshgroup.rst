@@ -3,7 +3,7 @@
 MeshGroup
 =========
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_MeshGroup_description:
 
@@ -51,7 +51,7 @@ Adds the new *lod* data for the MeshGroup. Retuns index of new *lod*.
 
 .. _api_MeshGroup_lod:
 
- :ref:`Mesh<api_Mesh>`* **MeshGroup::lod** (int  *lod*)
+ :ref:`Mesh<api_Mesh>` * **MeshGroup::lod** (int  *lod*)
 
 Returns Mesh for the *lod* index if exists; othewise returns nullptr.
 

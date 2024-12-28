@@ -33,23 +33,6 @@ Public Methods
 |                         const :ref:`MetaType<api_MetaType>` | :ref:`type<api_MetaProperty_type>` () const                                            |
 +-------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
-.. _api_MetaProperty_enums:
-
-Public Enums
-------------
-
-.. _api_MetaProperty_ReadMem:
-
-**enum MetaProperty::ReadMem**
-
-Callback which contain address to getter method of property.
-
-.. _api_MetaProperty_WriteMem:
-
-**enum MetaProperty::WriteMem**
-
-Callback which contain address to setter method of property.
-
 
 
 .. _api_MetaProperty_static:
@@ -90,7 +73,7 @@ Returns a name of method.
 
 .. _api_MetaProperty_table:
 
-const :ref:`MetaProperty::Table<api_MetaProperty::Table>`* **MetaProperty::table** () const
+const :ref:`MetaProperty::Table<api_MetaProperty::Table>` * **MetaProperty::table** () const
 
 Returns property information table.
 
@@ -98,7 +81,7 @@ Returns property information table.
 
 .. _api_MetaProperty_type:
 
-const :ref:`MetaType<api_MetaType>` **MetaProperty::type** () const
+const :ref:`MetaType<api_MetaType>`  **MetaProperty::type** () const
 
 Returns a type of property.
 

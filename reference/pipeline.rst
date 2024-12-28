@@ -3,7 +3,7 @@
 Pipeline
 ========
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Pipeline_description:
 
@@ -45,7 +45,7 @@ Methods Description
 
 .. _api_Pipeline_renderTaskLink:
 
- :ref:`Pipeline::Link<api_Pipeline::Link>` **Pipeline::renderTaskLink** (int  *index*) const
+ :ref:`Pipeline::Link<api_Pipeline::Link>`  **Pipeline::renderTaskLink** (int  *index*) const
 
 Returns the link information for the render task at the specified *index*.
 

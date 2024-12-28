@@ -3,7 +3,7 @@
 System
 ======
 
-Inherited: :doc:`ObjectSystem<api_ObjectSystem>`
+Inherited: None
 
 .. _api_System_description:
 
@@ -12,11 +12,17 @@ Description
 
 Systems are a basic processors for each Component in the game.
 
+
 Note: All methods will be called internaly in the engine.
+
+
 
 Note: Systems can process only components which registered in this system.
 
+
+
 Note: Systems can be executed one by one or in parallel based on thread policy.
+
 
 
 
@@ -31,6 +37,8 @@ Public Methods
 |  bool | :ref:`init<api_System_init>` ()                                                    |
 +-------+------------------------------------------------------------------------------------+
 |  void | :ref:`processEvents<api_System_processEvents>` ()                                  |
++-------+------------------------------------------------------------------------------------+
+|  void | :ref:`reset<api_System_reset>` ()                                                  |
 +-------+------------------------------------------------------------------------------------+
 |  void | :ref:`setActiveWorld<api_System_setActiveWorld>` (World * world)                   |
 +-------+------------------------------------------------------------------------------------+
@@ -95,6 +103,14 @@ Can be used to initialize and execute necessary routines. This method will be ca
 Reimplements: ObjectSystem::processEvents().
 
 Processes all incoming events and executes the System::update method.
+
+----
+
+.. _api_System_reset:
+
+ void **System::reset** ()
+
+Can be used to reset all internal system states. This method will be called automatically just after the engine started.
 
 ----
 

@@ -3,14 +3,14 @@
 Label
 =====
 
-Inherited: :doc:`Widget<api_Widget>`
+Inherited: None
 
 .. _api_Label_description:
 
 Description
 -----------
 
-The Label component allows you to display a text in UI.
+The Label class is a graphical user interface (GUI) element that is used to display text within the application window. It is a fundamental component in UI design, providing a way to present information, instructions, or labels for other interactive elements like buttons or text fields.
 
 
 
@@ -77,7 +77,7 @@ Returns text alignment policy.
 
 .. _api_Label_color:
 
- :ref:`Vector4<api_Vector4>` **Label::color** () const
+ :ref:`Vector4<api_Vector4>`  **Label::color** () const
 
 Returns the color of the text to be drawn.
 
@@ -87,7 +87,7 @@ Returns the color of the text to be drawn.
 
 .. _api_Label_cursorAt:
 
- :ref:`Vector2<api_Vector2>` **Label::cursorAt** (int  *position*)
+ :ref:`Vector2<api_Vector2>`  **Label::cursorAt** (int  *position*)
 
 Returns a *position* for virtual cursor.
 
@@ -95,7 +95,7 @@ Returns a *position* for virtual cursor.
 
 .. _api_Label_font:
 
- :ref:`Font<api_Font>`* **Label::font** () const
+ :ref:`Font<api_Font>` * **Label::font** () const
 
 Returns the font which will be used to draw a text.
 
@@ -169,7 +169,9 @@ Changes the *size* of the font.
 
 Set true to enable glyph *kerning* and false to disable.
 
+
 **Note:** Glyph *kerning* functionality depends on fonts which you are using. In case of font doesn't support *kerning*, you will not see the difference.
+
 
 **See also** *kerning*().
 

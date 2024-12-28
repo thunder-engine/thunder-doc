@@ -9,7 +9,9 @@ Gui Module
    
    abstractbutton
    button
+   checkbox
    floatinput
+   foldout
    frame
    image
    label
@@ -17,7 +19,10 @@ Gui Module
    menu
    progressbar
    recttransform
+   stylesheet
    switch
    textinput
    toolbutton
+   uidocument
+   uiloader
    widget

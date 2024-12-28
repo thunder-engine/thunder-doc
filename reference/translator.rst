@@ -3,7 +3,7 @@
 Translator
 ==========
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_Translator_description:
 
@@ -41,7 +41,7 @@ Methods Description
 
  void **Translator::setPair** (std::string & *source*, std::string & *translation*)
 
-Sets new *translation* for the *source* string.
+Sets new *translation* for the *source* std::string.
 
 ----
 
@@ -49,6 +49,6 @@ Sets new *translation* for the *source* string.
 
  std::string **Translator::translate** (std::string & *source*) const
 
-Returns the translated *source* string.
+Returns the translated *source* std::string.
 
 

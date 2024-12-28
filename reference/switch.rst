@@ -3,7 +3,7 @@
 Switch
 ======
 
-Inherited: :doc:`AbstractButton<api_AbstractButton>`
+Inherited: None
 
 .. _api_Switch_description:
 
@@ -49,7 +49,7 @@ Methods Description
 
 .. _api_Switch_knobColor:
 
- :ref:`Vector4<api_Vector4>` **Switch::knobColor** () const
+ :ref:`Vector4<api_Vector4>`  **Switch::knobColor** () const
 
 Returns the color of the graphical knob.
 
@@ -59,7 +59,7 @@ Returns the color of the graphical knob.
 
 .. _api_Switch_knobGraphic:
 
- :ref:`Frame<api_Frame>`* **Switch::knobGraphic** () const
+ :ref:`Frame<api_Frame>` * **Switch::knobGraphic** () const
 
 Returns the graphical knob component.
 

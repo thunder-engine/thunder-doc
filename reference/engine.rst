@@ -3,7 +3,7 @@
 Engine
 ======
 
-Inherited: :doc:`ObjectSystem<api_ObjectSystem>`
+Inherited: None
 
 .. _api_Engine_description:
 
@@ -85,9 +85,9 @@ Static Methods
 +----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 |                                         void | :ref:`unloadAllScenes<api_Engine_unloadAllScenes>` ()                                                                             |
 +----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`unloadResource<api_Engine_unloadResource>` (const std::string & path)                                                       |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 |                                         void | :ref:`unloadResource<api_Engine_unloadResource>` (Resource * resource)                                                            |
++----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+|                                         void | :ref:`unloadResource<api_Engine_unloadResource>` (const std::string & path)                                                       |
 +----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 |                                         void | :ref:`unloadScene<api_Engine_unloadScene>` (Scene * scene)                                                                        |
 +----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
@@ -130,7 +130,7 @@ Example:
 ::
 
     if(engine->init()) {
-        engine->addModule(new RenderGL(engine));
+        Engine::addModule(new RenderGL(engine));
     
         engine->start();
     }
@@ -147,17 +147,19 @@ Returns application name.
 
 .. _api_Engine_composeActor:
 
- :ref:`Actor<api_Actor>`* **Engine::composeActor** (std::string & *component*, std::string & *name*, :ref:`Object<api_Object>` * *parent* = nullptr)
+ :ref:`Actor<api_Actor>` * **Engine::composeActor** (std::string & *component*, std::string & *name*, :ref:`Object<api_Object>` * *parent* = nullptr)
 
 Creates an Actor with *name* and attached *component*. Created Actor will be added to the hierarchy of *parent*. This method helps to create all dependencies for the *component*.
 
+
 Warning: This method should be used only in Editor mode.
+
 
 ----
 
 .. _api_Engine_file:
 
- :ref:`File<api_File>`* **Engine::file** ()
+ :ref:`File<api_File>` * **Engine::file** ()
 
 Returns file system module.
 
@@ -189,11 +191,13 @@ Returns true if resource with *path* exists; otherwise returns false.
 
 .. _api_Engine_loadResource:
 
- :ref:`Object<api_Object>`* **Engine::loadResource** (std::string & *path*)
+ :ref:`Object<api_Object>` * **Engine::loadResource** (std::string & *path*)
 
 Returns an instance for loading resource by the provided *path*.
 
+
 **Note:** In case of resource was loaded previously this function will return the same instance.
+
 
 **See also** unloadResource().
 
@@ -201,11 +205,13 @@ Returns an instance for loading resource by the provided *path*.
 
 .. _api_Engine_loadScene:
 
- :ref:`Scene<api_Scene>`* **Engine::loadScene** (std::string & *path*, bool  *additive*)
+ :ref:`Scene<api_Scene>` * **Engine::loadScene** (std::string & *path*, bool  *additive*)
 
 Loads the scene stored in the .map files by the it's *path* to the Engine.
 
+
 **Note:** The previous scenes will be not unloaded in the case of an *additive* flag is true.
+
 
 ----
 
@@ -213,7 +219,7 @@ Loads the scene stored in the .map files by the it's *path* to the Engine.
 
  bool **Engine::loadTranslator** (std::string & *name*)
 
-Loads translation table with provided file *name*. This method generates the LanguageChange event for the Engine instance. An Engine instance will propagate the event to all top-level widgets, where reimplementation of event() can re-translate user-visible strings. Returns true on success; otherwise returns false.
+Loads translation table with provided file *name*. This method generates the LanguageChange event for the Engine instance. An Engine instance will propagate the event to all top-level widgets, where reimplementation of event() can re-translate user-visible std::strings. Returns true on success; otherwise returns false.
 
 ----
 
@@ -271,7 +277,7 @@ Reloads the resource located along the *path*.
 
 .. _api_Engine_renderSystem:
 
- :ref:`RenderSystem<api_RenderSystem>`* **Engine::renderSystem** ()
+ :ref:`RenderSystem<api_RenderSystem>` * **Engine::renderSystem** ()
 
 Returns the render system which can be used in external modules.
 
@@ -279,7 +285,7 @@ Returns the render system which can be used in external modules.
 
 .. _api_Engine_resourceSystem:
 
- :ref:`ResourceSystem<api_ResourceSystem>`* **Engine::resourceSystem** ()
+ :ref:`ResourceSystem<api_ResourceSystem>` * **Engine::resourceSystem** ()
 
 Returns the resource management system which can be used in external modules.
 
@@ -301,7 +307,9 @@ Set game *flag* to true if game started; otherwise set false.
 
 Replaces a current *platform* adaptor with new one;
 
+
 **Note:** The previous one will not be deleted.
+
 
 ----
 
@@ -345,7 +353,7 @@ Applies all unsaved settings.
 
  std::string **Engine::translate** (std::string & *source*)
 
-Returns the translation text for the *source* string.
+Returns the translation text for the *source* std::string.
 
 ----
 
@@ -359,11 +367,13 @@ Unloads all scenes from the World.
 
 .. _api_Engine_unloadResource:
 
- void **Engine::unloadResource** (std::string & *path*)
+ void **Engine::unloadResource** (:ref:`Resource<api_Resource>` * *resource*)
 
-Forcely unloads the resource located along the *path* from memory.
+Forcely unloads the *resource* from memory.
 
-Warning: After this call, the reference on the resource may become an invalid at any time and must not be used anymore.
+
+Warning: After this call, the reference on the *resource* may become an invalid at any time and must not be used anymore.
+
 
 **See also** loadResource().
 
@@ -371,11 +381,13 @@ Warning: After this call, the reference on the resource may become an invalid at
 
 .. _api_Engine_unloadResource:
 
- void **Engine::unloadResource** (:ref:`Resource<api_Resource>` * *resource*)
+ void **Engine::unloadResource** (std::string & *path*)
 
-Forcely unloads the *resource* from memory.
+Forcely unloads the resource located along the *path* from memory.
 
-Warning: After this call, the reference on the *resource* may become an invalid at any time and must not be used anymore.
+
+Warning: After this call, the reference on the resource may become an invalid at any time and must not be used anymore.
+
 
 **See also** loadResource().
 
@@ -395,13 +407,15 @@ Unloads the *scene* from the World.
 
 This method launches all your game modules responsible for processing all the game logic. It calls on each iteration of the game cycle.
 
+
 **Note:** Usually, this method calls internally and must not be called manually.
+
 
 ----
 
 .. _api_Engine_value:
 
- :ref:`Variant<api_Variant>` **Engine::value** (std::string & *key*, :ref:`Variant<api_Variant>` & *defaultValue* = Variant())
+ :ref:`Variant<api_Variant>`  **Engine::value** (std::string & *key*, :ref:`Variant<api_Variant>` & *defaultValue* = Variant())
 
 Returns the value for setting *key*. If the setting doesn't exist, returns *defaultValue*.
 
@@ -411,10 +425,12 @@ Returns the value for setting *key*. If the setting doesn't exist, returns *defa
 
 .. _api_Engine_world:
 
- :ref:`World<api_World>`* **Engine::world** ()
+ :ref:`World<api_World>` * **Engine::world** ()
 
 Returns game World.
 
+
 **Note:** The game can have only one scene graph. World is a root object, all map loads on this World.
+
 
 

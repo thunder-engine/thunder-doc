@@ -3,14 +3,16 @@
 Renderable
 ==========
 
-Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
+Inherited: None
 
 .. _api_Renderable_description:
 
 Description
 -----------
 
+
 Note: This class must be a superclass only and shouldn't be created manually.
+
 
 
 
@@ -19,15 +21,19 @@ Note: This class must be a superclass only and shouldn't be created manually.
 Public Methods
 --------------
 
-+----------------------------------+----------------------------------------------------------------------+
-|        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Renderable_bound>` () const                          |
-+----------------------------------+----------------------------------------------------------------------+
-|  :ref:`Material<api_Material>` * | :ref:`material<api_Renderable_material>` () const                    |
-+----------------------------------+----------------------------------------------------------------------+
-|                              int | :ref:`priority<api_Renderable_priority>` () const                    |
-+----------------------------------+----------------------------------------------------------------------+
-|                             void | :ref:`setMaterial<api_Renderable_setMaterial>` (Material * material) |
-+----------------------------------+----------------------------------------------------------------------+
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Renderable_bound>` () const                                                        |
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|  :ref:`Material<api_Material>` * | :ref:`material<api_Renderable_material>` () const                                                  |
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|          :ref:`Mesh<api_Mesh>` * | :ref:`meshToDraw<api_Renderable_meshToDraw>` () const                                              |
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|                              int | :ref:`priority<api_Renderable_priority>` () const                                                  |
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|                             void | :ref:`setMaterial<api_Renderable_setMaterial>` (Material * material)                               |
++----------------------------------+----------------------------------------------------------------------------------------------------+
+|                             void | :ref:`setMaterialsList<api_Renderable_setMaterialsList>` (const std::list<Material *> & materials) |
++----------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 
@@ -45,7 +51,7 @@ Methods Description
 
 .. _api_Renderable_bound:
 
- :ref:`AABBox<api_AABBox>` **Renderable::bound** () const
+ :ref:`AABBox<api_AABBox>`  **Renderable::bound** () const
 
 Returns a bound box of the renderable object.
 
@@ -53,11 +59,19 @@ Returns a bound box of the renderable object.
 
 .. _api_Renderable_material:
 
- :ref:`Material<api_Material>`* **Renderable::material** () const
+ :ref:`Material<api_Material>` * **Renderable::material** () const
 
 Returns a first instantiated Material assigned to this Renderable.
 
 **See also** setMaterial().
+
+----
+
+.. _api_Renderable_meshToDraw:
+
+ :ref:`Mesh<api_Mesh>` * **Renderable::meshToDraw** () const
+
+Returns a mesh wich will be drawn.
 
 ----
 
@@ -76,5 +90,13 @@ Returns the prority value used to sort renadarble components before drawing. Low
 Creates a new instance of *material* and assigns it.
 
 **See also** *material*().
+
+----
+
+.. _api_Renderable_setMaterialsList:
+
+ void **Renderable::setMaterialsList** (:ref:`*><api_*>>` & *materials*)
+
+Creates a new instances for the list *materials* and assigns it.
 
 

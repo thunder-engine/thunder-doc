@@ -3,7 +3,7 @@
 SpotLight
 =========
 
-Inherited: :doc:`BaseLight<api_BaseLight>`
+Inherited: None
 
 .. _api_SpotLight_description:
 

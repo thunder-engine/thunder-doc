@@ -3,7 +3,7 @@
 PropertyAnimation
 =================
 
-Inherited: :doc:`VariantAnimation<api_VariantAnimation>`
+Inherited: None
 
 .. _api_PropertyAnimation_description:
 
@@ -61,7 +61,7 @@ Methods Description
 
 .. _api_PropertyAnimation_defaultValue:
 
- :ref:`Variant<api_Variant>` **PropertyAnimation::defaultValue** () const
+ :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
 
 Returns the default value of the animated property.
 
@@ -103,7 +103,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 .. _api_PropertyAnimation_target:
 
-const :ref:`Object<api_Object>`* **PropertyAnimation::target** () const
+const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const
 
 Returns the root object of the animated property.
 

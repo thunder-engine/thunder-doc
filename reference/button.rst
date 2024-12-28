@@ -3,12 +3,14 @@
 Button
 ======
 
-Inherited: :doc:`AbstractButton<api_AbstractButton>`
+Inherited: None
 
 .. _api_Button_description:
 
 Description
 -----------
+
+The Button class represents a push button element in a graphical user interface (GUI). It is a fundamental UI component that allows users to trigger actions or commands through a simple click or press.
 
 
 

@@ -3,7 +3,7 @@
 BoxCollider
 ===========
 
-Inherited: :doc:`VolumeCollider<api_VolumeCollider>`
+Inherited: None
 
 .. _api_BoxCollider_description:
 
@@ -51,7 +51,7 @@ Sets the *size* of the box collider.
 
 .. _api_BoxCollider_size:
 
-const :ref:`Vector3<api_Vector3>`& **BoxCollider::size** () const
+const :ref:`Vector3<api_Vector3>` & **BoxCollider::size** () const
 
 Returns the size of the box collider.
 

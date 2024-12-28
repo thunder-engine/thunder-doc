@@ -3,7 +3,7 @@
 Camera
 ======
 
-Inherited: :doc:`Component<api_Component>`
+Inherited: None
 
 .. _api_Camera_description:
 
@@ -34,6 +34,8 @@ Public Methods
 +------------------------------+-----------------------------------------------------------------------+
 |                         bool | :ref:`orthographic<api_Camera_orthographic>` () const                 |
 +------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace)       |
++------------------------------+-----------------------------------------------------------------------+
 |  :ref:`Matrix4<api_Matrix4>` | :ref:`projectionMatrix<api_Camera_projectionMatrix>` () const         |
 +------------------------------+-----------------------------------------------------------------------+
 |                        float | :ref:`ratio<api_Camera_ratio>` () const                               |
@@ -54,6 +56,8 @@ Public Methods
 +------------------------------+-----------------------------------------------------------------------+
 |                         void | :ref:`setRatio<api_Camera_setRatio>` (float  ratio)                   |
 +------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace)  |
++------------------------------+-----------------------------------------------------------------------+
 |  :ref:`Matrix4<api_Matrix4>` | :ref:`viewMatrix<api_Camera_viewMatrix>` () const                     |
 +------------------------------+-----------------------------------------------------------------------+
 
@@ -64,19 +68,15 @@ Public Methods
 Static Methods
 --------------
 
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|      :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                                                                |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & camera)                                                                                                             |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|      :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_project>` (const Vector3 & worldSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                               |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                             void | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                                                          |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|      :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_unproject>` (const Vector3 & screenSpace, const Matrix4 & modelView, const Matrix4 & projection)                                                          |
-+----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|           :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_current>` ()                                                                                                                                                |
++---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (const Camera & camera)                                                                                                             |
++---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_frustumCorners>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
++---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                  void | :ref:`setCurrent<api_Camera_setCurrent>` (Camera * current)                                                                                                                          |
++---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Camera_methods:
 
@@ -85,7 +85,7 @@ Methods Description
 
 .. _api_Camera_castRay:
 
- :ref:`Ray<api_Ray>` **Camera::castRay** (float  *x*, float  *y*)
+ :ref:`Ray<api_Ray>`  **Camera::castRay** (float  *x*, float  *y*)
 
 Returns ray with origin point in camera position and direction to projection plane with *x* and *y* coordinates.
 
@@ -93,7 +93,7 @@ Returns ray with origin point in camera position and direction to projection pla
 
 .. _api_Camera_color:
 
- :ref:`Vector4<api_Vector4>` **Camera::color** () const
+ :ref:`Vector4<api_Vector4>`  **Camera::color** () const
 
 Returns the color with which the screen will be cleared.
 
@@ -103,7 +103,7 @@ Returns the color with which the screen will be cleared.
 
 .. _api_Camera_current:
 
- :ref:`Camera<api_Camera>`* **Camera::current** ()
+ :ref:`Camera<api_Camera>` * **Camera::current** ()
 
 Returns current active camera.
 
@@ -141,7 +141,7 @@ Returns field of view angle for the camera in degrees.
 
 .. _api_Camera_frustumCorners:
 
-array<Vector3, :ref:`8><api_8>>` **Camera::frustumCorners** (:ref:`Camera<api_Camera>` & *camera*)
+std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** (:ref:`Camera<api_Camera>` & *camera*)
 
 Returns frustum corners for the *camera*.
 
@@ -149,7 +149,7 @@ Returns frustum corners for the *camera*.
 
 .. _api_Camera_frustumCorners:
 
-array<Vector3, :ref:`8><api_8>>` **Camera::frustumCorners** (bool  *ortho*, float  *sigma*, float  *ratio*, :ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, float  *nearPlane*, float  *farPlane*)
+std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** (bool  *ortho*, float  *sigma*, float  *ratio*, :ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, float  *nearPlane*, float  *farPlane*)
 
 Returns frustum corners with provided parameters. This function accepts a list of parameters: *ortho* is a flag that points *ortho*graphic or perspective camera. *sigma* is an angle of frustum or *ortho* size in the case of an *ortho*graphic camera. *ratio* is an aspect *ratio*. *position* of the frustum in world space. *rotation* of frustum in world space. *nearPlane* clipping plane. *farPlane* clipping plane.
 
@@ -185,15 +185,15 @@ Returns true for the orthographic mode; for the perspective mode, returns false.
 
 .. _api_Camera_project:
 
- :ref:`Vector3<api_Vector3>` **Camera::project** (:ref:`Vector3<api_Vector3>` & *worldSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*)
+ :ref:`Vector2<api_Vector2>`  **Camera::project** (:ref:`Vector3<api_Vector3>` & *worldSpace*)
 
-Transforms position from *worldSpace* into screen space using *modelView* and *projection* matrices. Returns result of transformation.
+Transforms position from *worldSpace* into screen space. Returns result of transformation.
 
 ----
 
 .. _api_Camera_projectionMatrix:
 
- :ref:`Matrix4<api_Matrix4>` **Camera::projectionMatrix** () const
+ :ref:`Matrix4<api_Matrix4>`  **Camera::projectionMatrix** () const
 
 Returns projection matrix for the camera.
 
@@ -253,7 +253,9 @@ Sets a *focal* distance for the camera.
 
 Sets field of view *angle* for the camera in degrees.
 
+
 **Note:** Applicable only for the perspective mode.
+
 
 **See also** fov().
 
@@ -299,15 +301,15 @@ Sets the aspect *ratio* (width divided by height).
 
 .. _api_Camera_unproject:
 
- :ref:`Vector3<api_Vector3>` **Camera::unproject** (:ref:`Vector3<api_Vector3>` & *screenSpace*, :ref:`Matrix4<api_Matrix4>` & *modelView*, :ref:`Matrix4<api_Matrix4>` & *projection*)
+ :ref:`Vector3<api_Vector3>`  **Camera::unproject** (:ref:`Vector3<api_Vector3>` & *screenSpace*)
 
-Transforms position from *screenSpace* into world space using *modelView* and *projection* matrices. Returns result of transformation.
+Transforms position from *screenSpace* into world space. Returns result of transformation.
 
 ----
 
 .. _api_Camera_viewMatrix:
 
- :ref:`Matrix4<api_Matrix4>` **Camera::viewMatrix** () const
+ :ref:`Matrix4<api_Matrix4>`  **Camera::viewMatrix** () const
 
 Returns view matrix for the camera.
 

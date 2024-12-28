@@ -3,14 +3,16 @@
 BaseLight
 =========
 
-Inherited: :doc:`NativeBehaviour<api_NativeBehaviour>`
+Inherited: None
 
 .. _api_BaseLight_description:
 
 Description
 -----------
 
+
 Note: This class must be a superclass only and shouldn't be created manually.
+
 
 
 
@@ -71,7 +73,7 @@ Returns true if the light source can cast shadows; otherwise returns false.
 
 .. _api_BaseLight_color:
 
- :ref:`Vector4<api_Vector4>` **BaseLight::color** () const
+ :ref:`Vector4<api_Vector4>`  **BaseLight::color** () const
 
 Returns a color of emitting light.
 

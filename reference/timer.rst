@@ -49,7 +49,9 @@ Methods Description
 
 Returns the time in seconds since the last frame.
 
+
 **Note:** This value is updated in each frame. In case of calling multiple times in a single frame will return the same result.
+
 
 ----
 
@@ -79,6 +81,8 @@ Sets the time *scale* at which the time is passing.
 
 Returns the time in seconds since the start of the game.
 
+
 **Note:** This value is updated in each frame. In case of calling multiple times in a single frame will return the same result.
+
 
 

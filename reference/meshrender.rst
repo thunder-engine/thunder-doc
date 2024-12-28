@@ -3,7 +3,7 @@
 MeshRender
 ==========
 
-Inherited: :doc:`Renderable<api_Renderable>`
+Inherited: None
 
 .. _api_MeshRender_description:
 
@@ -45,7 +45,7 @@ Methods Description
 
 .. _api_MeshRender_materials:
 
- :ref:`VariantList<api_VariantList>` **MeshRender::materials** () const
+ :ref:`VariantList<api_VariantList>`  **MeshRender::materials** () const
 
 Returns a list of assigned materials.
 
@@ -55,7 +55,7 @@ Returns a list of assigned materials.
 
 .. _api_MeshRender_mesh:
 
- :ref:`Mesh<api_Mesh>`* **MeshRender::mesh** () const
+ :ref:`Mesh<api_Mesh>` * **MeshRender::mesh** () const
 
 Returns a Mesh assigned to this component.
 

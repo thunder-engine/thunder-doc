@@ -3,7 +3,7 @@
 PhysicMaterial
 ==============
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_PhysicMaterial_description:
 

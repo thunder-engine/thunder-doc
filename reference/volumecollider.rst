@@ -3,7 +3,7 @@
 VolumeCollider
 ==============
 
-Inherited: :doc:`Collider<api_Collider>`
+Inherited: None
 
 .. _api_VolumeCollider_description:
 
@@ -55,7 +55,7 @@ Methods Description
 
 .. _api_VolumeCollider_center:
 
-const :ref:`Vector3<api_Vector3>`& **VolumeCollider::center** () const
+const :ref:`Vector3<api_Vector3>` & **VolumeCollider::center** () const
 
 Returns the local center of the volume collider.
 
@@ -83,7 +83,7 @@ Returns true if the collider is dirty, false otherwise.
 
 .. _api_VolumeCollider_material:
 
- :ref:`PhysicMaterial<api_PhysicMaterial>`* **VolumeCollider::material** () const
+ :ref:`PhysicMaterial<api_PhysicMaterial>` * **VolumeCollider::material** () const
 
 Returns the physics material associated with the volume collider.
 

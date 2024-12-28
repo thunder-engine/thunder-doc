@@ -3,7 +3,7 @@
 ComputeShader
 =============
 
-Inherited: :doc:`Resource<api_Resource>`
+Inherited: None
 
 .. _api_ComputeShader_description:
 
@@ -37,7 +37,7 @@ Methods Description
 
 .. _api_ComputeShader_createInstance:
 
- :ref:`ComputeInstance<api_ComputeInstance>`* **ComputeShader::createInstance** ()
+ :ref:`ComputeInstance<api_ComputeInstance>` * **ComputeShader::createInstance** ()
 
 Creates a new instance of the compute shader.
 
