@@ -16,5 +16,5 @@ In essence, Thunder Engine not only simplifies game development through its wide
    :name: toc-basics
    
    install
-   start
+   editor
    features

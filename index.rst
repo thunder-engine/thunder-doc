@@ -11,7 +11,7 @@ Thunder Documentation
    lighting/index
    rendering/index
    vfx/index
-   .. audio/index
+   audio/index
    scripting/index
    reference/index
 

@@ -110,11 +110,12 @@ In this property, you can specify additional metadata as a string.
 This is necessary for the editor to understand the type of property it is working with.
 In this example, we indicate that a special editor type ``Component`` should be created.
 There are other editors available:
-    * Color
-    * Component
-    * Asset
-    * Alignment
-    * Axes
+
+    - Color
+    - Component
+    - Asset
+    - Alignment
+    - Axes
 
 In the Properties window, it will look like this:
 

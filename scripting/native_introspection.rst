@@ -51,8 +51,8 @@ Thunder Engine Meta-object system provides runtime type information like methods
 
 The meta-object system is based on two things:
 
-* The Object class provides a base class for objects that can take advantage of the meta-object system.
-* The A_REGISTER macro inside the private section of the class declaration is used to enable meta-object features, such as properties, signals, and slots.
+- The Object class provides a base class for objects that can take advantage of the meta-object system.
+- The A_REGISTER macro inside the private section of the class declaration is used to enable meta-object features, such as properties, signals, and slots.
 
 
 .. _doc_native_properties:
@@ -70,10 +70,10 @@ In the provided example developer specified an introspection definition of prope
 
 Please find the description of parameters for A_PROPERTY bellow:
 
-* *int* - The return type of the property
-* *speed* - The name of the property that will be visible in the editor and in Scripts.
-* *MyComponent::speed* - The getter function of the property.
-* *MyComponent::setSpeed* - The setter function of the property.
+- *int* - The return type of the property
+- *speed* - The name of the property that will be visible in the editor and in Scripts.
+- *MyComponent::speed* - The getter function of the property.
+- *MyComponent::setSpeed* - The setter function of the property.
 
 .. note::
     In case of no any public properties provided in native component.
@@ -96,8 +96,8 @@ In the example above, the developer has specified a *jump* method for introspect
     
 Please find the description of parameters for A_PROPERTY bellow:
 
-* *void* - The return type of the method
-* *MyComponent::jump* - The function which will be registered.
+- *void* - The return type of the method
+- *MyComponent::jump* - The function which will be registered.
 
 .. note::
     In case of no public properties provided in the native component.
@@ -151,8 +151,8 @@ The slot of object *component2* will be called.
 
 The connection has to follow a few rules:
 
-* The signature of a signal must match the signature of the receiving slot.
-* The signal can be connected to a signal to relay the event.
+- The signature of a signal must match the signature of the receiving slot.
+- The signal can be connected to a signal to relay the event.
 
 To emmit a signal we need to call:
 

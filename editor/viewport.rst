@@ -1,7 +1,7 @@
 .. _doc_viewport:
 
 Viewport
-==============================
+========
 
 Viewport allows you to add and remove objects on scene, control their positions, rotations and do other basic operations.
 
@@ -9,7 +9,7 @@ Viewport allows you to add and remove objects on scene, control their positions,
     :alt: Viewport
 
 Creation/Selection Objects
-----------------------------
+--------------------------
 
 The empty game doesn't look fun.
 To make it visually appealing we need to add various game objects.

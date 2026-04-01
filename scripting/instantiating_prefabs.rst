@@ -5,9 +5,10 @@ Instantiating Prefabs
 
 Prefabs can be very useful if you want to create complex Actors during gameplay.
 Instantiating game objects from Prefabs instead of creating game objects from scratch during runtime has several advantages:
-    * Create a complex object with just one line instead of describing all components and their properties in detail in code.
-    * Modify the Prefab in the Editor and get updates without needing to update the code.
-    * Easily replace one Prefab with another without changing the code.
+
+    - Create a complex object with just one line instead of describing all components and their properties in detail in code.
+    - Modify the Prefab in the Editor and get updates without needing to update the code.
+    - Easily replace one Prefab with another without changing the code.
 
 Let's Get Started
 -----------------

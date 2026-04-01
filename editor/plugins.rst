@@ -1,7 +1,7 @@
 .. _doc_plugin_manager:
 
-Plugin Managemer
-===============================
+Plugin Manager
+==============
 
 Plugins in the editor provide a powerful mechanism to extend and enhance the functionality of the World Editor.
 Whether you want to add custom tools, features, or support for specific asset types, plugins offer a flexible way to tailor the editor to your project's unique requirements.

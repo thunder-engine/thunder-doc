@@ -19,7 +19,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = u'Thunder Engine'
-copyright = u'2024, Evgeniy Prikazchikov'
+copyright = u'2025, Evgeniy Prikazchikov'
 author = u'Evgeniy Prikazchikov'
 
 # The short X.Y version
@@ -72,7 +72,7 @@ pygments_style = 'sphinx'
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-import sphinx_rtd_theme
+#import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
 if on_rtd:

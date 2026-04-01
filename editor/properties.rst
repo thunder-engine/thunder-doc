@@ -1,7 +1,7 @@
 .. _doc_properties:
 
 Properties
-==============================
+==========
 
 Properties is a tool created for fine-tuning of all object properties (assigned material, texture, color, and many more)
 

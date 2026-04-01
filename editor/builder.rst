@@ -11,18 +11,7 @@ To build a release binary, you will need a compatible compiler for your platform
 - **clang** - on Linux
 - **XCode** - on MacOS
 
-Ensure that the **Qbs Builder** is accessible by the build environment. You can check this by running the following command in your terminal or command prompt:
-
-    sdk/%version%/tools/qbs
-
-Alternatively, you can specify the Qbs path in the Editor Preferences:
-
-.. image:: media/qbs_path.png
-   :alt: QBS Path
-
-If you cannot find this tab, please navigate to **Window -> Editor Preferences**.
-
-Now, you are ready to build your project. Follow these steps:
+To build your project, follow these steps:
 
 1. Click on the **Build Project** button in the toolbar:
 
