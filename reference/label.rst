@@ -20,39 +20,39 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------+
-|                          int | :ref:`align<api_Label_ac9640d2>` () const                   |
+|                          int | :ref:`align<api_Label_93d406c1>` () const                   |
 +------------------------------+-------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Label_3c7d8f0a>` () const                   |
+|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Label_f907a2cb>` () const                   |
 +------------------------------+-------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`cursorAt<api_Label_f20c5417>` (int  position)         |
+|  :ref:`Vector2<api_Vector2>` | :ref:`cursorAt<api_Label_ec8b4397>` (int  position)         |
 +------------------------------+-------------------------------------------------------------+
-|      :ref:`Font<api_Font>` * | :ref:`font<api_Label_1cf926b8>` () const                    |
+|      :ref:`Font<api_Font>` * | :ref:`font<api_Label_5c7ed618>` () const                    |
 +------------------------------+-------------------------------------------------------------+
-|                          int | :ref:`fontSize<api_Label_976dc2b0>` () const                |
+|                          int | :ref:`fontSize<api_Label_23c17e85>` () const                |
 +------------------------------+-------------------------------------------------------------+
-|                         bool | :ref:`kerning<api_Label_6b8cf1d0>` () const                 |
+|                         bool | :ref:`kerning<api_Label_4d2b0613>` () const                 |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setAlign<api_Label_a0b3948e>` (int  alignment)        |
+|                         void | :ref:`setAlign<api_Label_cdb0ef2a>` (int  alignment)        |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setColor<api_Label_16e2ca49>` (const Vector4 & color) |
+|                         void | :ref:`setColor<api_Label_ea2d145f>` (const Vector4 & color) |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setFont<api_Label_0d57f21c>` (Font * font)            |
+|                         void | :ref:`setFont<api_Label_03df67bc>` (Font * font)            |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setFontSize<api_Label_96a0b54d>` (int  size)          |
+|                         void | :ref:`setFontSize<api_Label_2735810c>` (int  size)          |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setKerning<api_Label_871d29f6>` (const bool  enable)  |
+|                         void | :ref:`setKerning<api_Label_d6c9e41f>` (const bool  enable)  |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setText<api_Label_4738bd10>` (const TString & text)   |
+|                         void | :ref:`setText<api_Label_dc521e48>` (const TString & text)   |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setTranslated<api_Label_f3748ea2>` (bool  enable)     |
+|                         void | :ref:`setTranslated<api_Label_e8c6f027>` (bool  enable)     |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setWordWrap<api_Label_bd97e358>` (bool  wrap)         |
+|                         void | :ref:`setWordWrap<api_Label_fb5ed6c1>` (bool  wrap)         |
 +------------------------------+-------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_Label_61df3780>` () const                    |
+|  :ref:`TString<api_TString>` | :ref:`text<api_Label_5aecdf73>` () const                    |
 +------------------------------+-------------------------------------------------------------+
-|                         bool | :ref:`translated<api_Label_15946bec>` () const              |
+|                         bool | :ref:`translated<api_Label_13b7df48>` () const              |
 +------------------------------+-------------------------------------------------------------+
-|                         bool | :ref:`wordWrap<api_Label_85a13b4e>` () const                |
+|                         bool | :ref:`wordWrap<api_Label_37c5e0fd>` () const                |
 +------------------------------+-------------------------------------------------------------+
 
 
@@ -69,7 +69,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Label_ac9640d2:
+.. _api_Label_93d406c1:
 
  int **Label::align** () const
 
@@ -79,7 +79,7 @@ Returns text alignment policy.
 
 ----
 
-.. _api_Label_3c7d8f0a:
+.. _api_Label_f907a2cb:
 
  :ref:`Vector4<api_Vector4>`  **Label::color** () const
 
@@ -89,7 +89,7 @@ Returns the color of the text to be drawn.
 
 ----
 
-.. _api_Label_f20c5417:
+.. _api_Label_ec8b4397:
 
  :ref:`Vector2<api_Vector2>`  **Label::cursorAt** (int  *position*)
 
@@ -97,7 +97,7 @@ Returns a *position* for virtual cursor.
 
 ----
 
-.. _api_Label_1cf926b8:
+.. _api_Label_5c7ed618:
 
  :ref:`Font<api_Font>` * **Label::font** () const
 
@@ -107,7 +107,7 @@ Returns the font which will be used to draw a text.
 
 ----
 
-.. _api_Label_976dc2b0:
+.. _api_Label_23c17e85:
 
  int **Label::fontSize** () const
 
@@ -117,7 +117,7 @@ Returns the size of the font.
 
 ----
 
-.. _api_Label_6b8cf1d0:
+.. _api_Label_4d2b0613:
 
  bool **Label::kerning** () const
 
@@ -127,7 +127,7 @@ Returns true if glyph kerning enabled; otherwise returns false.
 
 ----
 
-.. _api_Label_a0b3948e:
+.. _api_Label_cdb0ef2a:
 
  void **Label::setAlign** (int  *alignment*)
 
@@ -137,7 +137,7 @@ Sets text *alignment* policy.
 
 ----
 
-.. _api_Label_16e2ca49:
+.. _api_Label_ea2d145f:
 
  void **Label::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -147,7 +147,7 @@ Changes the *color* of the text to be drawn.
 
 ----
 
-.. _api_Label_0d57f21c:
+.. _api_Label_03df67bc:
 
  void **Label::setFont** (:ref:`Font<api_Font>` * *font*)
 
@@ -157,7 +157,7 @@ Changes the *font* which will be used to draw a text.
 
 ----
 
-.. _api_Label_96a0b54d:
+.. _api_Label_2735810c:
 
  void **Label::setFontSize** (int  *size*)
 
@@ -167,7 +167,7 @@ Changes the *size* of the font.
 
 ----
 
-.. _api_Label_871d29f6:
+.. _api_Label_d6c9e41f:
 
  void **Label::setKerning** (bool  *enable*)
 
@@ -181,7 +181,7 @@ Set true to *enable* glyph kerning and false to disable.
 
 ----
 
-.. _api_Label_4738bd10:
+.. _api_Label_dc521e48:
 
  void **Label::setText** (:ref:`TString<api_TString>` & *text*)
 
@@ -191,7 +191,7 @@ Changes the *text* which will be drawn.
 
 ----
 
-.. _api_Label_f3748ea2:
+.. _api_Label_e8c6f027:
 
  void **Label::setTranslated** (bool  *enable*)
 
@@ -201,7 +201,7 @@ Sets *enable* or disable translation from dictionary for current label.
 
 ----
 
-.. _api_Label_bd97e358:
+.. _api_Label_fb5ed6c1:
 
  void **Label::setWordWrap** (bool  *wrap*)
 
@@ -211,7 +211,7 @@ Sets the word *wrap* policy. Set true to enable word *wrap* and false to disable
 
 ----
 
-.. _api_Label_61df3780:
+.. _api_Label_5aecdf73:
 
  :ref:`TString<api_TString>`  **Label::text** () const
 
@@ -221,7 +221,7 @@ Returns the text which will be drawn.
 
 ----
 
-.. _api_Label_15946bec:
+.. _api_Label_13b7df48:
 
  bool **Label::translated** () const
 
@@ -231,7 +231,7 @@ Returns true if text in label must be translated; othewise returns false.
 
 ----
 
-.. _api_Label_85a13b4e:
+.. _api_Label_37c5e0fd:
 
  bool **Label::wordWrap** () const
 

@@ -20,23 +20,23 @@ Public Methods
 --------------
 
 +----------------------------------+--------------------------------------------------------------+
-|      :ref:`Vector4<api_Vector4>` | :ref:`color<api_Image_5e2c38a6>` () const                    |
+|      :ref:`Vector4<api_Vector4>` | :ref:`color<api_Image_2405bf8e>` () const                    |
 +----------------------------------+--------------------------------------------------------------+
-|                              int | :ref:`drawMode<api_Image_327ef5c8>` () const                 |
+|                              int | :ref:`drawMode<api_Image_bad9c752>` () const                 |
 +----------------------------------+--------------------------------------------------------------+
-|  :ref:`Material<api_Material>` * | :ref:`material<api_Image_53b6e170>` () const                 |
+|  :ref:`Material<api_Material>` * | :ref:`material<api_Image_0ea73cb8>` () const                 |
 +----------------------------------+--------------------------------------------------------------+
-|                             void | :ref:`setColor<api_Image_e3fa7cb1>` (const Vector4 & color)  |
+|                             void | :ref:`setColor<api_Image_9cf8e51d>` (const Vector4 & color)  |
 +----------------------------------+--------------------------------------------------------------+
-|                             void | :ref:`setDrawMode<api_Image_1bf25680>` (int  mode)           |
+|                             void | :ref:`setDrawMode<api_Image_f5a47628>` (int  mode)           |
 +----------------------------------+--------------------------------------------------------------+
-|                             void | :ref:`setMaterial<api_Image_52807e3a>` (Material * material) |
+|                             void | :ref:`setMaterial<api_Image_5f40e2a1>` (Material * material) |
 +----------------------------------+--------------------------------------------------------------+
-|                             void | :ref:`setSprite<api_Image_48db0a26>` (Sprite * sprite)       |
+|                             void | :ref:`setSprite<api_Image_706924ae>` (Sprite * sprite)       |
 +----------------------------------+--------------------------------------------------------------+
-|                             void | :ref:`setTexture<api_Image_4f76125a>` (Texture * image)      |
+|                             void | :ref:`setTexture<api_Image_8f56902d>` (Texture * image)      |
 +----------------------------------+--------------------------------------------------------------+
-|      :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_Image_97af6d02>` () const                   |
+|      :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_Image_04c219d6>` () const                   |
 +----------------------------------+--------------------------------------------------------------+
 
 
@@ -53,7 +53,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Image_5e2c38a6:
+.. _api_Image_2405bf8e:
 
  :ref:`Vector4<api_Vector4>`  **Image::color** () const
 
@@ -63,7 +63,7 @@ Returns the color of the image to be drawn.
 
 ----
 
-.. _api_Image_327ef5c8:
+.. _api_Image_bad9c752:
 
  int **Image::drawMode** () const
 
@@ -73,7 +73,7 @@ Returns a draw mode for the image. Please check Image::DrawMode for more details
 
 ----
 
-.. _api_Image_53b6e170:
+.. _api_Image_0ea73cb8:
 
  :ref:`Material<api_Material>` * **Image::material** () const
 
@@ -83,7 +83,7 @@ Returns an instantiated Material assigned to Image.
 
 ----
 
-.. _api_Image_e3fa7cb1:
+.. _api_Image_9cf8e51d:
 
  void **Image::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -93,7 +93,7 @@ Changes the *color* of the image to be drawn.
 
 ----
 
-.. _api_Image_1bf25680:
+.. _api_Image_f5a47628:
 
  void **Image::setDrawMode** (int  *mode*)
 
@@ -103,7 +103,7 @@ Sets a draw *mode* for the image. Please check Image::DrawMode for more details.
 
 ----
 
-.. _api_Image_52807e3a:
+.. _api_Image_5f40e2a1:
 
  void **Image::setMaterial** (:ref:`Material<api_Material>` * *material*)
 
@@ -113,7 +113,7 @@ Creates a new instance of *material* and assigns it.
 
 ----
 
-.. _api_Image_48db0a26:
+.. _api_Image_706924ae:
 
  void **Image::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)
 
@@ -123,7 +123,7 @@ Replaces the current *sprite* with a new one.
 
 ----
 
-.. _api_Image_4f76125a:
+.. _api_Image_8f56902d:
 
  void **Image::setTexture** (:ref:`Texture<api_Texture>` * *image*)
 
@@ -131,7 +131,7 @@ Replaces the current *image* with a new one.
 
 ----
 
-.. _api_Image_97af6d02:
+.. _api_Image_04c219d6:
 
  :ref:`Sprite<api_Sprite>` * **Image::sprite** () const
 

@@ -20,15 +20,15 @@ Public Methods
 --------------
 
 +------------+---------------------------------------------------------------------+
-|   uint32_t | :ref:`count<api_ComputeBuffer_fc2164d3>` () const                   |
+|   uint32_t | :ref:`count<api_ComputeBuffer_26387ebd>` () const                   |
 +------------+---------------------------------------------------------------------+
-|  ByteArray | :ref:`data<api_ComputeBuffer_0812d9cf>` () const                    |
+|  ByteArray | :ref:`data<api_ComputeBuffer_79edacb3>` () const                    |
 +------------+---------------------------------------------------------------------+
-|       void | :ref:`setData<api_ComputeBuffer_c2e6479b>` (const ByteArray & data) |
+|       void | :ref:`setData<api_ComputeBuffer_345a62bf>` (const ByteArray & data) |
 +------------+---------------------------------------------------------------------+
-|       void | :ref:`setStride<api_ComputeBuffer_7ca3e4d9>` (uint32_t  stride)     |
+|       void | :ref:`setStride<api_ComputeBuffer_da2159e4>` (uint32_t  stride)     |
 +------------+---------------------------------------------------------------------+
-|   uint32_t | :ref:`stride<api_ComputeBuffer_2d0837b4>` () const                  |
+|   uint32_t | :ref:`stride<api_ComputeBuffer_b07fe9ad>` () const                  |
 +------------+---------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ComputeBuffer_fc2164d3:
+.. _api_ComputeBuffer_26387ebd:
 
  uint32_t **ComputeBuffer::count** () const
 
@@ -53,7 +53,7 @@ Gets the number of elements in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_0812d9cf:
+.. _api_ComputeBuffer_79edacb3:
 
  ByteArray **ComputeBuffer::data** () const
 
@@ -63,7 +63,7 @@ Gets the data stored in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_c2e6479b:
+.. _api_ComputeBuffer_345a62bf:
 
  void **ComputeBuffer::setData** (ByteArray & *data*)
 
@@ -77,7 +77,7 @@ Sets the *data* of the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_7ca3e4d9:
+.. _api_ComputeBuffer_da2159e4:
 
  void **ComputeBuffer::setStride** (uint32_t  *stride*)
 
@@ -87,7 +87,7 @@ Sets the *stride* of the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_2d0837b4:
+.. _api_ComputeBuffer_b07fe9ad:
 
  uint32_t **ComputeBuffer::stride** () const
 

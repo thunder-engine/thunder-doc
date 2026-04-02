@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_CheckBox_65074bad>` () const                  |
+|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_CheckBox_2fe67089>` () const                  |
 +------------------------------+-------------------------------------------------------------------+
-|    :ref:`Image<api_Image>` * | :ref:`knobGraphic<api_CheckBox_14b3c270>` () const                |
+|    :ref:`Image<api_Image>` * | :ref:`knobGraphic<api_CheckBox_4e0671bd>` () const                |
 +------------------------------+-------------------------------------------------------------------+
-|                         void | :ref:`setKnobColor<api_CheckBox_c2501edf>` (const Vector4  color) |
+|                         void | :ref:`setKnobColor<api_CheckBox_f796b425>` (const Vector4  color) |
 +------------------------------+-------------------------------------------------------------------+
-|                         void | :ref:`setKnobGraphic<api_CheckBox_30e8ba7c>` (Image * knob)       |
+|                         void | :ref:`setKnobGraphic<api_CheckBox_a45cd680>` (Image * knob)       |
 +------------------------------+-------------------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CheckBox_65074bad:
+.. _api_CheckBox_2fe67089:
 
  :ref:`Vector4<api_Vector4>`  **CheckBox::knobColor** () const
 
@@ -53,7 +53,7 @@ Returns the color of the graphical knob.
 
 ----
 
-.. _api_CheckBox_14b3c270:
+.. _api_CheckBox_4e0671bd:
 
  :ref:`Image<api_Image>` * **CheckBox::knobGraphic** () const
 
@@ -63,7 +63,7 @@ Returns the graphical knob component.
 
 ----
 
-.. _api_CheckBox_c2501edf:
+.. _api_CheckBox_f796b425:
 
  void **CheckBox::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
@@ -73,7 +73,7 @@ Sets the *color* of the graphical knob.
 
 ----
 
-.. _api_CheckBox_30e8ba7c:
+.. _api_CheckBox_a45cd680:
 
  void **CheckBox::setKnobGraphic** (:ref:`Image<api_Image>` * *knob*)
 

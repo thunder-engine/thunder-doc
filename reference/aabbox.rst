@@ -20,47 +20,47 @@ Public Methods
 --------------
 
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                                 | :ref:`AABBox<api_AABBox_2bd017c3>` ()                                                    |
+|                                 | :ref:`AABBox<api_AABBox_9c5768da>` ()                                                    |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                                 | :ref:`AABBox<api_AABBox_4b5f9236>` (const Vector3 & center, const Vector3 & extent)      |
+|                                 | :ref:`AABBox<api_AABBox_b7196de2>` (const Vector3 & center, const Vector3 & extent)      |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            void | :ref:`box<api_AABBox_f07658bc>` (Vector3 & min, Vector3 & max) const                     |
+|                            void | :ref:`box<api_AABBox_6f73d219>` (Vector3 & min, Vector3 & max) const                     |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            void | :ref:`encapsulate<api_AABBox_2045e1d3>` (const AABBox & aabb)                            |
+|                            void | :ref:`encapsulate<api_AABBox_650c3d98>` (const AABBox & aabb)                            |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            void | :ref:`encapsulate<api_AABBox_3baec672>` (const Vector3 & position, areal  radius = 0.0f) |
+|                            void | :ref:`encapsulate<api_AABBox_b12c5d97>` (const Vector3 & position, areal  radius = 0.0f) |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            bool | :ref:`intersect<api_AABBox_70fd613b>` (const Plane & plane) const                        |
+|                            bool | :ref:`intersect<api_AABBox_7dcb9316>` (const Plane & plane) const                        |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            bool | :ref:`intersect<api_AABBox_9247d308>` (const Vector3 & position, areal  radius) const    |
+|                            bool | :ref:`intersect<api_AABBox_451b2a80>` (const Vector3 & position, areal  radius) const    |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            bool | :ref:`isValid<api_AABBox_c59037ed>` () const                                             |
+|                            bool | :ref:`isValid<api_AABBox_21c0f8b3>` () const                                             |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            void | :ref:`setBox<api_AABBox_1bc037d9>` (const Vector3 & min, const Vector3 & max)            |
+|                            void | :ref:`setBox<api_AABBox_3bc695f8>` (const Vector3 & min, const Vector3 & max)            |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            void | :ref:`setBox<api_AABBox_1278930e>` (const Vector3 * points, uint32_t  number)            |
+|                            void | :ref:`setBox<api_AABBox_3a61fdb5>` (const Vector3 * points, uint32_t  number)            |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            bool | :ref:`operator!=<api_AABBox_c31ed9a4>` (const AABBox & box) const                        |
+|                            bool | :ref:`operator!=<api_AABBox_c176b4d0>` (const AABBox & box) const                        |
 +---------------------------------+------------------------------------------------------------------------------------------+
-| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_fecd6ba4>` (areal  factor) const                              |
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_710fd83a>` (areal  factor) const                              |
 +---------------------------------+------------------------------------------------------------------------------------------+
-| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_8db01e4a>` (const Matrix3 & matrix) const                     |
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_b2c1a380>` (const Matrix3 & matrix) const                     |
 +---------------------------------+------------------------------------------------------------------------------------------+
-| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_582c9de0>` (const Matrix4 & matrix) const                     |
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_48a3fcd6>` (const Matrix4 & matrix) const                     |
 +---------------------------------+------------------------------------------------------------------------------------------+
-| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_172056e3>` (const Quaternion & quaternion) const              |
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_3f09dc78>` (const Quaternion & quaternion) const              |
 +---------------------------------+------------------------------------------------------------------------------------------+
-| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_938421a7>` (const Vector3 & vector) const                     |
+| const :ref:`AABBox<api_AABBox>` | :ref:`operator*<api_AABBox_3465fbe0>` (const Vector3 & vector) const                     |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_c36bf147>` (const Matrix3 & matrix)                          |
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_fe54837b>` (const Matrix3 & matrix)                          |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_c426398d>` (const Matrix4 & matrix)                          |
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_1e23a80b>` (const Matrix4 & matrix)                          |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_ba742159>` (const Quaternion & quaternion)                   |
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator*=<api_AABBox_43a1dbf8>` (const Quaternion & quaternion)                   |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|     :ref:`AABBox<api_AABBox>` & | :ref:`operator=<api_AABBox_0db38792>` (const AABBox & value)                             |
+|     :ref:`AABBox<api_AABBox>` & | :ref:`operator=<api_AABBox_c809716f>` (const AABBox & value)                             |
 +---------------------------------+------------------------------------------------------------------------------------------+
-|                            bool | :ref:`operator==<api_AABBox_f3c26185>` (const AABBox & box) const                        |
+|                            bool | :ref:`operator==<api_AABBox_7efcb601>` (const AABBox & box) const                        |
 +---------------------------------+------------------------------------------------------------------------------------------+
 
 
@@ -77,7 +77,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AABBox_2bd017c3:
+.. _api_AABBox_9c5768da:
 
 **AABBox::AABBox** ()
 
@@ -85,7 +85,7 @@ Constructs an bounding box with center (0, 0, 0) and extent (0.5, 0.5, 0.5).
 
 ----
 
-.. _api_AABBox_4b5f9236:
+.. _api_AABBox_b7196de2:
 
 **AABBox::AABBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
 
@@ -93,7 +93,7 @@ Constructs a bounding box with *center* and extent.
 
 ----
 
-.. _api_AABBox_f07658bc:
+.. _api_AABBox_6f73d219:
 
  void **AABBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
 
@@ -103,7 +103,7 @@ Returns *min* and *max* points of bounding box as output arguments.
 
 ----
 
-.. _api_AABBox_2045e1d3:
+.. _api_AABBox_650c3d98:
 
  void **AABBox::encapsulate** (:ref:`AABBox<api_AABBox>` & *aabb*)
 
@@ -111,7 +111,7 @@ Grow the AABBox to encapsulate the aabb.
 
 ----
 
-.. _api_AABBox_3baec672:
+.. _api_AABBox_b12c5d97:
 
  void **AABBox::encapsulate** (:ref:`Vector3<api_Vector3>` & *position*, areal  *radius* = 0.0f)
 
@@ -119,7 +119,7 @@ Grow the AABBox to encapsulate a spehere with *position* and radius.
 
 ----
 
-.. _api_AABBox_70fd613b:
+.. _api_AABBox_7dcb9316:
 
  bool **AABBox::intersect** (:ref:`Plane<api_Plane>` & *plane*) const
 
@@ -127,7 +127,7 @@ Returns true if this bounding box intersects the given plane; otherwise returns 
 
 ----
 
-.. _api_AABBox_9247d308:
+.. _api_AABBox_451b2a80:
 
  bool **AABBox::intersect** (:ref:`Vector3<api_Vector3>` & *position*, areal  *radius*) const
 
@@ -135,7 +135,7 @@ Returns true if this bounding box intersects the given sphere at *position* and 
 
 ----
 
-.. _api_AABBox_c59037ed:
+.. _api_AABBox_21c0f8b3:
 
  bool **AABBox::isValid** () const
 
@@ -143,7 +143,7 @@ Returns true in case of AABBox is valid; otherwise returns false.
 
 ----
 
-.. _api_AABBox_1bc037d9:
+.. _api_AABBox_3bc695f8:
 
  void **AABBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
 
@@ -153,7 +153,7 @@ Set current bounding box by *min* and *max* points.
 
 ----
 
-.. _api_AABBox_1278930e:
+.. _api_AABBox_3a61fdb5:
 
  void **AABBox::setBox** (:ref:`Vector3<api_Vector3>` * *points*, uint32_t  *number*)
 
@@ -161,7 +161,7 @@ Set curent bounding box by provided array of *points* and *number* of them.
 
 ----
 
-.. _api_AABBox_c31ed9a4:
+.. _api_AABBox_c176b4d0:
 
  bool **AABBox::operator!=** (:ref:`AABBox<api_AABBox>` & *box*) const
 
@@ -169,7 +169,7 @@ Returns true if this bounding *box* is NOT equal to given bounding box; otherwis
 
 ----
 
-.. _api_AABBox_fecd6ba4:
+.. _api_AABBox_710fd83a:
 
 const :ref:`AABBox<api_AABBox>`  **AABBox::operator*** (areal  *factor*) const
 
@@ -177,7 +177,7 @@ Returns a copy of this box, multiplied by the given factor.
 
 ----
 
-.. _api_AABBox_8db01e4a:
+.. _api_AABBox_b2c1a380:
 
 const :ref:`AABBox<api_AABBox>`  **AABBox::operator*** (:ref:`Matrix3<api_Matrix3>` & *matrix*) const
 
@@ -185,7 +185,7 @@ Returns a copy of this box, multiplied by the given rotation matrix.
 
 ----
 
-.. _api_AABBox_582c9de0:
+.. _api_AABBox_48a3fcd6:
 
 const :ref:`AABBox<api_AABBox>`  **AABBox::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
@@ -193,7 +193,7 @@ Returns a copy of this box, multiplied by the given transform matrix.
 
 ----
 
-.. _api_AABBox_172056e3:
+.. _api_AABBox_3f09dc78:
 
 const :ref:`AABBox<api_AABBox>`  **AABBox::operator*** (:ref:`Quaternion<api_Quaternion>` & *quaternion*) const
 
@@ -201,7 +201,7 @@ Returns a copy of this box, multiplied by the given quaternion.
 
 ----
 
-.. _api_AABBox_938421a7:
+.. _api_AABBox_3465fbe0:
 
 const :ref:`AABBox<api_AABBox>`  **AABBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
@@ -209,7 +209,7 @@ Returns a copy of this box, multiplied by the given vector.
 
 ----
 
-.. _api_AABBox_c36bf147:
+.. _api_AABBox_fe54837b:
 
  :ref:`AABBox<api_AABBox>` & **AABBox::operator*=** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
@@ -217,7 +217,7 @@ Multiplies this box by the given rotation matrix, and returns a reference to thi
 
 ----
 
-.. _api_AABBox_c426398d:
+.. _api_AABBox_1e23a80b:
 
  :ref:`AABBox<api_AABBox>` & **AABBox::operator*=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
@@ -225,7 +225,7 @@ Multiplies this box by the given transform matrix, and returns a reference to th
 
 ----
 
-.. _api_AABBox_ba742159:
+.. _api_AABBox_43a1dbf8:
 
  :ref:`AABBox<api_AABBox>` & **AABBox::operator*=** (:ref:`Quaternion<api_Quaternion>` & *quaternion*)
 
@@ -233,7 +233,7 @@ Multiplies this box by the given quaternion, and returns a reference to this AAB
 
 ----
 
-.. _api_AABBox_0db38792:
+.. _api_AABBox_c809716f:
 
  :ref:`AABBox<api_AABBox>` & **AABBox::operator=** (:ref:`AABBox<api_AABBox>` & *value*)
 
@@ -241,7 +241,7 @@ Assignment operator. The *value* will be assigned to this object.
 
 ----
 
-.. _api_AABBox_f3c26185:
+.. _api_AABBox_7efcb601:
 
  bool **AABBox::operator==** (:ref:`AABBox<api_AABBox>` & *box*) const
 

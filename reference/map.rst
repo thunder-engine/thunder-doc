@@ -18,7 +18,7 @@ Public Methods
 --------------
 
 +----------------------------+-----------------------------------------+
-|  :ref:`Scene<api_Scene>` * | :ref:`scene<api_Map_c3b4217f>` () const |
+|  :ref:`Scene<api_Scene>` * | :ref:`scene<api_Map_73e2b68a>` () const |
 +----------------------------+-----------------------------------------+
 
 
@@ -35,7 +35,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Map_c3b4217f:
+.. _api_Map_73e2b68a:
 
  :ref:`Scene<api_Scene>` * **Map::scene** () const
 

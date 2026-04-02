@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +----------------------------------------------+---------------------------------------------------------------------------+
-|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_MeshCollider_b9807e35>` () const                       |
+|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_MeshCollider_6f01953d>` () const                       |
 +----------------------------------------------+---------------------------------------------------------------------------+
-|                      :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshCollider_c4dbf9ae>` () const                           |
+|                      :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshCollider_6013adf4>` () const                           |
 +----------------------------------------------+---------------------------------------------------------------------------+
-|                                         void | :ref:`setMaterial<api_MeshCollider_bd8a3f75>` (PhysicMaterial * material) |
+|                                         void | :ref:`setMaterial<api_MeshCollider_b7f40c8d>` (PhysicMaterial * material) |
 +----------------------------------------------+---------------------------------------------------------------------------+
-|                                         void | :ref:`setMesh<api_MeshCollider_94ce8150>` (Mesh * mesh)                   |
+|                                         void | :ref:`setMesh<api_MeshCollider_a293bd0f>` (Mesh * mesh)                   |
 +----------------------------------------------+---------------------------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_MeshCollider_b9807e35:
+.. _api_MeshCollider_6f01953d:
 
  :ref:`PhysicMaterial<api_PhysicMaterial>` * **MeshCollider::material** () const
 
@@ -53,7 +53,7 @@ Returns a pointer to the physical material associated with the collider.
 
 ----
 
-.. _api_MeshCollider_c4dbf9ae:
+.. _api_MeshCollider_6013adf4:
 
  :ref:`Mesh<api_Mesh>` * **MeshCollider::mesh** () const
 
@@ -63,7 +63,7 @@ Returns a pointer to the mesh used by the collider.
 
 ----
 
-.. _api_MeshCollider_bd8a3f75:
+.. _api_MeshCollider_b7f40c8d:
 
  void **MeshCollider::setMaterial** (:ref:`PhysicMaterial<api_PhysicMaterial>` * *material*)
 
@@ -73,7 +73,7 @@ Sets the physical *material* for the collider. This method updates the friction 
 
 ----
 
-.. _api_MeshCollider_94ce8150:
+.. _api_MeshCollider_a293bd0f:
 
  void **MeshCollider::setMesh** (:ref:`Mesh<api_Mesh>` * *mesh*)
 

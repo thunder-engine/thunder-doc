@@ -22,19 +22,19 @@ Public Methods
 --------------
 
 +------------------------------+------------------------------------------------------------------------+
-|                        float | :ref:`brightness<api_BaseLight_be2d6834>` () const                     |
+|                        float | :ref:`brightness<api_BaseLight_9f35240d>` () const                     |
 +------------------------------+------------------------------------------------------------------------+
-|                         bool | :ref:`castShadows<api_BaseLight_e9058b4d>` () const                    |
+|                         bool | :ref:`castShadows<api_BaseLight_80e13246>` () const                    |
 +------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_45921cbd>` () const                          |
+|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_fd27bc8a>` () const                          |
 +------------------------------+------------------------------------------------------------------------+
-|                          int | :ref:`lightType<api_BaseLight_76d501e9>` () const                      |
+|                          int | :ref:`lightType<api_BaseLight_eb365c48>` () const                      |
 +------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setBrightness<api_BaseLight_1c723dfe>` (const float  brightness) |
+|                         void | :ref:`setBrightness<api_BaseLight_4375069e>` (const float  brightness) |
 +------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setCastShadows<api_BaseLight_0236cb1d>` (const bool  shadows)    |
+|                         void | :ref:`setCastShadows<api_BaseLight_e81ba073>` (const bool  shadows)    |
 +------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setColor<api_BaseLight_ca14675d>` (const Vector4  color)         |
+|                         void | :ref:`setColor<api_BaseLight_be069581>` (const Vector4  color)         |
 +------------------------------+------------------------------------------------------------------------+
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_BaseLight_be2d6834:
+.. _api_BaseLight_9f35240d:
 
  float **BaseLight::brightness** () const
 
@@ -61,7 +61,7 @@ Returns a brightness of emitting light.
 
 ----
 
-.. _api_BaseLight_e9058b4d:
+.. _api_BaseLight_80e13246:
 
  bool **BaseLight::castShadows** () const
 
@@ -71,7 +71,7 @@ Returns true if the light source can cast shadows; otherwise returns false.
 
 ----
 
-.. _api_BaseLight_45921cbd:
+.. _api_BaseLight_fd27bc8a:
 
  :ref:`Vector4<api_Vector4>`  **BaseLight::color** () const
 
@@ -81,7 +81,7 @@ Returns a color of emitting light.
 
 ----
 
-.. _api_BaseLight_76d501e9:
+.. _api_BaseLight_eb365c48:
 
  int **BaseLight::lightType** () const
 
@@ -89,7 +89,7 @@ Return a type of the light. Fot more details refer to BaseLight::LightType
 
 ----
 
-.. _api_BaseLight_1c723dfe:
+.. _api_BaseLight_4375069e:
 
  void **BaseLight::setBrightness** (float  *brightness*)
 
@@ -99,7 +99,7 @@ Changes a *brightness* of emitting light.
 
 ----
 
-.. _api_BaseLight_0236cb1d:
+.. _api_BaseLight_e81ba073:
 
  void **BaseLight::setCastShadows** (bool  *shadows*)
 
@@ -109,7 +109,7 @@ Enables or disables cast *shadows* ability for the light source.
 
 ----
 
-.. _api_BaseLight_ca14675d:
+.. _api_BaseLight_be069581:
 
  void **BaseLight::setColor** (:ref:`Vector4<api_Vector4>`  *color*)
 

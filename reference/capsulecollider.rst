@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------+----------------------------------------------------------------+
-|  float | :ref:`height<api_CapsuleCollider_605781ef>` () const           |
+|  float | :ref:`height<api_CapsuleCollider_c90d7132>` () const           |
 +--------+----------------------------------------------------------------+
-|   void | :ref:`setHeight<api_CapsuleCollider_70f4938e>` (float  height) |
+|   void | :ref:`setHeight<api_CapsuleCollider_ef2509c8>` (float  height) |
 +--------+----------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CapsuleCollider_605781ef:
+.. _api_CapsuleCollider_c90d7132:
 
  float **CapsuleCollider::height** () const
 
@@ -49,7 +49,7 @@ Returns the height of the capsule collider.
 
 ----
 
-.. _api_CapsuleCollider_70f4938e:
+.. _api_CapsuleCollider_ef2509c8:
 
  void **CapsuleCollider::setHeight** (float  *height*)
 

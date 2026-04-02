@@ -18,13 +18,13 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------------------------------+
-|           Object::ObjectList | :ref:`absentInCloned<api_Prefab_f6cd5ae7>` (const Prefab::ConstObjectList & cloned) |
+|           Object::ObjectList | :ref:`absentInCloned<api_Prefab_a721db4f>` (const Prefab::ConstObjectList & cloned) |
 +------------------------------+-------------------------------------------------------------------------------------+
-|    :ref:`Actor<api_Actor>` * | :ref:`actor<api_Prefab_76fe80c1>` () const                                          |
+|    :ref:`Actor<api_Actor>` * | :ref:`actor<api_Prefab_320bcea7>` () const                                          |
 +------------------------------+-------------------------------------------------------------------------------------+
-|                         bool | :ref:`contains<api_Prefab_1c0938ed>` (uint32_t  uuid)                               |
+|                         bool | :ref:`contains<api_Prefab_9a032e14>` (uint32_t  uuid)                               |
 +------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`protoObject<api_Prefab_b641a9c7>` (uint32_t  uuid)                            |
+|  :ref:`Object<api_Object>` * | :ref:`protoObject<api_Prefab_e50d849c>` (uint32_t  uuid)                            |
 +------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Prefab_f6cd5ae7:
+.. _api_Prefab_a721db4f:
 
  Object::ObjectList **Prefab::absentInCloned** (:ref:`Prefab::ConstObjectList<api_Prefab_ConstObjectList>` & *cloned*)
 
@@ -49,7 +49,7 @@ Compares with prefab and returns a list of abset objects in *cloned* list
 
 ----
 
-.. _api_Prefab_76fe80c1:
+.. _api_Prefab_320bcea7:
 
  :ref:`Actor<api_Actor>` * **Prefab::actor** () const
 
@@ -57,7 +57,7 @@ Returns prototype Actor which will should be instanced
 
 ----
 
-.. _api_Prefab_1c0938ed:
+.. _api_Prefab_9a032e14:
 
  bool **Prefab::contains** (uint32_t  *uuid*)
 
@@ -65,7 +65,7 @@ Returns true if prefab contains an object with provided uuid
 
 ----
 
-.. _api_Prefab_b641a9c7:
+.. _api_Prefab_e50d849c:
 
  :ref:`Object<api_Object>` * **Prefab::protoObject** (uint32_t  *uuid*)
 

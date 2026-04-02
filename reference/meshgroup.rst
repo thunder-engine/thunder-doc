@@ -18,13 +18,13 @@ Public Methods
 --------------
 
 +--------------------------+---------------------------------------------------------------+
-|                      int | :ref:`addLod<api_MeshGroup_097f3aec>` (Mesh * lod)            |
+|                      int | :ref:`addLod<api_MeshGroup_b162ed83>` (Mesh * lod)            |
 +--------------------------+---------------------------------------------------------------+
-|  :ref:`Mesh<api_Mesh>` * | :ref:`lod<api_MeshGroup_709c8ed6>` (int  lod)                 |
+|  :ref:`Mesh<api_Mesh>` * | :ref:`lod<api_MeshGroup_70a13fcb>` (int  lod)                 |
 +--------------------------+---------------------------------------------------------------+
-|                      int | :ref:`lodsCount<api_MeshGroup_97a3c1d0>` () const             |
+|                      int | :ref:`lodsCount<api_MeshGroup_25cb179f>` () const             |
 +--------------------------+---------------------------------------------------------------+
-|                     void | :ref:`setLod<api_MeshGroup_cabfe257>` (int  lod, Mesh * data) |
+|                     void | :ref:`setLod<api_MeshGroup_0b3c2157>` (int  lod, Mesh * data) |
 +--------------------------+---------------------------------------------------------------+
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_MeshGroup_097f3aec:
+.. _api_MeshGroup_b162ed83:
 
  int **MeshGroup::addLod** (:ref:`Mesh<api_Mesh>` * *lod*)
 
@@ -49,7 +49,7 @@ Adds the new *lod* data for the MeshGroup. Retuns index of new lod.
 
 ----
 
-.. _api_MeshGroup_709c8ed6:
+.. _api_MeshGroup_70a13fcb:
 
  :ref:`Mesh<api_Mesh>` * **MeshGroup::lod** (int  *lod*)
 
@@ -59,7 +59,7 @@ Returns Mesh for the *lod* index if exists; othewise returns nullptr.
 
 ----
 
-.. _api_MeshGroup_97a3c1d0:
+.. _api_MeshGroup_25cb179f:
 
  int **MeshGroup::lodsCount** () const
 
@@ -67,7 +67,7 @@ Returns the number of Levels Of Details
 
 ----
 
-.. _api_MeshGroup_cabfe257:
+.. _api_MeshGroup_0b3c2157:
 
  void **MeshGroup::setLod** (int  *lod*, :ref:`Mesh<api_Mesh>` * *data*)
 

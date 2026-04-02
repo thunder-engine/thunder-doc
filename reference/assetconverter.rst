@@ -40,21 +40,21 @@ Public Methods
 --------------
 
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`AssetConverter::ReturnCode<api_AssetConverter_ReturnCode>` | :ref:`convertFile<api_AssetConverter_0e89d153>` (AssetConverterSettings * settings)                                                   |
+|  :ref:`AssetConverter::ReturnCode<api_AssetConverter_ReturnCode>` | :ref:`convertFile<api_AssetConverter_fa372b91>` (AssetConverterSettings * settings)                                                   |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                         :ref:`Actor<api_Actor>` * | :ref:`createActor<api_AssetConverter_219ed68a>` (const AssetConverterSettings * settings, const TString & guid) const                 |
+|                                         :ref:`Actor<api_Actor>` * | :ref:`createActor<api_AssetConverter_4a0d6278>` (const AssetConverterSettings * settings, const TString & guid) const                 |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                                              void | :ref:`createFromTemplate<api_AssetConverter_46215f9c>` (const TString & destination)                                                  |
+|                                                              void | :ref:`createFromTemplate<api_AssetConverter_196ba302>` (const TString & destination)                                                  |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|       :ref:`AssetConverterSettings<api_AssetConverterSettings>` * | :ref:`createSettings<api_AssetConverter_84db9c27>` ()                                                                                 |
+|       :ref:`AssetConverterSettings<api_AssetConverterSettings>` * | :ref:`createSettings<api_AssetConverter_b10327cd>` ()                                                                                 |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                                              void | :ref:`init<api_AssetConverter_628e5019>` ()                                                                                           |
+|                                                              void | :ref:`init<api_AssetConverter_43276e0b>` ()                                                                                           |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                                              void | :ref:`renameAsset<api_AssetConverter_6cf3e940>` (AssetConverterSettings * settings, const TString & oldName, const TString & newName) |
+|                                                              void | :ref:`renameAsset<api_AssetConverter_a3d6e207>` (AssetConverterSettings * settings, const TString & oldName, const TString & newName) |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                                        StringList | :ref:`suffixes<api_AssetConverter_9280f5ab>` () const                                                                                 |
+|                                                        StringList | :ref:`suffixes<api_AssetConverter_a7810ebd>` () const                                                                                 |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                       :ref:`TString<api_TString>` | :ref:`templatePath<api_AssetConverter_983bc5a6>` () const                                                                             |
+|                                       :ref:`TString<api_TString>` | :ref:`templatePath<api_AssetConverter_361a5082>` () const                                                                             |
 +-------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_AssetConverter_enums:
@@ -92,7 +92,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AssetConverter_0e89d153:
+.. _api_AssetConverter_fa372b91:
 
  :ref:`AssetConverter::ReturnCode<api_AssetConverter::ReturnCode>`  **AssetConverter::convertFile** (:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*)
 
@@ -100,7 +100,7 @@ Converts a file using the provided settings.
 
 ----
 
-.. _api_AssetConverter_219ed68a:
+.. _api_AssetConverter_4a0d6278:
 
  :ref:`Actor<api_Actor>` * **AssetConverter::createActor** (:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*, :ref:`TString<api_TString>` & *guid*) const
 
@@ -108,7 +108,7 @@ Creates an actor with appropriate component using this asset using *settings* an
 
 ----
 
-.. _api_AssetConverter_46215f9c:
+.. _api_AssetConverter_196ba302:
 
  void **AssetConverter::createFromTemplate** (:ref:`TString<api_TString>` & *destination*)
 
@@ -116,7 +116,7 @@ Creates a new asset file from template and copies it by *destination* path.
 
 ----
 
-.. _api_AssetConverter_84db9c27:
+.. _api_AssetConverter_b10327cd:
 
  :ref:`AssetConverterSettings<api_AssetConverterSettings>` * **AssetConverter::createSettings** ()
 
@@ -124,7 +124,7 @@ Creates a new settings object appropriate for this converter type.
 
 ----
 
-.. _api_AssetConverter_628e5019:
+.. _api_AssetConverter_43276e0b:
 
  void **AssetConverter::init** ()
 
@@ -132,7 +132,7 @@ Initializes the converter. Can be overridden to perform any necessary setup.
 
 ----
 
-.. _api_AssetConverter_6cf3e940:
+.. _api_AssetConverter_a3d6e207:
 
  void **AssetConverter::renameAsset** (:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*, :ref:`TString<api_TString>` & *oldName*, :ref:`TString<api_TString>` & *newName*)
 
@@ -140,7 +140,7 @@ Handles asset renaming to react on asset change the *oldName* to *newName* (e.g.
 
 ----
 
-.. _api_AssetConverter_9280f5ab:
+.. _api_AssetConverter_a7810ebd:
 
  StringList **AssetConverter::suffixes** () const
 
@@ -148,7 +148,7 @@ Returns the list of file suffixes (extensions) this converter supports (e.g., ["
 
 ----
 
-.. _api_AssetConverter_983bc5a6:
+.. _api_AssetConverter_361a5082:
 
  :ref:`TString<api_TString>`  **AssetConverter::templatePath** () const
 

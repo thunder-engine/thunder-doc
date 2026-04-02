@@ -20,31 +20,31 @@ Public Methods
 --------------
 
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`addTransform<api_Layout_70b8f361>` (RectTransform * transform)                |
+|                                       void | :ref:`addTransform<api_Layout_7f1b0ae2>` (RectTransform * transform)                |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                        int | :ref:`count<api_Layout_9b7a26f0>` () const                                          |
+|                                        int | :ref:`count<api_Layout_a6cf412e>` () const                                          |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                        int | :ref:`indexOf<api_Layout_836a9ef4>` (const RectTransform * transform) const         |
+|                                        int | :ref:`indexOf<api_Layout_1bda0f65>` (const RectTransform * transform) const         |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`insertTransform<api_Layout_430618eb>` (int  index, RectTransform * transform) |
+|                                       void | :ref:`insertTransform<api_Layout_ca0734df>` (int  index, RectTransform * transform) |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`invalidate<api_Layout_91be46f8>` ()                                           |
+|                                       void | :ref:`invalidate<api_Layout_6e85b102>` ()                                           |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                        int | :ref:`orientation<api_Layout_0d1526be>` () const                                    |
+|                                        int | :ref:`orientation<api_Layout_c416a930>` () const                                    |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`RectTransform<api_RectTransform>` * | :ref:`rectTransform<api_Layout_1406b5e2>` ()                                        |
+|  :ref:`RectTransform<api_RectTransform>` * | :ref:`rectTransform<api_Layout_bfe59c23>` ()                                        |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`removeTransform<api_Layout_d971c6a3>` (RectTransform * transform)             |
+|                                       void | :ref:`removeTransform<api_Layout_9ead7051>` (RectTransform * transform)             |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`setOrientation<api_Layout_b62a950f>` (int  orientation)                       |
+|                                       void | :ref:`setOrientation<api_Layout_2ab60f41>` (int  orientation)                       |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                       void | :ref:`setSpacing<api_Layout_79631c8d>` (int  spacing)                               |
+|                                       void | :ref:`setSpacing<api_Layout_92a7dc63>` (int  spacing)                               |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                :ref:`Vector2<api_Vector2>` | :ref:`sizeHint<api_Layout_bd4260e3>` ()                                             |
+|                :ref:`Vector2<api_Vector2>` | :ref:`sizeHint<api_Layout_4e13b957>` ()                                             |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|                                        int | :ref:`spacing<api_Layout_249e61f7>` () const                                        |
+|                                        int | :ref:`spacing<api_Layout_3a1fc469>` () const                                        |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`RectTransform<api_RectTransform>` * | :ref:`transformAt<api_Layout_e769dbc4>` (int  index)                                |
+|  :ref:`RectTransform<api_RectTransform>` * | :ref:`transformAt<api_Layout_7d14a6be>` (int  index)                                |
 +--------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -61,7 +61,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Layout_70b8f361:
+.. _api_Layout_7f1b0ae2:
 
  void **Layout::addTransform** (:ref:`RectTransform<api_RectTransform>` * *transform*)
 
@@ -69,7 +69,7 @@ Adds a *transform* to the current layout.
 
 ----
 
-.. _api_Layout_9b7a26f0:
+.. _api_Layout_a6cf412e:
 
  int **Layout::count** () const
 
@@ -77,7 +77,7 @@ Returns number of items in the layout.
 
 ----
 
-.. _api_Layout_836a9ef4:
+.. _api_Layout_1bda0f65:
 
  int **Layout::indexOf** (:ref:`RectTransform<api_RectTransform>` * *transform*) const
 
@@ -85,7 +85,7 @@ Returns the index of the specified transform.
 
 ----
 
-.. _api_Layout_430618eb:
+.. _api_Layout_ca0734df:
 
  void **Layout::insertTransform** (int  *index*, :ref:`RectTransform<api_RectTransform>` * *transform*)
 
@@ -93,7 +93,7 @@ Inserts a *transform* at the specified index. If -1, the layout is appended to t
 
 ----
 
-.. _api_Layout_91be46f8:
+.. _api_Layout_6e85b102:
 
  void **Layout::invalidate** ()
 
@@ -101,7 +101,7 @@ Marks the layout as dirty, indicating that it needs to be recomputed.
 
 ----
 
-.. _api_Layout_0d1526be:
+.. _api_Layout_c416a930:
 
  int **Layout::orientation** () const
 
@@ -111,7 +111,7 @@ Returns the layout orientation (Vertical or Horizontal).
 
 ----
 
-.. _api_Layout_1406b5e2:
+.. _api_Layout_bfe59c23:
 
  :ref:`RectTransform<api_RectTransform>` * **Layout::rectTransform** ()
 
@@ -119,7 +119,7 @@ Returns the parent rect transform of this layout, or nullptr if this layout is n
 
 ----
 
-.. _api_Layout_d971c6a3:
+.. _api_Layout_9ead7051:
 
  void **Layout::removeTransform** (:ref:`RectTransform<api_RectTransform>` * *transform*)
 
@@ -127,7 +127,7 @@ Removes a *transform* from the current layout.
 
 ----
 
-.. _api_Layout_b62a950f:
+.. _api_Layout_2ab60f41:
 
  void **Layout::setOrientation** (int  *orientation*)
 
@@ -137,7 +137,7 @@ Sets the layout orientation.
 
 ----
 
-.. _api_Layout_79631c8d:
+.. _api_Layout_92a7dc63:
 
  void **Layout::setSpacing** (int  *spacing*)
 
@@ -147,7 +147,7 @@ Sets the *spacing* between items in the layout.
 
 ----
 
-.. _api_Layout_bd4260e3:
+.. _api_Layout_4e13b957:
 
  :ref:`Vector2<api_Vector2>`  **Layout::sizeHint** ()
 
@@ -155,7 +155,7 @@ Returns the size hint for the layout.
 
 ----
 
-.. _api_Layout_249e61f7:
+.. _api_Layout_3a1fc469:
 
  int **Layout::spacing** () const
 
@@ -165,7 +165,7 @@ Returns the spacing between items in the layout.
 
 ----
 
-.. _api_Layout_e769dbc4:
+.. _api_Layout_7d14a6be:
 
  :ref:`RectTransform<api_RectTransform>` * **Layout::transformAt** (int  *index*)
 

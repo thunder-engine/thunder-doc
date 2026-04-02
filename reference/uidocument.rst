@@ -18,9 +18,9 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`data<api_UiDocument_0f5b13c8>` () const                  |
+|  :ref:`TString<api_TString>` | :ref:`data<api_UiDocument_7a915e6f>` () const                  |
 +------------------------------+----------------------------------------------------------------+
-|                         void | :ref:`setData<api_UiDocument_14fa79ed>` (const TString & data) |
+|                         void | :ref:`setData<api_UiDocument_f3a0598d>` (const TString & data) |
 +------------------------------+----------------------------------------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_UiDocument_0f5b13c8:
+.. _api_UiDocument_7a915e6f:
 
  :ref:`TString<api_TString>`  **UiDocument::data** () const
 
@@ -47,7 +47,7 @@ Returns content as a string.
 
 ----
 
-.. _api_UiDocument_14fa79ed:
+.. _api_UiDocument_f3a0598d:
 
  void **UiDocument::setData** (:ref:`TString<api_TString>` & *data*)
 

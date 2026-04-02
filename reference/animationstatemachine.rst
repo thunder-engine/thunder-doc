@@ -18,9 +18,9 @@ Public Methods
 --------------
 
 +----------------------------------------------+------------------------------------------------------------------------+
-|  :ref:`AnimationState<api_AnimationState>` * | :ref:`findState<api_AnimationStateMachine_62bc3fde>` (int  hash) const |
+|  :ref:`AnimationState<api_AnimationState>` * | :ref:`findState<api_AnimationStateMachine_8ab27164>` (int  hash) const |
 +----------------------------------------------+------------------------------------------------------------------------+
-|  :ref:`AnimationState<api_AnimationState>` * | :ref:`initialState<api_AnimationStateMachine_590147e6>` () const       |
+|  :ref:`AnimationState<api_AnimationState>` * | :ref:`initialState<api_AnimationStateMachine_e0c1ab72>` () const       |
 +----------------------------------------------+------------------------------------------------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AnimationStateMachine_62bc3fde:
+.. _api_AnimationStateMachine_8ab27164:
 
  :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::findState** (int  *hash*) const
 
@@ -45,7 +45,7 @@ Returns a state for the provided hash.
 
 ----
 
-.. _api_AnimationStateMachine_590147e6:
+.. _api_AnimationStateMachine_e0c1ab72:
 
  :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::initialState** () const
 

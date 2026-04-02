@@ -49,23 +49,23 @@ Public Methods
 --------------
 
 +--------------+--------------------------------------------------------------------------------+
-|         void | :ref:`beginControl<api_EditorTool_aef42906>` ()                                |
+|         void | :ref:`beginControl<api_EditorTool_f4b9e813>` ()                                |
 +--------------+--------------------------------------------------------------------------------+
-|         bool | :ref:`blockSelection<api_EditorTool_9a302cb5>` () const                        |
+|         bool | :ref:`blockSelection<api_EditorTool_0ec3f59a>` () const                        |
 +--------------+--------------------------------------------------------------------------------+
-|         void | :ref:`cancelControl<api_EditorTool_e9a036f8>` ()                               |
+|         void | :ref:`cancelControl<api_EditorTool_90e8d7c3>` ()                               |
 +--------------+--------------------------------------------------------------------------------+
-|  std::string | :ref:`component<api_EditorTool_e109a236>` () const                             |
+|  std::string | :ref:`component<api_EditorTool_5da61042>` () const                             |
 +--------------+--------------------------------------------------------------------------------+
-|         void | :ref:`endControl<api_EditorTool_d4eca016>` ()                                  |
+|         void | :ref:`endControl<api_EditorTool_60ad3912>` ()                                  |
 +--------------+--------------------------------------------------------------------------------+
-|          int | :ref:`panel<api_EditorTool_d16be43f>` ()                                       |
+|          int | :ref:`panel<api_EditorTool_bd1ec230>` ()                                       |
 +--------------+--------------------------------------------------------------------------------+
-|  std::string | :ref:`shortcut<api_EditorTool_f6170349>` () const                              |
+|  std::string | :ref:`shortcut<api_EditorTool_4a78f9b0>` () const                              |
 +--------------+--------------------------------------------------------------------------------+
-|  std::string | :ref:`toolTip<api_EditorTool_4da327f0>` () const                               |
+|  std::string | :ref:`toolTip<api_EditorTool_9460dabc>` () const                               |
 +--------------+--------------------------------------------------------------------------------+
-|         void | :ref:`update<api_EditorTool_d76fb4a3>` (bool  center, bool  local, bool  snap) |
+|         void | :ref:`update<api_EditorTool_9bde2a36>` (bool  center, bool  local, bool  snap) |
 +--------------+--------------------------------------------------------------------------------+
 
 
@@ -82,7 +82,7 @@ None
 Methods Description
 -------------------
 
-.. _api_EditorTool_aef42906:
+.. _api_EditorTool_f4b9e813:
 
  void **EditorTool::beginControl** ()
 
@@ -90,7 +90,7 @@ Called when the tool begins active control. Can be used to store the initial sta
 
 ----
 
-.. _api_EditorTool_9a302cb5:
+.. _api_EditorTool_0ec3f59a:
 
  bool **EditorTool::blockSelection** () const
 
@@ -98,7 +98,7 @@ Determines whether the tool blocks regular selection behavior (default returns f
 
 ----
 
-.. _api_EditorTool_e9a036f8:
+.. _api_EditorTool_90e8d7c3:
 
  void **EditorTool::cancelControl** ()
 
@@ -108,7 +108,7 @@ Cancels the current control operation. Can be used to restore the state of conto
 
 ----
 
-.. _api_EditorTool_e109a236:
+.. _api_EditorTool_5da61042:
 
  std::string **EditorTool::component** () const
 
@@ -116,7 +116,7 @@ Returns the associated component type for the tool (default implementation retur
 
 ----
 
-.. _api_EditorTool_d4eca016:
+.. _api_EditorTool_60ad3912:
 
  void **EditorTool::endControl** ()
 
@@ -124,7 +124,7 @@ Called when the tool ends active control. Can be used to store current operation
 
 ----
 
-.. _api_EditorTool_d16be43f:
+.. _api_EditorTool_bd1ec230:
 
  int **EditorTool::panel** ()
 
@@ -132,7 +132,7 @@ Returns a custom panel widget for tool options (default implementation returns n
 
 ----
 
-.. _api_EditorTool_f6170349:
+.. _api_EditorTool_4a78f9b0:
 
  std::string **EditorTool::shortcut** () const
 
@@ -140,7 +140,7 @@ Returns the keyboard shortcut for the tool (default implementation returns empty
 
 ----
 
-.. _api_EditorTool_4da327f0:
+.. _api_EditorTool_9460dabc:
 
  std::string **EditorTool::toolTip** () const
 
@@ -148,7 +148,7 @@ Returns the tooltip text for the tool (default implementation returns empty stri
 
 ----
 
-.. _api_EditorTool_d76fb4a3:
+.. _api_EditorTool_9bde2a36:
 
  void **EditorTool::update** (bool  *center*, bool  *local*, bool  *snap*)
 

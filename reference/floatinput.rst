@@ -20,43 +20,43 @@ Public Methods
 --------------
 
 +----------------------------------+---------------------------------------------------------------------+
-|      :ref:`Vector4<api_Vector4>` | :ref:`corners<api_FloatInput_8a4bd920>` () const                    |
+|      :ref:`Vector4<api_Vector4>` | :ref:`corners<api_FloatInput_e405c2d9>` () const                    |
 +----------------------------------+---------------------------------------------------------------------+
-|      :ref:`Button<api_Button>` * | :ref:`decreaseButton<api_FloatInput_c1f8a639>` () const             |
+|      :ref:`Button<api_Button>` * | :ref:`decreaseButton<api_FloatInput_409672ed>` () const             |
 +----------------------------------+---------------------------------------------------------------------+
-|      :ref:`Button<api_Button>` * | :ref:`increaseButton<api_FloatInput_652b03ac>` () const             |
+|      :ref:`Button<api_Button>` * | :ref:`increaseButton<api_FloatInput_037f1c5a>` () const             |
 +----------------------------------+---------------------------------------------------------------------+
-|  :ref:`LineEdit<api_LineEdit>` * | :ref:`input<api_FloatInput_20a14de6>` () const                      |
+|  :ref:`LineEdit<api_LineEdit>` * | :ref:`input<api_FloatInput_69723ea1>` () const                      |
 +----------------------------------+---------------------------------------------------------------------+
-|                            float | :ref:`maximum<api_FloatInput_ed865a93>` () const                    |
+|                            float | :ref:`maximum<api_FloatInput_703d52ab>` () const                    |
 +----------------------------------+---------------------------------------------------------------------+
-|                            float | :ref:`minimum<api_FloatInput_e6d83271>` () const                    |
+|                            float | :ref:`minimum<api_FloatInput_89e6c15f>` () const                    |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`onDecrease<api_FloatInput_d45fac37>` ()                       |
+|                             void | :ref:`onDecrease<api_FloatInput_1c96748b>` ()                       |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`onEditingFinished<api_FloatInput_ea4cb980>` ()                |
+|                             void | :ref:`onEditingFinished<api_FloatInput_d075b283>` ()                |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`onIncrease<api_FloatInput_30c865ab>` ()                       |
+|                             void | :ref:`onIncrease<api_FloatInput_2610e539>` ()                       |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setCorners<api_FloatInput_d68fe472>` (Vector4  corners)       |
+|                             void | :ref:`setCorners<api_FloatInput_0324c67a>` (Vector4  corners)       |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setDecreaseButton<api_FloatInput_6708951a>` (Button * button) |
+|                             void | :ref:`setDecreaseButton<api_FloatInput_7fad3809>` (Button * button) |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setIncreaseButton<api_FloatInput_f67cdea8>` (Button * button) |
+|                             void | :ref:`setIncreaseButton<api_FloatInput_78a6be94>` (Button * button) |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setInput<api_FloatInput_fde8b315>` (LineEdit * input)         |
+|                             void | :ref:`setInput<api_FloatInput_5b3fa27d>` (LineEdit * input)         |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setMaximum<api_FloatInput_90c1efd7>` (float  maximum)         |
+|                             void | :ref:`setMaximum<api_FloatInput_836c14e7>` (float  maximum)         |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setMinimum<api_FloatInput_5ba80436>` (float  minimum)         |
+|                             void | :ref:`setMinimum<api_FloatInput_6fcb4379>` (float  minimum)         |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setSingleStep<api_FloatInput_169fa3b4>` (float  step)         |
+|                             void | :ref:`setSingleStep<api_FloatInput_38b41dea>` (float  step)         |
 +----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setValue<api_FloatInput_a79f6e41>` (float  value)             |
+|                             void | :ref:`setValue<api_FloatInput_3b1c2946>` (float  value)             |
 +----------------------------------+---------------------------------------------------------------------+
-|                            float | :ref:`singleStep<api_FloatInput_3216ad0f>` () const                 |
+|                            float | :ref:`singleStep<api_FloatInput_c4f1372e>` () const                 |
 +----------------------------------+---------------------------------------------------------------------+
-|                            float | :ref:`value<api_FloatInput_50a93f46>` () const                      |
+|                            float | :ref:`value<api_FloatInput_abe7d258>` () const                      |
 +----------------------------------+---------------------------------------------------------------------+
 
 
@@ -73,7 +73,7 @@ None
 Methods Description
 -------------------
 
-.. _api_FloatInput_8a4bd920:
+.. _api_FloatInput_e405c2d9:
 
  :ref:`Vector4<api_Vector4>`  **FloatInput::corners** () const
 
@@ -83,7 +83,7 @@ Returns the corners radiuses.
 
 ----
 
-.. _api_FloatInput_c1f8a639:
+.. _api_FloatInput_409672ed:
 
  :ref:`Button<api_Button>` * **FloatInput::decreaseButton** () const
 
@@ -93,7 +93,7 @@ Returns the decrease value button.
 
 ----
 
-.. _api_FloatInput_652b03ac:
+.. _api_FloatInput_037f1c5a:
 
  :ref:`Button<api_Button>` * **FloatInput::increaseButton** () const
 
@@ -103,7 +103,7 @@ Returns the increase value button.
 
 ----
 
-.. _api_FloatInput_20a14de6:
+.. _api_FloatInput_69723ea1:
 
  :ref:`LineEdit<api_LineEdit>` * **FloatInput::input** () const
 
@@ -113,7 +113,7 @@ Returns the input field component.
 
 ----
 
-.. _api_FloatInput_ed865a93:
+.. _api_FloatInput_703d52ab:
 
  float **FloatInput::maximum** () const
 
@@ -123,7 +123,7 @@ Returns the maximum allowed value.
 
 ----
 
-.. _api_FloatInput_e6d83271:
+.. _api_FloatInput_89e6c15f:
 
  float **FloatInput::minimum** () const
 
@@ -133,7 +133,7 @@ Returns the minimum allowed value.
 
 ----
 
-.. _api_FloatInput_d45fac37:
+.. _api_FloatInput_1c96748b:
 
  void **FloatInput::onDecrease** ()
 
@@ -141,7 +141,7 @@ Slot method called when the decrease button is clicked. Decrements the FloatInpu
 
 ----
 
-.. _api_FloatInput_ea4cb980:
+.. _api_FloatInput_d075b283:
 
  void **FloatInput::onEditingFinished** ()
 
@@ -149,7 +149,7 @@ Slot method called when editing of the input text is finished. Updates the Float
 
 ----
 
-.. _api_FloatInput_30c865ab:
+.. _api_FloatInput_2610e539:
 
  void **FloatInput::onIncrease** ()
 
@@ -157,7 +157,7 @@ Slot method called when the increase button is clicked. Increments the FloatInpu
 
 ----
 
-.. _api_FloatInput_d68fe472:
+.. _api_FloatInput_0324c67a:
 
  void **FloatInput::setCorners** (:ref:`Vector4<api_Vector4>`  *corners*)
 
@@ -167,7 +167,7 @@ Sets the *corners* radiuses.
 
 ----
 
-.. _api_FloatInput_6708951a:
+.. _api_FloatInput_7fad3809:
 
  void **FloatInput::setDecreaseButton** (:ref:`Button<api_Button>` * *button*)
 
@@ -177,7 +177,7 @@ Sets the decrease value button.
 
 ----
 
-.. _api_FloatInput_f67cdea8:
+.. _api_FloatInput_78a6be94:
 
  void **FloatInput::setIncreaseButton** (:ref:`Button<api_Button>` * *button*)
 
@@ -187,7 +187,7 @@ Sets the increase value button.
 
 ----
 
-.. _api_FloatInput_fde8b315:
+.. _api_FloatInput_5b3fa27d:
 
  void **FloatInput::setInput** (:ref:`LineEdit<api_LineEdit>` * *input*)
 
@@ -197,7 +197,7 @@ Sets the *input* field component.
 
 ----
 
-.. _api_FloatInput_90c1efd7:
+.. _api_FloatInput_836c14e7:
 
  void **FloatInput::setMaximum** (float  *maximum*)
 
@@ -207,7 +207,7 @@ Sets the *maximum* allowed value.
 
 ----
 
-.. _api_FloatInput_5ba80436:
+.. _api_FloatInput_6fcb4379:
 
  void **FloatInput::setMinimum** (float  *minimum*)
 
@@ -217,7 +217,7 @@ Sets the *minimum* allowed value.
 
 ----
 
-.. _api_FloatInput_169fa3b4:
+.. _api_FloatInput_38b41dea:
 
  void **FloatInput::setSingleStep** (float  *step*)
 
@@ -227,7 +227,7 @@ Sets the single *step* value for incrementing or decrementing the FloatInput val
 
 ----
 
-.. _api_FloatInput_a79f6e41:
+.. _api_FloatInput_3b1c2946:
 
  void **FloatInput::setValue** (float  *value*)
 
@@ -237,7 +237,7 @@ Sets the *value* of the FloatInput within the specified minimum and maximum limi
 
 ----
 
-.. _api_FloatInput_3216ad0f:
+.. _api_FloatInput_c4f1372e:
 
  float **FloatInput::singleStep** () const
 
@@ -247,7 +247,7 @@ Returns the single step value for incrementing or decrementing the FloatInput va
 
 ----
 
-.. _api_FloatInput_50a93f46:
+.. _api_FloatInput_abe7d258:
 
  float **FloatInput::value** () const
 

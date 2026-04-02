@@ -22,39 +22,39 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_7c5a38f9>` () const                                           |
+|    :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_d6b72a08>` () const                                           |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`activeSceneChanged<api_World_fa738590>` ()                                          |
+|                         void | :ref:`activeSceneChanged<api_World_187ef203>` ()                                          |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_70b19f4a>` (const TString & name)                             |
+|    :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_102594ba>` (const TString & name)                             |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`gameController<api_World_a3dbf26c>` () const                                        |
+|  :ref:`Object<api_Object>` * | :ref:`gameController<api_World_4a27893e>` () const                                        |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`graphUpdated<api_World_c26da0b4>` ()                                                |
+|                         void | :ref:`graphUpdated<api_World_2093fce6>` ()                                                |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         bool | :ref:`isToBeUpdated<api_World_b29fcda3>` ()                                               |
+|                         bool | :ref:`isToBeUpdated<api_World_6a587d1c>` ()                                               |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_bd276340>` (const TString & path, bool  additive)               |
+|    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_65dc9187>` (const TString & path, bool  additive)               |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`makeDirty<api_World_42eda835>` ()                                                   |
+|                         void | :ref:`makeDirty<api_World_c341bd07>` ()                                                   |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         bool | :ref:`rayCast<api_World_61eb274d>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)  |
+|                         bool | :ref:`rayCast<api_World_9c04f635>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)  |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`sceneLoaded<api_World_7c182d3b>` ()                                                 |
+|                         void | :ref:`sceneLoaded<api_World_84a63b75>` ()                                                 |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`sceneUnloaded<api_World_5df473c1>` ()                                               |
+|                         void | :ref:`sceneUnloaded<api_World_af890654>` ()                                               |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setActiveScene<api_World_c0fd8a36>` (Scene * scene)                                 |
+|                         void | :ref:`setActiveScene<api_World_e910a8b7>` (Scene * scene)                                 |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setGameController<api_World_ec2a491d>` (Object * controller)                        |
+|                         void | :ref:`setGameController<api_World_f69c3701>` (Object * controller)                        |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setRayCastHandler<api_World_de3140f6>` (RayCastCallback  callback, System * system) |
+|                         void | :ref:`setRayCastHandler<api_World_0ec8fa49>` (RayCastCallback  callback, System * system) |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setToBeUpdated<api_World_185bedfa>` (bool  flag)                                    |
+|                         void | :ref:`setToBeUpdated<api_World_c1f79a80>` (bool  flag)                                    |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`unloadAll<api_World_a6e47253>` ()                                                   |
+|                         void | :ref:`unloadAll<api_World_916c3e8d>` ()                                                   |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`unloadScene<api_World_f9d1a407>` (Scene * scene)                                    |
+|                         void | :ref:`unloadScene<api_World_8ea0c9f4>` (Scene * scene)                                    |
 +------------------------------+-------------------------------------------------------------------------------------------+
 
 
@@ -71,7 +71,7 @@ None
 Methods Description
 -------------------
 
-.. _api_World_7c5a38f9:
+.. _api_World_d6b72a08:
 
  :ref:`Scene<api_Scene>` * **World::activeScene** () const
 
@@ -83,7 +83,7 @@ There must always be one Scene marked as the active at the same time.
 
 ----
 
-.. _api_World_fa738590:
+.. _api_World_187ef203:
 
  void **World::activeSceneChanged** ()
 
@@ -91,7 +91,7 @@ Emmits signal when active scene has been changed.
 
 ----
 
-.. _api_World_70b19f4a:
+.. _api_World_102594ba:
 
  :ref:`Scene<api_Scene>` * **World::createScene** (:ref:`TString<api_TString>` & *name*)
 
@@ -99,7 +99,7 @@ Create an empty new Scene at runtime with the given name.
 
 ----
 
-.. _api_World_a3dbf26c:
+.. _api_World_4a27893e:
 
  :ref:`Object<api_Object>` * **World::gameController** () const
 
@@ -111,7 +111,7 @@ Game controller is abstract object respocible for various gameplay aspects.
 
 ----
 
-.. _api_World_c26da0b4:
+.. _api_World_2093fce6:
 
  void **World::graphUpdated** ()
 
@@ -119,7 +119,7 @@ Emmits signal when graph has been updated.
 
 ----
 
-.. _api_World_b29fcda3:
+.. _api_World_6a587d1c:
 
  bool **World::isToBeUpdated** ()
 
@@ -127,7 +127,7 @@ Returns in case of scene must be updated in the current frame; otherwise returns
 
 ----
 
-.. _api_World_bd276340:
+.. _api_World_65dc9187:
 
  :ref:`Scene<api_Scene>` * **World::loadScene** (:ref:`TString<api_TString>` & *path*, bool  *additive*)
 
@@ -139,7 +139,7 @@ Loads the scene stored in the .map files by the it's path.
 
 ----
 
-.. _api_World_42eda835:
+.. _api_World_c341bd07:
 
  void **World::makeDirty** ()
 
@@ -147,7 +147,7 @@ Marks World as dirty. Mainly used to detect scene graph configuration changes.
 
 ----
 
-.. _api_World_61eb274d:
+.. _api_World_9c04f635:
 
  bool **World::rayCast** (:ref:`Ray<api_Ray>` & *ray*, float  *maxDistance*, :ref:`Ray::Hit<api_Ray_Hit>` * *hit*)
 
@@ -155,7 +155,7 @@ Casts a ray, of length maxDistance, against all colliders in the World. Returns 
 
 ----
 
-.. _api_World_7c182d3b:
+.. _api_World_84a63b75:
 
  void **World::sceneLoaded** ()
 
@@ -163,7 +163,7 @@ Emmits signal when scene has been loaded.
 
 ----
 
-.. _api_World_5df473c1:
+.. _api_World_af890654:
 
  void **World::sceneUnloaded** ()
 
@@ -171,7 +171,7 @@ Emmits signal when scene has been unloaded.
 
 ----
 
-.. _api_World_c0fd8a36:
+.. _api_World_e910a8b7:
 
  void **World::setActiveScene** (:ref:`Scene<api_Scene>` * *scene*)
 
@@ -183,7 +183,7 @@ There must always be one Scene marked as the active at the same time.
 
 ----
 
-.. _api_World_ec2a491d:
+.. _api_World_f69c3701:
 
  void **World::setGameController** (:ref:`Object<api_Object>` * *controller*)
 
@@ -195,7 +195,7 @@ Game *controller* is abstract object respocible for various gameplay aspects.
 
 ----
 
-.. _api_World_de3140f6:
+.. _api_World_0ec8fa49:
 
  void **World::setRayCastHandler** (:ref:`RayCastCallback<api_RayCastCallback>`  *callback*, :ref:`System<api_System>` * *system*)
 
@@ -205,7 +205,7 @@ This function will be used to check intersections with in game geometry. In the 
 
 ----
 
-.. _api_World_185bedfa:
+.. _api_World_c1f79a80:
 
  void **World::setToBeUpdated** (bool  *flag*)
 
@@ -215,7 +215,7 @@ Sets an update flag.
 
 ----
 
-.. _api_World_a6e47253:
+.. _api_World_916c3e8d:
 
  void **World::unloadAll** ()
 
@@ -223,7 +223,7 @@ Unloads all from the World.
 
 ----
 
-.. _api_World_f9d1a407:
+.. _api_World_8ea0c9f4:
 
  void **World::unloadScene** (:ref:`Scene<api_Scene>` * *scene*)
 

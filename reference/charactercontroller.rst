@@ -20,37 +20,37 @@ Public Methods
 --------------
 
 +------------------------------+------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` | :ref:`center<api_CharacterController_f324c5d1>` () const                     |
+|  :ref:`Vector3<api_Vector3>` | :ref:`center<api_CharacterController_c7e869d3>` () const                     |
 +------------------------------+------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` | :ref:`gravity<api_CharacterController_61057ad4>` () const                    |
+|  :ref:`Vector3<api_Vector3>` | :ref:`gravity<api_CharacterController_346795af>` () const                    |
 +------------------------------+------------------------------------------------------------------------------+
-|                        float | :ref:`height<api_CharacterController_2c638b5d>` () const                     |
+|                        float | :ref:`height<api_CharacterController_a43207d9>` () const                     |
 +------------------------------+------------------------------------------------------------------------------+
-|                         bool | :ref:`isGrounded<api_CharacterController_87159a2e>` () const                 |
+|                         bool | :ref:`isGrounded<api_CharacterController_4baf0972>` () const                 |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`move<api_CharacterController_53fae97b>` (const Vector3 & direction)    |
+|                         void | :ref:`move<api_CharacterController_e47328b6>` (const Vector3 & direction)    |
 +------------------------------+------------------------------------------------------------------------------+
-|                        float | :ref:`radius<api_CharacterController_6b01d29c>` () const                     |
+|                        float | :ref:`radius<api_CharacterController_0e6b985f>` () const                     |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setCenter<api_CharacterController_fe98243b>` (const Vector3  center)   |
+|                         void | :ref:`setCenter<api_CharacterController_24d0b351>` (const Vector3  center)   |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setGravity<api_CharacterController_d8c6b0f2>` (const Vector3  gravity) |
+|                         void | :ref:`setGravity<api_CharacterController_ec78f94b>` (const Vector3  gravity) |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setHeight<api_CharacterController_fe372c60>` (float  height)           |
+|                         void | :ref:`setHeight<api_CharacterController_f957b3d1>` (float  height)           |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setRadius<api_CharacterController_a012bef5>` (float  radius)           |
+|                         void | :ref:`setRadius<api_CharacterController_20b6d47c>` (float  radius)           |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setSkinWidth<api_CharacterController_df6e0c8b>` (float  width)         |
+|                         void | :ref:`setSkinWidth<api_CharacterController_b8ea69f4>` (float  width)         |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setSlopeLimit<api_CharacterController_e3648bc7>` (float  limit)        |
+|                         void | :ref:`setSlopeLimit<api_CharacterController_c2d761ae>` (float  limit)        |
 +------------------------------+------------------------------------------------------------------------------+
-|                         void | :ref:`setStepOffset<api_CharacterController_d58f9ba6>` (float  height)       |
+|                         void | :ref:`setStepOffset<api_CharacterController_c70569a3>` (float  height)       |
 +------------------------------+------------------------------------------------------------------------------+
-|                        float | :ref:`skinWidth<api_CharacterController_81e62d5f>` () const                  |
+|                        float | :ref:`skinWidth<api_CharacterController_2ae194f3>` () const                  |
 +------------------------------+------------------------------------------------------------------------------+
-|                        float | :ref:`slopeLimit<api_CharacterController_7aef82d3>` () const                 |
+|                        float | :ref:`slopeLimit<api_CharacterController_62dcfb51>` () const                 |
 +------------------------------+------------------------------------------------------------------------------+
-|                        float | :ref:`stepOffset<api_CharacterController_40f362bd>` () const                 |
+|                        float | :ref:`stepOffset<api_CharacterController_5e17cdb0>` () const                 |
 +------------------------------+------------------------------------------------------------------------------+
 
 
@@ -67,7 +67,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CharacterController_f324c5d1:
+.. _api_CharacterController_c7e869d3:
 
  :ref:`Vector3<api_Vector3>`  **CharacterController::center** () const
 
@@ -77,7 +77,7 @@ Returns the local center of the character controller.
 
 ----
 
-.. _api_CharacterController_61057ad4:
+.. _api_CharacterController_346795af:
 
  :ref:`Vector3<api_Vector3>`  **CharacterController::gravity** () const
 
@@ -87,7 +87,7 @@ Returns the gravity vector applied to the character controller.
 
 ----
 
-.. _api_CharacterController_2c638b5d:
+.. _api_CharacterController_a43207d9:
 
  float **CharacterController::height** () const
 
@@ -97,7 +97,7 @@ Returns the height of the character controller's capsule shape.
 
 ----
 
-.. _api_CharacterController_87159a2e:
+.. _api_CharacterController_4baf0972:
 
  bool **CharacterController::isGrounded** () const
 
@@ -105,7 +105,7 @@ Returns true if the character controller is currently grounded (on the floor); o
 
 ----
 
-.. _api_CharacterController_53fae97b:
+.. _api_CharacterController_e47328b6:
 
  void **CharacterController::move** (:ref:`Vector3<api_Vector3>` & *direction*)
 
@@ -113,7 +113,7 @@ Moves the character controller in the specified direction.
 
 ----
 
-.. _api_CharacterController_6b01d29c:
+.. _api_CharacterController_0e6b985f:
 
  float **CharacterController::radius** () const
 
@@ -123,7 +123,7 @@ Returns the radius of the character controller's capsule shape.
 
 ----
 
-.. _api_CharacterController_fe98243b:
+.. _api_CharacterController_24d0b351:
 
  void **CharacterController::setCenter** (:ref:`Vector3<api_Vector3>`  *center*)
 
@@ -133,7 +133,7 @@ Sets the local *center* of the character controller.
 
 ----
 
-.. _api_CharacterController_d8c6b0f2:
+.. _api_CharacterController_ec78f94b:
 
  void **CharacterController::setGravity** (:ref:`Vector3<api_Vector3>`  *gravity*)
 
@@ -143,7 +143,7 @@ Sets the *gravity* vector applied to the character controller.
 
 ----
 
-.. _api_CharacterController_fe372c60:
+.. _api_CharacterController_f957b3d1:
 
  void **CharacterController::setHeight** (float  *height*)
 
@@ -153,7 +153,7 @@ Sets the *height* of the character controller's capsule shape.
 
 ----
 
-.. _api_CharacterController_a012bef5:
+.. _api_CharacterController_20b6d47c:
 
  void **CharacterController::setRadius** (float  *radius*)
 
@@ -163,7 +163,7 @@ Sets the *radius* of the character controller's capsule shape.
 
 ----
 
-.. _api_CharacterController_df6e0c8b:
+.. _api_CharacterController_b8ea69f4:
 
  void **CharacterController::setSkinWidth** (float  *width*)
 
@@ -173,7 +173,7 @@ Sets the skin *width* of the character controller.
 
 ----
 
-.. _api_CharacterController_e3648bc7:
+.. _api_CharacterController_c2d761ae:
 
  void **CharacterController::setSlopeLimit** (float  *limit*)
 
@@ -183,7 +183,7 @@ Sets the slope *limit* angle for the character controller.
 
 ----
 
-.. _api_CharacterController_d58f9ba6:
+.. _api_CharacterController_c70569a3:
 
  void **CharacterController::setStepOffset** (float  *height*)
 
@@ -193,7 +193,7 @@ Sets the maximum *height* of steps that the character controller can climb.
 
 ----
 
-.. _api_CharacterController_81e62d5f:
+.. _api_CharacterController_2ae194f3:
 
  float **CharacterController::skinWidth** () const
 
@@ -203,7 +203,7 @@ Returns the skin width of the character controller.
 
 ----
 
-.. _api_CharacterController_7aef82d3:
+.. _api_CharacterController_62dcfb51:
 
  float **CharacterController::slopeLimit** () const
 
@@ -213,7 +213,7 @@ Returns the slope limit angle for the character controller.
 
 ----
 
-.. _api_CharacterController_40f362bd:
+.. _api_CharacterController_5e17cdb0:
 
  float **CharacterController::stepOffset** () const
 

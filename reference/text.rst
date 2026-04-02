@@ -18,13 +18,13 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------+
-|                      uint8_t | :ref:`data<api_Text_76bd49fa>` ()                  |
+|                      uint8_t | :ref:`data<api_Text_eab28d4c>` ()                  |
 +------------------------------+----------------------------------------------------+
-|                         void | :ref:`setSize<api_Text_c1b4d5ef>` (uint32_t  size) |
+|                         void | :ref:`setSize<api_Text_31edf9c5>` (uint32_t  size) |
 +------------------------------+----------------------------------------------------+
-|                     uint32_t | :ref:`size<api_Text_b058f7a2>` () const            |
+|                     uint32_t | :ref:`size<api_Text_0cb1a453>` () const            |
 +------------------------------+----------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_Text_56b380fd>` ()                  |
+|  :ref:`TString<api_TString>` | :ref:`text<api_Text_d9ce5834>` ()                  |
 +------------------------------+----------------------------------------------------+
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Text_76bd49fa:
+.. _api_Text_eab28d4c:
 
  uint8_t **Text::data** ()
 
@@ -49,7 +49,7 @@ Returns text content as a raw byte array.
 
 ----
 
-.. _api_Text_c1b4d5ef:
+.. _api_Text_31edf9c5:
 
  void **Text::setSize** (uint32_t  *size*)
 
@@ -59,7 +59,7 @@ Sets the new *size* of the text resource.
 
 ----
 
-.. _api_Text_b058f7a2:
+.. _api_Text_0cb1a453:
 
  uint32_t **Text::size** () const
 
@@ -69,7 +69,7 @@ Returns size of the text resource.
 
 ----
 
-.. _api_Text_56b380fd:
+.. _api_Text_d9ce5834:
 
  :ref:`TString<api_TString>`  **Text::text** ()
 

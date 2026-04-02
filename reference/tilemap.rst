@@ -20,45 +20,45 @@ Public Methods
 --------------
 
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`cellHeight<api_TileMap_a27e406f>` () const               |
+|                            int | :ref:`cellHeight<api_TileMap_8dbafe25>` () const               |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`cellWidth<api_TileMap_6c4b9eda>` () const                |
+|                            int | :ref:`cellWidth<api_TileMap_af351098>` () const                |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`height<api_TileMap_8b39d1fc>` () const                   |
+|                            int | :ref:`height<api_TileMap_ca062153>` () const                   |
 +--------------------------------+----------------------------------------------------------------+
-|                           bool | :ref:`hexOdd<api_TileMap_c014fd78>` () const                   |
+|                           bool | :ref:`hexOdd<api_TileMap_bfa65de8>` () const                   |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`hexSideLength<api_TileMap_ed3fca2b>` () const            |
+|                            int | :ref:`hexSideLength<api_TileMap_1ba4d5f9>` () const            |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`orientation<api_TileMap_b6a49230>` () const              |
+|                            int | :ref:`orientation<api_TileMap_20a176d8>` () const              |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`refreshAllTiles<api_TileMap_ead593c7>` () const          |
+|                           void | :ref:`refreshAllTiles<api_TileMap_64b0e891>` () const          |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setCellHeight<api_TileMap_d364e751>` (int  height)       |
+|                           void | :ref:`setCellHeight<api_TileMap_b3240918>` (int  height)       |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setCellWidth<api_TileMap_2fe7d534>` (int  width)         |
+|                           void | :ref:`setCellWidth<api_TileMap_4b8ce1a5>` (int  width)         |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHeight<api_TileMap_f06729ec>` (int  height)           |
+|                           void | :ref:`setHeight<api_TileMap_9c4f5ed0>` (int  height)           |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHexOdd<api_TileMap_7c5b612a>` (bool  odd)             |
+|                           void | :ref:`setHexOdd<api_TileMap_804a6c3f>` (bool  odd)             |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHexSideLength<api_TileMap_a16850ef>` (int  length)    |
+|                           void | :ref:`setHexSideLength<api_TileMap_5ce693f4>` (int  length)    |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setOrientation<api_TileMap_6219abc7>` (int  orientation) |
+|                           void | :ref:`setOrientation<api_TileMap_57d83ec6>` (int  orientation) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setTile<api_TileMap_b589a3fd>` (int  x, int  y, int  id) |
+|                           void | :ref:`setTile<api_TileMap_820fbd1a>` (int  x, int  y, int  id) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setTileSet<api_TileMap_a94732e8>` (TileSet * set)        |
+|                           void | :ref:`setTileSet<api_TileMap_c1532db4>` (TileSet * set)        |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setWidth<api_TileMap_7f3d068a>` (int  width)             |
+|                           void | :ref:`setWidth<api_TileMap_d9104aec>` (int  width)             |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`tile<api_TileMap_bdc3f105>` (int  x, int  y) const       |
+|                            int | :ref:`tile<api_TileMap_b90af76d>` (int  x, int  y) const       |
 +--------------------------------+----------------------------------------------------------------+
-|        :ref:`Mesh<api_Mesh>` * | :ref:`tileMesh<api_TileMap_fa524710>` () const                 |
+|        :ref:`Mesh<api_Mesh>` * | :ref:`tileMesh<api_TileMap_8d301e96>` () const                 |
 +--------------------------------+----------------------------------------------------------------+
-|  :ref:`TileSet<api_TileSet>` * | :ref:`tileSet<api_TileMap_695ab721>` () const                  |
+|  :ref:`TileSet<api_TileSet>` * | :ref:`tileSet<api_TileMap_b81cda45>` () const                  |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`width<api_TileMap_9856a72c>` () const                    |
+|                            int | :ref:`width<api_TileMap_5bcaf8d3>` () const                    |
 +--------------------------------+----------------------------------------------------------------+
 
 
@@ -75,7 +75,7 @@ None
 Methods Description
 -------------------
 
-.. _api_TileMap_a27e406f:
+.. _api_TileMap_8dbafe25:
 
  int **TileMap::cellHeight** () const
 
@@ -85,7 +85,7 @@ Returns the height of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_6c4b9eda:
+.. _api_TileMap_af351098:
 
  int **TileMap::cellWidth** () const
 
@@ -95,7 +95,7 @@ Returns the width of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_8b39d1fc:
+.. _api_TileMap_ca062153:
 
  int **TileMap::height** () const
 
@@ -105,7 +105,7 @@ Returns the height of the tile map in terms of grid cells.
 
 ----
 
-.. _api_TileMap_c014fd78:
+.. _api_TileMap_bfa65de8:
 
  bool **TileMap::hexOdd** () const
 
@@ -115,7 +115,7 @@ Returns true if the stagger index for hexagonal tiles is set to odd, false other
 
 ----
 
-.. _api_TileMap_ed3fca2b:
+.. _api_TileMap_1ba4d5f9:
 
  int **TileMap::hexSideLength** () const
 
@@ -125,7 +125,7 @@ Returns the side length of hexagonal tiles in pixels.
 
 ----
 
-.. _api_TileMap_b6a49230:
+.. _api_TileMap_20a176d8:
 
  int **TileMap::orientation** () const
 
@@ -135,7 +135,7 @@ Returns the orientation of the tile map. This can be one of the constants define
 
 ----
 
-.. _api_TileMap_ead593c7:
+.. _api_TileMap_64b0e891:
 
  void **TileMap::refreshAllTiles** () const
 
@@ -143,7 +143,7 @@ Refreshes all the tiles in the tile map, updating the tile mesh with the latest 
 
 ----
 
-.. _api_TileMap_d364e751:
+.. _api_TileMap_b3240918:
 
  void **TileMap::setCellHeight** (int  *height*)
 
@@ -153,7 +153,7 @@ Sets the *height* of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_2fe7d534:
+.. _api_TileMap_4b8ce1a5:
 
  void **TileMap::setCellWidth** (int  *width*)
 
@@ -163,7 +163,7 @@ Sets the *width* of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_f06729ec:
+.. _api_TileMap_9c4f5ed0:
 
  void **TileMap::setHeight** (int  *height*)
 
@@ -173,7 +173,7 @@ Sets the *height* of the tile map in grid cells. It resizes the map data accordi
 
 ----
 
-.. _api_TileMap_7c5b612a:
+.. _api_TileMap_804a6c3f:
 
  void **TileMap::setHexOdd** (bool  *odd*)
 
@@ -183,7 +183,7 @@ Sets the stagger index for hexagonal tiles. If *odd* is true, it sets the stagge
 
 ----
 
-.. _api_TileMap_a16850ef:
+.. _api_TileMap_5ce693f4:
 
  void **TileMap::setHexSideLength** (int  *length*)
 
@@ -193,7 +193,7 @@ Sets the side *length* of hexagonal tiles in pixels.
 
 ----
 
-.. _api_TileMap_6219abc7:
+.. _api_TileMap_57d83ec6:
 
  void **TileMap::setOrientation** (int  *orientation*)
 
@@ -203,7 +203,7 @@ Sets the *orientation* of the tile map. This affects how the tiles are positione
 
 ----
 
-.. _api_TileMap_b589a3fd:
+.. _api_TileMap_820fbd1a:
 
  void **TileMap::setTile** (int  *x*, int  *y*, int  *id*)
 
@@ -213,7 +213,7 @@ Sets the tile *id* at the specified grid cell coordinates (x, y).
 
 ----
 
-.. _api_TileMap_a94732e8:
+.. _api_TileMap_c1532db4:
 
  void **TileMap::setTileSet** (:ref:`TileSet<api_TileSet>` * *set*)
 
@@ -223,7 +223,7 @@ Sets the associated tile *set* for this tile map.
 
 ----
 
-.. _api_TileMap_7f3d068a:
+.. _api_TileMap_d9104aec:
 
  void **TileMap::setWidth** (int  *width*)
 
@@ -233,7 +233,7 @@ Sets the *width* of the tile map in grid cells. It resizes the map data accordin
 
 ----
 
-.. _api_TileMap_bdc3f105:
+.. _api_TileMap_b90af76d:
 
  int **TileMap::tile** (int  *x*, int  *y*) const
 
@@ -243,7 +243,7 @@ Returns the tile ID at the specified grid cell coordinates (x, y).
 
 ----
 
-.. _api_TileMap_fa524710:
+.. _api_TileMap_8d301e96:
 
  :ref:`Mesh<api_Mesh>` * **TileMap::tileMesh** () const
 
@@ -251,7 +251,7 @@ Returns a pointer to a mesh representing the tile map's geometry. This mesh is u
 
 ----
 
-.. _api_TileMap_695ab721:
+.. _api_TileMap_b81cda45:
 
  :ref:`TileSet<api_TileSet>` * **TileMap::tileSet** () const
 
@@ -261,7 +261,7 @@ Returns a pointer to the associated TileSet that defines the available tiles for
 
 ----
 
-.. _api_TileMap_9856a72c:
+.. _api_TileMap_5bcaf8d3:
 
  int **TileMap::width** () const
 

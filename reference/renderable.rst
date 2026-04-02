@@ -22,19 +22,19 @@ Public Methods
 --------------
 
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Renderable_de4f9861>` ()                                                   |
+|                        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Renderable_61578f4d>` ()                                                   |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                  :ref:`Material<api_Material>` * | :ref:`material<api_Renderable_6284caeb>` () const                                          |
+|                  :ref:`Material<api_Material>` * | :ref:`material<api_Renderable_61ac453e>` () const                                          |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`materialInstance<api_Renderable_b8ad49f3>` (int  index)                              |
+|  :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`materialInstance<api_Renderable_be8612c7>` (int  index)                              |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                          :ref:`Mesh<api_Mesh>` * | :ref:`meshToDraw<api_Renderable_54c823bf>` (int  instance)                                 |
+|                          :ref:`Mesh<api_Mesh>` * | :ref:`meshToDraw<api_Renderable_ec9b374d>` (int  instance)                                 |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setMaterial<api_Renderable_9e365f78>` (Material * material)                          |
+|                                             void | :ref:`setMaterial<api_Renderable_b8f73c5a>` (Material * material)                          |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setMaterialsList<api_Renderable_231d49e7>` (const std::list<Material *> & materials) |
+|                                             void | :ref:`setMaterialsList<api_Renderable_3ca467e5>` (const std::list<Material *> & materials) |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
-|                                         uint32_t | :ref:`subMesh<api_Renderable_93fb5706>` (int  instance) const                              |
+|                                         uint32_t | :ref:`subMesh<api_Renderable_ceabf951>` (int  instance) const                              |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Renderable_de4f9861:
+.. _api_Renderable_61578f4d:
 
  :ref:`AABBox<api_AABBox>`  **Renderable::bound** ()
 
@@ -59,7 +59,7 @@ Returns a bound box of the renderable object.
 
 ----
 
-.. _api_Renderable_6284caeb:
+.. _api_Renderable_61ac453e:
 
  :ref:`Material<api_Material>` * **Renderable::material** () const
 
@@ -69,7 +69,7 @@ Returns a first instantiated Material assigned to this Renderable.
 
 ----
 
-.. _api_Renderable_b8ad49f3:
+.. _api_Renderable_be8612c7:
 
  :ref:`MaterialInstance<api_MaterialInstance>` * **Renderable::materialInstance** (int  *index*)
 
@@ -77,7 +77,7 @@ Returns a Material instance with *index* assigned to this Renderable.
 
 ----
 
-.. _api_Renderable_54c823bf:
+.. _api_Renderable_ec9b374d:
 
  :ref:`Mesh<api_Mesh>` * **Renderable::meshToDraw** (int  *instance*)
 
@@ -85,7 +85,7 @@ Returns a mesh which will be drawn for the particular material instance.
 
 ----
 
-.. _api_Renderable_9e365f78:
+.. _api_Renderable_b8f73c5a:
 
  void **Renderable::setMaterial** (:ref:`Material<api_Material>` * *material*)
 
@@ -95,7 +95,7 @@ Creates a new instance of *material* and assigns it.
 
 ----
 
-.. _api_Renderable_231d49e7:
+.. _api_Renderable_3ca467e5:
 
  void **Renderable::setMaterialsList** (:ref:`*><api_*>>` & *materials*)
 
@@ -103,7 +103,7 @@ Creates a new instances for the list *materials* and assigns it.
 
 ----
 
-.. _api_Renderable_93fb5706:
+.. _api_Renderable_ceabf951:
 
  uint32_t **Renderable::subMesh** (int  *instance*) const
 

@@ -20,15 +20,15 @@ Public Methods
 --------------
 
 +--------------------------------+----------------------------------------------------------------------+
-|                            int | :ref:`layer<api_TileMapRender_0d2f857e>` () const                    |
+|                            int | :ref:`layer<api_TileMapRender_c2fe675b>` () const                    |
 +--------------------------------+----------------------------------------------------------------------+
-|                           void | :ref:`setLayer<api_TileMapRender_e35d86c0>` (int  layer)             |
+|                           void | :ref:`setLayer<api_TileMapRender_cd4bea75>` (int  layer)             |
 +--------------------------------+----------------------------------------------------------------------+
-|                           void | :ref:`setMaterial<api_TileMapRender_89e43daf>` (Material * material) |
+|                           void | :ref:`setMaterial<api_TileMapRender_3782eca1>` (Material * material) |
 +--------------------------------+----------------------------------------------------------------------+
-|                           void | :ref:`setTileMap<api_TileMapRender_85cef407>` (TileMap * map)        |
+|                           void | :ref:`setTileMap<api_TileMapRender_34708fcd>` (TileMap * map)        |
 +--------------------------------+----------------------------------------------------------------------+
-|  :ref:`TileMap<api_TileMap>` * | :ref:`tileMap<api_TileMapRender_241fcb09>` () const                  |
+|  :ref:`TileMap<api_TileMap>` * | :ref:`tileMap<api_TileMapRender_18294cf5>` () const                  |
 +--------------------------------+----------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_TileMapRender_0d2f857e:
+.. _api_TileMapRender_c2fe675b:
 
  int **TileMapRender::layer** () const
 
@@ -55,7 +55,7 @@ Returns the redering priority for the tile map.
 
 ----
 
-.. _api_TileMapRender_e35d86c0:
+.. _api_TileMapRender_cd4bea75:
 
  void **TileMapRender::setLayer** (int  *layer*)
 
@@ -65,7 +65,7 @@ Sets the redering *layer* for the tile map.
 
 ----
 
-.. _api_TileMapRender_89e43daf:
+.. _api_TileMapRender_3782eca1:
 
  void **TileMapRender::setMaterial** (:ref:`Material<api_Material>` * *material*)
 
@@ -75,7 +75,7 @@ Creates a new instance of *material* and assigns it.
 
 ----
 
-.. _api_TileMapRender_85cef407:
+.. _api_TileMapRender_34708fcd:
 
  void **TileMapRender::setTileMap** (:ref:`TileMap<api_TileMap>` * *map*)
 
@@ -85,7 +85,7 @@ Sets the tile *map* associated with this TileMapRender.
 
 ----
 
-.. _api_TileMapRender_241fcb09:
+.. _api_TileMapRender_18294cf5:
 
  :ref:`TileMap<api_TileMap>` * **TileMapRender::tileMap** () const
 

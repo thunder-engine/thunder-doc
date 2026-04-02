@@ -40,9 +40,9 @@ Public Methods
 --------------
 
 +-------+------------------------------------------------+
-|  void | :ref:`start<api_NativeBehaviour_15fa3749>` ()  |
+|  void | :ref:`start<api_NativeBehaviour_5d4be218>` ()  |
 +-------+------------------------------------------------+
-|  void | :ref:`update<api_NativeBehaviour_63fed987>` () |
+|  void | :ref:`update<api_NativeBehaviour_ec036bfa>` () |
 +-------+------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_NativeBehaviour_15fa3749:
+.. _api_NativeBehaviour_5d4be218:
 
  void **NativeBehaviour::start** ()
 
@@ -67,7 +67,7 @@ Start is called on the same frame when a script is enabled just before the updat
 
 ----
 
-.. _api_NativeBehaviour_63fed987:
+.. _api_NativeBehaviour_ec036bfa:
 
  void **NativeBehaviour::update** ()
 

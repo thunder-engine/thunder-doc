@@ -22,13 +22,13 @@ Public Methods
 --------------
 
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                      float | :ref:`axis<api_PlayerInput_9d5c34a8>` (const TString & name)               |
+|                                      float | :ref:`axis<api_PlayerInput_f253d610>` (const TString & name)               |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                       bool | :ref:`button<api_PlayerInput_cf93eb21>` (const TString & name)             |
+|                                       bool | :ref:`button<api_PlayerInput_fc03ab8d>` (const TString & name)             |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|  :ref:`ControlScheme<api_ControlScheme>` * | :ref:`controlScheme<api_PlayerInput_d91c8f5b>` () const                    |
+|  :ref:`ControlScheme<api_ControlScheme>` * | :ref:`controlScheme<api_PlayerInput_391ec47b>` () const                    |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                       void | :ref:`setControlScheme<api_PlayerInput_970a458c>` (ControlScheme * scheme) |
+|                                       void | :ref:`setControlScheme<api_PlayerInput_028bda36>` (ControlScheme * scheme) |
 +--------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PlayerInput_9d5c34a8:
+.. _api_PlayerInput_f253d610:
 
  float **PlayerInput::axis** (:ref:`TString<api_TString>` & *name*)
 
@@ -53,7 +53,7 @@ Returns the value of the virtual axis identified by name. The value will be in t
 
 ----
 
-.. _api_PlayerInput_cf93eb21:
+.. _api_PlayerInput_fc03ab8d:
 
  bool **PlayerInput::button** (:ref:`TString<api_TString>` & *name*)
 
@@ -61,7 +61,7 @@ Returns true in case of virtual button identified by *name* is pressed; otherwis
 
 ----
 
-.. _api_PlayerInput_d91c8f5b:
+.. _api_PlayerInput_391ec47b:
 
  :ref:`ControlScheme<api_ControlScheme>` * **PlayerInput::controlScheme** () const
 
@@ -71,7 +71,7 @@ Returns the current assigned control scheme.
 
 ----
 
-.. _api_PlayerInput_970a458c:
+.. _api_PlayerInput_028bda36:
 
  void **PlayerInput::setControlScheme** (:ref:`ControlScheme<api_ControlScheme>` * *scheme*)
 

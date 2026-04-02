@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +----------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`Armature<api_Armature>` * | :ref:`armature<api_SkinnedMeshRender_af6024e8>` () const                        |
+|  :ref:`Armature<api_Armature>` * | :ref:`armature<api_SkinnedMeshRender_6e3bc401>` () const                        |
 +----------------------------------+---------------------------------------------------------------------------------+
-|      :ref:`Vector3<api_Vector3>` | :ref:`boundsCenter<api_SkinnedMeshRender_9e46f805>` () const                    |
+|      :ref:`Vector3<api_Vector3>` | :ref:`boundsCenter<api_SkinnedMeshRender_03fc57a8>` () const                    |
 +----------------------------------+---------------------------------------------------------------------------------+
-|      :ref:`Vector3<api_Vector3>` | :ref:`boundsExtent<api_SkinnedMeshRender_059abd36>` () const                    |
+|      :ref:`Vector3<api_Vector3>` | :ref:`boundsExtent<api_SkinnedMeshRender_0c45d3e1>` () const                    |
 +----------------------------------+---------------------------------------------------------------------------------+
-|                             void | :ref:`setArmature<api_SkinnedMeshRender_73194edc>` (Armature * armature)        |
+|                             void | :ref:`setArmature<api_SkinnedMeshRender_2e13da5f>` (Armature * armature)        |
 +----------------------------------+---------------------------------------------------------------------------------+
-|                             void | :ref:`setBoundsCenter<api_SkinnedMeshRender_6a41b7f8>` (const Vector3 & center) |
+|                             void | :ref:`setBoundsCenter<api_SkinnedMeshRender_f71a56b8>` (const Vector3 & center) |
 +----------------------------------+---------------------------------------------------------------------------------+
-|                             void | :ref:`setBoundsExtent<api_SkinnedMeshRender_e8015fbc>` (const Vector3 & extent) |
+|                             void | :ref:`setBoundsExtent<api_SkinnedMeshRender_98fd751c>` (const Vector3 & extent) |
 +----------------------------------+---------------------------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SkinnedMeshRender_af6024e8:
+.. _api_SkinnedMeshRender_6e3bc401:
 
  :ref:`Armature<api_Armature>` * **SkinnedMeshRender::armature** () const
 
@@ -57,7 +57,7 @@ Returns a Armature component for the attached skeleton.
 
 ----
 
-.. _api_SkinnedMeshRender_9e46f805:
+.. _api_SkinnedMeshRender_03fc57a8:
 
  :ref:`Vector3<api_Vector3>`  **SkinnedMeshRender::boundsCenter** () const
 
@@ -67,7 +67,7 @@ Returns the center of the local bounding box.
 
 ----
 
-.. _api_SkinnedMeshRender_059abd36:
+.. _api_SkinnedMeshRender_0c45d3e1:
 
  :ref:`Vector3<api_Vector3>`  **SkinnedMeshRender::boundsExtent** () const
 
@@ -77,7 +77,7 @@ Returns the extent of the local bounding box.
 
 ----
 
-.. _api_SkinnedMeshRender_73194edc:
+.. _api_SkinnedMeshRender_2e13da5f:
 
  void **SkinnedMeshRender::setArmature** (:ref:`Armature<api_Armature>` * *armature*)
 
@@ -87,7 +87,7 @@ Attaches an *armature* skeleton.
 
 ----
 
-.. _api_SkinnedMeshRender_6a41b7f8:
+.. _api_SkinnedMeshRender_f71a56b8:
 
  void **SkinnedMeshRender::setBoundsCenter** (:ref:`Vector3<api_Vector3>` & *center*)
 
@@ -97,7 +97,7 @@ Sets the *center* of the local bounding box.
 
 ----
 
-.. _api_SkinnedMeshRender_e8015fbc:
+.. _api_SkinnedMeshRender_98fd751c:
 
  void **SkinnedMeshRender::setBoundsExtent** (:ref:`Vector3<api_Vector3>` & *extent*)
 

@@ -43,9 +43,9 @@ Static Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------------+
-|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_e850327f>` (const TString & data)                    |
+|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_37ea90f1>` (const TString & data)                    |
 +------------------------------+--------------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`save<api_Json_8a2d6f9c>` (const Variant & data, int32_t  tab = -1) |
+|  :ref:`TString<api_TString>` | :ref:`save<api_Json_f53e6c07>` (const Variant & data, int32_t  tab = -1) |
 +------------------------------+--------------------------------------------------------------------------+
 
 .. _api_Json_methods:
@@ -53,7 +53,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Json_e850327f:
+.. _api_Json_37ea90f1:
 
  :ref:`Variant<api_Variant>`  **Json::load** (:ref:`TString<api_TString>` & *data*)
 
@@ -61,7 +61,7 @@ Returns deserialized string *data* as Variant based DOM structure.
 
 ----
 
-.. _api_Json_8a2d6f9c:
+.. _api_Json_f53e6c07:
 
  :ref:`TString<api_TString>`  **Json::save** (:ref:`Variant<api_Variant>` & *data*, int32_t  *tab* = -1)
 

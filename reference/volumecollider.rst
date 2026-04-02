@@ -20,23 +20,23 @@ Public Methods
 --------------
 
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|          const :ref:`Vector3<api_Vector3>` & | :ref:`center<api_VolumeCollider_b65d824a>` () const                                   |
+|          const :ref:`Vector3<api_Vector3>` & | :ref:`center<api_VolumeCollider_c45bd18a>` () const                                   |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`createCollider<api_VolumeCollider_79eacdf2>` ()                                 |
+|                                         void | :ref:`createCollider<api_VolumeCollider_6d4e8b2c>` ()                                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         bool | :ref:`isDirty<api_VolumeCollider_6de23a98>` () const                                  |
+|                                         bool | :ref:`isDirty<api_VolumeCollider_381247c0>` () const                                  |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_VolumeCollider_162cf5b7>` () const                                 |
+|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_VolumeCollider_485ebf73>` () const                                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`retrieveContact<api_VolumeCollider_3fc052d7>` (const Collider * collider) const |
+|                                         void | :ref:`retrieveContact<api_VolumeCollider_6bc9a12e>` (const Collider * collider) const |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setCenter<api_VolumeCollider_e2a91645>` (const Vector3  center)                 |
+|                                         void | :ref:`setCenter<api_VolumeCollider_f7b41052>` (const Vector3  center)                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setMaterial<api_VolumeCollider_6784d09a>` (PhysicMaterial * material)           |
+|                                         void | :ref:`setMaterial<api_VolumeCollider_98e317fc>` (PhysicMaterial * material)           |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setTrigger<api_VolumeCollider_3c40ed8a>` (bool  trigger)                        |
+|                                         void | :ref:`setTrigger<api_VolumeCollider_3d12f954>` (bool  trigger)                        |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         bool | :ref:`trigger<api_VolumeCollider_76f03cb4>` () const                                  |
+|                                         bool | :ref:`trigger<api_VolumeCollider_f1836ba5>` () const                                  |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
 
 
@@ -53,7 +53,7 @@ None
 Methods Description
 -------------------
 
-.. _api_VolumeCollider_b65d824a:
+.. _api_VolumeCollider_c45bd18a:
 
 const :ref:`Vector3<api_Vector3>` & **VolumeCollider::center** () const
 
@@ -63,7 +63,7 @@ Returns the local center of the volume collider.
 
 ----
 
-.. _api_VolumeCollider_79eacdf2:
+.. _api_VolumeCollider_6d4e8b2c:
 
  void **VolumeCollider::createCollider** ()
 
@@ -73,7 +73,7 @@ Creates the collision object for the volume collider. If the collider is a trigg
 
 ----
 
-.. _api_VolumeCollider_6de23a98:
+.. _api_VolumeCollider_381247c0:
 
  bool **VolumeCollider::isDirty** () const
 
@@ -81,7 +81,7 @@ Returns true if the collider is dirty, false otherwise.
 
 ----
 
-.. _api_VolumeCollider_162cf5b7:
+.. _api_VolumeCollider_485ebf73:
 
  :ref:`PhysicMaterial<api_PhysicMaterial>` * **VolumeCollider::material** () const
 
@@ -91,7 +91,7 @@ Returns the physics material associated with the volume collider.
 
 ----
 
-.. _api_VolumeCollider_3fc052d7:
+.. _api_VolumeCollider_6bc9a12e:
 
  void **VolumeCollider::retrieveContact** (:ref:`Collider<api_Collider>` * *collider*) const
 
@@ -99,7 +99,7 @@ Retrieves contact information with another collider.
 
 ----
 
-.. _api_VolumeCollider_e2a91645:
+.. _api_VolumeCollider_f7b41052:
 
  void **VolumeCollider::setCenter** (:ref:`Vector3<api_Vector3>`  *center*)
 
@@ -109,7 +109,7 @@ Sets the local *center* of the volume collider.
 
 ----
 
-.. _api_VolumeCollider_6784d09a:
+.. _api_VolumeCollider_98e317fc:
 
  void **VolumeCollider::setMaterial** (:ref:`PhysicMaterial<api_PhysicMaterial>` * *material*)
 
@@ -119,7 +119,7 @@ Sets the physics *material* for the volume collider.
 
 ----
 
-.. _api_VolumeCollider_3c40ed8a:
+.. _api_VolumeCollider_3d12f954:
 
  void **VolumeCollider::setTrigger** (bool  *trigger*)
 
@@ -129,7 +129,7 @@ Sets whether the volume collider should function as a trigger.
 
 ----
 
-.. _api_VolumeCollider_76f03cb4:
+.. _api_VolumeCollider_f1836ba5:
 
  bool **VolumeCollider::trigger** () const
 

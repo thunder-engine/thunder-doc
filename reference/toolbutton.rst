@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`hideMenu<api_ToolButton_915ab2dc>` ()           |
+|                     void | :ref:`hideMenu<api_ToolButton_6ef720d9>` ()           |
 +--------------------------+-------------------------------------------------------+
-|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_9ad01873>` () const         |
+|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_684adf97>` () const         |
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`setMenu<api_ToolButton_9f3cd21a>` (Menu * menu) |
+|                     void | :ref:`setMenu<api_ToolButton_75fcb063>` (Menu * menu) |
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`showMenu<api_ToolButton_8cf9073a>` ()           |
+|                     void | :ref:`showMenu<api_ToolButton_d85e206b>` ()           |
 +--------------------------+-------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ToolButton_915ab2dc:
+.. _api_ToolButton_6ef720d9:
 
  void **ToolButton::hideMenu** ()
 
@@ -51,7 +51,7 @@ Hides the associated popup menu.
 
 ----
 
-.. _api_ToolButton_9ad01873:
+.. _api_ToolButton_684adf97:
 
  :ref:`Menu<api_Menu>` * **ToolButton::menu** () const
 
@@ -61,7 +61,7 @@ Returns the associated menu, or nullptr if no menu has been defined.
 
 ----
 
-.. _api_ToolButton_9f3cd21a:
+.. _api_ToolButton_75fcb063:
 
  void **ToolButton::setMenu** (:ref:`Menu<api_Menu>` * *menu*)
 
@@ -71,7 +71,7 @@ Associates the given *menu* with this tool button. Ownership of the *menu* is no
 
 ----
 
-.. _api_ToolButton_8cf9073a:
+.. _api_ToolButton_d85e206b:
 
  void **ToolButton::showMenu** ()
 

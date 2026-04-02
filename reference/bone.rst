@@ -18,23 +18,23 @@ Public Methods
 --------------
 
 +-------------------------------------+-----------------------------------------------------------------+
-|         :ref:`TString<api_TString>` | :ref:`name<api_Bone_afd51439>` () const                         |
+|         :ref:`TString<api_TString>` | :ref:`name<api_Bone_b15cfe2d>` () const                         |
 +-------------------------------------+-----------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`position<api_Bone_d831f092>` () const                     |
+| const :ref:`Vector3<api_Vector3>` & | :ref:`position<api_Bone_5014329e>` () const                     |
 +-------------------------------------+-----------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`rotation<api_Bone_edcb40a6>` () const                     |
+| const :ref:`Vector3<api_Vector3>` & | :ref:`rotation<api_Bone_98d5e247>` () const                     |
 +-------------------------------------+-----------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`scale<api_Bone_afc0b625>` () const                        |
+| const :ref:`Vector3<api_Vector3>` & | :ref:`scale<api_Bone_df2634be>` () const                        |
 +-------------------------------------+-----------------------------------------------------------------+
-|                                void | :ref:`setName<api_Bone_8eb61502>` (const TString & name)        |
+|                                void | :ref:`setName<api_Bone_cf1a74b2>` (const TString & name)        |
 +-------------------------------------+-----------------------------------------------------------------+
-|                                void | :ref:`setPosition<api_Bone_134e0f5b>` (const Vector3  position) |
+|                                void | :ref:`setPosition<api_Bone_0fa39d48>` (const Vector3  position) |
 +-------------------------------------+-----------------------------------------------------------------+
-|                                void | :ref:`setRotation<api_Bone_ac19d368>` (const Vector3  rotation) |
+|                                void | :ref:`setRotation<api_Bone_906475f1>` (const Vector3  rotation) |
 +-------------------------------------+-----------------------------------------------------------------+
-|                                void | :ref:`setScale<api_Bone_8051eabd>` (const Vector3  scale)       |
+|                                void | :ref:`setScale<api_Bone_f73b2059>` (const Vector3  scale)       |
 +-------------------------------------+-----------------------------------------------------------------+
-|                                bool | :ref:`operator==<api_Bone_a27c3e91>` (const Bone & bone) const  |
+|                                bool | :ref:`operator==<api_Bone_17e32b40>` (const Bone & bone) const  |
 +-------------------------------------+-----------------------------------------------------------------+
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Bone_afd51439:
+.. _api_Bone_b15cfe2d:
 
  :ref:`TString<api_TString>`  **Bone::name** () const
 
@@ -61,7 +61,7 @@ Returns the name of the bone.
 
 ----
 
-.. _api_Bone_d831f092:
+.. _api_Bone_5014329e:
 
 const :ref:`Vector3<api_Vector3>` & **Bone::position** () const
 
@@ -71,7 +71,7 @@ Gets the position of the bone.
 
 ----
 
-.. _api_Bone_edcb40a6:
+.. _api_Bone_98d5e247:
 
 const :ref:`Vector3<api_Vector3>` & **Bone::rotation** () const
 
@@ -81,7 +81,7 @@ Gets the rotation of the bone.
 
 ----
 
-.. _api_Bone_afc0b625:
+.. _api_Bone_df2634be:
 
 const :ref:`Vector3<api_Vector3>` & **Bone::scale** () const
 
@@ -91,7 +91,7 @@ Gets the scale of the bone.
 
 ----
 
-.. _api_Bone_8eb61502:
+.. _api_Bone_cf1a74b2:
 
  void **Bone::setName** (:ref:`TString<api_TString>` & *name*)
 
@@ -101,7 +101,7 @@ Sets the *name* of the bone.
 
 ----
 
-.. _api_Bone_134e0f5b:
+.. _api_Bone_0fa39d48:
 
  void **Bone::setPosition** (:ref:`Vector3<api_Vector3>`  *position*)
 
@@ -111,7 +111,7 @@ Sets the *position* of the bone.
 
 ----
 
-.. _api_Bone_ac19d368:
+.. _api_Bone_906475f1:
 
  void **Bone::setRotation** (:ref:`Vector3<api_Vector3>`  *rotation*)
 
@@ -121,7 +121,7 @@ Sets the *rotation* of the bone.
 
 ----
 
-.. _api_Bone_8051eabd:
+.. _api_Bone_f73b2059:
 
  void **Bone::setScale** (:ref:`Vector3<api_Vector3>`  *scale*)
 
@@ -131,7 +131,7 @@ Sets the *scale* of the bone.
 
 ----
 
-.. _api_Bone_a27c3e91:
+.. _api_Bone_17e32b40:
 
  bool **Bone::operator==** (:ref:`Bone<api_Bone>` & *bone*) const
 

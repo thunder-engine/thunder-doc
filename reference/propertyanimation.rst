@@ -32,17 +32,17 @@ Public Methods
 --------------
 
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_c6309174>` () const                              |
+|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_1546ef27>` () const                              |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setCurrentValue<api_PropertyAnimation_f4ac2d98>` (const Variant & value)            |
+|                              void | :ref:`setCurrentValue<api_PropertyAnimation_6c9f1845>` (const Variant & value)            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setTarget<api_PropertyAnimation_e7fd2835>` (Object * object, const char * property) |
+|                              void | :ref:`setTarget<api_PropertyAnimation_d253abc6>` (Object * object, const char * property) |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setValid<api_PropertyAnimation_21ef5c40>` (bool  valid)                             |
+|                              void | :ref:`setValid<api_PropertyAnimation_ac15b97f>` (bool  valid)                             |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_7bf925e8>` () const                                    |
+| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_7fb985c6>` () const                                    |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                        const char | :ref:`targetProperty<api_PropertyAnimation_56f278de>` () const                            |
+|                        const char | :ref:`targetProperty<api_PropertyAnimation_32804169>` () const                            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_c6309174:
+.. _api_PropertyAnimation_1546ef27:
 
  :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
 
@@ -67,7 +67,7 @@ Returns the default value of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_f4ac2d98:
+.. _api_PropertyAnimation_6c9f1845:
 
  void **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -79,7 +79,7 @@ Sets the new current *value* for the animated Variant. And updates animated prop
 
 ----
 
-.. _api_PropertyAnimation_e7fd2835:
+.. _api_PropertyAnimation_d253abc6:
 
  void **PropertyAnimation::setTarget** (:ref:`Object<api_Object>` * *object*, char * *property*)
 
@@ -89,7 +89,7 @@ Sets the new animated *property* of the object.
 
 ----
 
-.. _api_PropertyAnimation_21ef5c40:
+.. _api_PropertyAnimation_ac15b97f:
 
  void **PropertyAnimation::setValid** (bool  *valid*)
 
@@ -101,7 +101,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 ----
 
-.. _api_PropertyAnimation_7bf925e8:
+.. _api_PropertyAnimation_7fb985c6:
 
 const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const
 
@@ -111,7 +111,7 @@ Returns the root object of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_56f278de:
+.. _api_PropertyAnimation_32804169:
 
 const char **PropertyAnimation::targetProperty** () const
 

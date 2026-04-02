@@ -20,27 +20,27 @@ Public Methods
 --------------
 
 +--------------------------------+----------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`border<api_Sprite_0c85914d>` () const                    |
+|    :ref:`Vector4<api_Vector4>` | :ref:`border<api_Sprite_5d30167e>` () const                    |
 +--------------------------------+----------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`bounds<api_Sprite_8fdbc17a>` () const                    |
+|    :ref:`Vector4<api_Vector4>` | :ref:`bounds<api_Sprite_643d10c9>` () const                    |
 +--------------------------------+----------------------------------------------------------------+
-|        :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_Sprite_fec2019a>` () const                      |
+|        :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_Sprite_01f5e49a>` () const                      |
 +--------------------------------+----------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`pivot<api_Sprite_a9653b4e>` () const                     |
+|    :ref:`Vector2<api_Vector2>` | :ref:`pivot<api_Sprite_0e5432f6>` () const                     |
 +--------------------------------+----------------------------------------------------------------+
-|                          float | :ref:`pixelsPerUnit<api_Sprite_f02bd4c7>` () const             |
+|                          float | :ref:`pixelsPerUnit<api_Sprite_0e79dc61>` () const             |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setBorder<api_Sprite_d4f06a7b>` (const Vector4 & border) |
+|                           void | :ref:`setBorder<api_Sprite_e0ba5cd2>` (const Vector4 & border) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setBounds<api_Sprite_d4e7c0ba>` (const Vector4 & bounds) |
+|                           void | :ref:`setBounds<api_Sprite_cd56a91e>` (const Vector4 & bounds) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setPivot<api_Sprite_0ef6a283>` (const Vector2 & pivot)   |
+|                           void | :ref:`setPivot<api_Sprite_cf0a6918>` (const Vector2 & pivot)   |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setPixelsPerUnit<api_Sprite_de7fa12c>` (float  pixels)   |
+|                           void | :ref:`setPixelsPerUnit<api_Sprite_f3be6120>` (float  pixels)   |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setTexture<api_Sprite_930b182c>` (Texture * texture)     |
+|                           void | :ref:`setTexture<api_Sprite_a0831ec2>` (Texture * texture)     |
 +--------------------------------+----------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_Sprite_3d0914fe>` () const                   |
+|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_Sprite_1b376cd5>` () const                   |
 +--------------------------------+----------------------------------------------------------------+
 
 
@@ -57,7 +57,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Sprite_0c85914d:
+.. _api_Sprite_5d30167e:
 
  :ref:`Vector4<api_Vector4>`  **Sprite::border** () const
 
@@ -69,7 +69,7 @@ X=left, Y=bottom, Z=right, W=top.
 
 ----
 
-.. _api_Sprite_8fdbc17a:
+.. _api_Sprite_643d10c9:
 
  :ref:`Vector4<api_Vector4>`  **Sprite::bounds** () const
 
@@ -79,7 +79,7 @@ Returns bounds of the Sprite.
 
 ----
 
-.. _api_Sprite_fec2019a:
+.. _api_Sprite_01f5e49a:
 
  :ref:`Mesh<api_Mesh>` * **Sprite::mesh** () const
 
@@ -87,7 +87,7 @@ Returns a mesh which represents the sprite.
 
 ----
 
-.. _api_Sprite_a9653b4e:
+.. _api_Sprite_0e5432f6:
 
  :ref:`Vector2<api_Vector2>`  **Sprite::pivot** () const
 
@@ -97,7 +97,7 @@ Returns pivot point of the Sprite.
 
 ----
 
-.. _api_Sprite_f02bd4c7:
+.. _api_Sprite_0e79dc61:
 
  float **Sprite::pixelsPerUnit** () const
 
@@ -107,7 +107,7 @@ Returns pixels per unit to create sprite meshes.
 
 ----
 
-.. _api_Sprite_d4f06a7b:
+.. _api_Sprite_e0ba5cd2:
 
  void **Sprite::setBorder** (:ref:`Vector4<api_Vector4>` & *border*)
 
@@ -117,7 +117,7 @@ Sets new *border* sizes for the Sprite.
 
 ----
 
-.. _api_Sprite_d4e7c0ba:
+.. _api_Sprite_cd56a91e:
 
  void **Sprite::setBounds** (:ref:`Vector4<api_Vector4>` & *bounds*)
 
@@ -127,7 +127,7 @@ Sets *bounds* of the Sprite.
 
 ----
 
-.. _api_Sprite_0ef6a283:
+.. _api_Sprite_cf0a6918:
 
  void **Sprite::setPivot** (:ref:`Vector2<api_Vector2>` & *pivot*)
 
@@ -137,7 +137,7 @@ Sets new *pivot* point for the Sprite.
 
 ----
 
-.. _api_Sprite_de7fa12c:
+.. _api_Sprite_f3be6120:
 
  void **Sprite::setPixelsPerUnit** (float  *pixels*)
 
@@ -147,7 +147,7 @@ Sets *pixels* per unit to create sprite meshes.
 
 ----
 
-.. _api_Sprite_930b182c:
+.. _api_Sprite_a0831ec2:
 
  void **Sprite::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
 
@@ -157,7 +157,7 @@ Sets a new sprite texture.
 
 ----
 
-.. _api_Sprite_3d0914fe:
+.. _api_Sprite_1b376cd5:
 
  :ref:`Texture<api_Texture>` * **Sprite::texture** () const
 

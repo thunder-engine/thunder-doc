@@ -20,67 +20,67 @@ Public Methods
 --------------
 
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`absoluteDestination<api_AssetConverterSettings_a1069eb3>` () const                                                 |
+|                                           :ref:`TString<api_TString>` | :ref:`absoluteDestination<api_AssetConverterSettings_045be368>` () const                                                 |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           :ref:`AssetConverter<api_AssetConverter>` * | :ref:`converter<api_AssetConverterSettings_52e3fcd7>` ()                                                                 |
+|                           :ref:`AssetConverter<api_AssetConverter>` * | :ref:`converter<api_AssetConverterSettings_92f1b0a3>` ()                                                                 |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                              uint32_t | :ref:`currentVersion<api_AssetConverterSettings_54d9162f>` () const                                                      |
+|                                                              uint32_t | :ref:`currentVersion<api_AssetConverterSettings_b20d37f9>` () const                                                      |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`defaultIconPath<api_AssetConverterSettings_491b8d0c>` (const TString & type)                                       |
+|                                           :ref:`TString<api_TString>` | :ref:`defaultIconPath<api_AssetConverterSettings_05cf3418>` (const TString & type)                                       |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`destination<api_AssetConverterSettings_3ab2e741>` () const                                                         |
+|                                           :ref:`TString<api_TString>` | :ref:`destination<api_AssetConverterSettings_6b48e90c>` () const                                                         |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`hash<api_AssetConverterSettings_a6415bef>` () const                                                                |
+|                                           :ref:`TString<api_TString>` | :ref:`hash<api_AssetConverterSettings_7d24905b>` () const                                                                |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                   int | :ref:`icon<api_AssetConverterSettings_3b6af72c>` (const TString & uuid)                                                  |
+|                                                                   int | :ref:`icon<api_AssetConverterSettings_7f25a0ec>` (const TString & uuid)                                                  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`isCode<api_AssetConverterSettings_1da73f06>` () const                                                              |
+|                                                                  bool | :ref:`isCode<api_AssetConverterSettings_a2bf1098>` () const                                                              |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`isDir<api_AssetConverterSettings_0b16a832>` () const                                                               |
+|                                                                  bool | :ref:`isDir<api_AssetConverterSettings_acf9d04b>` () const                                                               |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`isModified<api_AssetConverterSettings_0294678a>` () const                                                          |
+|                                                                  bool | :ref:`isModified<api_AssetConverterSettings_cb2f5ae1>` () const                                                          |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`isOutdated<api_AssetConverterSettings_2610a35c>` () const                                                          |
+|                                                                  bool | :ref:`isOutdated<api_AssetConverterSettings_cb1ef52a>` () const                                                          |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`isReadOnly<api_AssetConverterSettings_e1724586>` () const                                                          |
+|                                                                  bool | :ref:`isReadOnly<api_AssetConverterSettings_db897410>` () const                                                          |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  bool | :ref:`loadSettings<api_AssetConverterSettings_f7920d8c>` ()                                                              |
+|                                                                  bool | :ref:`loadSettings<api_AssetConverterSettings_d815f42e>` ()                                                              |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`saveSettings<api_AssetConverterSettings_c8a107d4>` ()                                                              |
+|                                                                  void | :ref:`saveSettings<api_AssetConverterSettings_438156d7>` ()                                                              |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setConverter<api_AssetConverterSettings_c9284a53>` (AssetConverter * converter)                                    |
+|                                                                  void | :ref:`setConverter<api_AssetConverterSettings_e69f8d23>` (AssetConverter * converter)                                    |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setCurrentVersion<api_AssetConverterSettings_97c40236>` (uint32_t  version)                                        |
+|                                                                  void | :ref:`setCurrentVersion<api_AssetConverterSettings_c6a85bf2>` (uint32_t  version)                                        |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setDirectory<api_AssetConverterSettings_cf56de4b>` ()                                                              |
+|                                                                  void | :ref:`setDirectory<api_AssetConverterSettings_ec70946a>` ()                                                              |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setModified<api_AssetConverterSettings_62a4db17>` ()                                                               |
+|                                                                  void | :ref:`setModified<api_AssetConverterSettings_ba6475f8>` ()                                                               |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setSource<api_AssetConverterSettings_23f798ab>` (const TString & source)                                           |
+|                                                                  void | :ref:`setSource<api_AssetConverterSettings_cbf89724>` (const TString & source)                                           |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setSubItem<api_AssetConverterSettings_3e51b206>` (const TString & name, const ResourceSystem::ResourceInfo & info) |
+|                                                                  void | :ref:`setSubItem<api_AssetConverterSettings_1c4382d5>` (const TString & name, const ResourceSystem::ResourceInfo & info) |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setSubItemData<api_AssetConverterSettings_fdc9410a>` (const TString & name, const Variant & data)                  |
+|                                                                  void | :ref:`setSubItemData<api_AssetConverterSettings_5c13dba2>` (const TString & name, const Variant & data)                  |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setSubItemsDirty<api_AssetConverterSettings_a1eb420f>` ()                                                          |
+|                                                                  void | :ref:`setSubItemsDirty<api_AssetConverterSettings_e29daf6c>` ()                                                          |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                                  void | :ref:`setVersion<api_AssetConverterSettings_4a093e16>` (uint32_t  version)                                               |
+|                                                                  void | :ref:`setVersion<api_AssetConverterSettings_62371ecf>` (uint32_t  version)                                               |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`source<api_AssetConverterSettings_7c0f81b3>` () const                                                              |
+|                                           :ref:`TString<api_TString>` | :ref:`source<api_AssetConverterSettings_be74c1a6>` () const                                                              |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`ResourceSystem::ResourceInfo<api_ResourceSystem_ResourceInfo>` | :ref:`subItem<api_AssetConverterSettings_125c87f3>` (const TString & key, bool  create = false) const                    |
+|  :ref:`ResourceSystem::ResourceInfo<api_ResourceSystem_ResourceInfo>` | :ref:`subItem<api_AssetConverterSettings_48a1db6c>` (const TString & key, bool  create = false) const                    |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`Variant<api_Variant>` | :ref:`subItemData<api_AssetConverterSettings_814b3f97>` (const TString & key) const                                      |
+|                                           :ref:`Variant<api_Variant>` | :ref:`subItemData<api_AssetConverterSettings_5e264b98>` (const TString & key) const                                      |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                      const StringList | :ref:`subKeys<api_AssetConverterSettings_2ad9634b>` () const                                                             |
+|                                                      const StringList | :ref:`subKeys<api_AssetConverterSettings_6ed703c5>` () const                                                             |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                              uint32_t | :ref:`type<api_AssetConverterSettings_58e962ad>` () const                                                                |
+|                                                              uint32_t | :ref:`type<api_AssetConverterSettings_892cd037>` () const                                                                |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                           :ref:`TString<api_TString>` | :ref:`typeName<api_AssetConverterSettings_f63ad948>` () const                                                            |
+|                                           :ref:`TString<api_TString>` | :ref:`typeName<api_AssetConverterSettings_9568a3f4>` () const                                                            |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                            StringList | :ref:`typeNames<api_AssetConverterSettings_7df98230>` () const                                                           |
+|                                                            StringList | :ref:`typeNames<api_AssetConverterSettings_42a530e6>` () const                                                           |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                                                              uint32_t | :ref:`version<api_AssetConverterSettings_d193bce5>` () const                                                             |
+|                                                              uint32_t | :ref:`version<api_AssetConverterSettings_27ad86eb>` () const                                                             |
 +-----------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -91,9 +91,9 @@ Static Methods
 --------------
 
 +-------+-------------------------------------------------------------------------------------------------------------+
-|   int | :ref:`documentIcon<api_AssetConverterSettings_153a9f2e>` (const TString & type)                             |
+|   int | :ref:`documentIcon<api_AssetConverterSettings_b5fce743>` (const TString & type)                             |
 +-------+-------------------------------------------------------------------------------------------------------------+
-|  void | :ref:`setDefaultIconPath<api_AssetConverterSettings_284cedfa>` (const TString & type, const TString & path) |
+|  void | :ref:`setDefaultIconPath<api_AssetConverterSettings_2abc9e58>` (const TString & type, const TString & path) |
 +-------+-------------------------------------------------------------------------------------------------------------+
 
 .. _api_AssetConverterSettings_methods:
@@ -101,7 +101,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_AssetConverterSettings_a1069eb3:
+.. _api_AssetConverterSettings_045be368:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::absoluteDestination** () const
 
@@ -109,7 +109,7 @@ Returns the absolute destination file path.
 
 ----
 
-.. _api_AssetConverterSettings_52e3fcd7:
+.. _api_AssetConverterSettings_92f1b0a3:
 
  :ref:`AssetConverter<api_AssetConverter>` * **AssetConverterSettings::converter** ()
 
@@ -119,7 +119,7 @@ Returns assotiated AssetConverter.
 
 ----
 
-.. _api_AssetConverterSettings_54d9162f:
+.. _api_AssetConverterSettings_b20d37f9:
 
  uint32_t **AssetConverterSettings::currentVersion** () const
 
@@ -129,7 +129,7 @@ Returns the current asset format version.
 
 ----
 
-.. _api_AssetConverterSettings_491b8d0c:
+.. _api_AssetConverterSettings_05cf3418:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::defaultIconPath** (:ref:`TString<api_TString>` & *type*)
 
@@ -139,7 +139,7 @@ Returns path to default icon for asset *type* (default returns ":/Style/styles/d
 
 ----
 
-.. _api_AssetConverterSettings_3ab2e741:
+.. _api_AssetConverterSettings_6b48e90c:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::destination** () const
 
@@ -147,7 +147,7 @@ Returns the destination file path (relative).
 
 ----
 
-.. _api_AssetConverterSettings_153a9f2e:
+.. _api_AssetConverterSettings_b5fce743:
 
  int **AssetConverterSettings::documentIcon** (:ref:`TString<api_TString>` & *type*)
 
@@ -155,7 +155,7 @@ Returns icon associated with document type.
 
 ----
 
-.. _api_AssetConverterSettings_a6415bef:
+.. _api_AssetConverterSettings_7d24905b:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::hash** () const
 
@@ -163,7 +163,7 @@ Returns the md5 checksum of the source file (formatted as a GUID-like string).
 
 ----
 
-.. _api_AssetConverterSettings_3b6af72c:
+.. _api_AssetConverterSettings_7f25a0ec:
 
  int **AssetConverterSettings::icon** (:ref:`TString<api_TString>` & *uuid*)
 
@@ -171,7 +171,7 @@ Returns icon assotiatited with current asset uuid.
 
 ----
 
-.. _api_AssetConverterSettings_1da73f06:
+.. _api_AssetConverterSettings_a2bf1098:
 
  bool **AssetConverterSettings::isCode** () const
 
@@ -179,7 +179,7 @@ Returns whether this asset represents code (default returns false).
 
 ----
 
-.. _api_AssetConverterSettings_0b16a832:
+.. _api_AssetConverterSettings_acf9d04b:
 
  bool **AssetConverterSettings::isDir** () const
 
@@ -187,7 +187,7 @@ Returns true if asset represents directory; otherwise returns false.
 
 ----
 
-.. _api_AssetConverterSettings_0294678a:
+.. _api_AssetConverterSettings_cb2f5ae1:
 
  bool **AssetConverterSettings::isModified** () const
 
@@ -195,7 +195,7 @@ Returns true if import setting has been modified; otherwise return false.
 
 ----
 
-.. _api_AssetConverterSettings_2610a35c:
+.. _api_AssetConverterSettings_cb1ef52a:
 
  bool **AssetConverterSettings::isOutdated** () const
 
@@ -203,7 +203,7 @@ Returns true if the asset needs to be reimported; otherwise returns false. This 
 
 ----
 
-.. _api_AssetConverterSettings_e1724586:
+.. _api_AssetConverterSettings_db897410:
 
  bool **AssetConverterSettings::isReadOnly** () const
 
@@ -211,7 +211,7 @@ Returns true if asset cannot be cahnged using any embedded editor; returns true 
 
 ----
 
-.. _api_AssetConverterSettings_f7920d8c:
+.. _api_AssetConverterSettings_d815f42e:
 
  bool **AssetConverterSettings::loadSettings** ()
 
@@ -223,7 +223,7 @@ Returns true if settings was successfully loaded; otherwise returns false.
 
 ----
 
-.. _api_AssetConverterSettings_c8a107d4:
+.. _api_AssetConverterSettings_438156d7:
 
  void **AssetConverterSettings::saveSettings** ()
 
@@ -231,7 +231,7 @@ Saves current import settings to metadata file to ([source].set) file. Serialize
 
 ----
 
-.. _api_AssetConverterSettings_c9284a53:
+.. _api_AssetConverterSettings_e69f8d23:
 
  void **AssetConverterSettings::setConverter** (:ref:`AssetConverter<api_AssetConverter>` * *converter*)
 
@@ -241,7 +241,7 @@ Sets assotiated asset converter.
 
 ----
 
-.. _api_AssetConverterSettings_97c40236:
+.. _api_AssetConverterSettings_c6a85bf2:
 
  void **AssetConverterSettings::setCurrentVersion** (uint32_t  *version*)
 
@@ -251,7 +251,7 @@ Sets the current asset format version.
 
 ----
 
-.. _api_AssetConverterSettings_284cedfa:
+.. _api_AssetConverterSettings_2abc9e58:
 
  void **AssetConverterSettings::setDefaultIconPath** (:ref:`TString<api_TString>` & *type*, :ref:`TString<api_TString>` & *path*)
 
@@ -265,7 +265,7 @@ Adds a new *path* default icon for the asset type.
 
 ----
 
-.. _api_AssetConverterSettings_cf56de4b:
+.. _api_AssetConverterSettings_ec70946a:
 
  void **AssetConverterSettings::setDirectory** ()
 
@@ -273,7 +273,7 @@ Marks the asset as directory.
 
 ----
 
-.. _api_AssetConverterSettings_62a4db17:
+.. _api_AssetConverterSettings_ba6475f8:
 
  void **AssetConverterSettings::setModified** ()
 
@@ -283,7 +283,7 @@ Marks the asset as modified. This allows to user decide to save setting and re-i
 
 ----
 
-.. _api_AssetConverterSettings_23f798ab:
+.. _api_AssetConverterSettings_cbf89724:
 
  void **AssetConverterSettings::setSource** (:ref:`TString<api_TString>` & *source*)
 
@@ -293,7 +293,7 @@ Sets the *source* file path.
 
 ----
 
-.. _api_AssetConverterSettings_3e51b206:
+.. _api_AssetConverterSettings_1c4382d5:
 
  void **AssetConverterSettings::setSubItem** (:ref:`TString<api_TString>` & *name*, :ref:`ResourceSystem::ResourceInfo<api_ResourceSystem_ResourceInfo>` & *info*)
 
@@ -303,7 +303,7 @@ Sets a sub-item with name, info.
 
 ----
 
-.. _api_AssetConverterSettings_fdc9410a:
+.. _api_AssetConverterSettings_5c13dba2:
 
  void **AssetConverterSettings::setSubItemData** (:ref:`TString<api_TString>` & *name*, :ref:`Variant<api_Variant>` & *data*)
 
@@ -313,7 +313,7 @@ Sets additional *data* for a sub-item with given *name* (default does nothing).
 
 ----
 
-.. _api_AssetConverterSettings_a1eb420f:
+.. _api_AssetConverterSettings_e29daf6c:
 
  void **AssetConverterSettings::setSubItemsDirty** ()
 
@@ -321,7 +321,7 @@ Marks all sub-items as dirty (modified).
 
 ----
 
-.. _api_AssetConverterSettings_4a093e16:
+.. _api_AssetConverterSettings_62371ecf:
 
  void **AssetConverterSettings::setVersion** (uint32_t  *version*)
 
@@ -331,7 +331,7 @@ Sets the asset converter asset format version.
 
 ----
 
-.. _api_AssetConverterSettings_7c0f81b3:
+.. _api_AssetConverterSettings_be74c1a6:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::source** () const
 
@@ -341,7 +341,7 @@ Returns the source file path.
 
 ----
 
-.. _api_AssetConverterSettings_125c87f3:
+.. _api_AssetConverterSettings_48a1db6c:
 
  :ref:`ResourceSystem::ResourceInfo<api_ResourceSystem::ResourceInfo>`  **AssetConverterSettings::subItem** (:ref:`TString<api_TString>` & *key*, bool  *create* = false) const
 
@@ -353,7 +353,7 @@ This method retrieves the ResourceInfo associated with the given sub-item key. I
 
 ----
 
-.. _api_AssetConverterSettings_814b3f97:
+.. _api_AssetConverterSettings_5e264b98:
 
  :ref:`Variant<api_Variant>`  **AssetConverterSettings::subItemData** (:ref:`TString<api_TString>` & *key*) const
 
@@ -363,7 +363,7 @@ Returns additional data for a sub-item by it's *key* (default returns empty obje
 
 ----
 
-.. _api_AssetConverterSettings_2ad9634b:
+.. _api_AssetConverterSettings_6ed703c5:
 
 const StringList **AssetConverterSettings::subKeys** () const
 
@@ -371,7 +371,7 @@ Returns list of all sub-item keys.
 
 ----
 
-.. _api_AssetConverterSettings_58e962ad:
+.. _api_AssetConverterSettings_892cd037:
 
  uint32_t **AssetConverterSettings::type** () const
 
@@ -379,7 +379,7 @@ Returns the asset type for conversion for more details see MetaType.
 
 ----
 
-.. _api_AssetConverterSettings_f63ad948:
+.. _api_AssetConverterSettings_9568a3f4:
 
  :ref:`TString<api_TString>`  **AssetConverterSettings::typeName** () const
 
@@ -389,7 +389,7 @@ Returns primary type name (first from typeNames()).
 
 ----
 
-.. _api_AssetConverterSettings_7df98230:
+.. _api_AssetConverterSettings_42a530e6:
 
  StringList **AssetConverterSettings::typeNames** () const
 
@@ -397,7 +397,7 @@ Returns list of type names for this asset (default returns "Invalid" if type is 
 
 ----
 
-.. _api_AssetConverterSettings_d193bce5:
+.. _api_AssetConverterSettings_27ad86eb:
 
  uint32_t **AssetConverterSettings::version** () const
 

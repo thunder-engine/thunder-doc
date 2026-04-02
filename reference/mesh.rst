@@ -18,73 +18,73 @@ Public Methods
 --------------
 
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`batchMesh<api_Mesh_0b2a9ed6>` (Mesh & mesh, const Matrix4 * transform = nullptr) |
+|                             void | :ref:`batchMesh<api_Mesh_0e2437d5>` (Mesh & mesh, const Matrix4 * transform = nullptr) |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector4Vector | :ref:`bones<api_Mesh_cb3a940d>` ()                                                     |
+|                    Vector4Vector | :ref:`bones<api_Mesh_517ec302>` ()                                                     |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Mesh_915d3820>` () const                                               |
+|        :ref:`AABBox<api_AABBox>` | :ref:`bound<api_Mesh_95a630b7>` () const                                               |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`clear<api_Mesh_20731849>` ()                                                     |
+|                             void | :ref:`clear<api_Mesh_01b47ce5>` ()                                                     |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector4Vector | :ref:`colors<api_Mesh_5243db98>` ()                                                    |
+|                    Vector4Vector | :ref:`colors<api_Mesh_870934f5>` ()                                                    |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|  :ref:`Material<api_Material>` * | :ref:`defaultMaterial<api_Mesh_53d924f1>` (int  sub = 0) const                         |
+|  :ref:`Material<api_Material>` * | :ref:`defaultMaterial<api_Mesh_f81ac026>` (int  sub = 0) const                         |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                              int | :ref:`indexCount<api_Mesh_a34ef907>` (int  sub) const                                  |
+|                              int | :ref:`indexCount<api_Mesh_7d4923ba>` (int  sub) const                                  |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                              int | :ref:`indexStart<api_Mesh_013a5f8e>` (int  sub) const                                  |
+|                              int | :ref:`indexStart<api_Mesh_ead5241f>` (int  sub) const                                  |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                      IndexVector | :ref:`indices<api_Mesh_48a9e12d>` ()                                                   |
+|                      IndexVector | :ref:`indices<api_Mesh_859fca70>` ()                                                   |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             bool | :ref:`isDynamic<api_Mesh_c283547d>` () const                                           |
+|                             bool | :ref:`isDynamic<api_Mesh_98c1e3fd>` () const                                           |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             bool | :ref:`isEmpty<api_Mesh_219c853e>` () const                                             |
+|                             bool | :ref:`isEmpty<api_Mesh_f5ac9134>` () const                                             |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`makeDynamic<api_Mesh_fbe20418>` ()                                               |
+|                             void | :ref:`makeDynamic<api_Mesh_0e56b19d>` ()                                               |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector3Vector | :ref:`normals<api_Mesh_0efd13c5>` ()                                                   |
+|                    Vector3Vector | :ref:`normals<api_Mesh_f61742eb>` ()                                                   |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`recalcBounds<api_Mesh_c6b0315a>` ()                                              |
+|                             void | :ref:`recalcBounds<api_Mesh_bafe803c>` ()                                              |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`recalcNormals<api_Mesh_5e470a9b>` ()                                             |
+|                             void | :ref:`recalcNormals<api_Mesh_50139fd4>` ()                                             |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`recalcTangents<api_Mesh_f3d69758>` ()                                            |
+|                             void | :ref:`recalcTangents<api_Mesh_2a8140bf>` ()                                            |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setBones<api_Mesh_ad19b542>` (const Vector4Vector & bones)                       |
+|                             void | :ref:`setBones<api_Mesh_87650c4b>` (const Vector4Vector & bones)                       |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setBound<api_Mesh_b617c853>` (const AABBox & box)                                |
+|                             void | :ref:`setBound<api_Mesh_78b31c62>` (const AABBox & box)                                |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setColors<api_Mesh_e21d3a56>` (const Vector4Vector & colors)                     |
+|                             void | :ref:`setColors<api_Mesh_9ad2368f>` (const Vector4Vector & colors)                     |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setDefaultMaterial<api_Mesh_17eb3c82>` (Material * material, int  sub = 0)       |
+|                             void | :ref:`setDefaultMaterial<api_Mesh_89b7fc5d>` (Material * material, int  sub = 0)       |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setIndices<api_Mesh_2071ac83>` (const IndexVector & indices)                     |
+|                             void | :ref:`setIndices<api_Mesh_ab7610fc>` (const IndexVector & indices)                     |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setNormals<api_Mesh_02c5e6d7>` (const Vector3Vector & normals)                   |
+|                             void | :ref:`setNormals<api_Mesh_38471f50>` (const Vector3Vector & normals)                   |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setSubMesh<api_Mesh_50897462>` (int  offset, int  sub)                           |
+|                             void | :ref:`setSubMesh<api_Mesh_59f03816>` (int  offset, int  sub)                           |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setTangents<api_Mesh_6d9b8402>` (const Vector3Vector & tangents)                 |
+|                             void | :ref:`setTangents<api_Mesh_6ed0c7f3>` (const Vector3Vector & tangents)                 |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setUv0<api_Mesh_b9e723a4>` (const Vector2Vector & uv0)                           |
+|                             void | :ref:`setUv0<api_Mesh_840526e3>` (const Vector2Vector & uv0)                           |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setUv1<api_Mesh_2b70ec49>` (const Vector2Vector & uv1)                           |
+|                             void | :ref:`setUv1<api_Mesh_0b17826f>` (const Vector2Vector & uv1)                           |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setVertices<api_Mesh_284edf95>` (const Vector3Vector & vertices)                 |
+|                             void | :ref:`setVertices<api_Mesh_3d24feb6>` (const Vector3Vector & vertices)                 |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                             void | :ref:`setWeights<api_Mesh_854a2b01>` (const Vector4Vector & weights)                   |
+|                             void | :ref:`setWeights<api_Mesh_1cb7a308>` (const Vector4Vector & weights)                   |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                              int | :ref:`subMeshCount<api_Mesh_1735a2d8>` () const                                        |
+|                              int | :ref:`subMeshCount<api_Mesh_0f4d32a9>` () const                                        |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector3Vector | :ref:`tangents<api_Mesh_08a356d1>` ()                                                  |
+|                    Vector3Vector | :ref:`tangents<api_Mesh_a67b3f5d>` ()                                                  |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector2Vector | :ref:`uv0<api_Mesh_035c4719>` ()                                                       |
+|                    Vector2Vector | :ref:`uv0<api_Mesh_2e436057>` ()                                                       |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector2Vector | :ref:`uv1<api_Mesh_6a03b875>` ()                                                       |
+|                    Vector2Vector | :ref:`uv1<api_Mesh_65b41f2c>` ()                                                       |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector3Vector | :ref:`vertices<api_Mesh_8645e10f>` ()                                                  |
+|                    Vector3Vector | :ref:`vertices<api_Mesh_0c8adeb2>` ()                                                  |
 +----------------------------------+----------------------------------------------------------------------------------------+
-|                    Vector4Vector | :ref:`weights<api_Mesh_e10fb548>` ()                                                   |
+|                    Vector4Vector | :ref:`weights<api_Mesh_8eca2456>` ()                                                   |
 +----------------------------------+----------------------------------------------------------------------------------------+
 
 
@@ -101,7 +101,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Mesh_0b2a9ed6:
+.. _api_Mesh_0e2437d5:
 
  void **Mesh::batchMesh** (:ref:`Mesh<api_Mesh>` & *mesh*, :ref:`Matrix4<api_Matrix4>` * *transform* = nullptr)
 
@@ -109,7 +109,7 @@ Merges current with provided mesh. In the case of the transform, the matrix is n
 
 ----
 
-.. _api_Mesh_cb3a940d:
+.. _api_Mesh_517ec302:
 
  Vector4Vector **Mesh::bones** ()
 
@@ -119,7 +119,7 @@ Returns an array of bones for vertices for the particular Lod.
 
 ----
 
-.. _api_Mesh_915d3820:
+.. _api_Mesh_95a630b7:
 
  :ref:`AABBox<api_AABBox>`  **Mesh::bound** () const
 
@@ -129,7 +129,7 @@ Returns bounding box for the Mesh.
 
 ----
 
-.. _api_Mesh_20731849:
+.. _api_Mesh_01b47ce5:
 
  void **Mesh::clear** ()
 
@@ -137,7 +137,7 @@ Removes all mesh data.
 
 ----
 
-.. _api_Mesh_5243db98:
+.. _api_Mesh_870934f5:
 
  Vector4Vector **Mesh::colors** ()
 
@@ -147,7 +147,7 @@ Returns an array of colors for vertices for the particular Mesh.
 
 ----
 
-.. _api_Mesh_53d924f1:
+.. _api_Mesh_f81ac026:
 
  :ref:`Material<api_Material>` * **Mesh::defaultMaterial** (int  *sub* = 0) const
 
@@ -157,7 +157,7 @@ Returns a default material for the *sub* mesh.
 
 ----
 
-.. _api_Mesh_a34ef907:
+.. _api_Mesh_7d4923ba:
 
  int **Mesh::indexCount** (int  *sub*) const
 
@@ -165,7 +165,7 @@ Returns index count for the *sub* mesh.
 
 ----
 
-.. _api_Mesh_013a5f8e:
+.. _api_Mesh_ead5241f:
 
  int **Mesh::indexStart** (int  *sub*) const
 
@@ -173,7 +173,7 @@ Returns starting point index for the *sub* mesh.
 
 ----
 
-.. _api_Mesh_48a9e12d:
+.. _api_Mesh_859fca70:
 
  IndexVector **Mesh::indices** ()
 
@@ -183,7 +183,7 @@ Returns an array of mesh indices for the particular Mesh.
 
 ----
 
-.. _api_Mesh_c283547d:
+.. _api_Mesh_98c1e3fd:
 
  bool **Mesh::isDynamic** () const
 
@@ -191,7 +191,7 @@ Returns true in case of mesh can by changed at the runtime; otherwise returns fa
 
 ----
 
-.. _api_Mesh_219c853e:
+.. _api_Mesh_f5ac9134:
 
  bool **Mesh::isEmpty** () const
 
@@ -199,7 +199,7 @@ Returns false if mesh structure is empty; otherwise returns true.
 
 ----
 
-.. _api_Mesh_fbe20418:
+.. _api_Mesh_0e56b19d:
 
  void **Mesh::makeDynamic** ()
 
@@ -207,7 +207,7 @@ Marks mesh as dynamic that means it's can be changed at the runtime.
 
 ----
 
-.. _api_Mesh_0efd13c5:
+.. _api_Mesh_f61742eb:
 
  Vector3Vector **Mesh::normals** ()
 
@@ -217,7 +217,7 @@ Returns an array of mesh normals for the particular Lod.
 
 ----
 
-.. _api_Mesh_c6b0315a:
+.. _api_Mesh_bafe803c:
 
  void **Mesh::recalcBounds** ()
 
@@ -225,7 +225,7 @@ Generates bound box according new geometry.
 
 ----
 
-.. _api_Mesh_5e470a9b:
+.. _api_Mesh_50139fd4:
 
  void **Mesh::recalcNormals** ()
 
@@ -233,7 +233,7 @@ Recalculates normals of the Mesh from the triangles and vertices.
 
 ----
 
-.. _api_Mesh_f3d69758:
+.. _api_Mesh_2a8140bf:
 
  void **Mesh::recalcTangents** ()
 
@@ -241,7 +241,7 @@ Recalculates tangents of the Mesh from the triangles and UV's.
 
 ----
 
-.. _api_Mesh_ad19b542:
+.. _api_Mesh_87650c4b:
 
  void **Mesh::setBones** (Vector4Vector & *bones*)
 
@@ -251,7 +251,7 @@ Sets an array of *bones* for vertices for the particular Lod.
 
 ----
 
-.. _api_Mesh_b617c853:
+.. _api_Mesh_78b31c62:
 
  void **Mesh::setBound** (:ref:`AABBox<api_AABBox>` & *box*)
 
@@ -261,7 +261,7 @@ Sets new bounding *box* for the Mesh.
 
 ----
 
-.. _api_Mesh_e21d3a56:
+.. _api_Mesh_9ad2368f:
 
  void **Mesh::setColors** (Vector4Vector & *colors*)
 
@@ -271,7 +271,7 @@ Sets an array of *colors* for vertices for the particular Mesh.
 
 ----
 
-.. _api_Mesh_17eb3c82:
+.. _api_Mesh_89b7fc5d:
 
  void **Mesh::setDefaultMaterial** (:ref:`Material<api_Material>` * *material*, int  *sub* = 0)
 
@@ -281,7 +281,7 @@ Sets a default *material* for the *sub* mesh.
 
 ----
 
-.. _api_Mesh_2071ac83:
+.. _api_Mesh_ab7610fc:
 
  void **Mesh::setIndices** (IndexVector & *indices*)
 
@@ -291,7 +291,7 @@ Sets an array of mesh *indices* for the particular Mesh.
 
 ----
 
-.. _api_Mesh_02c5e6d7:
+.. _api_Mesh_38471f50:
 
  void **Mesh::setNormals** (Vector3Vector & *normals*)
 
@@ -301,7 +301,7 @@ Sets an array of mesh *normals* for the particular Lod.
 
 ----
 
-.. _api_Mesh_50897462:
+.. _api_Mesh_59f03816:
 
  void **Mesh::setSubMesh** (int  *offset*, int  *sub*)
 
@@ -309,7 +309,7 @@ Sets a base vertex *offset* for the *sub* mesh.
 
 ----
 
-.. _api_Mesh_6d9b8402:
+.. _api_Mesh_6ed0c7f3:
 
  void **Mesh::setTangents** (Vector3Vector & *tangents*)
 
@@ -319,7 +319,7 @@ Sets an array of mesh *tangents* for the particular Lod.
 
 ----
 
-.. _api_Mesh_b9e723a4:
+.. _api_Mesh_840526e3:
 
  void **Mesh::setUv0** (Vector2Vector & *uv0*)
 
@@ -329,7 +329,7 @@ Sets an array of mesh *uv0* (base) texture coordinates for the particular Lod.
 
 ----
 
-.. _api_Mesh_2b70ec49:
+.. _api_Mesh_0b17826f:
 
  void **Mesh::setUv1** (Vector2Vector & *uv1*)
 
@@ -339,7 +339,7 @@ Sets an array of mesh *uv1* texture coordinates for the particular Lod.
 
 ----
 
-.. _api_Mesh_284edf95:
+.. _api_Mesh_3d24feb6:
 
  void **Mesh::setVertices** (Vector3Vector & *vertices*)
 
@@ -349,7 +349,7 @@ Sets an array of mesh *vertices* for the particular Lod.
 
 ----
 
-.. _api_Mesh_854a2b01:
+.. _api_Mesh_1cb7a308:
 
  void **Mesh::setWeights** (Vector4Vector & *weights*)
 
@@ -359,7 +359,7 @@ Sets an array of bone *weights* for the particular Lod.
 
 ----
 
-.. _api_Mesh_1735a2d8:
+.. _api_Mesh_0f4d32a9:
 
  int **Mesh::subMeshCount** () const
 
@@ -367,7 +367,7 @@ Returns the number of sub-meshes inside the Mesh.
 
 ----
 
-.. _api_Mesh_08a356d1:
+.. _api_Mesh_a67b3f5d:
 
  Vector3Vector **Mesh::tangents** ()
 
@@ -377,7 +377,7 @@ Returns an array of mesh tangents for the particular Lod.
 
 ----
 
-.. _api_Mesh_035c4719:
+.. _api_Mesh_2e436057:
 
  Vector2Vector **Mesh::uv0** ()
 
@@ -387,7 +387,7 @@ Returns an array of mesh uv0 (base) texture coordinates for the particular Lod.
 
 ----
 
-.. _api_Mesh_6a03b875:
+.. _api_Mesh_65b41f2c:
 
  Vector2Vector **Mesh::uv1** ()
 
@@ -397,7 +397,7 @@ Returns an array of mesh uv1 texture coordinates for the particular Lod.
 
 ----
 
-.. _api_Mesh_8645e10f:
+.. _api_Mesh_0c8adeb2:
 
  Vector3Vector **Mesh::vertices** ()
 
@@ -407,7 +407,7 @@ Returns an array of mesh vertices for the particular Lod.
 
 ----
 
-.. _api_Mesh_e10fb548:
+.. _api_Mesh_8eca2456:
 
  Vector4Vector **Mesh::weights** ()
 

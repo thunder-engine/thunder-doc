@@ -20,19 +20,19 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                              | :ref:`ObjectSystem<api_ObjectSystem_7f95304e>` ()                                                                    |
+|                              | :ref:`ObjectSystem<api_ObjectSystem_450b6d2c>` ()                                                                    |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                              | :ref:`~ObjectSystem<api_ObjectSystem_10b486ef>` ()                                                                   |
+|                              | :ref:`~ObjectSystem<api_ObjectSystem_35098ec4>` ()                                                                   |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`addObject<api_ObjectSystem_750fdcb3>` (Object * object)                                                        |
+|                         void | :ref:`addObject<api_ObjectSystem_81ad67f5>` (Object * object)                                                        |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                         bool | :ref:`compareTreads<api_ObjectSystem_487293af>` (ObjectSystem * system) const                                        |
+|                         bool | :ref:`compareTreads<api_ObjectSystem_c6b432f5>` (ObjectSystem * system) const                                        |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|           Object::ObjectList | :ref:`getAllObjectsByType<api_ObjectSystem_6cbe8510>` (const TString & type) const                                   |
+|           Object::ObjectList | :ref:`getAllObjectsByType<api_ObjectSystem_fb75ec84>` (const TString & type) const                                   |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`instantiateObject<api_ObjectSystem_67403215>` (const MetaObject * meta, const TString & name, Object * parent) |
+|  :ref:`Object<api_Object>` * | :ref:`instantiateObject<api_ObjectSystem_e395fa71>` (const MetaObject * meta, const TString & name, Object * parent) |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`processEvents<api_ObjectSystem_d4e76b95>` ()                                                                   |
+|                         void | :ref:`processEvents<api_ObjectSystem_bf6c0a5e>` ()                                                                   |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 
@@ -43,27 +43,27 @@ Static Methods
 --------------
 
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`blockObjectCache<api_ObjectSystem_a872150d>` (bool  flag)                                                                                     |
+|                         void | :ref:`blockObjectCache<api_ObjectSystem_1eaf0398>` (bool  flag)                                                                                     |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|       ObjectSystem::GroupMap | :ref:`factories<api_ObjectSystem_e72138b5>` ()                                                                                                      |
+|       ObjectSystem::GroupMap | :ref:`factories<api_ObjectSystem_5db64032>` ()                                                                                                      |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`findObject<api_ObjectSystem_b0d86f1c>` (uint32_t  uuid)                                                                                       |
+|  :ref:`Object<api_Object>` * | :ref:`findObject<api_ObjectSystem_bd18f234>` (uint32_t  uuid)                                                                                       |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`findRoot<api_ObjectSystem_186d9f20>` (Object * object)                                                                                        |
+|  :ref:`Object<api_Object>` * | :ref:`findRoot<api_ObjectSystem_a910d3f2>` (Object * object)                                                                                        |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|                     uint32_t | :ref:`generateUUID<api_ObjectSystem_be08756a>` ()                                                                                                   |
+|                     uint32_t | :ref:`generateUUID<api_ObjectSystem_c5e1b43d>` ()                                                                                                   |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|    ObjectSystem::FactoryPair | :ref:`metaFactory<api_ObjectSystem_f37a5be6>` (const TString & url)                                                                                 |
+|    ObjectSystem::FactoryPair | :ref:`metaFactory<api_ObjectSystem_f9c0ae36>` (const TString & url)                                                                                 |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`objectCreate<api_ObjectSystem_9fe3c854>` (const TString & url, const TString & name = TString(), Object * parent = nullptr, uint32_t  id = 0) |
+|  :ref:`Object<api_Object>` * | :ref:`objectCreate<api_ObjectSystem_dea61359>` (const TString & url, const TString & name = TString(), Object * parent = nullptr, uint32_t  id = 0) |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`replaceClonedUUID<api_ObjectSystem_f134eb82>` (Object * object, uint32_t  uuid)                                                               |
+|                         void | :ref:`replaceClonedUUID<api_ObjectSystem_8fb76ca1>` (Object * object, uint32_t  uuid)                                                               |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`replaceUUID<api_ObjectSystem_0c3b5281>` (Object * object, uint32_t  uuid)                                                                     |
+|                         void | :ref:`replaceUUID<api_ObjectSystem_fca35160>` (Object * object, uint32_t  uuid)                                                                     |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`toObject<api_ObjectSystem_6de1c905>` (const Variant & variant, Object * parent = nullptr, const TString & name = TString())                   |
+|  :ref:`Object<api_Object>` * | :ref:`toObject<api_ObjectSystem_9f0a83e7>` (const Variant & variant, Object * parent = nullptr, const TString & name = TString())                   |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Variant<api_Variant>` | :ref:`toVariant<api_ObjectSystem_79e2a135>` (const Object * object, bool  force = false)                                                            |
+|  :ref:`Variant<api_Variant>` | :ref:`toVariant<api_ObjectSystem_9de2fc30>` (const Object * object, bool  force = false)                                                            |
 +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_ObjectSystem_methods:
@@ -71,7 +71,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_ObjectSystem_7f95304e:
+.. _api_ObjectSystem_450b6d2c:
 
 **ObjectSystem::ObjectSystem** ()
 
@@ -79,7 +79,7 @@ Constructs ObjectSystem.
 
 ----
 
-.. _api_ObjectSystem_10b486ef:
+.. _api_ObjectSystem_35098ec4:
 
 **ObjectSystem::~ObjectSystem** ()
 
@@ -87,7 +87,7 @@ Destructs ObjectSystem, related objects and registered object factories.
 
 ----
 
-.. _api_ObjectSystem_750fdcb3:
+.. _api_ObjectSystem_81ad67f5:
 
  void **ObjectSystem::addObject** (:ref:`Object<api_Object>` * *object*)
 
@@ -95,7 +95,7 @@ Adds an *object* to main pull of objects in ObjectSystem
 
 ----
 
-.. _api_ObjectSystem_a872150d:
+.. _api_ObjectSystem_1eaf0398:
 
  void **ObjectSystem::blockObjectCache** (bool  *flag*)
 
@@ -103,7 +103,7 @@ This function sets a *flag* that prevents objects from being cached for fast loo
 
 ----
 
-.. _api_ObjectSystem_487293af:
+.. _api_ObjectSystem_c6b432f5:
 
  bool **ObjectSystem::compareTreads** (:ref:`ObjectSystem<api_ObjectSystem>` * *system*) const
 
@@ -111,7 +111,7 @@ Returns true in case of other *system* execues in the same thread with current s
 
 ----
 
-.. _api_ObjectSystem_e72138b5:
+.. _api_ObjectSystem_5db64032:
 
  ObjectSystem::GroupMap **ObjectSystem::factories** ()
 
@@ -119,7 +119,7 @@ Returns all registered classes.
 
 ----
 
-.. _api_ObjectSystem_b0d86f1c:
+.. _api_ObjectSystem_bd18f234:
 
  :ref:`Object<api_Object>` * **ObjectSystem::findObject** (uint32_t  *uuid*)
 
@@ -127,7 +127,7 @@ Returns object with uuid. If the object doesn't exist in the hierarchy this meth
 
 ----
 
-.. _api_ObjectSystem_186d9f20:
+.. _api_ObjectSystem_a910d3f2:
 
  :ref:`Object<api_Object>` * **ObjectSystem::findRoot** (:ref:`Object<api_Object>` * *object*)
 
@@ -135,7 +135,7 @@ Returns root *object* in the hierarchy.
 
 ----
 
-.. _api_ObjectSystem_be08756a:
+.. _api_ObjectSystem_c5e1b43d:
 
  uint32_t **ObjectSystem::generateUUID** ()
 
@@ -143,7 +143,7 @@ Returns the new unique ID based on random number generator.
 
 ----
 
-.. _api_ObjectSystem_6cbe8510:
+.. _api_ObjectSystem_fb75ec84:
 
  Object::ObjectList **ObjectSystem::getAllObjectsByType** (:ref:`TString<api_TString>` & *type*) const
 
@@ -155,7 +155,7 @@ Warning: This is very small function!
 
 ----
 
-.. _api_ObjectSystem_67403215:
+.. _api_ObjectSystem_e395fa71:
 
  :ref:`Object<api_Object>` * **ObjectSystem::instantiateObject** (:ref:`MetaObject<api_MetaObject>` * *meta*, :ref:`TString<api_TString>` & *name*, :ref:`Object<api_Object>` * *parent*)
 
@@ -163,7 +163,7 @@ The basic method to spawn a new object based on the provided *meta* object, *nam
 
 ----
 
-.. _api_ObjectSystem_f37a5be6:
+.. _api_ObjectSystem_f9c0ae36:
 
  ObjectSystem::FactoryPair **ObjectSystem::metaFactory** (:ref:`TString<api_TString>` & *url*)
 
@@ -171,7 +171,7 @@ Returns MetaObject for registered factory by provided url.
 
 ----
 
-.. _api_ObjectSystem_9fe3c854:
+.. _api_ObjectSystem_dea61359:
 
  :ref:`Object<api_Object>` * **ObjectSystem::objectCreate** (:ref:`TString<api_TString>` & *url*, :ref:`TString<api_TString>` & *name* = TString(), :ref:`Object<api_Object>` * *parent* = nullptr, uint32_t  *id* = 0)
 
@@ -187,7 +187,7 @@ Returns new instance of type represented in *url* and *name* as child of *parent
 
 ----
 
-.. _api_ObjectSystem_d4e76b95:
+.. _api_ObjectSystem_bf6c0a5e:
 
  void **ObjectSystem::processEvents** ()
 
@@ -195,7 +195,7 @@ Updates all related objects.
 
 ----
 
-.. _api_ObjectSystem_f134eb82:
+.. _api_ObjectSystem_8fb76ca1:
 
  void **ObjectSystem::replaceClonedUUID** (:ref:`Object<api_Object>` * *object*, uint32_t  *uuid*)
 
@@ -207,7 +207,7 @@ Replaces current cloned *uuid* of the *object* with the new one.
 
 ----
 
-.. _api_ObjectSystem_0c3b5281:
+.. _api_ObjectSystem_fca35160:
 
  void **ObjectSystem::replaceUUID** (:ref:`Object<api_Object>` * *object*, uint32_t  *uuid*)
 
@@ -215,7 +215,7 @@ Replaces current *uuid* of the *object* with the new one.
 
 ----
 
-.. _api_ObjectSystem_6de1c905:
+.. _api_ObjectSystem_9f0a83e7:
 
  :ref:`Object<api_Object>` * **ObjectSystem::toObject** (:ref:`Variant<api_Variant>` & *variant*, :ref:`Object<api_Object>` * *parent* = nullptr, :ref:`TString<api_TString>` & *name* = TString())
 
@@ -223,7 +223,7 @@ Returns object deserialized from *variant* based representation. The Variant rep
 
 ----
 
-.. _api_ObjectSystem_79e2a135:
+.. _api_ObjectSystem_9de2fc30:
 
  :ref:`Variant<api_Variant>`  **ObjectSystem::toVariant** (:ref:`Object<api_Object>` * *object*, bool  *force* = false)
 

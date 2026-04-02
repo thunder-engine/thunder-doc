@@ -24,29 +24,29 @@ Public Methods
 --------------
 
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|          :ref:`Actor<api_Actor>` * | :ref:`actor<api_Component_be5ca3f1>` () const                                                         |
+|          :ref:`Actor<api_Actor>` * | :ref:`actor<api_Component_30c8d6a4>` () const                                                         |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|  :ref:`Component<api_Component>` * | :ref:`component<api_Component_734891f6>` (const TString & type)                                       |
+|  :ref:`Component<api_Component>` * | :ref:`component<api_Component_15896ea4>` (const TString & type)                                       |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|                               void | :ref:`drawGizmos<api_Component_8413e6bc>` ()                                                          |
+|                               void | :ref:`drawGizmos<api_Component_64b1782a>` ()                                                          |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|                               void | :ref:`drawGizmosSelected<api_Component_4fc83ead>` ()                                                  |
+|                               void | :ref:`drawGizmosSelected<api_Component_0cf38b92>` ()                                                  |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|          :ref:`Actor<api_Actor>` * | :ref:`instantiate<api_Component_e10567d8>` (Prefab * prefab, Vector3  position, Quaternion  rotation) |
+|          :ref:`Actor<api_Actor>` * | :ref:`instantiate<api_Component_8bd7e521>` (Prefab * prefab, Vector3  position, Quaternion  rotation) |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|                               bool | :ref:`isEnabled<api_Component_70518fe9>` () const                                                     |
+|                               bool | :ref:`isEnabled<api_Component_539fb018>` () const                                                     |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|                               bool | :ref:`isEnabledInHierarchy<api_Component_25deb369>` () const                                          |
+|                               bool | :ref:`isEnabledInHierarchy<api_Component_c50fd91e>` () const                                          |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|          :ref:`Scene<api_Scene>` * | :ref:`scene<api_Component_ed078239>` () const                                                         |
+|          :ref:`Scene<api_Scene>` * | :ref:`scene<api_Component_db31c82f>` () const                                                         |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|                               void | :ref:`setEnabled<api_Component_1a7bc209>` (bool  enabled)                                             |
+|                               void | :ref:`setEnabled<api_Component_8024319d>` (bool  enabled)                                             |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|        :ref:`TString<api_TString>` | :ref:`tr<api_Component_4825be6f>` (const TString & source)                                            |
+|        :ref:`TString<api_TString>` | :ref:`tr<api_Component_baf10cd6>` (const TString & source)                                            |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|  :ref:`Transform<api_Transform>` * | :ref:`transform<api_Component_f2e47306>` () const                                                     |
+|  :ref:`Transform<api_Transform>` * | :ref:`transform<api_Component_514a637b>` () const                                                     |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
-|          :ref:`World<api_World>` * | :ref:`world<api_Component_8c02a31e>` () const                                                         |
+|          :ref:`World<api_World>` * | :ref:`world<api_Component_f043851e>` () const                                                         |
 +------------------------------------+-------------------------------------------------------------------------------------------------------+
 
 
@@ -63,7 +63,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Component_be5ca3f1:
+.. _api_Component_30c8d6a4:
 
  :ref:`Actor<api_Actor>` * **Component::actor** () const
 
@@ -71,7 +71,7 @@ Returns an Actor which the Component is attached to.
 
 ----
 
-.. _api_Component_734891f6:
+.. _api_Component_15896ea4:
 
  :ref:`Component<api_Component>` * **Component::component** (:ref:`TString<api_TString>` & *type*)
 
@@ -79,7 +79,7 @@ Returns a component with *type* attached to the same Actor. If no such component
 
 ----
 
-.. _api_Component_8413e6bc:
+.. _api_Component_64b1782a:
 
  void **Component::drawGizmos** ()
 
@@ -87,7 +87,7 @@ Implement drawGizmos if you want to draw gizmos that are always drawn.
 
 ----
 
-.. _api_Component_4fc83ead:
+.. _api_Component_0cf38b92:
 
  void **Component::drawGizmosSelected** ()
 
@@ -95,7 +95,7 @@ Implement drawGizmosSelected to draw a gizmo if the object is selected.
 
 ----
 
-.. _api_Component_e10567d8:
+.. _api_Component_8bd7e521:
 
  :ref:`Actor<api_Actor>` * **Component::instantiate** (:ref:`Prefab<api_Prefab>` * *prefab*, :ref:`Vector3<api_Vector3>`  *position*, :ref:`Quaternion<api_Quaternion>`  *rotation*)
 
@@ -103,7 +103,7 @@ Clones the actor represented by *prefab* asset. This Actor will be a sibling of 
 
 ----
 
-.. _api_Component_70518fe9:
+.. _api_Component_539fb018:
 
  bool **Component::isEnabled** () const
 
@@ -111,7 +111,7 @@ Returns true if the component is enabled; otherwise returns false.
 
 ----
 
-.. _api_Component_25deb369:
+.. _api_Component_c50fd91e:
 
  bool **Component::isEnabledInHierarchy** () const
 
@@ -119,7 +119,7 @@ Returns false in case of one of Actors in top hierarchy or this component was di
 
 ----
 
-.. _api_Component_ed078239:
+.. _api_Component_db31c82f:
 
  :ref:`Scene<api_Scene>` * **Component::scene** () const
 
@@ -127,7 +127,7 @@ Returns a Scene which the Component is attached to.
 
 ----
 
-.. _api_Component_1a7bc209:
+.. _api_Component_8024319d:
 
  void **Component::setEnabled** (bool  *enabled*)
 
@@ -141,7 +141,7 @@ Sets current state of component to *enabled* or disabled.
 
 ----
 
-.. _api_Component_4825be6f:
+.. _api_Component_baf10cd6:
 
  :ref:`TString<api_TString>`  **Component::tr** (:ref:`TString<api_TString>` & *source*)
 
@@ -149,7 +149,7 @@ Returns a translated version of *source* text; otherwise returns *source* text i
 
 ----
 
-.. _api_Component_f2e47306:
+.. _api_Component_514a637b:
 
  :ref:`Transform<api_Transform>` * **Component::transform** () const
 
@@ -157,7 +157,7 @@ Returns a transform attached to this Actor.
 
 ----
 
-.. _api_Component_8c02a31e:
+.. _api_Component_f043851e:
 
  :ref:`World<api_World>` * **Component::world** () const
 

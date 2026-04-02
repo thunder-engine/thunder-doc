@@ -20,7 +20,7 @@ Public Methods
 --------------
 
 +--------------------------------+-----------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Font_f23076c8>` () |
+|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Font_36a2bd79>` () |
 +--------------------------------+-----------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Font_f23076c8:
+.. _api_Font_36a2bd79:
 
  :ref:`Texture<api_Texture>` * **Font::page** ()
 
