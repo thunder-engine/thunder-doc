@@ -19,15 +19,15 @@ To determine the emitter position and emit direction SpotLight uses Transform co
 Public Methods
 --------------
 
-+--------+---------------------------------------------------------------------------------------+
-|  float | :ref:`attenuationDistance<api_SpotLight_attenuationDistance>` () const                |
-+--------+---------------------------------------------------------------------------------------+
-|  float | :ref:`outerAngle<api_SpotLight_outerAngle>` () const                                  |
-+--------+---------------------------------------------------------------------------------------+
-|   void | :ref:`setAttenuationDistance<api_SpotLight_setAttenuationDistance>` (float  distance) |
-+--------+---------------------------------------------------------------------------------------+
-|   void | :ref:`setOuterAngle<api_SpotLight_setOuterAngle>` (float  angle)                      |
-+--------+---------------------------------------------------------------------------------------+
++--------+-------------------------------------------------------------------------+
+|  float | :ref:`attenuationDistance<api_SpotLight_10ebf96c>` () const             |
++--------+-------------------------------------------------------------------------+
+|  float | :ref:`outerAngle<api_SpotLight_1f0ebc57>` () const                      |
++--------+-------------------------------------------------------------------------+
+|   void | :ref:`setAttenuationDistance<api_SpotLight_635bad2e>` (float  distance) |
++--------+-------------------------------------------------------------------------+
+|   void | :ref:`setOuterAngle<api_SpotLight_f0651edc>` (float  angle)             |
++--------+-------------------------------------------------------------------------+
 
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SpotLight_attenuationDistance:
+.. _api_SpotLight_10ebf96c:
 
  float **SpotLight::attenuationDistance** () const
 
@@ -53,7 +53,7 @@ Returns the attenuation distance of the light cone.
 
 ----
 
-.. _api_SpotLight_outerAngle:
+.. _api_SpotLight_1f0ebc57:
 
  float **SpotLight::outerAngle** () const
 
@@ -63,7 +63,7 @@ Returns the angle of the light cone in degrees.
 
 ----
 
-.. _api_SpotLight_setAttenuationDistance:
+.. _api_SpotLight_635bad2e:
 
  void **SpotLight::setAttenuationDistance** (float  *distance*)
 
@@ -73,7 +73,7 @@ Changes the attenuation *distance* of the light cone.
 
 ----
 
-.. _api_SpotLight_setOuterAngle:
+.. _api_SpotLight_f0651edc:
 
  void **SpotLight::setOuterAngle** (float  *angle*)
 

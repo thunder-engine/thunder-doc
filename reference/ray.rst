@@ -19,29 +19,31 @@ Ray is an infinity line starting from position pos and going to some direction
 Public Methods
 --------------
 
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                      | :ref:`Ray<api_Ray_Ray>` ()                                                                                                           |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                      | :ref:`Ray<api_Ray_Ray>` (const Vector3 & position, const Vector3 & direction)                                                        |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Ray<api_Ray>` | :ref:`diffuse<api_Ray_diffuse>` (const Vector3 & normal, const Vector3 & point, areal  min, areal  max)                              |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`intersect<api_Ray_intersect>` (const AABBox & box, Ray::Hit * hit)                                                             |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`intersect<api_Ray_intersect>` (const Plane & plane, Ray::Hit * hit, bool  back = false)                                        |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`intersect<api_Ray_intersect>` (const Vector3 & position, areal  radius, Ray::Hit * hit)                                        |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`intersect<api_Ray_intersect>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3, Ray::Hit * hit, bool  back = false) |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Ray<api_Ray>` | :ref:`reflect<api_Ray_reflect>` (const Vector3 & normal, const Vector3 & point)                                                      |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Ray<api_Ray>` | :ref:`refract<api_Ray_refract>` (const Vector3 & normal, const Vector3 & point, areal  ior)                                          |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`operator!=<api_Ray_operator!=>` (const Ray & ray) const                                                                        |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-|                 bool | :ref:`operator==<api_Ray_operator==>` (const Ray & ray) const                                                                        |
-+----------------------+--------------------------------------------------------------------------------------------------------------------------------------+
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                        | :ref:`Ray<api_Ray_f1d90c34>` ()                                                                                                     |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                        | :ref:`Ray<api_Ray_78b6df02>` (const Vector3 & position, const Vector3 & direction)                                                  |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|    :ref:`Ray<api_Ray>` | :ref:`diffuse<api_Ray_2173d8bf>` (const Vector3 & normal, const Vector3 & point, areal  min, areal  max)                            |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`intersect<api_Ray_281edc49>` (const AABBox & box, Ray::Hit * hit)                                                             |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`intersect<api_Ray_7480b65f>` (const Plane & plane, Ray::Hit * hit, bool  back = false)                                        |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`intersect<api_Ray_b35986de>` (const Vector3 & position, areal  radius, Ray::Hit * hit)                                        |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`intersect<api_Ray_6843bcd1>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3, Ray::Hit * hit, bool  back = false) |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|    :ref:`Ray<api_Ray>` | :ref:`reflect<api_Ray_d5fc8490>` (const Vector3 & normal, const Vector3 & point)                                                    |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|    :ref:`Ray<api_Ray>` | :ref:`refract<api_Ray_57cad281>` (const Vector3 & normal, const Vector3 & point, areal  ior)                                        |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`operator!=<api_Ray_eca50962>` (const Ray & ray) const                                                                         |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|  :ref:`Ray<api_Ray>` & | :ref:`operator=<api_Ray_e25964b8>` (const Ray & value)                                                                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+|                   bool | :ref:`operator==<api_Ray_71a56cf9>` (const Ray & ray) const                                                                         |
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -57,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Ray_Ray:
+.. _api_Ray_f1d90c34:
 
 **Ray::Ray** ()
 
@@ -65,7 +67,7 @@ Constructs an identity ray. pos at [0, 0, 0] and dir to [0, 0, 1]
 
 ----
 
-.. _api_Ray_Ray:
+.. _api_Ray_78b6df02:
 
 **Ray::Ray** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Vector3<api_Vector3>` & *direction*)
 
@@ -73,7 +75,7 @@ Constructs a ray with *position* and *direction*.
 
 ----
 
-.. _api_Ray_diffuse:
+.. _api_Ray_2173d8bf:
 
  :ref:`Ray<api_Ray>`  **Ray::diffuse** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*, areal  *min*, areal  *max*)
 
@@ -81,7 +83,7 @@ Returns a new Ray object which result of random directed reflection of current r
 
 ----
 
-.. _api_Ray_intersect:
+.. _api_Ray_281edc49:
 
  bool **Ray::intersect** (:ref:`AABBox<api_AABBox>` & *box*, :ref:`Ray::Hit<api_Ray::Hit>` * *hit*)
 
@@ -89,7 +91,7 @@ Returns true if this ray intersects the given Axis Aligned Bounding *box*; other
 
 ----
 
-.. _api_Ray_intersect:
+.. _api_Ray_7480b65f:
 
  bool **Ray::intersect** (:ref:`Plane<api_Plane>` & *plane*, :ref:`Ray::Hit<api_Ray::Hit>` * *hit*, bool  *back* = false)
 
@@ -97,7 +99,7 @@ Returns true if this ray intersects the given *plane*; otherwise returns false. 
 
 ----
 
-.. _api_Ray_intersect:
+.. _api_Ray_b35986de:
 
  bool **Ray::intersect** (:ref:`Vector3<api_Vector3>` & *position*, areal  *radius*, :ref:`Ray::Hit<api_Ray::Hit>` * *hit*)
 
@@ -105,7 +107,7 @@ Returns true if this ray intersects the given sphere at *position* and *radius*;
 
 ----
 
-.. _api_Ray_intersect:
+.. _api_Ray_6843bcd1:
 
  bool **Ray::intersect** (:ref:`Vector3<api_Vector3>` & *v1*, :ref:`Vector3<api_Vector3>` & *v2*, :ref:`Vector3<api_Vector3>` & *v3*, :ref:`Ray::Hit<api_Ray::Hit>` * *hit*, bool  *back* = false)
 
@@ -113,7 +115,7 @@ Returns true if this ray intersects the given triangle between *v1*, *v2* and *v
 
 ----
 
-.. _api_Ray_reflect:
+.. _api_Ray_d5fc8490:
 
  :ref:`Ray<api_Ray>`  **Ray::reflect** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*)
 
@@ -121,7 +123,7 @@ Returns a new Ray object which result of reflection of current ray. Reflection c
 
 ----
 
-.. _api_Ray_refract:
+.. _api_Ray_57cad281:
 
  :ref:`Ray<api_Ray>`  **Ray::refract** (:ref:`Vector3<api_Vector3>` & *normal*, :ref:`Vector3<api_Vector3>` & *point*, areal  *ior*)
 
@@ -129,7 +131,7 @@ Returns a new Ray object which result of refraction of current ray. Refraction c
 
 ----
 
-.. _api_Ray_operator!=:
+.. _api_Ray_eca50962:
 
  bool **Ray::operator!=** (:ref:`Ray<api_Ray>` & *ray*) const
 
@@ -137,7 +139,15 @@ Returns true if this *ray* is NOT equal to given *ray*; otherwise returns false.
 
 ----
 
-.. _api_Ray_operator==:
+.. _api_Ray_e25964b8:
+
+ :ref:`Ray<api_Ray>` & **Ray::operator=** (:ref:`Ray<api_Ray>` & *value*)
+
+Assignment operator. The *value* will be assigned to this object.
+
+----
+
+.. _api_Ray_71a56cf9:
 
  bool **Ray::operator==** (:ref:`Ray<api_Ray>` & *ray*) const
 

@@ -19,19 +19,21 @@ The UiLoader class is tasked with loading user interface (UI) data from a buffer
 Public Methods
 --------------
 
-+--------------------------------------+--------------------------------------------------------------------------+
-|  :ref:`UiDocument<api_UiDocument>` * | :ref:`document<api_UiLoader_document>` () const                          |
-+--------------------------------------+--------------------------------------------------------------------------+
-|                          std::string | :ref:`documentStyle<api_UiLoader_documentStyle>` () const                |
-+--------------------------------------+--------------------------------------------------------------------------+
-|                                 void | :ref:`fromBuffer<api_UiLoader_fromBuffer>` (const std::string & buffer)  |
-+--------------------------------------+--------------------------------------------------------------------------+
-|                                 void | :ref:`setStyleSheet<api_UiLoader_setStyleSheet>` (StyleSheet * style)    |
-+--------------------------------------+--------------------------------------------------------------------------+
-|                                 void | :ref:`setUiDocument<api_UiLoader_setUiDocument>` (UiDocument * document) |
-+--------------------------------------+--------------------------------------------------------------------------+
-|  :ref:`StyleSheet<api_StyleSheet>` * | :ref:`styleSheet<api_UiLoader_styleSheet>` () const                      |
-+--------------------------------------+--------------------------------------------------------------------------+
++--------------------------------------+-------------------------------------------------------------------+
+|  :ref:`UiDocument<api_UiDocument>` * | :ref:`document<api_UiLoader_f9c6b014>` () const                   |
++--------------------------------------+-------------------------------------------------------------------+
+|                                 void | :ref:`documentLoaded<api_UiLoader_63a49c1d>` ()                   |
++--------------------------------------+-------------------------------------------------------------------+
+|          :ref:`TString<api_TString>` | :ref:`documentStyle<api_UiLoader_682c37ab>` () const              |
++--------------------------------------+-------------------------------------------------------------------+
+|                                 void | :ref:`fromBuffer<api_UiLoader_6c824139>` (const TString & buffer) |
++--------------------------------------+-------------------------------------------------------------------+
+|                                 void | :ref:`setDocument<api_UiLoader_1b43c0ad>` (UiDocument * document) |
++--------------------------------------+-------------------------------------------------------------------+
+|                                 void | :ref:`setStyleSheet<api_UiLoader_d5fb74a3>` (StyleSheet * style)  |
++--------------------------------------+-------------------------------------------------------------------+
+|  :ref:`StyleSheet<api_StyleSheet>` * | :ref:`styleSheet<api_UiLoader_97e463ca>` () const                 |
++--------------------------------------+-------------------------------------------------------------------+
 
 
 
@@ -47,31 +49,51 @@ None
 Methods Description
 -------------------
 
-.. _api_UiLoader_document:
+.. _api_UiLoader_f9c6b014:
 
  :ref:`UiDocument<api_UiDocument>` * **UiLoader::document** () const
 
 Returns the UiDocument associated with this UiLoader, which contains the structure of the loaded UI.
 
+**See also** setDocument().
+
 ----
 
-.. _api_UiLoader_documentStyle:
+.. _api_UiLoader_63a49c1d:
 
- std::string **UiLoader::documentStyle** () const
+ void **UiLoader::documentLoaded** ()
+
+Emmits signal when document is loaded.
+
+----
+
+.. _api_UiLoader_682c37ab:
+
+ :ref:`TString<api_TString>`  **UiLoader::documentStyle** () const
 
 Returns the raw document style (as a string), which was parsed from the UI document.
 
 ----
 
-.. _api_UiLoader_fromBuffer:
+.. _api_UiLoader_6c824139:
 
- void **UiLoader::fromBuffer** (std::string & *buffer*)
+ void **UiLoader::fromBuffer** (:ref:`TString<api_TString>` & *buffer*)
 
 This function loads the UI data from an XML *buffer* (likely containing UI element definitions and style information).
 
 ----
 
-.. _api_UiLoader_setStyleSheet:
+.. _api_UiLoader_1b43c0ad:
+
+ void **UiLoader::setDocument** (:ref:`UiDocument<api_UiDocument>` * *document*)
+
+Sets the UI *document* to the provided *document* pointer and reloads the UI from the *document*'s data buffer by calling fromBuffer().
+
+**See also** *document*().
+
+----
+
+.. _api_UiLoader_d5fb74a3:
 
  void **UiLoader::setStyleSheet** (:ref:`StyleSheet<api_StyleSheet>` * *style*)
 
@@ -81,15 +103,7 @@ Sets a *style* sheet to the hierarhy of widgets.
 
 ----
 
-.. _api_UiLoader_setUiDocument:
-
- void **UiLoader::setUiDocument** (:ref:`UiDocument<api_UiDocument>` * *document*)
-
-Sets the UI *document* to the provided *document* pointer and reloads the UI from the *document*'s data buffer by calling fromBuffer().
-
-----
-
-.. _api_UiLoader_styleSheet:
+.. _api_UiLoader_97e463ca:
 
  :ref:`StyleSheet<api_StyleSheet>` * **UiLoader::styleSheet** () const
 

@@ -36,70 +36,72 @@ None
 Static Methods
 --------------
 
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`getCode<api_Input_getCode>` (const std::string & name)            |
-+--------------------------------+-------------------------------------------------------------------------+
-|                    std::string | :ref:`inputString<api_Input_inputString>` ()                            |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isKey<api_Input_isKey>` (Input::KeyCode  code)                    |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isKeyDown<api_Input_isKeyDown>` (Input::KeyCode  code)            |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isKeyUp<api_Input_isKeyUp>` (Input::KeyCode  code)                |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isMouseButton<api_Input_isMouseButton>` (int  button)             |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isMouseButtonDown<api_Input_isMouseButtonDown>` (int  button)     |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           bool | :ref:`isMouseButtonUp<api_Input_isMouseButtonUp>` (int  button)         |
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`joystickButtons<api_Input_joystickButtons>` (uint32_t  index)     |
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`joystickCount<api_Input_joystickCount>` ()                        |
-+--------------------------------+-------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`joystickThumbs<api_Input_joystickThumbs>` (uint32_t  index)       |
-+--------------------------------+-------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`joystickTriggers<api_Input_joystickTriggers>` (uint32_t  index)   |
-+--------------------------------+-------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`mouseDelta<api_Input_mouseDelta>` ()                              |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           void | :ref:`mouseLockCursor<api_Input_mouseLockCursor>` (bool  lock)          |
-+--------------------------------+-------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`mousePosition<api_Input_mousePosition>` ()                        |
-+--------------------------------+-------------------------------------------------------------------------+
-|                          float | :ref:`mouseScrollDelta<api_Input_mouseScrollDelta>` ()                  |
-+--------------------------------+-------------------------------------------------------------------------+
-|                           void | :ref:`setKeyboardVisible<api_Input_setKeyboardVisible>` (bool  visible) |
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`touchCount<api_Input_touchCount>` ()                              |
-+--------------------------------+-------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`touchPosition<api_Input_touchPosition>` (uint32_t  index)         |
-+--------------------------------+-------------------------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`touchState<api_Input_touchState>` (uint32_t  index)               |
-+--------------------------------+-------------------------------------------------------------------------+
++------------------------------+-----------------------------------------------------------------------+
+|                     uint32_t | :ref:`getCode<api_Input_941da75f>` (const TString & name)             |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`inputString<api_Input_c89d71f3>` ()                             |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isKey<api_Input_375694f1>` (Input::KeyCode  code)               |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isKeyDown<api_Input_168c02db>` (Input::KeyCode  code)           |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isKeyUp<api_Input_247b0568>` (Input::KeyCode  code)             |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isMouseButton<api_Input_e5ca27bd>` (int  button)                |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isMouseButtonDown<api_Input_09a135df>` (int  button)            |
++------------------------------+-----------------------------------------------------------------------+
+|                         bool | :ref:`isMouseButtonUp<api_Input_5f6182cd>` (int  button)              |
++------------------------------+-----------------------------------------------------------------------+
+|                     uint32_t | :ref:`joystickButtons<api_Input_649a7fde>` (uint32_t  index)          |
++------------------------------+-----------------------------------------------------------------------+
+|                     uint32_t | :ref:`joystickCount<api_Input_476fe352>` ()                           |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`joystickThumbs<api_Input_096b8fd5>` (uint32_t  index)           |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` | :ref:`joystickTriggers<api_Input_91a2cd03>` (uint32_t  index)         |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`mouseDelta<api_Input_4d956af7>` ()                              |
++------------------------------+-----------------------------------------------------------------------+
+|                         void | :ref:`mouseLockCursor<api_Input_4078bda9>` (bool  lock)               |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`mousePosition<api_Input_269edb5c>` ()                           |
++------------------------------+-----------------------------------------------------------------------+
+|                        float | :ref:`mouseScrollDelta<api_Input_0b4c51e3>` ()                        |
++------------------------------+-----------------------------------------------------------------------+
+|                         void | :ref:`mouseSetCursor<api_Input_17b4325a>` (Input::CursorShape  shape) |
++------------------------------+-----------------------------------------------------------------------+
+|                         void | :ref:`setKeyboardVisible<api_Input_1ecb84a9>` (bool  visible)         |
++------------------------------+-----------------------------------------------------------------------+
+|                     uint32_t | :ref:`touchCount<api_Input_a1d5cf82>` ()                              |
++------------------------------+-----------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`touchPosition<api_Input_3de826fc>` (uint32_t  index)            |
++------------------------------+-----------------------------------------------------------------------+
+|                     uint32_t | :ref:`touchState<api_Input_0615bafc>` (uint32_t  index)               |
++------------------------------+-----------------------------------------------------------------------+
 
 .. _api_Input_methods:
 
 Methods Description
 -------------------
 
-.. _api_Input_getCode:
+.. _api_Input_941da75f:
 
- :ref:`uint32_t<api_uint32_t>`  **Input::getCode** (std::string & *name*)
+ uint32_t **Input::getCode** (:ref:`TString<api_TString>` & *name*)
 
 Converts a key *name* to code.
 
 ----
 
-.. _api_Input_inputString:
+.. _api_Input_c89d71f3:
 
- std::string **Input::inputString** ()
+ :ref:`TString<api_TString>`  **Input::inputString** ()
 
 Returns characters entered since the last frame.
 
 ----
 
-.. _api_Input_isKey:
+.. _api_Input_375694f1:
 
  bool **Input::isKey** (:ref:`Input::KeyCode<api_Input::KeyCode>`  *code*)
 
@@ -107,7 +109,7 @@ Returns true in case of a key with *code* is pressed; otherwise returns false. P
 
 ----
 
-.. _api_Input_isKeyDown:
+.. _api_Input_168c02db:
 
  bool **Input::isKeyDown** (:ref:`Input::KeyCode<api_Input::KeyCode>`  *code*)
 
@@ -115,7 +117,7 @@ Returns true during the frame in case of a key with *code* is pressed; otherwise
 
 ----
 
-.. _api_Input_isKeyUp:
+.. _api_Input_247b0568:
 
  bool **Input::isKeyUp** (:ref:`Input::KeyCode<api_Input::KeyCode>`  *code*)
 
@@ -123,7 +125,7 @@ Returns true during the frame in case of a key with *code* is released; otherwis
 
 ----
 
-.. _api_Input_isMouseButton:
+.. _api_Input_e5ca27bd:
 
  bool **Input::isMouseButton** (int  *button*)
 
@@ -143,7 +145,7 @@ Returns the state of mouse *button*. Example code:
 
 ----
 
-.. _api_Input_isMouseButtonDown:
+.. _api_Input_09a135df:
 
  bool **Input::isMouseButtonDown** (int  *button*)
 
@@ -151,7 +153,7 @@ Returns true in case of the *button* is pressed; otherwise returns false.
 
 ----
 
-.. _api_Input_isMouseButtonUp:
+.. _api_Input_5f6182cd:
 
  bool **Input::isMouseButtonUp** (int  *button*)
 
@@ -159,9 +161,9 @@ Returns true in case of the *button* is released; otherwise returns false.
 
 ----
 
-.. _api_Input_joystickButtons:
+.. _api_Input_649a7fde:
 
- :ref:`uint32_t<api_uint32_t>`  **Input::joystickButtons** (:ref:`uint32_t<api_uint32_t>`  *index*)
+ uint32_t **Input::joystickButtons** (uint32_t  *index*)
 
 Returns the states of buttons for joystick with *index*. Please refer to Input::KeyCode to see possible buttons.
 
@@ -179,31 +181,31 @@ Example code:
 
 ----
 
-.. _api_Input_joystickCount:
+.. _api_Input_476fe352:
 
- :ref:`uint32_t<api_uint32_t>`  **Input::joystickCount** ()
+ uint32_t **Input::joystickCount** ()
 
 Returns the number of connected joysticks.
 
 ----
 
-.. _api_Input_joystickThumbs:
+.. _api_Input_096b8fd5:
 
- :ref:`Vector4<api_Vector4>`  **Input::joystickThumbs** (:ref:`uint32_t<api_uint32_t>`  *index*)
+ :ref:`Vector4<api_Vector4>`  **Input::joystickThumbs** (uint32_t  *index*)
 
 Returns the thumbs position of joystick with *index*. The components x and y will contain a value for the left thumbs. The components z and w will contain a value for the right thumbs.
 
 ----
 
-.. _api_Input_joystickTriggers:
+.. _api_Input_91a2cd03:
 
- :ref:`Vector2<api_Vector2>`  **Input::joystickTriggers** (:ref:`uint32_t<api_uint32_t>`  *index*)
+ :ref:`Vector2<api_Vector2>`  **Input::joystickTriggers** (uint32_t  *index*)
 
 Returns the value of pressure for the joystick triggers with *index*. The component x will contain a value for the left trigger and component y will contain value for the right trigger.
 
 ----
 
-.. _api_Input_mouseDelta:
+.. _api_Input_4d956af7:
 
  :ref:`Vector4<api_Vector4>`  **Input::mouseDelta** ()
 
@@ -219,7 +221,7 @@ Returns the mouse position delta. The absolute position will be stored in x and 
 
 ----
 
-.. _api_Input_mouseLockCursor:
+.. _api_Input_4078bda9:
 
  void **Input::mouseLockCursor** (bool  *lock*)
 
@@ -227,7 +229,7 @@ Tries to *lock* mouse cursor.
 
 ----
 
-.. _api_Input_mousePosition:
+.. _api_Input_269edb5c:
 
  :ref:`Vector4<api_Vector4>`  **Input::mousePosition** ()
 
@@ -235,7 +237,7 @@ Returns the mouse position. The absolute position will be stored in x and y comp
 
 ----
 
-.. _api_Input_mouseScrollDelta:
+.. _api_Input_0b4c51e3:
 
  float **Input::mouseScrollDelta** ()
 
@@ -251,7 +253,15 @@ Returns the mouse wheel scrolling delta.
 
 ----
 
-.. _api_Input_setKeyboardVisible:
+.. _api_Input_17b4325a:
+
+ void **Input::mouseSetCursor** (:ref:`Input::CursorShape<api_Input::CursorShape>`  *shape*)
+
+Sets the cursor *shape*.
+
+----
+
+.. _api_Input_1ecb84a9:
 
  void **Input::setKeyboardVisible** (bool  *visible*)
 
@@ -263,25 +273,25 @@ Sets virtual keyboard *visible*.
 
 ----
 
-.. _api_Input_touchCount:
+.. _api_Input_a1d5cf82:
 
- :ref:`uint32_t<api_uint32_t>`  **Input::touchCount** ()
+ uint32_t **Input::touchCount** ()
 
 Returns the number of touches.
 
 ----
 
-.. _api_Input_touchPosition:
+.. _api_Input_3de826fc:
 
- :ref:`Vector4<api_Vector4>`  **Input::touchPosition** (:ref:`uint32_t<api_uint32_t>`  *index*)
+ :ref:`Vector4<api_Vector4>`  **Input::touchPosition** (uint32_t  *index*)
 
 Returns the position of touch with *index*. The absolute position will be stored in x and y components. The normalized position will be stored in z and w components.
 
 ----
 
-.. _api_Input_touchState:
+.. _api_Input_0615bafc:
 
- :ref:`uint32_t<api_uint32_t>`  **Input::touchState** (:ref:`uint32_t<api_uint32_t>`  *index*)
+ uint32_t **Input::touchState** (uint32_t  *index*)
 
 Returns the state of touch with *index*. Please refer to Input::TouchState to see possible states.
 

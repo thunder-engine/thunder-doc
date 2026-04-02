@@ -20,33 +20,29 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`color<api_SpriteRender_color>` () const                      |
+|    :ref:`Vector4<api_Vector4>` | :ref:`color<api_SpriteRender_fba8c1d6>` () const                   |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`drawMode<api_SpriteRender_drawMode>` () const                |
+|                            int | :ref:`drawMode<api_SpriteRender_814a05cb>` () const                |
 +--------------------------------+--------------------------------------------------------------------+
-|                    std::string | :ref:`item<api_SpriteRender_item>` () const                        |
+|                            int | :ref:`layer<api_SpriteRender_67180f49>` () const                   |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`layer<api_SpriteRender_layer>` () const                      |
+|                           void | :ref:`setColor<api_SpriteRender_904b5d8f>` (const Vector4 & color) |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setColor<api_SpriteRender_setColor>` (const Vector4  color)  |
+|                           void | :ref:`setDrawMode<api_SpriteRender_0cdb4f27>` (int  mode)          |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setDrawMode<api_SpriteRender_setDrawMode>` (int  mode)       |
+|                           void | :ref:`setLayer<api_SpriteRender_feabc217>` (int  layer)            |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setItem<api_SpriteRender_setItem>` (const std::string  item) |
+|                           void | :ref:`setSize<api_SpriteRender_edbc2864>` (const Vector2 & size)   |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setLayer<api_SpriteRender_setLayer>` (int  layer)            |
+|                           void | :ref:`setSprite<api_SpriteRender_3ed10b45>` (Sprite * sprite)      |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setSize<api_SpriteRender_setSize>` (const Vector2  size)     |
+|                           void | :ref:`setTexture<api_SpriteRender_5410d6ce>` (Texture * texture)   |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setSprite<api_SpriteRender_setSprite>` (Sprite * sheet)      |
+|    :ref:`Vector2<api_Vector2>` | :ref:`size<api_SpriteRender_67d32f54>` () const                    |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTexture<api_SpriteRender_setTexture>` (Texture * texture) |
+|    :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_SpriteRender_f372d409>` () const                  |
 +--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`size<api_SpriteRender_size>` () const                        |
-+--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_SpriteRender_sprite>` () const                    |
-+--------------------------------+--------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_SpriteRender_texture>` () const                  |
+|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_SpriteRender_273d405b>` () const                 |
 +--------------------------------+--------------------------------------------------------------------+
 
 .. _api_SpriteRender_enums:
@@ -82,7 +78,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SpriteRender_color:
+.. _api_SpriteRender_fba8c1d6:
 
  :ref:`Vector4<api_Vector4>`  **SpriteRender::color** () const
 
@@ -92,7 +88,7 @@ Returns the color of the sprite to be drawn.
 
 ----
 
-.. _api_SpriteRender_drawMode:
+.. _api_SpriteRender_814a05cb:
 
  int **SpriteRender::drawMode** () const
 
@@ -102,29 +98,19 @@ Returns a draw mode for the sprite. Please check SpriteRender::DrawMode for more
 
 ----
 
-.. _api_SpriteRender_item:
-
- std::string **SpriteRender::item** () const
-
-Returns the current item name of sprite from the sprite sheet.
-
-**See also** setItem().
-
-----
-
-.. _api_SpriteRender_layer:
+.. _api_SpriteRender_67180f49:
 
  int **SpriteRender::layer** () const
 
-Returns the order layer for the sprite.
+Returns the redering layer for the sprite.
 
 **See also** setLayer().
 
 ----
 
-.. _api_SpriteRender_setColor:
+.. _api_SpriteRender_904b5d8f:
 
- void **SpriteRender::setColor** (:ref:`Vector4<api_Vector4>`  *color*)
+ void **SpriteRender::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
 Changes the *color* of the sprite to be drawn.
 
@@ -132,7 +118,7 @@ Changes the *color* of the sprite to be drawn.
 
 ----
 
-.. _api_SpriteRender_setDrawMode:
+.. _api_SpriteRender_0cdb4f27:
 
  void **SpriteRender::setDrawMode** (int  *mode*)
 
@@ -142,29 +128,19 @@ Sets a draw *mode* for the sprite. Please check SpriteRender::DrawMode for more 
 
 ----
 
-.. _api_SpriteRender_setItem:
-
- void **SpriteRender::setItem** (std::string  *item*)
-
-Sets the current sub *item* name of sprite from the sprite sheet.
-
-**See also** *item*().
-
-----
-
-.. _api_SpriteRender_setLayer:
+.. _api_SpriteRender_feabc217:
 
  void **SpriteRender::setLayer** (int  *layer*)
 
-Sets the order *layer* for the sprite.
+Sets the redering *layer* for the sprite.
 
 **See also** *layer*().
 
 ----
 
-.. _api_SpriteRender_setSize:
+.. _api_SpriteRender_edbc2864:
 
- void **SpriteRender::setSize** (:ref:`Vector2<api_Vector2>`  *size*)
+ void **SpriteRender::setSize** (:ref:`Vector2<api_Vector2>` & *size*)
 
 Sets a new *size* of sprite.
 
@@ -172,17 +148,17 @@ Sets a new *size* of sprite.
 
 ----
 
-.. _api_SpriteRender_setSprite:
+.. _api_SpriteRender_3ed10b45:
 
- void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sheet*)
+ void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)
 
-Replaces current sprite *sheet* with a new one.
+Replaces current *sprite* with a new one.
 
-**See also** sprite().
+**See also** *sprite*().
 
 ----
 
-.. _api_SpriteRender_setTexture:
+.. _api_SpriteRender_5410d6ce:
 
  void **SpriteRender::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
 
@@ -192,7 +168,7 @@ Replaces current *texture* with a new one.
 
 ----
 
-.. _api_SpriteRender_size:
+.. _api_SpriteRender_67d32f54:
 
  :ref:`Vector2<api_Vector2>`  **SpriteRender::size** () const
 
@@ -202,7 +178,7 @@ Returns size of sprite.
 
 ----
 
-.. _api_SpriteRender_sprite:
+.. _api_SpriteRender_f372d409:
 
  :ref:`Sprite<api_Sprite>` * **SpriteRender::sprite** () const
 
@@ -212,7 +188,7 @@ Returns a sprite sheet.
 
 ----
 
-.. _api_SpriteRender_texture:
+.. _api_SpriteRender_273d405b:
 
  :ref:`Texture<api_Texture>` * **SpriteRender::texture** () const
 

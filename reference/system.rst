@@ -31,23 +31,23 @@ Note: Systems can be executed one by one or in parallel based on thread policy.
 Public Methods
 --------------
 
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`composeComponent<api_System_composeComponent>` (Component * component) const |
-+-------+------------------------------------------------------------------------------------+
-|  bool | :ref:`init<api_System_init>` ()                                                    |
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`processEvents<api_System_processEvents>` ()                                  |
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`reset<api_System_reset>` ()                                                  |
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`setActiveWorld<api_System_setActiveWorld>` (World * world)                   |
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`syncSettings<api_System_syncSettings>` () const                              |
-+-------+------------------------------------------------------------------------------------+
-|   int | :ref:`threadPolicy<api_System_threadPolicy>` () const                              |
-+-------+------------------------------------------------------------------------------------+
-|  void | :ref:`update<api_System_update>` (World * world)                                   |
-+-------+------------------------------------------------------------------------------------+
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`composeComponent<api_System_e780d915>` (Component * component) const |
++-------+----------------------------------------------------------------------------+
+|  bool | :ref:`init<api_System_6271f450>` ()                                        |
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`processEvents<api_System_7e3a2cb4>` ()                               |
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`reset<api_System_3156098a>` ()                                       |
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`setActiveWorld<api_System_fac57b93>` (World * world)                 |
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`syncSettings<api_System_14762bc9>` () const                          |
++-------+----------------------------------------------------------------------------+
+|   int | :ref:`threadPolicy<api_System_ed91b3fc>` () const                          |
++-------+----------------------------------------------------------------------------+
+|  void | :ref:`update<api_System_6ce24859>` (World * world)                         |
++-------+----------------------------------------------------------------------------+
 
 .. _api_System_enums:
 
@@ -80,7 +80,7 @@ None
 Methods Description
 -------------------
 
-.. _api_System_composeComponent:
+.. _api_System_e780d915:
 
  void **System::composeComponent** (:ref:`Component<api_Component>` * *component*) const
 
@@ -88,7 +88,7 @@ This method is a helper to initialize specifically a new *component*. Usually us
 
 ----
 
-.. _api_System_init:
+.. _api_System_6271f450:
 
  bool **System::init** ()
 
@@ -96,7 +96,7 @@ Can be used to initialize and execute necessary routines. This method will be ca
 
 ----
 
-.. _api_System_processEvents:
+.. _api_System_7e3a2cb4:
 
  void **System::processEvents** ()
 
@@ -106,7 +106,7 @@ Processes all incoming events and executes the System::update method.
 
 ----
 
-.. _api_System_reset:
+.. _api_System_3156098a:
 
  void **System::reset** ()
 
@@ -114,7 +114,7 @@ Can be used to reset all internal system states. This method will be called auto
 
 ----
 
-.. _api_System_setActiveWorld:
+.. _api_System_fac57b93:
 
  void **System::setActiveWorld** (:ref:`World<api_World>` * *world*)
 
@@ -122,7 +122,7 @@ Sets active *world*.
 
 ----
 
-.. _api_System_syncSettings:
+.. _api_System_14762bc9:
 
  void **System::syncSettings** () const
 
@@ -130,7 +130,7 @@ This method is a callback to react on saving game settings.
 
 ----
 
-.. _api_System_threadPolicy:
+.. _api_System_ed91b3fc:
 
  int **System::threadPolicy** () const
 
@@ -138,7 +138,7 @@ Returns the thread policy of the system. For more details please refer to System
 
 ----
 
-.. _api_System_update:
+.. _api_System_6ce24859:
 
  void **System::update** (:ref:`World<api_World>` * *world*)
 

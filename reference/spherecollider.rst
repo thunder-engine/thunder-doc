@@ -19,11 +19,11 @@ The SphereCollider class provides functionality to define a sphere collider with
 Public Methods
 --------------
 
-+--------+----------------------------------------------------------------+
-|  float | :ref:`radius<api_SphereCollider_radius>` () const              |
-+--------+----------------------------------------------------------------+
-|   void | :ref:`setRadius<api_SphereCollider_setRadius>` (float  radius) |
-+--------+----------------------------------------------------------------+
++--------+---------------------------------------------------------------+
+|  float | :ref:`radius<api_SphereCollider_3d4f6ca5>` () const           |
++--------+---------------------------------------------------------------+
+|   void | :ref:`setRadius<api_SphereCollider_ef85a320>` (float  radius) |
++--------+---------------------------------------------------------------+
 
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SphereCollider_radius:
+.. _api_SphereCollider_3d4f6ca5:
 
  float **SphereCollider::radius** () const
 
@@ -49,7 +49,7 @@ Returns the radius of the sphere collider.
 
 ----
 
-.. _api_SphereCollider_setRadius:
+.. _api_SphereCollider_ef85a320:
 
  void **SphereCollider::setRadius** (float  *radius*)
 

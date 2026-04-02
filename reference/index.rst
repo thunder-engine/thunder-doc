@@ -14,4 +14,7 @@ API Reference
    gui-module
    math-module
    resources-module
+   assetconverter
+   assetconvertersettings
+   editortool
    physicmaterial

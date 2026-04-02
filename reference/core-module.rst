@@ -7,6 +7,7 @@ Core Module
    :maxdepth: 1
    :name: toc-api
    
+   bson
    event
    json
    metaenum
@@ -17,4 +18,7 @@ Core Module
    methodcallevent
    object
    objectsystem
+   tstring
+   threadpool
+   url
    variant

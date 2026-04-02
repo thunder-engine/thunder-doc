@@ -19,15 +19,15 @@ The Pipeline class allows users to manage render tasks and their connections wit
 Public Methods
 --------------
 
-+--------------------------------------------+---------------------------------------------------------------------------+
-|  :ref:`Pipeline::Link<api_Pipeline::Link>` | :ref:`renderTaskLink<api_Pipeline_renderTaskLink>` (int  index) const     |
-+--------------------------------------------+---------------------------------------------------------------------------+
-|                                std::string | :ref:`renderTaskName<api_Pipeline_renderTaskName>` (int  index) const     |
-+--------------------------------------------+---------------------------------------------------------------------------+
-|                                        int | :ref:`renderTasksCount<api_Pipeline_renderTasksCount>` () const           |
-+--------------------------------------------+---------------------------------------------------------------------------+
-|                                        int | :ref:`renderTasksLinksCount<api_Pipeline_renderTasksLinksCount>` () const |
-+--------------------------------------------+---------------------------------------------------------------------------+
++-------------------------------------------+-----------------------------------------------------------------+
+|  :ref:`Pipeline::Link<api_Pipeline_Link>` | :ref:`renderTaskLink<api_Pipeline_f31c8450>` (int  index) const |
++-------------------------------------------+-----------------------------------------------------------------+
+|               :ref:`TString<api_TString>` | :ref:`renderTaskName<api_Pipeline_865a7f39>` (int  index) const |
++-------------------------------------------+-----------------------------------------------------------------+
+|                                       int | :ref:`renderTasksCount<api_Pipeline_b817ae23>` () const         |
++-------------------------------------------+-----------------------------------------------------------------+
+|                                       int | :ref:`renderTasksLinksCount<api_Pipeline_18c9645e>` () const    |
++-------------------------------------------+-----------------------------------------------------------------+
 
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Pipeline_renderTaskLink:
+.. _api_Pipeline_f31c8450:
 
  :ref:`Pipeline::Link<api_Pipeline::Link>`  **Pipeline::renderTaskLink** (int  *index*) const
 
@@ -51,15 +51,15 @@ Returns the link information for the render task at the specified *index*.
 
 ----
 
-.. _api_Pipeline_renderTaskName:
+.. _api_Pipeline_865a7f39:
 
- std::string **Pipeline::renderTaskName** (int  *index*) const
+ :ref:`TString<api_TString>`  **Pipeline::renderTaskName** (int  *index*) const
 
 Returns the name of the render task at the specified *index*.
 
 ----
 
-.. _api_Pipeline_renderTasksCount:
+.. _api_Pipeline_b817ae23:
 
  int **Pipeline::renderTasksCount** () const
 
@@ -67,7 +67,7 @@ Returns the number of render tasks in the pipeline.
 
 ----
 
-.. _api_Pipeline_renderTasksLinksCount:
+.. _api_Pipeline_18c9645e:
 
  int **Pipeline::renderTasksLinksCount** () const
 

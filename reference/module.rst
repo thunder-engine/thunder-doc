@@ -19,11 +19,11 @@ Thunder Engine uses modules to extend engine capabilities. Every engine module m
 Public Methods
 --------------
 
-+------------+------------------------------------------------------------+
-|       void | :ref:`getObject<api_Module_getObject>` (const char * name) |
-+------------+------------------------------------------------------------+
-| const char | :ref:`metaInfo<api_Module_metaInfo>` () const              |
-+------------+------------------------------------------------------------+
++------------+-----------------------------------------------------------+
+|       void | :ref:`getObject<api_Module_7cab3586>` (const char * name) |
++------------+-----------------------------------------------------------+
+| const char | :ref:`metaInfo<api_Module_86cfedb5>` () const             |
++------------+-----------------------------------------------------------+
 
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Module_getObject:
+.. _api_Module_7cab3586:
 
  void **Module::getObject** (char * *name*)
 
@@ -47,7 +47,7 @@ This function is a facory for the module. It return a pointer to constructed obj
 
 ----
 
-.. _api_Module_metaInfo:
+.. _api_Module_86cfedb5:
 
 const char **Module::metaInfo** () const
 

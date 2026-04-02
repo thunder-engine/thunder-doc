@@ -3,7 +3,7 @@
 ThreadPool
 ==========
 
-Inherited: :doc:`Object<api_Object>`
+Inherited: None
 
 .. _api_ThreadPool_description:
 
@@ -17,15 +17,13 @@ Description
 Public Methods
 --------------
 
-+-------+----------------------------------------------------------------------+
-|   int | :ref:`maxThreads<api_ThreadPool_maxThreads>` () const                |
-+-------+----------------------------------------------------------------------+
-|  void | :ref:`setMaxThreads<api_ThreadPool_setMaxThreads>` (int  number)     |
-+-------+----------------------------------------------------------------------+
-|  void | :ref:`start<api_ThreadPool_start>` (Object & object)                 |
-+-------+----------------------------------------------------------------------+
-|  bool | :ref:`waitForDone<api_ThreadPool_waitForDone>` (int32_t  msecs = -1) |
-+-------+----------------------------------------------------------------------+
++-----------+-------------------------------------------------------------------+
+|  uint32_t | :ref:`maxThreads<api_ThreadPool_e952ca7d>` () const               |
++-----------+-------------------------------------------------------------------+
+|      void | :ref:`setMaxThreads<api_ThreadPool_63bdf847>` (uint32_t  number)  |
++-----------+-------------------------------------------------------------------+
+|      bool | :ref:`waitForDone<api_ThreadPool_48fc9ae0>` (int32_t  msecs = -1) |
++-----------+-------------------------------------------------------------------+
 
 
 
@@ -34,18 +32,18 @@ Public Methods
 Static Methods
 --------------
 
-+------+-----------------------------------------------------------------+
-|  int | :ref:`optimalThreadCount<api_ThreadPool_optimalThreadCount>` () |
-+------+-----------------------------------------------------------------+
++-----------+-------------------------------------------------------+
+|  uint32_t | :ref:`optimalThreadCount<api_ThreadPool_81e6f7c4>` () |
++-----------+-------------------------------------------------------+
 
 .. _api_ThreadPool_methods:
 
 Methods Description
 -------------------
 
-.. _api_ThreadPool_maxThreads:
+.. _api_ThreadPool_e952ca7d:
 
- int **ThreadPool::maxThreads** () const
+ uint32_t **ThreadPool::maxThreads** () const
 
 Returns the max number of threads allocated to work.
 
@@ -53,17 +51,17 @@ Returns the max number of threads allocated to work.
 
 ----
 
-.. _api_ThreadPool_optimalThreadCount:
+.. _api_ThreadPool_81e6f7c4:
 
- int **ThreadPool::optimalThreadCount** ()
+ uint32_t **ThreadPool::optimalThreadCount** ()
 
 Returns the optimal thread count for the current system. This value is based on the number of CPU cores.
 
 ----
 
-.. _api_ThreadPool_setMaxThreads:
+.. _api_ThreadPool_63bdf847:
 
- void **ThreadPool::setMaxThreads** (int  *number*)
+ void **ThreadPool::setMaxThreads** (uint32_t  *number*)
 
 Sets the max *number* of threads allocated to work.
 
@@ -71,15 +69,7 @@ Sets the max *number* of threads allocated to work.
 
 ----
 
-.. _api_ThreadPool_start:
-
- void **ThreadPool::start** (:ref:`Object<api_Object>` & *object*)
-
-Pushes an *object* to thread pool. In case of any free worker available executes task immediately.
-
-----
-
-.. _api_ThreadPool_waitForDone:
+.. _api_ThreadPool_48fc9ae0:
 
  bool **ThreadPool::waitForDone** (int32_t  *msecs* = -1)
 

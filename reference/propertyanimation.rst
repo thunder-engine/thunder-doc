@@ -31,19 +31,19 @@ PropertyAnimation interpolates animated property between key-frames.
 Public Methods
 --------------
 
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_defaultValue>` () const                           |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-|                              void | :ref:`setCurrentValue<api_PropertyAnimation_setCurrentValue>` (const Variant & value)      |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-|                              void | :ref:`setTarget<api_PropertyAnimation_setTarget>` (Object * object, const char * property) |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-|                              void | :ref:`setValid<api_PropertyAnimation_setValid>` (bool  valid)                              |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_target>` () const                                       |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
-|                        const char | :ref:`targetProperty<api_PropertyAnimation_targetProperty>` () const                       |
-+-----------------------------------+--------------------------------------------------------------------------------------------+
++-----------------------------------+-------------------------------------------------------------------------------------------+
+|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_04ef3d91>` () const                              |
++-----------------------------------+-------------------------------------------------------------------------------------------+
+|                              void | :ref:`setCurrentValue<api_PropertyAnimation_1f4d9a05>` (const Variant & value)            |
++-----------------------------------+-------------------------------------------------------------------------------------------+
+|                              void | :ref:`setTarget<api_PropertyAnimation_231d7405>` (Object * object, const char * property) |
++-----------------------------------+-------------------------------------------------------------------------------------------+
+|                              void | :ref:`setValid<api_PropertyAnimation_2d75cef0>` (bool  valid)                             |
++-----------------------------------+-------------------------------------------------------------------------------------------+
+| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_30a215d9>` () const                                    |
++-----------------------------------+-------------------------------------------------------------------------------------------+
+|                        const char | :ref:`targetProperty<api_PropertyAnimation_a371de0b>` () const                            |
++-----------------------------------+-------------------------------------------------------------------------------------------+
 
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_defaultValue:
+.. _api_PropertyAnimation_04ef3d91:
 
  :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
 
@@ -67,7 +67,7 @@ Returns the default value of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_setCurrentValue:
+.. _api_PropertyAnimation_1f4d9a05:
 
  void **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -79,7 +79,7 @@ Sets the new current *value* for the animated Variant. And updates animated prop
 
 ----
 
-.. _api_PropertyAnimation_setTarget:
+.. _api_PropertyAnimation_231d7405:
 
  void **PropertyAnimation::setTarget** (:ref:`Object<api_Object>` * *object*, char * *property*)
 
@@ -89,7 +89,7 @@ Sets the new animated *property* of the *object*.
 
 ----
 
-.. _api_PropertyAnimation_setValid:
+.. _api_PropertyAnimation_2d75cef0:
 
  void **PropertyAnimation::setValid** (bool  *valid*)
 
@@ -101,7 +101,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 ----
 
-.. _api_PropertyAnimation_target:
+.. _api_PropertyAnimation_30a215d9:
 
 const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const
 
@@ -111,7 +111,7 @@ Returns the root object of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_targetProperty:
+.. _api_PropertyAnimation_a371de0b:
 
 const char **PropertyAnimation::targetProperty** () const
 

@@ -10,7 +10,7 @@ Inherited: None
 Description
 -----------
 
-Sprites usually used in games to display environment and characters in 2D games. This class also supports sprite sheets to contain several images in one container to simplify animation or handle tile maps.
+Sprites usually used in games to display environment and characters in 2D games.
 
 
 
@@ -19,19 +19,29 @@ Sprites usually used in games to display environment and characters in 2D games.
 Public Methods
 --------------
 
-+--------------------------------+--------------------------------------------------------------+
-|                            int | :ref:`addElement<api_Sprite_addElement>` (Texture * texture) |
-+--------------------------------+--------------------------------------------------------------+
-|                           void | :ref:`addPage<api_Sprite_addPage>` (Texture * texture)       |
-+--------------------------------+--------------------------------------------------------------+
-|                           void | :ref:`packSheets<api_Sprite_packSheets>` (int  padding)      |
-+--------------------------------+--------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Sprite_page>` (int  key = -1) const           |
-+--------------------------------+--------------------------------------------------------------+
-|                           void | :ref:`setShape<api_Sprite_setShape>` (int  key, Mesh * mesh) |
-+--------------------------------+--------------------------------------------------------------+
-|        :ref:`Mesh<api_Mesh>` * | :ref:`shape<api_Sprite_shape>` (int  key) const              |
-+--------------------------------+--------------------------------------------------------------+
++--------------------------------+----------------------------------------------------------------+
+|    :ref:`Vector4<api_Vector4>` | :ref:`border<api_Sprite_8cb3d42e>` () const                    |
++--------------------------------+----------------------------------------------------------------+
+|    :ref:`Vector4<api_Vector4>` | :ref:`bounds<api_Sprite_2c043918>` () const                    |
++--------------------------------+----------------------------------------------------------------+
+|        :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_Sprite_c1ea20df>` () const                      |
++--------------------------------+----------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`pivot<api_Sprite_1086a792>` () const                     |
++--------------------------------+----------------------------------------------------------------+
+|                          float | :ref:`pixelsPerUnit<api_Sprite_cad386bf>` () const             |
++--------------------------------+----------------------------------------------------------------+
+|                           void | :ref:`setBorder<api_Sprite_d1732b9a>` (const Vector4 & border) |
++--------------------------------+----------------------------------------------------------------+
+|                           void | :ref:`setBounds<api_Sprite_9f410bd2>` (const Vector4 & bounds) |
++--------------------------------+----------------------------------------------------------------+
+|                           void | :ref:`setPivot<api_Sprite_5e4076cb>` (const Vector2 & pivot)   |
++--------------------------------+----------------------------------------------------------------+
+|                           void | :ref:`setPixelsPerUnit<api_Sprite_f5b2d1e8>` (float  pixels)   |
++--------------------------------+----------------------------------------------------------------+
+|                           void | :ref:`setTexture<api_Sprite_9356d4a0>` (Texture * texture)     |
++--------------------------------+----------------------------------------------------------------+
+|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_Sprite_cbe903f8>` () const                   |
++--------------------------------+----------------------------------------------------------------+
 
 
 
@@ -47,58 +57,112 @@ None
 Methods Description
 -------------------
 
-.. _api_Sprite_addElement:
+.. _api_Sprite_8cb3d42e:
 
- int **Sprite::addElement** (:ref:`Texture<api_Texture>` * *texture*)
+ :ref:`Vector4<api_Vector4>`  **Sprite::border** () const
 
-Adds new sub *texture* as element to current sprite sheet. All elements will be packed to a single sprite sheet *texture* using Sprite::pack() method. Returns the id of the new element.
+Returns the border sizes of the Sprite.
 
-**See also** packSheets().
+X=left, Y=bottom, Z=right, W=top.
 
-----
-
-.. _api_Sprite_addPage:
-
- void **Sprite::addPage** (:ref:`Texture<api_Texture>` * *texture*)
-
-Adds a new sprite sheet *texture*.
+**See also** setBorder().
 
 ----
 
-.. _api_Sprite_packSheets:
+.. _api_Sprite_2c043918:
 
- void **Sprite::packSheets** (int  *padding*)
+ :ref:`Vector4<api_Vector4>`  **Sprite::bounds** () const
 
-Packs all added elements int to a sprite sheets. Parameter *padding* can be used to delimit elements.
+Returns bounds of the Sprite.
 
-**See also** addElement().
-
-----
-
-.. _api_Sprite_page:
-
- :ref:`Texture<api_Texture>` * **Sprite::page** (int  *key* = -1) const
-
-Returns a sprite sheet texture with *key*.
+**See also** setBounds().
 
 ----
 
-.. _api_Sprite_setShape:
+.. _api_Sprite_c1ea20df:
 
- void **Sprite::setShape** (int  *key*, :ref:`Mesh<api_Mesh>` * *mesh*)
+ :ref:`Mesh<api_Mesh>` * **Sprite::mesh** () const
 
-Sets a new *mesh* for the sprite with *key*. The old *mesh* will be deleted and no longer available.
-
-**See also** shape().
+Returns a mesh which represents the sprite.
 
 ----
 
-.. _api_Sprite_shape:
+.. _api_Sprite_1086a792:
 
- :ref:`Mesh<api_Mesh>` * **Sprite::shape** (int  *key*) const
+ :ref:`Vector2<api_Vector2>`  **Sprite::pivot** () const
 
-Returns a mesh which represents the sprite with *key*.
+Returns pivot point of the Sprite.
 
-**See also** setShape().
+**See also** setPivot().
+
+----
+
+.. _api_Sprite_cad386bf:
+
+ float **Sprite::pixelsPerUnit** () const
+
+Returns pixels per unit to create sprite meshes.
+
+**See also** setPixelsPerUnit().
+
+----
+
+.. _api_Sprite_d1732b9a:
+
+ void **Sprite::setBorder** (:ref:`Vector4<api_Vector4>` & *border*)
+
+Sets new *border* sizes for the Sprite.
+
+**See also** *border*().
+
+----
+
+.. _api_Sprite_9f410bd2:
+
+ void **Sprite::setBounds** (:ref:`Vector4<api_Vector4>` & *bounds*)
+
+Sets *bounds* of the Sprite.
+
+**See also** *bounds*().
+
+----
+
+.. _api_Sprite_5e4076cb:
+
+ void **Sprite::setPivot** (:ref:`Vector2<api_Vector2>` & *pivot*)
+
+Sets new *pivot* point for the Sprite.
+
+**See also** *pivot*().
+
+----
+
+.. _api_Sprite_f5b2d1e8:
+
+ void **Sprite::setPixelsPerUnit** (float  *pixels*)
+
+Sets *pixels* per unit to create sprite meshes.
+
+**See also** *pixels*PerUnit().
+
+----
+
+.. _api_Sprite_9356d4a0:
+
+ void **Sprite::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
+
+Sets a new sprite *texture*.
+
+**See also** *texture*().
+
+----
+
+.. _api_Sprite_cbe903f8:
+
+ :ref:`Texture<api_Texture>` * **Sprite::texture** () const
+
+Returns a sprite texture.
+
+**See also** setTexture().
 
 

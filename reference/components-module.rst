@@ -32,6 +32,7 @@ Components Module
    scene
    skinnedmeshrender
    spherecollider
+   spline
    spotlight
    spriterender
    textrender

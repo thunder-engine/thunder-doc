@@ -19,11 +19,11 @@ The CapsuleCollider class provides methods to manipulate the height of the capsu
 Public Methods
 --------------
 
-+--------+-----------------------------------------------------------------+
-|  float | :ref:`height<api_CapsuleCollider_height>` () const              |
-+--------+-----------------------------------------------------------------+
-|   void | :ref:`setHeight<api_CapsuleCollider_setHeight>` (float  height) |
-+--------+-----------------------------------------------------------------+
++--------+----------------------------------------------------------------+
+|  float | :ref:`height<api_CapsuleCollider_79a64def>` () const           |
++--------+----------------------------------------------------------------+
+|   void | :ref:`setHeight<api_CapsuleCollider_70152f6b>` (float  height) |
++--------+----------------------------------------------------------------+
 
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CapsuleCollider_height:
+.. _api_CapsuleCollider_79a64def:
 
  float **CapsuleCollider::height** () const
 
@@ -49,7 +49,7 @@ Returns the height of the capsule collider.
 
 ----
 
-.. _api_CapsuleCollider_setHeight:
+.. _api_CapsuleCollider_70152f6b:
 
  void **CapsuleCollider::setHeight** (float  *height*)
 

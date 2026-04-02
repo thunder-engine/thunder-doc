@@ -19,11 +19,11 @@ The BoxCollider class provides methods to manipulate the size of the box collide
 Public Methods
 --------------
 
-+-------------------------------------+---------------------------------------------------------------+
-|                                void | :ref:`setSize<api_BoxCollider_setSize>` (const Vector3  size) |
-+-------------------------------------+---------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_size>` () const                    |
-+-------------------------------------+---------------------------------------------------------------+
++-------------------------------------+----------------------------------------------------------------+
+|                                void | :ref:`setSize<api_BoxCollider_b20f5976>` (const Vector3  size) |
++-------------------------------------+----------------------------------------------------------------+
+| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_95f3eb86>` () const                 |
++-------------------------------------+----------------------------------------------------------------+
 
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_BoxCollider_setSize:
+.. _api_BoxCollider_b20f5976:
 
  void **BoxCollider::setSize** (:ref:`Vector3<api_Vector3>`  *size*)
 
@@ -49,7 +49,7 @@ Sets the *size* of the box collider.
 
 ----
 
-.. _api_BoxCollider_size:
+.. _api_BoxCollider_95f3eb86:
 
 const :ref:`Vector3<api_Vector3>` & **BoxCollider::size** () const
 

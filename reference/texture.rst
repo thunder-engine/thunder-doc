@@ -19,61 +19,67 @@ This class can be used to handle texture resource or create them at runtime.
 Public Methods
 --------------
 
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`addSurface<api_Texture_addSurface>` (const Texture::Surface & surface)        |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`depthBits<api_Texture_depthBits>` () const                                    |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`filtering<api_Texture_filtering>` () const                                    |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`format<api_Texture_format>` () const                                          |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`getPixel<api_Texture_getPixel>` (int  x, int  y, int  level) const            |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                  :ref:`ByteArray<api_ByteArray>` | :ref:`getPixels<api_Texture_getPixels>` (int  level) const                          |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`height<api_Texture_height>` () const                                          |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isArray<api_Texture_isArray>` () const                                        |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isCompressed<api_Texture_isCompressed>` () const                              |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isCubemap<api_Texture_isCubemap>` () const                                    |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isFeedback<api_Texture_isFeedback>` () const                                  |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             bool | :ref:`isRender<api_Texture_isRender>` () const                                      |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`mipCount<api_Texture_mipCount>` () const                                      |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`readPixels<api_Texture_readPixels>` (int  x, int  y, int  width, int  height) |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`resize<api_Texture_resize>` (int  width, int  height)                         |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setDepthBits<api_Texture_setDepthBits>` (int  depth)                          |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setDirty<api_Texture_setDirty>` ()                                            |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setFiltering<api_Texture_setFiltering>` (int  type)                           |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setFlags<api_Texture_setFlags>` (int  flags)                                  |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setFormat<api_Texture_setFormat>` (int  type)                                 |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setHeight<api_Texture_setHeight>` (int  height)                               |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setWidth<api_Texture_setWidth>` (int  width)                                  |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                             void | :ref:`setWrap<api_Texture_setWrap>` (int  type)                                     |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`sides<api_Texture_sides>` () const                                            |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`Texture::Surface<api_Texture::Surface>` & | :ref:`surface<api_Texture_surface>` (int  side)                                     |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`width<api_Texture_width>` () const                                            |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                              int | :ref:`wrap<api_Texture_wrap>` () const                                              |
-+--------------------------------------------------+-------------------------------------------------------------------------------------+
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`addSurface<api_Texture_ed913fc6>` (const Texture::Surface & surface)        |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`depth<api_Texture_13bf49d8>` () const                                       |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`depthBits<api_Texture_675a209d>` () const                                   |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`filtering<api_Texture_704e6dcb>` () const                                   |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`flags<api_Texture_f65b8291>` () const                                       |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`format<api_Texture_5ab0671f>` () const                                      |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`getPixel<api_Texture_26109aed>` (int  x, int  y, int  level) const          |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                 :ref:`ByteArray<api_ByteArray>` | :ref:`getPixels<api_Texture_9b1d58f6>` (int  level) const                         |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`height<api_Texture_5bc89306>` () const                                      |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            bool | :ref:`isArray<api_Texture_7a29fecb>` () const                                     |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            bool | :ref:`isCubemap<api_Texture_5492b38f>` () const                                   |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            bool | :ref:`isFeedback<api_Texture_8b7340ce>` () const                                  |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            bool | :ref:`isRender<api_Texture_d6af019e>` () const                                    |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`mipCount<api_Texture_ab60d154>` () const                                    |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`readPixels<api_Texture_269b8510>` (int  x, int  y, int  width, int  height) |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`resize<api_Texture_465d910c>` (int  width, int  height)                     |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setCompress<api_Texture_c476fd51>` (int  method)                            |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setDepth<api_Texture_2bae1893>` (int  depth)                                |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setDepthBits<api_Texture_0cd492b1>` (int  depth)                            |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setDirty<api_Texture_486e17a9>` ()                                          |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setFiltering<api_Texture_127a4b05>` (int  type)                             |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setFlags<api_Texture_12ea9d56>` (int  flags)                                |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setFormat<api_Texture_63d5981c>` (int  type)                                |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setHeight<api_Texture_dec1b379>` (int  height)                              |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setWidth<api_Texture_028f679d>` (int  width)                                |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                            void | :ref:`setWrap<api_Texture_02756f4e>` (int  type)                                  |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`sides<api_Texture_76a9428c>` () const                                       |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|  :ref:`Texture::Surface<api_Texture_Surface>` & | :ref:`surface<api_Texture_e84267cb>` (int  side)                                  |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`width<api_Texture_05d38a7e>` () const                                       |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
+|                                             int | :ref:`wrap<api_Texture_e57036b4>` () const                                        |
++-------------------------------------------------+-----------------------------------------------------------------------------------+
 
 .. _api_Texture_enums:
 
@@ -121,11 +127,13 @@ Public Enums
 +-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
 |        Texture::RGB10A2 | 3     | 10 bits each for RGB, 2 for Alpha.                                                                                                       |
 +-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
-|    Texture::RGBA32Float | 6     | Color texture and alpha with floating-point values. It uses 32-bit floating-point values per channel.                                    |
-+-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
 | Texture::R11G11B10Float | 4     | This uses special 11 and 10-bit floating-point values. This is very economical for floating-point values (using only 32-bits per value). |
 +-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
-|          Texture::Depth | 5     | Depth buffer texture format. Number bits per pixel depend on graphical settings and hardware. Can be 16, 24 or 32-bit per pixel.         |
+|    Texture::RGBA32Float | 5     | Color texture and alpha with floating-point values. It uses 32-bit floating-point values per channel.                                    |
++-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+|    Texture::RGBA16Float | 6     | Color texture and alpha with floating-point values. It uses 16-bit floating-point values per channel.                                    |
++-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
+|          Texture::Depth | 7     | Depth buffer texture format. Number bits per pixel depend on graphical settings and hardware. Can be 16, 24 or 32-bit per pixel.         |
 +-------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Texture_WrapType:
@@ -151,18 +159,18 @@ Wrap mode for textures.
 Static Methods
 --------------
 
-+--------------------------------+------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`maxCubemapSize<api_Texture_maxCubemapSize>` () |
-+--------------------------------+------------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`maxTextureSize<api_Texture_maxTextureSize>` () |
-+--------------------------------+------------------------------------------------------+
++-----------+------------------------------------------------+
+|  uint32_t | :ref:`maxCubemapSize<api_Texture_58b49617>` () |
++-----------+------------------------------------------------+
+|  uint32_t | :ref:`maxTextureSize<api_Texture_9b4fde0a>` () |
++-----------+------------------------------------------------+
 
 .. _api_Texture_methods:
 
 Methods Description
 -------------------
 
-.. _api_Texture_addSurface:
+.. _api_Texture_ed913fc6:
 
  void **Texture::addSurface** (:ref:`Texture::Surface<api_Texture::Surface>` & *surface*)
 
@@ -170,11 +178,21 @@ Adds *surface* to the texture. Each texture must contain at least one *surface*.
 
 ----
 
-.. _api_Texture_depthBits:
+.. _api_Texture_13bf49d8:
+
+ int **Texture::depth** () const
+
+Returns depth dimension for the texture.
+
+**See also** setDepth().
+
+----
+
+.. _api_Texture_675a209d:
 
  int **Texture::depthBits** () const
 
-Returns the number of depth bits.
+Returns the number of depth buffer bits.
 
 
 **Note:** This value is valid only for the depth textures.
@@ -184,7 +202,7 @@ Returns the number of depth bits.
 
 ----
 
-.. _api_Texture_filtering:
+.. _api_Texture_704e6dcb:
 
  int **Texture::filtering** () const
 
@@ -194,7 +212,17 @@ Returns filtering type of texture. For more details please see the Texture::Filt
 
 ----
 
-.. _api_Texture_format:
+.. _api_Texture_f65b8291:
+
+ int **Texture::flags** () const
+
+Returns service flags for the texture.
+
+**See also** setFlags() and Texture::Flags.
+
+----
+
+.. _api_Texture_5ab0671f:
 
  int **Texture::format** () const
 
@@ -204,7 +232,7 @@ Returns format type of texture. For more details please see the Texture::FormatT
 
 ----
 
-.. _api_Texture_getPixel:
+.. _api_Texture_26109aed:
 
  int **Texture::getPixel** (int  *x*, int  *y*, int  *level*) const
 
@@ -212,7 +240,7 @@ Returns pixel color from mip *level* at *x* and *y* position as RGBA integer for
 
 ----
 
-.. _api_Texture_getPixels:
+.. _api_Texture_9b1d58f6:
 
  :ref:`ByteArray<api_ByteArray>`  **Texture::getPixels** (int  *level*) const
 
@@ -220,7 +248,7 @@ Returns texture data from a mip *level*.
 
 ----
 
-.. _api_Texture_height:
+.. _api_Texture_5bc89306:
 
  int **Texture::height** () const
 
@@ -230,7 +258,7 @@ Returns height for the texture.
 
 ----
 
-.. _api_Texture_isArray:
+.. _api_Texture_7a29fecb:
 
  bool **Texture::isArray** () const
 
@@ -242,15 +270,7 @@ Returns true if texture provides a set of textures; otherwise returns false.
 
 ----
 
-.. _api_Texture_isCompressed:
-
- bool **Texture::isCompressed** () const
-
-Returns true if texture uses one of the compression formats; otherwise returns false.
-
-----
-
-.. _api_Texture_isCubemap:
+.. _api_Texture_5492b38f:
 
  bool **Texture::isCubemap** () const
 
@@ -258,7 +278,7 @@ Returns true if the texture is a cube map; otherwise returns false.
 
 ----
 
-.. _api_Texture_isFeedback:
+.. _api_Texture_8b7340ce:
 
  bool **Texture::isFeedback** () const
 
@@ -266,7 +286,7 @@ Returns true if texture marked as a feed back texture; otherwise returns false. 
 
 ----
 
-.. _api_Texture_isRender:
+.. _api_Texture_d6af019e:
 
  bool **Texture::isRender** () const
 
@@ -274,23 +294,23 @@ Returns true if texture is can be attached to framebuffer; otherwise returns fal
 
 ----
 
-.. _api_Texture_maxCubemapSize:
+.. _api_Texture_58b49617:
 
- :ref:`uint32_t<api_uint32_t>`  **Texture::maxCubemapSize** ()
+ uint32_t **Texture::maxCubemapSize** ()
 
 Returns the maximum cubemap size.
 
 ----
 
-.. _api_Texture_maxTextureSize:
+.. _api_Texture_9b4fde0a:
 
- :ref:`uint32_t<api_uint32_t>`  **Texture::maxTextureSize** ()
+ uint32_t **Texture::maxTextureSize** ()
 
 Returns the maximum texure size.
 
 ----
 
-.. _api_Texture_mipCount:
+.. _api_Texture_ab60d154:
 
  int **Texture::mipCount** () const
 
@@ -298,7 +318,7 @@ Returns the number of MIP levels.
 
 ----
 
-.. _api_Texture_readPixels:
+.. _api_Texture_269b8510:
 
  void **Texture::readPixels** (int  *x*, int  *y*, int  *width*, int  *height*)
 
@@ -306,7 +326,7 @@ Read pixels from GPU at *x* and *y* position with *width* and *height* dimension
 
 ----
 
-.. _api_Texture_resize:
+.. _api_Texture_465d910c:
 
  void **Texture::resize** (int  *width*, int  *height*)
 
@@ -314,11 +334,29 @@ Sets new *width* and *height* for the texture.
 
 ----
 
-.. _api_Texture_setDepthBits:
+.. _api_Texture_c476fd51:
+
+ void **Texture::setCompress** (int  *method*)
+
+Set the compression *method*.
+
+----
+
+.. _api_Texture_2bae1893:
+
+ void **Texture::setDepth** (int  *depth*)
+
+Sets new *depth* dimension for the texture.
+
+**See also** *depth*().
+
+----
+
+.. _api_Texture_0cd492b1:
 
  void **Texture::setDepthBits** (int  *depth*)
 
-Sets the number of *depth* bits.
+Sets the number of *depth* buffer bits.
 
 
 **Note:** This value is valid only for the *depth* textures.
@@ -328,7 +366,7 @@ Sets the number of *depth* bits.
 
 ----
 
-.. _api_Texture_setDirty:
+.. _api_Texture_486e17a9:
 
  void **Texture::setDirty** ()
 
@@ -336,7 +374,7 @@ Marks texture as dirty. That means this texture must be forcefully reloaded.
 
 ----
 
-.. _api_Texture_setFiltering:
+.. _api_Texture_127a4b05:
 
  void **Texture::setFiltering** (int  *type*)
 
@@ -346,17 +384,17 @@ Sets filtering *type* of texture. For more details please see the Texture::Filte
 
 ----
 
-.. _api_Texture_setFlags:
+.. _api_Texture_12ea9d56:
 
  void **Texture::setFlags** (int  *flags*)
 
 Sets service *flags* for the texture.
 
-**See also** Texture::Flags.
+**See also** *flags*() and Texture::Flags.
 
 ----
 
-.. _api_Texture_setFormat:
+.. _api_Texture_63d5981c:
 
  void **Texture::setFormat** (int  *type*)
 
@@ -366,7 +404,7 @@ Sets format *type* of texture. For more details please see the Texture::FormatTy
 
 ----
 
-.. _api_Texture_setHeight:
+.. _api_Texture_dec1b379:
 
  void **Texture::setHeight** (int  *height*)
 
@@ -376,7 +414,7 @@ Sets new *height* for the texture.
 
 ----
 
-.. _api_Texture_setWidth:
+.. _api_Texture_028f679d:
 
  void **Texture::setWidth** (int  *width*)
 
@@ -386,7 +424,7 @@ Sets new *width* for the texture.
 
 ----
 
-.. _api_Texture_setWrap:
+.. _api_Texture_02756f4e:
 
  void **Texture::setWrap** (int  *type*)
 
@@ -396,7 +434,7 @@ Sets the *type* of warp policy. For more details please see the Texture::WrapTyp
 
 ----
 
-.. _api_Texture_sides:
+.. _api_Texture_76a9428c:
 
  int **Texture::sides** () const
 
@@ -404,7 +442,7 @@ Returns the number of texture sides. In most cases returns 1 but for the cube ma
 
 ----
 
-.. _api_Texture_surface:
+.. _api_Texture_e84267cb:
 
  :ref:`Texture::Surface<api_Texture::Surface>` & **Texture::surface** (int  *side*)
 
@@ -412,7 +450,7 @@ Returns a surface for the provided *side*. Each texture must contain at least on
 
 ----
 
-.. _api_Texture_width:
+.. _api_Texture_05d38a7e:
 
  int **Texture::width** () const
 
@@ -422,7 +460,7 @@ Returns width for the texture.
 
 ----
 
-.. _api_Texture_wrap:
+.. _api_Texture_e57036b4:
 
  int **Texture::wrap** () const
 

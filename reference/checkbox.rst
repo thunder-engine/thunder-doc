@@ -19,15 +19,15 @@ The CheckBox class represents an option button that can be toggled between two s
 Public Methods
 --------------
 
-+------------------------------+-----------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_CheckBox_knobColor>` () const                     |
-+------------------------------+-----------------------------------------------------------------------+
-|    :ref:`Image<api_Image>` * | :ref:`knobGraphic<api_CheckBox_knobGraphic>` () const                 |
-+------------------------------+-----------------------------------------------------------------------+
-|                         void | :ref:`setKnobColor<api_CheckBox_setKnobColor>` (const Vector4  color) |
-+------------------------------+-----------------------------------------------------------------------+
-|                         void | :ref:`setKnobGraphic<api_CheckBox_setKnobGraphic>` (Image * knob)     |
-+------------------------------+-----------------------------------------------------------------------+
++------------------------------+-------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_CheckBox_9eb746cd>` () const                  |
++------------------------------+-------------------------------------------------------------------+
+|    :ref:`Image<api_Image>` * | :ref:`knobGraphic<api_CheckBox_c3e8495f>` () const                |
++------------------------------+-------------------------------------------------------------------+
+|                         void | :ref:`setKnobColor<api_CheckBox_835cd21b>` (const Vector4  color) |
++------------------------------+-------------------------------------------------------------------+
+|                         void | :ref:`setKnobGraphic<api_CheckBox_f059872c>` (Image * knob)       |
++------------------------------+-------------------------------------------------------------------+
 
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CheckBox_knobColor:
+.. _api_CheckBox_9eb746cd:
 
  :ref:`Vector4<api_Vector4>`  **CheckBox::knobColor** () const
 
@@ -53,7 +53,7 @@ Returns the color of the graphical knob.
 
 ----
 
-.. _api_CheckBox_knobGraphic:
+.. _api_CheckBox_c3e8495f:
 
  :ref:`Image<api_Image>` * **CheckBox::knobGraphic** () const
 
@@ -63,7 +63,7 @@ Returns the graphical knob component.
 
 ----
 
-.. _api_CheckBox_setKnobColor:
+.. _api_CheckBox_835cd21b:
 
  void **CheckBox::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
@@ -73,7 +73,7 @@ Sets the *color* of the graphical knob.
 
 ----
 
-.. _api_CheckBox_setKnobGraphic:
+.. _api_CheckBox_f059872c:
 
  void **CheckBox::setKnobGraphic** (:ref:`Image<api_Image>` * *knob*)
 

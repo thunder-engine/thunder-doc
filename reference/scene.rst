@@ -19,9 +19,9 @@ The Scene class serves as a container for actors and entities within the applica
 Public Methods
 --------------
 
-+----------------------------+----------------------------------------+
-|  :ref:`World<api_World>` * | :ref:`world<api_Scene_world>` () const |
-+----------------------------+----------------------------------------+
++----------------------------+-------------------------------------------+
+|  :ref:`World<api_World>` * | :ref:`world<api_Scene_a318eb79>` () const |
++----------------------------+-------------------------------------------+
 
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Scene_world:
+.. _api_Scene_a318eb79:
 
  :ref:`World<api_World>` * **Scene::world** () const
 

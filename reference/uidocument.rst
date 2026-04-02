@@ -17,11 +17,11 @@ Description
 Public Methods
 --------------
 
-+--------------+-------------------------------------------------------------------+
-|  std::string | :ref:`data<api_UiDocument_data>` () const                         |
-+--------------+-------------------------------------------------------------------+
-|         void | :ref:`setData<api_UiDocument_setData>` (const std::string & data) |
-+--------------+-------------------------------------------------------------------+
++------------------------------+----------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`data<api_UiDocument_94f1d50e>` () const                  |
++------------------------------+----------------------------------------------------------------+
+|                         void | :ref:`setData<api_UiDocument_872c149f>` (const TString & data) |
++------------------------------+----------------------------------------------------------------+
 
 
 
@@ -37,9 +37,9 @@ None
 Methods Description
 -------------------
 
-.. _api_UiDocument_data:
+.. _api_UiDocument_94f1d50e:
 
- std::string **UiDocument::data** () const
+ :ref:`TString<api_TString>`  **UiDocument::data** () const
 
 Returns content as a string.
 
@@ -47,9 +47,9 @@ Returns content as a string.
 
 ----
 
-.. _api_UiDocument_setData:
+.. _api_UiDocument_872c149f:
 
- void **UiDocument::setData** (std::string & *data*)
+ void **UiDocument::setData** (:ref:`TString<api_TString>` & *data*)
 
 Sets a new content *data*.
 

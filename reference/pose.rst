@@ -17,13 +17,15 @@ Description
 Public Methods
 --------------
 
-+-------------------------------+------------------------------------------------+
-|                          void | :ref:`addBone<api_Pose_addBone>` (Bone * bone) |
-+-------------------------------+------------------------------------------------+
-| const :ref:`Bone<api_Bone>` * | :ref:`bone<api_Pose_bone>` (int  index) const  |
-+-------------------------------+------------------------------------------------+
-|                           int | :ref:`boneCount<api_Pose_boneCount>` () const  |
-+-------------------------------+------------------------------------------------+
++-------------------------------+-------------------------------------------------------+
+|                          void | :ref:`addBone<api_Pose_604f91ad>` (const Bone & bone) |
++-------------------------------+-------------------------------------------------------+
+| const :ref:`Bone<api_Bone>` * | :ref:`bone<api_Pose_eca8d605>` (int  index) const     |
++-------------------------------+-------------------------------------------------------+
+|                           int | :ref:`boneCount<api_Pose_d19ac2b5>` () const          |
++-------------------------------+-------------------------------------------------------+
+|                          void | :ref:`clear<api_Pose_8a590fbc>` ()                    |
++-------------------------------+-------------------------------------------------------+
 
 
 
@@ -39,15 +41,15 @@ None
 Methods Description
 -------------------
 
-.. _api_Pose_addBone:
+.. _api_Pose_604f91ad:
 
- void **Pose::addBone** (:ref:`Bone<api_Bone>` * *bone*)
+ void **Pose::addBone** (:ref:`Bone<api_Bone>` & *bone*)
 
 Adds a *bone* to the pose.
 
 ----
 
-.. _api_Pose_bone:
+.. _api_Pose_eca8d605:
 
 const :ref:`Bone<api_Bone>` * **Pose::bone** (int  *index*) const
 
@@ -59,10 +61,18 @@ Returns a bone with *index*.
 
 ----
 
-.. _api_Pose_boneCount:
+.. _api_Pose_d19ac2b5:
 
  int **Pose::boneCount** () const
 
 Returns the count of bones for the current pose which was affected.
+
+----
+
+.. _api_Pose_8a590fbc:
+
+ void **Pose::clear** ()
+
+Removes all bones from pose.
 
 

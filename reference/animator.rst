@@ -19,35 +19,31 @@ The animation controller allows to control different animation states from Anima
 Public Methods
 --------------
 
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`crossFade<api_Animator_crossFade>` (const std::string & state, float  duration)  |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`crossFadeHash<api_Animator_crossFadeHash>` (int  hash, float  duration)          |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                        int | :ref:`duration<api_Animator_duration>` () const                                        |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`rebind<api_Animator_rebind>` ()                                                  |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setBool<api_Animator_setBool>` (const std::string & name, bool  value)           |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setBoolHash<api_Animator_setBoolHash>` (int  hash, bool  value)                  |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setFloat<api_Animator_setFloat>` (const std::string & name, float  value)        |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setFloatHash<api_Animator_setFloatHash>` (int  hash, float  value)               |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setInteger<api_Animator_setInteger>` (const std::string & name, int32_t  value)  |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setIntegerHash<api_Animator_setIntegerHash>` (int  hash, int32_t  value)         |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setState<api_Animator_setState>` (const std::string & state)                     |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setStateHash<api_Animator_setStateHash>` (int  hash)                             |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setStateMachine<api_Animator_setStateMachine>` (AnimationStateMachine * machine) |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
-|  :ref:`AnimationStateMachine<api_AnimationStateMachine>` * | :ref:`stateMachine<api_Animator_stateMachine>` () const                                |
-+------------------------------------------------------------+----------------------------------------------------------------------------------------+
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`crossFade<api_Animator_4bde87a9>` (const TString & state, float  duration) |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`crossFadeHash<api_Animator_8473605d>` (int  hash, float  duration)         |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setBool<api_Animator_3140a6b7>` (const TString & name, bool  value)        |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setBoolHash<api_Animator_054f86e3>` (int  hash, bool  value)               |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setFloat<api_Animator_6b821fd0>` (const TString & name, float  value)      |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setFloatHash<api_Animator_e985b3fc>` (int  hash, float  value)             |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setInteger<api_Animator_2796c85f>` (const TString & name, int32_t  value)  |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setIntegerHash<api_Animator_724fa3d9>` (int  hash, int32_t  value)         |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setState<api_Animator_b4fe9d01>` (const TString & state)                   |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setStateHash<api_Animator_92e7cba8>` (int  hash)                           |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|                                                       void | :ref:`setStateMachine<api_Animator_b4c6e930>` (AnimationStateMachine * machine)  |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
+|  :ref:`AnimationStateMachine<api_AnimationStateMachine>` * | :ref:`stateMachine<api_Animator_d749a02c>` () const                              |
++------------------------------------------------------------+----------------------------------------------------------------------------------+
 
 
 
@@ -63,47 +59,31 @@ None
 Methods Description
 -------------------
 
-.. _api_Animator_crossFade:
+.. _api_Animator_4bde87a9:
 
- void **Animator::crossFade** (std::string & *state*, float  *duration*)
+ void **Animator::crossFade** (:ref:`TString<api_TString>` & *state*, float  *duration*)
 
-Smoothly changes current *state* using crossfade interpolation from the previous *state* to the new *state* with *duration* (in milliseconds).
+Smoothly changes current *state* using crossfade interpolation from the previous *state* to the new *state* with normalized *duration* time.
 
 ----
 
-.. _api_Animator_crossFadeHash:
+.. _api_Animator_8473605d:
 
  void **Animator::crossFadeHash** (int  *hash*, float  *duration*)
 
-Smoothly changes current state using crossfade interpolation from the previous state to the new state (using the *hash* of state) with *duration* (in milliseconds).
+Smoothly changes current state using crossfade interpolation from the previous state to the new state (using the *hash* of state) with normalized *duration* time.
 
 ----
 
-.. _api_Animator_duration:
+.. _api_Animator_3140a6b7:
 
- int **Animator::duration** () const
-
-Returns duration of the animation clip for the current state.
-
-----
-
-.. _api_Animator_rebind:
-
- void **Animator::rebind** ()
-
-Rebinds all animated properties with Animator.
-
-----
-
-.. _api_Animator_setBool:
-
- void **Animator::setBool** (std::string & *name*, bool  *value*)
+ void **Animator::setBool** (:ref:`TString<api_TString>` & *name*, bool  *value*)
 
 Sets the new boolean *value* for the parameter with the *name*.
 
 ----
 
-.. _api_Animator_setBoolHash:
+.. _api_Animator_054f86e3:
 
  void **Animator::setBoolHash** (int  *hash*, bool  *value*)
 
@@ -111,15 +91,15 @@ Sets the new boolean *value* for the parameter using the *hash* of state as the 
 
 ----
 
-.. _api_Animator_setFloat:
+.. _api_Animator_6b821fd0:
 
- void **Animator::setFloat** (std::string & *name*, float  *value*)
+ void **Animator::setFloat** (:ref:`TString<api_TString>` & *name*, float  *value*)
 
 Sets the new floating-point *value* for the parameter with the *name*.
 
 ----
 
-.. _api_Animator_setFloatHash:
+.. _api_Animator_e985b3fc:
 
  void **Animator::setFloatHash** (int  *hash*, float  *value*)
 
@@ -127,15 +107,15 @@ Sets the new floating-point *value* for the parameter using the *hash* of state 
 
 ----
 
-.. _api_Animator_setInteger:
+.. _api_Animator_2796c85f:
 
- void **Animator::setInteger** (std::string & *name*, int32_t  *value*)
+ void **Animator::setInteger** (:ref:`TString<api_TString>` & *name*, int32_t  *value*)
 
 Sets the new integer *value* for the parameter with the *name*.
 
 ----
 
-.. _api_Animator_setIntegerHash:
+.. _api_Animator_724fa3d9:
 
  void **Animator::setIntegerHash** (int  *hash*, int32_t  *value*)
 
@@ -143,15 +123,15 @@ Sets the new integer *value* for the parameter using the *hash* of state as the 
 
 ----
 
-.. _api_Animator_setState:
+.. _api_Animator_b4fe9d01:
 
- void **Animator::setState** (std::string & *state*)
+ void **Animator::setState** (:ref:`TString<api_TString>` & *state*)
 
 Changes the current *state* of *state* machine immediately.
 
 ----
 
-.. _api_Animator_setStateHash:
+.. _api_Animator_92e7cba8:
 
  void **Animator::setStateHash** (int  *hash*)
 
@@ -159,7 +139,7 @@ Changes the current state (using the *hash* of state) of state machine immediate
 
 ----
 
-.. _api_Animator_setStateMachine:
+.. _api_Animator_b4c6e930:
 
  void **Animator::setStateMachine** (:ref:`AnimationStateMachine<api_AnimationStateMachine>` * *machine*)
 
@@ -173,7 +153,7 @@ Sets animation state *machine* which will be attached to this Animator.
 
 ----
 
-.. _api_Animator_stateMachine:
+.. _api_Animator_d749a02c:
 
  :ref:`AnimationStateMachine<api_AnimationStateMachine>` * **Animator::stateMachine** () const
 

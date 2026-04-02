@@ -17,11 +17,11 @@ Description
 Public Methods
 --------------
 
-+--------------+------------------------------------------------------------------------------------------------------+
-|         void | :ref:`setPair<api_Translator_setPair>` (const std::string & source, const std::string & translation) |
-+--------------+------------------------------------------------------------------------------------------------------+
-|  std::string | :ref:`translate<api_Translator_translate>` (const std::string & source) const                        |
-+--------------+------------------------------------------------------------------------------------------------------+
++------------------------------+-----------------------------------------------------------------------------------------------+
+|                         void | :ref:`setPair<api_Translator_869d4e32>` (const TString & source, const TString & translation) |
++------------------------------+-----------------------------------------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`translate<api_Translator_932f6104>` (const TString & source) const                      |
++------------------------------+-----------------------------------------------------------------------------------------------+
 
 
 
@@ -37,18 +37,18 @@ None
 Methods Description
 -------------------
 
-.. _api_Translator_setPair:
+.. _api_Translator_869d4e32:
 
- void **Translator::setPair** (std::string & *source*, std::string & *translation*)
+ void **Translator::setPair** (:ref:`TString<api_TString>` & *source*, :ref:`TString<api_TString>` & *translation*)
 
-Sets new *translation* for the *source* std::string.
+Sets new *translation* for the *source* string.
 
 ----
 
-.. _api_Translator_translate:
+.. _api_Translator_932f6104:
 
- std::string **Translator::translate** (std::string & *source*) const
+ :ref:`TString<api_TString>`  **Translator::translate** (:ref:`TString<api_TString>` & *source*) const
 
-Returns the translated *source* std::string.
+Returns the translated *source* string.
 
 

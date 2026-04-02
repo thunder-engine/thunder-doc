@@ -19,37 +19,41 @@ The Label class is a graphical user interface (GUI) element that is used to disp
 Public Methods
 --------------
 
-+------------------------------+---------------------------------------------------------------+
-|                          int | :ref:`align<api_Label_align>` () const                        |
-+------------------------------+---------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Label_color>` () const                        |
-+------------------------------+---------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`cursorAt<api_Label_cursorAt>` (int  position)           |
-+------------------------------+---------------------------------------------------------------+
-|      :ref:`Font<api_Font>` * | :ref:`font<api_Label_font>` () const                          |
-+------------------------------+---------------------------------------------------------------+
-|                          int | :ref:`fontSize<api_Label_fontSize>` () const                  |
-+------------------------------+---------------------------------------------------------------+
-|                         bool | :ref:`kerning<api_Label_kerning>` () const                    |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setAlign<api_Label_setAlign>` (int  alignment)          |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setColor<api_Label_setColor>` (const Vector4  color)    |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setFont<api_Label_setFont>` (Font * font)               |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setFontSize<api_Label_setFontSize>` (int  size)         |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setKerning<api_Label_setKerning>` (const bool  kerning) |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setText<api_Label_setText>` (const std::string  text)   |
-+------------------------------+---------------------------------------------------------------+
-|                         void | :ref:`setWordWrap<api_Label_setWordWrap>` (bool  wrap)        |
-+------------------------------+---------------------------------------------------------------+
-|                  std::string | :ref:`text<api_Label_text>` () const                          |
-+------------------------------+---------------------------------------------------------------+
-|                         bool | :ref:`wordWrap<api_Label_wordWrap>` () const                  |
-+------------------------------+---------------------------------------------------------------+
++------------------------------+-------------------------------------------------------------+
+|                          int | :ref:`align<api_Label_7ef20364>` () const                   |
++------------------------------+-------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Label_6c3420da>` () const                   |
++------------------------------+-------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` | :ref:`cursorAt<api_Label_81fb0c4d>` (int  position)         |
++------------------------------+-------------------------------------------------------------+
+|      :ref:`Font<api_Font>` * | :ref:`font<api_Label_a3f401bd>` () const                    |
++------------------------------+-------------------------------------------------------------+
+|                          int | :ref:`fontSize<api_Label_03b246ed>` () const                |
++------------------------------+-------------------------------------------------------------+
+|                         bool | :ref:`kerning<api_Label_486f3207>` () const                 |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setAlign<api_Label_0194b758>` (int  alignment)        |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setColor<api_Label_f02be375>` (const Vector4 & color) |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setFont<api_Label_75be2489>` (Font * font)            |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setFontSize<api_Label_9547d1a3>` (int  size)          |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setKerning<api_Label_b598d64a>` (const bool  enable)  |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setText<api_Label_c7f308d1>` (const TString & text)   |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setTranslated<api_Label_580fcd26>` (bool  enable)     |
++------------------------------+-------------------------------------------------------------+
+|                         void | :ref:`setWordWrap<api_Label_520be473>` (bool  wrap)         |
++------------------------------+-------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`text<api_Label_b2f41ed0>` () const                    |
++------------------------------+-------------------------------------------------------------+
+|                         bool | :ref:`translated<api_Label_6a381ebd>` () const              |
++------------------------------+-------------------------------------------------------------+
+|                         bool | :ref:`wordWrap<api_Label_a63b4759>` () const                |
++------------------------------+-------------------------------------------------------------+
 
 
 
@@ -65,7 +69,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Label_align:
+.. _api_Label_7ef20364:
 
  int **Label::align** () const
 
@@ -75,7 +79,7 @@ Returns text alignment policy.
 
 ----
 
-.. _api_Label_color:
+.. _api_Label_6c3420da:
 
  :ref:`Vector4<api_Vector4>`  **Label::color** () const
 
@@ -85,7 +89,7 @@ Returns the color of the text to be drawn.
 
 ----
 
-.. _api_Label_cursorAt:
+.. _api_Label_81fb0c4d:
 
  :ref:`Vector2<api_Vector2>`  **Label::cursorAt** (int  *position*)
 
@@ -93,7 +97,7 @@ Returns a *position* for virtual cursor.
 
 ----
 
-.. _api_Label_font:
+.. _api_Label_a3f401bd:
 
  :ref:`Font<api_Font>` * **Label::font** () const
 
@@ -103,7 +107,7 @@ Returns the font which will be used to draw a text.
 
 ----
 
-.. _api_Label_fontSize:
+.. _api_Label_03b246ed:
 
  int **Label::fontSize** () const
 
@@ -113,7 +117,7 @@ Returns the size of the font.
 
 ----
 
-.. _api_Label_kerning:
+.. _api_Label_486f3207:
 
  bool **Label::kerning** () const
 
@@ -123,7 +127,7 @@ Returns true if glyph kerning enabled; otherwise returns false.
 
 ----
 
-.. _api_Label_setAlign:
+.. _api_Label_0194b758:
 
  void **Label::setAlign** (int  *alignment*)
 
@@ -133,9 +137,9 @@ Sets text *alignment* policy.
 
 ----
 
-.. _api_Label_setColor:
+.. _api_Label_f02be375:
 
- void **Label::setColor** (:ref:`Vector4<api_Vector4>`  *color*)
+ void **Label::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
 Changes the *color* of the text to be drawn.
 
@@ -143,7 +147,7 @@ Changes the *color* of the text to be drawn.
 
 ----
 
-.. _api_Label_setFont:
+.. _api_Label_75be2489:
 
  void **Label::setFont** (:ref:`Font<api_Font>` * *font*)
 
@@ -153,7 +157,7 @@ Changes the *font* which will be used to draw a text.
 
 ----
 
-.. _api_Label_setFontSize:
+.. _api_Label_9547d1a3:
 
  void **Label::setFontSize** (int  *size*)
 
@@ -163,23 +167,23 @@ Changes the *size* of the font.
 
 ----
 
-.. _api_Label_setKerning:
+.. _api_Label_b598d64a:
 
- void **Label::setKerning** (bool  *kerning*)
+ void **Label::setKerning** (bool  *enable*)
 
-Set true to enable glyph *kerning* and false to disable.
-
-
-**Note:** Glyph *kerning* functionality depends on fonts which you are using. In case of font doesn't support *kerning*, you will not see the difference.
+Set true to *enable* glyph kerning and false to disable.
 
 
-**See also** *kerning*().
+**Note:** Glyph kerning functionality depends on fonts which you are using. In case of font doesn't support kerning, you will not see the difference.
+
+
+**See also** kerning().
 
 ----
 
-.. _api_Label_setText:
+.. _api_Label_c7f308d1:
 
- void **Label::setText** (std::string  *text*)
+ void **Label::setText** (:ref:`TString<api_TString>` & *text*)
 
 Changes the *text* which will be drawn.
 
@@ -187,7 +191,17 @@ Changes the *text* which will be drawn.
 
 ----
 
-.. _api_Label_setWordWrap:
+.. _api_Label_580fcd26:
+
+ void **Label::setTranslated** (bool  *enable*)
+
+Sets *enable* or disable translation from dictionary for current label.
+
+**See also** translated().
+
+----
+
+.. _api_Label_520be473:
 
  void **Label::setWordWrap** (bool  *wrap*)
 
@@ -197,9 +211,9 @@ Sets the word *wrap* policy. Set true to enable word *wrap* and false to disable
 
 ----
 
-.. _api_Label_text:
+.. _api_Label_b2f41ed0:
 
- std::string **Label::text** () const
+ :ref:`TString<api_TString>`  **Label::text** () const
 
 Returns the text which will be drawn.
 
@@ -207,7 +221,17 @@ Returns the text which will be drawn.
 
 ----
 
-.. _api_Label_wordWrap:
+.. _api_Label_6a381ebd:
+
+ bool **Label::translated** () const
+
+Returns true if text in label must be translated; othewise returns false.
+
+**See also** setTranslated().
+
+----
+
+.. _api_Label_a63b4759:
 
  bool **Label::wordWrap** () const
 

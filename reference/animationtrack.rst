@@ -17,23 +17,27 @@ Description
 Public Methods
 --------------
 
-+--------------+----------------------------------------------------------------------------------+
-|          int | :ref:`duration<api_AnimationTrack_duration>` () const                            |
-+--------------+----------------------------------------------------------------------------------+
-|         void | :ref:`fixCurves<api_AnimationTrack_fixCurves>` ()                                |
-+--------------+----------------------------------------------------------------------------------+
-|          int | :ref:`hash<api_AnimationTrack_hash>` () const                                    |
-+--------------+----------------------------------------------------------------------------------+
-|  std::string | :ref:`path<api_AnimationTrack_path>` () const                                    |
-+--------------+----------------------------------------------------------------------------------+
-|  std::string | :ref:`property<api_AnimationTrack_property>` () const                            |
-+--------------+----------------------------------------------------------------------------------+
-|         void | :ref:`setDuration<api_AnimationTrack_setDuration>` (int  duration)               |
-+--------------+----------------------------------------------------------------------------------+
-|         void | :ref:`setPath<api_AnimationTrack_setPath>` (const std::string  path)             |
-+--------------+----------------------------------------------------------------------------------+
-|         void | :ref:`setProperty<api_AnimationTrack_setProperty>` (const std::string  property) |
-+--------------+----------------------------------------------------------------------------------+
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                 :ref:`AnimationCurve<api_AnimationCurve>` & | :ref:`curve<api_AnimationTrack_1b07ae49>` ()                              |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                                         int | :ref:`duration<api_AnimationTrack_91d85e64>` () const                     |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                                        void | :ref:`fixCurves<api_AnimationTrack_1e5b0293>` ()                          |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|  :ref:`AnimationTrack::Frames<api_AnimationTrack_Frames>` & | :ref:`frames<api_AnimationTrack_95e30af6>` ()                             |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                                        void | :ref:`fromVariant<api_AnimationTrack_fb453c0a>` (const Variant & variant) |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                                        void | :ref:`setDuration<api_AnimationTrack_084a26ce>` (int  duration)           |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                 :ref:`Variant<api_Variant>` | :ref:`toVariant<api_AnimationTrack_df6740a2>` () const                    |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                           :ref:`Quaternion<api_Quaternion>` | :ref:`valueQuaternion<api_AnimationTrack_13947a5e>` (float  time) const   |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                 :ref:`TString<api_TString>` | :ref:`valueString<api_AnimationTrack_2806de31>` (float  time) const       |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
+|                                 :ref:`Vector4<api_Vector4>` | :ref:`valueVector4<api_AnimationTrack_8adfc210>` (float  time) const      |
++-------------------------------------------------------------+---------------------------------------------------------------------------+
 
 
 
@@ -49,7 +53,15 @@ None
 Methods Description
 -------------------
 
-.. _api_AnimationTrack_duration:
+.. _api_AnimationTrack_1b07ae49:
+
+ :ref:`AnimationCurve<api_AnimationCurve>` & **AnimationTrack::curve** ()
+
+Returns curve used for interpolation based animation.
+
+----
+
+.. _api_AnimationTrack_91d85e64:
 
  int **AnimationTrack::duration** () const
 
@@ -59,7 +71,7 @@ Returns a duration of track in milliseconds.
 
 ----
 
-.. _api_AnimationTrack_fixCurves:
+.. _api_AnimationTrack_1e5b0293:
 
  void **AnimationTrack::fixCurves** ()
 
@@ -67,35 +79,23 @@ Tries to fix animation curves in the animation track. Renormalizes existant keyf
 
 ----
 
-.. _api_AnimationTrack_hash:
+.. _api_AnimationTrack_95e30af6:
 
- int **AnimationTrack::hash** () const
+ :ref:`AnimationTrack::Frames<api_AnimationTrack::Frames>` & **AnimationTrack::frames** ()
 
-Returns a hash of path and name for quick access.
-
-----
-
-.. _api_AnimationTrack_path:
-
- std::string **AnimationTrack::path** () const
-
-Returns a path to the object in the hierarchy.
-
-**See also** setPath().
+Returns set of frames for frame-by-frame animation (e.g. sprites).
 
 ----
 
-.. _api_AnimationTrack_property:
+.. _api_AnimationTrack_fb453c0a:
 
- std::string **AnimationTrack::property** () const
+ void **AnimationTrack::fromVariant** (:ref:`Variant<api_Variant>` & *variant*)
 
-Returns a property name that will be animated.
-
-**See also** setProperty().
+Deserializes current track from *variant*.
 
 ----
 
-.. _api_AnimationTrack_setDuration:
+.. _api_AnimationTrack_084a26ce:
 
  void **AnimationTrack::setDuration** (int  *duration*)
 
@@ -105,22 +105,34 @@ Sets a *duration* of track in milliseconds.
 
 ----
 
-.. _api_AnimationTrack_setPath:
+.. _api_AnimationTrack_df6740a2:
 
- void **AnimationTrack::setPath** (std::string  *path*)
+ :ref:`Variant<api_Variant>`  **AnimationTrack::toVariant** () const
 
-Sets a *path* to the object in the hierarchy.
-
-**See also** *path*().
+Serializes current track to Variant.
 
 ----
 
-.. _api_AnimationTrack_setProperty:
+.. _api_AnimationTrack_13947a5e:
 
- void **AnimationTrack::setProperty** (std::string  *property*)
+ :ref:`Quaternion<api_Quaternion>`  **AnimationTrack::valueQuaternion** (float  *time*) const
 
-Sets a *property* name that will be animated.
+Returns current value for the animation curve. Parameter normalized *time* is used to interpolate value between key frames.
 
-**See also** *property*().
+----
+
+.. _api_AnimationTrack_2806de31:
+
+ :ref:`TString<api_TString>`  **AnimationTrack::valueString** (float  *time*) const
+
+Returns current value at normalized *time* position.
+
+----
+
+.. _api_AnimationTrack_8adfc210:
+
+ :ref:`Vector4<api_Vector4>`  **AnimationTrack::valueVector4** (float  *time*) const
+
+Returns current value for the animation curve. Parameter normalized *time* is used to interpolate value between key frames.
 
 

@@ -16,12 +16,12 @@ Gui Module
    image
    label
    layout
+   lineedit
    menu
    progressbar
    recttransform
    stylesheet
    switch
-   textinput
    toolbutton
    uidocument
    uiloader

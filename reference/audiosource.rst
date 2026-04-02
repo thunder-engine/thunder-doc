@@ -19,23 +19,23 @@ The AudioSource class provides methods to manage the playback of audio clips. It
 Public Methods
 --------------
 
-+------------------------------------+--------------------------------------------------------------+
-|                               bool | :ref:`autoPlay<api_AudioSource_autoPlay>` () const           |
-+------------------------------------+--------------------------------------------------------------+
-|  :ref:`AudioClip<api_AudioClip>` * | :ref:`clip<api_AudioSource_clip>` () const                   |
-+------------------------------------+--------------------------------------------------------------+
-|                               bool | :ref:`loop<api_AudioSource_loop>` () const                   |
-+------------------------------------+--------------------------------------------------------------+
-|                               void | :ref:`play<api_AudioSource_play>` ()                         |
-+------------------------------------+--------------------------------------------------------------+
-|                               void | :ref:`setAutoPlay<api_AudioSource_setAutoPlay>` (bool  play) |
-+------------------------------------+--------------------------------------------------------------+
-|                               void | :ref:`setClip<api_AudioSource_setClip>` (AudioClip * clip)   |
-+------------------------------------+--------------------------------------------------------------+
-|                               void | :ref:`setLoop<api_AudioSource_setLoop>` (bool  loop)         |
-+------------------------------------+--------------------------------------------------------------+
-|                               void | :ref:`stop<api_AudioSource_stop>` ()                         |
-+------------------------------------+--------------------------------------------------------------+
++------------------------------------+-------------------------------------------------------------+
+|                               bool | :ref:`autoPlay<api_AudioSource_d32f0bc8>` () const          |
++------------------------------------+-------------------------------------------------------------+
+|  :ref:`AudioClip<api_AudioClip>` * | :ref:`clip<api_AudioSource_e9a173cd>` () const              |
++------------------------------------+-------------------------------------------------------------+
+|                               bool | :ref:`loop<api_AudioSource_6390c1e8>` () const              |
++------------------------------------+-------------------------------------------------------------+
+|                               void | :ref:`play<api_AudioSource_0e2bd4c5>` ()                    |
++------------------------------------+-------------------------------------------------------------+
+|                               void | :ref:`setAutoPlay<api_AudioSource_64acb2f9>` (bool  play)   |
++------------------------------------+-------------------------------------------------------------+
+|                               void | :ref:`setClip<api_AudioSource_b83e10c5>` (AudioClip * clip) |
++------------------------------------+-------------------------------------------------------------+
+|                               void | :ref:`setLoop<api_AudioSource_27f65043>` (bool  loop)       |
++------------------------------------+-------------------------------------------------------------+
+|                               void | :ref:`stop<api_AudioSource_69c0215a>` ()                    |
++------------------------------------+-------------------------------------------------------------+
 
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AudioSource_autoPlay:
+.. _api_AudioSource_d32f0bc8:
 
  bool **AudioSource::autoPlay** () const
 
@@ -61,7 +61,7 @@ Returns true if auto-play is enabled; otherwise, returns false.
 
 ----
 
-.. _api_AudioSource_clip:
+.. _api_AudioSource_e9a173cd:
 
  :ref:`AudioClip<api_AudioClip>` * **AudioSource::clip** () const
 
@@ -71,7 +71,7 @@ Returns the audio clip associated with the audio source.
 
 ----
 
-.. _api_AudioSource_loop:
+.. _api_AudioSource_6390c1e8:
 
  bool **AudioSource::loop** () const
 
@@ -81,7 +81,7 @@ Returns true if looping is enabled; otherwise, returns false.
 
 ----
 
-.. _api_AudioSource_play:
+.. _api_AudioSource_0e2bd4c5:
 
  void **AudioSource::play** ()
 
@@ -89,7 +89,7 @@ Plays the audio clip in the specific position in 3D space.
 
 ----
 
-.. _api_AudioSource_setAutoPlay:
+.. _api_AudioSource_64acb2f9:
 
  void **AudioSource::setAutoPlay** (bool  *play*)
 
@@ -99,7 +99,7 @@ Sets the auto *play* state.
 
 ----
 
-.. _api_AudioSource_setClip:
+.. _api_AudioSource_b83e10c5:
 
  void **AudioSource::setClip** (:ref:`AudioClip<api_AudioClip>` * *clip*)
 
@@ -109,7 +109,7 @@ Sets the audio *clip* for the audio source.
 
 ----
 
-.. _api_AudioSource_setLoop:
+.. _api_AudioSource_27f65043:
 
  void **AudioSource::setLoop** (bool  *loop*)
 
@@ -119,7 +119,7 @@ Sets the *loop* state.
 
 ----
 
-.. _api_AudioSource_stop:
+.. _api_AudioSource_69c0215a:
 
  void **AudioSource::stop** ()
 

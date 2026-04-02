@@ -21,11 +21,11 @@ Base Event contain only event type parameter. Subclasses of Event may contain ad
 Public Methods
 --------------
 
-+--------------------------------+------------------------------------------------+
-|                                | :ref:`Event<api_Event_Event>` (uint32_t  type) |
-+--------------------------------+------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_Event_type>` () const           |
-+--------------------------------+------------------------------------------------+
++-----------+---------------------------------------------------+
+|           | :ref:`Event<api_Event_2e058ca1>` (uint32_t  type) |
++-----------+---------------------------------------------------+
+|  uint32_t | :ref:`type<api_Event_8eb96f25>` () const          |
++-----------+---------------------------------------------------+
 
 .. _api_Event_enums:
 
@@ -68,17 +68,17 @@ None
 Methods Description
 -------------------
 
-.. _api_Event_Event:
+.. _api_Event_2e058ca1:
 
-**Event::Event** (:ref:`uint32_t<api_uint32_t>`  *type*)
+**Event::Event** (uint32_t  *type*)
 
 Constructs an Event with *type* of event.
 
 ----
 
-.. _api_Event_type:
+.. _api_Event_8eb96f25:
 
- :ref:`uint32_t<api_uint32_t>`  **Event::type** () const
+ uint32_t **Event::type** () const
 
 Returns type of event.
 

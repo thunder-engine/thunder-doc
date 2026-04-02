@@ -19,13 +19,13 @@ A Plane is a flat, 2D surface that extends infinitely far in 3D space.
 Public Methods
 --------------
 
-+--------+--------------------------------------------------------------------------------------------+
-|        | :ref:`Plane<api_Plane_Plane>` ()                                                           |
-+--------+--------------------------------------------------------------------------------------------+
-|        | :ref:`Plane<api_Plane_Plane>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
-+--------+--------------------------------------------------------------------------------------------+
-|  areal | :ref:`sqrDistance<api_Plane_sqrDistance>` (const Vector3 & point) const                    |
-+--------+--------------------------------------------------------------------------------------------+
++----------------------------+-----------------------------------------------------------------------------------------------+
+|                            | :ref:`Plane<api_Plane_5b3f12ca>` ()                                                           |
++----------------------------+-----------------------------------------------------------------------------------------------+
+|                            | :ref:`Plane<api_Plane_59c873ad>` (const Vector3 & v1, const Vector3 & v2, const Vector3 & v3) |
++----------------------------+-----------------------------------------------------------------------------------------------+
+|  :ref:`Plane<api_Plane>` & | :ref:`operator=<api_Plane_087bcfa1>` (const Plane & value)                                    |
++----------------------------+-----------------------------------------------------------------------------------------------+
 
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Plane_Plane:
+.. _api_Plane_5b3f12ca:
 
 **Plane::Plane** ()
 
@@ -49,7 +49,7 @@ Default constructor.
 
 ----
 
-.. _api_Plane_Plane:
+.. _api_Plane_59c873ad:
 
 **Plane::Plane** (:ref:`Vector3<api_Vector3>` & *v1*, :ref:`Vector3<api_Vector3>` & *v2*, :ref:`Vector3<api_Vector3>` & *v3*)
 
@@ -57,10 +57,10 @@ Cunstructs a Plane by three points *v1*, *v2* and *v3*
 
 ----
 
-.. _api_Plane_sqrDistance:
+.. _api_Plane_087bcfa1:
 
- areal **Plane::sqrDistance** (:ref:`Vector3<api_Vector3>` & *point*) const
+ :ref:`Plane<api_Plane>` & **Plane::operator=** (:ref:`Plane<api_Plane>` & *value*)
 
-Calculate a squared distance between *point* and this Plane
+Assignment operator. The *value* will be assigned to this object.
 
 

@@ -17,11 +17,11 @@ Description
 Public Methods
 --------------
 
-+----------------------------------------------+-------------------------------------------------------------------------+
-|  :ref:`AnimationState<api_AnimationState>` * | :ref:`findState<api_AnimationStateMachine_findState>` (int  hash) const |
-+----------------------------------------------+-------------------------------------------------------------------------+
-|  :ref:`AnimationState<api_AnimationState>` * | :ref:`initialState<api_AnimationStateMachine_initialState>` () const    |
-+----------------------------------------------+-------------------------------------------------------------------------+
++----------------------------------------------+------------------------------------------------------------------------+
+|  :ref:`AnimationState<api_AnimationState>` * | :ref:`findState<api_AnimationStateMachine_d3f97640>` (int  hash) const |
++----------------------------------------------+------------------------------------------------------------------------+
+|  :ref:`AnimationState<api_AnimationState>` * | :ref:`initialState<api_AnimationStateMachine_79302451>` () const       |
++----------------------------------------------+------------------------------------------------------------------------+
 
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AnimationStateMachine_findState:
+.. _api_AnimationStateMachine_d3f97640:
 
  :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::findState** (int  *hash*) const
 
@@ -45,7 +45,7 @@ Returns a state for the provided *hash*.
 
 ----
 
-.. _api_AnimationStateMachine_initialState:
+.. _api_AnimationStateMachine_79302451:
 
  :ref:`AnimationState<api_AnimationState>` * **AnimationStateMachine::initialState** () const
 

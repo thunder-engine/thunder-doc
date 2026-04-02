@@ -17,9 +17,9 @@ Description
 Public Methods
 --------------
 
-+------------------------------------------------+------------------------------------------------------------+
-|  :ref:`ComputeInstance<api_ComputeInstance>` * | :ref:`createInstance<api_ComputeShader_createInstance>` () |
-+------------------------------------------------+------------------------------------------------------------+
++------------------------------------------------+------------------------------------------------------+
+|  :ref:`ComputeInstance<api_ComputeInstance>` * | :ref:`createInstance<api_ComputeShader_5cf49872>` () |
++------------------------------------------------+------------------------------------------------------+
 
 
 
@@ -35,7 +35,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ComputeShader_createInstance:
+.. _api_ComputeShader_5cf49872:
 
  :ref:`ComputeInstance<api_ComputeInstance>` * **ComputeShader::createInstance** ()
 

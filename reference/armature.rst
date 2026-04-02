@@ -19,9 +19,11 @@ An armature in Thunder Engine can be thought of as similar to the armature of a 
 Public Methods
 --------------
 
-+------+-------------------------------------------------+
-|  int | :ref:`bindPose<api_Armature_bindPose>` () const |
-+------+-------------------------------------------------+
++--------------------------+---------------------------------------------------------+
+|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_c38ad5b2>` () const         |
++--------------------------+---------------------------------------------------------+
+|                     void | :ref:`setBindPose<api_Armature_2a5b8ef7>` (Pose * pose) |
++--------------------------+---------------------------------------------------------+
 
 
 
@@ -37,10 +39,22 @@ None
 Methods Description
 -------------------
 
-.. _api_Armature_bindPose:
+.. _api_Armature_c38ad5b2:
 
- int **Armature::bindPose** () const
+ :ref:`Pose<api_Pose>` * **Armature::bindPose** () const
 
 Returns a bind pose of the bone structure.
+
+**See also** setBindPose().
+
+----
+
+.. _api_Armature_2a5b8ef7:
+
+ void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
+
+Sets a bind (initial) *pose* of the bone structure.
+
+**See also** bindPose().
 
 

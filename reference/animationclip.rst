@@ -19,9 +19,15 @@ An AnimationClip resource contains keyframe based animation data. The animation 
 Public Methods
 --------------
 
-+------+------------------------------------------------------+
-|  int | :ref:`duration<api_AnimationClip_duration>` () const |
-+------+------------------------------------------------------+
++------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                            int | :ref:`addAnimationTrack<api_AnimationClip_ef21dcb4>` (const AnimationTrack & track) |
++------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                            int | :ref:`duration<api_AnimationClip_10d54973>` () const                                |
++------------------------------------------------+-------------------------------------------------------------------------------------+
+|                                           void | :ref:`removeAnimationTrack<api_AnimationClip_831fb9de>` (int  index)                |
++------------------------------------------------+-------------------------------------------------------------------------------------+
+|  :ref:`AnimationTracks<api_AnimationTracks>` & | :ref:`tracks<api_AnimationClip_6a8bed17>` ()                                        |
++------------------------------------------------+-------------------------------------------------------------------------------------+
 
 
 
@@ -37,10 +43,34 @@ None
 Methods Description
 -------------------
 
-.. _api_AnimationClip_duration:
+.. _api_AnimationClip_ef21dcb4:
+
+ int **AnimationClip::addAnimationTrack** (:ref:`AnimationTrack<api_AnimationTrack>` & *track*)
+
+Adds animation *track* to current AnimationClip. Returns index of added *track*;
+
+----
+
+.. _api_AnimationClip_10d54973:
 
  int **AnimationClip::duration** () const
 
 Returns duration of the animation clip in milliseconds.
+
+----
+
+.. _api_AnimationClip_831fb9de:
+
+ void **AnimationClip::removeAnimationTrack** (int  *index*)
+
+Removes animation track at givven *index*.
+
+----
+
+.. _api_AnimationClip_6a8bed17:
+
+ :ref:`AnimationTracks<api_AnimationTracks>` & **AnimationClip::tracks** ()
+
+Returns all tracks associated with current animation clip.
 
 

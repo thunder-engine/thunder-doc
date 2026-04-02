@@ -19,19 +19,19 @@ To determine the emiter position AreaLight uses Transform component of the own A
 Public Methods
 --------------
 
-+--------+-----------------------------------------------------------------------+
-|  float | :ref:`radius<api_AreaLight_radius>` () const                          |
-+--------+-----------------------------------------------------------------------+
-|   void | :ref:`setRadius<api_AreaLight_setRadius>` (float  radius)             |
-+--------+-----------------------------------------------------------------------+
-|   void | :ref:`setSourceHeight<api_AreaLight_setSourceHeight>` (float  height) |
-+--------+-----------------------------------------------------------------------+
-|   void | :ref:`setSourceWidth<api_AreaLight_setSourceWidth>` (float  width)    |
-+--------+-----------------------------------------------------------------------+
-|  float | :ref:`sourceHeight<api_AreaLight_sourceHeight>` () const              |
-+--------+-----------------------------------------------------------------------+
-|  float | :ref:`sourceWidth<api_AreaLight_sourceWidth>` () const                |
-+--------+-----------------------------------------------------------------------+
++--------+----------------------------------------------------------------+
+|  float | :ref:`radius<api_AreaLight_5b0d894f>` () const                 |
++--------+----------------------------------------------------------------+
+|   void | :ref:`setRadius<api_AreaLight_1340c6ef>` (float  radius)       |
++--------+----------------------------------------------------------------+
+|   void | :ref:`setSourceHeight<api_AreaLight_67fa1e23>` (float  height) |
++--------+----------------------------------------------------------------+
+|   void | :ref:`setSourceWidth<api_AreaLight_150436a2>` (float  width)   |
++--------+----------------------------------------------------------------+
+|  float | :ref:`sourceHeight<api_AreaLight_a5c73b8e>` () const           |
++--------+----------------------------------------------------------------+
+|  float | :ref:`sourceWidth<api_AreaLight_e0cda43b>` () const            |
++--------+----------------------------------------------------------------+
 
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AreaLight_radius:
+.. _api_AreaLight_5b0d894f:
 
  float **AreaLight::radius** () const
 
@@ -57,7 +57,7 @@ Returns the attenuation radius of the light.
 
 ----
 
-.. _api_AreaLight_setRadius:
+.. _api_AreaLight_1340c6ef:
 
  void **AreaLight::setRadius** (float  *radius*)
 
@@ -67,7 +67,7 @@ Changes the attenuation *radius* of the light.
 
 ----
 
-.. _api_AreaLight_setSourceHeight:
+.. _api_AreaLight_67fa1e23:
 
  void **AreaLight::setSourceHeight** (float  *height*)
 
@@ -77,7 +77,7 @@ Changes the source *height* of the light.
 
 ----
 
-.. _api_AreaLight_setSourceWidth:
+.. _api_AreaLight_150436a2:
 
  void **AreaLight::setSourceWidth** (float  *width*)
 
@@ -87,7 +87,7 @@ Changes the source *width* of the light.
 
 ----
 
-.. _api_AreaLight_sourceHeight:
+.. _api_AreaLight_a5c73b8e:
 
  float **AreaLight::sourceHeight** () const
 
@@ -97,7 +97,7 @@ Returns the source height of the light.
 
 ----
 
-.. _api_AreaLight_sourceWidth:
+.. _api_AreaLight_e0cda43b:
 
  float **AreaLight::sourceWidth** () const
 

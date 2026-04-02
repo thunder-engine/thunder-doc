@@ -19,35 +19,27 @@ The ProgressBar class is designed to provide a graphical representation of progr
 Public Methods
 --------------
 
-+------------------------------+--------------------------------------------------------------------------------------+
-|    :ref:`Frame<api_Frame>` * | :ref:`background<api_ProgressBar_background>` () const                               |
-+------------------------------+--------------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`backgroundColor<api_ProgressBar_backgroundColor>` () const                     |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                        float | :ref:`from<api_ProgressBar_from>` () const                                           |
-+------------------------------+--------------------------------------------------------------------------------------+
-|    :ref:`Frame<api_Frame>` * | :ref:`progress<api_ProgressBar_progress>` () const                                   |
-+------------------------------+--------------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`progressColor<api_ProgressBar_progressColor>` () const                         |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setBackground<api_ProgressBar_setBackground>` (Frame * frame)                  |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setBackgroundColor<api_ProgressBar_setBackgroundColor>` (const Vector4  color) |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setFrom<api_ProgressBar_setFrom>` (float  value)                               |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setProgress<api_ProgressBar_setProgress>` (Frame * frame)                      |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setProgressColor<api_ProgressBar_setProgressColor>` (const Vector4  color)     |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setTo<api_ProgressBar_setTo>` (float  value)                                   |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                         void | :ref:`setValue<api_ProgressBar_setValue>` (float  value)                             |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                        float | :ref:`to<api_ProgressBar_to>` () const                                               |
-+------------------------------+--------------------------------------------------------------------------------------+
-|                        float | :ref:`value<api_ProgressBar_value>` () const                                         |
-+------------------------------+--------------------------------------------------------------------------------------+
++------------------------------+--------------------------------------------------------------------------+
+|    :ref:`Frame<api_Frame>` * | :ref:`chunk<api_ProgressBar_d3065ac7>` () const                          |
++------------------------------+--------------------------------------------------------------------------+
+|                        float | :ref:`from<api_ProgressBar_c275d9b8>` () const                           |
++------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`progressColor<api_ProgressBar_f3268b57>` () const                  |
++------------------------------+--------------------------------------------------------------------------+
+|                         void | :ref:`setChunk<api_ProgressBar_4f2bca9e>` (Frame * frame)                |
++------------------------------+--------------------------------------------------------------------------+
+|                         void | :ref:`setFrom<api_ProgressBar_7c26a053>` (float  value)                  |
++------------------------------+--------------------------------------------------------------------------+
+|                         void | :ref:`setProgressColor<api_ProgressBar_ac91d054>` (const Vector4  color) |
++------------------------------+--------------------------------------------------------------------------+
+|                         void | :ref:`setTo<api_ProgressBar_985df1bc>` (float  value)                    |
++------------------------------+--------------------------------------------------------------------------+
+|                         void | :ref:`setValue<api_ProgressBar_b709346c>` (float  value)                 |
++------------------------------+--------------------------------------------------------------------------+
+|                        float | :ref:`to<api_ProgressBar_9b7d82e4>` () const                             |
++------------------------------+--------------------------------------------------------------------------+
+|                        float | :ref:`value<api_ProgressBar_be72f803>` () const                          |
++------------------------------+--------------------------------------------------------------------------+
 
 
 
@@ -63,27 +55,17 @@ None
 Methods Description
 -------------------
 
-.. _api_ProgressBar_background:
+.. _api_ProgressBar_d3065ac7:
 
- :ref:`Frame<api_Frame>` * **ProgressBar::background** () const
+ :ref:`Frame<api_Frame>` * **ProgressBar::chunk** () const
 
-Returns the frame representing the background.
+Returns the frame representing the progress chunk.
 
-**See also** setBackground().
-
-----
-
-.. _api_ProgressBar_backgroundColor:
-
- :ref:`Vector4<api_Vector4>`  **ProgressBar::backgroundColor** () const
-
-Returns the background color of the progress bar.
-
-**See also** setBackgroundColor().
+**See also** setChunk().
 
 ----
 
-.. _api_ProgressBar_from:
+.. _api_ProgressBar_c275d9b8:
 
  float **ProgressBar::from** () const
 
@@ -93,17 +75,7 @@ Returns the minimum value of the progress range.
 
 ----
 
-.. _api_ProgressBar_progress:
-
- :ref:`Frame<api_Frame>` * **ProgressBar::progress** () const
-
-Returns the frame representing the progress bar.
-
-**See also** setProgress().
-
-----
-
-.. _api_ProgressBar_progressColor:
+.. _api_ProgressBar_f3268b57:
 
  :ref:`Vector4<api_Vector4>`  **ProgressBar::progressColor** () const
 
@@ -113,27 +85,17 @@ Returns the color of the progress indicator.
 
 ----
 
-.. _api_ProgressBar_setBackground:
+.. _api_ProgressBar_4f2bca9e:
 
- void **ProgressBar::setBackground** (:ref:`Frame<api_Frame>` * *frame*)
+ void **ProgressBar::setChunk** (:ref:`Frame<api_Frame>` * *frame*)
 
-Sets the *frame* representing the background.
+Sets the *frame* representing the progress chunk.
 
-**See also** background().
-
-----
-
-.. _api_ProgressBar_setBackgroundColor:
-
- void **ProgressBar::setBackgroundColor** (:ref:`Vector4<api_Vector4>`  *color*)
-
-Sets the background *color* of the progress bar.
-
-**See also** backgroundColor().
+**See also** chunk().
 
 ----
 
-.. _api_ProgressBar_setFrom:
+.. _api_ProgressBar_7c26a053:
 
  void **ProgressBar::setFrom** (float  *value*)
 
@@ -143,17 +105,7 @@ Sets the minimum *value* of the progress range.
 
 ----
 
-.. _api_ProgressBar_setProgress:
-
- void **ProgressBar::setProgress** (:ref:`Frame<api_Frame>` * *frame*)
-
-Sets the *frame* representing the progress.
-
-**See also** progress().
-
-----
-
-.. _api_ProgressBar_setProgressColor:
+.. _api_ProgressBar_ac91d054:
 
  void **ProgressBar::setProgressColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
@@ -163,7 +115,7 @@ Sets the *color* of the progress indicator.
 
 ----
 
-.. _api_ProgressBar_setTo:
+.. _api_ProgressBar_985df1bc:
 
  void **ProgressBar::setTo** (float  *value*)
 
@@ -173,7 +125,7 @@ Sets the maximum *value* of the progress range.
 
 ----
 
-.. _api_ProgressBar_setValue:
+.. _api_ProgressBar_b709346c:
 
  void **ProgressBar::setValue** (float  *value*)
 
@@ -183,7 +135,7 @@ Sets the current progress *value*.
 
 ----
 
-.. _api_ProgressBar_to:
+.. _api_ProgressBar_9b7d82e4:
 
  float **ProgressBar::to** () const
 
@@ -193,7 +145,7 @@ Returns the maximum value of the progress range.
 
 ----
 
-.. _api_ProgressBar_value:
+.. _api_ProgressBar_be72f803:
 
  float **ProgressBar::value** () const
 

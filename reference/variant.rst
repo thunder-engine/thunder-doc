@@ -41,93 +41,95 @@ And then:
 Public Methods
 --------------
 
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` ()                                  |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (MetaType::Type  type)              |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (bool  value)                       |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const ByteArray & value)           |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Matrix3 & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Matrix4 & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Quaternion & value)          |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const VariantList & value)         |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const VariantMap & value)          |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Vector2 & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Vector3 & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Vector4 & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const char * value)                |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const std::string & value)         |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (float  value)                      |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (int  value)                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (unsigned int  value)               |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (uint32_t  type, void * copy)       |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                           | :ref:`Variant<api_Variant_Variant>` (const Variant & value)             |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                template <typename T> bool | :ref:`canConvert<api_Variant_canConvert>` () const                      |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      bool | :ref:`canConvert<api_Variant_canConvert>` (uint32_t  type) const        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      void | :ref:`clear<api_Variant_clear>` ()                                      |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      void | :ref:`data<api_Variant_data>` () const                                  |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      bool | :ref:`isValid<api_Variant_isValid>` () const                            |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      bool | :ref:`toBool<api_Variant_toBool>` () const                              |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|     const :ref:`ByteArray<api_ByteArray>` | :ref:`toByteArray<api_Variant_toByteArray>` () const                    |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                     float | :ref:`toFloat<api_Variant_toFloat>` () const                            |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                       int | :ref:`toInt<api_Variant_toInt>` () const                                |
-+-------------------------------------------+-------------------------------------------------------------------------+
-| const :ref:`VariantList<api_VariantList>` | :ref:`toList<api_Variant_toList>` () const                              |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|   const :ref:`VariantMap<api_VariantMap>` | :ref:`toMap<api_Variant_toMap>` () const                                |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|         const :ref:`Matrix3<api_Matrix3>` | :ref:`toMatrix3<api_Variant_toMatrix3>` () const                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|         const :ref:`Matrix4<api_Matrix4>` | :ref:`toMatrix4<api_Variant_toMatrix4>` () const                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|   const :ref:`Quaternion<api_Quaternion>` | :ref:`toQuaternion<api_Variant_toQuaternion>` () const                  |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                         const std::string | :ref:`toString<api_Variant_toString>` () const                          |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|         const :ref:`Vector2<api_Vector2>` | :ref:`toVector2<api_Variant_toVector2>` () const                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|         const :ref:`Vector3<api_Vector3>` | :ref:`toVector3<api_Variant_toVector3>` () const                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|         const :ref:`Vector4<api_Vector4>` | :ref:`toVector4<api_Variant_toVector4>` () const                        |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|             :ref:`uint32_t<api_uint32_t>` | :ref:`type<api_Variant_type>` () const                                  |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|             :ref:`uint32_t<api_uint32_t>` | :ref:`userType<api_Variant_userType>` () const                          |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                   template <typename T> T | :ref:`value<api_Variant_value>` () const                                |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      bool | :ref:`operator!=<api_Variant_operator!=>` (const Variant & right) const |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|             :ref:`Variant<api_Variant>` & | :ref:`operator=<api_Variant_operator=>` (const Variant & value)         |
-+-------------------------------------------+-------------------------------------------------------------------------+
-|                                      bool | :ref:`operator==<api_Variant_operator==>` (const Variant & right) const |
-+-------------------------------------------+-------------------------------------------------------------------------+
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_29fc6734>` ()                               |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_b1978ecd>` (MetaType::Type  type)           |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_56eb0fd3>` (bool  value)                    |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_e9783216>` (const ByteArray & value)        |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_a73952f8>` (const Matrix3 & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_19c0f5ba>` (const Matrix4 & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_d945fc01>` (const Quaternion & value)       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_d3a648bc>` (const TString & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_52fa1eb0>` (const VariantList & value)      |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_f1e8342d>` (const VariantMap & value)       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_fe8ca935>` (const Vector2 & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_b96e24d5>` (const Vector3 & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_8924dab6>` (const Vector4 & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_2a4e0781>` (const char * value)             |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_245ae689>` (float  value)                   |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_a8e905f2>` (int  value)                     |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_9e54b8a6>` (unsigned int  value)            |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_b52da136>` (uint32_t  type, void * copy)    |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                           | :ref:`Variant<api_Variant_4a1dfc60>` (const Variant & value)          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                template <typename T> bool | :ref:`canConvert<api_Variant_0df16723>` () const                      |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`canConvert<api_Variant_d2037ef5>` (uint32_t  type) const        |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      void | :ref:`clear<api_Variant_81693e04>` ()                                 |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`convert<api_Variant_0d431875>` (uint32_t  type)                 |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      void | :ref:`data<api_Variant_12d48b0c>` () const                            |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`isValid<api_Variant_a1d3b682>` () const                         |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`toBool<api_Variant_e260af19>` () const                          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|     const :ref:`ByteArray<api_ByteArray>` | :ref:`toByteArray<api_Variant_fe3dc561>` () const                     |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                     float | :ref:`toFloat<api_Variant_0591cd7f>` () const                         |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                       int | :ref:`toInt<api_Variant_f6a0e35c>` () const                           |
++-------------------------------------------+-----------------------------------------------------------------------+
+| const :ref:`VariantList<api_VariantList>` | :ref:`toList<api_Variant_d0efc916>` () const                          |
++-------------------------------------------+-----------------------------------------------------------------------+
+|   const :ref:`VariantMap<api_VariantMap>` | :ref:`toMap<api_Variant_b7e86d31>` () const                           |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`Matrix3<api_Matrix3>` | :ref:`toMatrix3<api_Variant_a82190f7>` () const                       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`Matrix4<api_Matrix4>` | :ref:`toMatrix4<api_Variant_3027c549>` () const                       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|   const :ref:`Quaternion<api_Quaternion>` | :ref:`toQuaternion<api_Variant_8a50c391>` () const                    |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`TString<api_TString>` | :ref:`toString<api_Variant_564e9d81>` () const                        |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`Vector2<api_Vector2>` | :ref:`toVector2<api_Variant_0c3d7169>` () const                       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`Vector3<api_Vector3>` | :ref:`toVector3<api_Variant_b1d39850>` () const                       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|         const :ref:`Vector4<api_Vector4>` | :ref:`toVector4<api_Variant_be61078f>` () const                       |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                  uint32_t | :ref:`type<api_Variant_32dba541>` () const                            |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                  uint32_t | :ref:`userType<api_Variant_916adf25>` () const                        |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                   template <typename T> T | :ref:`value<api_Variant_42013cd6>` () const                           |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`operator!=<api_Variant_68c7f190>` (const Variant & right) const |
++-------------------------------------------+-----------------------------------------------------------------------+
+|             :ref:`Variant<api_Variant>` & | :ref:`operator=<api_Variant_f3a16c50>` (const Variant & value)        |
++-------------------------------------------+-----------------------------------------------------------------------+
+|                                      bool | :ref:`operator==<api_Variant_52b346f7>` (const Variant & right) const |
++-------------------------------------------+-----------------------------------------------------------------------+
 
 
 
@@ -136,16 +138,16 @@ Public Methods
 Static Methods
 --------------
 
-+---------------------------------------------------+-----------------------------------------------------------+
-| template <typename T> :ref:`Variant<api_Variant>` | :ref:`fromValue<api_Variant_fromValue>` (const T & value) |
-+---------------------------------------------------+-----------------------------------------------------------+
++---------------------------------------------------+----------------------------------------------------------+
+| template <typename T> :ref:`Variant<api_Variant>` | :ref:`fromValue<api_Variant_a097dce2>` (const T & value) |
++---------------------------------------------------+----------------------------------------------------------+
 
 .. _api_Variant_methods:
 
 Methods Description
 -------------------
 
-.. _api_Variant_Variant:
+.. _api_Variant_29fc6734:
 
 **Variant::Variant** ()
 
@@ -153,7 +155,7 @@ Constructs an invalid variant.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_b1978ecd:
 
 **Variant::Variant** (:ref:`MetaType::Type<api_MetaType::Type>`  *type*)
 
@@ -161,7 +163,7 @@ Constructs an uninitialized variant of *type*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_56eb0fd3:
 
 **Variant::Variant** (bool  *value*)
 
@@ -169,7 +171,7 @@ Constructs a new variant with a boolean *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_e9783216:
 
 **Variant::Variant** (:ref:`ByteArray<api_ByteArray>` & *value*)
 
@@ -177,7 +179,7 @@ Constructs a new variant with a ByteArray *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_a73952f8:
 
 **Variant::Variant** (:ref:`Matrix3<api_Matrix3>` & *value*)
 
@@ -185,7 +187,7 @@ Constructs a new variant with a Matrix3 *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_19c0f5ba:
 
 **Variant::Variant** (:ref:`Matrix4<api_Matrix4>` & *value*)
 
@@ -193,7 +195,7 @@ Constructs a new variant with a Matrix4 *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_d945fc01:
 
 **Variant::Variant** (:ref:`Quaternion<api_Quaternion>` & *value*)
 
@@ -201,7 +203,15 @@ Constructs a new variant with a Quaternion *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_d3a648bc:
+
+**Variant::Variant** (:ref:`TString<api_TString>` & *value*)
+
+Constructs a new variant with a string *value*.
+
+----
+
+.. _api_Variant_52fa1eb0:
 
 **Variant::Variant** (:ref:`VariantList<api_VariantList>` & *value*)
 
@@ -209,7 +219,7 @@ Constructs a new variant with a list of variants *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_f1e8342d:
 
 **Variant::Variant** (:ref:`VariantMap<api_VariantMap>` & *value*)
 
@@ -217,7 +227,7 @@ Constructs a new variant with a map of variants *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_fe8ca935:
 
 **Variant::Variant** (:ref:`Vector2<api_Vector2>` & *value*)
 
@@ -225,7 +235,7 @@ Constructs a new variant with a Vector2 *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_b96e24d5:
 
 **Variant::Variant** (:ref:`Vector3<api_Vector3>` & *value*)
 
@@ -233,7 +243,7 @@ Constructs a new variant with a Vector3 *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_8924dab6:
 
 **Variant::Variant** (:ref:`Vector4<api_Vector4>` & *value*)
 
@@ -241,7 +251,7 @@ Constructs a new variant with a Vector4 *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_2a4e0781:
 
 **Variant::Variant** (char * *value*)
 
@@ -249,15 +259,7 @@ Constructs a new variant with a string *value*.
 
 ----
 
-.. _api_Variant_Variant:
-
-**Variant::Variant** (std::string & *value*)
-
-Constructs a new variant with a string *value*.
-
-----
-
-.. _api_Variant_Variant:
+.. _api_Variant_245ae689:
 
 **Variant::Variant** (float  *value*)
 
@@ -265,7 +267,7 @@ Constructs a new variant with a floating point *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_a8e905f2:
 
 **Variant::Variant** (int  *value*)
 
@@ -273,7 +275,7 @@ Constructs a new variant with an integer *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_9e54b8a6:
 
 **Variant::Variant** (int  *value*)
 
@@ -281,15 +283,15 @@ Constructs a new variant with an integer *value*.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_b52da136:
 
-**Variant::Variant** (:ref:`uint32_t<api_uint32_t>`  *type*, void * *copy*)
+**Variant::Variant** (uint32_t  *type*, void * *copy*)
 
 Constructs a new variant of *type* and initialized with *copy* value.
 
 ----
 
-.. _api_Variant_Variant:
+.. _api_Variant_4a1dfc60:
 
 **Variant::Variant** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -297,7 +299,7 @@ Constructs a copy of variant *value*.
 
 ----
 
-.. _api_Variant_canConvert:
+.. _api_Variant_0df16723:
 
 template <typename T> bool **Variant::canConvert** () const
 
@@ -307,15 +309,15 @@ Returns the possibility of conversion for this variant to type T.
 
 ----
 
-.. _api_Variant_canConvert:
+.. _api_Variant_d2037ef5:
 
- bool **Variant::canConvert** (:ref:`uint32_t<api_uint32_t>`  *type*) const
+ bool **Variant::canConvert** (uint32_t  *type*) const
 
 Returns true if variant converted to a *type*; otherwise return false.
 
 ----
 
-.. _api_Variant_clear:
+.. _api_Variant_81693e04:
 
  void **Variant::clear** ()
 
@@ -323,7 +325,17 @@ Frees used resources and make this variant an invalid.
 
 ----
 
-.. _api_Variant_data:
+.. _api_Variant_0d431875:
+
+ bool **Variant::convert** (uint32_t  *type*)
+
+Casts the variant to the requested *type*.
+
+Returns true if the current *type* of the variant was successfully cast; otherwise returns false.
+
+----
+
+.. _api_Variant_12d48b0c:
 
  void **Variant::data** () const
 
@@ -331,7 +343,7 @@ Returns pure pointer to value data.
 
 ----
 
-.. _api_Variant_fromValue:
+.. _api_Variant_a097dce2:
 
 template <typename T> :ref:`Variant<api_Variant>`  **Variant::fromValue** (T & *value*)
 
@@ -343,7 +355,7 @@ Returns an invalid variant if unknown *value* type.
 
 ----
 
-.. _api_Variant_isValid:
+.. _api_Variant_a1d3b682:
 
  bool **Variant::isValid** () const
 
@@ -351,7 +363,7 @@ Returns true if variant value is valid; otherwise return false.
 
 ----
 
-.. _api_Variant_toBool:
+.. _api_Variant_e260af19:
 
  bool **Variant::toBool** () const
 
@@ -361,7 +373,7 @@ Returns variant as a bool value if variant has a type MetaType::BOOLEAN. Otherwi
 
 ----
 
-.. _api_Variant_toByteArray:
+.. _api_Variant_fe3dc561:
 
 const :ref:`ByteArray<api_ByteArray>`  **Variant::toByteArray** () const
 
@@ -371,7 +383,7 @@ Returns variant as a ByteArray value if variant has a type MetaType::BYTEARRAY. 
 
 ----
 
-.. _api_Variant_toFloat:
+.. _api_Variant_0591cd7f:
 
  float **Variant::toFloat** () const
 
@@ -381,7 +393,7 @@ Returns variant as a float value if variant has a type MetaType::FLOAT. Otherwis
 
 ----
 
-.. _api_Variant_toInt:
+.. _api_Variant_f6a0e35c:
 
  int **Variant::toInt** () const
 
@@ -391,7 +403,7 @@ Returns variant as an integer value if variant has a type MetaType::INTEGER. Oth
 
 ----
 
-.. _api_Variant_toList:
+.. _api_Variant_d0efc916:
 
 const :ref:`VariantList<api_VariantList>`  **Variant::toList** () const
 
@@ -401,7 +413,7 @@ Returns variant as a variant list value if variant has a type MetaType::VARIANTL
 
 ----
 
-.. _api_Variant_toMap:
+.. _api_Variant_b7e86d31:
 
 const :ref:`VariantMap<api_VariantMap>`  **Variant::toMap** () const
 
@@ -411,7 +423,7 @@ Returns variant as a variant map value if variant has a type MetaType::VARIANTMA
 
 ----
 
-.. _api_Variant_toMatrix3:
+.. _api_Variant_a82190f7:
 
 const :ref:`Matrix3<api_Matrix3>`  **Variant::toMatrix3** () const
 
@@ -421,7 +433,7 @@ Returns variant as a Matrix3 value if variant has a type MetaType::MATRIX3. Othe
 
 ----
 
-.. _api_Variant_toMatrix4:
+.. _api_Variant_3027c549:
 
 const :ref:`Matrix4<api_Matrix4>`  **Variant::toMatrix4** () const
 
@@ -431,7 +443,7 @@ Returns variant as a Matrix4 value if variant has a type MetaType::MATRIX4. Othe
 
 ----
 
-.. _api_Variant_toQuaternion:
+.. _api_Variant_8a50c391:
 
 const :ref:`Quaternion<api_Quaternion>`  **Variant::toQuaternion** () const
 
@@ -441,9 +453,9 @@ Returns variant as a Quaternion value if variant has a type MetaType::QUATERNION
 
 ----
 
-.. _api_Variant_toString:
+.. _api_Variant_564e9d81:
 
-const std::string **Variant::toString** () const
+const :ref:`TString<api_TString>`  **Variant::toString** () const
 
 Returns variant as a string value if variant has a type MetaType::STRING. Otherwise it tries to convert existing value to a string.
 
@@ -451,7 +463,7 @@ Returns variant as a string value if variant has a type MetaType::STRING. Otherw
 
 ----
 
-.. _api_Variant_toVector2:
+.. _api_Variant_0c3d7169:
 
 const :ref:`Vector2<api_Vector2>`  **Variant::toVector2** () const
 
@@ -461,7 +473,7 @@ Returns variant as a Vector2 value if variant has a type MetaType::VECTOR2. Othe
 
 ----
 
-.. _api_Variant_toVector3:
+.. _api_Variant_b1d39850:
 
 const :ref:`Vector3<api_Vector3>`  **Variant::toVector3** () const
 
@@ -471,7 +483,7 @@ Returns variant as a Vector3 value if variant has a type MetaType::VECTOR3. Othe
 
 ----
 
-.. _api_Variant_toVector4:
+.. _api_Variant_be61078f:
 
 const :ref:`Vector4<api_Vector4>`  **Variant::toVector4** () const
 
@@ -481,9 +493,9 @@ Returns variant as a Vector4 value if variant has a type MetaType::VECTOR4. Othe
 
 ----
 
-.. _api_Variant_type:
+.. _api_Variant_32dba541:
 
- :ref:`uint32_t<api_uint32_t>`  **Variant::type** () const
+ uint32_t **Variant::type** () const
 
 Returns type of variant value.
 
@@ -495,9 +507,9 @@ Returns type of variant value.
 
 ----
 
-.. _api_Variant_userType:
+.. _api_Variant_916adf25:
 
- :ref:`uint32_t<api_uint32_t>`  **Variant::userType** () const
+ uint32_t **Variant::userType** () const
 
 Returns user type of variant value.
 
@@ -505,7 +517,7 @@ Returns user type of variant value.
 
 ----
 
-.. _api_Variant_value:
+.. _api_Variant_42013cd6:
 
 template <typename T> T **Variant::value** () const
 
@@ -517,7 +529,7 @@ Returns default T value if invalid variant or variant can not be converted to ty
 
 ----
 
-.. _api_Variant_operator!=:
+.. _api_Variant_68c7f190:
 
  bool **Variant::operator!=** (:ref:`Variant<api_Variant>` & *right*) const
 
@@ -525,7 +537,7 @@ Compares a this variant with variant *right* value. Returns true if variants are
 
 ----
 
-.. _api_Variant_operator=:
+.. _api_Variant_f3a16c50:
 
  :ref:`Variant<api_Variant>` & **Variant::operator=** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -533,7 +545,7 @@ Assigns the *value* of the variant to this variant.
 
 ----
 
-.. _api_Variant_operator==:
+.. _api_Variant_52b346f7:
 
  bool **Variant::operator==** (:ref:`Variant<api_Variant>` & *right*) const
 

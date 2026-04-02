@@ -19,8 +19,8 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = u'Thunder Engine'
-copyright = u'2025, Evgeniy Prikazchikov'
-author = u'Evgeniy Prikazchikov'
+copyright = u'2026, Thunder Engine'
+author = u'Evgeniy Prikazchikov and contributors'
 
 # The short X.Y version
 version = u''
@@ -58,7 +58,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -72,9 +72,7 @@ pygments_style = 'sphinx'
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-#import sphinx_rtd_theme
-
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'furo'
 if on_rtd:
 	using_rtd_theme = True
 	

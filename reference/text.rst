@@ -17,15 +17,15 @@ Description
 Public Methods
 --------------
 
-+--------------------------------+---------------------------------------------------+
-|  :ref:`uint8_t<api_uint8_t>` * | :ref:`data<api_Text_data>` ()                     |
-+--------------------------------+---------------------------------------------------+
-|                           void | :ref:`setSize<api_Text_setSize>` (uint32_t  size) |
-+--------------------------------+---------------------------------------------------+
-|  :ref:`uint32_t<api_uint32_t>` | :ref:`size<api_Text_size>` () const               |
-+--------------------------------+---------------------------------------------------+
-|                    std::string | :ref:`text<api_Text_text>` ()                     |
-+--------------------------------+---------------------------------------------------+
++--------------------------------+----------------------------------------------------+
+|  :ref:`uint8_t<api_uint8_t>` * | :ref:`data<api_Text_29ac04e6>` ()                  |
++--------------------------------+----------------------------------------------------+
+|                           void | :ref:`setSize<api_Text_d7ec3b14>` (uint32_t  size) |
++--------------------------------+----------------------------------------------------+
+|                       uint32_t | :ref:`size<api_Text_1cae7fd8>` () const            |
++--------------------------------+----------------------------------------------------+
+|    :ref:`TString<api_TString>` | :ref:`text<api_Text_3284d5c9>` ()                  |
++--------------------------------+----------------------------------------------------+
 
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Text_data:
+.. _api_Text_29ac04e6:
 
  :ref:`uint8_t<api_uint8_t>` * **Text::data** ()
 
@@ -49,9 +49,9 @@ Returns text content as a raw byte array.
 
 ----
 
-.. _api_Text_setSize:
+.. _api_Text_d7ec3b14:
 
- void **Text::setSize** (:ref:`uint32_t<api_uint32_t>`  *size*)
+ void **Text::setSize** (uint32_t  *size*)
 
 Sets the new *size* of the text resource.
 
@@ -59,9 +59,9 @@ Sets the new *size* of the text resource.
 
 ----
 
-.. _api_Text_size:
+.. _api_Text_1cae7fd8:
 
- :ref:`uint32_t<api_uint32_t>`  **Text::size** () const
+ uint32_t **Text::size** () const
 
 Returns size of the text resource.
 
@@ -69,9 +69,9 @@ Returns size of the text resource.
 
 ----
 
-.. _api_Text_text:
+.. _api_Text_3284d5c9:
 
- std::string **Text::text** ()
+ :ref:`TString<api_TString>`  **Text::text** ()
 
 Returns text content as string.
 

@@ -42,28 +42,28 @@ None
 Static Methods
 --------------
 
-+------------------------------+----------------------------------------------------------------------+
-|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_load>` (const std::string & data)                |
-+------------------------------+----------------------------------------------------------------------+
-|                  std::string | :ref:`save<api_Json_save>` (const Variant & data, int32_t  tab = -1) |
-+------------------------------+----------------------------------------------------------------------+
++------------------------------+--------------------------------------------------------------------------+
+|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_69d152bc>` (const TString & data)                    |
++------------------------------+--------------------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`save<api_Json_78e6bfa5>` (const Variant & data, int32_t  tab = -1) |
++------------------------------+--------------------------------------------------------------------------+
 
 .. _api_Json_methods:
 
 Methods Description
 -------------------
 
-.. _api_Json_load:
+.. _api_Json_69d152bc:
 
- :ref:`Variant<api_Variant>`  **Json::load** (std::string & *data*)
+ :ref:`Variant<api_Variant>`  **Json::load** (:ref:`TString<api_TString>` & *data*)
 
 Returns deserialized string *data* as Variant based DOM structure.
 
 ----
 
-.. _api_Json_save:
+.. _api_Json_78e6bfa5:
 
- std::string **Json::save** (:ref:`Variant<api_Variant>` & *data*, int32_t  *tab* = -1)
+ :ref:`TString<api_TString>`  **Json::save** (:ref:`Variant<api_Variant>` & *data*, int32_t  *tab* = -1)
 
 Returns serialized *data* as string. Argument *tab* is used as JSON *tab*ulation formatting offset (-1 for one line JSON)
 

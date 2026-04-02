@@ -19,15 +19,15 @@ The ToolButton class provides a UI component with a button-like appearance and a
 Public Methods
 --------------
 
-+--------------------------+------------------------------------------------------+
-|                     void | :ref:`hideMenu<api_ToolButton_hideMenu>` ()          |
-+--------------------------+------------------------------------------------------+
-|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_menu>` () const            |
-+--------------------------+------------------------------------------------------+
-|                     void | :ref:`setMenu<api_ToolButton_setMenu>` (Menu * menu) |
-+--------------------------+------------------------------------------------------+
-|                     void | :ref:`showMenu<api_ToolButton_showMenu>` ()          |
-+--------------------------+------------------------------------------------------+
++--------------------------+-------------------------------------------------------+
+|                     void | :ref:`hideMenu<api_ToolButton_a6458bc1>` ()           |
++--------------------------+-------------------------------------------------------+
+|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_3acbf670>` () const         |
++--------------------------+-------------------------------------------------------+
+|                     void | :ref:`setMenu<api_ToolButton_3721ced0>` (Menu * menu) |
++--------------------------+-------------------------------------------------------+
+|                     void | :ref:`showMenu<api_ToolButton_a6b1e804>` ()           |
++--------------------------+-------------------------------------------------------+
 
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ToolButton_hideMenu:
+.. _api_ToolButton_a6458bc1:
 
  void **ToolButton::hideMenu** ()
 
@@ -51,7 +51,7 @@ Hides the associated popup menu.
 
 ----
 
-.. _api_ToolButton_menu:
+.. _api_ToolButton_3acbf670:
 
  :ref:`Menu<api_Menu>` * **ToolButton::menu** () const
 
@@ -61,7 +61,7 @@ Returns the associated menu, or nullptr if no menu has been defined.
 
 ----
 
-.. _api_ToolButton_setMenu:
+.. _api_ToolButton_3721ced0:
 
  void **ToolButton::setMenu** (:ref:`Menu<api_Menu>` * *menu*)
 
@@ -71,7 +71,7 @@ Associates the given *menu* with this tool button. Ownership of the *menu* is no
 
 ----
 
-.. _api_ToolButton_showMenu:
+.. _api_ToolButton_a6b1e804:
 
  void **ToolButton::showMenu** ()
 

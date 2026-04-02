@@ -17,7 +17,7 @@ Example:
 ::
 
     class ExampleBehaviour : public NativeBehaviour {
-        A_REGISTER(ExampleBehaviour, NativeBehaviour, General)
+        A_OBJECT(ExampleBehaviour, NativeBehaviour, General)
     
         A_NOMETHODS()
         A_NOPROPERTIES()
@@ -39,11 +39,11 @@ Example:
 Public Methods
 --------------
 
-+-------+----------------------------------------------+
-|  void | :ref:`start<api_NativeBehaviour_start>` ()   |
-+-------+----------------------------------------------+
-|  void | :ref:`update<api_NativeBehaviour_update>` () |
-+-------+----------------------------------------------+
++-------+------------------------------------------------+
+|  void | :ref:`start<api_NativeBehaviour_7c40b953>` ()  |
++-------+------------------------------------------------+
+|  void | :ref:`update<api_NativeBehaviour_e7d564bc>` () |
++-------+------------------------------------------------+
 
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_NativeBehaviour_start:
+.. _api_NativeBehaviour_7c40b953:
 
  void **NativeBehaviour::start** ()
 
@@ -67,7 +67,7 @@ Start is called on the same frame when a script is enabled just before the updat
 
 ----
 
-.. _api_NativeBehaviour_update:
+.. _api_NativeBehaviour_e7d564bc:
 
  void **NativeBehaviour::update** ()
 

@@ -21,27 +21,29 @@ To make methods visible in introspection mechanism, developers must declare thos
 Public Methods
 --------------
 
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                            | :ref:`MetaMethod<api_MetaMethod_MetaMethod>` (const MetaMethod::Table * table)                                     |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`invoke<api_MetaMethod_invoke>` (void * object, Variant & returnValue, int  argc, const Variant * args) const |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`isValid<api_MetaMethod_isValid>` () const                                                                    |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                 const char | :ref:`name<api_MetaMethod_name>` () const                                                                          |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                        int | :ref:`parameterCount<api_MetaMethod_parameterCount>` () const                                                      |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                              :ref:`MetaType<api_MetaType>` | :ref:`parameterType<api_MetaMethod_parameterType>` (int  index) const                                              |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                              :ref:`MetaType<api_MetaType>` | :ref:`returnType<api_MetaMethod_returnType>` () const                                                              |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|                                                std::string | :ref:`signature<api_MetaMethod_signature>` () const                                                                |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|    const :ref:`MetaMethod::Table<api_MetaMethod::Table>` * | :ref:`table<api_MetaMethod_table>` () const                                                                        |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-|  :ref:`MetaMethod::MethodType<api_MetaMethod::MethodType>` | :ref:`type<api_MetaMethod_type>` () const                                                                          |
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                           | :ref:`MetaMethod<api_MetaMethod_972c8f35>` (const MetaMethod::Table * table)                                         |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                       int | :ref:`hash<api_MetaMethod_42683fd7>` () const                                                                        |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                      bool | :ref:`invoke<api_MetaMethod_1e5f7a3b>` (void * object, Variant & returnValue, int  argc, const Variant * args) const |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                      bool | :ref:`isValid<api_MetaMethod_be8df052>` () const                                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                const char | :ref:`name<api_MetaMethod_c4a02e1b>` () const                                                                        |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                                       int | :ref:`parameterCount<api_MetaMethod_630f7aec>` () const                                                              |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                             :ref:`MetaType<api_MetaType>` | :ref:`parameterType<api_MetaMethod_092fb371>` (int  index) const                                                     |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                             :ref:`MetaType<api_MetaType>` | :ref:`returnType<api_MetaMethod_2b95371a>` () const                                                                  |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|                                               std::string | :ref:`signature<api_MetaMethod_04d6be89>` () const                                                                   |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|    const :ref:`MetaMethod::Table<api_MetaMethod_Table>` * | :ref:`table<api_MetaMethod_2e8715db>` () const                                                                       |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+|  :ref:`MetaMethod::MethodType<api_MetaMethod_MethodType>` | :ref:`type<api_MetaMethod_71cf5842>` () const                                                                        |
++-----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 .. _api_MetaMethod_enums:
 
@@ -80,7 +82,7 @@ None
 Methods Description
 -------------------
 
-.. _api_MetaMethod_MetaMethod:
+.. _api_MetaMethod_972c8f35:
 
 **MetaMethod::MetaMethod** (:ref:`MetaMethod::Table<api_MetaMethod::Table>` * *table*)
 
@@ -88,7 +90,15 @@ Constructs MetaMethod object which will contain information provided in a *table
 
 ----
 
-.. _api_MetaMethod_invoke:
+.. _api_MetaMethod_42683fd7:
+
+ int **MetaMethod::hash** () const
+
+Returns method signature hash.
+
+----
+
+.. _api_MetaMethod_1e5f7a3b:
 
  bool **MetaMethod::invoke** (void * *object*, :ref:`Variant<api_Variant>` & *returnValue*, int  *argc*, :ref:`Variant<api_Variant>` * *args*) const
 
@@ -102,7 +112,7 @@ Return true on succssed; otherwise returns false.
 
 ----
 
-.. _api_MetaMethod_isValid:
+.. _api_MetaMethod_be8df052:
 
  bool **MetaMethod::isValid** () const
 
@@ -110,7 +120,7 @@ Returns true if method is valid; otherwise returns false.
 
 ----
 
-.. _api_MetaMethod_name:
+.. _api_MetaMethod_c4a02e1b:
 
 const char **MetaMethod::name** () const
 
@@ -118,7 +128,7 @@ Returns a name of method.
 
 ----
 
-.. _api_MetaMethod_parameterCount:
+.. _api_MetaMethod_630f7aec:
 
  int **MetaMethod::parameterCount** () const
 
@@ -126,7 +136,7 @@ Returns a parameter count of method.
 
 ----
 
-.. _api_MetaMethod_parameterType:
+.. _api_MetaMethod_092fb371:
 
  :ref:`MetaType<api_MetaType>`  **MetaMethod::parameterType** (int  *index*) const
 
@@ -134,7 +144,7 @@ Returns the type of parameter at *index* position.
 
 ----
 
-.. _api_MetaMethod_returnType:
+.. _api_MetaMethod_2b95371a:
 
  :ref:`MetaType<api_MetaType>`  **MetaMethod::returnType** () const
 
@@ -142,7 +152,7 @@ Returns a return type of method.
 
 ----
 
-.. _api_MetaMethod_signature:
+.. _api_MetaMethod_04d6be89:
 
  std::string **MetaMethod::signature** () const
 
@@ -150,7 +160,7 @@ Returns method signature in text format.
 
 ----
 
-.. _api_MetaMethod_table:
+.. _api_MetaMethod_2e8715db:
 
 const :ref:`MetaMethod::Table<api_MetaMethod::Table>` * **MetaMethod::table** () const
 
@@ -158,7 +168,7 @@ Returns method information table.
 
 ----
 
-.. _api_MetaMethod_type:
+.. _api_MetaMethod_71cf5842:
 
  :ref:`MetaMethod::MethodType<api_MetaMethod::MethodType>`  **MetaMethod::type** () const
 

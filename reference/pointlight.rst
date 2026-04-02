@@ -19,19 +19,19 @@ To determine the emiter position PointLight uses Transform component of the own 
 Public Methods
 --------------
 
-+--------+----------------------------------------------------------------------------------+
-|  float | :ref:`attenuationRadius<api_PointLight_attenuationRadius>` () const              |
-+--------+----------------------------------------------------------------------------------+
-|   void | :ref:`setAttenuationRadius<api_PointLight_setAttenuationRadius>` (float  radius) |
-+--------+----------------------------------------------------------------------------------+
-|   void | :ref:`setSourceLength<api_PointLight_setSourceLength>` (float  length)           |
-+--------+----------------------------------------------------------------------------------+
-|   void | :ref:`setSourceRadius<api_PointLight_setSourceRadius>` (float  radius)           |
-+--------+----------------------------------------------------------------------------------+
-|  float | :ref:`sourceLength<api_PointLight_sourceLength>` () const                        |
-+--------+----------------------------------------------------------------------------------+
-|  float | :ref:`sourceRadius<api_PointLight_sourceRadius>` () const                        |
-+--------+----------------------------------------------------------------------------------+
++--------+----------------------------------------------------------------------+
+|  float | :ref:`attenuationRadius<api_PointLight_a6927ebf>` () const           |
++--------+----------------------------------------------------------------------+
+|   void | :ref:`setAttenuationRadius<api_PointLight_d35ca162>` (float  radius) |
++--------+----------------------------------------------------------------------+
+|   void | :ref:`setSourceLength<api_PointLight_129bea30>` (float  length)      |
++--------+----------------------------------------------------------------------+
+|   void | :ref:`setSourceRadius<api_PointLight_fe576bd3>` (float  radius)      |
++--------+----------------------------------------------------------------------+
+|  float | :ref:`sourceLength<api_PointLight_f530b41d>` () const                |
++--------+----------------------------------------------------------------------+
+|  float | :ref:`sourceRadius<api_PointLight_f8d2975e>` () const                |
++--------+----------------------------------------------------------------------+
 
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PointLight_attenuationRadius:
+.. _api_PointLight_a6927ebf:
 
  float **PointLight::attenuationRadius** () const
 
@@ -57,7 +57,7 @@ Returns the attenuation radius of the light.
 
 ----
 
-.. _api_PointLight_setAttenuationRadius:
+.. _api_PointLight_d35ca162:
 
  void **PointLight::setAttenuationRadius** (float  *radius*)
 
@@ -67,7 +67,7 @@ Changes the attenuation *radius* of the light.
 
 ----
 
-.. _api_PointLight_setSourceLength:
+.. _api_PointLight_129bea30:
 
  void **PointLight::setSourceLength** (float  *length*)
 
@@ -77,7 +77,7 @@ Changes the source *length* of the light.
 
 ----
 
-.. _api_PointLight_setSourceRadius:
+.. _api_PointLight_fe576bd3:
 
  void **PointLight::setSourceRadius** (float  *radius*)
 
@@ -87,7 +87,7 @@ Changes the source *radius* of the light.
 
 ----
 
-.. _api_PointLight_sourceLength:
+.. _api_PointLight_f530b41d:
 
  float **PointLight::sourceLength** () const
 
@@ -97,7 +97,7 @@ Returns the source length of the light.
 
 ----
 
-.. _api_PointLight_sourceRadius:
+.. _api_PointLight_f8d2975e:
 
  float **PointLight::sourceRadius** () const
 
