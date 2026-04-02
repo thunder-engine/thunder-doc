@@ -20,27 +20,27 @@ Public Methods
 --------------
 
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                :ref:`RigidBody<api_RigidBody>` * | :ref:`attachedRigidBody<api_Collider_d0cf9724>` () const              |
+|                :ref:`RigidBody<api_RigidBody>` * | :ref:`attachedRigidBody<api_Collider_d03768e2>` () const              |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`cleanContacts<api_Collider_7c4620fb>` ()                        |
+|                                             void | :ref:`cleanContacts<api_Collider_8265c4e1>` ()                        |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`createCollider<api_Collider_713ca06e>` ()                       |
+|                                             void | :ref:`createCollider<api_Collider_a67235f0>` ()                       |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`dirtyContacts<api_Collider_741f5c8d>` ()                        |
+|                                             void | :ref:`dirtyContacts<api_Collider_763ce1b8>` ()                        |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`entered<api_Collider_f0d6349a>` ()                              |
+|                                             void | :ref:`entered<api_Collider_9ab63278>` ()                              |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`exited<api_Collider_e8da37bc>` ()                               |
+|                                             void | :ref:`exited<api_Collider_7d5ab268>` ()                               |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`setAttachedRigidBody<api_Collider_0dab7364>` (RigidBody * body) |
+|                                             void | :ref:`setAttachedRigidBody<api_Collider_f1aed793>` (RigidBody * body) |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`setContact<api_Collider_0378c9b5>` (Collider * collider)        |
+|                                             void | :ref:`setContact<api_Collider_0f9a1378>` (Collider * collider)        |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|  :ref:`btCollisionShape<api_btCollisionShape>` * | :ref:`shape<api_Collider_8de4732f>` ()                                |
+|  :ref:`btCollisionShape<api_btCollisionShape>` * | :ref:`shape<api_Collider_6985eb0a>` ()                                |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`stay<api_Collider_dea4857f>` ()                                 |
+|                                             void | :ref:`stay<api_Collider_57b32948>` ()                                 |
 +--------------------------------------------------+-----------------------------------------------------------------------+
-|                                             void | :ref:`update<api_Collider_b4f082de>` ()                               |
+|                                             void | :ref:`update<api_Collider_2a9b4e8c>` ()                               |
 +--------------------------------------------------+-----------------------------------------------------------------------+
 
 
@@ -57,7 +57,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Collider_d0cf9724:
+.. _api_Collider_d03768e2:
 
  :ref:`RigidBody<api_RigidBody>` * **Collider::attachedRigidBody** () const
 
@@ -67,7 +67,7 @@ Returns a pointer to the attached RigidBody if one is associated with.
 
 ----
 
-.. _api_Collider_7c4620fb:
+.. _api_Collider_8265c4e1:
 
  void **Collider::cleanContacts** ()
 
@@ -75,7 +75,7 @@ Cleans up stale collision contacts and emits signals for collisions that have en
 
 ----
 
-.. _api_Collider_713ca06e:
+.. _api_Collider_a67235f0:
 
  void **Collider::createCollider** ()
 
@@ -83,7 +83,7 @@ Creates the Bullet Physics collision object associated with the collider and add
 
 ----
 
-.. _api_Collider_741f5c8d:
+.. _api_Collider_763ce1b8:
 
  void **Collider::dirtyContacts** ()
 
@@ -91,7 +91,7 @@ Marks all current collision contacts as dirty, indicating that they should be ch
 
 ----
 
-.. _api_Collider_f0d6349a:
+.. _api_Collider_9ab63278:
 
  void **Collider::entered** ()
 
@@ -99,7 +99,7 @@ Triggers when collider enters to this volume
 
 ----
 
-.. _api_Collider_e8da37bc:
+.. _api_Collider_7d5ab268:
 
  void **Collider::exited** ()
 
@@ -107,25 +107,25 @@ Triggers when collider exits from this volume
 
 ----
 
-.. _api_Collider_0dab7364:
+.. _api_Collider_f1aed793:
 
  void **Collider::setAttachedRigidBody** (:ref:`RigidBody<api_RigidBody>` * *body*)
 
-Attaches the collider to a specific rigid *body*. If a RigidBody is attached, the collider will be managed by the rigid *body*.
+Attaches the collider to a specific rigid body. If a RigidBody is attached, the collider will be managed by the rigid body.
 
 **See also** attachedRigidBody().
 
 ----
 
-.. _api_Collider_0378c9b5:
+.. _api_Collider_0f9a1378:
 
  void **Collider::setContact** (:ref:`Collider<api_Collider>` * *collider*)
 
-Sets a new collision contact with another *collider*. Emits appropriate signals based on whether the contact is new, sustained, or ended.
+Sets a new collision contact with another collider. Emits appropriate signals based on whether the contact is new, sustained, or ended.
 
 ----
 
-.. _api_Collider_8de4732f:
+.. _api_Collider_6985eb0a:
 
  :ref:`btCollisionShape<api_btCollisionShape>` * **Collider::shape** ()
 
@@ -133,7 +133,7 @@ Returns a pointer to the Bullet Physics collision shape associated with the coll
 
 ----
 
-.. _api_Collider_dea4857f:
+.. _api_Collider_57b32948:
 
  void **Collider::stay** ()
 
@@ -141,7 +141,7 @@ Triggers while collider stays in this volume
 
 ----
 
-.. _api_Collider_b4f082de:
+.. _api_Collider_2a9b4e8c:
 
  void **Collider::update** ()
 

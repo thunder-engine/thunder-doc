@@ -32,17 +32,17 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------------------------+
-|  :ref:`Variant<api_Variant>` | :ref:`currentValue<api_VariantAnimation_f5c69da2>` () const                   |
+|  :ref:`Variant<api_Variant>` | :ref:`currentValue<api_VariantAnimation_6c4fed38>` () const                   |
 +------------------------------+-------------------------------------------------------------------------------+
-|                      int32_t | :ref:`duration<api_VariantAnimation_f3074a8e>` () const                       |
+|                      int32_t | :ref:`duration<api_VariantAnimation_b52dae37>` () const                       |
 +------------------------------+-------------------------------------------------------------------------------+
-|                         void | :ref:`setCurrentTime<api_VariantAnimation_67df59e4>` (uint32_t  position)     |
+|                         void | :ref:`setCurrentTime<api_VariantAnimation_c1b42680>` (uint32_t  position)     |
 +------------------------------+-------------------------------------------------------------------------------+
-|                         void | :ref:`setCurrentValue<api_VariantAnimation_694a58df>` (const Variant & value) |
+|                         void | :ref:`setCurrentValue<api_VariantAnimation_e2a8c174>` (const Variant & value) |
 +------------------------------+-------------------------------------------------------------------------------+
-|                         void | :ref:`setCurve<api_VariantAnimation_269bc07f>` (const AnimationCurve & curve) |
+|                         void | :ref:`setCurve<api_VariantAnimation_79eb3f1d>` (const AnimationCurve & curve) |
 +------------------------------+-------------------------------------------------------------------------------+
-|                         void | :ref:`setDuration<api_VariantAnimation_2d15e860>` (int32_t  duration)         |
+|                         void | :ref:`setDuration<api_VariantAnimation_0dcf429a>` (int32_t  duration)         |
 +------------------------------+-------------------------------------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_VariantAnimation_f5c69da2:
+.. _api_VariantAnimation_6c4fed38:
 
  :ref:`Variant<api_Variant>`  **VariantAnimation::currentValue** () const
 
@@ -69,7 +69,7 @@ Returns the current value for the animated Variant.
 
 ----
 
-.. _api_VariantAnimation_f3074a8e:
+.. _api_VariantAnimation_b52dae37:
 
  int32_t **VariantAnimation::duration** () const
 
@@ -81,7 +81,7 @@ Returns the duration of the animation (in milliseconds).
 
 ----
 
-.. _api_VariantAnimation_67df59e4:
+.. _api_VariantAnimation_c1b42680:
 
  void **VariantAnimation::setCurrentTime** (uint32_t  *position*)
 
@@ -93,7 +93,7 @@ This function interpolates animated Variant value from one KeyFrame to another a
 
 ----
 
-.. _api_VariantAnimation_694a58df:
+.. _api_VariantAnimation_e2a8c174:
 
  void **VariantAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -103,20 +103,20 @@ Sets the new current *value* for the animated Variant.
 
 ----
 
-.. _api_VariantAnimation_269bc07f:
+.. _api_VariantAnimation_79eb3f1d:
 
  void **VariantAnimation::setCurve** (:ref:`AnimationCurve<api_AnimationCurve>` & *curve*)
 
-Sets the new sequence of the key frames as *curve*.
+Sets the new sequence of the key frames as curve.
 
 ----
 
-.. _api_VariantAnimation_2d15e860:
+.. _api_VariantAnimation_0dcf429a:
 
  void **VariantAnimation::setDuration** (int32_t  *duration*)
 
 Sets a new *duration* of the animation in milliseconds.
 
-**See also** *duration*().
+**See also** duration().
 
 

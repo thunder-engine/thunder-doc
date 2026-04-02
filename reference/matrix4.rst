@@ -20,69 +20,69 @@ Public Methods
 --------------
 
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                                | :ref:`Matrix4<api_Matrix4_e834792d>` ()                                                                             |
+|                                | :ref:`Matrix4<api_Matrix4_5a3b27e1>` ()                                                                             |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                                | :ref:`Matrix4<api_Matrix4_48051ba9>` (const Matrix3 & matrix)                                                       |
+|                                | :ref:`Matrix4<api_Matrix4_5ab1f86d>` (const Matrix3 & matrix)                                                       |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                                | :ref:`Matrix4<api_Matrix4_607ae9fb>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
+|                                | :ref:`Matrix4<api_Matrix4_1e4f3865>` (const Vector3 & position, const Quaternion & rotation, const Vector3 & scale) |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                          areal | :ref:`determinant<api_Matrix4_e932ca61>` () const                                                                   |
+|                          areal | :ref:`determinant<api_Matrix4_289ca54b>` () const                                                                   |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`direction<api_Matrix4_7c9206f4>` (const Vector3 & direction, const Vector3 & up)                              |
+|                           void | :ref:`direction<api_Matrix4_061de749>` (const Vector3 & direction, const Vector3 & up)                              |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`euler<api_Matrix4_b1cda809>` ()                                                                               |
+|    :ref:`Vector3<api_Vector3>` | :ref:`euler<api_Matrix4_a7bdc6f1>` ()                                                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`identity<api_Matrix4_a13c05b8>` ()                                                                            |
+|                           void | :ref:`identity<api_Matrix4_c780a9d1>` ()                                                                            |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`inverse<api_Matrix4_cfde92a0>` () const                                                                       |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`inverse<api_Matrix4_4fca0251>` () const                                                                       |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`position<api_Matrix4_439e07f6>` () const                                                                      |
+|    :ref:`Vector3<api_Vector3>` | :ref:`position<api_Matrix4_ceb38f46>` () const                                                                      |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`reflect<api_Matrix4_e3f982c5>` (const Vector4 & plane)                                                        |
+|                           void | :ref:`reflect<api_Matrix4_d4285a6f>` (const Vector4 & plane)                                                        |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`rotate<api_Matrix4_9a637fd1>` (const Vector3 & angles)                                                        |
+|                           void | :ref:`rotate<api_Matrix4_68fd01eb>` (const Vector3 & angles)                                                        |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`rotate<api_Matrix4_394af168>` (const Vector3 & axis, areal  angle)                                            |
+|                           void | :ref:`rotate<api_Matrix4_b3879a25>` (const Vector3 & axis, areal  angle)                                            |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix3<api_Matrix3>` | :ref:`rotation<api_Matrix4_b0e186f9>` () const                                                                      |
+|    :ref:`Matrix3<api_Matrix3>` | :ref:`rotation<api_Matrix4_bd381406>` () const                                                                      |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`scale<api_Matrix4_fac91802>` (const Vector3 & vector)                                                         |
+|                           void | :ref:`scale<api_Matrix4_02d7ae8b>` (const Vector3 & vector)                                                         |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`translate<api_Matrix4_da12e9b3>` (const Vector3 & vector)                                                     |
+|                           void | :ref:`translate<api_Matrix4_60c7b245>` (const Vector3 & vector)                                                     |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`transpose<api_Matrix4_986c0d5a>` () const                                                                     |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`transpose<api_Matrix4_6d51bac8>` () const                                                                     |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`zero<api_Matrix4_8bf24e3a>` ()                                                                                |
+|                           void | :ref:`zero<api_Matrix4_4e928bcf>` ()                                                                                |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator!=<api_Matrix4_e64c85b1>` (const Matrix4 & matrix) const                                              |
+|                           bool | :ref:`operator!=<api_Matrix4_65d1a47c>` (const Matrix4 & matrix) const                                              |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_e746c5a8>` (areal  factor) const                                                        |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_b7cfa032>` (areal  factor) const                                                        |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_ab51037c>` (const Matrix4 & matrix) const                                               |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator*<api_Matrix4_f68bc352>` (const Matrix4 & matrix) const                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix4_195a7d04>` (const Vector3 & vector) const                                               |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Matrix4_912e6cb8>` (const Vector3 & vector) const                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix4_6740c953>` (const Vector4 & vector) const                                               |
+|    :ref:`Vector4<api_Vector4>` | :ref:`operator*<api_Matrix4_381b4029>` (const Vector4 & vector) const                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator*=<api_Matrix4_d7aeb91c>` (areal  factor)                                                             |
+|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator*=<api_Matrix4_258b3fdc>` (areal  factor)                                                             |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator*=<api_Matrix4_e147396c>` (const Matrix4 & matrix)                                                    |
+|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator*=<api_Matrix4_96ae2f18>` (const Matrix4 & matrix)                                                    |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator+<api_Matrix4_7bd91c63>` (const Matrix4 & matrix) const                                               |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator+<api_Matrix4_3d9ec84a>` (const Matrix4 & matrix) const                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator+=<api_Matrix4_183be75f>` (const Matrix4 & matrix)                                                    |
+|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator+=<api_Matrix4_a5b9ce42>` (const Matrix4 & matrix)                                                    |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator-<api_Matrix4_7c3d2f01>` (const Matrix4 & matrix) const                                               |
+|    :ref:`Matrix4<api_Matrix4>` | :ref:`operator-<api_Matrix4_3a95dc87>` (const Matrix4 & matrix) const                                               |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator-=<api_Matrix4_c8109fe2>` (const Matrix4 & matrix)                                                    |
+|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator-=<api_Matrix4_3eb782f6>` (const Matrix4 & matrix)                                                    |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator=<api_Matrix4_ec8f65d3>` (const Matrix4 & value)                                                      |
+|  :ref:`Matrix4<api_Matrix4>` & | :ref:`operator=<api_Matrix4_1ef65ca8>` (const Matrix4 & value)                                                      |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator==<api_Matrix4_6b845e09>` (const Matrix4 & matrix) const                                              |
+|                           bool | :ref:`operator==<api_Matrix4_7bc5290e>` (const Matrix4 & matrix) const                                              |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Matrix4_7c8fbd90>` (int  i)                                                                    |
+|                          areal | :ref:`operator[]<api_Matrix4_b26a8ef4>` (int  i)                                                                    |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Matrix4_70239af5>` (int  i) const                                                              |
+|                          areal | :ref:`operator[]<api_Matrix4_49127c30>` (int  i) const                                                              |
 +--------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
 
@@ -93,11 +93,11 @@ Static Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` | :ref:`lookAt<api_Matrix4_a76e9513>` (const Vector3 & eye, const Vector3 & target, const Vector3 & up)                |
+|  :ref:`Matrix4<api_Matrix4>` | :ref:`lookAt<api_Matrix4_6ca3b579>` (const Vector3 & eye, const Vector3 & target, const Vector3 & up)                |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` | :ref:`ortho<api_Matrix4_39a5ed16>` (areal  left, areal  right, areal  bottom, areal  top, areal  znear, areal  zfar) |
+|  :ref:`Matrix4<api_Matrix4>` | :ref:`ortho<api_Matrix4_b4109736>` (areal  left, areal  right, areal  bottom, areal  top, areal  znear, areal  zfar) |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` | :ref:`perspective<api_Matrix4_1f5b9cd8>` (areal  fov, areal  aspect, areal  znear, areal  zfar)                      |
+|  :ref:`Matrix4<api_Matrix4>` | :ref:`perspective<api_Matrix4_fc4e0531>` (areal  fov, areal  aspect, areal  znear, areal  zfar)                      |
 +------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Matrix4_methods:
@@ -105,7 +105,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Matrix4_e834792d:
+.. _api_Matrix4_5a3b27e1:
 
 **Matrix4::Matrix4** ()
 
@@ -113,23 +113,23 @@ Constructs an identity matrix.
 
 ----
 
-.. _api_Matrix4_48051ba9:
+.. _api_Matrix4_5ab1f86d:
 
 **Matrix4::Matrix4** (:ref:`Matrix3<api_Matrix3>` & *matrix*)
 
-Constructs a transform *matrix* with rotation *matrix*.
+Constructs a transform *matrix* with rotation matrix.
 
 ----
 
-.. _api_Matrix4_607ae9fb:
+.. _api_Matrix4_1e4f3865:
 
 **Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, :ref:`Vector3<api_Vector3>` & *scale*)
 
-Constructs matrix by given *position*, *rotation* and *scale*.
+Constructs matrix by given position, *rotation* and scale.
 
 ----
 
-.. _api_Matrix4_e932ca61:
+.. _api_Matrix4_289ca54b:
 
  areal **Matrix4::determinant** () const
 
@@ -137,7 +137,7 @@ Returns the matrix determinant.
 
 ----
 
-.. _api_Matrix4_7c9206f4:
+.. _api_Matrix4_061de749:
 
  void **Matrix4::direction** (:ref:`Vector3<api_Vector3>` & *direction*, :ref:`Vector3<api_Vector3>` & *up*)
 
@@ -145,7 +145,7 @@ Creates a rotation matrix based on *direction* and *up* vectors.
 
 ----
 
-.. _api_Matrix4_b1cda809:
+.. _api_Matrix4_a7bdc6f1:
 
  :ref:`Vector3<api_Vector3>`  **Matrix4::euler** ()
 
@@ -153,7 +153,7 @@ Returns an Euler angles represented by Vector3(pitch, yaw, roll) in rotation deg
 
 ----
 
-.. _api_Matrix4_a13c05b8:
+.. _api_Matrix4_c780a9d1:
 
  void **Matrix4::identity** ()
 
@@ -161,7 +161,7 @@ Resets this matrix to an identity matrix.
 
 ----
 
-.. _api_Matrix4_cfde92a0:
+.. _api_Matrix4_4fca0251:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::inverse** () const
 
@@ -169,7 +169,7 @@ Returns an inverted copy of this matrix.
 
 ----
 
-.. _api_Matrix4_a76e9513:
+.. _api_Matrix4_6ca3b579:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::lookAt** (:ref:`Vector3<api_Vector3>` & *eye*, :ref:`Vector3<api_Vector3>` & *target*, :ref:`Vector3<api_Vector3>` & *up*)
 
@@ -177,15 +177,15 @@ Creates a transformation matrix that corresponds to a camera viewing the *target
 
 ----
 
-.. _api_Matrix4_39a5ed16:
+.. _api_Matrix4_b4109736:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::ortho** (areal  *left*, areal  *right*, areal  *bottom*, areal  *top*, areal  *znear*, areal  *zfar*)
 
-Creates an orthogonal projection matrix. Creates a view showing the area between *left*, *right*, *top* and *bottom*, with *znear* and *zfar* set up the depth clipping planes.
+Creates an orthogonal projection matrix. Creates a view showing the area between left, right, *top* and bottom, with *znear* and *zfar* set up the depth clipping planes.
 
 ----
 
-.. _api_Matrix4_1f5b9cd8:
+.. _api_Matrix4_fc4e0531:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::perspective** (areal  *fov*, areal  *aspect*, areal  *znear*, areal  *zfar*)
 
@@ -193,7 +193,7 @@ Creates a perspective projection matrix. *fov* is the vertical field-of-view in 
 
 ----
 
-.. _api_Matrix4_439e07f6:
+.. _api_Matrix4_ceb38f46:
 
  :ref:`Vector3<api_Vector3>`  **Matrix4::position** () const
 
@@ -201,15 +201,15 @@ Returns position component of the matrix.
 
 ----
 
-.. _api_Matrix4_e3f982c5:
+.. _api_Matrix4_d4285a6f:
 
  void **Matrix4::reflect** (:ref:`Vector4<api_Vector4>` & *plane*)
 
-Constructs a matrix that reflects the coordinate system about the *plane*.
+Constructs a matrix that reflects the coordinate system about the plane.
 
 ----
 
-.. _api_Matrix4_9a637fd1:
+.. _api_Matrix4_68fd01eb:
 
  void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)
 
@@ -217,7 +217,7 @@ Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw, roll) 
 
 ----
 
-.. _api_Matrix4_394af168:
+.. _api_Matrix4_b3879a25:
 
  void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  *angle*)
 
@@ -225,7 +225,7 @@ Rotate this matrix around *axis* to *angle* in degrees.
 
 ----
 
-.. _api_Matrix4_b0e186f9:
+.. _api_Matrix4_bd381406:
 
  :ref:`Matrix3<api_Matrix3>`  **Matrix4::rotation** () const
 
@@ -233,23 +233,23 @@ Returns rotation matrix from this matrix.
 
 ----
 
-.. _api_Matrix4_fac91802:
+.. _api_Matrix4_02d7ae8b:
 
  void **Matrix4::scale** (:ref:`Vector3<api_Vector3>` & *vector*)
 
-Scales the coordinate system by *vector*.
+Scales the coordinate system by vector.
 
 ----
 
-.. _api_Matrix4_da12e9b3:
+.. _api_Matrix4_60c7b245:
 
  void **Matrix4::translate** (:ref:`Vector3<api_Vector3>` & *vector*)
 
-Move the coordinate system to *vector*.
+Move the coordinate system to vector.
 
 ----
 
-.. _api_Matrix4_986c0d5a:
+.. _api_Matrix4_6d51bac8:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::transpose** () const
 
@@ -257,7 +257,7 @@ Returns this matrix, transposed about its diagonal.
 
 ----
 
-.. _api_Matrix4_8bf24e3a:
+.. _api_Matrix4_4e928bcf:
 
  void **Matrix4::zero** ()
 
@@ -265,97 +265,97 @@ Clear this matrix, with 0.0 value for all components.
 
 ----
 
-.. _api_Matrix4_e64c85b1:
+.. _api_Matrix4_65d1a47c:
 
  bool **Matrix4::operator!=** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
-Returns true if this *matrix* is NOT equal to given *matrix*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *matrix* is NOT equal to given matrix; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Matrix4_e746c5a8:
+.. _api_Matrix4_b7cfa032:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** (areal  *factor*) const
 
-Returns the result of multiplying this matrix and the given *factor*.
+Returns the result of multiplying this matrix and the given factor.
 
 ----
 
-.. _api_Matrix4_ab51037c:
+.. _api_Matrix4_f68bc352:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
-Returns the result of multiplying this *matrix* by the given *matrix*.
+Returns the result of multiplying this *matrix* by the given matrix.
 
 Note that *matrix* multiplication is not commutative, i.e. a*b != b*a.
 
 ----
 
-.. _api_Matrix4_195a7d04:
+.. _api_Matrix4_912e6cb8:
 
  :ref:`Vector3<api_Vector3>`  **Matrix4::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns the result of multiplying this matrix and the given 3D *vector*.
+Returns the result of multiplying this matrix and the given 3D vector.
 
 ----
 
-.. _api_Matrix4_6740c953:
+.. _api_Matrix4_381b4029:
 
  :ref:`Vector4<api_Vector4>`  **Matrix4::operator*** (:ref:`Vector4<api_Vector4>` & *vector*) const
 
-Returns the result of multiplying this matrix and the given 4D *vector*.
+Returns the result of multiplying this matrix and the given 4D vector.
 
 ----
 
-.. _api_Matrix4_d7aeb91c:
+.. _api_Matrix4_258b3fdc:
 
  :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** (areal  *factor*)
 
-Multiplies all elements of this matrix by *factor*.
+Multiplies all elements of this matrix by factor.
 
 ----
 
-.. _api_Matrix4_e147396c:
+.. _api_Matrix4_96ae2f18:
 
  :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
-Returns the result of multiplying this *matrix* by the given *matrix*.
+Returns the result of multiplying this *matrix* by the given matrix.
 
 ----
 
-.. _api_Matrix4_7bd91c63:
+.. _api_Matrix4_3d9ec84a:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator+** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
-Returns the sum of this *matrix* and the given *matrix*.
+Returns the sum of this *matrix* and the given matrix.
 
 ----
 
-.. _api_Matrix4_183be75f:
+.. _api_Matrix4_a5b9ce42:
 
  :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator+=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
-Adds the contents of *matrix* to this *matrix*.
+Adds the contents of *matrix* to this matrix.
 
 ----
 
-.. _api_Matrix4_7c3d2f01:
+.. _api_Matrix4_3a95dc87:
 
  :ref:`Matrix4<api_Matrix4>`  **Matrix4::operator-** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
-Returns the difference of this *matrix* and the given *matrix*.
+Returns the difference of this *matrix* and the given matrix.
 
 ----
 
-.. _api_Matrix4_c8109fe2:
+.. _api_Matrix4_3eb782f6:
 
  :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator-=** (:ref:`Matrix4<api_Matrix4>` & *matrix*)
 
-Subtracts the contents of *matrix* from this *matrix*.
+Subtracts the contents of *matrix* from this matrix.
 
 ----
 
-.. _api_Matrix4_ec8f65d3:
+.. _api_Matrix4_1ef65ca8:
 
  :ref:`Matrix4<api_Matrix4>` & **Matrix4::operator=** (:ref:`Matrix4<api_Matrix4>` & *value*)
 
@@ -363,24 +363,24 @@ Assignment operator. The *value* will be assigned to this object.
 
 ----
 
-.. _api_Matrix4_6b845e09:
+.. _api_Matrix4_7bc5290e:
 
  bool **Matrix4::operator==** (:ref:`Matrix4<api_Matrix4>` & *matrix*) const
 
-Returns true if this *matrix* is equal to given *matrix*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *matrix* is equal to given matrix; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Matrix4_7c8fbd90:
+.. _api_Matrix4_b26a8ef4:
 
  areal **Matrix4::operator[]** (int  *i*)
 
-Returns the component of the matrix at *i*ndex position *i* as a modifiable reference. *i* must be a valid *i*ndex position *i*n the matrix (i.e., 0 <= *i* < 16). Data *i*s stored as column-major format so this function retrieving data from rows *i*n colmns.
+Returns the component of the matrix at index position *i* as a modifiable reference. *i* must be a valid index position in the matrix (i.e., 0 <= *i* < 16). Data is stored as column-major format so this function retrieving data from rows in colmns.
 
-.. _api_Matrix4_70239af5:
+.. _api_Matrix4_49127c30:
 
  areal **Matrix4::operator[]** (int  *i*) const
 
-Returns the component of the matrix at *i*ndex position. *i* must be a valid *i*ndex position *i*n the matrix (i.e., 0 <= *i* < 16). Data *i*s stored as column-major format so this function retrieving data from rows *i*n colmns.
+Returns the component of the matrix at index position. *i* must be a valid index position in the matrix (i.e., 0 <= *i* < 16). Data is stored as column-major format so this function retrieving data from rows in colmns.
 
 

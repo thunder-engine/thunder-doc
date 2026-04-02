@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                            int | :ref:`addAnimationTrack<api_AnimationClip_ef21dcb4>` (const AnimationTrack & track) |
+|                                            int | :ref:`addAnimationTrack<api_AnimationClip_6a84701f>` (const AnimationTrack & track) |
 +------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                            int | :ref:`duration<api_AnimationClip_10d54973>` () const                                |
+|                                            int | :ref:`duration<api_AnimationClip_5edcf0a1>` () const                                |
 +------------------------------------------------+-------------------------------------------------------------------------------------+
-|                                           void | :ref:`removeAnimationTrack<api_AnimationClip_831fb9de>` (int  index)                |
+|                                           void | :ref:`removeAnimationTrack<api_AnimationClip_e0b5c3a4>` (int  index)                |
 +------------------------------------------------+-------------------------------------------------------------------------------------+
-|  :ref:`AnimationTracks<api_AnimationTracks>` & | :ref:`tracks<api_AnimationClip_6a8bed17>` ()                                        |
+|  :ref:`AnimationTracks<api_AnimationTracks>` & | :ref:`tracks<api_AnimationClip_ed14c9fa>` ()                                        |
 +------------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -43,15 +43,15 @@ None
 Methods Description
 -------------------
 
-.. _api_AnimationClip_ef21dcb4:
+.. _api_AnimationClip_6a84701f:
 
  int **AnimationClip::addAnimationTrack** (:ref:`AnimationTrack<api_AnimationTrack>` & *track*)
 
-Adds animation *track* to current AnimationClip. Returns index of added *track*;
+Adds animation *track* to current AnimationClip. Returns index of added track;
 
 ----
 
-.. _api_AnimationClip_10d54973:
+.. _api_AnimationClip_5edcf0a1:
 
  int **AnimationClip::duration** () const
 
@@ -59,15 +59,15 @@ Returns duration of the animation clip in milliseconds.
 
 ----
 
-.. _api_AnimationClip_831fb9de:
+.. _api_AnimationClip_e0b5c3a4:
 
  void **AnimationClip::removeAnimationTrack** (int  *index*)
 
-Removes animation track at givven *index*.
+Removes animation track at givven index.
 
 ----
 
-.. _api_AnimationClip_6a8bed17:
+.. _api_AnimationClip_ed14c9fa:
 
  :ref:`AnimationTracks<api_AnimationTracks>` & **AnimationClip::tracks** ()
 

@@ -43,9 +43,9 @@ Static Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------------+
-|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_69d152bc>` (const TString & data)                    |
+|  :ref:`Variant<api_Variant>` | :ref:`load<api_Json_e850327f>` (const TString & data)                    |
 +------------------------------+--------------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`save<api_Json_78e6bfa5>` (const Variant & data, int32_t  tab = -1) |
+|  :ref:`TString<api_TString>` | :ref:`save<api_Json_8a2d6f9c>` (const Variant & data, int32_t  tab = -1) |
 +------------------------------+--------------------------------------------------------------------------+
 
 .. _api_Json_methods:
@@ -53,7 +53,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Json_69d152bc:
+.. _api_Json_e850327f:
 
  :ref:`Variant<api_Variant>`  **Json::load** (:ref:`TString<api_TString>` & *data*)
 
@@ -61,10 +61,10 @@ Returns deserialized string *data* as Variant based DOM structure.
 
 ----
 
-.. _api_Json_78e6bfa5:
+.. _api_Json_8a2d6f9c:
 
  :ref:`TString<api_TString>`  **Json::save** (:ref:`Variant<api_Variant>` & *data*, int32_t  *tab* = -1)
 
-Returns serialized *data* as string. Argument *tab* is used as JSON *tab*ulation formatting offset (-1 for one line JSON)
+Returns serialized *data* as string. Argument *tab* is used as JSON tabulation formatting offset (-1 for one line JSON)
 
 

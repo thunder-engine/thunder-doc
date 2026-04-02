@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`channels<api_AudioClip_fb4dc915>` () const  |
+|  uint32_t | :ref:`channels<api_AudioClip_7ea82190>` () const  |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`duration<api_AudioClip_2bdf714a>` () const  |
+|  uint32_t | :ref:`duration<api_AudioClip_0e18ca92>` () const  |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`frequency<api_AudioClip_fd2ca617>` () const |
+|  uint32_t | :ref:`frequency<api_AudioClip_1657fd80>` () const |
 +-----------+---------------------------------------------------+
-|      bool | :ref:`isStream<api_AudioClip_d19f4c5a>` () const  |
+|      bool | :ref:`isStream<api_AudioClip_7fe1cd65>` () const  |
 +-----------+---------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AudioClip_fb4dc915:
+.. _api_AudioClip_7ea82190:
 
  uint32_t **AudioClip::channels** () const
 
@@ -51,7 +51,7 @@ Returns the number of audio channels.
 
 ----
 
-.. _api_AudioClip_2bdf714a:
+.. _api_AudioClip_0e18ca92:
 
  uint32_t **AudioClip::duration** () const
 
@@ -59,7 +59,7 @@ Returns the duration of audio clip.
 
 ----
 
-.. _api_AudioClip_fd2ca617:
+.. _api_AudioClip_1657fd80:
 
  uint32_t **AudioClip::frequency** () const
 
@@ -67,7 +67,7 @@ Returns frequency of audio clip in Hz.
 
 ----
 
-.. _api_AudioClip_d19f4c5a:
+.. _api_AudioClip_7fe1cd65:
 
  bool **AudioClip::isStream** () const
 

@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +-------------------------------------+----------------------------------------------------------------+
-|                                void | :ref:`setSize<api_BoxCollider_b20f5976>` (const Vector3  size) |
+|                                void | :ref:`setSize<api_BoxCollider_85b3c176>` (const Vector3  size) |
 +-------------------------------------+----------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_95f3eb86>` () const                 |
+| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_d1e43f90>` () const                 |
 +-------------------------------------+----------------------------------------------------------------+
 
 
@@ -39,17 +39,17 @@ None
 Methods Description
 -------------------
 
-.. _api_BoxCollider_b20f5976:
+.. _api_BoxCollider_85b3c176:
 
  void **BoxCollider::setSize** (:ref:`Vector3<api_Vector3>`  *size*)
 
 Sets the *size* of the box collider.
 
-**See also** *size*().
+**See also** size().
 
 ----
 
-.. _api_BoxCollider_95f3eb86:
+.. _api_BoxCollider_d1e43f90:
 
 const :ref:`Vector3<api_Vector3>` & **BoxCollider::size** () const
 

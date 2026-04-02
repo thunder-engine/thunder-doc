@@ -8,9 +8,7 @@ Thunder Documentation
 
    basics/index
    editor/index
-   lighting/index
    rendering/index
-   vfx/index
    audio/index
    scripting/index
    reference/index
@@ -18,7 +16,7 @@ Thunder Documentation
 .. toctree::
    :maxdepth: 1
    :caption: Get Involved
-   :name: sec-start
+   :name: sec-involve
 
    involved/index
    involved/localization

@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +-------------------------------------------+-----------------------------------------------------------------+
-|  :ref:`Pipeline::Link<api_Pipeline_Link>` | :ref:`renderTaskLink<api_Pipeline_f31c8450>` (int  index) const |
+|  :ref:`Pipeline::Link<api_Pipeline_Link>` | :ref:`renderTaskLink<api_Pipeline_c683902e>` (int  index) const |
 +-------------------------------------------+-----------------------------------------------------------------+
-|               :ref:`TString<api_TString>` | :ref:`renderTaskName<api_Pipeline_865a7f39>` (int  index) const |
+|               :ref:`TString<api_TString>` | :ref:`renderTaskName<api_Pipeline_b4602d9f>` (int  index) const |
 +-------------------------------------------+-----------------------------------------------------------------+
-|                                       int | :ref:`renderTasksCount<api_Pipeline_b817ae23>` () const         |
+|                                       int | :ref:`renderTasksCount<api_Pipeline_937c025b>` () const         |
 +-------------------------------------------+-----------------------------------------------------------------+
-|                                       int | :ref:`renderTasksLinksCount<api_Pipeline_18c9645e>` () const    |
+|                                       int | :ref:`renderTasksLinksCount<api_Pipeline_208fe3d4>` () const    |
 +-------------------------------------------+-----------------------------------------------------------------+
 
 
@@ -43,23 +43,23 @@ None
 Methods Description
 -------------------
 
-.. _api_Pipeline_f31c8450:
+.. _api_Pipeline_c683902e:
 
  :ref:`Pipeline::Link<api_Pipeline::Link>`  **Pipeline::renderTaskLink** (int  *index*) const
 
-Returns the link information for the render task at the specified *index*.
+Returns the link information for the render task at the specified index.
 
 ----
 
-.. _api_Pipeline_865a7f39:
+.. _api_Pipeline_b4602d9f:
 
  :ref:`TString<api_TString>`  **Pipeline::renderTaskName** (int  *index*) const
 
-Returns the name of the render task at the specified *index*.
+Returns the name of the render task at the specified index.
 
 ----
 
-.. _api_Pipeline_b817ae23:
+.. _api_Pipeline_937c025b:
 
  int **Pipeline::renderTasksCount** () const
 
@@ -67,7 +67,7 @@ Returns the number of render tasks in the pipeline.
 
 ----
 
-.. _api_Pipeline_18c9645e:
+.. _api_Pipeline_208fe3d4:
 
  int **Pipeline::renderTasksLinksCount** () const
 

@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +--------+----------------------------------------------------------------------+
-|  float | :ref:`attenuationRadius<api_PointLight_a6927ebf>` () const           |
+|  float | :ref:`attenuationRadius<api_PointLight_ba0791e6>` () const           |
 +--------+----------------------------------------------------------------------+
-|   void | :ref:`setAttenuationRadius<api_PointLight_d35ca162>` (float  radius) |
+|   void | :ref:`setAttenuationRadius<api_PointLight_87ad36c2>` (float  radius) |
 +--------+----------------------------------------------------------------------+
-|   void | :ref:`setSourceLength<api_PointLight_129bea30>` (float  length)      |
+|   void | :ref:`setSourceLength<api_PointLight_f3d4026a>` (float  length)      |
 +--------+----------------------------------------------------------------------+
-|   void | :ref:`setSourceRadius<api_PointLight_fe576bd3>` (float  radius)      |
+|   void | :ref:`setSourceRadius<api_PointLight_0e24c3fb>` (float  radius)      |
 +--------+----------------------------------------------------------------------+
-|  float | :ref:`sourceLength<api_PointLight_f530b41d>` () const                |
+|  float | :ref:`sourceLength<api_PointLight_0c6d5f93>` () const                |
 +--------+----------------------------------------------------------------------+
-|  float | :ref:`sourceRadius<api_PointLight_f8d2975e>` () const                |
+|  float | :ref:`sourceRadius<api_PointLight_4329e86c>` () const                |
 +--------+----------------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PointLight_a6927ebf:
+.. _api_PointLight_ba0791e6:
 
  float **PointLight::attenuationRadius** () const
 
@@ -57,7 +57,7 @@ Returns the attenuation radius of the light.
 
 ----
 
-.. _api_PointLight_d35ca162:
+.. _api_PointLight_87ad36c2:
 
  void **PointLight::setAttenuationRadius** (float  *radius*)
 
@@ -67,7 +67,7 @@ Changes the attenuation *radius* of the light.
 
 ----
 
-.. _api_PointLight_129bea30:
+.. _api_PointLight_f3d4026a:
 
  void **PointLight::setSourceLength** (float  *length*)
 
@@ -77,7 +77,7 @@ Changes the source *length* of the light.
 
 ----
 
-.. _api_PointLight_fe576bd3:
+.. _api_PointLight_0e24c3fb:
 
  void **PointLight::setSourceRadius** (float  *radius*)
 
@@ -87,7 +87,7 @@ Changes the source *radius* of the light.
 
 ----
 
-.. _api_PointLight_f530b41d:
+.. _api_PointLight_0c6d5f93:
 
  float **PointLight::sourceLength** () const
 
@@ -97,7 +97,7 @@ Returns the source length of the light.
 
 ----
 
-.. _api_PointLight_f8d2975e:
+.. _api_PointLight_4329e86c:
 
  float **PointLight::sourceRadius** () const
 

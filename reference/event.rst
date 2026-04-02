@@ -22,9 +22,9 @@ Public Methods
 --------------
 
 +-----------+---------------------------------------------------+
-|           | :ref:`Event<api_Event_2e058ca1>` (uint32_t  type) |
+|           | :ref:`Event<api_Event_692bfe8a>` (uint32_t  type) |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`type<api_Event_8eb96f25>` () const          |
+|  uint32_t | :ref:`type<api_Event_82c6b957>` () const          |
 +-----------+---------------------------------------------------+
 
 .. _api_Event_enums:
@@ -68,7 +68,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Event_2e058ca1:
+.. _api_Event_692bfe8a:
 
 **Event::Event** (uint32_t  *type*)
 
@@ -76,7 +76,7 @@ Constructs an Event with *type* of event.
 
 ----
 
-.. _api_Event_8eb96f25:
+.. _api_Event_82c6b957:
 
  uint32_t **Event::type** () const
 

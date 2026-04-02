@@ -20,21 +20,21 @@ Public Methods
 --------------
 
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`OBBox<api_OBBox_a641cd75>` ()                                                                            |
+|                               | :ref:`OBBox<api_OBBox_032bef76>` ()                                                                            |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`OBBox<api_OBBox_d84c5b73>` (const Vector3 & center, const Vector3 & extent)                              |
+|                               | :ref:`OBBox<api_OBBox_0afc7d12>` (const Vector3 & center, const Vector3 & extent)                              |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                               | :ref:`OBBox<api_OBBox_9b0dc8f1>` (const Vector3 & center, const Vector3 & extent, const Quaternion & rotation) |
+|                               | :ref:`OBBox<api_OBBox_2e0bd74f>` (const Vector3 & center, const Vector3 & extent, const Quaternion & rotation) |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                          void | :ref:`box<api_OBBox_adcf204e>` (Vector3 & min, Vector3 & max) const                                            |
+|                          void | :ref:`box<api_OBBox_04ca7b5d>` (Vector3 & min, Vector3 & max) const                                            |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                          void | :ref:`setBox<api_OBBox_af5894e6>` (const Vector3 & min, const Vector3 & max)                                   |
+|                          void | :ref:`setBox<api_OBBox_5789f463>` (const Vector3 & min, const Vector3 & max)                                   |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_3842196f>` (areal  factor) const                                                     |
+| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_57bf2ad3>` (areal  factor) const                                                     |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_9d8f4ce5>` (const Vector3 & vector) const                                            |
+| const :ref:`OBBox<api_OBBox>` | :ref:`operator*<api_OBBox_29a657bd>` (const Vector3 & vector) const                                            |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
-|     :ref:`OBBox<api_OBBox>` & | :ref:`operator=<api_OBBox_b3629fda>` (const OBBox & value)                                                     |
+|     :ref:`OBBox<api_OBBox>` & | :ref:`operator=<api_OBBox_375e0f1b>` (const OBBox & value)                                                     |
 +-------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_OBBox_a641cd75:
+.. _api_OBBox_032bef76:
 
 **OBBox::OBBox** ()
 
@@ -59,23 +59,23 @@ Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and identity ro
 
 ----
 
-.. _api_OBBox_d84c5b73:
+.. _api_OBBox_0afc7d12:
 
 **OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*)
 
-Constructs a bounding box with *center*, *extent* and identity rotation.
+Constructs a bounding box with center, *extent* and identity rotation.
 
 ----
 
-.. _api_OBBox_9b0dc8f1:
+.. _api_OBBox_2e0bd74f:
 
 **OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, :ref:`Vector3<api_Vector3>` & *extent*, :ref:`Quaternion<api_Quaternion>` & *rotation*)
 
-Constructs a bounding box with *center*, *extent* and *rotation*.
+Constructs a bounding box with center, *extent* and rotation.
 
 ----
 
-.. _api_OBBox_adcf204e:
+.. _api_OBBox_04ca7b5d:
 
  void **OBBox::box** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*) const
 
@@ -85,7 +85,7 @@ Returns *min* and *max* points of bounding box as output arguments.
 
 ----
 
-.. _api_OBBox_af5894e6:
+.. _api_OBBox_5789f463:
 
  void **OBBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, :ref:`Vector3<api_Vector3>` & *max*)
 
@@ -95,23 +95,23 @@ Set curent bounding box by *min* and *max* points.
 
 ----
 
-.. _api_OBBox_3842196f:
+.. _api_OBBox_57bf2ad3:
 
 const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** (areal  *factor*) const
 
-Returns a copy of this vector, multiplied by the given *factor*.
+Returns a copy of this vector, multiplied by the given factor.
 
 ----
 
-.. _api_OBBox_9d8f4ce5:
+.. _api_OBBox_29a657bd:
 
 const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns a copy of this *vector*, multiplied by the given *vector*.
+Returns a copy of this vector, multiplied by the given vector.
 
 ----
 
-.. _api_OBBox_b3629fda:
+.. _api_OBBox_375e0f1b:
 
  :ref:`OBBox<api_OBBox>` & **OBBox::operator=** (:ref:`OBBox<api_OBBox>` & *value*)
 

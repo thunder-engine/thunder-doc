@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +------------------------------------------+---------------------------------------------------------------------+
-|  :ref:`VisualEffect<api_VisualEffect>` * | :ref:`effect<api_EffectRender_f207db4e>` () const                   |
+|  :ref:`VisualEffect<api_VisualEffect>` * | :ref:`effect<api_EffectRender_1c6f39e7>` () const                   |
 +------------------------------------------+---------------------------------------------------------------------+
-|                                     void | :ref:`setEffect<api_EffectRender_c4ae1bf9>` (VisualEffect * effect) |
+|                                     void | :ref:`setEffect<api_EffectRender_30274f9e>` (VisualEffect * effect) |
 +------------------------------------------+---------------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_EffectRender_f207db4e:
+.. _api_EffectRender_1c6f39e7:
 
  :ref:`VisualEffect<api_VisualEffect>` * **EffectRender::effect** () const
 
@@ -49,12 +49,12 @@ Returns a ParticleEffect assigned to the this component.
 
 ----
 
-.. _api_EffectRender_c4ae1bf9:
+.. _api_EffectRender_30274f9e:
 
  void **EffectRender::setEffect** (:ref:`VisualEffect<api_VisualEffect>` * *effect*)
 
 Assgines a particle *effect* to the this component.
 
-**See also** *effect*().
+**See also** effect().
 
 

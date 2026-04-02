@@ -20,43 +20,43 @@ Public Methods
 --------------
 
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|     :ref:`Component<api_Component>` * | :ref:`addComponent<api_Actor_1236f8ba>` (const TString & type)                                      |
+|     :ref:`Component<api_Component>` * | :ref:`addComponent<api_Actor_92e75b8d>` (const TString & type)                                      |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|     :ref:`Component<api_Component>` * | :ref:`component<api_Actor_92f0d1eb>` (const TString & type)                                         |
+|     :ref:`Component<api_Component>` * | :ref:`component<api_Actor_7dfc392e>` (const TString & type)                                         |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|     :ref:`Component<api_Component>` * | :ref:`componentInChild<api_Actor_9fde4157>` (const TString & type)                                  |
+|     :ref:`Component<api_Component>` * | :ref:`componentInChild<api_Actor_102d437e>` (const TString & type)                                  |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-| std::list<Component :ref:`*><api_*>>` | :ref:`components<api_Actor_75bf1936>` (const TString & type)                                        |
+| std::list<Component :ref:`*><api_*>>` | :ref:`components<api_Actor_93ac5db4>` (const TString & type)                                        |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-| std::list<Component :ref:`*><api_*>>` | :ref:`componentsInChild<api_Actor_be75462a>` (const TString & type) const                           |
+| std::list<Component :ref:`*><api_*>>` | :ref:`componentsInChild<api_Actor_7fd439b8>` (const TString & type) const                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                   int | :ref:`flags<api_Actor_28bc6fa7>` () const                                                           |
+|                                   int | :ref:`flags<api_Actor_e1d3654f>` () const                                                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  bool | :ref:`isEnabled<api_Actor_c4387ea5>` () const                                                       |
+|                                  bool | :ref:`isEnabled<api_Actor_d70e26f4>` () const                                                       |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  bool | :ref:`isEnabledInHierarchy<api_Actor_4f3edb91>` () const                                            |
+|                                  bool | :ref:`isEnabledInHierarchy<api_Actor_84fca325>` () const                                            |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  bool | :ref:`isInHierarchy<api_Actor_b7512a69>` (Actor * actor) const                                      |
+|                                  bool | :ref:`isInHierarchy<api_Actor_9d842e1f>` (Actor * actor) const                                      |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  bool | :ref:`isInstance<api_Actor_801c2f34>` () const                                                      |
+|                                  bool | :ref:`isInstance<api_Actor_57fa69c0>` () const                                                      |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  bool | :ref:`isStatic<api_Actor_0e49f6ca>` () const                                                        |
+|                                  bool | :ref:`isStatic<api_Actor_7803d9a6>` () const                                                        |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|             :ref:`Scene<api_Scene>` * | :ref:`scene<api_Actor_e13dc87b>` () const                                                           |
+|             :ref:`Scene<api_Scene>` * | :ref:`scene<api_Actor_93e64c20>` () const                                                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setEnabled<api_Actor_20567bd3>` (const bool  enabled)                                         |
+|                                  void | :ref:`setEnabled<api_Actor_b16a4fc3>` (const bool  enabled)                                         |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setFlags<api_Actor_70c9ead4>` (int  flags)                                                    |
+|                                  void | :ref:`setFlags<api_Actor_5bf38d19>` (int  flags)                                                    |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setParent<api_Actor_712dfac8>` (Object * parent, int32_t  position = -1, bool  force = false) |
+|                                  void | :ref:`setParent<api_Actor_e6f73cdb>` (Object * parent, int32_t  position = -1, bool  force = false) |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setStatic<api_Actor_863e5d29>` (const bool  flag)                                             |
+|                                  void | :ref:`setStatic<api_Actor_2735c0e4>` (const bool  flag)                                             |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setTransform<api_Actor_1d4f2e67>` (Transform * transform)                                     |
+|                                  void | :ref:`setTransform<api_Actor_d0426751>` (Transform * transform)                                     |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|     :ref:`Transform<api_Transform>` * | :ref:`transform<api_Actor_1be94a37>` ()                                                             |
+|     :ref:`Transform<api_Transform>` * | :ref:`transform<api_Actor_4ad73051>` ()                                                             |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
-|             :ref:`World<api_World>` * | :ref:`world<api_Actor_d428375b>` () const                                                           |
+|             :ref:`World<api_World>` * | :ref:`world<api_Actor_cb869e47>` () const                                                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------+
 
 .. _api_Actor_enums:
@@ -92,15 +92,15 @@ None
 Methods Description
 -------------------
 
-.. _api_Actor_1236f8ba:
+.. _api_Actor_92e75b8d:
 
  :ref:`Component<api_Component>` * **Actor::addComponent** (:ref:`TString<api_TString>` & *type*)
 
-Returns created component with specified *type*;
+Returns created component with specified type;
 
 ----
 
-.. _api_Actor_92f0d1eb:
+.. _api_Actor_7dfc392e:
 
  :ref:`Component<api_Component>` * **Actor::component** (:ref:`TString<api_TString>` & *type*)
 
@@ -108,7 +108,7 @@ Returns the component with *type* if one is attached to this Actor; otherwise re
 
 ----
 
-.. _api_Actor_9fde4157:
+.. _api_Actor_102d437e:
 
  :ref:`Component<api_Component>` * **Actor::componentInChild** (:ref:`TString<api_TString>` & *type*)
 
@@ -116,7 +116,7 @@ Returns the component with *type* in the Actor's children using depth search. A 
 
 ----
 
-.. _api_Actor_75bf1936:
+.. _api_Actor_93ac5db4:
 
 std::list<Component :ref:`*><api_*>>`  **Actor::components** (:ref:`TString<api_TString>` & *type*)
 
@@ -124,7 +124,7 @@ Returns a list of the components with *type* attached to this Actor.
 
 ----
 
-.. _api_Actor_be75462a:
+.. _api_Actor_7fd439b8:
 
 std::list<Component :ref:`*><api_*>>`  **Actor::componentsInChild** (:ref:`TString<api_TString>` & *type*) const
 
@@ -132,7 +132,7 @@ Returns a list of the components with *type* in the Actor's children using depth
 
 ----
 
-.. _api_Actor_28bc6fa7:
+.. _api_Actor_e1d3654f:
 
  int **Actor::flags** () const
 
@@ -142,7 +142,7 @@ Returns a set of Actor::Flags applied to this Actor.
 
 ----
 
-.. _api_Actor_c4387ea5:
+.. _api_Actor_d70e26f4:
 
  bool **Actor::isEnabled** () const
 
@@ -150,7 +150,7 @@ Returns true in case of Actor is enabled; otherwise returns false. Disabled Acto
 
 ----
 
-.. _api_Actor_4f3edb91:
+.. _api_Actor_84fca325:
 
  bool **Actor::isEnabledInHierarchy** () const
 
@@ -158,7 +158,7 @@ Returns false in case of one of Actors in top hierarchy was disabled; otherwise 
 
 ----
 
-.. _api_Actor_b7512a69:
+.. _api_Actor_9d842e1f:
 
  bool **Actor::isInHierarchy** (:ref:`Actor<api_Actor>` * *actor*) const
 
@@ -166,7 +166,7 @@ Return true if *actor* is a part of hiearhy.
 
 ----
 
-.. _api_Actor_801c2f34:
+.. _api_Actor_57fa69c0:
 
  bool **Actor::isInstance** () const
 
@@ -174,7 +174,7 @@ Returns true in case the current object is an instance of the serialized prefab 
 
 ----
 
-.. _api_Actor_0e49f6ca:
+.. _api_Actor_7803d9a6:
 
  bool **Actor::isStatic** () const
 
@@ -182,7 +182,7 @@ Returns true if this actor will not be moved during the game; otherwise returns 
 
 ----
 
-.. _api_Actor_e13dc87b:
+.. _api_Actor_93e64c20:
 
  :ref:`Scene<api_Scene>` * **Actor::scene** () const
 
@@ -190,7 +190,7 @@ Returns the scene where actor attached to.
 
 ----
 
-.. _api_Actor_20567bd3:
+.. _api_Actor_b16a4fc3:
 
  void **Actor::setEnabled** (bool  *enabled*)
 
@@ -200,27 +200,27 @@ Marks this Actor as *enabled* or disabled. Disabled Actors becomes invisible for
 
 ----
 
-.. _api_Actor_70c9ead4:
+.. _api_Actor_5bf38d19:
 
  void **Actor::setFlags** (int  *flags*)
 
 Applies a new set of Actor::Flags *flags* to this Actor.
 
-**See also** *flags*().
+**See also** flags().
 
 ----
 
-.. _api_Actor_712dfac8:
+.. _api_Actor_e6f73cdb:
 
- void **Actor::setParent** (:ref:`Object<api_Object>` * *parent*, int32_t  *position* = -1, bool  *force* = false)
+void **Actor::setParent** (:ref:`Object<api_Object>` * *parent*, int32_t  *position* = -1, bool  *force* = false)
 
-Reimplements: Object::setParent(Object *parent, int32_t *position*, bool *force*).
+Reimplements: Object::setParent(Object *parent, int32_t position, bool force).
 
-Makes the actor a child of the *parent* at given *position*. If *force* is true the *parent*-relative *position*, scale and rotation recalculation will be ignored.
+Makes the actor a child of the *parent* at given position. If *force* is true the parent-relative position, scale and rotation recalculation will be ignored.
 
 ----
 
-.. _api_Actor_863e5d29:
+.. _api_Actor_2735c0e4:
 
  void **Actor::setStatic** (bool  *flag*)
 
@@ -230,17 +230,17 @@ Marks current Actor as static or dynamic (by default). This *flag* can help to o
 
 ----
 
-.. _api_Actor_1d4f2e67:
+.. _api_Actor_d0426751:
 
  void **Actor::setTransform** (:ref:`Transform<api_Transform>` * *transform*)
 
 Replaces an existant *transform* with new one.
 
-**See also** *transform*().
+**See also** transform().
 
 ----
 
-.. _api_Actor_1be94a37:
+.. _api_Actor_4ad73051:
 
  :ref:`Transform<api_Transform>` * **Actor::transform** ()
 
@@ -250,7 +250,7 @@ Returns the Transform component attached to this Actor.
 
 ----
 
-.. _api_Actor_d428375b:
+.. _api_Actor_cb869e47:
 
  :ref:`World<api_World>` * **Actor::world** () const
 

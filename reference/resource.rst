@@ -22,23 +22,23 @@ Public Methods
 --------------
 
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`decRef<api_Resource_349d16eb>` ()                                                              |
+|                                        void | :ref:`decRef<api_Resource_a04b19fe>` ()                                                              |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`incRef<api_Resource_04532ac8>` ()                                                              |
+|                                        void | :ref:`incRef<api_Resource_70b51a6c>` ()                                                              |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        bool | :ref:`isUnloadable<api_Resource_f02c843e>` ()                                                        |
+|                                        bool | :ref:`isUnloadable<api_Resource_2dae5694>` ()                                                        |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`notifyCurrentState<api_Resource_e209f381>` ()                                                  |
+|                                        void | :ref:`notifyCurrentState<api_Resource_fb76802a>` ()                                                  |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`setState<api_Resource_609feb34>` (Resource::State  state)                                      |
+|                                        void | :ref:`setState<api_Resource_802e16c3>` (Resource::State  state)                                      |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|  :ref:`Resource::State<api_Resource_State>` | :ref:`state<api_Resource_0ec3b2f7>` () const                                                         |
+|  :ref:`Resource::State<api_Resource_State>` | :ref:`state<api_Resource_367e08ca>` () const                                                         |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`subscribe<api_Resource_6fc8705e>` (Resource::ResourceUpdatedCallback  callback, void * object) |
+|                                        void | :ref:`subscribe<api_Resource_492d3517>` (Resource::ResourceUpdatedCallback  callback, void * object) |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`switchState<api_Resource_ac42571e>` (Resource::State  state)                                   |
+|                                        void | :ref:`switchState<api_Resource_9f7adb40>` (Resource::State  state)                                   |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`unsubscribe<api_Resource_29d6ecbf>` (void * object)                                            |
+|                                        void | :ref:`unsubscribe<api_Resource_1ac0d6e7>` (void * object)                                            |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
 
 .. _api_Resource_enums:
@@ -84,7 +84,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Resource_349d16eb:
+.. _api_Resource_a04b19fe:
 
  void **Resource::decRef** ()
 
@@ -92,7 +92,7 @@ Decreases the reference counter for the resource. In case of the reference count
 
 ----
 
-.. _api_Resource_04532ac8:
+.. _api_Resource_70b51a6c:
 
  void **Resource::incRef** ()
 
@@ -100,7 +100,7 @@ Increases the reference counter for the resource.
 
 ----
 
-.. _api_Resource_f02c843e:
+.. _api_Resource_2dae5694:
 
  bool **Resource::isUnloadable** ()
 
@@ -108,7 +108,7 @@ Returns true in case of resource can be unloaded from GPU; otherwise returns fal
 
 ----
 
-.. _api_Resource_e209f381:
+.. _api_Resource_fb76802a:
 
  void **Resource::notifyCurrentState** ()
 
@@ -116,17 +116,17 @@ Notifies subscribers about the current state of the resource.
 
 ----
 
-.. _api_Resource_609feb34:
+.. _api_Resource_802e16c3:
 
- void **Resource::setState** (:ref:`Resource::State<api_Resource::State>`  *state*)
+ void **Resource::setState** (:ref:`Resource::State<api_Resource_State>`  *state*)
 
 Sets new *state* for the resource.
 
-**See also** *state*().
+**See also** state().
 
 ----
 
-.. _api_Resource_0ec3b2f7:
+.. _api_Resource_367e08ca:
 
  :ref:`Resource::State<api_Resource::State>`  **Resource::state** () const
 
@@ -136,23 +136,23 @@ Returns state for the resource. For possible states please see Resource::Resourc
 
 ----
 
-.. _api_Resource_6fc8705e:
+.. _api_Resource_492d3517:
 
- void **Resource::subscribe** (:ref:`Resource::ResourceUpdatedCallback<api_Resource::ResourceUpdatedCallback>`  *callback*, void * *object*)
+ void **Resource::subscribe** (:ref:`Resource::ResourceUpdatedCallback<api_Resource_ResourceUpdatedCallback>`  *callback*, void * *object*)
 
 Subscribes *callback* for *object* to handle resource status. Increases reference count.
 
 ----
 
-.. _api_Resource_ac42571e:
+.. _api_Resource_9f7adb40:
 
- void **Resource::switchState** (:ref:`Resource::State<api_Resource::State>`  *state*)
+ void **Resource::switchState** (:ref:`Resource::State<api_Resource_State>`  *state*)
 
 Switches the current *state* to a new *state* for the resource.
 
 ----
 
-.. _api_Resource_29d6ecbf:
+.. _api_Resource_1ac0d6e7:
 
  void **Resource::unsubscribe** (void * *object*)
 

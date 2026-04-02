@@ -18,11 +18,11 @@ Public Methods
 --------------
 
 +-----------+-------------------------------------------------------------------+
-|  uint32_t | :ref:`maxThreads<api_ThreadPool_e952ca7d>` () const               |
+|  uint32_t | :ref:`maxThreads<api_ThreadPool_08c274de>` () const               |
 +-----------+-------------------------------------------------------------------+
-|      void | :ref:`setMaxThreads<api_ThreadPool_63bdf847>` (uint32_t  number)  |
+|      void | :ref:`setMaxThreads<api_ThreadPool_12087563>` (uint32_t  number)  |
 +-----------+-------------------------------------------------------------------+
-|      bool | :ref:`waitForDone<api_ThreadPool_48fc9ae0>` (int32_t  msecs = -1) |
+|      bool | :ref:`waitForDone<api_ThreadPool_7089bd41>` (int32_t  msecs = -1) |
 +-----------+-------------------------------------------------------------------+
 
 
@@ -33,7 +33,7 @@ Static Methods
 --------------
 
 +-----------+-------------------------------------------------------+
-|  uint32_t | :ref:`optimalThreadCount<api_ThreadPool_81e6f7c4>` () |
+|  uint32_t | :ref:`optimalThreadCount<api_ThreadPool_9e23a6b0>` () |
 +-----------+-------------------------------------------------------+
 
 .. _api_ThreadPool_methods:
@@ -41,7 +41,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_ThreadPool_e952ca7d:
+.. _api_ThreadPool_08c274de:
 
  uint32_t **ThreadPool::maxThreads** () const
 
@@ -51,7 +51,7 @@ Returns the max number of threads allocated to work.
 
 ----
 
-.. _api_ThreadPool_81e6f7c4:
+.. _api_ThreadPool_9e23a6b0:
 
  uint32_t **ThreadPool::optimalThreadCount** ()
 
@@ -59,7 +59,7 @@ Returns the optimal thread count for the current system. This value is based on 
 
 ----
 
-.. _api_ThreadPool_63bdf847:
+.. _api_ThreadPool_12087563:
 
  void **ThreadPool::setMaxThreads** (uint32_t  *number*)
 
@@ -69,7 +69,7 @@ Sets the max *number* of threads allocated to work.
 
 ----
 
-.. _api_ThreadPool_48fc9ae0:
+.. _api_ThreadPool_7089bd41:
 
  bool **ThreadPool::waitForDone** (int32_t  *msecs* = -1)
 

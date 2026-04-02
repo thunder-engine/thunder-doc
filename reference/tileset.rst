@@ -20,39 +20,39 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`columns<api_TileSet_5c86ad2e>` () const                      |
+|                            int | :ref:`columns<api_TileSet_b96e1703>` () const                      |
 +--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`getCorners<api_TileSet_9c720be4>` (int  index)               |
+|    :ref:`Vector4<api_Vector4>` | :ref:`getCorners<api_TileSet_f85b4372>` (int  index)               |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setColumns<api_TileSet_ef4b93c0>` (int  columns)             |
+|                           void | :ref:`setColumns<api_TileSet_a48c0bde>` (int  columns)             |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTexture<api_TileSet_ef9bc5d3>` (Texture * texture)        |
+|                           void | :ref:`setTexture<api_TileSet_0ae51bd3>` (Texture * texture)        |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTileHeight<api_TileSet_34ac0956>` (int  height)           |
+|                           void | :ref:`setTileHeight<api_TileSet_1b302f89>` (int  height)           |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTileMargin<api_TileSet_8f7ea914>` (int  margin)           |
+|                           void | :ref:`setTileMargin<api_TileSet_9f2104d3>` (int  margin)           |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTileOffset<api_TileSet_c1f5b2d6>` (const Vector2  offset) |
+|                           void | :ref:`setTileOffset<api_TileSet_0da1683c>` (const Vector2  offset) |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTileSpacing<api_TileSet_e832b409>` (int  spacing)         |
+|                           void | :ref:`setTileSpacing<api_TileSet_8fca5b74>` (int  spacing)         |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTileWidth<api_TileSet_1b9cdae2>` (int  width)             |
+|                           void | :ref:`setTileWidth<api_TileSet_62fb7a3d>` (int  width)             |
 +--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setType<api_TileSet_3641b8d0>` (int  type)                   |
+|                           void | :ref:`setType<api_TileSet_6a2b3f70>` (int  type)                   |
 +--------------------------------+--------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_TileSet_0e2fa786>` () const                      |
+|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_TileSet_3b12e08c>` () const                      |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`tileHeight<api_TileSet_65493bc1>` () const                   |
+|                            int | :ref:`tileHeight<api_TileSet_5d73c4ab>` () const                   |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`tileMargin<api_TileSet_86fcb9a2>` () const                   |
+|                            int | :ref:`tileMargin<api_TileSet_0b1568d4>` () const                   |
 +--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`tileOffset<api_TileSet_c8a4953e>` () const                   |
+|    :ref:`Vector2<api_Vector2>` | :ref:`tileOffset<api_TileSet_2a8df10e>` () const                   |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`tileSpacing<api_TileSet_760a8f42>` () const                  |
+|                            int | :ref:`tileSpacing<api_TileSet_ac7180d5>` () const                  |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`tileWidth<api_TileSet_9fda3c7b>` () const                    |
+|                            int | :ref:`tileWidth<api_TileSet_0fe42cbd>` () const                    |
 +--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`type<api_TileSet_128c6e4f>` () const                         |
+|                            int | :ref:`type<api_TileSet_31c7de8a>` () const                         |
 +--------------------------------+--------------------------------------------------------------------+
 
 
@@ -69,7 +69,7 @@ None
 Methods Description
 -------------------
 
-.. _api_TileSet_5c86ad2e:
+.. _api_TileSet_b96e1703:
 
  int **TileSet::columns** () const
 
@@ -79,35 +79,35 @@ Returns the number of columns in the tileset.
 
 ----
 
-.. _api_TileSet_9c720be4:
+.. _api_TileSet_f85b4372:
 
  :ref:`Vector4<api_Vector4>`  **TileSet::getCorners** (int  *index*)
 
-Calculates and returns the texture coordinates (corners) of a specific tile within the tileset based on its *index*. This method considers tile flipping (horizontal and vertical) if applicable.
+Calculates and returns the texture coordinates (corners) of a specific tile within the tileset based on its index. This method considers tile flipping (horizontal and vertical) if applicable.
 
 ----
 
-.. _api_TileSet_ef4b93c0:
+.. _api_TileSet_a48c0bde:
 
  void **TileSet::setColumns** (int  *columns*)
 
 Sets the number of *columns* in the tileset.
 
-**See also** *columns*().
+**See also** columns().
 
 ----
 
-.. _api_TileSet_ef9bc5d3:
+.. _api_TileSet_0ae51bd3:
 
  void **TileSet::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
 
 Sets the *texture* containing the individual tiles.
 
-**See also** *texture*().
+**See also** texture().
 
 ----
 
-.. _api_TileSet_34ac0956:
+.. _api_TileSet_1b302f89:
 
  void **TileSet::setTileHeight** (int  *height*)
 
@@ -117,7 +117,7 @@ Sets the *height* of an individual tile in pixels.
 
 ----
 
-.. _api_TileSet_8f7ea914:
+.. _api_TileSet_9f2104d3:
 
  void **TileSet::setTileMargin** (int  *margin*)
 
@@ -127,7 +127,7 @@ Sets the *margin* (border) around the tiles in pixels.
 
 ----
 
-.. _api_TileSet_c1f5b2d6:
+.. _api_TileSet_0da1683c:
 
  void **TileSet::setTileOffset** (:ref:`Vector2<api_Vector2>`  *offset*)
 
@@ -137,7 +137,7 @@ Sets the *offset* used for tile positioning.
 
 ----
 
-.. _api_TileSet_e832b409:
+.. _api_TileSet_8fca5b74:
 
  void **TileSet::setTileSpacing** (int  *spacing*)
 
@@ -147,7 +147,7 @@ Sets the *spacing* (gap) between adjacent tiles in pixels.
 
 ----
 
-.. _api_TileSet_1b9cdae2:
+.. _api_TileSet_62fb7a3d:
 
  void **TileSet::setTileWidth** (int  *width*)
 
@@ -157,17 +157,17 @@ Sets the *width* of an individual tile in pixels.
 
 ----
 
-.. _api_TileSet_3641b8d0:
+.. _api_TileSet_6a2b3f70:
 
  void **TileSet::setType** (int  *type*)
 
 Sets the *type* of the tileset, specifying the orientation or layout style of the tiles.
 
-**See also** *type*().
+**See also** type().
 
 ----
 
-.. _api_TileSet_0e2fa786:
+.. _api_TileSet_3b12e08c:
 
  :ref:`Texture<api_Texture>` * **TileSet::texture** () const
 
@@ -177,7 +177,7 @@ Returns a pointer to the sprite sheet containing the individual tiles.
 
 ----
 
-.. _api_TileSet_65493bc1:
+.. _api_TileSet_5d73c4ab:
 
  int **TileSet::tileHeight** () const
 
@@ -187,7 +187,7 @@ Returns the height of an individual tile in pixels.
 
 ----
 
-.. _api_TileSet_86fcb9a2:
+.. _api_TileSet_0b1568d4:
 
  int **TileSet::tileMargin** () const
 
@@ -197,7 +197,7 @@ Returns the margin (border) around the tiles in pixels.
 
 ----
 
-.. _api_TileSet_c8a4953e:
+.. _api_TileSet_2a8df10e:
 
  :ref:`Vector2<api_Vector2>`  **TileSet::tileOffset** () const
 
@@ -207,7 +207,7 @@ Returns the offset used for tile positioning.
 
 ----
 
-.. _api_TileSet_760a8f42:
+.. _api_TileSet_ac7180d5:
 
  int **TileSet::tileSpacing** () const
 
@@ -217,7 +217,7 @@ Returns the spacing (gap) between adjacent tiles in pixels.
 
 ----
 
-.. _api_TileSet_9fda3c7b:
+.. _api_TileSet_0fe42cbd:
 
  int **TileSet::tileWidth** () const
 
@@ -227,7 +227,7 @@ Returns the width of an individual tile in pixels.
 
 ----
 
-.. _api_TileSet_128c6e4f:
+.. _api_TileSet_31c7de8a:
 
  int **TileSet::type** () const
 

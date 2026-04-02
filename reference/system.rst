@@ -32,21 +32,21 @@ Public Methods
 --------------
 
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`composeComponent<api_System_e780d915>` (Component * component) const |
+|  void | :ref:`composeComponent<api_System_69524e7b>` (Component * component) const |
 +-------+----------------------------------------------------------------------------+
-|  bool | :ref:`init<api_System_6271f450>` ()                                        |
+|  bool | :ref:`init<api_System_f8340a69>` ()                                        |
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`processEvents<api_System_7e3a2cb4>` ()                               |
+|  void | :ref:`processEvents<api_System_59ed8a4b>` ()                               |
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`reset<api_System_3156098a>` ()                                       |
+|  void | :ref:`reset<api_System_647eacd5>` ()                                       |
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`setActiveWorld<api_System_fac57b93>` (World * world)                 |
+|  void | :ref:`setActiveWorld<api_System_087bc5e3>` (World * world)                 |
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`syncSettings<api_System_14762bc9>` () const                          |
+|  void | :ref:`syncSettings<api_System_2d13ec47>` () const                          |
 +-------+----------------------------------------------------------------------------+
-|   int | :ref:`threadPolicy<api_System_ed91b3fc>` () const                          |
+|   int | :ref:`threadPolicy<api_System_b92eac0f>` () const                          |
 +-------+----------------------------------------------------------------------------+
-|  void | :ref:`update<api_System_6ce24859>` (World * world)                         |
+|  void | :ref:`update<api_System_18a0e52c>` (World * world)                         |
 +-------+----------------------------------------------------------------------------+
 
 .. _api_System_enums:
@@ -80,15 +80,15 @@ None
 Methods Description
 -------------------
 
-.. _api_System_e780d915:
+.. _api_System_69524e7b:
 
  void **System::composeComponent** (:ref:`Component<api_Component>` * *component*) const
 
-This method is a helper to initialize specifically a new *component*. Usually used in the editor.
+This method is a helper to initialize specifically a new component. Usually used in the editor.
 
 ----
 
-.. _api_System_6271f450:
+.. _api_System_f8340a69:
 
  bool **System::init** ()
 
@@ -96,7 +96,7 @@ Can be used to initialize and execute necessary routines. This method will be ca
 
 ----
 
-.. _api_System_7e3a2cb4:
+.. _api_System_59ed8a4b:
 
  void **System::processEvents** ()
 
@@ -106,7 +106,7 @@ Processes all incoming events and executes the System::update method.
 
 ----
 
-.. _api_System_3156098a:
+.. _api_System_647eacd5:
 
  void **System::reset** ()
 
@@ -114,15 +114,15 @@ Can be used to reset all internal system states. This method will be called auto
 
 ----
 
-.. _api_System_fac57b93:
+.. _api_System_087bc5e3:
 
  void **System::setActiveWorld** (:ref:`World<api_World>` * *world*)
 
-Sets active *world*.
+Sets active world.
 
 ----
 
-.. _api_System_14762bc9:
+.. _api_System_2d13ec47:
 
  void **System::syncSettings** () const
 
@@ -130,7 +130,7 @@ This method is a callback to react on saving game settings.
 
 ----
 
-.. _api_System_ed91b3fc:
+.. _api_System_b92eac0f:
 
  int **System::threadPolicy** () const
 
@@ -138,7 +138,7 @@ Returns the thread policy of the system. For more details please refer to System
 
 ----
 
-.. _api_System_6ce24859:
+.. _api_System_18a0e52c:
 
  void **System::update** (:ref:`World<api_World>` * *world*)
 

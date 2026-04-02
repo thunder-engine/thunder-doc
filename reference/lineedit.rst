@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setText<api_LineEdit_08a3746b>` (const TString & text)       |
+|                         void | :ref:`setText<api_LineEdit_6039baf2>` (const TString & text)       |
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setTextColor<api_LineEdit_7dc2f604>` (const Vector4 & color) |
+|                         void | :ref:`setTextColor<api_LineEdit_c98fa015>` (const Vector4 & color) |
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setTextComponent<api_LineEdit_6ca79835>` (Label * label)     |
+|                         void | :ref:`setTextComponent<api_LineEdit_7986e51f>` (Label * label)     |
 +------------------------------+--------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_LineEdit_8d92af45>` () const                        |
+|  :ref:`TString<api_TString>` | :ref:`text<api_LineEdit_fc5a7b20>` () const                        |
 +------------------------------+--------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`textColor<api_LineEdit_ea807c19>` () const                   |
+|  :ref:`Vector4<api_Vector4>` | :ref:`textColor<api_LineEdit_7ef21b98>` () const                   |
 +------------------------------+--------------------------------------------------------------------+
-|    :ref:`Label<api_Label>` * | :ref:`textComponent<api_LineEdit_bd9c764f>` () const               |
+|    :ref:`Label<api_Label>` * | :ref:`textComponent<api_LineEdit_a921be35>` () const               |
 +------------------------------+--------------------------------------------------------------------+
 
 
@@ -47,17 +47,17 @@ None
 Methods Description
 -------------------
 
-.. _api_LineEdit_08a3746b:
+.. _api_LineEdit_6039baf2:
 
  void **LineEdit::setText** (:ref:`TString<api_TString>` & *text*)
 
 Sets the *text* in the TextInput.
 
-**See also** *text*().
+**See also** text().
 
 ----
 
-.. _api_LineEdit_7dc2f604:
+.. _api_LineEdit_c98fa015:
 
  void **LineEdit::setTextColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -67,7 +67,7 @@ Sets the *color* of the text.
 
 ----
 
-.. _api_LineEdit_6ca79835:
+.. _api_LineEdit_7986e51f:
 
  void **LineEdit::setTextComponent** (:ref:`Label<api_Label>` * *label*)
 
@@ -77,7 +77,7 @@ Sets the text *label* component.
 
 ----
 
-.. _api_LineEdit_8d92af45:
+.. _api_LineEdit_fc5a7b20:
 
  :ref:`TString<api_TString>`  **LineEdit::text** () const
 
@@ -87,7 +87,7 @@ Returns the current text entered into the TextInput.
 
 ----
 
-.. _api_LineEdit_ea807c19:
+.. _api_LineEdit_7ef21b98:
 
  :ref:`Vector4<api_Vector4>`  **LineEdit::textColor** () const
 
@@ -97,7 +97,7 @@ Returns the color of the text.
 
 ----
 
-.. _api_LineEdit_bd9c764f:
+.. _api_LineEdit_a921be35:
 
  :ref:`Label<api_Label>` * **LineEdit::textComponent** () const
 

@@ -20,33 +20,33 @@ Public Methods
 --------------
 
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`applyForce<api_RigidBody_0c498513>` (const Vector3 & force, const Vector3 & point)     |
+|                                         void | :ref:`applyForce<api_RigidBody_97ced182>` (const Vector3 & force, const Vector3 & point)     |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`applyImpulse<api_RigidBody_4a36715f>` (const Vector3 & impulse, const Vector3 & point) |
+|                                         void | :ref:`applyImpulse<api_RigidBody_3d9e5f61>` (const Vector3 & impulse, const Vector3 & point) |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`createCollider<api_RigidBody_ae326014>` ()                                             |
+|                                         void | :ref:`createCollider<api_RigidBody_06e593bf>` ()                                             |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`kinematic<api_RigidBody_4586712a>` () const                                            |
+|                                         bool | :ref:`kinematic<api_RigidBody_0d3c5e7f>` () const                                            |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                          int | :ref:`lockPosition<api_RigidBody_a7f6943b>` () const                                         |
+|                                          int | :ref:`lockPosition<api_RigidBody_2a97d816>` () const                                         |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                          int | :ref:`lockRotation<api_RigidBody_9d867154>` () const                                         |
+|                                          int | :ref:`lockRotation<api_RigidBody_83a5201f>` () const                                         |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                        float | :ref:`mass<api_RigidBody_de35496b>` () const                                                 |
+|                                        float | :ref:`mass<api_RigidBody_93f07d6c>` () const                                                 |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_RigidBody_93a5f128>` () const                                             |
+|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_RigidBody_918f2ba6>` () const                                             |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setEnabled<api_RigidBody_e052849d>` (bool  enable)                                     |
+|                                         void | :ref:`setEnabled<api_RigidBody_e49afd32>` (bool  enable)                                     |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setKinematic<api_RigidBody_b930d2ea>` (bool  kinematic)                                |
+|                                         void | :ref:`setKinematic<api_RigidBody_78136bae>` (bool  kinematic)                                |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setLockPosition<api_RigidBody_197a23ed>` (int  flags)                                  |
+|                                         void | :ref:`setLockPosition<api_RigidBody_9523fb06>` (int  flags)                                  |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setLockRotation<api_RigidBody_928b3c0f>` (int  flags)                                  |
+|                                         void | :ref:`setLockRotation<api_RigidBody_26534bc8>` (int  flags)                                  |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setMass<api_RigidBody_18c65049>` (float  mass)                                         |
+|                                         void | :ref:`setMass<api_RigidBody_6f94c7a0>` (float  mass)                                         |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
-|                                         void | :ref:`updateCollider<api_RigidBody_2038db1f>` (bool  updated)                                |
+|                                         void | :ref:`updateCollider<api_RigidBody_cd1b523e>` (bool  updated)                                |
 +----------------------------------------------+----------------------------------------------------------------------------------------------+
 
 
@@ -63,23 +63,23 @@ None
 Methods Description
 -------------------
 
-.. _api_RigidBody_0c498513:
+.. _api_RigidBody_97ced182:
 
  void **RigidBody::applyForce** (:ref:`Vector3<api_Vector3>` & *force*, :ref:`Vector3<api_Vector3>` & *point*)
 
-Applies a *force* to the rigid body at a specific *point*.
+Applies a *force* to the rigid body at a specific point.
 
 ----
 
-.. _api_RigidBody_4a36715f:
+.. _api_RigidBody_3d9e5f61:
 
  void **RigidBody::applyImpulse** (:ref:`Vector3<api_Vector3>` & *impulse*, :ref:`Vector3<api_Vector3>` & *point*)
 
-Applies an *impulse* to the rigid body at a specific *point*.
+Applies an *impulse* to the rigid body at a specific point.
 
 ----
 
-.. _api_RigidBody_ae326014:
+.. _api_RigidBody_06e593bf:
 
  void **RigidBody::createCollider** ()
 
@@ -89,7 +89,7 @@ Creates the rigid body's collider in the physics world.
 
 ----
 
-.. _api_RigidBody_4586712a:
+.. _api_RigidBody_0d3c5e7f:
 
  bool **RigidBody::kinematic** () const
 
@@ -99,7 +99,7 @@ Returns true if the rigid body is kinematic, false otherwise.
 
 ----
 
-.. _api_RigidBody_a7f6943b:
+.. _api_RigidBody_2a97d816:
 
  int **RigidBody::lockPosition** () const
 
@@ -109,7 +109,7 @@ Returns the lock flags for the rigid body's linear position.
 
 ----
 
-.. _api_RigidBody_9d867154:
+.. _api_RigidBody_83a5201f:
 
  int **RigidBody::lockRotation** () const
 
@@ -119,7 +119,7 @@ Returns the lock flags for the rigid body's rotation.
 
 ----
 
-.. _api_RigidBody_de35496b:
+.. _api_RigidBody_93f07d6c:
 
  float **RigidBody::mass** () const
 
@@ -129,7 +129,7 @@ Returns the mass of the rigid body.
 
 ----
 
-.. _api_RigidBody_93a5f128:
+.. _api_RigidBody_918f2ba6:
 
  :ref:`PhysicMaterial<api_PhysicMaterial>` * **RigidBody::material** () const
 
@@ -137,27 +137,27 @@ Returns the physical material associated with the rigid body.
 
 ----
 
-.. _api_RigidBody_e052849d:
+.. _api_RigidBody_e49afd32:
 
  void **RigidBody::setEnabled** (bool  *enable*)
 
-Reimplements: Component::setEnabled(bool *enable*d).
+Reimplements: Component::setEnabled(bool enabled).
 
 Set *enable* or disable the rigid body in the physics world.
 
 ----
 
-.. _api_RigidBody_b930d2ea:
+.. _api_RigidBody_78136bae:
 
  void **RigidBody::setKinematic** (bool  *kinematic*)
 
 Sets whether the rigid body is *kinematic* or not.
 
-**See also** *kinematic*().
+**See also** kinematic().
 
 ----
 
-.. _api_RigidBody_197a23ed:
+.. _api_RigidBody_9523fb06:
 
  void **RigidBody::setLockPosition** (int  *flags*)
 
@@ -167,7 +167,7 @@ Sets the lock *flags* for the rigid body's linear position.
 
 ----
 
-.. _api_RigidBody_928b3c0f:
+.. _api_RigidBody_26534bc8:
 
  void **RigidBody::setLockRotation** (int  *flags*)
 
@@ -177,17 +177,17 @@ Sets the lock *flags* for the rigid body's rotation.
 
 ----
 
-.. _api_RigidBody_18c65049:
+.. _api_RigidBody_6f94c7a0:
 
  void **RigidBody::setMass** (float  *mass*)
 
 Sets the *mass* of the rigid body and updates its properties in the physics simulation.
 
-**See also** *mass*().
+**See also** mass().
 
 ----
 
-.. _api_RigidBody_2038db1f:
+.. _api_RigidBody_cd1b523e:
 
  void **RigidBody::updateCollider** (bool  *updated*)
 

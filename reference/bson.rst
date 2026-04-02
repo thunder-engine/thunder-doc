@@ -42,28 +42,28 @@ None
 Static Methods
 --------------
 
-+----------------------------------+-------------------------------------------------------------------------------------------------------+
-|      :ref:`Variant<api_Variant>` | :ref:`load<api_Bson_04b27fc5>` (const ByteArray & data, MetaType::Type  type = MetaType::VARIANTLIST) |
-+----------------------------------+-------------------------------------------------------------------------------------------------------+
-|  :ref:`ByteArray<api_ByteArray>` | :ref:`save<api_Bson_45fab7c1>` (const Variant & data)                                                 |
-+----------------------------------+-------------------------------------------------------------------------------------------------------+
++------------------------------+-------------------------------------------------------------------------------------------------------+
+|  :ref:`Variant<api_Variant>` | :ref:`load<api_Bson_c65f93b8>` (const ByteArray & data, MetaType::Type  type = MetaType::VARIANTLIST) |
++------------------------------+-------------------------------------------------------------------------------------------------------+
+|                    ByteArray | :ref:`save<api_Bson_784aedf2>` (const Variant & data)                                                 |
++------------------------------+-------------------------------------------------------------------------------------------------------+
 
 .. _api_Bson_methods:
 
 Methods Description
 -------------------
 
-.. _api_Bson_04b27fc5:
+.. _api_Bson_c65f93b8:
 
- :ref:`Variant<api_Variant>`  **Bson::load** (:ref:`ByteArray<api_ByteArray>` & *data*, :ref:`MetaType::Type<api_MetaType::Type>`  *type* = MetaType::VARIANTLIST)
+ :ref:`Variant<api_Variant>`  **Bson::load** (ByteArray & *data*, :ref:`MetaType::Type<api_MetaType_Type>`  *type* = MetaType::VARIANTLIST)
 
 Returns deserialized binary *data* as Variant based DOM structure with expected *type* of container (can be MetaType::VARIANTLIST or MetaType::VARIANTMAP).
 
 ----
 
-.. _api_Bson_45fab7c1:
+.. _api_Bson_784aedf2:
 
- :ref:`ByteArray<api_ByteArray>`  **Bson::save** (:ref:`Variant<api_Variant>` & *data*)
+ ByteArray **Bson::save** (:ref:`Variant<api_Variant>` & *data*)
 
 Returns serialized *data* as binary buffer.
 

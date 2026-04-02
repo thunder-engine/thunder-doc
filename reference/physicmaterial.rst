@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +--------+-------------------------------------------------------------------------+
-|  float | :ref:`density<api_PhysicMaterial_b08d6135>` () const                    |
+|  float | :ref:`density<api_PhysicMaterial_95df48e1>` () const                    |
 +--------+-------------------------------------------------------------------------+
-|  float | :ref:`friction<api_PhysicMaterial_7cf89624>` () const                   |
+|  float | :ref:`friction<api_PhysicMaterial_78f5d3e9>` () const                   |
 +--------+-------------------------------------------------------------------------+
-|  float | :ref:`restitution<api_PhysicMaterial_35072ea8>` () const                |
+|  float | :ref:`restitution<api_PhysicMaterial_f27b3e95>` () const                |
 +--------+-------------------------------------------------------------------------+
-|   void | :ref:`setDensity<api_PhysicMaterial_954cfdb0>` (float  density)         |
+|   void | :ref:`setDensity<api_PhysicMaterial_30fc275b>` (float  density)         |
 +--------+-------------------------------------------------------------------------+
-|   void | :ref:`setFriction<api_PhysicMaterial_ef61b4d5>` (float  friction)       |
+|   void | :ref:`setFriction<api_PhysicMaterial_56a714be>` (float  friction)       |
 +--------+-------------------------------------------------------------------------+
-|   void | :ref:`setRestitution<api_PhysicMaterial_d174369c>` (float  restitution) |
+|   void | :ref:`setRestitution<api_PhysicMaterial_0ce5a7f8>` (float  restitution) |
 +--------+-------------------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PhysicMaterial_b08d6135:
+.. _api_PhysicMaterial_95df48e1:
 
  float **PhysicMaterial::density** () const
 
@@ -57,7 +57,7 @@ Sets the density of the material.
 
 ----
 
-.. _api_PhysicMaterial_7cf89624:
+.. _api_PhysicMaterial_78f5d3e9:
 
  float **PhysicMaterial::friction** () const
 
@@ -67,7 +67,7 @@ Returns the coefficient of friction for the material.
 
 ----
 
-.. _api_PhysicMaterial_35072ea8:
+.. _api_PhysicMaterial_f27b3e95:
 
  float **PhysicMaterial::restitution** () const
 
@@ -77,32 +77,32 @@ Returns the coefficient of restitution (bounciness) for the material.
 
 ----
 
-.. _api_PhysicMaterial_954cfdb0:
+.. _api_PhysicMaterial_30fc275b:
 
  void **PhysicMaterial::setDensity** (float  *density*)
 
 The new *density* of the material.
 
-**See also** *density*().
+**See also** density().
 
 ----
 
-.. _api_PhysicMaterial_ef61b4d5:
+.. _api_PhysicMaterial_56a714be:
 
  void **PhysicMaterial::setFriction** (float  *friction*)
 
 Sets the coefficient of *friction* for the material.
 
-**See also** *friction*().
+**See also** friction().
 
 ----
 
-.. _api_PhysicMaterial_d174369c:
+.. _api_PhysicMaterial_0ce5a7f8:
 
  void **PhysicMaterial::setRestitution** (float  *restitution*)
 
 Sets the coefficient of *restitution* (bounciness) for the material.
 
-**See also** *restitution*().
+**See also** restitution().
 
 

@@ -18,51 +18,51 @@ Public Methods
 --------------
 
 +------------------------------+---------------------------------------------------------------------+
-|          :ref:`Ray<api_Ray>` | :ref:`castRay<api_Camera_67f405e8>` (float  x, float  y)            |
+|          :ref:`Ray<api_Ray>` | :ref:`castRay<api_Camera_f1745c29>` (float  x, float  y)            |
 +------------------------------+---------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Camera_a6d537c2>` () const                          |
+|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_Camera_014bec3d>` () const                          |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`farPlane<api_Camera_57e8dab1>` () const                       |
+|                        float | :ref:`farPlane<api_Camera_9e1fd6b3>` () const                       |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`focalDistance<api_Camera_20dab1ce>` () const                  |
+|                        float | :ref:`focalDistance<api_Camera_f1ba2763>` () const                  |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`fov<api_Camera_e654da7f>` () const                            |
+|                        float | :ref:`fov<api_Camera_5a9c017f>` () const                            |
 +------------------------------+---------------------------------------------------------------------+
-|                         bool | :ref:`isScreenSpace<api_Camera_dbc91f2e>` () const                  |
+|                         bool | :ref:`isScreenSpace<api_Camera_61f04279>` () const                  |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`nearPlane<api_Camera_ea6f0871>` () const                      |
+|                        float | :ref:`nearPlane<api_Camera_5462098a>` () const                      |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`orthoSize<api_Camera_9734fec8>` () const                      |
+|                        float | :ref:`orthoSize<api_Camera_adb0f672>` () const                      |
 +------------------------------+---------------------------------------------------------------------+
-|                         bool | :ref:`orthographic<api_Camera_406abdf7>` () const                   |
+|                         bool | :ref:`orthographic<api_Camera_1c6482ad>` () const                   |
 +------------------------------+---------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_847f6eb2>` (const Vector3 & worldSpace)    |
+|  :ref:`Vector3<api_Vector3>` | :ref:`project<api_Camera_b36f9ace>` (const Vector3 & worldSpace)    |
 +------------------------------+---------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` | :ref:`projectionMatrix<api_Camera_ba2c7406>` () const               |
+|  :ref:`Matrix4<api_Matrix4>` | :ref:`projectionMatrix<api_Camera_42df5c38>` () const               |
 +------------------------------+---------------------------------------------------------------------+
-|                        float | :ref:`ratio<api_Camera_0b785dcf>` () const                          |
+|                        float | :ref:`ratio<api_Camera_ca4d5e17>` () const                          |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setColor<api_Camera_2ef4d953>` (const Vector4  color)         |
+|                         void | :ref:`setColor<api_Camera_a4e6081c>` (const Vector4  color)         |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setFar<api_Camera_7e8a9245>` (const float  distance)          |
+|                         void | :ref:`setFar<api_Camera_745f01da>` (const float  distance)          |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setFocalDistance<api_Camera_37f95c8d>` (const float  focal)   |
+|                         void | :ref:`setFocalDistance<api_Camera_10c5d4f3>` (const float  focal)   |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setFov<api_Camera_27c9d8be>` (const float  angle)             |
+|                         void | :ref:`setFov<api_Camera_9fe28d05>` (const float  angle)             |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setNear<api_Camera_c6721f49>` (const float  distance)         |
+|                         void | :ref:`setNear<api_Camera_b815c4d6>` (const float  distance)         |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setOrthoSize<api_Camera_5b6041e2>` (const float  size)        |
+|                         void | :ref:`setOrthoSize<api_Camera_ac217436>` (const float  size)        |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setOrthographic<api_Camera_bed46918>` (const bool  mode)      |
+|                         void | :ref:`setOrthographic<api_Camera_923f7ced>` (const bool  mode)      |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setRatio<api_Camera_9f235eb4>` (float  ratio)                 |
+|                         void | :ref:`setRatio<api_Camera_36a871b0>` (float  ratio)                 |
 +------------------------------+---------------------------------------------------------------------+
-|                         void | :ref:`setScreenSpace<api_Camera_486ead7c>` (bool  mode)             |
+|                         void | :ref:`setScreenSpace<api_Camera_d2f30e78>` (bool  mode)             |
 +------------------------------+---------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_c9260bae>` (const Vector3 & screenSpace) |
+|  :ref:`Vector3<api_Vector3>` | :ref:`unproject<api_Camera_db875aec>` (const Vector3 & screenSpace) |
 +------------------------------+---------------------------------------------------------------------+
-|  :ref:`Matrix4<api_Matrix4>` | :ref:`viewMatrix<api_Camera_517cd624>` () const                     |
+|  :ref:`Matrix4<api_Matrix4>` | :ref:`viewMatrix<api_Camera_5ace647f>` () const                     |
 +------------------------------+---------------------------------------------------------------------+
 
 
@@ -73,13 +73,13 @@ Static Methods
 --------------
 
 +---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|           :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_a37b182e>` ()                                                                                                                                         |
+|           :ref:`Camera<api_Camera>` * | :ref:`current<api_Camera_e27a1486>` ()                                                                                                                                         |
 +---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_f63c792e>` (const Camera & camera)                                                                                                             |
+| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_8c3f71e4>` (const Camera & camera)                                                                                                             |
 +---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_5f09bc14>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
+| std::array<Vector3, :ref:`8><api_8>>` | :ref:`frustumCorners<api_Camera_7408acbf>` (bool  ortho, float  sigma, float  ratio, const Vector3 & position, const Quaternion & rotation, float  nearPlane, float  farPlane) |
 +---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                  void | :ref:`setCurrent<api_Camera_02d94a5e>` (Camera * current)                                                                                                                      |
+|                                  void | :ref:`setCurrent<api_Camera_c92174ab>` (Camera * current)                                                                                                                      |
 +---------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Camera_methods:
@@ -87,7 +87,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Camera_67f405e8:
+.. _api_Camera_f1745c29:
 
  :ref:`Ray<api_Ray>`  **Camera::castRay** (float  *x*, float  *y*)
 
@@ -95,7 +95,7 @@ Returns ray with origin point in camera position and direction to projection pla
 
 ----
 
-.. _api_Camera_a6d537c2:
+.. _api_Camera_014bec3d:
 
  :ref:`Vector4<api_Vector4>`  **Camera::color** () const
 
@@ -105,7 +105,7 @@ Returns the color with which the screen will be cleared.
 
 ----
 
-.. _api_Camera_a37b182e:
+.. _api_Camera_e27a1486:
 
  :ref:`Camera<api_Camera>` * **Camera::current** ()
 
@@ -115,7 +115,7 @@ Returns current active camera.
 
 ----
 
-.. _api_Camera_57e8dab1:
+.. _api_Camera_9e1fd6b3:
 
  float **Camera::farPlane** () const
 
@@ -123,7 +123,7 @@ Returns a distance to far cut plane.
 
 ----
 
-.. _api_Camera_20dab1ce:
+.. _api_Camera_f1ba2763:
 
  float **Camera::focalDistance** () const
 
@@ -133,7 +133,7 @@ Returns a focal distance for the camera.
 
 ----
 
-.. _api_Camera_e654da7f:
+.. _api_Camera_5a9c017f:
 
  float **Camera::fov** () const
 
@@ -143,23 +143,23 @@ Returns field of view angle for the camera in degrees.
 
 ----
 
-.. _api_Camera_f63c792e:
+.. _api_Camera_8c3f71e4:
 
 std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** (:ref:`Camera<api_Camera>` & *camera*)
 
-Returns frustum corners for the *camera*.
+Returns frustum corners for the camera.
 
 ----
 
-.. _api_Camera_5f09bc14:
+.. _api_Camera_7408acbf:
 
 std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** (bool  *ortho*, float  *sigma*, float  *ratio*, :ref:`Vector3<api_Vector3>` & *position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, float  *nearPlane*, float  *farPlane*)
 
-Returns frustum corners with provided parameters. This function accepts a list of parameters: *ortho* is a flag that points *ortho*graphic or perspective camera. *sigma* is an angle of frustum or *ortho* size in the case of an *ortho*graphic camera. *ratio* is an aspect *ratio*. *position* of the frustum in world space. *rotation* of frustum in world space. *nearPlane* clipping plane. *farPlane* clipping plane.
+Returns frustum corners with provided parameters. This function accepts a list of parameters: *ortho* is a flag that points orthographic or perspective camera. *sigma* is an angle of frustum or *ortho* size in the case of an orthographic camera. *ratio* is an aspect ratio. *position* of the frustum in world space. *rotation* of frustum in world space. *nearPlane* clipping plane. *farPlane* clipping plane.
 
 ----
 
-.. _api_Camera_dbc91f2e:
+.. _api_Camera_61f04279:
 
  bool **Camera::isScreenSpace** () const
 
@@ -167,7 +167,7 @@ Returns true is this camera in the screen space mode. Typically used for Editor.
 
 ----
 
-.. _api_Camera_ea6f0871:
+.. _api_Camera_5462098a:
 
  float **Camera::nearPlane** () const
 
@@ -175,7 +175,7 @@ Returns a distance to near cut plane.
 
 ----
 
-.. _api_Camera_9734fec8:
+.. _api_Camera_adb0f672:
 
  float **Camera::orthoSize** () const
 
@@ -185,7 +185,7 @@ Returns camera size for orthographic mode.
 
 ----
 
-.. _api_Camera_406abdf7:
+.. _api_Camera_1c6482ad:
 
  bool **Camera::orthographic** () const
 
@@ -195,7 +195,7 @@ Returns true for the orthographic mode; for the perspective mode, returns false.
 
 ----
 
-.. _api_Camera_847f6eb2:
+.. _api_Camera_b36f9ace:
 
  :ref:`Vector3<api_Vector3>`  **Camera::project** (:ref:`Vector3<api_Vector3>` & *worldSpace*)
 
@@ -203,7 +203,7 @@ Transforms position from *worldSpace* into screen space. Returns result of trans
 
 ----
 
-.. _api_Camera_ba2c7406:
+.. _api_Camera_42df5c38:
 
  :ref:`Matrix4<api_Matrix4>`  **Camera::projectionMatrix** () const
 
@@ -211,7 +211,7 @@ Returns projection matrix for the camera.
 
 ----
 
-.. _api_Camera_0b785dcf:
+.. _api_Camera_ca4d5e17:
 
  float **Camera::ratio** () const
 
@@ -221,27 +221,27 @@ Returns the aspect ratio (width divided by height).
 
 ----
 
-.. _api_Camera_2ef4d953:
+.. _api_Camera_a4e6081c:
 
  void **Camera::setColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
 Sets the *color* with which the screen will be cleared.
 
-**See also** *color*().
+**See also** color().
 
 ----
 
-.. _api_Camera_02d94a5e:
+.. _api_Camera_c92174ab:
 
  void **Camera::setCurrent** (:ref:`Camera<api_Camera>` * *current*)
 
 Sets *current* active camera.
 
-**See also** *current*().
+**See also** current().
 
 ----
 
-.. _api_Camera_7e8a9245:
+.. _api_Camera_745f01da:
 
  void **Camera::setFar** (float  *distance*)
 
@@ -249,17 +249,17 @@ Sets a *distance* to far cut plane.
 
 ----
 
-.. _api_Camera_37f95c8d:
+.. _api_Camera_10c5d4f3:
 
  void **Camera::setFocalDistance** (float  *focal*)
 
 Sets a *focal* distance for the camera.
 
-**See also** *focal*Distance().
+**See also** focalDistance().
 
 ----
 
-.. _api_Camera_27c9d8be:
+.. _api_Camera_9fe28d05:
 
  void **Camera::setFov** (float  *angle*)
 
@@ -273,7 +273,7 @@ Sets field of view *angle* for the camera in degrees.
 
 ----
 
-.. _api_Camera_c6721f49:
+.. _api_Camera_b815c4d6:
 
  void **Camera::setNear** (float  *distance*)
 
@@ -281,7 +281,7 @@ Sets a *distance* to near cut plane.
 
 ----
 
-.. _api_Camera_5b6041e2:
+.. _api_Camera_ac217436:
 
  void **Camera::setOrthoSize** (float  *size*)
 
@@ -291,27 +291,27 @@ Sets camera *size* for orthographic mode.
 
 ----
 
-.. _api_Camera_bed46918:
+.. _api_Camera_923f7ced:
 
  void **Camera::setOrthographic** (bool  *mode*)
 
-Sets orthographic *mode*.
+Sets orthographic mode.
 
 **See also** orthographic().
 
 ----
 
-.. _api_Camera_9f235eb4:
+.. _api_Camera_36a871b0:
 
  void **Camera::setRatio** (float  *ratio*)
 
 Sets the aspect *ratio* (width divided by height).
 
-**See also** *ratio*().
+**See also** ratio().
 
 ----
 
-.. _api_Camera_486ead7c:
+.. _api_Camera_d2f30e78:
 
  void **Camera::setScreenSpace** (bool  *mode*)
 
@@ -321,7 +321,7 @@ Sets the screen space *mode* for the camera. Typically used for Editor.
 
 ----
 
-.. _api_Camera_c9260bae:
+.. _api_Camera_db875aec:
 
  :ref:`Vector3<api_Vector3>`  **Camera::unproject** (:ref:`Vector3<api_Vector3>` & *screenSpace*)
 
@@ -329,7 +329,7 @@ Transforms position from *screenSpace* into world space. Returns result of trans
 
 ----
 
-.. _api_Camera_517cd624:
+.. _api_Camera_5ace647f:
 
  :ref:`Matrix4<api_Matrix4>`  **Camera::viewMatrix** () const
 

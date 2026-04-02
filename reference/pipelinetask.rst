@@ -20,33 +20,33 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`analyze<api_PipelineTask_6f9dc8b7>` (World * world)                                                                |
+|                           void | :ref:`analyze<api_PipelineTask_a73d2f9e>` (World * world)                                                                |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`exec<api_PipelineTask_164fea5b>` ()                                                                                |
+|                           void | :ref:`exec<api_PipelineTask_73c09682>` ()                                                                                |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`filterByLayer<api_PipelineTask_ae72fd45>` (const RenderList & in, PipelineTask::GroupList & out, int  layer) const |
+|                           void | :ref:`filterByLayer<api_PipelineTask_b1d4730a>` (const RenderList & in, PipelineTask::GroupList & out, int  layer) const |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`group<api_PipelineTask_d0fcb153>` (const PipelineTask::GroupList & in, PipelineTask::GroupList & out) const        |
+|                           void | :ref:`group<api_PipelineTask_7e32d514>` (const PipelineTask::GroupList & in, PipelineTask::GroupList & out) const        |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                            int | :ref:`inputCount<api_PipelineTask_408f9bd3>` () const                                                                    |
+|                            int | :ref:`inputCount<api_PipelineTask_672e9a1d>` () const                                                                    |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|    :ref:`TString<api_TString>` | :ref:`inputName<api_PipelineTask_f60cdba8>` (int  index) const                                                           |
+|    :ref:`TString<api_TString>` | :ref:`inputName<api_PipelineTask_5f8e3c7b>` (int  index) const                                                           |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           bool | :ref:`isEnabled<api_PipelineTask_64f089b7>` () const                                                                     |
+|                           bool | :ref:`isEnabled<api_PipelineTask_c867bdaf>` () const                                                                     |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`output<api_PipelineTask_cf7dbe28>` (int  index)                                                                    |
+|  :ref:`Texture<api_Texture>` * | :ref:`output<api_PipelineTask_0da57b3e>` (int  index)                                                                    |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                            int | :ref:`outputCount<api_PipelineTask_a7106592>` () const                                                                   |
+|                            int | :ref:`outputCount<api_PipelineTask_498f5b2a>` () const                                                                   |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|    :ref:`TString<api_TString>` | :ref:`outputName<api_PipelineTask_2d49fbe7>` (int  index) const                                                          |
+|    :ref:`TString<api_TString>` | :ref:`outputName<api_PipelineTask_e12bdac8>` (int  index) const                                                          |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`resize<api_PipelineTask_17bd956a>` (int  width, int  height)                                                       |
+|                           void | :ref:`resize<api_PipelineTask_83dca52e>` (int  width, int  height)                                                       |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`setContext<api_PipelineTask_36fe0251>` (PipelineContext * context)                                                 |
+|                           void | :ref:`setContext<api_PipelineTask_9d10f58c>` (PipelineContext * context)                                                 |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`setEnabled<api_PipelineTask_e260815c>` (bool  enable)                                                              |
+|                           void | :ref:`setEnabled<api_PipelineTask_9b312d0f>` (bool  enable)                                                              |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-|                           void | :ref:`setInput<api_PipelineTask_b729e8ca>` (int  index, Texture * source)                                                |
+|                           void | :ref:`setInput<api_PipelineTask_4309d6e5>` (int  index, Texture * source)                                                |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -63,15 +63,15 @@ None
 Methods Description
 -------------------
 
-.. _api_PipelineTask_6f9dc8b7:
+.. _api_PipelineTask_a73d2f9e:
 
  void **PipelineTask::analyze** (:ref:`World<api_World>` * *world*)
 
-This method can be used to analyze a scene graphs for the provided *world*.
+This method can be used to analyze a scene graphs for the provided world.
 
 ----
 
-.. _api_PipelineTask_164fea5b:
+.. _api_PipelineTask_73c09682:
 
  void **PipelineTask::exec** ()
 
@@ -79,23 +79,23 @@ Executes the rendering commands associated with this pipeline task.
 
 ----
 
-.. _api_PipelineTask_ae72fd45:
+.. _api_PipelineTask_b1d4730a:
 
- void **PipelineTask::filterByLayer** (:ref:`RenderList<api_RenderList>` & *in*, :ref:`PipelineTask::GroupList<api_PipelineTask::GroupList>` & *out*, int  *layer*) const
+ void **PipelineTask::filterByLayer** (RenderList & *in*, :ref:`PipelineTask::GroupList<api_PipelineTask_GroupList>` & *out*, int  *layer*) const
 
-Filters *out* an *in* renderable components by it's material *layer*.
-
-----
-
-.. _api_PipelineTask_d0fcb153:
-
- void **PipelineTask::group** (:ref:`PipelineTask::GroupList<api_PipelineTask::GroupList>` & *in*, :ref:`PipelineTask::GroupList<api_PipelineTask::GroupList>` & *out*) const
-
-Groups elements from *in* list *in*to *out* rendering *in*stances.
+Filters *out* an *in* renderable components by it's material layer.
 
 ----
 
-.. _api_PipelineTask_408f9bd3:
+.. _api_PipelineTask_7e32d514:
+
+ void **PipelineTask::group** (:ref:`PipelineTask::GroupList<api_PipelineTask_GroupList>` & *in*, :ref:`PipelineTask::GroupList<api_PipelineTask_GroupList>` & *out*) const
+
+Groups elements from *in* list into *out* rendering instances.
+
+----
+
+.. _api_PipelineTask_672e9a1d:
 
  int **PipelineTask::inputCount** () const
 
@@ -103,7 +103,7 @@ Return the number of inputs.
 
 ----
 
-.. _api_PipelineTask_f60cdba8:
+.. _api_PipelineTask_5f8e3c7b:
 
  :ref:`TString<api_TString>`  **PipelineTask::inputName** (int  *index*) const
 
@@ -111,7 +111,7 @@ Returns by *index* a name of input.
 
 ----
 
-.. _api_PipelineTask_64f089b7:
+.. _api_PipelineTask_c867bdaf:
 
  bool **PipelineTask::isEnabled** () const
 
@@ -119,7 +119,7 @@ Returns true if task is enabled; otherwise returns false.
 
 ----
 
-.. _api_PipelineTask_cf7dbe28:
+.. _api_PipelineTask_0da57b3e:
 
  :ref:`Texture<api_Texture>` * **PipelineTask::output** (int  *index*)
 
@@ -127,7 +127,7 @@ Returns by *index* a result of task as a render texture.
 
 ----
 
-.. _api_PipelineTask_a7106592:
+.. _api_PipelineTask_498f5b2a:
 
  int **PipelineTask::outputCount** () const
 
@@ -135,7 +135,7 @@ Return the number of outputs.
 
 ----
 
-.. _api_PipelineTask_2d49fbe7:
+.. _api_PipelineTask_e12bdac8:
 
  :ref:`TString<api_TString>`  **PipelineTask::outputName** (int  *index*) const
 
@@ -143,7 +143,7 @@ Returns by *index* a name of output.
 
 ----
 
-.. _api_PipelineTask_17bd956a:
+.. _api_PipelineTask_83dca52e:
 
  void **PipelineTask::resize** (int  *width*, int  *height*)
 
@@ -151,7 +151,7 @@ A callback to react on screen *width* and *height* changed.
 
 ----
 
-.. _api_PipelineTask_36fe0251:
+.. _api_PipelineTask_9d10f58c:
 
  void **PipelineTask::setContext** (:ref:`PipelineContext<api_PipelineContext>` * *context*)
 
@@ -159,7 +159,7 @@ Sets the pipeline *context* which the given task belongs.
 
 ----
 
-.. _api_PipelineTask_e260815c:
+.. _api_PipelineTask_9b312d0f:
 
  void **PipelineTask::setEnabled** (bool  *enable*)
 
@@ -169,7 +169,7 @@ Sets task to *enable* or disable. The disabled effect will not be executed.
 
 ----
 
-.. _api_PipelineTask_b729e8ca:
+.. _api_PipelineTask_4309d6e5:
 
  void **PipelineTask::setInput** (int  *index*, :ref:`Texture<api_Texture>` * *source*)
 

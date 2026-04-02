@@ -22,43 +22,43 @@ Public Methods
 --------------
 
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                           | :ref:`MetaObject<api_MetaObject_745216ed>` (const char * name, const MetaObject * super, const MetaObject::Constructor  constructor, const MetaMethod::Table * methods, const MetaProperty::Table * props, const MetaEnum::Table * enums) |
+|                                           | :ref:`MetaObject<api_MetaObject_3bd20958>` (const char * name, const MetaObject * super, const MetaObject::Constructor  constructor, const MetaMethod::Table * methods, const MetaProperty::Table * props, const MetaEnum::Table * enums) |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                      bool | :ref:`canCastTo<api_MetaObject_7108fe36>` (const char * type) const                                                                                                                                                                       |
+|                                      bool | :ref:`canCastTo<api_MetaObject_867e43a5>` (const char * type) const                                                                                                                                                                       |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|               :ref:`Object<api_Object>` * | :ref:`createInstance<api_MetaObject_1e94ba38>` () const                                                                                                                                                                                   |
+|               :ref:`Object<api_Object>` * | :ref:`createInstance<api_MetaObject_75bac946>` () const                                                                                                                                                                                   |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|             :ref:`MetaEnum<api_MetaEnum>` | :ref:`enumerator<api_MetaObject_a36ec021>` (int  index) const                                                                                                                                                                             |
+|             :ref:`MetaEnum<api_MetaEnum>` | :ref:`enumerator<api_MetaObject_fd7a160e>` (int  index) const                                                                                                                                                                             |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`enumeratorCount<api_MetaObject_6357ef4c>` () const                                                                                                                                                                                  |
+|                                       int | :ref:`enumeratorCount<api_MetaObject_9ae34fd8>` () const                                                                                                                                                                                  |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`enumeratorOffset<api_MetaObject_af8b5e24>` () const                                                                                                                                                                                 |
+|                                       int | :ref:`enumeratorOffset<api_MetaObject_867be1a5>` () const                                                                                                                                                                                 |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`indexOfEnumerator<api_MetaObject_4596d80a>` (const char * name) const                                                                                                                                                               |
+|                                       int | :ref:`indexOfEnumerator<api_MetaObject_ae375609>` (const char * name) const                                                                                                                                                               |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`indexOfMethod<api_MetaObject_c81bea4d>` (const char * signature) const                                                                                                                                                              |
+|                                       int | :ref:`indexOfMethod<api_MetaObject_7850c3e6>` (const char * signature) const                                                                                                                                                              |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`indexOfProperty<api_MetaObject_149bafc3>` (const char * name) const                                                                                                                                                                 |
+|                                       int | :ref:`indexOfProperty<api_MetaObject_657394e1>` (const char * name) const                                                                                                                                                                 |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`indexOfSignal<api_MetaObject_19e62d75>` (const char * signature) const                                                                                                                                                              |
+|                                       int | :ref:`indexOfSignal<api_MetaObject_7326ab05>` (const char * signature) const                                                                                                                                                              |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`indexOfSlot<api_MetaObject_87bef90a>` (const char * signature) const                                                                                                                                                                |
+|                                       int | :ref:`indexOfSlot<api_MetaObject_ca5b1d49>` (const char * signature) const                                                                                                                                                                |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|         :ref:`MetaMethod<api_MetaMethod>` | :ref:`method<api_MetaObject_9280da75>` (int  index) const                                                                                                                                                                                 |
+|         :ref:`MetaMethod<api_MetaMethod>` | :ref:`method<api_MetaObject_c35416ea>` (int  index) const                                                                                                                                                                                 |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`methodCount<api_MetaObject_492f6810>` () const                                                                                                                                                                                      |
+|                                       int | :ref:`methodCount<api_MetaObject_d298b654>` () const                                                                                                                                                                                      |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`methodOffset<api_MetaObject_ef9da068>` () const                                                                                                                                                                                     |
+|                                       int | :ref:`methodOffset<api_MetaObject_cadf7612>` () const                                                                                                                                                                                     |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                const char | :ref:`name<api_MetaObject_1f4a0258>` () const                                                                                                                                                                                             |
+|                                const char | :ref:`name<api_MetaObject_3608ba9c>` () const                                                                                                                                                                                             |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     :ref:`MetaProperty<api_MetaProperty>` | :ref:`property<api_MetaObject_975ebd84>` (int  index) const                                                                                                                                                                               |
+|     :ref:`MetaProperty<api_MetaProperty>` | :ref:`property<api_MetaObject_cf74b13d>` (int  index) const                                                                                                                                                                               |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`propertyCount<api_MetaObject_1209b74d>` () const                                                                                                                                                                                    |
+|                                       int | :ref:`propertyCount<api_MetaObject_12d4e9f0>` () const                                                                                                                                                                                    |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                       int | :ref:`propertyOffset<api_MetaObject_e0712d85>` () const                                                                                                                                                                                   |
+|                                       int | :ref:`propertyOffset<api_MetaObject_7c96b210>` () const                                                                                                                                                                                   |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| const :ref:`MetaObject<api_MetaObject>` * | :ref:`super<api_MetaObject_0ace4196>` () const                                                                                                                                                                                            |
+| const :ref:`MetaObject<api_MetaObject>` * | :ref:`super<api_MetaObject_4178c63a>` () const                                                                                                                                                                                            |
 +-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -75,29 +75,29 @@ None
 Methods Description
 -------------------
 
-.. _api_MetaObject_745216ed:
+.. _api_MetaObject_3bd20958:
 
-**MetaObject::MetaObject** (char * *name*, :ref:`MetaObject<api_MetaObject>` * *super*, :ref:`MetaObject::Constructor<api_MetaObject::Constructor>`  *constructor*, :ref:`MetaMethod::Table<api_MetaMethod::Table>` * *methods*, :ref:`MetaProperty::Table<api_MetaProperty::Table>` * *props*, :ref:`MetaEnum::Table<api_MetaEnum::Table>` * *enums*)
+**MetaObject::MetaObject** (char * *name*, :ref:`MetaObject<api_MetaObject>` * *super*, :ref:`MetaObject::Constructor<api_MetaObject_Constructor>`  *constructor*, :ref:`MetaMethod::Table<api_MetaMethod_Table>` * *methods*, :ref:`MetaProperty::Table<api_MetaProperty_Table>` * *props*, :ref:`MetaEnum::Table<api_MetaEnum_Table>` * *enums*)
 
-Constructs MetaObject object for Object with type *name*, inherited from *super* class and provided *constructor*, *methods*, *props* and *enums*.
+Constructs MetaObject object for Object with type name, inherited from *super* class and provided constructor, methods, *props* and enums.
 
 ----
 
-.. _api_MetaObject_7108fe36:
+.. _api_MetaObject_867e43a5:
 
  bool **MetaObject::canCastTo** (char * *type*) const
 
-Checks the abillity to cast the current object to *type*.
+Checks the abillity to cast the current object to type.
 
 
 **Note:** This method tries to go through inheritance to find a common parent class.
 
 
-Returns true if object can be cast to *type*; otherwise returns false.
+Returns true if object can be cast to type; otherwise returns false.
 
 ----
 
-.. _api_MetaObject_1e94ba38:
+.. _api_MetaObject_75bac946:
 
  :ref:`Object<api_Object>` * **MetaObject::createInstance** () const
 
@@ -105,7 +105,7 @@ Constructs and return a new instance of associated class, or nullptr if no suita
 
 ----
 
-.. _api_MetaObject_a36ec021:
+.. _api_MetaObject_fd7a160e:
 
  :ref:`MetaEnum<api_MetaEnum>`  **MetaObject::enumerator** (int  *index*) const
 
@@ -117,7 +117,7 @@ Returns MetaEnum object by provided *index* of enumerator.
 
 ----
 
-.. _api_MetaObject_6357ef4c:
+.. _api_MetaObject_9ae34fd8:
 
  int **MetaObject::enumeratorCount** () const
 
@@ -125,7 +125,7 @@ Returns the sum of enumerators for the current class and parent classes.
 
 ----
 
-.. _api_MetaObject_af8b5e24:
+.. _api_MetaObject_867be1a5:
 
  int **MetaObject::enumeratorOffset** () const
 
@@ -133,11 +133,11 @@ Returns the first index of enumerator for current class. The offset is the sum o
 
 ----
 
-.. _api_MetaObject_4596d80a:
+.. _api_MetaObject_ae375609:
 
  int **MetaObject::indexOfEnumerator** (char * *name*) const
 
-Returns index of class enumerator by provided *name*; otherwise returns -1.
+Returns index of class enumerator by provided name; otherwise returns -1.
 
 
 **Note:** This method looks through class hierarchy.
@@ -145,11 +145,11 @@ Returns index of class enumerator by provided *name*; otherwise returns -1.
 
 ----
 
-.. _api_MetaObject_c81bea4d:
+.. _api_MetaObject_7850c3e6:
 
  int **MetaObject::indexOfMethod** (char * *signature*) const
 
-Returns index of class method by provided *signature*; otherwise returns -1.
+Returns index of class method by provided signature; otherwise returns -1.
 
 
 **Note:** This method looks through class hierarchy.
@@ -157,11 +157,11 @@ Returns index of class method by provided *signature*; otherwise returns -1.
 
 ----
 
-.. _api_MetaObject_149bafc3:
+.. _api_MetaObject_657394e1:
 
  int **MetaObject::indexOfProperty** (char * *name*) const
 
-Returns index of class property by provided *name*; otherwise returns -1.
+Returns index of class property by provided name; otherwise returns -1.
 
 
 **Note:** This method looks through class hierarchy.
@@ -169,11 +169,11 @@ Returns index of class property by provided *name*; otherwise returns -1.
 
 ----
 
-.. _api_MetaObject_19e62d75:
+.. _api_MetaObject_7326ab05:
 
  int **MetaObject::indexOfSignal** (char * *signature*) const
 
-Returns index of class signal by provided *signature*; otherwise returns -1.
+Returns index of class signal by provided signature; otherwise returns -1.
 
 
 **Note:** This method looks through class hierarchy.
@@ -181,11 +181,11 @@ Returns index of class signal by provided *signature*; otherwise returns -1.
 
 ----
 
-.. _api_MetaObject_87bef90a:
+.. _api_MetaObject_ca5b1d49:
 
  int **MetaObject::indexOfSlot** (char * *signature*) const
 
-Returns index of class slot by provided *signature*; otherwise returns -1.
+Returns index of class slot by provided signature; otherwise returns -1.
 
 
 **Note:** This method looks through class hierarchy.
@@ -193,7 +193,7 @@ Returns index of class slot by provided *signature*; otherwise returns -1.
 
 ----
 
-.. _api_MetaObject_9280da75:
+.. _api_MetaObject_c35416ea:
 
  :ref:`MetaMethod<api_MetaMethod>`  **MetaObject::method** (int  *index*) const
 
@@ -205,7 +205,7 @@ Returns MetaMethod object by provided *index* of method.
 
 ----
 
-.. _api_MetaObject_492f6810:
+.. _api_MetaObject_d298b654:
 
  int **MetaObject::methodCount** () const
 
@@ -213,7 +213,7 @@ Returns the sum of methods for the current class and parent classes. It's includ
 
 ----
 
-.. _api_MetaObject_ef9da068:
+.. _api_MetaObject_cadf7612:
 
  int **MetaObject::methodOffset** () const
 
@@ -221,7 +221,7 @@ Returns the first index of method for current class. The offset is the sum of al
 
 ----
 
-.. _api_MetaObject_1f4a0258:
+.. _api_MetaObject_3608ba9c:
 
 const char **MetaObject::name** () const
 
@@ -229,7 +229,7 @@ Returns the name of the object type.
 
 ----
 
-.. _api_MetaObject_975ebd84:
+.. _api_MetaObject_cf74b13d:
 
  :ref:`MetaProperty<api_MetaProperty>`  **MetaObject::property** (int  *index*) const
 
@@ -241,7 +241,7 @@ Returns MetaProperty object by provided *index* of property.
 
 ----
 
-.. _api_MetaObject_1209b74d:
+.. _api_MetaObject_12d4e9f0:
 
  int **MetaObject::propertyCount** () const
 
@@ -249,7 +249,7 @@ Returns the sum of properties for the current class and parent classes.
 
 ----
 
-.. _api_MetaObject_e0712d85:
+.. _api_MetaObject_7c96b210:
 
  int **MetaObject::propertyOffset** () const
 
@@ -257,7 +257,7 @@ Returns the first index of property for current class. The offset is the sum of 
 
 ----
 
-.. _api_MetaObject_0ace4196:
+.. _api_MetaObject_4178c63a:
 
 const :ref:`MetaObject<api_MetaObject>` * **MetaObject::super** () const
 

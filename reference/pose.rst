@@ -18,13 +18,13 @@ Public Methods
 --------------
 
 +-------------------------------+-------------------------------------------------------+
-|                          void | :ref:`addBone<api_Pose_604f91ad>` (const Bone & bone) |
+|                          void | :ref:`addBone<api_Pose_6fb21e35>` (const Bone & bone) |
 +-------------------------------+-------------------------------------------------------+
-| const :ref:`Bone<api_Bone>` * | :ref:`bone<api_Pose_eca8d605>` (int  index) const     |
+| const :ref:`Bone<api_Bone>` * | :ref:`bone<api_Pose_fbc1a307>` (int  index) const     |
 +-------------------------------+-------------------------------------------------------+
-|                           int | :ref:`boneCount<api_Pose_d19ac2b5>` () const          |
+|                           int | :ref:`boneCount<api_Pose_567d8ba2>` () const          |
 +-------------------------------+-------------------------------------------------------+
-|                          void | :ref:`clear<api_Pose_8a590fbc>` ()                    |
+|                          void | :ref:`clear<api_Pose_7095f8c2>` ()                    |
 +-------------------------------+-------------------------------------------------------+
 
 
@@ -41,7 +41,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Pose_604f91ad:
+.. _api_Pose_6fb21e35:
 
  void **Pose::addBone** (:ref:`Bone<api_Bone>` & *bone*)
 
@@ -49,11 +49,11 @@ Adds a *bone* to the pose.
 
 ----
 
-.. _api_Pose_eca8d605:
+.. _api_Pose_fbc1a307:
 
 const :ref:`Bone<api_Bone>` * **Pose::bone** (int  *index*) const
 
-Returns a bone with *index*.
+Returns a bone with index.
 
 
 **Note:** Returns nullptr in case no such bone.
@@ -61,7 +61,7 @@ Returns a bone with *index*.
 
 ----
 
-.. _api_Pose_d19ac2b5:
+.. _api_Pose_567d8ba2:
 
  int **Pose::boneCount** () const
 
@@ -69,7 +69,7 @@ Returns the count of bones for the current pose which was affected.
 
 ----
 
-.. _api_Pose_8a590fbc:
+.. _api_Pose_7095f8c2:
 
  void **Pose::clear** ()
 

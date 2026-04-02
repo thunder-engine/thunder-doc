@@ -29,13 +29,13 @@ Static Methods
 --------------
 
 +--------+----------------------------------------------------+
-|  float | :ref:`deltaTime<api_Timer_68e5143d>` ()            |
+|  float | :ref:`deltaTime<api_Timer_c4a213db>` ()            |
 +--------+----------------------------------------------------+
-|  float | :ref:`scale<api_Timer_8072f1da>` ()                |
+|  float | :ref:`scale<api_Timer_abe8d147>` ()                |
 +--------+----------------------------------------------------+
-|   void | :ref:`setScale<api_Timer_37ed26a5>` (float  scale) |
+|   void | :ref:`setScale<api_Timer_0a695f7c>` (float  scale) |
 +--------+----------------------------------------------------+
-|  float | :ref:`time<api_Timer_68032bcf>` ()                 |
+|  float | :ref:`time<api_Timer_1df80396>` ()                 |
 +--------+----------------------------------------------------+
 
 .. _api_Timer_methods:
@@ -43,7 +43,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Timer_68e5143d:
+.. _api_Timer_c4a213db:
 
  float **Timer::deltaTime** ()
 
@@ -55,7 +55,7 @@ Returns the time in seconds since the last frame.
 
 ----
 
-.. _api_Timer_8072f1da:
+.. _api_Timer_abe8d147:
 
  float **Timer::scale** ()
 
@@ -65,17 +65,17 @@ Return the time scale at which the time is passing.
 
 ----
 
-.. _api_Timer_37ed26a5:
+.. _api_Timer_0a695f7c:
 
  void **Timer::setScale** (float  *scale*)
 
 Sets the time *scale* at which the time is passing.
 
-**See also** *scale*().
+**See also** scale().
 
 ----
 
-.. _api_Timer_68032bcf:
+.. _api_Timer_1df80396:
 
  float **Timer::time** ()
 

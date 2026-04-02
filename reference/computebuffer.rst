@@ -19,17 +19,17 @@ The ComputeBuffer class provides functionality to manage and manipulate data buf
 Public Methods
 --------------
 
-+----------------------------------+---------------------------------------------------------------------+
-|                         uint32_t | :ref:`count<api_ComputeBuffer_93c8b4d0>` () const                   |
-+----------------------------------+---------------------------------------------------------------------+
-|  :ref:`ByteArray<api_ByteArray>` | :ref:`data<api_ComputeBuffer_ebf2d305>` () const                    |
-+----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setData<api_ComputeBuffer_842d3067>` (const ByteArray & data) |
-+----------------------------------+---------------------------------------------------------------------+
-|                             void | :ref:`setStride<api_ComputeBuffer_4f05cb13>` (uint32_t  stride)     |
-+----------------------------------+---------------------------------------------------------------------+
-|                         uint32_t | :ref:`stride<api_ComputeBuffer_51c3b0ef>` () const                  |
-+----------------------------------+---------------------------------------------------------------------+
++------------+---------------------------------------------------------------------+
+|   uint32_t | :ref:`count<api_ComputeBuffer_fc2164d3>` () const                   |
++------------+---------------------------------------------------------------------+
+|  ByteArray | :ref:`data<api_ComputeBuffer_0812d9cf>` () const                    |
++------------+---------------------------------------------------------------------+
+|       void | :ref:`setData<api_ComputeBuffer_c2e6479b>` (const ByteArray & data) |
++------------+---------------------------------------------------------------------+
+|       void | :ref:`setStride<api_ComputeBuffer_7ca3e4d9>` (uint32_t  stride)     |
++------------+---------------------------------------------------------------------+
+|   uint32_t | :ref:`stride<api_ComputeBuffer_2d0837b4>` () const                  |
++------------+---------------------------------------------------------------------+
 
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ComputeBuffer_93c8b4d0:
+.. _api_ComputeBuffer_fc2164d3:
 
  uint32_t **ComputeBuffer::count** () const
 
@@ -53,9 +53,9 @@ Gets the number of elements in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_ebf2d305:
+.. _api_ComputeBuffer_0812d9cf:
 
- :ref:`ByteArray<api_ByteArray>`  **ComputeBuffer::data** () const
+ ByteArray **ComputeBuffer::data** () const
 
 Gets the data stored in the compute buffer.
 
@@ -63,9 +63,9 @@ Gets the data stored in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_842d3067:
+.. _api_ComputeBuffer_c2e6479b:
 
- void **ComputeBuffer::setData** (:ref:`ByteArray<api_ByteArray>` & *data*)
+ void **ComputeBuffer::setData** (ByteArray & *data*)
 
 Sets the *data* of the compute buffer.
 
@@ -73,21 +73,21 @@ Sets the *data* of the compute buffer.
 **Note:** This method updates the buffer *data* and marks it as dirty.
 
 
-**See also** *data*().
+**See also** data().
 
 ----
 
-.. _api_ComputeBuffer_4f05cb13:
+.. _api_ComputeBuffer_7ca3e4d9:
 
  void **ComputeBuffer::setStride** (uint32_t  *stride*)
 
 Sets the *stride* of the compute buffer.
 
-**See also** *stride*().
+**See also** stride().
 
 ----
 
-.. _api_ComputeBuffer_51c3b0ef:
+.. _api_ComputeBuffer_2d0837b4:
 
  uint32_t **ComputeBuffer::stride** () const
 

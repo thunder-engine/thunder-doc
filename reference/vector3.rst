@@ -26,67 +26,67 @@ Public Methods
 --------------
 
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_7023ae65>` ()                                                    |
+|                                | :ref:`Vector3<api_Vector3_710f9de3>` ()                                                    |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_d9085ec3>` (areal  v)                                            |
+|                                | :ref:`Vector3<api_Vector3_1794fea3>` (areal  v)                                            |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_7bfc1469>` (const areal * v)                                     |
+|                                | :ref:`Vector3<api_Vector3_db1968e7>` (const areal * v)                                     |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_9b721ad3>` (const Vector2 & vector, areal  z)                    |
+|                                | :ref:`Vector3<api_Vector3_84ba06e9>` (const Vector2 & vector, areal  z)                    |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_357df9e8>` (areal  x, areal  y, areal  z)                        |
+|                                | :ref:`Vector3<api_Vector3_db905e36>` (areal  x, areal  y, areal  z)                        |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                                | :ref:`Vector3<api_Vector3_1de9450a>` (const Vector3 & vector)                              |
+|                                | :ref:`Vector3<api_Vector3_5de20164>` (const Vector3 & vector)                              |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`abs<api_Vector3_1f0edc7b>` () const                                                  |
+|    :ref:`Vector3<api_Vector3>` | :ref:`abs<api_Vector3_c26d548f>` () const                                                  |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`angle<api_Vector3_8ad9e354>` (const Vector3 & vector) const                          |
+|                          areal | :ref:`angle<api_Vector3_b589fae0>` (const Vector3 & vector) const                          |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`cross<api_Vector3_6851bfda>` (const Vector3 & vector) const                          |
+|    :ref:`Vector3<api_Vector3>` | :ref:`cross<api_Vector3_5218fb09>` (const Vector3 & vector) const                          |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`dot<api_Vector3_8c7023a4>` (const Vector3 & vector) const                            |
+|                          areal | :ref:`dot<api_Vector3_64a081ce>` (const Vector3 & vector) const                            |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`length<api_Vector3_2d58a403>` () const                                               |
+|                          areal | :ref:`length<api_Vector3_db9c413a>` () const                                               |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`normalize<api_Vector3_483c529d>` ()                                                  |
+|                          areal | :ref:`normalize<api_Vector3_0d4658b9>` ()                                                  |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`signedAngle<api_Vector3_b6da0325>` (const Vector3 & vector, const Vector3  up) const |
+|                          areal | :ref:`signedAngle<api_Vector3_67f4a0bd>` (const Vector3 & vector, const Vector3  up) const |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`sqrLength<api_Vector3_f091a6e2>` () const                                            |
+|                          areal | :ref:`sqrLength<api_Vector3_e901574a>` () const                                            |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator!=<api_Vector3_b4912d03>` (const Vector3 & vector) const                     |
+|                           bool | :ref:`operator!=<api_Vector3_52a9471f>` (const Vector3 & vector) const                     |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Vector3_d9fa5031>` (areal  factor) const                               |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Vector3_875a309d>` (areal  factor) const                               |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Vector3_63145b70>` (const Vector3 & vector) const                      |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator*<api_Vector3_a4e87395>` (const Vector3 & vector) const                      |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` & | :ref:`operator*=<api_Vector3_3ead196f>` (areal  factor)                                    |
+|  :ref:`Vector3<api_Vector3>` & | :ref:`operator*=<api_Vector3_2456bfae>` (areal  factor)                                    |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator+<api_Vector3_5b1de3af>` (const Vector3 & vector) const                      |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator+<api_Vector3_a482e3cf>` (const Vector3 & vector) const                      |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` & | :ref:`operator+=<api_Vector3_ce74fba3>` (const Vector3 & vector)                           |
+|  :ref:`Vector3<api_Vector3>` & | :ref:`operator+=<api_Vector3_156e48d9>` (const Vector3 & vector)                           |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator-<api_Vector3_28f73aeb>` () const                                            |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator-<api_Vector3_08fca265>` () const                                            |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator-<api_Vector3_d4f73a18>` (const Vector3 & vector) const                      |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator-<api_Vector3_e37f5d14>` (const Vector3 & vector) const                      |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` & | :ref:`operator-=<api_Vector3_97fa6e4c>` (const Vector3 & vector)                           |
+|  :ref:`Vector3<api_Vector3>` & | :ref:`operator-=<api_Vector3_c06a8d4f>` (const Vector3 & vector)                           |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|    :ref:`Vector3<api_Vector3>` | :ref:`operator/<api_Vector3_2d306fa4>` (areal  divisor) const                              |
+|    :ref:`Vector3<api_Vector3>` | :ref:`operator/<api_Vector3_468e537d>` (areal  divisor) const                              |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` & | :ref:`operator/=<api_Vector3_b8791cd0>` (areal  divisor)                                   |
+|  :ref:`Vector3<api_Vector3>` & | :ref:`operator/=<api_Vector3_504a91d8>` (areal  divisor)                                   |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator<<api_Vector3_46c8e05f>` (const Vector3 & vector) const                      |
+|                           bool | :ref:`operator<<api_Vector3_f80cd5b9>` (const Vector3 & vector) const                      |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|  :ref:`Vector3<api_Vector3>` & | :ref:`operator=<api_Vector3_75fa401d>` (const Vector3 & value)                             |
+|  :ref:`Vector3<api_Vector3>` & | :ref:`operator=<api_Vector3_8c06d27a>` (const Vector3 & value)                             |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator==<api_Vector3_0b76d53a>` (const Vector3 & vector) const                     |
+|                           bool | :ref:`operator==<api_Vector3_eab2cd5f>` (const Vector3 & vector) const                     |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                           bool | :ref:`operator><api_Vector3_b9071834>` (const Vector3 & vector) const                      |
+|                           bool | :ref:`operator><api_Vector3_2891f53c>` (const Vector3 & vector) const                      |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Vector3_3769cb4d>` (int  i)                                           |
+|                          areal | :ref:`operator[]<api_Vector3_b9a43d01>` (int  i)                                           |
 +--------------------------------+--------------------------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Vector3_e274db61>` (int  i) const                                     |
+|                          areal | :ref:`operator[]<api_Vector3_2ad0c781>` (int  i) const                                     |
 +--------------------------------+--------------------------------------------------------------------------------------------+
 
 
@@ -103,7 +103,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Vector3_7023ae65:
+.. _api_Vector3_710f9de3:
 
 **Vector3::Vector3** ()
 
@@ -111,39 +111,39 @@ Constructs a null vector, i.e. with coordinates (0, 0, 0).
 
 ----
 
-.. _api_Vector3_d9085ec3:
+.. _api_Vector3_1794fea3:
 
 **Vector3::Vector3** (areal  *v*)
 
-Constructs a *v*ector with coordinates (v).
+Constructs a vector with coordinates (v).
 
 ----
 
-.. _api_Vector3_7bfc1469:
+.. _api_Vector3_db1968e7:
 
 **Vector3::Vector3** (areal * *v*)
 
-Constructs a 3D *v*ector from *v* (areal[3] array).
+Constructs a 3D vector from *v* (areal[3] array).
 
 ----
 
-.. _api_Vector3_9b721ad3:
+.. _api_Vector3_84ba06e9:
 
 **Vector3::Vector3** (:ref:`Vector2<api_Vector2>` & *vector*, areal  *z*)
 
-Constructs a 3D *vector* from the specified 2D *vector*. The *z* coordinate is set to *z*.
+Constructs a 3D *vector* from the specified 2D vector. The *z* coordinate is set to z.
 
 ----
 
-.. _api_Vector3_357df9e8:
+.. _api_Vector3_db905e36:
 
 **Vector3::Vector3** (areal  *x*, areal  *y*, areal  *z*)
 
-Constructs a vector with coordinates (x, *y*, *z*).
+Constructs a vector with coordinates (x, y, z).
 
 ----
 
-.. _api_Vector3_1de9450a:
+.. _api_Vector3_5de20164:
 
 **Vector3::Vector3** (:ref:`Vector3<api_Vector3>` & *vector*)
 
@@ -151,7 +151,7 @@ Copy constructor.
 
 ----
 
-.. _api_Vector3_1f0edc7b:
+.. _api_Vector3_c26d548f:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::abs** () const
 
@@ -159,37 +159,37 @@ Returns the absplute value of this vector.
 
 ----
 
-.. _api_Vector3_8ad9e354:
+.. _api_Vector3_b589fae0:
 
  areal **Vector3::angle** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns an absolute angle between current and provided *vector*.
+Returns an absolute angle between current and provided vector.
 
 **See also** signedAngle().
 
 ----
 
-.. _api_Vector3_6851bfda:
+.. _api_Vector3_5218fb09:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::cross** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns the cross-product of this *vector* and given *vector*.
+Returns the cross-product of this *vector* and given vector.
 
 **See also** dot().
 
 ----
 
-.. _api_Vector3_8c7023a4:
+.. _api_Vector3_64a081ce:
 
  areal **Vector3::dot** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns the dot-product of this *vector* and given *vector*.
+Returns the dot-product of this *vector* and given vector.
 
 **See also** cross().
 
 ----
 
-.. _api_Vector3_2d58a403:
+.. _api_Vector3_db9c413a:
 
  areal **Vector3::length** () const
 
@@ -199,7 +199,7 @@ Returns the length of this vector.
 
 ----
 
-.. _api_Vector3_483c529d:
+.. _api_Vector3_0d4658b9:
 
  areal **Vector3::normalize** ()
 
@@ -209,17 +209,17 @@ Normalizes the currect vector in place. Returns length of prenormalized vector.
 
 ----
 
-.. _api_Vector3_b6da0325:
+.. _api_Vector3_67f4a0bd:
 
  areal **Vector3::signedAngle** (:ref:`Vector3<api_Vector3>` & *vector*, :ref:`Vector3<api_Vector3>`  *up*) const
 
-Returns an signed angle between current and provided *vector*. The *up* *vector* around which the current and provided *vector*s are rotated.
+Returns an signed angle between current and provided vector. The *up* *vector* around which the current and provided vectors are rotated.
 
 **See also** angle().
 
 ----
 
-.. _api_Vector3_f091a6e2:
+.. _api_Vector3_e901574a:
 
  areal **Vector3::sqrLength** () const
 
@@ -229,65 +229,65 @@ Returns the squared length of this vector.
 
 ----
 
-.. _api_Vector3_b4912d03:
+.. _api_Vector3_52a9471f:
 
  bool **Vector3::operator!=** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns true if this *vector* is NOT equal to given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *vector* is NOT equal to given vector; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Vector3_d9fa5031:
+.. _api_Vector3_875a309d:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator*** (areal  *factor*) const
 
-Returns a copy of this vector, multiplied by the given *factor*.
+Returns a copy of this vector, multiplied by the given factor.
 
 **See also** operator*=().
 
 ----
 
-.. _api_Vector3_63145b70:
+.. _api_Vector3_a4e87395:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator*** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns a copy of this *vector*, multiplied by the given *vector*.
+Returns a copy of this vector, multiplied by the given vector.
 
 **See also** operator*=().
 
 ----
 
-.. _api_Vector3_3ead196f:
+.. _api_Vector3_2456bfae:
 
  :ref:`Vector3<api_Vector3>` & **Vector3::operator*=** (areal  *factor*)
 
-Multiplies this vector's coordinates by the given *factor*, and returns a reference to this vector.
+Multiplies this vector's coordinates by the given factor, and returns a reference to this vector.
 
 **See also** operator/=().
 
 ----
 
-.. _api_Vector3_5b1de3af:
+.. _api_Vector3_a482e3cf:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator+** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns a Vector3 object that is the sum of the this *vector* and *vector*; each component is added separately.
+Returns a Vector3 object that is the sum of the this *vector* and vector; each component is added separately.
 
 **See also** operator+=().
 
 ----
 
-.. _api_Vector3_ce74fba3:
+.. _api_Vector3_156e48d9:
 
  :ref:`Vector3<api_Vector3>` & **Vector3::operator+=** (:ref:`Vector3<api_Vector3>` & *vector*)
 
-Adds the given *vector* to this *vector* and returns a reference to this *vector*.
+Adds the given *vector* to this *vector* and returns a reference to this vector.
 
 **See also** operator-=().
 
 ----
 
-.. _api_Vector3_28f73aeb:
+.. _api_Vector3_08fca265:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator-** () const
 
@@ -297,55 +297,55 @@ Equivalent to Vector3(0,0,0) - vector.
 
 ----
 
-.. _api_Vector3_d4f73a18:
+.. _api_Vector3_e37f5d14:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator-** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns a Vector3 object that is formed by subtracting *vector* from this *vector*; each component is subtracted separately.
+Returns a Vector3 object that is formed by subtracting *vector* from this vector; each component is subtracted separately.
 
 **See also** operator-=().
 
 ----
 
-.. _api_Vector3_97fa6e4c:
+.. _api_Vector3_c06a8d4f:
 
  :ref:`Vector3<api_Vector3>` & **Vector3::operator-=** (:ref:`Vector3<api_Vector3>` & *vector*)
 
-Subtracts the given *vector* from this *vector* and returns a reference to this *vector*.
+Subtracts the given *vector* from this *vector* and returns a reference to this vector.
 
 **See also** operator+=().
 
 ----
 
-.. _api_Vector3_2d306fa4:
+.. _api_Vector3_468e537d:
 
  :ref:`Vector3<api_Vector3>`  **Vector3::operator/** (areal  *divisor*) const
 
-Returns a copy of this vector, divided by the given *divisor*.
+Returns a copy of this vector, divided by the given divisor.
 
 **See also** operator/=().
 
 ----
 
-.. _api_Vector3_b8791cd0:
+.. _api_Vector3_504a91d8:
 
  :ref:`Vector3<api_Vector3>` & **Vector3::operator/=** (areal  *divisor*)
 
-Divides this vector's coordinates by the given *divisor*, and returns a reference to this vector.
+Divides this vector's coordinates by the given divisor, and returns a reference to this vector.
 
 **See also** operator*=().
 
 ----
 
-.. _api_Vector3_46c8e05f:
+.. _api_Vector3_f80cd5b9:
 
  bool **Vector3::operator<** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns true if this *vector* is less than *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *vector* is less than vector; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Vector3_75fa401d:
+.. _api_Vector3_8c06d27a:
 
  :ref:`Vector3<api_Vector3>` & **Vector3::operator=** (:ref:`Vector3<api_Vector3>` & *value*)
 
@@ -353,32 +353,32 @@ Assignment operator. The *value* will be assigned to this object.
 
 ----
 
-.. _api_Vector3_0b76d53a:
+.. _api_Vector3_eab2cd5f:
 
  bool **Vector3::operator==** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns true if this *vector* is equal to given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *vector* is equal to given vector; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Vector3_b9071834:
+.. _api_Vector3_2891f53c:
 
  bool **Vector3::operator>** (:ref:`Vector3<api_Vector3>` & *vector*) const
 
-Returns true if this *vector* is bigger than given *vector*; otherwise returns false. This operator uses an exact floating-point comparison.
+Returns true if this *vector* is bigger than given vector; otherwise returns false. This operator uses an exact floating-point comparison.
 
 ----
 
-.. _api_Vector3_3769cb4d:
+.. _api_Vector3_b9a43d01:
 
  areal **Vector3::operator[]** (int  *i*)
 
-Returns the component of the vector at *i*ndex position *i* as a modifiable reference. *i* must be a valid *i*ndex position *i*n the vector (i.e., 0 <= *i* < 3).
+Returns the component of the vector at index position *i* as a modifiable reference. *i* must be a valid index position in the vector (i.e., 0 <= *i* < 3).
 
-.. _api_Vector3_e274db61:
+.. _api_Vector3_2ad0c781:
 
  areal **Vector3::operator[]** (int  *i*) const
 
-Returns the component of the vector at *i*ndex position. *i* must be a valid *i*ndex position *i*n the vector (i.e., 0 <= *i* < 3).
+Returns the component of the vector at index position. *i* must be a valid index position in the vector (i.e., 0 <= *i* < 3).
 
 

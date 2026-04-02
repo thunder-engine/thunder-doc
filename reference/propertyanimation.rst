@@ -32,17 +32,17 @@ Public Methods
 --------------
 
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_04ef3d91>` () const                              |
+|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_c6309174>` () const                              |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setCurrentValue<api_PropertyAnimation_1f4d9a05>` (const Variant & value)            |
+|                              void | :ref:`setCurrentValue<api_PropertyAnimation_f4ac2d98>` (const Variant & value)            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setTarget<api_PropertyAnimation_231d7405>` (Object * object, const char * property) |
+|                              void | :ref:`setTarget<api_PropertyAnimation_e7fd2835>` (Object * object, const char * property) |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setValid<api_PropertyAnimation_2d75cef0>` (bool  valid)                             |
+|                              void | :ref:`setValid<api_PropertyAnimation_21ef5c40>` (bool  valid)                             |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_30a215d9>` () const                                    |
+| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_7bf925e8>` () const                                    |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                        const char | :ref:`targetProperty<api_PropertyAnimation_a371de0b>` () const                            |
+|                        const char | :ref:`targetProperty<api_PropertyAnimation_56f278de>` () const                            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_04ef3d91:
+.. _api_PropertyAnimation_c6309174:
 
  :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
 
@@ -67,7 +67,7 @@ Returns the default value of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_1f4d9a05:
+.. _api_PropertyAnimation_f4ac2d98:
 
  void **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -79,21 +79,21 @@ Sets the new current *value* for the animated Variant. And updates animated prop
 
 ----
 
-.. _api_PropertyAnimation_231d7405:
+.. _api_PropertyAnimation_e7fd2835:
 
  void **PropertyAnimation::setTarget** (:ref:`Object<api_Object>` * *object*, char * *property*)
 
-Sets the new animated *property* of the *object*.
+Sets the new animated *property* of the object.
 
 **See also** target().
 
 ----
 
-.. _api_PropertyAnimation_2d75cef0:
+.. _api_PropertyAnimation_21ef5c40:
 
  void **PropertyAnimation::setValid** (bool  *valid*)
 
-Reimplements: Animation::setValid(bool *valid*).
+Reimplements: Animation::setValid(bool valid).
 
 This is an overloaded function.
 
@@ -101,7 +101,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 ----
 
-.. _api_PropertyAnimation_30a215d9:
+.. _api_PropertyAnimation_7bf925e8:
 
 const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const
 
@@ -111,7 +111,7 @@ Returns the root object of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_a371de0b:
+.. _api_PropertyAnimation_56f278de:
 
 const char **PropertyAnimation::targetProperty** () const
 

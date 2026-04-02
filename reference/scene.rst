@@ -20,7 +20,7 @@ Public Methods
 --------------
 
 +----------------------------+-------------------------------------------+
-|  :ref:`World<api_World>` * | :ref:`world<api_Scene_a318eb79>` () const |
+|  :ref:`World<api_World>` * | :ref:`world<api_Scene_8da03e5c>` () const |
 +----------------------------+-------------------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Scene_a318eb79:
+.. _api_Scene_8da03e5c:
 
  :ref:`World<api_World>` * **Scene::world** () const
 

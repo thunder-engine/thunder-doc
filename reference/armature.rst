@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------------------------+---------------------------------------------------------+
-|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_c38ad5b2>` () const         |
+|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_a85e4f02>` () const         |
 +--------------------------+---------------------------------------------------------+
-|                     void | :ref:`setBindPose<api_Armature_2a5b8ef7>` (Pose * pose) |
+|                     void | :ref:`setBindPose<api_Armature_dbf981a7>` (Pose * pose) |
 +--------------------------+---------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Armature_c38ad5b2:
+.. _api_Armature_a85e4f02:
 
  :ref:`Pose<api_Pose>` * **Armature::bindPose** () const
 
@@ -49,7 +49,7 @@ Returns a bind pose of the bone structure.
 
 ----
 
-.. _api_Armature_2a5b8ef7:
+.. _api_Armature_dbf981a7:
 
  void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
 

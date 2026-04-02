@@ -20,23 +20,23 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`addSection<api_Menu_230c6adf>` (const TString & text) |
+|                         void | :ref:`addSection<api_Menu_bf174d86>` (const TString & text) |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`addWidget<api_Menu_9824e7f0>` (Widget * widget)       |
+|                         void | :ref:`addWidget<api_Menu_b0163592>` (Widget * widget)       |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`hide<api_Menu_f0e9b264>` ()                           |
+|                         void | :ref:`hide<api_Menu_3fc82ade>` ()                           |
 +------------------------------+-------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`itemText<api_Menu_9ec7680b>` (int  index)             |
+|  :ref:`TString<api_TString>` | :ref:`itemText<api_Menu_e5c2940d>` (int  index)             |
 +------------------------------+-------------------------------------------------------------+
-|    :ref:`Frame<api_Frame>` * | :ref:`selected<api_Menu_0628c5f9>` () const                 |
+|    :ref:`Frame<api_Frame>` * | :ref:`selected<api_Menu_e0217c63>` () const                 |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setSelected<api_Menu_7f5ad29e>` (Frame * frame)       |
+|                         void | :ref:`setSelected<api_Menu_2cbae387>` (Frame * frame)       |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`setTitle<api_Menu_738f0be1>` (const TString & title)  |
+|                         void | :ref:`setTitle<api_Menu_ae0c7d43>` (const TString & title)  |
 +------------------------------+-------------------------------------------------------------+
-|                         void | :ref:`show<api_Menu_b19d8250>` (const Vector2 & position)   |
+|                         void | :ref:`show<api_Menu_b154e0c6>` (const Vector2 & position)   |
 +------------------------------+-------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`title<api_Menu_916307ea>` () const                    |
+|  :ref:`TString<api_TString>` | :ref:`title<api_Menu_56147b8a>` () const                    |
 +------------------------------+-------------------------------------------------------------+
 
 
@@ -53,15 +53,15 @@ None
 Methods Description
 -------------------
 
-.. _api_Menu_230c6adf:
+.. _api_Menu_bf174d86:
 
  void **Menu::addSection** (:ref:`TString<api_TString>` & *text*)
 
-Adds a section to the menu with the specified *text*.
+Adds a section to the menu with the specified text.
 
 ----
 
-.. _api_Menu_9824e7f0:
+.. _api_Menu_b0163592:
 
  void **Menu::addWidget** (:ref:`Widget<api_Widget>` * *widget*)
 
@@ -69,7 +69,7 @@ Adds a *widget* to the menu.
 
 ----
 
-.. _api_Menu_f0e9b264:
+.. _api_Menu_3fc82ade:
 
  void **Menu::hide** ()
 
@@ -77,15 +77,15 @@ Hides the menu.
 
 ----
 
-.. _api_Menu_9ec7680b:
+.. _api_Menu_e5c2940d:
 
  :ref:`TString<api_TString>`  **Menu::itemText** (int  *index*)
 
-Returns the text of the item at the specified *index*.
+Returns the text of the item at the specified index.
 
 ----
 
-.. _api_Menu_0628c5f9:
+.. _api_Menu_e0217c63:
 
  :ref:`Frame<api_Frame>` * **Menu::selected** () const
 
@@ -95,7 +95,7 @@ Returns the selection frame for the menu;
 
 ----
 
-.. _api_Menu_7f5ad29e:
+.. _api_Menu_2cbae387:
 
  void **Menu::setSelected** (:ref:`Frame<api_Frame>` * *frame*)
 
@@ -105,25 +105,25 @@ Sets the selection *frame* for the menu;
 
 ----
 
-.. _api_Menu_738f0be1:
+.. _api_Menu_ae0c7d43:
 
  void **Menu::setTitle** (:ref:`TString<api_TString>` & *title*)
 
 Sets the *title* of the menu.
 
-**See also** *title*().
+**See also** title().
 
 ----
 
-.. _api_Menu_b19d8250:
+.. _api_Menu_b154e0c6:
 
  void **Menu::show** (:ref:`Vector2<api_Vector2>` & *position*)
 
-Displays the menu at the specified *position*.
+Displays the menu at the specified position.
 
 ----
 
-.. _api_Menu_916307ea:
+.. _api_Menu_56147b8a:
 
  :ref:`TString<api_TString>`  **Menu::title** () const
 

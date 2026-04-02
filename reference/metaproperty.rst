@@ -22,15 +22,15 @@ Public Methods
 --------------
 
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
-|                                                            | :ref:`MetaProperty<api_MetaProperty_7ac5e620>` (const MetaProperty::Table * table) |
+|                                                            | :ref:`MetaProperty<api_MetaProperty_c708a514>` (const MetaProperty::Table * table) |
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`isValid<api_MetaProperty_4e8da2b9>` () const                                 |
+|                                                       bool | :ref:`isValid<api_MetaProperty_19208e7c>` () const                                 |
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
-|                                                 const char | :ref:`name<api_MetaProperty_570cbed9>` () const                                    |
+|                                                 const char | :ref:`name<api_MetaProperty_723f86dc>` () const                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
-| const :ref:`MetaProperty::Table<api_MetaProperty_Table>` * | :ref:`table<api_MetaProperty_eab09734>` () const                                   |
+| const :ref:`MetaProperty::Table<api_MetaProperty_Table>` * | :ref:`table<api_MetaProperty_5e1db7fa>` () const                                   |
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
-|                        const :ref:`MetaType<api_MetaType>` | :ref:`type<api_MetaProperty_e560a8c1>` () const                                    |
+|                        const :ref:`MetaType<api_MetaType>` | :ref:`type<api_MetaProperty_e35db780>` () const                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
@@ -47,15 +47,15 @@ None
 Methods Description
 -------------------
 
-.. _api_MetaProperty_7ac5e620:
+.. _api_MetaProperty_c708a514:
 
-**MetaProperty::MetaProperty** (:ref:`MetaProperty::Table<api_MetaProperty::Table>` * *table*)
+**MetaProperty::MetaProperty** (:ref:`MetaProperty::Table<api_MetaProperty_Table>` * *table*)
 
-Constructs MetaProperty object which will contain information provided in a *table*.
+Constructs MetaProperty object which will contain information provided in a table.
 
 ----
 
-.. _api_MetaProperty_4e8da2b9:
+.. _api_MetaProperty_19208e7c:
 
  bool **MetaProperty::isValid** () const
 
@@ -63,7 +63,7 @@ Returns true if property is valid; otherwise returns false.
 
 ----
 
-.. _api_MetaProperty_570cbed9:
+.. _api_MetaProperty_723f86dc:
 
 const char **MetaProperty::name** () const
 
@@ -71,7 +71,7 @@ Returns a name of method.
 
 ----
 
-.. _api_MetaProperty_eab09734:
+.. _api_MetaProperty_5e1db7fa:
 
 const :ref:`MetaProperty::Table<api_MetaProperty::Table>` * **MetaProperty::table** () const
 
@@ -79,7 +79,7 @@ Returns property information table.
 
 ----
 
-.. _api_MetaProperty_e560a8c1:
+.. _api_MetaProperty_e35db780:
 
 const :ref:`MetaType<api_MetaType>`  **MetaProperty::type** () const
 

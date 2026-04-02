@@ -20,19 +20,19 @@ Public Methods
 --------------
 
 +--------------------------------------+-------------------------------------------------------------------+
-|  :ref:`UiDocument<api_UiDocument>` * | :ref:`document<api_UiLoader_f9c6b014>` () const                   |
+|  :ref:`UiDocument<api_UiDocument>` * | :ref:`document<api_UiLoader_f85a17ec>` () const                   |
 +--------------------------------------+-------------------------------------------------------------------+
-|                                 void | :ref:`documentLoaded<api_UiLoader_63a49c1d>` ()                   |
+|                                 void | :ref:`documentLoaded<api_UiLoader_9fe7a2c6>` ()                   |
 +--------------------------------------+-------------------------------------------------------------------+
-|          :ref:`TString<api_TString>` | :ref:`documentStyle<api_UiLoader_682c37ab>` () const              |
+|          :ref:`TString<api_TString>` | :ref:`documentStyle<api_UiLoader_5871c0ed>` () const              |
 +--------------------------------------+-------------------------------------------------------------------+
-|                                 void | :ref:`fromBuffer<api_UiLoader_6c824139>` (const TString & buffer) |
+|                                 void | :ref:`fromBuffer<api_UiLoader_f08d5eab>` (const TString & buffer) |
 +--------------------------------------+-------------------------------------------------------------------+
-|                                 void | :ref:`setDocument<api_UiLoader_1b43c0ad>` (UiDocument * document) |
+|                                 void | :ref:`setDocument<api_UiLoader_d41956cb>` (UiDocument * document) |
 +--------------------------------------+-------------------------------------------------------------------+
-|                                 void | :ref:`setStyleSheet<api_UiLoader_d5fb74a3>` (StyleSheet * style)  |
+|                                 void | :ref:`setStyleSheet<api_UiLoader_8e2964f3>` (StyleSheet * style)  |
 +--------------------------------------+-------------------------------------------------------------------+
-|  :ref:`StyleSheet<api_StyleSheet>` * | :ref:`styleSheet<api_UiLoader_97e463ca>` () const                 |
+|  :ref:`StyleSheet<api_StyleSheet>` * | :ref:`styleSheet<api_UiLoader_10efb9ad>` () const                 |
 +--------------------------------------+-------------------------------------------------------------------+
 
 
@@ -49,7 +49,7 @@ None
 Methods Description
 -------------------
 
-.. _api_UiLoader_f9c6b014:
+.. _api_UiLoader_f85a17ec:
 
  :ref:`UiDocument<api_UiDocument>` * **UiLoader::document** () const
 
@@ -59,7 +59,7 @@ Returns the UiDocument associated with this UiLoader, which contains the structu
 
 ----
 
-.. _api_UiLoader_63a49c1d:
+.. _api_UiLoader_9fe7a2c6:
 
  void **UiLoader::documentLoaded** ()
 
@@ -67,7 +67,7 @@ Emmits signal when document is loaded.
 
 ----
 
-.. _api_UiLoader_682c37ab:
+.. _api_UiLoader_5871c0ed:
 
  :ref:`TString<api_TString>`  **UiLoader::documentStyle** () const
 
@@ -75,7 +75,7 @@ Returns the raw document style (as a string), which was parsed from the UI docum
 
 ----
 
-.. _api_UiLoader_6c824139:
+.. _api_UiLoader_f08d5eab:
 
  void **UiLoader::fromBuffer** (:ref:`TString<api_TString>` & *buffer*)
 
@@ -83,27 +83,27 @@ This function loads the UI data from an XML *buffer* (likely containing UI eleme
 
 ----
 
-.. _api_UiLoader_1b43c0ad:
+.. _api_UiLoader_d41956cb:
 
  void **UiLoader::setDocument** (:ref:`UiDocument<api_UiDocument>` * *document*)
 
-Sets the UI *document* to the provided *document* pointer and reloads the UI from the *document*'s data buffer by calling fromBuffer().
+Sets the UI *document* to the provided *document* pointer and reloads the UI from the document's data buffer by calling fromBuffer().
 
-**See also** *document*().
+**See also** document().
 
 ----
 
-.. _api_UiLoader_d5fb74a3:
+.. _api_UiLoader_8e2964f3:
 
  void **UiLoader::setStyleSheet** (:ref:`StyleSheet<api_StyleSheet>` * *style*)
 
 Sets a *style* sheet to the hierarhy of widgets.
 
-**See also** *style*Sheet().
+**See also** styleSheet().
 
 ----
 
-.. _api_UiLoader_97e463ca:
+.. _api_UiLoader_10efb9ad:
 
  :ref:`StyleSheet<api_StyleSheet>` * **UiLoader::styleSheet** () const
 

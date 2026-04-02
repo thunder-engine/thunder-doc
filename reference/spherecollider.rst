@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------+---------------------------------------------------------------+
-|  float | :ref:`radius<api_SphereCollider_3d4f6ca5>` () const           |
+|  float | :ref:`radius<api_SphereCollider_69e3a820>` () const           |
 +--------+---------------------------------------------------------------+
-|   void | :ref:`setRadius<api_SphereCollider_ef85a320>` (float  radius) |
+|   void | :ref:`setRadius<api_SphereCollider_23c0e6a7>` (float  radius) |
 +--------+---------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SphereCollider_3d4f6ca5:
+.. _api_SphereCollider_69e3a820:
 
  float **SphereCollider::radius** () const
 
@@ -49,12 +49,12 @@ Returns the radius of the sphere collider.
 
 ----
 
-.. _api_SphereCollider_ef85a320:
+.. _api_SphereCollider_23c0e6a7:
 
  void **SphereCollider::setRadius** (float  *radius*)
 
 Sets the *radius* of the sphere collider.
 
-**See also** *radius*().
+**See also** radius().
 
 

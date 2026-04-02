@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +------------+-----------------------------------------------------------+
-|       void | :ref:`getObject<api_Module_7cab3586>` (const char * name) |
+|       void | :ref:`getObject<api_Module_d3fa8bc9>` (const char * name) |
 +------------+-----------------------------------------------------------+
-| const char | :ref:`metaInfo<api_Module_86cfedb5>` () const             |
+| const char | :ref:`metaInfo<api_Module_731cb48a>` () const             |
 +------------+-----------------------------------------------------------+
 
 
@@ -39,15 +39,15 @@ None
 Methods Description
 -------------------
 
-.. _api_Module_7cab3586:
+.. _api_Module_d3fa8bc9:
 
  void **Module::getObject** (char * *name*)
 
-This function is a facory for the module. It return a pointer to constructed object with given type *name*.
+This function is a facory for the module. It return a pointer to constructed object with given type name.
 
 ----
 
-.. _api_Module_86cfedb5:
+.. _api_Module_731cb48a:
 
 const char **Module::metaInfo** () const
 

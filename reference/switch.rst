@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +------------------------------+-----------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_Switch_cb54612a>` () const                  |
+|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_Switch_28537fde>` () const                  |
 +------------------------------+-----------------------------------------------------------------+
-|    :ref:`Frame<api_Frame>` * | :ref:`knobGraphic<api_Switch_57ec12bd>` () const                |
+|    :ref:`Frame<api_Frame>` * | :ref:`knobGraphic<api_Switch_2803de6f>` () const                |
 +------------------------------+-----------------------------------------------------------------+
-|                         void | :ref:`setKnobColor<api_Switch_14c68feb>` (const Vector4  color) |
+|                         void | :ref:`setKnobColor<api_Switch_52fdb14e>` (const Vector4  color) |
 +------------------------------+-----------------------------------------------------------------+
-|                         void | :ref:`setKnobGraphic<api_Switch_12a9efd0>` (Frame * knob)       |
+|                         void | :ref:`setKnobGraphic<api_Switch_da6b9e41>` (Frame * knob)       |
 +------------------------------+-----------------------------------------------------------------+
-|                         void | :ref:`setSwitchDuration<api_Switch_29df6b14>` (float  duration) |
+|                         void | :ref:`setSwitchDuration<api_Switch_a45f36ed>` (float  duration) |
 +------------------------------+-----------------------------------------------------------------+
-|                        float | :ref:`switchDuration<api_Switch_69a0253b>` () const             |
+|                        float | :ref:`switchDuration<api_Switch_2b8471df>` () const             |
 +------------------------------+-----------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Switch_cb54612a:
+.. _api_Switch_28537fde:
 
  :ref:`Vector4<api_Vector4>`  **Switch::knobColor** () const
 
@@ -57,7 +57,7 @@ Returns the color of the graphical knob.
 
 ----
 
-.. _api_Switch_57ec12bd:
+.. _api_Switch_2803de6f:
 
  :ref:`Frame<api_Frame>` * **Switch::knobGraphic** () const
 
@@ -67,7 +67,7 @@ Returns the graphical knob component.
 
 ----
 
-.. _api_Switch_14c68feb:
+.. _api_Switch_52fdb14e:
 
  void **Switch::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
@@ -77,17 +77,17 @@ Sets the *color* of the graphical knob.
 
 ----
 
-.. _api_Switch_12a9efd0:
+.. _api_Switch_da6b9e41:
 
  void **Switch::setKnobGraphic** (:ref:`Frame<api_Frame>` * *knob*)
 
 Sets the graphical *knob* component.
 
-**See also** *knob*Graphic().
+**See also** knobGraphic().
 
 ----
 
-.. _api_Switch_29df6b14:
+.. _api_Switch_a45f36ed:
 
  void **Switch::setSwitchDuration** (float  *duration*)
 
@@ -97,7 +97,7 @@ Sets the switch animation *duration* in seconds.
 
 ----
 
-.. _api_Switch_69a0253b:
+.. _api_Switch_2b8471df:
 
  float **Switch::switchDuration** () const
 

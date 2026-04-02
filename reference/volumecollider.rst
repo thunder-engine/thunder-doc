@@ -20,23 +20,23 @@ Public Methods
 --------------
 
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|          const :ref:`Vector3<api_Vector3>` & | :ref:`center<api_VolumeCollider_42f938db>` () const                                   |
+|          const :ref:`Vector3<api_Vector3>` & | :ref:`center<api_VolumeCollider_b65d824a>` () const                                   |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`createCollider<api_VolumeCollider_df05a8b6>` ()                                 |
+|                                         void | :ref:`createCollider<api_VolumeCollider_79eacdf2>` ()                                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         bool | :ref:`isDirty<api_VolumeCollider_fe952764>` () const                                  |
+|                                         bool | :ref:`isDirty<api_VolumeCollider_6de23a98>` () const                                  |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_VolumeCollider_b5c2ae64>` () const                                 |
+|  :ref:`PhysicMaterial<api_PhysicMaterial>` * | :ref:`material<api_VolumeCollider_162cf5b7>` () const                                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`retrieveContact<api_VolumeCollider_71634aef>` (const Collider * collider) const |
+|                                         void | :ref:`retrieveContact<api_VolumeCollider_3fc052d7>` (const Collider * collider) const |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setCenter<api_VolumeCollider_9ade458c>` (const Vector3  center)                 |
+|                                         void | :ref:`setCenter<api_VolumeCollider_e2a91645>` (const Vector3  center)                 |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setMaterial<api_VolumeCollider_f52806a4>` (PhysicMaterial * material)           |
+|                                         void | :ref:`setMaterial<api_VolumeCollider_6784d09a>` (PhysicMaterial * material)           |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         void | :ref:`setTrigger<api_VolumeCollider_ac834d97>` (bool  trigger)                        |
+|                                         void | :ref:`setTrigger<api_VolumeCollider_3c40ed8a>` (bool  trigger)                        |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
-|                                         bool | :ref:`trigger<api_VolumeCollider_2b85e10f>` () const                                  |
+|                                         bool | :ref:`trigger<api_VolumeCollider_76f03cb4>` () const                                  |
 +----------------------------------------------+---------------------------------------------------------------------------------------+
 
 
@@ -53,7 +53,7 @@ None
 Methods Description
 -------------------
 
-.. _api_VolumeCollider_42f938db:
+.. _api_VolumeCollider_b65d824a:
 
 const :ref:`Vector3<api_Vector3>` & **VolumeCollider::center** () const
 
@@ -63,7 +63,7 @@ Returns the local center of the volume collider.
 
 ----
 
-.. _api_VolumeCollider_df05a8b6:
+.. _api_VolumeCollider_79eacdf2:
 
  void **VolumeCollider::createCollider** ()
 
@@ -73,7 +73,7 @@ Creates the collision object for the volume collider. If the collider is a trigg
 
 ----
 
-.. _api_VolumeCollider_fe952764:
+.. _api_VolumeCollider_6de23a98:
 
  bool **VolumeCollider::isDirty** () const
 
@@ -81,7 +81,7 @@ Returns true if the collider is dirty, false otherwise.
 
 ----
 
-.. _api_VolumeCollider_b5c2ae64:
+.. _api_VolumeCollider_162cf5b7:
 
  :ref:`PhysicMaterial<api_PhysicMaterial>` * **VolumeCollider::material** () const
 
@@ -91,45 +91,45 @@ Returns the physics material associated with the volume collider.
 
 ----
 
-.. _api_VolumeCollider_71634aef:
+.. _api_VolumeCollider_3fc052d7:
 
  void **VolumeCollider::retrieveContact** (:ref:`Collider<api_Collider>` * *collider*) const
 
-Retrieves contact information with another *collider*.
+Retrieves contact information with another collider.
 
 ----
 
-.. _api_VolumeCollider_9ade458c:
+.. _api_VolumeCollider_e2a91645:
 
  void **VolumeCollider::setCenter** (:ref:`Vector3<api_Vector3>`  *center*)
 
 Sets the local *center* of the volume collider.
 
-**See also** *center*().
+**See also** center().
 
 ----
 
-.. _api_VolumeCollider_f52806a4:
+.. _api_VolumeCollider_6784d09a:
 
  void **VolumeCollider::setMaterial** (:ref:`PhysicMaterial<api_PhysicMaterial>` * *material*)
 
 Sets the physics *material* for the volume collider.
 
-**See also** *material*().
+**See also** material().
 
 ----
 
-.. _api_VolumeCollider_ac834d97:
+.. _api_VolumeCollider_3c40ed8a:
 
  void **VolumeCollider::setTrigger** (bool  *trigger*)
 
-Sets whether the volume collider should function as a *trigger*.
+Sets whether the volume collider should function as a trigger.
 
-**See also** *trigger*().
+**See also** trigger().
 
 ----
 
-.. _api_VolumeCollider_2b85e10f:
+.. _api_VolumeCollider_76f03cb4:
 
  bool **VolumeCollider::trigger** () const
 
