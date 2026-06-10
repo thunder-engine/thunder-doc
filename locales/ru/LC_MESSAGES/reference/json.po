@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/json.rst:4
+msgid "Json"
+msgstr ""
+
+#: ../../source/reference/json.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/json.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/json.rst:13
+msgid ""
+"This class implements Json parser with Variant based DOM structure "
+"input/output. It allows to serialize and deserialize object structures "
+"represented in Variant DOM structure."
+msgstr ""
+
+#: ../../source/reference/json.rst:15
+msgid "Example:"
+msgstr ""
+
+#: ../../source/reference/json.rst:34
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/json.rst:36
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/json.rst:43
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/json.rst:46
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/json.rst:46
+msgid ":ref:`load<api_Json_37ea90f1>` (const TString & data)"
+msgstr ""
+
+#: ../../source/reference/json.rst:48
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/json.rst:48
+msgid ":ref:`save<api_Json_f53e6c07>` (const Variant & data, int32_t  tab = -1)"
+msgstr ""
+
+#: ../../source/reference/json.rst:54
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/json.rst:58
+msgid ""
+":ref:`Variant<api_Variant>`  **Json::load** (:ref:`TString<api_TString>` "
+"& *data*)"
+msgstr ""
+
+#: ../../source/reference/json.rst:60
+msgid "Returns deserialized string *data* as Variant based DOM structure."
+msgstr ""
+
+#: ../../source/reference/json.rst:66
+msgid ""
+":ref:`TString<api_TString>`  **Json::save** (:ref:`Variant<api_Variant>` "
+"& *data*, int32_t  *tab* = -1)"
+msgstr ""
+
+#: ../../source/reference/json.rst:68
+msgid ""
+"Returns serialized *data* as string. Argument *tab* is used as JSON "
+"tabulation formatting offset (-1 for one line JSON)"
+msgstr ""
+

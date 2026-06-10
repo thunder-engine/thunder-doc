@@ -1,0 +1,753 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 13:43+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/involved/localization.rst:4
+msgid "Documentation Localization"
+msgstr "Локализация документации"
+
+#: ../../source/involved/localization.rst:6
+msgid ""
+"Thunder Engine documentation supports multiple languages. Currently, "
+"English is the primary language, but we welcome translations to other "
+"languages. Localization is implemented using the **gettext** system, "
+"which allows translations to be maintained without duplicating the "
+"original RST files."
+msgstr ""
+"Документация Thunder Engine поддерживает несколько языков. В настоящее "
+"время основным языком является английский, но мы приветствуем переводы на"
+" другие языки. Локализация реализована с использованием системы "
+"**gettext**, которая позволяет поддерживать переводы без дублирования "
+"исходных RST-файлов."
+
+#: ../../source/involved/localization.rst:9
+msgid ""
+"If you want to translate the documentation into your language, contact "
+"the Thunder Engine team via GitHub Issues to coordinate efforts."
+msgstr ""
+"Если вы хотите перевести документацию на ваш язык, свяжитесь с командой "
+"Thunder Engine через GitHub Issues, чтобы скоординировать усилия."
+
+#: ../../source/involved/localization.rst:12
+msgid "How Localization Works"
+msgstr "Как работает локализация"
+
+#: ../../source/involved/localization.rst:14
+msgid ""
+"The localization system is based on **gettext** — a standard "
+"internationalization tool:"
+msgstr ""
+"Система локализации основана на **gettext** — стандартном инструменте "
+"интернационализации:"
+
+#: ../../source/involved/localization.rst:16
+msgid "The original documentation is written in English in ``.rst`` files"
+msgstr "Исходная документация написана на английском в файлах ``.rst``"
+
+#: ../../source/involved/localization.rst:17
+msgid ""
+"Strings for translation are extracted from the source files into ``.pot``"
+" files (templates)"
+msgstr ""
+"Строки для перевода извлекаются из исходных файлов в файлы ``.pot`` "
+"(шаблоны)"
+
+#: ../../source/involved/localization.rst:18
+msgid "For each language, ``.po`` files are created containing the translations"
+msgstr "Для каждого языка создаются файлы ``.po``, содержащие переводы"
+
+#: ../../source/involved/localization.rst:19
+msgid ""
+"During build, Sphinx uses the ``.po`` files to generate documentation in "
+"the target language"
+msgstr ""
+"Во время сборки Sphinx использует файлы ``.po`` для генерации "
+"документации на целевом языке"
+
+#: ../../source/involved/localization.rst:21
+msgid "Advantages of this approach:"
+msgstr "Преимущества этого подхода:"
+
+#: ../../source/involved/localization.rst:23
+msgid "No duplication of RST files for each language"
+msgstr "Отсутствие дублирования RST-файлов для каждого языка"
+
+#: ../../source/involved/localization.rst:24
+msgid "Changes to the source documentation are easy to track"
+msgstr "Изменения в исходной документации легко отслеживать"
+
+#: ../../source/involved/localization.rst:25
+msgid "Translations are stored separately and can be updated independently"
+msgstr "Переводы хранятся отдельно и могут обновляться независимо"
+
+#: ../../source/involved/localization.rst:28
+msgid "Project Structure"
+msgstr "Структура проекта"
+
+#: ../../source/involved/localization.rst:43
+msgid "Adding a New Language"
+msgstr "Добавление нового языка"
+
+#: ../../source/involved/localization.rst:45
+msgid "Suppose you want to add a translation for Russian (language code ``ru``)."
+msgstr ""
+"Предположим, вы хотите добавить перевод на русский язык (код языка "
+"``ru``)."
+
+#: ../../source/involved/localization.rst:47
+msgid "**Step 1: Install required tools**"
+msgstr "**Шаг 1: Установите необходимые инструменты**"
+
+#: ../../source/involved/localization.rst:53
+msgid "**Step 2: Create translation templates**"
+msgstr "**Шаг 2: Создайте шаблоны перевода**"
+
+#: ../../source/involved/localization.rst:55
+msgid "Create ``.pot`` templates from the source RST files:"
+msgstr "Создайте шаблоны ``.pot`` из исходных RST-файлов:"
+
+#: ../../source/involved/localization.rst:62
+msgid "**Step 3: Create translation files for the new language**"
+msgstr "**Шаг 3: Создайте файлы перевода для нового языка**"
+
+#: ../../source/involved/localization.rst:69
+msgid "This command creates the structure:"
+msgstr "Эта команда создаёт структуру:"
+
+#: ../../source/involved/localization.rst:81
+msgid "**Step 4: Configure the build for the new language**"
+msgstr "**Шаг 4: Настройте сборку для нового языка**"
+
+#: ../../source/involved/localization.rst:83
+msgid "Edit the ``Makefile`` to add a target for the new language:"
+msgstr "Отредактируйте ``Makefile``, чтобы добавить цель для нового языка:"
+
+#: ../../source/involved/localization.rst:100
+msgid "**Step 5: Configure Sphinx**"
+msgstr "**Шаг 5: Настройте Sphinx**"
+
+#: ../../source/involved/localization.rst:102
+msgid "Ensure that ``conf.py`` is configured for languages:"
+msgstr "Убедитесь, что ``conf.py`` настроен для языков:"
+
+#: ../../source/involved/localization.rst:118
+msgid "Translation Process"
+msgstr "Процесс перевода"
+
+#: ../../source/involved/localization.rst:120
+msgid "**Editing .po Files**"
+msgstr "**Редактирование .po файлов**"
+
+#: ../../source/involved/localization.rst:122
+msgid "``.po`` files have the following format:"
+msgstr "``.po`` файлы имеют следующий формат:"
+
+#: ../../source/involved/localization.rst:137
+msgid ""
+"Where: *   ``msgid`` — source string in English *   ``msgstr`` — "
+"translation to the target language (initially empty)"
+msgstr ""
+"Где: *   ``msgid`` — исходная строка на английском *   ``msgstr`` — "
+"перевод на целевой язык (изначально пуст)"
+
+#: ../../source/involved/localization.rst:141
+msgid "**What Needs Translation**"
+msgstr "**Что нужно переводить**"
+
+#: ../../source/involved/localization.rst:143
+msgid "✅ All text content (headings, paragraphs, lists)"
+msgstr "✅ Весь текстовый контент (заголовки, абзацы, списки)"
+
+#: ../../source/involved/localization.rst:144
+msgid "✅ Property and method descriptions"
+msgstr "✅ Описания свойств и методов"
+
+#: ../../source/involved/localization.rst:145
+msgid "✅ Comments in code examples"
+msgstr "✅ Комментарии в примерах кода"
+
+#: ../../source/involved/localization.rst:146
+msgid "✅ Warnings and notes (``.. note::``, ``.. tip::``)"
+msgstr "✅ Предупреждения и примечания (``.. note::``, ``.. tip::``)"
+
+#: ../../source/involved/localization.rst:147
+msgid "❌ Class, method, and property names (keep as in the API)"
+msgstr "❌ Имена классов, методов и свойств (оставляйте как в API)"
+
+#: ../../source/involved/localization.rst:148
+msgid "❌ RST syntax (directives, roles)"
+msgstr "❌ Синтаксис RST (директивы, роли)"
+
+#: ../../source/involved/localization.rst:149
+msgid "❌ Code (code examples themselves are not translated)"
+msgstr "❌ Код (сами примеры кода не переводятся)"
+
+#: ../../source/involved/localization.rst:151
+msgid "**Translation Conventions**"
+msgstr "**Соглашения по переводу**"
+
+#: ../../source/involved/localization.rst:153
+msgid "Terminology should be consistent. Key terms:"
+msgstr "Терминология должна быть согласованной. Ключевые термины:"
+
+#: ../../source/involved/localization.rst:156
+msgid "Term (English)"
+msgstr "Термин (английский)"
+
+#: ../../source/involved/localization.rst:156
+#: ../../source/involved/localization.rst:175
+msgid "Translation (Russian)"
+msgstr "Перевод (русский)"
+
+#: ../../source/involved/localization.rst:158
+msgid "Actor"
+msgstr "Actor"
+
+#: ../../source/involved/localization.rst:158
+msgid "Актер"
+msgstr "Актёр"
+
+#: ../../source/involved/localization.rst:159
+msgid "Component"
+msgstr "Component"
+
+#: ../../source/involved/localization.rst:159
+msgid "Компонент"
+msgstr "Компонент"
+
+#: ../../source/involved/localization.rst:160
+msgid "Resource"
+msgstr "Resource"
+
+#: ../../source/involved/localization.rst:160
+msgid "Ресурс"
+msgstr "Ресурс"
+
+#: ../../source/involved/localization.rst:161
+msgid "Scene"
+msgstr "Scene"
+
+#: ../../source/involved/localization.rst:161
+msgid "Сцена"
+msgstr "Сцена"
+
+#: ../../source/involved/localization.rst:162
+msgid "Mesh"
+msgstr "Mesh"
+
+#: ../../source/involved/localization.rst:162
+msgid "Меш"
+msgstr "Меш"
+
+#: ../../source/involved/localization.rst:163
+msgid "Camera"
+msgstr "Camera"
+
+#: ../../source/involved/localization.rst:163
+msgid "Камера"
+msgstr "Камера"
+
+#: ../../source/involved/localization.rst:164
+msgid "Light"
+msgstr "Light"
+
+#: ../../source/involved/localization.rst:164
+msgid "Свет"
+msgstr "Свет"
+
+#: ../../source/involved/localization.rst:165
+msgid "Material"
+msgstr "Material"
+
+#: ../../source/involved/localization.rst:165
+msgid "Материал"
+msgstr "Материал"
+
+#: ../../source/involved/localization.rst:166
+msgid "Shader"
+msgstr "Shader"
+
+#: ../../source/involved/localization.rst:166
+msgid "Шейдер"
+msgstr "Шейдер"
+
+#: ../../source/involved/localization.rst:167
+msgid "Rendering"
+msgstr "Rendering"
+
+#: ../../source/involved/localization.rst:167
+msgid "Рендеринг"
+msgstr "Рендеринг"
+
+#: ../../source/involved/localization.rst:168
+msgid "Property"
+msgstr "Property"
+
+#: ../../source/involved/localization.rst:168
+msgid "Свойство"
+msgstr "Свойство"
+
+#: ../../source/involved/localization.rst:169
+msgid "Method"
+msgstr "Method"
+
+#: ../../source/involved/localization.rst:169
+msgid "Метод"
+msgstr "Метод"
+
+#: ../../source/involved/localization.rst:172
+msgid "Verbs:"
+msgstr "Verbs:"
+
+#: ../../source/involved/localization.rst:175
+msgid "Verb"
+msgstr "Verb"
+
+#: ../../source/involved/localization.rst:177
+msgid "create"
+msgstr "create"
+
+#: ../../source/involved/localization.rst:177
+msgid "создавать"
+msgstr "создавать"
+
+#: ../../source/involved/localization.rst:178
+msgid "load"
+msgstr "load"
+
+#: ../../source/involved/localization.rst:178
+msgid "загружать"
+msgstr "загружать"
+
+#: ../../source/involved/localization.rst:179
+msgid "save"
+msgstr "save"
+
+#: ../../source/involved/localization.rst:179
+msgid "сохранять"
+msgstr "сохранять"
+
+#: ../../source/involved/localization.rst:180
+msgid "set"
+msgstr "set"
+
+#: ../../source/involved/localization.rst:180
+msgid "устанавливать"
+msgstr "устанавливать"
+
+#: ../../source/involved/localization.rst:181
+msgid "get"
+msgstr "get"
+
+#: ../../source/involved/localization.rst:181
+msgid "получать"
+msgstr "получать"
+
+#: ../../source/involved/localization.rst:182
+msgid "enable"
+msgstr "enable"
+
+#: ../../source/involved/localization.rst:182
+msgid "включать"
+msgstr "включать"
+
+#: ../../source/involved/localization.rst:183
+msgid "disable"
+msgstr "disable"
+
+#: ../../source/involved/localization.rst:183
+msgid "отключать"
+msgstr "отключать"
+
+#: ../../source/involved/localization.rst:184
+msgid "call"
+msgstr "call"
+
+#: ../../source/involved/localization.rst:184
+msgid "вызывать"
+msgstr "вызывать"
+
+#: ../../source/involved/localization.rst:187
+msgid "**Tools for Translation**"
+msgstr "**Инструменты для перевода**"
+
+#: ../../source/involved/localization.rst:189
+msgid "For editing ``.po`` files, it is recommended to use:"
+msgstr "Для редактирования файлов ``.po`` рекомендуется использовать:"
+
+#: ../../source/involved/localization.rst:191
+msgid "**Poedit** (recommended for beginners)"
+msgstr "**Poedit** (рекомендуется для начинающих)"
+
+#: ../../source/involved/localization.rst:201
+msgid "**Lokalize** (for advanced users)"
+msgstr "**Lokalize** (для продвинутых пользователей)"
+
+#: ../../source/involved/localization.rst:202
+msgid "**Any text editor** — ``.po`` files can be edited in any text editor"
+msgstr ""
+"**Любой текстовый редактор** — файлы ``.po`` можно редактировать в любом "
+"текстовом редакторе"
+
+#: ../../source/involved/localization.rst:204
+msgid "**Translation Example**"
+msgstr "**Пример перевода**"
+
+#: ../../source/involved/localization.rst:206
+msgid "Source file (``basics/getting-started.rst``):"
+msgstr "Исходный файл (``basics/getting-started.rst``):"
+
+#: ../../source/involved/localization.rst:216
+msgid "Corresponding ``.po`` file after translation to Russian:"
+msgstr "Соответствующий файл ``.po`` после перевода на русский:"
+
+#: ../../source/involved/localization.rst:233
+msgid "Checking the Translation"
+msgstr "Проверка перевода"
+
+#: ../../source/involved/localization.rst:235
+msgid "**Building Localized Documentation**"
+msgstr "**Сборка локализованной документации**"
+
+#: ../../source/involved/localization.rst:245
+msgid "**Quality Check**"
+msgstr "**Проверка качества**"
+
+#: ../../source/involved/localization.rst:247
+msgid "Before submitting a translation, verify:"
+msgstr "Перед отправкой перевода проверьте:"
+
+#: ../../source/involved/localization.rst:249
+msgid "[ ] All strings are translated (no empty ``msgstr``)"
+msgstr "[ ] Все строки переведены (нет пустых ``msgstr``)"
+
+#: ../../source/involved/localization.rst:250
+msgid "[ ] ``.po`` file syntax is correct:"
+msgstr "[ ] Синтаксис файла ``.po`` корректен:"
+
+#: ../../source/involved/localization.rst:256
+msgid "[ ] Documentation builds without errors:"
+msgstr "[ ] Документация собирается без ошибок:"
+
+#: ../../source/involved/localization.rst:263
+msgid "[ ] All links work (check in browser)"
+msgstr "[ ] Все ссылки работают (проверьте в браузере)"
+
+#: ../../source/involved/localization.rst:264
+msgid "[ ] Terminology is consistent throughout the document"
+msgstr "[ ] Терминология согласована по всему документу"
+
+#: ../../source/involved/localization.rst:265
+msgid "[ ] Code in examples is unchanged"
+msgstr "[ ] Код в примерах не изменён"
+
+#: ../../source/involved/localization.rst:266
+msgid "[ ] Special characters and formatting are preserved"
+msgstr "[ ] Специальные символы и форматирование сохранены"
+
+#: ../../source/involved/localization.rst:269
+msgid "Submitting a Pull Request"
+msgstr "Отправка Pull Request"
+
+#: ../../source/involved/localization.rst:271
+msgid "**Step 1: Create a branch for the translation**"
+msgstr "**Шаг 1: Создайте ветку для перевода**"
+
+#: ../../source/involved/localization.rst:277
+msgid "**Step 2: Add translation files to the repository**"
+msgstr "**Шаг 2: Добавьте файлы перевода в репозиторий**"
+
+#: ../../source/involved/localization.rst:290
+msgid "**Step 3: Push changes to GitHub**"
+msgstr "**Шаг 3: Отправьте изменения в GitHub**"
+
+#: ../../source/involved/localization.rst:296
+msgid "**Step 4: Create a Pull Request**"
+msgstr "**Шаг 4: Создайте Pull Request**"
+
+#: ../../source/involved/localization.rst:298
+msgid "When creating the PR, include in the description:"
+msgstr "При создании PR включите в описание:"
+
+#: ../../source/involved/localization.rst:323
+msgid "**Step 5: Respond to review comments**"
+msgstr "**Шаг 5: Ответьте на комментарии рецензента**"
+
+#: ../../source/involved/localization.rst:325
+msgid "After creating the PR, the reviewer will check:"
+msgstr "После создания PR рецензент проверит:"
+
+#: ../../source/involved/localization.rst:327
+msgid "Correctness of technical term translation"
+msgstr "Правильность перевода технических терминов"
+
+#: ../../source/involved/localization.rst:328
+msgid "Translation quality (grammar, style)"
+msgstr "Качество перевода (грамматика, стиль)"
+
+#: ../../source/involved/localization.rst:329
+msgid "Preservation of formatting"
+msgstr "Сохранение форматирования"
+
+#: ../../source/involved/localization.rst:330
+msgid "Link functionality"
+msgstr "Работоспособность ссылок"
+
+#: ../../source/involved/localization.rst:333
+msgid "Updating Translations"
+msgstr "Обновление переводов"
+
+#: ../../source/involved/localization.rst:335
+msgid ""
+"When the source documentation is updated, translations need to be updated"
+" as well:"
+msgstr ""
+"Когда исходная документация обновляется, переводы также необходимо "
+"обновлять:"
+
+#: ../../source/involved/localization.rst:337
+msgid "**Step 1: Update templates**"
+msgstr "**Шаг 1: Обновите шаблоны**"
+
+#: ../../source/involved/localization.rst:344
+msgid "**Step 2: Update existing translations**"
+msgstr "**Шаг 2: Обновите существующие переводы**"
+
+#: ../../source/involved/localization.rst:351
+msgid "**Step 3: Translate new strings**"
+msgstr "**Шаг 3: Переведите новые строки**"
+
+#: ../../source/involved/localization.rst:353
+msgid ""
+"New entries with empty ``msgstr`` will appear in the ``.po`` files. These"
+" need to be translated."
+msgstr ""
+"В файлах ``.po`` появятся новые записи с пустым ``msgstr``. Их необходимо"
+" перевести."
+
+#: ../../source/involved/localization.rst:355
+msgid "**Step 4: Submit updates**"
+msgstr "**Шаг 4: Отправьте обновления**"
+
+#: ../../source/involved/localization.rst:364
+msgid "Checklist for Adding a New Localization"
+msgstr "Контрольный список для добавления новой локализации"
+
+#: ../../source/involved/localization.rst:366
+msgid ""
+"**Create structure** - Create ``.po`` files for all documents - Add build"
+" target to ``Makefile``"
+msgstr ""
+
+#: ../../source/involved/localization.rst:370
+msgid ""
+"**Translation** - All strings are translated - Terminology is consistent "
+"- Code comments are translated"
+msgstr ""
+
+#: ../../source/involved/localization.rst:375
+msgid ""
+"**Verification** - ``msgfmt`` produces no errors - Documentation builds "
+"without warnings - All links work - Formatting is preserved"
+msgstr ""
+
+#: ../../source/involved/localization.rst:381
+msgid ""
+"**Submission** - Branch created with descriptive name - Commit with "
+"message ``docs: add [language] translation`` - Pull Request created with "
+"translation status description"
+msgstr ""
+
+#: ../../source/involved/localization.rst:387
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+#: ../../source/involved/localization.rst:389
+msgid ""
+"`Sphinx Internationalization Guide <https://www.sphinx-"
+"doc.org/en/master/usage/advanced/intl.html>`_"
+msgstr ""
+"`Руководство по интернационализации Sphinx <https://www.sphinx-"
+"doc.org/en/master/usage/advanced/intl.html>`_"
+
+#: ../../source/involved/localization.rst:390
+msgid "`sphinx-intl Documentation <https://github.com/sphinx-doc/sphinx-intl>`_"
+msgstr "`Документация sphinx-intl <https://github.com/sphinx-doc/sphinx-intl>`_"
+
+#: ../../source/involved/localization.rst:391
+msgid "`Poedit Editor <https://poedit.net/>`_"
+msgstr "`Редактор Poedit <https://poedit.net/>`_"
+
+#: ../../source/involved/localization.rst:392
+msgid "`GNU gettext Utilities <https://www.gnu.org/software/gettext/manual/>`_"
+msgstr "`Утилиты GNU gettext <https://www.gnu.org/software/gettext/manual/>`_"
+
+#: ../../source/involved/localization.rst:393
+msgid ""
+"`GitHub Issues for Localization Discussion <https://github.com/thunder-"
+"engine/thunder-doc/issues>`_"
+msgstr ""
+"`GitHub Issues для обсуждения локализации <https://github.com/thunder-"
+"engine/thunder-doc/issues>`_"
+
+#: ../../source/involved/localization.rst:396
+msgid "How to Become a Translator"
+msgstr "Как стать переводчиком"
+
+#: ../../source/involved/localization.rst:398
+msgid "**Choose a language** for translation (Russian, Chinese, German, etc.)"
+msgstr "**Выберите язык** для перевода (русский, китайский, немецкий и т.д.)"
+
+#: ../../source/involved/localization.rst:399
+msgid "**Check** if there is already an active translation for that language"
+msgstr "**Проверьте**, существует ли уже активный перевод для этого языка"
+
+#: ../../source/involved/localization.rst:400
+msgid ""
+"**Create an Issue** in the thunder-doc repository, stating your intention"
+" to translate"
+msgstr ""
+"**Создайте Issue** в репозитории thunder-doc, указав своё намерение "
+"переводить"
+
+#: ../../source/involved/localization.rst:401
+msgid "**Follow the instructions** above to create translation files"
+msgstr "**Следуйте инструкциям** выше, чтобы создать файлы перевода"
+
+#: ../../source/involved/localization.rst:402
+msgid ""
+"**Start with one document** — you don't have to translate everything at "
+"once"
+msgstr "**Начните с одного документа** — вам не нужно переводить всё сразу"
+
+#: ../../source/involved/localization.rst:403
+msgid "**Submit a PR** even with a partial translation — others can help continue"
+msgstr ""
+"**Отправьте PR** даже с частичным переводом — другие могут помочь "
+"продолжить"
+
+#: ../../source/involved/localization.rst:406
+msgid ""
+"Even translating one document is a valuable contribution! Don't be afraid"
+" to start small."
+msgstr ""
+"Даже перевод одного документа — это ценный вклад! Не бойтесь начинать с "
+"малого."
+
+#~ msgid ""
+#~ "[ ] **Create structure** - [ ] "
+#~ "Create ``.po`` files for all documents"
+#~ " - [ ] Add build target to "
+#~ "``Makefile``"
+#~ msgstr ""
+#~ "[ ] **Создание структуры** - [ ]"
+#~ " Создать файлы ``.po`` для всех "
+#~ "документов - [ ] Добавить цель "
+#~ "сборки в ``Makefile``"
+
+#~ msgid ""
+#~ "[ ] **Translation** - [ ] All "
+#~ "strings are translated - [ ] "
+#~ "Terminology is consistent - [ ] "
+#~ "Code comments are translated"
+#~ msgstr ""
+#~ "[ ] **Перевод** - [ ] Все "
+#~ "строки переведены - [ ] Терминология "
+#~ "согласована - [ ] Комментарии в "
+#~ "коде переведены"
+
+#~ msgid ""
+#~ "[ ] **Verification** - [ ] "
+#~ "``msgfmt`` produces no errors - [ "
+#~ "] Documentation builds without warnings "
+#~ "- [ ] All links work - [ "
+#~ "] Formatting is preserved"
+#~ msgstr ""
+#~ "[ ] **Проверка** - [ ] ``msgfmt``"
+#~ " не выдает ошибок - [ ] "
+#~ "Документация собирается без предупреждений -"
+#~ " [ ] Все ссылки работают - ["
+#~ " ] Форматирование сохранено"
+
+#~ msgid ""
+#~ "[ ] **Submission** - [ ] Branch"
+#~ " created with descriptive name - ["
+#~ " ] Commit with message ``docs: add"
+#~ " [language] translation`` - [ ] Pull"
+#~ " Request created with translation status"
+#~ " description"
+#~ msgstr ""
+#~ "[ ] **Отправка** - [ ] Ветка "
+#~ "создана с описательным именем - [ "
+#~ "] Коммит с сообщением ``docs: add "
+#~ "[language] translation`` - [ ] Pull "
+#~ "Request создан с описанием статуса "
+#~ "перевода"
+
+#~ msgid "**Create structure**"
+#~ msgstr "Структура проекта"
+
+#~ msgid "Create ``.po`` files for all documents"
+#~ msgstr ""
+
+#~ msgid "Add build target to ``Makefile``"
+#~ msgstr ""
+
+#~ msgid "**Translation**"
+#~ msgstr "**Пример перевода**"
+
+#~ msgid "All strings are translated"
+#~ msgstr "[ ] Все строки переведены (нет пустых ``msgstr``)"
+
+#~ msgid "Terminology is consistent"
+#~ msgstr "Терминология должна быть согласованной. Ключевые термины:"
+
+#~ msgid "Code comments are translated"
+#~ msgstr "Как стать переводчиком"
+
+#~ msgid "**Verification**"
+#~ msgstr ""
+
+#~ msgid "``msgfmt`` produces no errors"
+#~ msgstr ""
+
+#~ msgid "Documentation builds without warnings"
+#~ msgstr "[ ] Документация собирается без ошибок:"
+
+#~ msgid "All links work"
+#~ msgstr ""
+
+#~ msgid "Formatting is preserved"
+#~ msgstr ""
+
+#~ msgid "**Submission**"
+#~ msgstr ""
+
+#~ msgid "Branch created with descriptive name"
+#~ msgstr ""
+
+#~ msgid "Commit with message ``docs: add [language] translation``"
+#~ msgstr ""
+
+#~ msgid "Pull Request created with translation status description"
+#~ msgstr ""
+

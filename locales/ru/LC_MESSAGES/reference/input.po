@@ -1,0 +1,413 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/input.rst:4
+msgid "Input"
+msgstr ""
+
+#: ../../source/reference/input.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/input.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/input.rst:13
+msgid ""
+"Use this class to get information from the inpute devices, like mouse, "
+"keyboard, joystick and etc."
+msgstr ""
+
+#: ../../source/reference/input.rst:16
+msgid ""
+"Note: All input data updates once per frame during Engine::update() "
+"method."
+msgstr ""
+
+#: ../../source/reference/input.rst:20
+msgid ""
+"Note: Many mobile devices are capable of tracking multiple fingers "
+"touching the screen simultaneously."
+msgstr ""
+
+#: ../../source/reference/input.rst:28
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/input.rst:30
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/input.rst:37
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/input.rst:40 ../../source/reference/input.rst:56
+#: ../../source/reference/input.rst:58 ../../source/reference/input.rst:76
+#: ../../source/reference/input.rst:80
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/input.rst:40
+msgid ":ref:`getCode<api_Input_273d5096>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/input.rst:42
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/input.rst:42
+msgid ":ref:`inputString<api_Input_c201579d>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:44 ../../source/reference/input.rst:46
+#: ../../source/reference/input.rst:48 ../../source/reference/input.rst:50
+#: ../../source/reference/input.rst:52 ../../source/reference/input.rst:54
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/input.rst:44
+msgid ":ref:`isKey<api_Input_5fb4096c>` (Input::KeyCode  code)"
+msgstr ""
+
+#: ../../source/reference/input.rst:46
+msgid ":ref:`isKeyDown<api_Input_8645da71>` (Input::KeyCode  code)"
+msgstr ""
+
+#: ../../source/reference/input.rst:48
+msgid ":ref:`isKeyUp<api_Input_b275f89a>` (Input::KeyCode  code)"
+msgstr ""
+
+#: ../../source/reference/input.rst:50
+msgid ":ref:`isMouseButton<api_Input_28dbcf31>` (int  button)"
+msgstr ""
+
+#: ../../source/reference/input.rst:52
+msgid ":ref:`isMouseButtonDown<api_Input_e2017fd5>` (int  button)"
+msgstr ""
+
+#: ../../source/reference/input.rst:54
+msgid ":ref:`isMouseButtonUp<api_Input_4db0f9a7>` (int  button)"
+msgstr ""
+
+#: ../../source/reference/input.rst:56
+msgid ":ref:`joystickButtons<api_Input_d795e068>` (uint32_t  index)"
+msgstr ""
+
+#: ../../source/reference/input.rst:58
+msgid ":ref:`joystickCount<api_Input_a90be15f>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:60 ../../source/reference/input.rst:64
+#: ../../source/reference/input.rst:68 ../../source/reference/input.rst:78
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/input.rst:60
+msgid ":ref:`joystickThumbs<api_Input_230ea1b6>` (uint32_t  index)"
+msgstr ""
+
+#: ../../source/reference/input.rst:62
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/input.rst:62
+msgid ":ref:`joystickTriggers<api_Input_13927b04>` (uint32_t  index)"
+msgstr ""
+
+#: ../../source/reference/input.rst:64
+msgid ":ref:`mouseDelta<api_Input_28fe406c>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:66 ../../source/reference/input.rst:72
+#: ../../source/reference/input.rst:74
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/input.rst:66
+msgid ":ref:`mouseLockCursor<api_Input_5d43097e>` (bool  lock)"
+msgstr ""
+
+#: ../../source/reference/input.rst:68
+msgid ":ref:`mousePosition<api_Input_cfeab462>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:70
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/input.rst:70
+msgid ":ref:`mouseScrollDelta<api_Input_31d8b749>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:72
+msgid ":ref:`mouseSetCursor<api_Input_fb602193>` (Input::CursorShape  shape)"
+msgstr ""
+
+#: ../../source/reference/input.rst:74
+msgid ":ref:`setKeyboardVisible<api_Input_31b78469>` (bool  visible)"
+msgstr ""
+
+#: ../../source/reference/input.rst:76
+msgid ":ref:`touchCount<api_Input_01bf75a4>` ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:78
+msgid ":ref:`touchPosition<api_Input_b1f82743>` (uint32_t  index)"
+msgstr ""
+
+#: ../../source/reference/input.rst:80
+msgid ":ref:`touchState<api_Input_da102675>` (uint32_t  index)"
+msgstr ""
+
+#: ../../source/reference/input.rst:86
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/input.rst:90
+msgid "uint32_t **Input::getCode** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:92
+msgid "Converts a key *name* to code."
+msgstr ""
+
+#: ../../source/reference/input.rst:98
+msgid ":ref:`TString<api_TString>`  **Input::inputString** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:100
+msgid "Returns characters entered since the last frame."
+msgstr ""
+
+#: ../../source/reference/input.rst:106
+msgid "bool **Input::isKey** (:ref:`Input::KeyCode<api_Input_KeyCode>`  *code*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:108
+msgid ""
+"Returns true in case of a key with *code* is pressed; otherwise returns "
+"false. Please refer to Input::KeyCode to see possible key codes."
+msgstr ""
+
+#: ../../source/reference/input.rst:114
+msgid ""
+"bool **Input::isKeyDown** (:ref:`Input::KeyCode<api_Input_KeyCode>`  "
+"*code*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:116
+msgid ""
+"Returns true during the frame in case of a key with *code* is pressed; "
+"otherwise returns false. Please refer to Input::KeyCode to see possible "
+"key codes."
+msgstr ""
+
+#: ../../source/reference/input.rst:122
+msgid "bool **Input::isKeyUp** (:ref:`Input::KeyCode<api_Input_KeyCode>`  *code*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:124
+msgid ""
+"Returns true during the frame in case of a key with *code* is released; "
+"otherwise returns false. Please refer to Input::KeyCode to see possible "
+"key codes."
+msgstr ""
+
+#: ../../source/reference/input.rst:130
+msgid "bool **Input::isMouseButton** (int  *button*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:132
+msgid "Returns the state of mouse button. Example code:"
+msgstr ""
+
+#: ../../source/reference/input.rst:150
+msgid "bool **Input::isMouseButtonDown** (int  *button*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:152
+msgid "Returns true in case of the *button* is pressed; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/input.rst:158
+msgid "bool **Input::isMouseButtonUp** (int  *button*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:160
+msgid "Returns true in case of the *button* is released; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/input.rst:166
+msgid "uint32_t **Input::joystickButtons** (uint32_t  *index*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:168
+msgid ""
+"Returns the states of buttons for joystick with index. Please refer to "
+"Input::KeyCode to see possible buttons."
+msgstr ""
+
+#: ../../source/reference/input.rst:171
+msgid ""
+"**Note:** This method returns a bit masked value. To retrieve the state "
+"of the required button please make bit comparison."
+msgstr ""
+
+#: ../../source/reference/input.rst:174
+msgid "Example code:"
+msgstr ""
+
+#: ../../source/reference/input.rst:186
+msgid "uint32_t **Input::joystickCount** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:188
+msgid "Returns the number of connected joysticks."
+msgstr ""
+
+#: ../../source/reference/input.rst:194
+msgid ":ref:`Vector4<api_Vector4>`  **Input::joystickThumbs** (uint32_t  *index*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:196
+msgid ""
+"Returns the thumbs position of joystick with index. The components x and "
+"y will contain a value for the left thumbs. The components z and w will "
+"contain a value for the right thumbs."
+msgstr ""
+
+#: ../../source/reference/input.rst:202
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Input::joystickTriggers** (uint32_t  "
+"*index*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:204
+msgid ""
+"Returns the value of pressure for the joystick triggers with index. The "
+"component x will contain a value for the left trigger and component y "
+"will contain value for the right trigger."
+msgstr ""
+
+#: ../../source/reference/input.rst:210
+msgid ":ref:`Vector4<api_Vector4>`  **Input::mouseDelta** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:212
+msgid ""
+"Returns the mouse position delta. The absolute position will be stored in"
+" x and y components. The normalized position will be stored in z and w "
+"components."
+msgstr ""
+
+#: ../../source/reference/input.rst:215 ../../source/reference/input.rst:247
+msgid ""
+"**Note:** Delta value recalculated once per frame, calling this method "
+"multiple times in one frame will return the same result."
+msgstr ""
+
+#: ../../source/reference/input.rst:219
+msgid "**Note:** The value will be Vector4(0.0f) if a mouse is not moved."
+msgstr ""
+
+#: ../../source/reference/input.rst:226
+msgid "void **Input::mouseLockCursor** (bool  *lock*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:228
+msgid "Tries to *lock* mouse cursor."
+msgstr ""
+
+#: ../../source/reference/input.rst:234
+msgid ":ref:`Vector4<api_Vector4>`  **Input::mousePosition** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:236
+msgid ""
+"Returns the mouse position. The absolute position will be stored in x and"
+" y components. The normalized position will be stored in z and w "
+"components."
+msgstr ""
+
+#: ../../source/reference/input.rst:242
+msgid "float **Input::mouseScrollDelta** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:244
+msgid "Returns the mouse wheel scrolling delta."
+msgstr ""
+
+#: ../../source/reference/input.rst:251
+msgid "**Note:** The value will be 0.0f if a mouse wheel is not rotated."
+msgstr ""
+
+#: ../../source/reference/input.rst:258
+msgid ""
+"void **Input::mouseSetCursor** "
+"(:ref:`Input::CursorShape<api_Input_CursorShape>`  *shape*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:260
+msgid "Sets the cursor shape."
+msgstr ""
+
+#: ../../source/reference/input.rst:266
+msgid "void **Input::setKeyboardVisible** (bool  *visible*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:268
+msgid "Sets virtual keyboard visible."
+msgstr ""
+
+#: ../../source/reference/input.rst:271
+msgid "**Note:** Does nothing for the desktop platforms."
+msgstr ""
+
+#: ../../source/reference/input.rst:278
+msgid "uint32_t **Input::touchCount** ()"
+msgstr ""
+
+#: ../../source/reference/input.rst:280
+msgid "Returns the number of touches."
+msgstr ""
+
+#: ../../source/reference/input.rst:286
+msgid ":ref:`Vector4<api_Vector4>`  **Input::touchPosition** (uint32_t  *index*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:288
+msgid ""
+"Returns the position of touch with index. The absolute position will be "
+"stored in x and y components. The normalized position will be stored in z"
+" and w components."
+msgstr ""
+
+#: ../../source/reference/input.rst:294
+msgid "uint32_t **Input::touchState** (uint32_t  *index*)"
+msgstr ""
+
+#: ../../source/reference/input.rst:296
+msgid ""
+"Returns the state of touch with index. Please refer to Input::TouchState "
+"to see possible states."
+msgstr ""
+

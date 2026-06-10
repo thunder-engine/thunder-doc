@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/baselight.rst:4
+msgid "BaseLight"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:14
+msgid ""
+"Note: This class must be a superclass only and shouldn't be created "
+"manually."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:22
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:25
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:25
+msgid ":ref:`brightness<api_BaseLight_9f35240d>` () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:27
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:27
+msgid ":ref:`castShadows<api_BaseLight_80e13246>` () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:29
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:29
+msgid ":ref:`color<api_BaseLight_fd27bc8a>` () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:31
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:31
+msgid ":ref:`lightType<api_BaseLight_eb365c48>` () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:33
+#: ../../source/reference/baselight.rst:35
+#: ../../source/reference/baselight.rst:37
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:33
+msgid ":ref:`setBrightness<api_BaseLight_4375069e>` (const float  brightness)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:35
+msgid ":ref:`setCastShadows<api_BaseLight_e81ba073>` (const bool  shadows)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:37
+msgid ":ref:`setColor<api_BaseLight_be069581>` (const Vector4  color)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:45
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:47
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:52
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:56
+msgid "float **BaseLight::brightness** () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:58
+msgid "Returns a brightness of emitting light."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:60
+msgid "**See also** setBrightness()."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:66
+msgid "bool **BaseLight::castShadows** () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:68
+msgid ""
+"Returns true if the light source can cast shadows; otherwise returns "
+"false."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:70
+msgid "**See also** setCastShadows()."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:76
+msgid ":ref:`Vector4<api_Vector4>`  **BaseLight::color** () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:78
+msgid "Returns a color of emitting light."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:80
+msgid "**See also** setColor()."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:86
+msgid "int **BaseLight::lightType** () const"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:88
+msgid "Return a type of the light. Fot more details refer to BaseLight::LightType"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:94
+msgid "void **BaseLight::setBrightness** (float  *brightness*)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:96
+msgid "Changes a *brightness* of emitting light."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:98
+msgid "**See also** brightness()."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:104
+msgid "void **BaseLight::setCastShadows** (bool  *shadows*)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:106
+msgid "Enables or disables cast *shadows* ability for the light source."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:108
+msgid "**See also** castShadows()."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:114
+msgid "void **BaseLight::setColor** (:ref:`Vector4<api_Vector4>`  *color*)"
+msgstr ""
+
+#: ../../source/reference/baselight.rst:116
+msgid "Changes a *color* of emitting light."
+msgstr ""
+
+#: ../../source/reference/baselight.rst:118
+msgid "**See also** color()."
+msgstr ""
+

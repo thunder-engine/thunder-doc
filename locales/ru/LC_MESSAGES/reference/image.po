@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/image.rst:4
+msgid "Image"
+msgstr ""
+
+#: ../../source/reference/image.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/image.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/image.rst:13
+msgid ""
+"The Image class represents an image or sprite that can be rendered and "
+"displayed on the screen within a graphical user interface (GUI). It is "
+"used to incorporate visual elements into the interface, such as icons, "
+"backgrounds, or illustrations, by loading and rendering image files."
+msgstr ""
+
+#: ../../source/reference/image.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/image.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/image.rst:23
+msgid ":ref:`color<api_Image_2405bf8e>` () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:25
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/image.rst:25
+msgid ":ref:`drawMode<api_Image_bad9c752>` () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:27
+msgid ":ref:`Material<api_Material>` *"
+msgstr ""
+
+#: ../../source/reference/image.rst:27
+msgid ":ref:`material<api_Image_0ea73cb8>` () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:29 ../../source/reference/image.rst:31
+#: ../../source/reference/image.rst:33 ../../source/reference/image.rst:35
+#: ../../source/reference/image.rst:37
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/image.rst:29
+msgid ":ref:`setColor<api_Image_9cf8e51d>` (const Vector4 & color)"
+msgstr ""
+
+#: ../../source/reference/image.rst:31
+msgid ":ref:`setDrawMode<api_Image_f5a47628>` (int  mode)"
+msgstr ""
+
+#: ../../source/reference/image.rst:33
+msgid ":ref:`setMaterial<api_Image_5f40e2a1>` (Material * material)"
+msgstr ""
+
+#: ../../source/reference/image.rst:35
+msgid ":ref:`setSprite<api_Image_706924ae>` (Sprite * sprite)"
+msgstr ""
+
+#: ../../source/reference/image.rst:37
+msgid ":ref:`setTexture<api_Image_8f56902d>` (Texture * image)"
+msgstr ""
+
+#: ../../source/reference/image.rst:39
+msgid ":ref:`Sprite<api_Sprite>` *"
+msgstr ""
+
+#: ../../source/reference/image.rst:39
+msgid ":ref:`sprite<api_Image_04c219d6>` () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:47
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/image.rst:49
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/image.rst:54
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/image.rst:58
+msgid ":ref:`Vector4<api_Vector4>`  **Image::color** () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:60
+msgid "Returns the color of the image to be drawn."
+msgstr ""
+
+#: ../../source/reference/image.rst:62
+msgid "**See also** setColor()."
+msgstr ""
+
+#: ../../source/reference/image.rst:68
+msgid "int **Image::drawMode** () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:70
+msgid ""
+"Returns a draw mode for the image. Please check Image::DrawMode for more "
+"details."
+msgstr ""
+
+#: ../../source/reference/image.rst:72
+msgid "**See also** setDrawMode()."
+msgstr ""
+
+#: ../../source/reference/image.rst:78
+msgid ":ref:`Material<api_Material>` * **Image::material** () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:80
+msgid "Returns an instantiated Material assigned to Image."
+msgstr ""
+
+#: ../../source/reference/image.rst:82
+msgid "**See also** setMaterial()."
+msgstr ""
+
+#: ../../source/reference/image.rst:88
+msgid "void **Image::setColor** (:ref:`Vector4<api_Vector4>` & *color*)"
+msgstr ""
+
+#: ../../source/reference/image.rst:90
+msgid "Changes the *color* of the image to be drawn."
+msgstr ""
+
+#: ../../source/reference/image.rst:92
+msgid "**See also** color()."
+msgstr ""
+
+#: ../../source/reference/image.rst:98
+msgid "void **Image::setDrawMode** (int  *mode*)"
+msgstr ""
+
+#: ../../source/reference/image.rst:100
+msgid ""
+"Sets a draw *mode* for the image. Please check Image::DrawMode for more "
+"details."
+msgstr ""
+
+#: ../../source/reference/image.rst:102
+msgid "**See also** drawMode()."
+msgstr ""
+
+#: ../../source/reference/image.rst:108
+msgid "void **Image::setMaterial** (:ref:`Material<api_Material>` * *material*)"
+msgstr ""
+
+#: ../../source/reference/image.rst:110
+msgid "Creates a new instance of *material* and assigns it."
+msgstr ""
+
+#: ../../source/reference/image.rst:112
+msgid "**See also** material()."
+msgstr ""
+
+#: ../../source/reference/image.rst:118
+msgid "void **Image::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)"
+msgstr ""
+
+#: ../../source/reference/image.rst:120
+msgid "Replaces the current *sprite* with a new one."
+msgstr ""
+
+#: ../../source/reference/image.rst:122
+msgid "**See also** sprite()."
+msgstr ""
+
+#: ../../source/reference/image.rst:128
+msgid "void **Image::setTexture** (:ref:`Texture<api_Texture>` * *image*)"
+msgstr ""
+
+#: ../../source/reference/image.rst:130
+msgid "Replaces the current *image* with a new one."
+msgstr ""
+
+#: ../../source/reference/image.rst:136
+msgid ":ref:`Sprite<api_Sprite>` * **Image::sprite** () const"
+msgstr ""
+
+#: ../../source/reference/image.rst:138
+msgid "Returns the sprite assigned to the Image."
+msgstr ""
+
+#: ../../source/reference/image.rst:140
+msgid "**See also** setSprite()."
+msgstr ""
+

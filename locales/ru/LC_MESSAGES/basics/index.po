@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/basics/index.rst:4
+msgid "Getting Started"
+msgstr "Начало работы"
+
+#: ../../source/basics/index.rst:6
+msgid ""
+"**Thunder Engine** is a versatile open-source game engine designed for "
+"the seamless development of both 2D and 3D games. Offering a "
+"comprehensive suite of frameworks and tools, Thunder Engine empowers "
+"developers to concentrate on the creative aspects of game design, while "
+"the engine takes care of routine tasks."
+msgstr ""
+"**Thunder Engine** — это универсальный игровой движок с открытым исходным кодом, "
+"предназначенный для удобной разработки как 2D, так и 3D игр. Предлагая "
+"комплексный набор фреймворков и инструментов, Thunder Engine позволяет "
+"разработчикам сосредоточиться на творческих аспектах гейм-дизайна, в то время "
+"как движок берёт на себя выполнение рутинных задач."
+
+#: ../../source/basics/index.rst:8
+msgid ""
+"The core philosophy behind Thunder Engine is to establish a modular "
+"architecture, providing developers with the flexibility to selectively "
+"include or exclude modules based on their project requirements. This "
+"modular approach ensures that projects remain lightweight, tailored to "
+"the specific needs of each development endeavor."
+msgstr ""
+"Основная философия Thunder Engine заключается в создании модульной архитектуры, "
+"предоставляющей разработчикам гибкость выборочного включения или исключения "
+"модулей в зависимости от требований их проекта. Такой модульный подход "
+"гарантирует, что проекты остаются лёгкими и адаптированными под конкретные "
+"потребности каждой разработки."
+
+#: ../../source/basics/index.rst:10
+msgid ""
+"Developers can leverage the Thunder Engine API to not only incorporate "
+"existing modules but also to create and integrate their own custom "
+"modules, enhancing the engine's adaptability to unique game design "
+"concepts. Furthermore, Thunder Engine's API facilitates the development "
+"of editor modules, empowering developers to streamline and enhance their "
+"workflow during the game creation process."
+msgstr ""
+"Разработчики могут использовать API Thunder Engine не только для подключения "
+"существующих модулей, но и для создания и интеграции собственных пользовательских "
+"модулей, повышая адаптируемость движка к уникальным концепциям игрового дизайна. "
+"Кроме того, API Thunder Engine упрощает разработку редакторских модулей, "
+"позволяя разработчикам оптимизировать и улучшать свой рабочий процесс в процессе "
+"создания игры."
+
+#: ../../source/basics/index.rst:12
+msgid ""
+"In essence, Thunder Engine not only simplifies game development through "
+"its wide array of features but also offers a modular and extensible "
+"architecture, enabling developers to craft tailored solutions for their "
+"gaming projects."
+msgstr ""
+"По сути, Thunder Engine не только упрощает разработку игр благодаря своему "
+"широкому набору функций, но и предлагает модульную и расширяемую архитектуру, "
+"позволяющую разработчикам создавать индивидуальные решения для своих игровых "
+"проектов."

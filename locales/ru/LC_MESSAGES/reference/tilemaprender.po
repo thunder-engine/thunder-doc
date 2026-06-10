@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/tilemaprender.rst:4
+msgid "TileMapRender"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:13
+msgid ""
+"TileMapRender is a class designed for rendering tile maps within Thunder "
+"Engine. It manages the rendering of a tile map, including handling "
+"materials, layers, and transformations."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:23
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:23
+msgid ":ref:`layer<api_TileMapRender_c2fe675b>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:25
+#: ../../source/reference/tilemaprender.rst:27
+#: ../../source/reference/tilemaprender.rst:29
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:25
+msgid ":ref:`setLayer<api_TileMapRender_cd4bea75>` (int  layer)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:27
+msgid ":ref:`setMaterial<api_TileMapRender_3782eca1>` (Material * material)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:29
+msgid ":ref:`setTileMap<api_TileMapRender_34708fcd>` (TileMap * map)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:31
+msgid ":ref:`TileMap<api_TileMap>` *"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:31
+msgid ":ref:`tileMap<api_TileMapRender_18294cf5>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:39
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:41
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:46
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:50
+msgid "int **TileMapRender::layer** () const"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:52
+msgid "Returns the redering priority for the tile map."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:54
+msgid "**See also** setLayer()."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:60
+msgid "void **TileMapRender::setLayer** (int  *layer*)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:62
+msgid "Sets the redering *layer* for the tile map."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:64
+msgid "**See also** layer()."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:70
+msgid ""
+"void **TileMapRender::setMaterial** (:ref:`Material<api_Material>` * "
+"*material*)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:72
+msgid "Reimplements: Renderable::setMaterial(Material *material)."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:74
+msgid "Creates a new instance of *material* and assigns it."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:80
+msgid "void **TileMapRender::setTileMap** (:ref:`TileMap<api_TileMap>` * *map*)"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:82
+msgid "Sets the tile *map* associated with this TileMapRender."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:84
+msgid "**See also** tileMap()."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:90
+msgid ":ref:`TileMap<api_TileMap>` * **TileMapRender::tileMap** () const"
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:92
+msgid "Returns a pointer to the tile map associated with this TileMapRender."
+msgstr ""
+
+#: ../../source/reference/tilemaprender.rst:94
+msgid "**See also** setTileMap()."
+msgstr ""
+

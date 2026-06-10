@@ -1,0 +1,654 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/recttransform.rst:4
+msgid "RectTransform"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:13
+msgid ""
+"The ProgressBar class is designed to provide a graphical representation "
+"of progress with customizable appearance and range. It supports features "
+"such as setting the minimum and maximum values, adjusting the progress "
+"value, and specifying visual elements for background and progress "
+"indicator."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:23
+#: ../../source/reference/recttransform.rst:35
+#: ../../source/reference/recttransform.rst:43
+#: ../../source/reference/recttransform.rst:47
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:23
+msgid ":ref:`border<api_RectTransform_f6c30845>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:25
+#: ../../source/reference/recttransform.rst:85
+msgid ":ref:`RectTransform::SizePolicy<api_RectTransform_SizePolicy>`"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:25
+msgid ":ref:`horizontalPolicy<api_RectTransform_c1fb6a78>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:27
+msgid ":ref:`RectTransform<api_RectTransform>` *"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:27
+msgid ":ref:`hoveredTransform<api_RectTransform_938efc40>` (float  x, float  y)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:29
+#: ../../source/reference/recttransform.rst:41
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:29
+msgid ":ref:`isHovered<api_RectTransform_629ce45b>` (float  x, float  y) const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:31
+msgid ":ref:`Layout<api_Layout>` *"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:31
+msgid ":ref:`layout<api_RectTransform_ead91358>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:33
+#: ../../source/reference/recttransform.rst:37
+#: ../../source/reference/recttransform.rst:39
+#: ../../source/reference/recttransform.rst:45
+#: ../../source/reference/recttransform.rst:77
+#: ../../source/reference/recttransform.rst:79
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:33
+msgid ":ref:`mapFromGlobal<api_RectTransform_c2fe0498>` (float  x, float  y)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:35
+msgid ":ref:`margin<api_RectTransform_4f8297a0>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:37
+msgid ":ref:`maxAnchors<api_RectTransform_b3fca8e2>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:39
+msgid ":ref:`minAnchors<api_RectTransform_1db46c20>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:41
+msgid ":ref:`mouseTracking<api_RectTransform_84b2efd5>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:43
+msgid ":ref:`padding<api_RectTransform_85743c90>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:45
+msgid ":ref:`pivot<api_RectTransform_ca21f05e>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:47
+msgid ":ref:`scissorArea<api_RectTransform_671932f0>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:49
+#: ../../source/reference/recttransform.rst:51
+#: ../../source/reference/recttransform.rst:53
+#: ../../source/reference/recttransform.rst:55
+#: ../../source/reference/recttransform.rst:57
+#: ../../source/reference/recttransform.rst:59
+#: ../../source/reference/recttransform.rst:61
+#: ../../source/reference/recttransform.rst:63
+#: ../../source/reference/recttransform.rst:65
+#: ../../source/reference/recttransform.rst:67
+#: ../../source/reference/recttransform.rst:69
+#: ../../source/reference/recttransform.rst:71
+#: ../../source/reference/recttransform.rst:73
+#: ../../source/reference/recttransform.rst:75
+#: ../../source/reference/recttransform.rst:81
+#: ../../source/reference/recttransform.rst:83
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:49
+msgid ""
+":ref:`setAnchors<api_RectTransform_305b9e2a>` (const Vector2 & minimum, "
+"const Vector2 & maximum)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:51
+msgid ":ref:`setBorder<api_RectTransform_78f4ea60>` (const Vector4 & border)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:53
+msgid ":ref:`setEnabled<api_RectTransform_3b761cde>` (bool  enabled)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:55
+msgid ""
+":ref:`setHorizontalPolicy<api_RectTransform_786df3b5>` "
+"(RectTransform::SizePolicy  policy)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:57
+msgid ":ref:`setLayout<api_RectTransform_6ed5c01f>` (Layout * layout)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:59
+msgid ":ref:`setMargin<api_RectTransform_f7edc58a>` (const Vector4 & margin)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:61
+msgid ":ref:`setMaxAnchors<api_RectTransform_3db2fa09>` (const Vector2 & anchors)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:63
+msgid ":ref:`setMinAnchors<api_RectTransform_ed201345>` (const Vector2 & anchors)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:65
+msgid ":ref:`setMouseTracking<api_RectTransform_8ed56f2c>` (bool  tracking)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:67
+msgid ":ref:`setPadding<api_RectTransform_65b3042e>` (const Vector4 & padding)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:69
+msgid ":ref:`setPivot<api_RectTransform_b3cf682e>` (const Vector2 & pivot)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:71
+msgid ":ref:`setPosition<api_RectTransform_5304dcef>` (const Vector3 & position)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:73
+msgid ":ref:`setSize<api_RectTransform_687d42ab>` (const Vector2 & size)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:75
+msgid ""
+":ref:`setVerticalPolicy<api_RectTransform_7c48dbf6>` "
+"(RectTransform::SizePolicy  policy)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:77
+msgid ":ref:`size<api_RectTransform_d3a854b7>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:79
+msgid ":ref:`sizeHint<api_RectTransform_96ae2784>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:81
+msgid ":ref:`subscribe<api_RectTransform_4f013a7d>` (Widget * widget)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:83
+msgid ":ref:`unsubscribe<api_RectTransform_41ceadf0>` (Widget * widget)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:85
+msgid ":ref:`verticalPolicy<api_RectTransform_bc289105>` () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:87
+msgid ":ref:`Widget<api_Widget>` *"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:87
+msgid ":ref:`widget<api_RectTransform_9b8ae673>` ()"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:95
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:97
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:102
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:106
+msgid ":ref:`Vector4<api_Vector4>`  **RectTransform::border** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:108
+msgid ""
+"Returns the border width of the RectTransform. The Vector4 contains "
+"border widths in top, right, bottom and left order."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:110
+msgid "**See also** setBorder()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:116
+msgid ""
+":ref:`RectTransform::SizePolicy<api_RectTransform::SizePolicy>`  "
+"**RectTransform::horizontalPolicy** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:118
+msgid "Returns horizontal size policy."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:120
+msgid "**See also** setHorizontalPolicy()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:126
+msgid ""
+":ref:`RectTransform<api_RectTransform>` * "
+"**RectTransform::hoveredTransform** (float  *x*, float  *y*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:128
+msgid ""
+"Returns the most top RectTransform in hierarchy wich contains the point "
+"with coodinates *x* and y. Returns null if no bounds."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:134
+msgid "bool **RectTransform::isHovered** (float  *x*, float  *y*) const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:136
+msgid ""
+"Returns true if the point with coordinates *x* and *y* is within the "
+"bounds, otherwise false."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:142
+msgid ":ref:`Layout<api_Layout>` * **RectTransform::layout** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:144
+msgid "Returns the layout assigned to the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:146
+msgid "**See also** setLayout()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:152
+msgid ""
+":ref:`Vector2<api_Vector2>`  **RectTransform::mapFromGlobal** (float  "
+"*x*, float  *y*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:154
+msgid "Translates the global screen *x* and *y* coordinates to widget space."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:160
+msgid ":ref:`Vector4<api_Vector4>`  **RectTransform::margin** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:162
+msgid ""
+"Returns the margin offsets of the RectTransform. The Vector4 contains "
+"offsets in top, right, bottom and left order."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:164
+msgid "**See also** setMargin()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:170
+msgid ":ref:`Vector2<api_Vector2>`  **RectTransform::maxAnchors** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:172
+msgid "Returns the maximum anchors of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:174
+msgid "**See also** setMaxAnchors()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:180
+msgid ":ref:`Vector2<api_Vector2>`  **RectTransform::minAnchors** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:182
+msgid "Returns the minimum anchors of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:184
+msgid "**See also** setMinAnchors()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:190
+msgid "bool **RectTransform::mouseTracking** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:192
+msgid ""
+"Returns true if this area is interactable with mouse; otherwise returns "
+"false. Returns true by the default."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:194
+msgid "**See also** setMouseTracking()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:200
+msgid ":ref:`Vector4<api_Vector4>`  **RectTransform::padding** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:202
+msgid ""
+"Returns the padding offset of the RectTransform. The Vector4 contains "
+"padding offsets in top, right, bottom and left order."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:204
+msgid "**See also** setPadding()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:210
+msgid ":ref:`Vector2<api_Vector2>`  **RectTransform::pivot** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:212
+msgid "Returns the pivot point of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:214
+msgid "**See also** setPivot()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:220
+msgid ":ref:`Vector4<api_Vector4>`  **RectTransform::scissorArea** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:222
+msgid ""
+"Returns the internal scissor area. All content outside of this are will "
+"not be rendered."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:228
+msgid ""
+"void **RectTransform::setAnchors** (:ref:`Vector2<api_Vector2>` & "
+"*minimum*, :ref:`Vector2<api_Vector2>` & *maximum*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:230
+msgid "Sets both the *minimum* and *maximum* anchors of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:236
+msgid "void **RectTransform::setBorder** (:ref:`Vector4<api_Vector4>` & *border*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:238
+msgid "Sets the top, right, bottom and left *border* width of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:240
+msgid "**See also** border()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:246
+msgid "void **RectTransform::setEnabled** (bool  *enabled*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:248
+msgid "Reimplements: Component::setEnabled(bool enabled)."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:250
+msgid "Sets current state of RectTransform to *enabled* or disabled."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:256
+msgid ""
+"void **RectTransform::setHorizontalPolicy** "
+"(:ref:`RectTransform::SizePolicy<api_RectTransform_SizePolicy>`  "
+"*policy*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:258
+msgid "Sets horizontal size policy."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:260
+msgid "**See also** horizontalPolicy()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:266
+msgid "void **RectTransform::setLayout** (:ref:`Layout<api_Layout>` * *layout*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:268
+msgid "Sets the *layout* for the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:270
+msgid "**See also** layout()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:276
+msgid "void **RectTransform::setMargin** (:ref:`Vector4<api_Vector4>` & *margin*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:278
+msgid ""
+"Sets the top, right, bottom and left *margin* offsets of the "
+"RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:280
+msgid "**See also** margin()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:286
+msgid ""
+"void **RectTransform::setMaxAnchors** (:ref:`Vector2<api_Vector2>` & "
+"*anchors*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:288
+msgid "Sets the maximum *anchors* of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:290
+msgid "**See also** maxAnchors()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:296
+msgid ""
+"void **RectTransform::setMinAnchors** (:ref:`Vector2<api_Vector2>` & "
+"*anchors*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:298
+msgid "Sets the minimum *anchors* of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:300
+msgid "**See also** minAnchors()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:306
+msgid "void **RectTransform::setMouseTracking** (bool  *tracking*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:308
+msgid "Sets mouse *tracking* enabled or disabled."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:310
+msgid "**See also** mouseTracking()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:316
+msgid ""
+"void **RectTransform::setPadding** (:ref:`Vector4<api_Vector4>` & "
+"*padding*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:318
+msgid ""
+"Sets the top, right, bottom and left *padding* offsets of the "
+"RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:320
+msgid "**See also** padding()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:326
+msgid "void **RectTransform::setPivot** (:ref:`Vector2<api_Vector2>` & *pivot*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:328
+msgid "Sets the *pivot* point of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:330
+msgid "**See also** pivot()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:336
+msgid ""
+"void **RectTransform::setPosition** (:ref:`Vector3<api_Vector3>` & "
+"*position*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:338
+msgid "Reimplements: Transform::setPosition(const Vector3 &position)."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:340
+msgid "Changes *position* of the Transform in local space."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:346
+msgid "void **RectTransform::setSize** (:ref:`Vector2<api_Vector2>` & *size*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:348
+msgid "Sets the *size* of the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:350
+msgid "**See also** size()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:356
+msgid ""
+"void **RectTransform::setVerticalPolicy** "
+"(:ref:`RectTransform::SizePolicy<api_RectTransform_SizePolicy>`  "
+"*policy*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:358
+msgid "Sets vertical size policy."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:360
+msgid "**See also** verticalPolicy()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:366
+msgid ":ref:`Vector2<api_Vector2>`  **RectTransform::size** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:368
+msgid "Returns the size of the associated UI element."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:370
+msgid "**See also** setSize()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:376
+msgid ":ref:`Vector2<api_Vector2>`  **RectTransform::sizeHint** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:378
+msgid "Returns the size recommended to contain all visible content."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:384
+msgid "void **RectTransform::subscribe** (:ref:`Widget<api_Widget>` * *widget*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:386
+msgid "Subscribes a *widget* to changes in the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:392
+msgid "void **RectTransform::unsubscribe** (:ref:`Widget<api_Widget>` * *widget*)"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:394
+msgid "Unsubscribes a *widget* from changes in the RectTransform."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:400
+msgid ""
+":ref:`RectTransform::SizePolicy<api_RectTransform::SizePolicy>`  "
+"**RectTransform::verticalPolicy** () const"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:402
+msgid "Returns vertical size policy."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:404
+msgid "**See also** setVerticalPolicy()."
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:410
+msgid ":ref:`Widget<api_Widget>` * **RectTransform::widget** ()"
+msgstr ""
+
+#: ../../source/reference/recttransform.rst:412
+msgid "Returns the first widget associated with this rect transform."
+msgstr ""
+

@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/rigidbody.rst:4
+msgid "RigidBody"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:13
+msgid ""
+"The RigidBody class provides a flexible interface for managing dynamic "
+"rigid bodies in a physics simulation. It supports mass, kinematic "
+"properties, locking of positions and rotations, and synchronization with "
+"custom collider components."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:23
+#: ../../source/reference/rigidbody.rst:25
+#: ../../source/reference/rigidbody.rst:27
+#: ../../source/reference/rigidbody.rst:39
+#: ../../source/reference/rigidbody.rst:41
+#: ../../source/reference/rigidbody.rst:43
+#: ../../source/reference/rigidbody.rst:45
+#: ../../source/reference/rigidbody.rst:47
+#: ../../source/reference/rigidbody.rst:49
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:23
+msgid ""
+":ref:`applyForce<api_RigidBody_2fe51783>` (const Vector3 & force, const "
+"Vector3 & point)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:25
+msgid ""
+":ref:`applyImpulse<api_RigidBody_38d5c6f1>` (const Vector3 & impulse, "
+"const Vector3 & point)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:27
+msgid ":ref:`createCollider<api_RigidBody_f1860c39>` ()"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:29
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:29
+msgid ":ref:`kinematic<api_RigidBody_834d195e>` () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:31
+#: ../../source/reference/rigidbody.rst:33
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:31
+msgid ":ref:`lockPosition<api_RigidBody_a3dbe021>` () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:33
+msgid ":ref:`lockRotation<api_RigidBody_df8e6a02>` () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:35
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:35
+msgid ":ref:`mass<api_RigidBody_b5326481>` () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:37
+msgid ":ref:`PhysicMaterial<api_PhysicMaterial>` *"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:37
+msgid ":ref:`material<api_RigidBody_d1c42708>` () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:39
+msgid ":ref:`setEnabled<api_RigidBody_fa28d914>` (bool  enable)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:41
+msgid ":ref:`setKinematic<api_RigidBody_9fc1da0e>` (bool  kinematic)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:43
+msgid ":ref:`setLockPosition<api_RigidBody_abd3587c>` (int  flags)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:45
+msgid ":ref:`setLockRotation<api_RigidBody_8f6d3927>` (int  flags)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:47
+msgid ":ref:`setMass<api_RigidBody_2ac46e05>` (float  mass)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:49
+msgid ":ref:`updateCollider<api_RigidBody_ea10b367>` (bool  updated)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:57
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:59
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:64
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:68
+msgid ""
+"void **RigidBody::applyForce** (:ref:`Vector3<api_Vector3>` & *force*, "
+":ref:`Vector3<api_Vector3>` & *point*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:70
+msgid "Applies a *force* to the rigid body at a specific point."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:76
+msgid ""
+"void **RigidBody::applyImpulse** (:ref:`Vector3<api_Vector3>` & "
+"*impulse*, :ref:`Vector3<api_Vector3>` & *point*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:78
+msgid "Applies an *impulse* to the rigid body at a specific point."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:84
+msgid "void **RigidBody::createCollider** ()"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:86
+msgid "Reimplements: Collider::createCollider()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:88
+msgid "Creates the rigid body's collider in the physics world."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:94
+msgid "bool **RigidBody::kinematic** () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:96
+msgid "Returns true if the rigid body is kinematic, false otherwise."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:98
+msgid "**See also** setKinematic()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:104
+msgid "int **RigidBody::lockPosition** () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:106
+msgid "Returns the lock flags for the rigid body's linear position."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:108
+msgid "**See also** setLockPosition()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:114
+msgid "int **RigidBody::lockRotation** () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:116
+msgid "Returns the lock flags for the rigid body's rotation."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:118
+msgid "**See also** setLockRotation()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:124
+msgid "float **RigidBody::mass** () const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:126
+msgid "Returns the mass of the rigid body."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:128
+msgid "**See also** setMass()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:134
+msgid ""
+":ref:`PhysicMaterial<api_PhysicMaterial>` * **RigidBody::material** () "
+"const"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:136
+msgid "Returns the physical material associated with the rigid body."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:142
+msgid "void **RigidBody::setEnabled** (bool  *enable*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:144
+msgid "Reimplements: Component::setEnabled(bool enabled)."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:146
+msgid "Set *enable* or disable the rigid body in the physics world."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:152
+msgid "void **RigidBody::setKinematic** (bool  *kinematic*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:154
+msgid "Sets whether the rigid body is *kinematic* or not."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:156
+msgid "**See also** kinematic()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:162
+msgid "void **RigidBody::setLockPosition** (int  *flags*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:164
+msgid "Sets the lock *flags* for the rigid body's linear position."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:166
+msgid "**See also** lockPosition()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:172
+msgid "void **RigidBody::setLockRotation** (int  *flags*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:174
+msgid "Sets the lock *flags* for the rigid body's rotation."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:176
+msgid "**See also** lockRotation()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:182
+msgid "void **RigidBody::setMass** (float  *mass*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:184
+msgid ""
+"Sets the *mass* of the rigid body and updates its properties in the "
+"physics simulation."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:186
+msgid "**See also** mass()."
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:192
+msgid "void **RigidBody::updateCollider** (bool  *updated*)"
+msgstr ""
+
+#: ../../source/reference/rigidbody.rst:194
+msgid ""
+"Updates the rigid body's collider based on the associated collider "
+"components. Parameter *updated* can be used to forcibly update."
+msgstr ""
+

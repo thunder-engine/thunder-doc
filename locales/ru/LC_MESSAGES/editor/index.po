@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 15:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/editor/index.rst:4
+msgid "Editor"
+msgstr "Редактор"
+
+#: ../../source/editor/index.rst:6
+msgid ""
+"When you create a new project or open an existing one, you will find "
+"yourself on the main screen."
+msgstr ""
+"Когда вы создаёте новый проект или открываете существующий, вы попадаете "
+"на главный экран."
+
+#: ../../source/editor/index.rst:8
+msgid ""
+"The main screen provides a versatile workspace that developers can "
+"customize to suit their specific needs. This workspace is the central hub"
+" where you'll perform various tasks and interact with your project's "
+"elements."
+msgstr ""
+"Главный экран предоставляет универсальное рабочее пространство, которое "
+"разработчики могут настраивать в соответствии со своими конкретными "
+"потребностями. Это рабочее пространство является центральным узлом, где "
+"вы будете выполнять различные задачи и взаимодействовать с элементами "
+"вашего проекта."
+
+#: ../../source/editor/index.rst:11
+msgid ""
+"As you work within the main screen and navigate between these areas, "
+"you'll have the tools and resources you need to build, edit, and manage "
+"your project effectively. Feel free to explore the various zones to "
+"streamline your workflow and achieve your development goals."
+msgstr ""
+"Работая на главном экране и перемещаясь между этими областями, вы будете "
+"иметь инструменты и ресурсы, необходимые для эффективного создания, "
+"редактирования и управления вашим проектом. Не стесняйтесь исследовать "
+"различные зоны, чтобы оптимизировать свой рабочий процесс и достичь "
+"поставленных целей разработки."
+
+#: ../../source/editor/index.rst:15
+msgid "Workspace Management"
+msgstr "Управление рабочим пространством"
+
+#: ../../source/editor/index.rst:17
+msgid ""
+"The World Editor provides robust tools for managing your workspace, "
+"allowing users to tailor it to their specific needs. Whether you're "
+"optimizing your layout, adding or removing widgets, adjusting sizes, or "
+"configuring panel arrangements, the Workspace Management feature offers "
+"flexibility and customization."
+msgstr ""
+"World Editor предоставляет надёжные инструменты для управления вашим "
+"рабочим пространством, позволяя пользователям настраивать его под свои "
+"конкретные потребности. Оптимизируете ли вы свой макет, добавляете или "
+"удаляете виджеты, регулируете размеры или настраиваете расположение "
+"панелей — функция управления рабочим пространством обеспечивает гибкость "
+"и индивидуальную настройку."
+
+#: ../../source/editor/index.rst:20
+msgid ""
+"**Changing Workspaces:** Users can seamlessly switch between different "
+"workspaces based on their tasks or preferences. Each workspace "
+"configuration is designed to enhance specific workflows, ensuring a "
+"dynamic and efficient development environment."
+msgstr ""
+"**Смена рабочих пространств:** Пользователи могут легко переключаться "
+"между различными рабочими пространствами в зависимости от своих задач или"
+" предпочтений. Каждая конфигурация рабочего пространства разработана для "
+"улучшения конкретных рабочих процессов, обеспечивая динамичную и "
+"эффективную среду разработки."
+
+#: ../../source/editor/index.rst:24
+msgid ""
+"**Customizing Widgets:** Add, remove, or rearrange widgets within the "
+"workspace to create a setup that suits your workflow. The ability to "
+"customize widgets empowers users to prioritize essential tools and "
+"information, promoting a personalized and productive experience."
+msgstr ""
+"**Настройка виджетов:** Добавляйте, удаляйте или переставляйте виджеты в "
+"рабочем пространстве, чтобы создать конфигурацию, соответствующую вашему "
+"рабочему процессу. Возможность настройки виджетов позволяет пользователям"
+" расставлять приоритеты в отношении основных инструментов и информации, "
+"способствуя персонализированному и продуктивному опыту."
+
+#: ../../source/editor/index.rst:28
+msgid ""
+"**Saving and Loading Workspaces:** The World Editor allows you to save "
+"your custom workspace configurations to the disk. This feature is "
+"beneficial for users who have tailored their workspace to specific "
+"project requirements or have found an optimal arrangement for their "
+"workflow. Load saved workspaces at any time to maintain a consistent and "
+"familiar environment."
+msgstr ""
+"**Сохранение и загрузка рабочих пространств:** World Editor позволяет"
+" сохранять на диск ваши пользовательские конфигурации рабочего "
+"пространства. Эта функция полезна для пользователей, которые адаптировали"
+" своё рабочее пространство под конкретные требования проекта или нашли "
+"оптимальное расположение для своего рабочего процесса. Загружайте "
+"сохранённые рабочие пространства в любое время, чтобы поддерживать "
+"последовательную и привычную среду."
+
+#: ../../source/editor/index.rst:33
+msgid "To manage your workspace:"
+msgstr "Для управления вашим рабочим пространством:"
+
+#: ../../source/editor/index.rst:35
+msgid ""
+"Navigate to the **Window > Workspace** menu or a dedicated workspace "
+"management interface."
+msgstr ""
+"Перейдите в меню **Окно > Рабочее пространство** или в специальный "
+"интерфейс управления рабочими пространствами."
+
+#: ../../source/editor/index.rst:36
+msgid "Explore options to change, customize, save, and load workspaces."
+msgstr ""
+"Изучите возможности изменения, настройки, сохранения и загрузки рабочих "
+"пространств."
+
+#: ../../source/editor/index.rst:40
+msgid "Main Areas"
+msgstr "Основные области"
+
+#: ../../source/editor/index.rst:42
+msgid "Workspace"
+msgstr "Рабочее пространство"
+
+#: ../../source/editor/index.rst:46
+msgid "The main screen is divided into several key areas:"
+msgstr "Главный экран разделён на несколько ключевых областей:"
+
+#: ../../source/editor/index.rst:48
+msgid ""
+":doc:`viewport`: The viewport is the primary working area where you can "
+"view and manipulate project content. This is where you'll spend most of "
+"your time interacting with project assets."
+msgstr ""
+":doc:`viewport` (область просмотра): Это основная рабочая область, где вы"
+" можете просматривать содержимое проекта и манипулировать им. Здесь вы "
+"будете проводить большую часть времени, взаимодействуя с ресурсами "
+"проекта."
+
+#: ../../source/editor/index.rst:52
+msgid ""
+":doc:`properties`: The properties panel, often located on the right side "
+"of the screen, displays detailed information and settings for selected "
+"project elements. You can use this panel to adjust properties and "
+"configurations."
+msgstr ""
+":doc:`properties` (панель свойств): Панель свойств, часто расположенная в"
+" правой части экрана, отображает подробную информацию и настройки для "
+"выбранных элементов проекта. Вы можете использовать эту панель для "
+"настройки свойств и конфигураций."
+
+#: ../../source/editor/index.rst:56
+msgid ""
+":doc:`content`: This area houses the actual content of your project. It "
+"could be your code, design elements, documents, or any other project-"
+"specific data. You can organize and manage your content from this "
+"section."
+msgstr ""
+":doc:`content` (область контента): Эта область содержит фактическое "
+"содержимое вашего проекта. Это может быть ваш код, элементы дизайна, "
+"документы или любые другие данные, специфичные для проекта. Вы можете "
+"организовывать и управлять вашим контентом из этого раздела."
+
+#: ../../source/editor/index.rst:61
+msgid ""
+":doc:`hierarchy`: The hierarchy panel provides an overview of the "
+"structure and organization of your project. It displays a tree-like "
+"representation of project elements, allowing you to navigate and access "
+"different parts of your project efficiently."
+msgstr ""
+":doc:`hierarchy` (панель иерархии): Панель иерархии предоставляет обзор "
+"структуры и организации вашего проекта. Она отображает древовидное "
+"представление элементов проекта, позволяя вам эффективно перемещаться и "
+"получать доступ к различным частям вашего проекта."
+
+#: ../../source/editor/index.rst:65
+msgid ""
+"Remember that the specific features and functionalities within each of "
+"these areas may vary depending on your project's nature and the software "
+"or platform you're using. Refer to the corresponding sections in this "
+"documentation for more detailed information on each area's functionality."
+msgstr ""
+"Помните, что конкретные функции и возможности в каждой из этих областей "
+"могут различаться в зависимости от характера вашего проекта и "
+"используемого программного обеспечения или платформы. Обратитесь к "
+"соответствующим разделам этой документации для получения более подробной "
+"информации о функциональности каждой области."
+
+#: ../../source/editor/index.rst:68
+msgid "Editor Capabilities"
+msgstr "Возможности редактора"
+
+#: ../../source/editor/index.rst:70
+msgid ""
+"Explore the documentation sections below to learn more about all "
+"components of the user interface and how to make the most of them in your"
+" projects."
+msgstr ""
+"Изучите разделы документации ниже, чтобы узнать больше обо всех "
+"компонентах пользовательского интерфейса и о том, как максимально "
+"эффективно использовать их в ваших проектах."
+

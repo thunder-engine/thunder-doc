@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/animator.rst:4
+msgid "Animator"
+msgstr ""
+
+#: ../../source/reference/animator.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/animator.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/animator.rst:13
+msgid ""
+"The animation controller allows to control different animation states "
+"from AnimationStateMachine assets. To use any animations in the Thunder "
+"Engine the Animator must be attached to a root Actor in the hierarchy. "
+"The animation controller processes an AnimationStateMachine resource "
+"type. The animation controller can use parametric values to decide when "
+"transition between states must happen."
+msgstr ""
+
+#: ../../source/reference/animator.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/animator.rst:23
+#: ../../source/reference/animator.rst:25
+#: ../../source/reference/animator.rst:27
+#: ../../source/reference/animator.rst:29
+#: ../../source/reference/animator.rst:31
+#: ../../source/reference/animator.rst:33
+#: ../../source/reference/animator.rst:35
+#: ../../source/reference/animator.rst:37
+#: ../../source/reference/animator.rst:39
+#: ../../source/reference/animator.rst:41
+#: ../../source/reference/animator.rst:43
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/animator.rst:23
+msgid ""
+":ref:`crossFade<api_Animator_e594cf72>` (const TString & state, float  "
+"duration)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:25
+msgid ":ref:`crossFadeHash<api_Animator_a037b15c>` (int  hash, float  duration)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:27
+msgid ":ref:`setBool<api_Animator_105afe73>` (const TString & name, bool  value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:29
+msgid ":ref:`setBoolHash<api_Animator_1e8340b5>` (int  hash, bool  value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:31
+msgid ""
+":ref:`setFloat<api_Animator_a9c7de80>` (const TString & name, float  "
+"value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:33
+msgid ":ref:`setFloatHash<api_Animator_03cd542a>` (int  hash, float  value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:35
+msgid ""
+":ref:`setInteger<api_Animator_1ec6ba84>` (const TString & name, int32_t  "
+"value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:37
+msgid ":ref:`setIntegerHash<api_Animator_c759a48e>` (int  hash, int32_t  value)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:39
+msgid ":ref:`setState<api_Animator_ed5b467a>` (const TString & state)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:41
+msgid ":ref:`setStateHash<api_Animator_945cd260>` (int  hash)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:43
+msgid ""
+":ref:`setStateMachine<api_Animator_d31f5e6b>` (AnimationStateMachine * "
+"machine)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:45
+msgid ":ref:`AnimationStateMachine<api_AnimationStateMachine>` *"
+msgstr ""
+
+#: ../../source/reference/animator.rst:45
+msgid ":ref:`stateMachine<api_Animator_ca9e08f4>` () const"
+msgstr ""
+
+#: ../../source/reference/animator.rst:53
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/animator.rst:55
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/animator.rst:60
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/animator.rst:64
+msgid ""
+"void **Animator::crossFade** (:ref:`TString<api_TString>` & *state*, "
+"float  *duration*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:66
+msgid ""
+"Smoothly changes current *state* using crossfade interpolation from the "
+"previous *state* to the new *state* with normalized *duration* time."
+msgstr ""
+
+#: ../../source/reference/animator.rst:72
+msgid "void **Animator::crossFadeHash** (int  *hash*, float  *duration*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:74
+msgid ""
+"Smoothly changes current state using crossfade interpolation from the "
+"previous state to the new state (using the *hash* of state) with "
+"normalized *duration* time."
+msgstr ""
+
+#: ../../source/reference/animator.rst:80
+msgid ""
+"void **Animator::setBool** (:ref:`TString<api_TString>` & *name*, bool  "
+"*value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:82
+msgid "Sets the new boolean *value* for the parameter with the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:88
+msgid "void **Animator::setBoolHash** (int  *hash*, bool  *value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:90
+msgid ""
+"Sets the new boolean *value* for the parameter using the *hash* of state "
+"as the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:96
+msgid ""
+"void **Animator::setFloat** (:ref:`TString<api_TString>` & *name*, float"
+"  *value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:98
+msgid "Sets the new floating-point *value* for the parameter with the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:104
+msgid "void **Animator::setFloatHash** (int  *hash*, float  *value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:106
+msgid ""
+"Sets the new floating-point *value* for the parameter using the *hash* of"
+" state as the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:112
+msgid ""
+"void **Animator::setInteger** (:ref:`TString<api_TString>` & *name*, "
+"int32_t  *value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:114
+msgid "Sets the new integer *value* for the parameter with the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:120
+msgid "void **Animator::setIntegerHash** (int  *hash*, int32_t  *value*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:122
+msgid ""
+"Sets the new integer *value* for the parameter using the *hash* of state "
+"as the name."
+msgstr ""
+
+#: ../../source/reference/animator.rst:128
+msgid "void **Animator::setState** (:ref:`TString<api_TString>` & *state*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:130
+msgid "Changes the current *state* of *state* machine immediately."
+msgstr ""
+
+#: ../../source/reference/animator.rst:136
+msgid "void **Animator::setStateHash** (int  *hash*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:138
+msgid ""
+"Changes the current state (using the *hash* of state) of state machine "
+"immediately."
+msgstr ""
+
+#: ../../source/reference/animator.rst:144
+msgid ""
+"void **Animator::setStateMachine** "
+"(:ref:`AnimationStateMachine<api_AnimationStateMachine>` * *machine*)"
+msgstr ""
+
+#: ../../source/reference/animator.rst:146
+msgid "Sets animation state *machine* which will be attached to this Animator."
+msgstr ""
+
+#: ../../source/reference/animator.rst:149
+msgid ""
+"**Note:** The state *machine* will move to the initial state "
+"automatically during the call of this function."
+msgstr ""
+
+#: ../../source/reference/animator.rst:152
+msgid "**See also** stateMachine()."
+msgstr ""
+
+#: ../../source/reference/animator.rst:158
+msgid ""
+":ref:`AnimationStateMachine<api_AnimationStateMachine>` * "
+"**Animator::stateMachine** () const"
+msgstr ""
+
+#: ../../source/reference/animator.rst:160
+msgid "Returns AnimationStateMachine resource attached to this Animator."
+msgstr ""
+
+#: ../../source/reference/animator.rst:162
+msgid "**See also** setStateMachine()."
+msgstr ""
+

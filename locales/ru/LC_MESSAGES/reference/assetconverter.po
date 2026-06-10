@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/assetconverter.rst:4
+msgid "AssetConverter"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:11
+#: ../../source/reference/assetconverter.rst:70
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:13
+msgid ""
+"The AssetConverter class is an abstract base class that provides an "
+"interface for converting assets in the engine. It's designed to be "
+"subclassed for specific asset types that require conversion or "
+"processing."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:15
+msgid "Example:"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:40
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:43
+msgid ":ref:`AssetConverter::ReturnCode<api_AssetConverter_ReturnCode>`"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:43
+msgid ""
+":ref:`convertFile<api_AssetConverter_fa372b91>` (AssetConverterSettings *"
+" settings)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:45
+msgid ":ref:`Actor<api_Actor>` *"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:45
+msgid ""
+":ref:`createActor<api_AssetConverter_4a0d6278>` (const "
+"AssetConverterSettings * settings, const TString & guid) const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:47
+#: ../../source/reference/assetconverter.rst:51
+#: ../../source/reference/assetconverter.rst:53
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:47
+msgid ""
+":ref:`createFromTemplate<api_AssetConverter_196ba302>` (const TString & "
+"destination)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:49
+msgid ":ref:`AssetConverterSettings<api_AssetConverterSettings>` *"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:49
+msgid ":ref:`createSettings<api_AssetConverter_b10327cd>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:51
+msgid ":ref:`init<api_AssetConverter_43276e0b>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:53
+msgid ""
+":ref:`renameAsset<api_AssetConverter_a3d6e207>` (AssetConverterSettings *"
+" settings, const TString & oldName, const TString & newName)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:55
+msgid "StringList"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:55
+msgid ":ref:`suffixes<api_AssetConverter_a7810ebd>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:57
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:57
+msgid ":ref:`templatePath<api_AssetConverter_361a5082>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:63
+msgid "Public Enums"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:67
+msgid "**enum AssetConverter::ReturnCode**"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:70
+msgid "Constant"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:70
+msgid "Value"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:72
+msgid "AssetConverter::Success"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:72
+msgid "0"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:72
+msgid "Conversion completed successfully"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:74
+msgid "AssetConverter::InternalError"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:74
+msgid "1"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:74
+msgid "An unexpected error occurred during conversion"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:76
+msgid "AssetConverter::Unsupported"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:76
+msgid "2"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:76
+msgid "The asset type is not supported by this converter"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:78
+msgid "AssetConverter::Skipped"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:78
+msgid "3"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:78
+msgid "Conversion was intentionally skipped"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:86
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:88
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:93
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:97
+msgid ""
+":ref:`AssetConverter::ReturnCode<api_AssetConverter::ReturnCode>`  "
+"**AssetConverter::convertFile** "
+"(:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:99
+msgid "Converts a file using the provided settings."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:105
+msgid ""
+":ref:`Actor<api_Actor>` * **AssetConverter::createActor** "
+"(:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*, "
+":ref:`TString<api_TString>` & *guid*) const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:107
+msgid ""
+"Creates an actor with appropriate component using this asset using "
+"*settings* and asset guid."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:113
+msgid ""
+"void **AssetConverter::createFromTemplate** (:ref:`TString<api_TString>` "
+"& *destination*)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:115
+msgid ""
+"Creates a new asset file from template and copies it by *destination* "
+"path."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:121
+msgid ""
+":ref:`AssetConverterSettings<api_AssetConverterSettings>` * "
+"**AssetConverter::createSettings** ()"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:123
+msgid "Creates a new settings object appropriate for this converter type."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:129
+msgid "void **AssetConverter::init** ()"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:131
+msgid ""
+"Initializes the converter. Can be overridden to perform any necessary "
+"setup."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:137
+msgid ""
+"void **AssetConverter::renameAsset** "
+"(:ref:`AssetConverterSettings<api_AssetConverterSettings>` * *settings*, "
+":ref:`TString<api_TString>` & *oldName*, :ref:`TString<api_TString>` & "
+"*newName*)"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:139
+msgid ""
+"Handles asset renaming to react on asset change the *oldName* to "
+"*newName* (e.g. for code renaming) for the particaular asset settings."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:145
+msgid "StringList **AssetConverter::suffixes** () const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:147
+msgid ""
+"Returns the list of file suffixes (extensions) this converter supports "
+"(e.g., [\"png\", \"jpg\"] for an image converter)."
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:153
+msgid ":ref:`TString<api_TString>`  **AssetConverter::templatePath** () const"
+msgstr ""
+
+#: ../../source/reference/assetconverter.rst:155
+msgid "Returns the path to a template file for creating new assets of this type."
+msgstr ""
+

@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/layout.rst:4
+msgid "Layout"
+msgstr ""
+
+#: ../../source/reference/layout.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/layout.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/layout.rst:13
+msgid ""
+"The Layout class is a base class used for managing the layout and "
+"positioning of widgets within a graphical user interface (GUI). It "
+"provides a structured way to organize UI elements, ensuring that they are"
+" placed efficiently and consistently on the screen. The Layout class is "
+"essential for developers who need to arrange multiple components (such as"
+" buttons, labels, text fields, etc.) in a clean and organized manner."
+msgstr ""
+
+#: ../../source/reference/layout.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/layout.rst:23 ../../source/reference/layout.rst:29
+#: ../../source/reference/layout.rst:31 ../../source/reference/layout.rst:37
+#: ../../source/reference/layout.rst:39 ../../source/reference/layout.rst:41
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/layout.rst:23
+msgid ":ref:`addTransform<api_Layout_7f1b0ae2>` (RectTransform * transform)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:25 ../../source/reference/layout.rst:27
+#: ../../source/reference/layout.rst:33 ../../source/reference/layout.rst:45
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/layout.rst:25
+msgid ":ref:`count<api_Layout_a6cf412e>` () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:27
+msgid ""
+":ref:`indexOf<api_Layout_1bda0f65>` (const RectTransform * transform) "
+"const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:29
+msgid ""
+":ref:`insertTransform<api_Layout_ca0734df>` (int  index, RectTransform * "
+"transform)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:31
+msgid ":ref:`invalidate<api_Layout_6e85b102>` ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:33
+msgid ":ref:`orientation<api_Layout_c416a930>` () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:35 ../../source/reference/layout.rst:47
+msgid ":ref:`RectTransform<api_RectTransform>` *"
+msgstr ""
+
+#: ../../source/reference/layout.rst:35
+msgid ":ref:`rectTransform<api_Layout_bfe59c23>` ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:37
+msgid ":ref:`removeTransform<api_Layout_9ead7051>` (RectTransform * transform)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:39
+msgid ":ref:`setOrientation<api_Layout_2ab60f41>` (int  orientation)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:41
+msgid ":ref:`setSpacing<api_Layout_92a7dc63>` (int  spacing)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:43
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/layout.rst:43
+msgid ":ref:`sizeHint<api_Layout_4e13b957>` ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:45
+msgid ":ref:`spacing<api_Layout_3a1fc469>` () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:47
+msgid ":ref:`transformAt<api_Layout_7d14a6be>` (int  index)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:55
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/layout.rst:57
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/layout.rst:62
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/layout.rst:66
+msgid ""
+"void **Layout::addTransform** (:ref:`RectTransform<api_RectTransform>` * "
+"*transform*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:68
+msgid "Adds a *transform* to the current layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:74
+msgid "int **Layout::count** () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:76
+msgid "Returns number of items in the layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:82
+msgid ""
+"int **Layout::indexOf** (:ref:`RectTransform<api_RectTransform>` * "
+"*transform*) const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:84
+msgid "Returns the index of the specified transform."
+msgstr ""
+
+#: ../../source/reference/layout.rst:90
+msgid ""
+"void **Layout::insertTransform** (int  *index*, "
+":ref:`RectTransform<api_RectTransform>` * *transform*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:92
+msgid ""
+"Inserts a *transform* at the specified index. If -1, the layout is "
+"appended to the end."
+msgstr ""
+
+#: ../../source/reference/layout.rst:98
+msgid "void **Layout::invalidate** ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:100
+msgid "Marks the layout as dirty, indicating that it needs to be recomputed."
+msgstr ""
+
+#: ../../source/reference/layout.rst:106
+msgid "int **Layout::orientation** () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:108
+msgid "Returns the layout orientation (Vertical or Horizontal)."
+msgstr ""
+
+#: ../../source/reference/layout.rst:110
+msgid "**See also** setOrientation()."
+msgstr ""
+
+#: ../../source/reference/layout.rst:116
+msgid ":ref:`RectTransform<api_RectTransform>` * **Layout::rectTransform** ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:118
+msgid ""
+"Returns the parent rect transform of this layout, or nullptr if this "
+"layout is not installed on any rect transform. If the layout is a sub-"
+"layout, this function returns the parent rect transform of the parent "
+"layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:124
+msgid ""
+"void **Layout::removeTransform** (:ref:`RectTransform<api_RectTransform>`"
+" * *transform*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:126
+msgid "Removes a *transform* from the current layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:132
+msgid "void **Layout::setOrientation** (int  *orientation*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:134
+msgid "Sets the layout orientation."
+msgstr ""
+
+#: ../../source/reference/layout.rst:136
+msgid "**See also** orientation()."
+msgstr ""
+
+#: ../../source/reference/layout.rst:142
+msgid "void **Layout::setSpacing** (int  *spacing*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:144
+msgid "Sets the *spacing* between items in the layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:146
+msgid "**See also** spacing()."
+msgstr ""
+
+#: ../../source/reference/layout.rst:152
+msgid ":ref:`Vector2<api_Vector2>`  **Layout::sizeHint** ()"
+msgstr ""
+
+#: ../../source/reference/layout.rst:154
+msgid "Returns the size hint for the layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:160
+msgid "int **Layout::spacing** () const"
+msgstr ""
+
+#: ../../source/reference/layout.rst:162
+msgid "Returns the spacing between items in the layout."
+msgstr ""
+
+#: ../../source/reference/layout.rst:164
+msgid "**See also** setSpacing()."
+msgstr ""
+
+#: ../../source/reference/layout.rst:170
+msgid ""
+":ref:`RectTransform<api_RectTransform>` * **Layout::transformAt** (int  "
+"*index*)"
+msgstr ""
+
+#: ../../source/reference/layout.rst:172
+msgid "Returns transform located at index."
+msgstr ""
+

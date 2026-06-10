@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/index.rst:4
+msgid "Rendering"
+msgstr "Рендеринг"
+
+#: ../../source/rendering/index.rst:6
+msgid ""
+"The Rendering module is a core part of Thunder Engine and is always "
+"included. It provides the complete visual pipeline for your game."
+msgstr ""
+"Модуль рендеринга является основной частью Thunder Engine и всегда включён. "
+"Он обеспечивает полный визуальный конвейер для вашей игры."
+
+#: ../../source/rendering/index.rst:8
+msgid ""
+"The Rendering module is responsible for transforming 3D scenes into 2D "
+"images displayed on the screen. It handles everything from camera "
+"management to material rendering, lighting, and post-processing effects."
+msgstr ""
+"Модуль рендеринга отвечает за преобразование 3D-сцен в 2D-изображения, "
+"отображаемые на экране. Он обрабатывает всё: от управления камерами до "
+"рендеринга материалов, освещения и пост-эффектов."
+
+#: 217source/rendering/index.rst:11
+msgid "Module Overview"
+msgstr "Обзор модуля"
+
+#: ../../source/rendering/index.rst:13
+msgid "The Rendering module provides:"
+msgstr "Модуль рендеринга предоставляет:"
+
+#: ../../source/rendering/index.rst:15
+msgid ""
+"**Camera** — perspective and orthographic cameras with customizable "
+"parameters"
+msgstr ""
+"**Камера** — перспективные и ортографические камеры с настраиваемыми параметрами"
+
+#: ../../source/rendering/index.rst:16
+msgid ""
+"**Material system** — PBR (Physically Based Rendering) materials with "
+"textures and shaders"
+msgstr ""
+"**Система материалов** — PBR-материалы (физически корректный рендеринг) с "
+"текстурами и шейдерами"
+
+#: ../../source/rendering/index.rst:17
+msgid "**Mesh rendering** — static and skinned meshes with LOD support"
+msgstr "**Рендеринг мешей** — статические и скелетные меши с поддержкой LOD"
+
+#: ../../source/rendering/index.rst:18
+msgid "**Lighting** — directional, point, and spot lights with shadows"
+msgstr "**Освещение** — направленные, точечные и прожекторные источники света с тенями"
+
+#: ../../source/rendering/index.rst:19
+msgid "**VFX** — visual effects for particles, decals, and other dynamic elements"
+msgstr "**VFX** — визуальные эффекты для частиц, декалей и других динамических элементов"
+
+#: ../../source/rendering/index.rst:20
+msgid "**Post-processing** — effects like bloom, depth of field, color grading"
+msgstr "**Пост-обработка** — эффекты, такие как свечение, глубина резкости, цветокоррекция"
+
+#: ../../source/rendering/index.rst:21
+msgid ""
+"**Render pipeline** — configurable rendering pipeline with forward and "
+"deferred paths"
+msgstr ""
+"**Конвейер рендеринга** — настраиваемый конвейер рендеринга с прямым и "
+"отложенным путями"

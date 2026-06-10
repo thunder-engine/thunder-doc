@@ -1,0 +1,588 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/matrix4.rst:4
+msgid "Matrix4"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:13
+msgid ""
+"Internally the data is stored as column-major format, so as to be optimal"
+" for passing to OpenGL functions, which expect column-major data."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:23
+msgid ":ref:`Matrix4<api_Matrix4_78d029b4>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:25
+msgid ":ref:`Matrix4<api_Matrix4_24fa6b53>` (const Matrix3 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:27
+msgid ""
+":ref:`Matrix4<api_Matrix4_3a18057d>` (const Vector3 & position, const "
+"Quaternion & rotation, const Vector3 & scale)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:29 ../../source/reference/matrix4.rst:83
+#: ../../source/reference/matrix4.rst:85
+msgid "areal"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:29
+msgid ":ref:`determinant<api_Matrix4_39d02f61>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:31 ../../source/reference/matrix4.rst:35
+#: ../../source/reference/matrix4.rst:41 ../../source/reference/matrix4.rst:43
+#: ../../source/reference/matrix4.rst:45 ../../source/reference/matrix4.rst:49
+#: ../../source/reference/matrix4.rst:51 ../../source/reference/matrix4.rst:55
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:31
+msgid ""
+":ref:`direction<api_Matrix4_8b4a93e6>` (const Vector3 & direction, const "
+"Vector3 & up)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:33 ../../source/reference/matrix4.rst:39
+#: ../../source/reference/matrix4.rst:63
+msgid ":ref:`Vector3<api_Vector3>`"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:33
+msgid ":ref:`euler<api_Matrix4_418706cb>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:35
+msgid ":ref:`identity<api_Matrix4_4ced2865>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:37 ../../source/reference/matrix4.rst:53
+#: ../../source/reference/matrix4.rst:59 ../../source/reference/matrix4.rst:61
+#: ../../source/reference/matrix4.rst:71 ../../source/reference/matrix4.rst:75
+#: ../../source/reference/matrix4.rst:96 ../../source/reference/matrix4.rst:98
+#: ../../source/reference/matrix4.rst:100
+msgid ":ref:`Matrix4<api_Matrix4>`"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:37
+msgid ":ref:`inverse<api_Matrix4_dc871fb9>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:39
+msgid ":ref:`position<api_Matrix4_98b1d02a>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:41
+msgid ":ref:`reflect<api_Matrix4_60389dc7>` (const Vector4 & plane)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:43
+msgid ":ref:`rotate<api_Matrix4_4c25a0b9>` (const Vector3 & angles)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:45
+msgid ":ref:`rotate<api_Matrix4_0a2793c4>` (const Vector3 & axis, areal  angle)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:47
+msgid ":ref:`Matrix3<api_Matrix3>`"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:47
+msgid ":ref:`rotation<api_Matrix4_19c78306>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:49
+msgid ":ref:`scale<api_Matrix4_de1493b6>` (const Vector3 & vector)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:51
+msgid ":ref:`translate<api_Matrix4_269f407d>` (const Vector3 & vector)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:53
+msgid ":ref:`transpose<api_Matrix4_14f3b758>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:55
+msgid ":ref:`zero<api_Matrix4_732cba5d>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:57 ../../source/reference/matrix4.rst:81
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:57
+msgid ":ref:`operator!=<api_Matrix4_f10e97d2>` (const Matrix4 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:59
+msgid ":ref:`operator*<api_Matrix4_1724fc35>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:61
+msgid ":ref:`operator*<api_Matrix4_62edcb89>` (const Matrix4 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:63
+msgid ":ref:`operator*<api_Matrix4_27e3cb45>` (const Vector3 & vector) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:65
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:65
+msgid ":ref:`operator*<api_Matrix4_075af4d6>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:67 ../../source/reference/matrix4.rst:69
+#: ../../source/reference/matrix4.rst:73 ../../source/reference/matrix4.rst:77
+#: ../../source/reference/matrix4.rst:79
+msgid ":ref:`Matrix4<api_Matrix4>` &"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:67
+msgid ":ref:`operator*=<api_Matrix4_f4ed0765>` (areal  factor)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:69
+msgid ":ref:`operator*=<api_Matrix4_8c35d249>` (const Matrix4 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:71
+msgid ":ref:`operator+<api_Matrix4_45718ba3>` (const Matrix4 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:73
+msgid ":ref:`operator+=<api_Matrix4_2c608435>` (const Matrix4 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:75
+msgid ":ref:`operator-<api_Matrix4_6829dc4e>` (const Matrix4 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:77
+msgid ":ref:`operator-=<api_Matrix4_5f18b27d>` (const Matrix4 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:79
+msgid ":ref:`operator=<api_Matrix4_f6ca3d24>` (const Matrix4 & value)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:81
+msgid ":ref:`operator==<api_Matrix4_a486e091>` (const Matrix4 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:83
+msgid ":ref:`operator[]<api_Matrix4_bef6230c>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:85
+msgid ":ref:`operator[]<api_Matrix4_a8950cd1>` (int  i) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:93
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:96
+msgid ""
+":ref:`lookAt<api_Matrix4_fb4815da>` (const Vector3 & eye, const Vector3 &"
+" target, const Vector3 & up)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:98
+msgid ""
+":ref:`ortho<api_Matrix4_b05738ca>` (areal  left, areal  right, areal  "
+"bottom, areal  top, areal  znear, areal  zfar)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:100
+msgid ""
+":ref:`perspective<api_Matrix4_0946d32e>` (areal  fov, areal  aspect, "
+"areal  znear, areal  zfar)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:106
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:110
+msgid "**Matrix4::Matrix4** ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:112
+msgid "Constructs an identity matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:118
+msgid "**Matrix4::Matrix4** (:ref:`Matrix3<api_Matrix3>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:120
+msgid "Constructs a transform *matrix* with rotation matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:126
+msgid ""
+"**Matrix4::Matrix4** (:ref:`Vector3<api_Vector3>` & *position*, "
+":ref:`Quaternion<api_Quaternion>` & *rotation*, "
+":ref:`Vector3<api_Vector3>` & *scale*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:128
+msgid "Constructs matrix by given position, *rotation* and scale."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:134
+msgid "areal **Matrix4::determinant** () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:136
+msgid "Returns the matrix determinant."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:142
+msgid ""
+"void **Matrix4::direction** (:ref:`Vector3<api_Vector3>` & *direction*, "
+":ref:`Vector3<api_Vector3>` & *up*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:144
+msgid "Creates a rotation matrix based on *direction* and *up* vectors."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:150
+msgid ":ref:`Vector3<api_Vector3>`  **Matrix4::euler** ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:152
+msgid ""
+"Returns an Euler angles represented by Vector3(pitch, yaw, roll) in "
+"rotation degrees."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:158
+msgid "void **Matrix4::identity** ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:160
+msgid "Resets this matrix to an identity matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:166
+msgid ":ref:`Matrix4<api_Matrix4>`  **Matrix4::inverse** () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:168
+msgid "Returns an inverted copy of this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:174
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::lookAt** "
+"(:ref:`Vector3<api_Vector3>` & *eye*, :ref:`Vector3<api_Vector3>` & "
+"*target*, :ref:`Vector3<api_Vector3>` & *up*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:176
+msgid ""
+"Creates a transformation matrix that corresponds to a camera viewing the "
+"*target* from the source. Receiving *eye* point, a *target* point, and an"
+" *up* vector."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:182
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::ortho** (areal  *left*, areal  "
+"*right*, areal  *bottom*, areal  *top*, areal  *znear*, areal  *zfar*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:184
+msgid ""
+"Creates an orthogonal projection matrix. Creates a view showing the area "
+"between left, right, *top* and bottom, with *znear* and *zfar* set up the"
+" depth clipping planes."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:190
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::perspective** (areal  *fov*, "
+"areal  *aspect*, areal  *znear*, areal  *zfar*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:192
+msgid ""
+"Creates a perspective projection matrix. *fov* is the vertical field-of-"
+"view in degrees of the perspective matrix, *aspect* is the *aspect* ratio"
+" (width divided by height). *znear* and *zfar* set up the depth clipping "
+"planes."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:198
+msgid ":ref:`Vector3<api_Vector3>`  **Matrix4::position** () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:200
+msgid "Returns position component of the matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:206
+msgid "void **Matrix4::reflect** (:ref:`Vector4<api_Vector4>` & *plane*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:208
+msgid "Constructs a matrix that reflects the coordinate system about the plane."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:214
+msgid "void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:216
+msgid ""
+"Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw,"
+" roll) in degrees."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:222
+msgid ""
+"void **Matrix4::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  "
+"*angle*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:224
+msgid "Rotate this matrix around *axis* to *angle* in degrees."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:230
+msgid ":ref:`Matrix3<api_Matrix3>`  **Matrix4::rotation** () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:232
+msgid "Returns rotation matrix from this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:238
+msgid "void **Matrix4::scale** (:ref:`Vector3<api_Vector3>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:240
+msgid "Scales the coordinate system by vector."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:246
+msgid "void **Matrix4::translate** (:ref:`Vector3<api_Vector3>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:248
+msgid "Move the coordinate system to vector."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:254
+msgid ":ref:`Matrix4<api_Matrix4>`  **Matrix4::transpose** () const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:256
+msgid "Returns this matrix, transposed about its diagonal."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:262
+msgid "void **Matrix4::zero** ()"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:264
+msgid "Clear this matrix, with 0.0 value for all components."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:270
+msgid ""
+"bool **Matrix4::operator!=** (:ref:`Matrix4<api_Matrix4>` & *matrix*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:272
+msgid ""
+"Returns true if this *matrix* is NOT equal to given matrix; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:278
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** (areal  *factor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:280
+msgid "Returns the result of multiplying this matrix and the given factor."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:286
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::operator*** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:288
+#: ../../source/reference/matrix4.rst:322
+msgid "Returns the result of multiplying this *matrix* by the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:290
+msgid "Note that *matrix* multiplication is not commutative, i.e. a*b != b*a."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:296
+msgid ""
+":ref:`Vector3<api_Vector3>`  **Matrix4::operator*** "
+"(:ref:`Vector3<api_Vector3>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:298
+msgid "Returns the result of multiplying this matrix and the given 3D vector."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:304
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Matrix4::operator*** "
+"(:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:306
+msgid "Returns the result of multiplying this matrix and the given 4D vector."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:312
+msgid ":ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** (areal  *factor*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:314
+msgid "Multiplies all elements of this matrix by factor."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:320
+msgid ""
+":ref:`Matrix4<api_Matrix4>` & **Matrix4::operator*=** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:328
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::operator+** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:330
+msgid "Returns the sum of this *matrix* and the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:336
+msgid ""
+":ref:`Matrix4<api_Matrix4>` & **Matrix4::operator+=** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:338
+msgid "Adds the contents of *matrix* to this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:344
+msgid ""
+":ref:`Matrix4<api_Matrix4>`  **Matrix4::operator-** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:346
+msgid "Returns the difference of this *matrix* and the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:352
+msgid ""
+":ref:`Matrix4<api_Matrix4>` & **Matrix4::operator-=** "
+"(:ref:`Matrix4<api_Matrix4>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:354
+msgid "Subtracts the contents of *matrix* from this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:360
+msgid ""
+":ref:`Matrix4<api_Matrix4>` & **Matrix4::operator=** "
+"(:ref:`Matrix4<api_Matrix4>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:362
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:368
+msgid ""
+"bool **Matrix4::operator==** (:ref:`Matrix4<api_Matrix4>` & *matrix*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:370
+msgid ""
+"Returns true if this *matrix* is equal to given matrix; otherwise returns"
+" false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:376
+msgid "areal **Matrix4::operator[]** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:378
+msgid ""
+"Returns the component of the matrix at index position *i* as a modifiable"
+" reference. *i* must be a valid index position in the matrix (i.e., 0 <= "
+"*i* < 16). Data is stored as column-major format so this function "
+"retrieving data from rows in colmns."
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:382
+msgid "areal **Matrix4::operator[]** (int  *i*) const"
+msgstr ""
+
+#: ../../source/reference/matrix4.rst:384
+msgid ""
+"Returns the component of the matrix at index position. *i* must be a "
+"valid index position in the matrix (i.e., 0 <= *i* < 16). Data is stored "
+"as column-major format so this function retrieving data from rows in "
+"colmns."
+msgstr ""
+

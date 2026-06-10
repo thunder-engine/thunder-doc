@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/basics/install.rst:4
+msgid "Install Thunder Engine"
+msgstr "Установка Thunder Engine"
+
+#: ../../source/basics/install.rst:6
+msgid ""
+"Thunder Engine consists of a set of frameworks and tools. Thunder Engine "
+"has a modular structure so developers are able to choose the exact "
+"modules they need."
+msgstr ""
+"Thunder Engine состоит из набора фреймворков и инструментов. Thunder Engine "
+"имеет модульную структуру, поэтому разработчики могут выбирать именно те "
+"модули, которые им нужны."
+
+#: ../../source/basics/install.rst:8
+msgid "Thunder Engine can be installed by the two ways:"
+msgstr "Thunder Engine можно установить двумя способами:"
+
+#: ../../source/basics/install.rst:10
+msgid "Using Releases page (Preferable)"
+msgstr "Используя страницу Релизов (предпочтительно)"
+
+#: ../../source/basics/install.rst:12
+msgid ""
+"To download latest release please follow `this link <https://github.com"
+"/thunder-engine/thunder/releases>`_"
+msgstr ""
+"Чтобы загрузить последний релиз, перейдите по `этой ссылке <https://github.com"
+"/thunder-engine/thunder/releases>`_"
+
+#: ../../source/basics/install.rst:16
+msgid "Building engine from the source"
+msgstr "Сборка движка из исходных кодов"
+
+#: ../../source/basics/install.rst:19
+msgid "Getting Source Code"
+msgstr "Получение исходного кода"
+
+#: ../../source/basics/install.rst:21
+msgid ""
+"At this moment Thunder Engine source code hosted at https://github.com"
+"/thunder-engine/thunder and can be obtained by the several ways:"
+msgstr ""
+"На данный момент исходный код Thunder Engine размещён по адресу https://github.com"
+"/thunder-engine/thunder и может быть получен несколькими способами:"
+
+#: ../../source/basics/install.rst:23
+msgid "To get full developer repository please use Git utility"
+msgstr "Чтобы получить полный репозиторий для разработчика, используйте утилиту Git"
+
+#: ../../source/basics/install.rst:29
+msgid "Or using official GitHub utility https://desktop.github.com/"
+msgstr "Или используя официальную утилиту GitHub https://desktop.github.com/"
+
+#: ../../source/basics/install.rst:31
+msgid ""
+"To get stable release please use `Releases page <https://github.com"
+"/thunder-engine/thunder/releases>`_"
+msgstr ""
+"Чтобы получить стабильный релиз, используйте `страницу Релизов <https://github.com"
+"/thunder-engine/thunder/releases>`_"
+
+#: ../../source/basics/install.rst:33
+msgid ""
+"To get latest developer snapshot please use this `link "
+"<https://github.com/thunder-engine/thunder/archive/master.zip>`_"
+msgstr ""
+"Чтобы получить последний снимок для разработчика, используйте эту `ссылку "
+"<https://github.com/thunder-engine/thunder/archive/master.zip>`_"
+
+#: ../../source/basics/install.rst:38
+msgid "Building for Windows"
+msgstr "Сборка для Windows"
+
+#: ../../source/basics/install.rst:40
+msgid ""
+"To build Thunder Engine from source on Windows you would need to set up "
+"an additional environment:"
+msgstr ""
+"Для сборки Thunder Engine из исходных кодов в Windows вам потребуется настроить "
+"дополнительное окружение:"
+
+#: ../../source/basics/install.rst:41
+msgid ""
+"Microsoft Visual Studio 2022 or higher (You can download `Community "
+"Edition <https://visualstudio.microsoft.com/thank-you-downloading-visual-"
+"studio/?sku=Community&rel=15#>`_ version for free )"
+msgstr ""
+"Microsoft Visual Studio 2022 или выше (вы можете бесплатно загрузить версию "
+"`Community Edition <https://visualstudio.microsoft.com/thank-you-downloading-visual-"
+"studio/?sku=Community&rel=15#>`_)"
+
+#: ../../source/basics/install.rst:42
+msgid "Qt 5.15.2 and QtCreator 4.9.2"
+msgstr "Qt 5.15.2 и QtCreator 4.9.2"
+
+#: ../../source/basics/install.rst:44
+msgid ""
+"After setup, all required software, open \"Command Prompt\" console go to"
+" the directory with Thunder Engine source code and run sequence of "
+"commands below."
+msgstr ""
+"После установки всего необходимого программного обеспечения откройте консоль "
+"\"Командная строка\", перейдите в каталог с исходным кодом Thunder Engine и "
+"выполните приведённую ниже последовательность команд."
+
+#: ../../source/basics/install.rst:46
+msgid "Add Qt framework to PATH. For example:"
+msgstr "Добавьте Qt framework в PATH. Например:"
+
+#: ../../source/basics/install.rst:52
+msgid "Run build procedure"
+msgstr "Запустите процедуру сборки"
+
+#: ../../source/basics/install.rst:64
+msgid "Building for OS X"
+msgstr "Сборка для OS X"
+
+#: 217source/basics/install.rst:66
+msgid "Install latest XCode"
+msgstr "Установите последнюю версию XCode"
+
+#: ../../source/basics/install.rst:68
+msgid ""
+"Open a Console application go to the directory with Thunder Engine source"
+" code"
+msgstr "Откройте приложение Консоль, перейдите в каталог с исходным кодом Thunder Engine"
+
+#: ../../source/basics/install.rst:70
+msgid "Install `homebrew <https://docs.brew.sh/Installation>`_"
+msgstr "Установите `homebrew <https://docs.brew.sh/Installation>`_"
+
+#: ../../source/basics/install.rst:72
+msgid "Build Thunder Engine by the sequence of commands below."
+msgstr "Соберите Thunder Engine, выполнив приведённую ниже последовательность команд."
+
+#: ../../source/basics/install.rst:89
+msgid ""
+"(Optional) To build Thunder Engine for **iOS** and **tvOS** please run "
+"additional commands below."
+msgstr ""
+"(Опционально) Чтобы собрать Thunder Engine для **iOS** и **tvOS**, выполните "
+"дополнительные команды ниже."
+
+#: ../../source/basics/install.rst:102
+msgid "Building for Linux"
+msgstr "Сборка для Linux"
+
+#: ../../source/basics/install.rst:104
+msgid ""
+"Open Console go to the directory with Thunder Engine source code and run "
+"the sequence of commands below."
+msgstr ""
+"Откройте консоль, перейдите в каталог с исходным кодом Thunder Engine и "
+"выполните приведённую ниже последовательность команд."

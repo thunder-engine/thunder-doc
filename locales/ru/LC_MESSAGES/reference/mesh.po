@@ -1,0 +1,609 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/mesh.rst:4
+msgid "Mesh"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:21 ../../source/reference/mesh.rst:27
+#: ../../source/reference/mesh.rst:43 ../../source/reference/mesh.rst:47
+#: ../../source/reference/mesh.rst:49 ../../source/reference/mesh.rst:51
+#: ../../source/reference/mesh.rst:53 ../../source/reference/mesh.rst:55
+#: ../../source/reference/mesh.rst:57 ../../source/reference/mesh.rst:59
+#: ../../source/reference/mesh.rst:61 ../../source/reference/mesh.rst:63
+#: ../../source/reference/mesh.rst:65 ../../source/reference/mesh.rst:67
+#: ../../source/reference/mesh.rst:69 ../../source/reference/mesh.rst:71
+#: ../../source/reference/mesh.rst:73 ../../source/reference/mesh.rst:75
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:21
+msgid ""
+":ref:`batchMesh<api_Mesh_0e2437d5>` (Mesh & mesh, const Matrix4 * "
+"transform = nullptr)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:23 ../../source/reference/mesh.rst:29
+#: ../../source/reference/mesh.rst:87
+msgid "Vector4Vector"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:23
+msgid ":ref:`bones<api_Mesh_517ec302>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:25
+msgid ":ref:`AABBox<api_AABBox>`"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:25
+msgid ":ref:`bound<api_Mesh_95a630b7>` () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:27
+msgid ":ref:`clear<api_Mesh_01b47ce5>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:29
+msgid ":ref:`colors<api_Mesh_870934f5>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:31
+msgid ":ref:`Material<api_Material>` *"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:31
+msgid ":ref:`defaultMaterial<api_Mesh_f81ac026>` (int  sub = 0) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:33 ../../source/reference/mesh.rst:35
+#: ../../source/reference/mesh.rst:77
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:33
+msgid ":ref:`indexCount<api_Mesh_7d4923ba>` (int  sub) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:35
+msgid ":ref:`indexStart<api_Mesh_ead5241f>` (int  sub) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:37
+msgid "IndexVector"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:37
+msgid ":ref:`indices<api_Mesh_859fca70>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:39 ../../source/reference/mesh.rst:41
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:39
+msgid ":ref:`isDynamic<api_Mesh_98c1e3fd>` () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:41
+msgid ":ref:`isEmpty<api_Mesh_f5ac9134>` () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:43
+msgid ":ref:`makeDynamic<api_Mesh_0e56b19d>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:45 ../../source/reference/mesh.rst:79
+#: ../../source/reference/mesh.rst:85
+msgid "Vector3Vector"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:45
+msgid ":ref:`normals<api_Mesh_f61742eb>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:47
+msgid ":ref:`recalcBounds<api_Mesh_bafe803c>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:49
+msgid ":ref:`recalcNormals<api_Mesh_50139fd4>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:51
+msgid ":ref:`recalcTangents<api_Mesh_2a8140bf>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:53
+msgid ":ref:`setBones<api_Mesh_87650c4b>` (const Vector4Vector & bones)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:55
+msgid ":ref:`setBound<api_Mesh_78b31c62>` (const AABBox & box)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:57
+msgid ":ref:`setColors<api_Mesh_9ad2368f>` (const Vector4Vector & colors)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:59
+msgid ""
+":ref:`setDefaultMaterial<api_Mesh_89b7fc5d>` (Material * material, int  "
+"sub = 0)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:61
+msgid ":ref:`setIndices<api_Mesh_ab7610fc>` (const IndexVector & indices)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:63
+msgid ":ref:`setNormals<api_Mesh_38471f50>` (const Vector3Vector & normals)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:65
+msgid ":ref:`setSubMesh<api_Mesh_59f03816>` (int  offset, int  sub)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:67
+msgid ":ref:`setTangents<api_Mesh_6ed0c7f3>` (const Vector3Vector & tangents)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:69
+msgid ":ref:`setUv0<api_Mesh_840526e3>` (const Vector2Vector & uv0)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:71
+msgid ":ref:`setUv1<api_Mesh_0b17826f>` (const Vector2Vector & uv1)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:73
+msgid ":ref:`setVertices<api_Mesh_3d24feb6>` (const Vector3Vector & vertices)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:75
+msgid ":ref:`setWeights<api_Mesh_1cb7a308>` (const Vector4Vector & weights)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:77
+msgid ":ref:`subMeshCount<api_Mesh_0f4d32a9>` () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:79
+msgid ":ref:`tangents<api_Mesh_a67b3f5d>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:81 ../../source/reference/mesh.rst:83
+msgid "Vector2Vector"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:81
+msgid ":ref:`uv0<api_Mesh_2e436057>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:83
+msgid ":ref:`uv1<api_Mesh_65b41f2c>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:85
+msgid ":ref:`vertices<api_Mesh_0c8adeb2>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:87
+msgid ":ref:`weights<api_Mesh_8eca2456>` ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:95
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:97
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:102
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:106
+msgid ""
+"void **Mesh::batchMesh** (:ref:`Mesh<api_Mesh>` & *mesh*, "
+":ref:`Matrix4<api_Matrix4>` * *transform* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:108
+msgid ""
+"Merges current with provided mesh. In the case of the transform, the "
+"matrix is not nullptr it will be applied to *mesh* before merging."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:114
+msgid "Vector4Vector **Mesh::bones** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:116
+msgid "Returns an array of bones for vertices for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:118
+msgid "**See also** setBones()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:124
+msgid ":ref:`AABBox<api_AABBox>`  **Mesh::bound** () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:126
+msgid "Returns bounding box for the Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:128
+msgid "**See also** setBound()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:134
+msgid "void **Mesh::clear** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:136
+msgid "Removes all mesh data."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:142
+msgid "Vector4Vector **Mesh::colors** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:144
+msgid "Returns an array of colors for vertices for the particular Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:146
+msgid "**See also** setColors()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:152
+msgid ""
+":ref:`Material<api_Material>` * **Mesh::defaultMaterial** (int  *sub* = "
+"0) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:154
+msgid "Returns a default material for the *sub* mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:156
+msgid "**See also** setDefaultMaterial()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:162
+msgid "int **Mesh::indexCount** (int  *sub*) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:164
+msgid "Returns index count for the *sub* mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:170
+msgid "int **Mesh::indexStart** (int  *sub*) const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:172
+msgid "Returns starting point index for the *sub* mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:178
+msgid "IndexVector **Mesh::indices** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:180
+msgid "Returns an array of mesh indices for the particular Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:182
+msgid "**See also** setIndices()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:188
+msgid "bool **Mesh::isDynamic** () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:190
+msgid ""
+"Returns true in case of mesh can by changed at the runtime; otherwise "
+"returns false."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:196
+msgid "bool **Mesh::isEmpty** () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:198
+msgid "Returns false if mesh structure is empty; otherwise returns true."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:204
+msgid "void **Mesh::makeDynamic** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:206
+msgid "Marks mesh as dynamic that means it's can be changed at the runtime."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:212
+msgid "Vector3Vector **Mesh::normals** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:214
+msgid "Returns an array of mesh normals for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:216
+msgid "**See also** setNormals()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:222
+msgid "void **Mesh::recalcBounds** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:224
+msgid "Generates bound box according new geometry."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:230
+msgid "void **Mesh::recalcNormals** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:232
+msgid "Recalculates normals of the Mesh from the triangles and vertices."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:238
+msgid "void **Mesh::recalcTangents** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:240
+msgid "Recalculates tangents of the Mesh from the triangles and UV's."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:246
+msgid "void **Mesh::setBones** (Vector4Vector & *bones*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:248
+msgid "Sets an array of *bones* for vertices for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:250
+msgid "**See also** bones()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:256
+msgid "void **Mesh::setBound** (:ref:`AABBox<api_AABBox>` & *box*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:258
+msgid "Sets new bounding *box* for the Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:260
+msgid "**See also** bound()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:266
+msgid "void **Mesh::setColors** (Vector4Vector & *colors*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:268
+msgid "Sets an array of *colors* for vertices for the particular Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:270
+msgid "**See also** colors()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:276
+msgid ""
+"void **Mesh::setDefaultMaterial** (:ref:`Material<api_Material>` * "
+"*material*, int  *sub* = 0)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:278
+msgid "Sets a default *material* for the *sub* mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:280
+msgid "**See also** defaultMaterial()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:286
+msgid "void **Mesh::setIndices** (IndexVector & *indices*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:288
+msgid "Sets an array of mesh *indices* for the particular Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:290
+msgid "**See also** indices()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:296
+msgid "void **Mesh::setNormals** (Vector3Vector & *normals*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:298
+msgid "Sets an array of mesh *normals* for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:300
+msgid "**See also** normals()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:306
+msgid "void **Mesh::setSubMesh** (int  *offset*, int  *sub*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:308
+msgid "Sets a base vertex *offset* for the *sub* mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:314
+msgid "void **Mesh::setTangents** (Vector3Vector & *tangents*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:316
+msgid "Sets an array of mesh *tangents* for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:318
+msgid "**See also** tangents()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:324
+msgid "void **Mesh::setUv0** (Vector2Vector & *uv0*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:326
+msgid ""
+"Sets an array of mesh *uv0* (base) texture coordinates for the particular"
+" Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:328
+msgid "**See also** uv0()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:334
+msgid "void **Mesh::setUv1** (Vector2Vector & *uv1*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:336
+msgid "Sets an array of mesh *uv1* texture coordinates for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:338
+msgid "**See also** uv1()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:344
+msgid "void **Mesh::setVertices** (Vector3Vector & *vertices*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:346
+msgid "Sets an array of mesh *vertices* for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:348
+msgid "**See also** vertices()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:354
+msgid "void **Mesh::setWeights** (Vector4Vector & *weights*)"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:356
+msgid "Sets an array of bone *weights* for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:358
+msgid "**See also** weights()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:364
+msgid "int **Mesh::subMeshCount** () const"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:366
+msgid "Returns the number of sub-meshes inside the Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:372
+msgid "Vector3Vector **Mesh::tangents** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:374
+msgid "Returns an array of mesh tangents for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:376
+msgid "**See also** setTangents()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:382
+msgid "Vector2Vector **Mesh::uv0** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:384
+msgid ""
+"Returns an array of mesh uv0 (base) texture coordinates for the "
+"particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:386
+msgid "**See also** setUv0()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:392
+msgid "Vector2Vector **Mesh::uv1** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:394
+msgid "Returns an array of mesh uv1 texture coordinates for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:396
+msgid "**See also** setUv1()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:402
+msgid "Vector3Vector **Mesh::vertices** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:404
+msgid "Returns an array of mesh vertices for the particular Lod."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:406
+msgid "**See also** setVertices()."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:412
+msgid "Vector4Vector **Mesh::weights** ()"
+msgstr ""
+
+#: ../../source/reference/mesh.rst:414
+msgid "Returns an array of bone weights for the particular Mesh."
+msgstr ""
+
+#: ../../source/reference/mesh.rst:416
+msgid "**See also** setWeights()."
+msgstr ""
+

@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/bone.rst:4
+msgid "Bone"
+msgstr ""
+
+#: ../../source/reference/bone.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/bone.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/bone.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/bone.rst:21
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/bone.rst:21
+msgid ":ref:`name<api_Bone_b15cfe2d>` () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:23 ../../source/reference/bone.rst:25
+#: ../../source/reference/bone.rst:27
+msgid "const :ref:`Vector3<api_Vector3>` &"
+msgstr ""
+
+#: ../../source/reference/bone.rst:23
+msgid ":ref:`position<api_Bone_5014329e>` () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:25
+msgid ":ref:`rotation<api_Bone_98d5e247>` () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:27
+msgid ":ref:`scale<api_Bone_df2634be>` () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:29 ../../source/reference/bone.rst:31
+#: ../../source/reference/bone.rst:33 ../../source/reference/bone.rst:35
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/bone.rst:29
+msgid ":ref:`setName<api_Bone_cf1a74b2>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:31
+msgid ":ref:`setPosition<api_Bone_0fa39d48>` (const Vector3  position)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:33
+msgid ":ref:`setRotation<api_Bone_906475f1>` (const Vector3  rotation)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:35
+msgid ":ref:`setScale<api_Bone_f73b2059>` (const Vector3  scale)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:37
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/bone.rst:37
+msgid ":ref:`operator==<api_Bone_17e32b40>` (const Bone & bone) const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:45
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/bone.rst:47
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/bone.rst:52
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/bone.rst:56
+msgid ":ref:`TString<api_TString>`  **Bone::name** () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:58
+msgid "Returns the name of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:60
+msgid "**See also** setName()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:66
+msgid "const :ref:`Vector3<api_Vector3>` & **Bone::position** () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:68
+msgid "Gets the position of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:70
+msgid "**See also** setPosition()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:76
+msgid "const :ref:`Vector3<api_Vector3>` & **Bone::rotation** () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:78
+msgid "Gets the rotation of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:80
+msgid "**See also** setRotation()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:86
+msgid "const :ref:`Vector3<api_Vector3>` & **Bone::scale** () const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:88
+msgid "Gets the scale of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:90
+msgid "**See also** setScale()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:96
+msgid "void **Bone::setName** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:98
+msgid "Sets the *name* of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:100
+msgid "**See also** name()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:106
+msgid "void **Bone::setPosition** (:ref:`Vector3<api_Vector3>`  *position*)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:108
+msgid "Sets the *position* of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:110
+msgid "**See also** position()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:116
+msgid "void **Bone::setRotation** (:ref:`Vector3<api_Vector3>`  *rotation*)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:118
+msgid "Sets the *rotation* of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:120
+msgid "**See also** rotation()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:126
+msgid "void **Bone::setScale** (:ref:`Vector3<api_Vector3>`  *scale*)"
+msgstr ""
+
+#: ../../source/reference/bone.rst:128
+msgid "Sets the *scale* of the bone."
+msgstr ""
+
+#: ../../source/reference/bone.rst:130
+msgid "**See also** scale()."
+msgstr ""
+
+#: ../../source/reference/bone.rst:136
+msgid "bool **Bone::operator==** (:ref:`Bone<api_Bone>` & *bone*) const"
+msgstr ""
+
+#: ../../source/reference/bone.rst:138
+msgid ""
+"Overloaded equality operator for comparing two *bone* objects. Returns "
+"true if the bones are equal, false otherwise."
+msgstr ""
+

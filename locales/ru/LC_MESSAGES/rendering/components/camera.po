@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 16:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/rendering/components/camera.rst:4
+msgid "Camera"
+msgstr "Камера"
+
+#: ../../source/rendering/components/camera.rst:6
+msgid ""
+"**Camera** is a component that determines how the scene is displayed on "
+"the screen. It defines the viewpoint, projection, and visual parameters. "
+"The camera always renders directly to the screen."
+msgstr ""
+"**Камера** — это компонент, который определяет, как сцена отображается на"
+" экране. Она определяет точку обзора, проекцию и визуальные параметры. "
+"Камера всегда выполняет рендеринг непосредственно на экран."
+
+#: ../../source/rendering/components/camera.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/rendering/components/camera.rst:11
+msgid ""
+"The Camera component is the foundation of Thunder Engine's visual system."
+" It transforms the 3D scene into a 2D image, defining:"
+msgstr ""
+"Компонент Camera является основой визуальной системы Thunder Engine. Он "
+"преобразует 3D-сцену в 2D-изображение, определяя:"
+
+#: ../../source/rendering/components/camera.rst:13
+msgid ""
+"**Position and orientation** — where the camera is looking from and where"
+" it's looking at (defined via the `transform` component)"
+msgstr ""
+"**Положение и ориентация** — откуда камера смотрит и куда направлена "
+"(определяется через компонент `transform`)"
+
+#: ../../source/rendering/components/camera.rst:14
+msgid ""
+"**Projection** — perspective (3D games) or orthographic (2D games, "
+"interfaces)"
+msgstr ""
+"**Проекция** — перспективная (3D-игры) или ортографическая (2D-игры, "
+"интерфейсы)"
+
+#: ../../source/rendering/components/camera.rst:15
+msgid "**View parameters** — field of view, near and far clipping planes"
+msgstr "**Параметры обзора** — поле зрения, ближняя и дальняя плоскости отсечения"
+
+#: ../../source/rendering/components/camera.rst:16
+msgid "**Background color** — the color used to fill the screen before rendering"
+msgstr "**Цвет фона** — цвет, используемый для заполнения экрана перед рендерингом"
+
+#: ../../source/rendering/components/camera.rst:19
+#, fuzzy
+msgid ""
+"Multiple cameras can exist in a scene, but only one can be active at a "
+"time. The active camera is set via ``Camera::setCurrent()``."
+msgstr ""
+"В сцене может существовать несколько камер, но одновременно активна "
+"только одна. Активная камера устанавливается через "
+"``Engine::setMainCamera()``."
+
+#: ../../source/rendering/components/camera.rst:22
+msgid "Component Properties"
+msgstr "Свойства компонента"
+
+#: ../../source/rendering/components/camera.rst:24
+msgid "**fov** (float)"
+msgstr "**fov** (float)"
+
+#: ../../source/rendering/components/camera.rst:25
+msgid ""
+"Field of View in degrees for perspective projection. Determines how wide "
+"an angle the camera covers."
+msgstr ""
+"Поле зрения в градусах для перспективной проекции. Определяет, какой угол"
+" обзора охватывает камера."
+
+#: ../../source/rendering/components/camera.rst:28
+msgid "Typical values: 60° — 90°"
+msgstr "Типичные значения: 60° — 90°"
+
+#: ../../source/rendering/components/camera.rst:29
+msgid "Narrow angle (< 60°) creates a \"telescope\" effect"
+msgstr "Узкий угол (< 60°) создаёт эффект «телескопа»"
+
+#: ../../source/rendering/components/camera.rst:30
+msgid "Wide angle (> 90°) creates a \"fisheye\" effect"
+msgstr "Широкий угол (> 90°) создаёт эффект «рыбьего глаза»"
+
+#: ../../source/rendering/components/camera.rst:32
+msgid "Default: ``60.0``."
+msgstr "По умолчанию: ``60.0``."
+
+#: ../../source/rendering/components/camera.rst:35
+msgid "This property only affects rendering if ``orthographic = false``."
+msgstr "Это свойство влияет на рендеринг, только если ``orthographic = false``."
+
+#: ../../source/rendering/components/camera.rst:37
+msgid "**near** (float)"
+msgstr "**near** (float)"
+
+#: ../../source/rendering/components/camera.rst:38
+msgid "Near clipping plane. Objects closer than this distance are not rendered."
+msgstr "Ближняя плоскость отсечения. Объекты ближе этого расстояния не рендерятся."
+
+#: ../../source/rendering/components/camera.rst:40
+msgid "Too small a value may cause depth artifacts (z-fighting)"
+msgstr "Слишком маленькое значение может вызвать артефакты глубины (z-fighting)"
+
+#: ../../source/rendering/components/camera.rst:41
+msgid "Too large a value may \"cut off\" objects that are close to the camera"
+msgstr "Слишком большое значение может «обрезать» объекты, близкие к камере"
+
+#: ../../source/rendering/components/camera.rst:43
+msgid "Default: ``0.1``."
+msgstr "По умолчанию: ``0.1``."
+
+#: ../../source/rendering/components/camera.rst:45
+msgid "**far** (float)"
+msgstr "**far** (float)"
+
+#: ../../source/rendering/components/camera.rst:46
+msgid "Far clipping plane. Objects beyond this distance are not rendered."
+msgstr ""
+"Дальняя плоскость отсечения. Объекты дальше этого расстояния не "
+"рендерятся."
+
+#: ../../source/rendering/components/camera.rst:48
+msgid ""
+"Increasing this value improves visibility of distant objects but may "
+"reduce performance and depth buffer precision"
+msgstr ""
+"Увеличение этого значения улучшает видимость дальних объектов, но может "
+"снизить производительность и точность буфера глубины"
+
+#: ../../source/rendering/components/camera.rst:50
+msgid "Default: ``1000.0``."
+msgstr "По умолчанию: ``1000.0``."
+
+#: ../../source/rendering/components/camera.rst:52
+msgid "**size** (float)"
+msgstr "**size** (float)"
+
+#: ../../source/rendering/components/camera.rst:53
+msgid ""
+"Orthographic projection size. Determines how many units of the game world"
+" fit vertically."
+msgstr ""
+"Размер ортографической проекции. Определяет, сколько единиц игрового мира"
+" помещается по вертикали."
+
+#: ../../source/rendering/components/camera.rst:55
+msgid ""
+"With a value of ``5.0``, the visible vertical area will be 10 units (from"
+" -5 to +5)"
+msgstr ""
+"При значении ``5.0`` видимая вертикальная область составит 10 единиц (от "
+"-5 до +5)"
+
+#: ../../source/rendering/components/camera.rst:56
+msgid "Horizontal size depends on the screen's aspect ratio"
+msgstr "Горизонтальный размер зависит от соотношения сторон экрана"
+
+#: ../../source/rendering/components/camera.rst:58
+msgid "Default: ``5.0``."
+msgstr "По умолчанию: ``5.0``."
+
+#: ../../source/rendering/components/camera.rst:61
+msgid "This property only affects rendering if ``orthographic = true``."
+msgstr "Это свойство влияет на рендеринг, только если ``orthographic = true``."
+
+#: ../../source/rendering/components/camera.rst:63
+msgid "**focalDistance** (float)"
+msgstr "**focalDistance** (float)"
+
+#: ../../source/rendering/components/camera.rst:64
+msgid ""
+"Camera focus distance. Used for depth of field effects and other post-"
+"effects that depend on distance from the camera."
+msgstr ""
+"Дистанция фокуса камеры. Используется для эффектов глубины резкости и "
+"других постэффектов, зависящих от расстояния до камеры."
+
+#: ../../source/rendering/components/camera.rst:66
+msgid "Default: ``10.0``."
+msgstr "По умолчанию: ``10.0``."
+
+#: ../../source/rendering/components/camera.rst:68
+msgid "**backgroundColor** (Vector4)"
+msgstr "**backgroundColor** (Vector4)"
+
+#: ../../source/rendering/components/camera.rst:69
+msgid ""
+"The color used to fill the screen before rendering the scene. Components:"
+" R, G, B, A."
+msgstr ""
+"Цвет, используемый для заполнения экрана перед рендерингом сцены. "
+"Компоненты: R, G, B, A."
+
+#: ../../source/rendering/components/camera.rst:71
+msgid "Values range from ``0.0`` to ``1.0``"
+msgstr "Значения находятся в диапазоне от ``0.0`` до ``1.0``"
+
+#: ../../source/rendering/components/camera.rst:72
+msgid "Represented as a Color-picker in the editor"
+msgstr "В редакторе представлен в виде выбора цвета"
+
+#: ../../source/rendering/components/camera.rst:74
+msgid "Default: ``(0.1, 0.1, 0.15, 1.0)`` — dark gray."
+msgstr "По умолчанию: ``(0.1, 0.1, 0.15, 1.0)`` — тёмно-серый."
+
+#: ../../source/rendering/components/camera.rst:76
+msgid "**orthographic** (bool)"
+msgstr "**orthographic** (bool)"
+
+#: ../../source/rendering/components/camera.rst:77
+msgid "Determines the projection type:"
+msgstr "Определяет тип проекции:"
+
+#: ../../source/rendering/components/camera.rst:79
+msgid ""
+"``false`` — perspective projection. Objects appear smaller with distance."
+" Used in 3D games."
+msgstr ""
+"``false`` — перспективная проекция. Объекты выглядят меньше с "
+"расстоянием. Используется в 3D-играх."
+
+#: ../../source/rendering/components/camera.rst:80
+msgid ""
+"``true`` — orthographic projection. Object size does not depend on "
+"distance. Used in 2D games, UI, level editors."
+msgstr ""
+"``true`` — ортографическая проекция. Размер объекта не зависит от "
+"расстояния. Используется в 2D-играх, UI, редакторах уровней."
+
+#: ../../source/rendering/components/camera.rst:82
+msgid "Default: ``false`` (perspective)."
+msgstr "По умолчанию: ``false`` (перспективная)."
+
+#: ../../source/rendering/components/camera.rst:85
+msgid "Usage Examples"
+msgstr "Примеры использования"
+
+#: ../../source/rendering/components/camera.rst:87
+msgid "**Creating a Main 3D Camera**"
+msgstr "**Создание основной 3D-камеры**"
+
+#: ../../source/rendering/components/camera.rst:107
+msgid "**Creating a 2D Camera**"
+msgstr "**Создание 2D-камеры**"
+
+#: ../../source/rendering/components/camera.rst:125
+msgid "**2D Camera Following the Player**"
+msgstr "**2D-камера, следующая за игроком**"
+
+#: ../../source/rendering/components/camera.rst:159
+msgid "**Switching Projection Type During Gameplay**"
+msgstr "**Переключение типа проекции во время игры**"
+
+#: ../../source/rendering/components/camera.rst:177
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: ../../source/rendering/components/camera.rst:179
+msgid "**Clipping Plane Configuration**"
+msgstr "**Настройка плоскостей отсечения**"
+
+#: ../../source/rendering/components/camera.rst:180
+msgid "Set ``near`` as large as possible to avoid z-fighting (depth artifacts)"
+msgstr ""
+"Устанавливайте ``near`` как можно больше, чтобы избежать z-fighting "
+"(артефактов глубины)"
+
+#: ../../source/rendering/components/camera.rst:181
+msgid ""
+"Set ``far`` only to the necessary distance — too large a value reduces "
+"depth precision and performance"
+msgstr ""
+"Устанавливайте ``far`` только на необходимое расстояние — слишком большое"
+" значение снижает точность глубины и производительность"
+
+#: ../../source/rendering/components/camera.rst:182
+msgid ""
+"For 2D games, negative ``near`` values can be used so objects behind the "
+"camera are not clipped"
+msgstr ""
+"Для 2D-игр можно использовать отрицательные значения ``near``, чтобы "
+"объекты за камерой не отсекались"
+
+#: ../../source/rendering/components/camera.rst:184
+msgid "**Choosing Projection**"
+msgstr "**Выбор проекции**"
+
+#: ../../source/rendering/components/camera.rst:185
+msgid "**Perspective** (``orthographic = false``):"
+msgstr "**Перспективная** (``orthographic = false``):"
+
+#: ../../source/rendering/components/camera.rst:187
+msgid "3D games"
+msgstr "3D-игры"
+
+#: ../../source/rendering/components/camera.rst:188
+msgid "Realistic depth perception"
+msgstr "Реалистичное восприятие глубины"
+
+#: ../../source/rendering/components/camera.rst:189
+msgid "\"Fisheye\" effect with wide FOV"
+msgstr "Эффект «рыбьего глаза» при широком FOV"
+
+#: ../../source/rendering/components/camera.rst:191
+msgid "**Orthographic** (``orthographic = true``):"
+msgstr "**Ортографическая** (``orthographic = true``):"
+
+#: ../../source/rendering/components/camera.rst:193
+msgid "2D games (platformers, strategy games)"
+msgstr "2D-игры (платформеры, стратегии)"
+
+#: ../../source/rendering/components/camera.rst:194
+msgid "UI and HUD"
+msgstr "UI и HUD"
+
+#: ../../source/rendering/components/camera.rst:195
+msgid "Level editors"
+msgstr "Редакторы уровней"
+
+#: ../../source/rendering/components/camera.rst:196
+msgid "Mini-maps (via a separate camera)"
+msgstr "Мини-карты (через отдельную камеру)"
+
+#: ../../source/rendering/components/camera.rst:198
+msgid "**focalDistance**"
+msgstr "**focalDistance**"
+
+#: ../../source/rendering/components/camera.rst:199
+msgid "Used for post-effects (depth of field, motion blur)"
+msgstr "Используется для постэффектов (глубина резкости, размытие движения)"
+
+#: ../../source/rendering/components/camera.rst:200
+msgid "Can be changed dynamically to focus on different objects"
+msgstr "Может динамически изменяться для фокусировки на разных объектах"
+
+#: ../../source/rendering/components/camera.rst:201
+msgid "Default ``10.0`` is suitable for most scenarios"
+msgstr "Значение по умолчанию ``10.0`` подходит для большинства сценариев"
+
+#: ../../source/rendering/components/camera.rst:203
+msgid "**Multiple Cameras**"
+msgstr "**Несколько камер**"
+
+#: ../../source/rendering/components/camera.rst:204
+msgid "Multiple cameras can exist in a scene, but only one is active"
+msgstr "В сцене может существовать несколько камер, но активна только одна"
+
+#: ../../source/rendering/components/camera.rst:205
+msgid "Switch cameras using ``Camera::setCurrent``"
+msgstr "Переключайте камеры с помощью ``Camera::setCurrent``"
+
+#: ../../source/rendering/components/camera.rst:207
+msgid "**Optimization**"
+msgstr "**Оптимизация**"
+
+#: ../../source/rendering/components/camera.rst:208
+msgid "For distant views, use a larger ``far`` value only when necessary"
+msgstr ""
+"Для дальних видов используйте большее значение ``far`` только при "
+"необходимости"
+
+#: ../../source/rendering/components/camera.rst:209
+msgid "In 2D games, use an orthographic camera with precisely tuned ``size``"
+msgstr "В 2D-играх используйте ортографическую камеру с точно настроенным ``size``"
+
+#: ../../source/rendering/components/camera.rst:210
+msgid "Create separate cameras for cutscenes and switch them as needed"
+msgstr ""
+"Создавайте отдельные камеры для кат-сцен и переключайте их по мере "
+"необходимости"
+
+#: ../../source/rendering/components/camera.rst:213
+msgid "Complete Example: Simple Third-Person Camera"
+msgstr "Полный пример: простая камера от третьего лица"
+

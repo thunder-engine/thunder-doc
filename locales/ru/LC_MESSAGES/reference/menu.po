@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/menu.rst:4
+msgid "Menu"
+msgstr ""
+
+#: ../../source/reference/menu.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/menu.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/menu.rst:13
+msgid ""
+"The Menu class represents a graphical user interface (GUI) menu that "
+"contains a list of options or actions that users can select. It provides "
+"a way to organize and display commands or choices in a structured manner,"
+" typically within a dropdown or context menu format. Menus are essential "
+"in GUI design for providing users with accessible options and actions "
+"within an application."
+msgstr ""
+
+#: ../../source/reference/menu.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/menu.rst:23 ../../source/reference/menu.rst:25
+#: ../../source/reference/menu.rst:27 ../../source/reference/menu.rst:33
+#: ../../source/reference/menu.rst:35 ../../source/reference/menu.rst:37
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/menu.rst:23
+msgid ":ref:`addSection<api_Menu_b490a37d>` (const TString & text)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:25
+msgid ":ref:`addWidget<api_Menu_9eafc257>` (Widget * widget)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:27
+msgid ":ref:`hide<api_Menu_8459b61c>` ()"
+msgstr ""
+
+#: ../../source/reference/menu.rst:29 ../../source/reference/menu.rst:39
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/menu.rst:29
+msgid ":ref:`itemText<api_Menu_8de65cbf>` (int  index)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:31
+msgid ":ref:`Frame<api_Frame>` *"
+msgstr ""
+
+#: ../../source/reference/menu.rst:31
+msgid ":ref:`selected<api_Menu_d0cea586>` () const"
+msgstr ""
+
+#: ../../source/reference/menu.rst:33
+msgid ":ref:`setSelected<api_Menu_0a1923ce>` (Frame * frame)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:35
+msgid ":ref:`setTitle<api_Menu_0d84f519>` (const TString & title)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:37
+msgid ":ref:`show<api_Menu_a75d4e08>` (const Vector2 & position)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:39
+msgid ":ref:`title<api_Menu_9d384c5a>` () const"
+msgstr ""
+
+#: ../../source/reference/menu.rst:47
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/menu.rst:49
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/menu.rst:54
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/menu.rst:58
+msgid "void **Menu::addSection** (:ref:`TString<api_TString>` & *text*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:60
+msgid "Adds a section to the menu with the specified text."
+msgstr ""
+
+#: ../../source/reference/menu.rst:66
+msgid "void **Menu::addWidget** (:ref:`Widget<api_Widget>` * *widget*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:68
+msgid "Adds a *widget* to the menu."
+msgstr ""
+
+#: ../../source/reference/menu.rst:74
+msgid "void **Menu::hide** ()"
+msgstr ""
+
+#: ../../source/reference/menu.rst:76
+msgid "Hides the menu."
+msgstr ""
+
+#: ../../source/reference/menu.rst:82
+msgid ":ref:`TString<api_TString>`  **Menu::itemText** (int  *index*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:84
+msgid "Returns the text of the item at the specified index."
+msgstr ""
+
+#: ../../source/reference/menu.rst:90
+msgid ":ref:`Frame<api_Frame>` * **Menu::selected** () const"
+msgstr ""
+
+#: ../../source/reference/menu.rst:92
+msgid "Returns the selection frame for the menu;"
+msgstr ""
+
+#: ../../source/reference/menu.rst:94
+msgid "**See also** setSelected()."
+msgstr ""
+
+#: ../../source/reference/menu.rst:100
+msgid "void **Menu::setSelected** (:ref:`Frame<api_Frame>` * *frame*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:102
+msgid "Sets the selection *frame* for the menu;"
+msgstr ""
+
+#: ../../source/reference/menu.rst:104
+msgid "**See also** selected()."
+msgstr ""
+
+#: ../../source/reference/menu.rst:110
+msgid "void **Menu::setTitle** (:ref:`TString<api_TString>` & *title*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:112
+msgid "Sets the *title* of the menu."
+msgstr ""
+
+#: ../../source/reference/menu.rst:114
+msgid "**See also** title()."
+msgstr ""
+
+#: ../../source/reference/menu.rst:120
+msgid "void **Menu::show** (:ref:`Vector2<api_Vector2>` & *position*)"
+msgstr ""
+
+#: ../../source/reference/menu.rst:122
+msgid "Displays the menu at the specified position."
+msgstr ""
+
+#: ../../source/reference/menu.rst:128
+msgid ":ref:`TString<api_TString>`  **Menu::title** () const"
+msgstr ""
+
+#: ../../source/reference/menu.rst:130
+msgid "Returns the title of the menu."
+msgstr ""
+
+#: ../../source/reference/menu.rst:132
+msgid "**See also** setTitle()."
+msgstr ""
+

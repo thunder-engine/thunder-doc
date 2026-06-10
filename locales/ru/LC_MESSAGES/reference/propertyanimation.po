@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/propertyanimation.rst:4
+msgid "PropertyAnimation"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:13
+msgid "PropertyAnimation interpolates animated property between key-frames."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:32
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:35
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:35
+msgid ":ref:`defaultValue<api_PropertyAnimation_1546ef27>` () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:37
+#: ../../source/reference/propertyanimation.rst:39
+#: ../../source/reference/propertyanimation.rst:41
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:37
+msgid ""
+":ref:`setCurrentValue<api_PropertyAnimation_6c9f1845>` (const Variant & "
+"value)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:39
+msgid ""
+":ref:`setTarget<api_PropertyAnimation_d253abc6>` (Object * object, const "
+"char * property)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:41
+msgid ":ref:`setValid<api_PropertyAnimation_ac15b97f>` (bool  valid)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:43
+msgid "const :ref:`Object<api_Object>` *"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:43
+msgid ":ref:`target<api_PropertyAnimation_7fb985c6>` () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:45
+msgid "const char"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:45
+msgid ":ref:`targetProperty<api_PropertyAnimation_32804169>` () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:53
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:55
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:60
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:64
+msgid ":ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:66
+msgid "Returns the default value of the animated property."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:72
+msgid ""
+"void **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` "
+"& *value*)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:74
+msgid "Reimplements: VariantAnimation::setCurrentValue(const Variant &value)."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:76
+#: ../../source/reference/propertyanimation.rst:98
+msgid "This is an overloaded function."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:78
+msgid ""
+"Sets the new current *value* for the animated Variant. And updates "
+"animated property of the object."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:84
+msgid ""
+"void **PropertyAnimation::setTarget** (:ref:`Object<api_Object>` * "
+"*object*, char * *property*)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:86
+msgid "Sets the new animated *property* of the object."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:88
+msgid "**See also** target()."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:94
+msgid "void **PropertyAnimation::setValid** (bool  *valid*)"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:96
+msgid "Reimplements: Animation::setValid(bool valid)."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:100
+msgid ""
+"Sets the *valid* state of animation. The invalid animations will not "
+"affect anything."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:106
+msgid "const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:108
+msgid "Returns the root object of the animated property."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:110
+msgid "**See also** setTarget()."
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:116
+msgid "const char **PropertyAnimation::targetProperty** () const"
+msgstr ""
+
+#: ../../source/reference/propertyanimation.rst:118
+msgid "Returns the name of animates property of the object."
+msgstr ""
+

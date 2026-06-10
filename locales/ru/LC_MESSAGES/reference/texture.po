@@ -1,0 +1,810 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/texture.rst:4
+msgid "Texture"
+msgstr ""
+
+#: ../../source/reference/texture.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/texture.rst:11 ../../source/reference/texture.rst:94
+#: ../../source/reference/texture.rst:108
+#: ../../source/reference/texture.rst:120
+#: ../../source/reference/texture.rst:146
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/texture.rst:13
+msgid ""
+"This class can be used to handle texture resource or create them at "
+"runtime."
+msgstr ""
+
+#: ../../source/reference/texture.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/texture.rst:23 ../../source/reference/texture.rst:51
+#: ../../source/reference/texture.rst:53 ../../source/reference/texture.rst:55
+#: ../../source/reference/texture.rst:57 ../../source/reference/texture.rst:59
+#: ../../source/reference/texture.rst:61 ../../source/reference/texture.rst:63
+#: ../../source/reference/texture.rst:65 ../../source/reference/texture.rst:67
+#: ../../source/reference/texture.rst:69 ../../source/reference/texture.rst:71
+#: ../../source/reference/texture.rst:73
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/texture.rst:23
+msgid ":ref:`addSurface<api_Texture_ac792b81>` (const Texture::Surface & surface)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:25 ../../source/reference/texture.rst:27
+#: ../../source/reference/texture.rst:29 ../../source/reference/texture.rst:31
+#: ../../source/reference/texture.rst:33 ../../source/reference/texture.rst:35
+#: ../../source/reference/texture.rst:39 ../../source/reference/texture.rst:49
+#: ../../source/reference/texture.rst:75 ../../source/reference/texture.rst:79
+#: ../../source/reference/texture.rst:81
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/texture.rst:25
+msgid ":ref:`depth<api_Texture_1ed27890>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:27
+msgid ":ref:`depthBits<api_Texture_b18ed63a>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:29
+msgid ":ref:`filtering<api_Texture_c6853014>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:31
+msgid ":ref:`flags<api_Texture_04fde293>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:33
+msgid ":ref:`format<api_Texture_4b8e7d59>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:35
+msgid ":ref:`getPixel<api_Texture_cfb962d8>` (int  x, int  y, int  level) const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:37
+msgid "ByteArray"
+msgstr ""
+
+#: ../../source/reference/texture.rst:37
+msgid ":ref:`getPixels<api_Texture_536710bc>` (int  level) const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:39
+msgid ":ref:`height<api_Texture_67129ebc>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:41 ../../source/reference/texture.rst:43
+#: ../../source/reference/texture.rst:45 ../../source/reference/texture.rst:47
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/texture.rst:41
+msgid ":ref:`isArray<api_Texture_b39f207e>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:43
+msgid ":ref:`isCubemap<api_Texture_3c07f51d>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:45
+msgid ":ref:`isFeedback<api_Texture_a634c52b>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:47
+msgid ":ref:`isRender<api_Texture_e48069ad>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:49
+msgid ":ref:`mipCount<api_Texture_f750a612>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:51
+msgid ""
+":ref:`readPixels<api_Texture_72c5ea94>` (int  x, int  y, int  width, int"
+"  height)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:53
+msgid ":ref:`resize<api_Texture_c562f98b>` (int  width, int  height)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:55
+msgid ":ref:`setCompress<api_Texture_0d861cf3>` (int  method)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:57
+msgid ":ref:`setDepth<api_Texture_ce08bd13>` (int  depth)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:59
+msgid ":ref:`setDepthBits<api_Texture_1b2e94d7>` (int  depth)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:61
+msgid ":ref:`setDirty<api_Texture_4d267c1e>` ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:63
+msgid ":ref:`setFiltering<api_Texture_ae306128>` (int  type)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:65
+msgid ":ref:`setFlags<api_Texture_ac14760f>` (int  flags)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:67
+msgid ":ref:`setFormat<api_Texture_402763b9>` (int  type)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:69
+msgid ":ref:`setHeight<api_Texture_290ab8d3>` (int  height)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:71
+msgid ":ref:`setWidth<api_Texture_ac7f1e46>` (int  width)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:73
+msgid ":ref:`setWrap<api_Texture_d6cb8531>` (int  type)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:75
+msgid ":ref:`sides<api_Texture_8df5021e>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:77
+msgid ":ref:`Texture::Surface<api_Texture_Surface>` &"
+msgstr ""
+
+#: ../../source/reference/texture.rst:77
+msgid ":ref:`surface<api_Texture_a492d7eb>` (int  side)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:79
+msgid ":ref:`width<api_Texture_1250c467>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:81
+msgid ":ref:`wrap<api_Texture_17643cda>` () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:87
+msgid "Public Enums"
+msgstr ""
+
+#: ../../source/reference/texture.rst:91
+msgid "**enum Texture::FilteringType**"
+msgstr ""
+
+#: ../../source/reference/texture.rst:94 ../../source/reference/texture.rst:108
+#: ../../source/reference/texture.rst:120
+#: ../../source/reference/texture.rst:146
+msgid "Constant"
+msgstr ""
+
+#: ../../source/reference/texture.rst:94 ../../source/reference/texture.rst:108
+#: ../../source/reference/texture.rst:120
+#: ../../source/reference/texture.rst:146
+msgid "Value"
+msgstr ""
+
+#: ../../source/reference/texture.rst:96
+msgid "Texture::None"
+msgstr ""
+
+#: ../../source/reference/texture.rst:96 ../../source/reference/texture.rst:122
+#: ../../source/reference/texture.rst:148
+msgid "0"
+msgstr ""
+
+#: ../../source/reference/texture.rst:96
+msgid "Texture samples draw as is."
+msgstr ""
+
+#: ../../source/reference/texture.rst:98
+msgid "Texture::Bilinear"
+msgstr ""
+
+#: ../../source/reference/texture.rst:98 ../../source/reference/texture.rst:124
+#: ../../source/reference/texture.rst:150
+msgid "1"
+msgstr ""
+
+#: ../../source/reference/texture.rst:98
+msgid "Texture samples are averaged."
+msgstr ""
+
+#: ../../source/reference/texture.rst:100
+msgid "Texture::Trilinear"
+msgstr ""
+
+#: ../../source/reference/texture.rst:100
+#: ../../source/reference/texture.rst:126
+#: ../../source/reference/texture.rst:152
+msgid "2"
+msgstr ""
+
+#: ../../source/reference/texture.rst:100
+msgid ""
+"Texture samples are averaged and also interpolated from adjacent mipmap "
+"levels."
+msgstr ""
+
+#: ../../source/reference/texture.rst:105
+msgid "**enum Texture::Flags**"
+msgstr ""
+
+#: ../../source/reference/texture.rst:110
+msgid "Texture::Render"
+msgstr ""
+
+#: ../../source/reference/texture.rst:110
+msgid "(1<<0)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:110
+msgid "This texture is used as render target in frame buffers."
+msgstr ""
+
+#: ../../source/reference/texture.rst:112
+msgid "Texture::Feedback"
+msgstr ""
+
+#: ../../source/reference/texture.rst:112
+msgid "(1<<1)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:112
+msgid "The feedback textures can read data from GPU to CPU."
+msgstr ""
+
+#: ../../source/reference/texture.rst:117
+msgid "**enum Texture::FormatType**"
+msgstr ""
+
+#: ../../source/reference/texture.rst:122
+msgid "Texture::R8"
+msgstr ""
+
+#: ../../source/reference/texture.rst:122
+msgid "Single channel(Red) texture. 8-bit integer"
+msgstr ""
+
+#: ../../source/reference/texture.rst:124
+msgid "Texture::RGB8"
+msgstr ""
+
+#: ../../source/reference/texture.rst:124
+msgid "Color texture format. 8 bit integer per channel. 24-bits in total."
+msgstr ""
+
+#: ../../source/reference/texture.rst:126
+msgid "Texture::RGBA8"
+msgstr ""
+
+#: ../../source/reference/texture.rst:126
+msgid ""
+"Color texture format with alpha channel. 8-bit integer per channel. "
+"32-bits in total."
+msgstr ""
+
+#: ../../source/reference/texture.rst:128
+msgid "Texture::RGB10A2"
+msgstr ""
+
+#: ../../source/reference/texture.rst:128
+msgid "3"
+msgstr ""
+
+#: ../../source/reference/texture.rst:128
+msgid "10 bits each for RGB, 2 for Alpha."
+msgstr ""
+
+#: ../../source/reference/texture.rst:130
+msgid "Texture::R11G11B10Float"
+msgstr ""
+
+#: ../../source/reference/texture.rst:130
+msgid "4"
+msgstr ""
+
+#: ../../source/reference/texture.rst:130
+msgid ""
+"This uses special 11 and 10-bit floating-point values. This is very "
+"economical for floating-point values (using only 32-bits per value)."
+msgstr ""
+
+#: ../../source/reference/texture.rst:132
+msgid "Texture::RGBA32Float"
+msgstr ""
+
+#: ../../source/reference/texture.rst:132
+msgid "5"
+msgstr ""
+
+#: ../../source/reference/texture.rst:132
+msgid ""
+"Color texture and alpha with floating-point values. It uses 32-bit "
+"floating-point values per channel."
+msgstr ""
+
+#: ../../source/reference/texture.rst:134
+msgid "Texture::RGBA16Float"
+msgstr ""
+
+#: ../../source/reference/texture.rst:134
+msgid "6"
+msgstr ""
+
+#: ../../source/reference/texture.rst:134
+msgid ""
+"Color texture and alpha with floating-point values. It uses 16-bit "
+"floating-point values per channel."
+msgstr ""
+
+#: ../../source/reference/texture.rst:136
+msgid "Texture::Depth"
+msgstr ""
+
+#: ../../source/reference/texture.rst:136
+msgid "7"
+msgstr ""
+
+#: ../../source/reference/texture.rst:136
+msgid ""
+"Depth buffer texture format. Number bits per pixel depend on graphical "
+"settings and hardware. Can be 16, 24 or 32-bit per pixel."
+msgstr ""
+
+#: ../../source/reference/texture.rst:141
+msgid "**enum Texture::WrapType**"
+msgstr ""
+
+#: ../../source/reference/texture.rst:143
+msgid "Wrap mode for textures."
+msgstr ""
+
+#: ../../source/reference/texture.rst:148
+msgid "Texture::Clamp"
+msgstr ""
+
+#: ../../source/reference/texture.rst:148
+msgid "Clamps the texture to the last pixel at the edge."
+msgstr ""
+
+#: ../../source/reference/texture.rst:150
+msgid "Texture::Repeat"
+msgstr ""
+
+#: ../../source/reference/texture.rst:150
+msgid "Tiles the texture, creating a repeating pattern."
+msgstr ""
+
+#: ../../source/reference/texture.rst:152
+msgid "Texture::Mirrored"
+msgstr ""
+
+#: ../../source/reference/texture.rst:152
+msgid ""
+"Tiles the texture, creating a repeating pattern by mirroring it at every "
+"integer boundary."
+msgstr ""
+
+#: ../../source/reference/texture.rst:160
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/texture.rst:163
+#: ../../source/reference/texture.rst:165
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/texture.rst:163
+msgid ":ref:`maxCubemapSize<api_Texture_754b01f3>` ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:165
+msgid ":ref:`maxTextureSize<api_Texture_53c8071b>` ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:171
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/texture.rst:175
+msgid ""
+"void **Texture::addSurface** "
+"(:ref:`Texture::Surface<api_Texture_Surface>` & *surface*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:177
+msgid ""
+"Adds *surface* to the texture. Each texture must contain at least one "
+"surface."
+msgstr ""
+
+#: ../../source/reference/texture.rst:183
+msgid "int **Texture::depth** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:185
+msgid "Returns depth dimension for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:187
+msgid "**See also** setDepth()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:193
+msgid "int **Texture::depthBits** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:195
+msgid "Returns the number of depth buffer bits."
+msgstr ""
+
+#: ../../source/reference/texture.rst:198
+msgid "**Note:** This value is valid only for the depth textures."
+msgstr ""
+
+#: ../../source/reference/texture.rst:201
+msgid "**See also** setDepthBits()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:207
+msgid "int **Texture::filtering** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:209
+msgid ""
+"Returns filtering type of texture. For more details please see the "
+"Texture::FilteringType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:211
+msgid "**See also** setFiltering()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:217
+msgid "int **Texture::flags** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:219
+msgid "Returns service flags for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:221
+msgid "**See also** setFlags() and Texture::Flags."
+msgstr ""
+
+#: ../../source/reference/texture.rst:227
+msgid "int **Texture::format** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:229
+msgid ""
+"Returns format type of texture. For more details please see the "
+"Texture::FormatType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:231
+msgid "**See also** setFormat()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:237
+msgid "int **Texture::getPixel** (int  *x*, int  *y*, int  *level*) const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:239
+msgid ""
+"Returns pixel color from mip *level* at *x* and *y* position as RGBA "
+"integer for example 0x00ff00ff which can be mapped to (0, 255, 0, 255)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:245
+msgid "ByteArray **Texture::getPixels** (int  *level*) const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:247
+msgid "Returns texture data from a mip level."
+msgstr ""
+
+#: ../../source/reference/texture.rst:253
+msgid "int **Texture::height** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:255
+msgid "Returns height for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:257
+msgid "**See also** setHeight()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:263
+msgid "bool **Texture::isArray** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:265
+msgid ""
+"Returns true if texture provides a set of textures; otherwise returns "
+"false."
+msgstr ""
+
+#: ../../source/reference/texture.rst:268
+msgid "**Note:** For now will always return false."
+msgstr ""
+
+#: ../../source/reference/texture.rst:275
+msgid "bool **Texture::isCubemap** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:277
+msgid "Returns true if the texture is a cube map; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/texture.rst:283
+msgid "bool **Texture::isFeedback** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:285
+msgid ""
+"Returns true if texture marked as a feed back texture; otherwise returns "
+"false. The feedback textures can read data from GPU to CPU."
+msgstr ""
+
+#: ../../source/reference/texture.rst:291
+msgid "bool **Texture::isRender** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:293
+msgid ""
+"Returns true if texture is can be attached to framebuffer; otherwise "
+"returns false."
+msgstr ""
+
+#: ../../source/reference/texture.rst:299
+msgid "uint32_t **Texture::maxCubemapSize** ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:301
+msgid "Returns the maximum cubemap size."
+msgstr ""
+
+#: ../../source/reference/texture.rst:307
+msgid "uint32_t **Texture::maxTextureSize** ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:309
+msgid "Returns the maximum texure size."
+msgstr ""
+
+#: ../../source/reference/texture.rst:315
+msgid "int **Texture::mipCount** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:317
+msgid "Returns the number of MIP levels."
+msgstr ""
+
+#: ../../source/reference/texture.rst:323
+msgid ""
+"void **Texture::readPixels** (int  *x*, int  *y*, int  *width*, int  "
+"*height*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:325
+msgid ""
+"Read pixels from GPU at *x* and *y* position with *width* and *height* "
+"dimensions into texture data."
+msgstr ""
+
+#: ../../source/reference/texture.rst:331
+msgid "void **Texture::resize** (int  *width*, int  *height*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:333
+msgid "Sets new *width* and *height* for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:339
+msgid "void **Texture::setCompress** (int  *method*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:341
+msgid "Set the compression method."
+msgstr ""
+
+#: ../../source/reference/texture.rst:347
+msgid "void **Texture::setDepth** (int  *depth*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:349
+msgid "Sets new *depth* dimension for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:351
+msgid "**See also** depth()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:357
+msgid "void **Texture::setDepthBits** (int  *depth*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:359
+msgid "Sets the number of *depth* buffer bits."
+msgstr ""
+
+#: ../../source/reference/texture.rst:362
+msgid "**Note:** This value is valid only for the *depth* textures."
+msgstr ""
+
+#: ../../source/reference/texture.rst:365
+msgid "**See also** depthBits()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:371
+msgid "void **Texture::setDirty** ()"
+msgstr ""
+
+#: ../../source/reference/texture.rst:373
+msgid ""
+"Marks texture as dirty. That means this texture must be forcefully "
+"reloaded."
+msgstr ""
+
+#: ../../source/reference/texture.rst:379
+msgid "void **Texture::setFiltering** (int  *type*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:381
+msgid ""
+"Sets filtering *type* of texture. For more details please see the "
+"Texture::FilteringType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:383
+msgid "**See also** filtering()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:389
+msgid "void **Texture::setFlags** (int  *flags*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:391
+msgid "Sets service *flags* for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:393
+msgid "**See also** flags() and Texture::Flags."
+msgstr ""
+
+#: ../../source/reference/texture.rst:399
+msgid "void **Texture::setFormat** (int  *type*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:401
+msgid ""
+"Sets format *type* of texture. For more details please see the "
+"Texture::FormatType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:403
+msgid "**See also** format()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:409
+msgid "void **Texture::setHeight** (int  *height*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:411
+msgid "Sets new *height* for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:413
+msgid "**See also** height()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:419
+msgid "void **Texture::setWidth** (int  *width*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:421
+msgid "Sets new *width* for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:423
+msgid "**See also** width()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:429
+msgid "void **Texture::setWrap** (int  *type*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:431
+msgid ""
+"Sets the *type* of warp policy. For more details please see the "
+"Texture::WrapType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:433
+msgid "**See also** wrap()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:439
+msgid "int **Texture::sides** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:441
+msgid ""
+"Returns the number of texture sides. In most cases returns 1 but for the "
+"cube map will return 6"
+msgstr ""
+
+#: ../../source/reference/texture.rst:447
+msgid ""
+":ref:`Texture::Surface<api_Texture::Surface>` & **Texture::surface** (int"
+"  *side*)"
+msgstr ""
+
+#: ../../source/reference/texture.rst:449
+msgid ""
+"Returns a surface for the provided side. Each texture must contain at "
+"least one surface. Commonly used to set surfaces for the cube maps."
+msgstr ""
+
+#: ../../source/reference/texture.rst:455
+msgid "int **Texture::width** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:457
+msgid "Returns width for the texture."
+msgstr ""
+
+#: ../../source/reference/texture.rst:459
+msgid "**See also** setWidth()."
+msgstr ""
+
+#: ../../source/reference/texture.rst:465
+msgid "int **Texture::wrap** () const"
+msgstr ""
+
+#: ../../source/reference/texture.rst:467
+msgid ""
+"Returns the type of warp policy. For more details please see the "
+"Texture::WrapType enum."
+msgstr ""
+
+#: ../../source/reference/texture.rst:469
+msgid "**See also** setWrap()."
+msgstr ""
+

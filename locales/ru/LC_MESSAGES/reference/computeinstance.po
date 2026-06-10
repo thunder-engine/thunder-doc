@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/computeinstance.rst:4
+msgid "ComputeInstance"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:21
+msgid ":ref:`ComputeBuffer<api_ComputeBuffer>` *"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:21
+msgid ":ref:`buffer<api_ComputeInstance_6f9308ae>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:23
+msgid ":ref:`ComputeShader<api_ComputeShader>` *"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:23
+msgid ":ref:`compute<api_ComputeInstance_1c698435>` () const"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:25
+#: ../../source/reference/computeinstance.rst:27
+#: ../../source/reference/computeinstance.rst:29
+#: ../../source/reference/computeinstance.rst:31
+#: ../../source/reference/computeinstance.rst:33
+#: ../../source/reference/computeinstance.rst:35
+#: ../../source/reference/computeinstance.rst:37
+#: ../../source/reference/computeinstance.rst:39
+#: ../../source/reference/computeinstance.rst:41
+#: ../../source/reference/computeinstance.rst:43
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:25
+msgid ""
+":ref:`setBool<api_ComputeInstance_34cd8fe5>` (const TString & name, const"
+" bool * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:27
+msgid ""
+":ref:`setBuffer<api_ComputeInstance_1e793d2a>` (const TString & name, "
+"ComputeBuffer * buffer)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:29
+msgid ""
+":ref:`setFloat<api_ComputeInstance_21aeb4d6>` (const TString & name, "
+"const float * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:31
+msgid ""
+":ref:`setInteger<api_ComputeInstance_279bfe46>` (const TString & name, "
+"const int32_t * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:33
+msgid ""
+":ref:`setMatrix4<api_ComputeInstance_b095e368>` (const TString & name, "
+"const Matrix4 * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:35
+msgid ""
+":ref:`setTexture<api_ComputeInstance_21bae37f>` (const TString & name, "
+"Texture * texture)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:37
+msgid ""
+":ref:`setValue<api_ComputeInstance_28705963>` (const TString & name, "
+"const void * value)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:39
+msgid ""
+":ref:`setVector2<api_ComputeInstance_f3170be2>` (const TString & name, "
+"const Vector2 * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:41
+msgid ""
+":ref:`setVector3<api_ComputeInstance_ba05718f>` (const TString & name, "
+"const Vector3 * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:43
+msgid ""
+":ref:`setVector4<api_ComputeInstance_e106492d>` (const TString & name, "
+"const Vector4 * value, int32_t  count = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:45
+msgid ":ref:`Texture<api_Texture>` *"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:45
+msgid ":ref:`texture<api_ComputeInstance_4b5ea61d>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:53
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:55
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:60
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:64
+msgid ""
+":ref:`ComputeBuffer<api_ComputeBuffer>` * **ComputeInstance::buffer** "
+"(:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:66
+msgid "Gets the overridden compute buffer for a specified name."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:68
+msgid "**See also** setBuffer()."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:74
+msgid ""
+":ref:`ComputeShader<api_ComputeShader>` * **ComputeInstance::compute** ()"
+" const"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:76
+msgid "Gets the associated ComputeShader for this instance."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:82
+msgid ""
+"void **ComputeInstance::setBool** (:ref:`TString<api_TString>` & *name*, "
+"bool * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:84
+msgid ""
+"Sets a boolean parameter with optional array support. Parameter *name* "
+"specifies a *name* of the boolean parameter. Parameter *value* pointer to"
+" the boolean *value* or array of boolean values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:90
+msgid ""
+"void **ComputeInstance::setBuffer** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`ComputeBuffer<api_ComputeBuffer>` * *buffer*)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:92
+msgid "Sets an overridden compute *buffer* for a specified name."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:94
+msgid "**See also** buffer()."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:100
+msgid ""
+"void **ComputeInstance::setFloat** (:ref:`TString<api_TString>` & *name*,"
+" float * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:102
+msgid ""
+"Sets a float parameter with optional array support. Parameter *name* "
+"specifies a *name* of the float parameter. Parameter *value* pointer to "
+"the float *value* or array of float values. Parameter *count* a number of"
+" elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:108
+msgid ""
+"void **ComputeInstance::setInteger** (:ref:`TString<api_TString>` & "
+"*name*, int32_t * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:110
+msgid ""
+"Sets a integer parameter with optional array support. Parameter *name* "
+"specifies a *name* of the integer parameter. Parameter *value* pointer to"
+" the integer *value* or array of integer values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:116
+msgid ""
+"void **ComputeInstance::setMatrix4** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`Matrix4<api_Matrix4>` * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:118
+msgid ""
+"Sets a Matrix4 parameter with optional array support. Parameter *name* "
+"specifies a *name* of the Matrix4 parameter. Parameter *value* pointer to"
+" the Matrix4 *value* or array of Matrix4 values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:124
+msgid ""
+"void **ComputeInstance::setTexture** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`Texture<api_Texture>` * *texture*)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:126
+msgid "Sets a *texture* parameter with specified name."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:128
+msgid "**See also** texture()."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:134
+msgid ""
+"void **ComputeInstance::setValue** (:ref:`TString<api_TString>` & *name*,"
+" void * *value*)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:136
+msgid ""
+"Sets the *value* of a parameter with specified *name* in the uniform "
+"buffer."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:142
+msgid ""
+"void **ComputeInstance::setVector2** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`Vector2<api_Vector2>` * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:144
+msgid ""
+"Sets a Vector2 parameter with optional array support. Parameter *name* "
+"specifies a *name* of the Vector2 parameter. Parameter *value* pointer to"
+" the Vector2 *value* or array of Vector2 values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:150
+msgid ""
+"void **ComputeInstance::setVector3** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`Vector3<api_Vector3>` * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:152
+msgid ""
+"Sets a Vector3 parameter with optional array support. Parameter *name* "
+"specifies a *name* of the Vector3 parameter. Parameter *value* pointer to"
+" the Vector3 *value* or array of Vector3 values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:158
+msgid ""
+"void **ComputeInstance::setVector4** (:ref:`TString<api_TString>` & "
+"*name*, :ref:`Vector4<api_Vector4>` * *value*, int32_t  *count* = 1)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:160
+msgid ""
+"Sets a Vector4 parameter with optional array support. Parameter *name* "
+"specifies a *name* of the Vector4 parameter. Parameter *value* pointer to"
+" the Vector4 *value* or array of Vector4 values. Parameter *count* a "
+"number of elements in the array."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:166
+msgid ""
+":ref:`Texture<api_Texture>` * **ComputeInstance::texture** "
+"(:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:168
+msgid "Gets the overridden texture for a specified name."
+msgstr ""
+
+#: ../../source/reference/computeinstance.rst:170
+msgid "**See also** setTexture()."
+msgstr ""
+

@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:4
+msgid "SkinnedMeshRender"
+msgstr "SkinnedMeshRender"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:6
+msgid ""
+"**SkinnedMeshRender** is a component for rendering skinned meshes with "
+"animation. It enables the creation of characters and other animated "
+"objects with deformable geometry."
+msgstr ""
+"**SkinnedMeshRender** — это компонент для рендеринга скелетных мешей с анимацией. "
+"Он позволяет создавать персонажей и другие анимированные объекты с деформируемой "
+"геометрией."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: 217source/rendering/geometry/skinnedmeshrender.rst:11
+msgid ""
+"SkinnedMeshRender extends MeshRenderer functionality to work with "
+"skeletal animation. It supports:"
+msgstr ""
+"SkinnedMeshRender расширяет функциональность MeshRenderer для работы со "
+"скелетной анимацией. Он поддерживает:"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:13
+msgid "Mesh deformation based on skeleton pose"
+msgstr "Деформацию меша на основе позы скелета"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:14
+msgid "GPU skinning for performance"
+msgstr "Скиннинг на GPU для производительности"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:15
+msgid "Blend shapes (morph targets)"
+msgstr "Формы смешивания (морф-цели)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:16
+msgid "Multiple animation layers"
+msgstr "Несколько слоёв анимации"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:17
+msgid "Animation blending"
+msgstr "Смешивание анимаций"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:20
+msgid "Component Properties"
+msgstr "Свойства компонента"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:22
+msgid "**mesh** (Mesh)"
+msgstr "**mesh** (Mesh)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:23
+msgid ""
+"Reference to the skinned mesh. The mesh must contain bone weight data "
+"(bone weights) and bone indices for proper deformation."
+msgstr ""
+"Ссылка на скелетный меш. Меш должен содержать данные о весах костей (bone weights) "
+"и индексы костей для правильной деформации."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:25
+msgid "Type: Mesh resource"
+msgstr "Тип: ресурс Mesh"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:26
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:33
+msgid "Editor: Asset picker"
+msgstr "Редактор: выбор актива"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:27
+msgid "Can be changed at runtime via ``setMesh()``"
+msgstr "Может быть изменён во время выполнения через ``setMesh()``"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:29
+msgid "**materials** (Material[])"
+msgstr "**materials** (Material[])"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:30
+msgid ""
+"Array of materials for each sub-mesh. If there are fewer materials than "
+"sub-meshes, the remaining sub-meshes are not rendered."
+msgstr ""
+"Массив материалов для каждого суб-меша. Если материалов меньше, чем суб-мешей, "
+"остальные суб-меши не рендерятся."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:32
+msgid "Type: array of Material resources"
+msgstr "Тип: массив ресурсов Material"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:34
+msgid "Can be changed at runtime via ``setMaterials()``"
+msgstr "Может быть изменён во время выполнения через ``setMaterials()``"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:36
+msgid "**armature** (Armature)"
+msgstr "**armature** (Armature)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:37
+msgid ""
+"Skeleton (armature) used for mesh deformation. Armature contains the bone"
+" hierarchy and their transformations. Usually loaded together with the "
+"mesh from the file, but can be assigned separately."
+msgstr ""
+"Скелет (арматура), используемый для деформации меша. Арматура содержит иерархию "
+"костей и их трансформации. Обычно загружается вместе с мешем из файла, но может "
+"быть назначена отдельно."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:39
+msgid ""
+"Type: Armature component (must be attached to the same actor or one of "
+"its parents)"
+msgstr ""
+"Тип: компонент Armature (должен быть прикреплён к тому же актёру или одному из его родителей)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:40
+msgid "Editor: Component picker"
+msgstr "Редактор: выбор компонента"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:41
+msgid "Default: ``nullptr`` (skeleton is extracted from the mesh)"
+msgstr "По умолчанию: ``nullptr`` (скелет извлекается из меша)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:43
+msgid "**boundsCenter** (Vector3)"
+msgstr "**boundsCenter** (Vector3)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:44
+msgid "Center of the bounding box for the skinned mesh in local space."
+msgstr "Центр ограничивающего прямоугольника для скелетного меша в локальном пространстве."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:46
+msgid "Used for frustum culling and occlusion culling"
+msgstr "Используется для отсечения по фрустуму и occlusion culling"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:47
+msgid "Can be manually adjusted for culling optimization"
+msgstr "Может быть вручную отрегулирован для оптимизации отсечения"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:48
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:54
+msgid "Default: automatically calculated based on mesh geometry"
+msgstr "По умолчанию: автоматически вычисляется на основе геометрии меша"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:50
+msgid "**boundsExtent** (Vector3)"
+msgstr "**boundsExtent** (Vector3)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:51
+msgid ""
+"Half-size of the bounding box (extent) along each axis. Together with "
+"boundsCenter forms an AABB (Axis-Aligned Bounding Box)."
+msgstr ""
+"Половина размера ограничивающего прямоугольника (extent) по каждой оси. Вместе с "
+"boundsCenter образует AABB (выровненный по осям ограничивающий прямоугольник)."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:53
+msgid "Range: positive values"
+msgstr "Диапазон: положительные значения"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:56
+msgid "**castShadows** (bool) — *currently not implemented*"
+msgstr "**castShadows** (bool) — *в настоящее время не реализовано*"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:57
+msgid "Determines whether the object casts shadows."
+msgstr "Определяет, отбрасывает ли объект тени."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:59
+msgid "**receiveShadows** (bool) — *currently not implemented*"
+msgstr "**receiveShadows** (bool) — *в настоящее время не реализовано*"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:60
+msgid "Determines whether the object receives shadows."
+msgstr "Определяет, получает ли объект тени."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:62
+msgid "**enabled** (bool)"
+msgstr "**enabled** (bool)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:63
+msgid "Enables/disables component rendering. Default: ``true``."
+msgstr "Включает/отключает рендеринг компонента. По умолчанию: ``true``."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:66
+msgid "**layer** (int)"
+msgstr "**layer** (int)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:67
+msgid "Rendering layer. Used for camera culling mask. Default: ``0``."
+msgstr "Слой рендеринга. Используется для маски отсечения камеры. По умолчанию: ``0``."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:71
+msgid ""
+"For SkinnedMeshRender to work correctly, the Armature component must be "
+"on the same actor or one of its parents. If armature is not explicitly "
+"specified, it will be automatically found in the hierarchy."
+msgstr ""
+"Для правильной работы SkinnedMeshRender компонент Armature должен находиться "
+"на том же актёре или одном из его родителей. Если арматура не указана явно, "
+"она будет автоматически найдена в иерархии."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:74
+msgid "Usage Examples"
+msgstr "Примеры использования"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:76
+msgid "**Basic Character Creation**"
+msgstr "**Базовое создание персонажа**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:92
+msgid "**Configuring Bounds for Optimization**"
+msgstr "**Настройка ограничивающих прямоугольников для оптимизации**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:107
+msgid "**Changing Skins (Materials)**"
+msgstr "**Смена скинов (материалов)**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:127
+msgid "**Using a Separate Armature Component**"
+msgstr "**Использование отдельного компонента Armature**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:143
+msgid "**Blend Shapes (Morph Targets)** — *currently not implemented*"
+msgstr "**Формы смешивания (морф-цели)** — *в настоящее время не реализовано*"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:161
+msgid "**Dynamic Mesh Switching**"
+msgstr "**Динамическое переключение мешей**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:194
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:196
+msgid "**Performance Optimization**"
+msgstr "**Оптимизация производительности**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:197
+msgid ""
+"Limit the number of bones per character (recommended up to 64 on mobile, "
+"up to 256 on desktop)"
+msgstr ""
+"Ограничьте количество костей на персонажа (рекомендуется до 64 на мобильных устройствах, "
+"до 256 на настольных)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:198
+msgid ""
+"For large numbers of characters, use LOD with transition to static meshes"
+" at long distances"
+msgstr ""
+"Для большого количества персонажей используйте LOD с переходом на статические меши "
+"на больших расстояниях"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:199
+msgid ""
+"Configure boundsCenter and boundsExtent for accurate culling — too large "
+"bounds reduce culling effectiveness, too small bounds may lead to "
+"premature culling"
+msgstr ""
+"Настройте boundsCenter и boundsExtent для точного отсечения — слишком большие "
+"границы снижают эффективность отсечения, слишком маленькие могут привести к "
+"преждевременному отсечению"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:201
+msgid "**Animations**"
+msgstr "**Анимации**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:202
+msgid "Use compression for animation clips (import settings)"
+msgstr "Используйте сжатие для анимационных клипов (настройки импорта)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:203
+msgid "For background characters, use fewer bones and simpler animations"
+msgstr "Для фоновых персонажей используйте меньше костей и более простые анимации"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:204
+msgid "Preload animations that will be used"
+msgstr "Предварительно загружайте анимации, которые будут использоваться"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:206
+msgid "**Blend Shapes** — *currently not implemented*"
+msgstr "**Формы смешивания** — *в настоящее время не реализовано*"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:207
+msgid "Blend shapes consume more memory and GPU time"
+msgstr "Формы смешивания потребляют больше памяти и времени GPU"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:208
+msgid "Use only for critical expressions (face)"
+msgstr "Используйте только для критически важных выражений (лицо)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:209
+msgid "Limit the number of active blend shapes to 8-16"
+msgstr "Ограничьте количество активных форм смешивания до 8-16"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:211
+msgid "**Armature Placement**"
+msgstr "**Размещение арматуры**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:212
+msgid "Armature must be on the same actor or on a parent object"
+msgstr "Арматура должна находиться на том же актёре или на родительском объекте"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:213
+msgid "If animation does not play, verify that armature is correctly assigned"
+msgstr "Если анимация не воспроизводится, проверьте, правильно ли назначена арматура"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:214
+msgid ""
+"For multiple characters with the same skeleton, one armature can be "
+"reused (if they use the same animations)"
+msgstr ""
+"Для нескольких персонажей с одним и тем же скелетом можно повторно использовать "
+"одну арматуру (если они используют одни и те же анимации)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:216
+msgid "**Bounds**"
+msgstr "**Границы**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:217
+msgid "After changing the mesh, always check the bounds — they may change"
+msgstr "После изменения меша всегда проверяйте границы — они могут измениться"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:218
+msgid "Use ``resetBounds()`` for automatic recalculation"
+msgstr "Используйте ``resetBounds()`` для автоматического пересчёта"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:219
+msgid ""
+"For animated characters, bounds may change dynamically during animation "
+"(arm swings, jumps). Consider manual configuration with margin."
+msgstr ""
+"Для анимированных персонажей границы могут динамически изменяться во время анимации "
+"(взмахи руками, прыжки). Рассмотрите возможность ручной настройки с запасом."
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:222
+msgid "Common Issues and Solutions"
+msgstr "Типичные проблемы и решения"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:224
+msgid "**Character Does Not Render**"
+msgstr "**Персонаж не рендерится**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:225
+msgid "Verify that the mesh is loaded and contains bone weights"
+msgstr "Убедитесь, что меш загружен и содержит веса костей"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:226
+msgid "Ensure a material is assigned"
+msgstr "Убедитесь, что назначен материал"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:227
+msgid "Check that armature is correctly assigned (automatically or manually)"
+msgstr "Проверьте, правильно ли назначена арматура (автоматически или вручную)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:228
+msgid "Ensure the component is enabled (enabled = true)"
+msgstr "Убедитесь, что компонент включён (enabled = true)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:230
+msgid "**Animation Does Not Play**"
+msgstr "**Анимация не воспроизводится**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:231
+msgid "Verify that Import Animation was enabled when importing the model"
+msgstr "Убедитесь, что Import Animation был включён при импорте модели"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:232
+msgid "Ensure AnimationClip is loaded and assigned"
+msgstr "Убедитесь, что AnimationClip загружен и назначен"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:233
+msgid "Check that the skeleton in the mesh matches the armature"
+msgstr "Проверьте, соответствует ли скелет в меше арматуре"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:234
+msgid ""
+"Ensure the armature is being updated (typically via the Animation "
+"component)"
+msgstr ""
+"Убедитесь, что арматура обновляется (обычно через компонент Animation)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:236
+msgid "**Mesh Deformation Is Incorrect**"
+msgstr "**Деформация меша некорректна**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:237
+msgid "Verify that the mesh contains correct bone weights and bone indices"
+msgstr "Убедитесь, что меш содержит правильные веса костей и индексы костей"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:238
+msgid ""
+"Ensure the number of bones does not exceed the limit (256 on desktop, 64 "
+"on mobile)"
+msgstr ""
+"Убедитесь, что количество костей не превышает лимит (256 на настольных, 64 на мобильных)"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:239
+msgid "Check that bone names in the mesh match names in the armature"
+msgstr "Проверьте, совпадают ли имена костей в меше с именами в арматуре"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:241
+msgid "**Object Is Culled by Camera**"
+msgstr "**Объект отсекается камерой**"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:242
+msgid "Check the bounds (boundsCenter and boundsExtent) — they may be too small"
+msgstr "Проверьте границы (boundsCenter и boundsExtent) — они могут быть слишком маленькими"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:243
+msgid "Call resetBounds() for automatic recalculation"
+msgstr "Вызовите resetBounds() для автоматического пересчёта"
+
+#: ../../source/rendering/geometry/skinnedmeshrender.rst:244
+msgid "Temporarily disable culling for debugging: ``camera->setCullingMask(-1)``"
+msgstr "Временно отключите отсечение для отладки: ``camera->setCullingMask(-1)``"

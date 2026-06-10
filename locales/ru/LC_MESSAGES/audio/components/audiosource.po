@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/audio/components/audiosource.rst:4
+msgid "AudioSource"
+msgstr "AudioSource"
+
+#: ../../source/audio/components/audiosource.rst:6
+msgid ""
+"**AudioSource** is a component that plays sounds in 3D space. It attaches"
+" to an actor and creates a sound source that can be heard by the "
+":ref:`AudioListener` component (typically attached to the player's "
+"camera)."
+msgstr ""
+"**AudioSource** — это компонент, который воспроизводит звуки в 3D-пространстве. "
+"Он прикрепляется к актору и создаёт источник звука, который может быть услышан "
+"компонентом :ref:`AudioListener` (обычно прикреплённым к камере игрока)."
+
+#: ../../source/audio/components/audiosource.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/audio/components/audiosource.rst:11
+msgid ""
+"AudioSource is the primary tool for creating spatial audio in Thunder "
+"Engine. The component attaches to an actor and manages playback of an "
+":ref:`AudioClip` resource in 3D space."
+msgstr ""
+"AudioSource является основным инструментом для создания пространственного "
+"аудио в Thunder Engine. Компонент прикрепляется к актору и управляет "
+"воспроизведением ресурса :ref:`AudioClip` в 3D-пространстве."
+
+#: ../../source/audio/components/audiosource.rst:14
+msgid ""
+"Spatial parameters (volume based on distance, panning) are calculated "
+"automatically based on the position of the AudioSource relative to the "
+"AudioListener. Additional attenuation configuration is done through "
+"AudioClip import properties."
+msgstr ""
+"Пространственные параметры (громкость в зависимости от расстояния, "
+"панорамирование) рассчитываются автоматически на основе положения AudioSource "
+"относительно AudioListener. Дополнительная настройка затухания выполняется "
+"через свойства импорта AudioClip."
+
+#: ../../source/audio/components/audiosource.rst:17
+msgid "Component Properties"
+msgstr "Свойства компонента"
+
+#: ../../source/audio/components/audiosource.rst:19
+msgid "The following settings are available when creating an AudioSource:"
+msgstr "При создании AudioSource доступны следующие настройки:"
+
+#: ../../source/audio/components/audiosource.rst:21
+msgid "**clip** (ResourceRef<AudioClip>)"
+msgstr "**clip** (ResourceRef<AudioClip>)"
+
+#: ../../source/audio/components/audiosource.rst:22
+msgid "Reference to the :ref:`AudioClip` resource to be played."
+msgstr "Ссылка на ресурс :ref:`AudioClip`, который будет воспроизводиться."
+
+#: ../../source/audio/components/audiosource.rst:24
+msgid "Type: ``AudioClip*``"
+msgstr "Тип: ``AudioClip*``"
+
+#: ../../source/audio/components/audiosource.rst:25
+msgid "Editor: Asset picker"
+msgstr "Редактор: выбор актива"
+
+#: ../../source/audio/components/audiosource.rst:26
+msgid "Can be changed at runtime via ``setClip()``"
+msgstr "Может быть изменён во время выполнения через ``setClip()``"
+
+#: ../../source/audio/components/audiosource.rst:28
+msgid "**autoPlay** (bool)"
+msgstr "**autoPlay** (bool)"
+
+#: ../../source/audio/components/audiosource.rst:29
+msgid ""
+"If set to ``true``, playback starts automatically when the component is "
+"activated or the scene is loaded."
+msgstr ""
+"Если установлено значение ``true``, воспроизведение начинается автоматически "
+"при активации компонента или загрузке сцены."
+
+#: ../../source/audio/components/audiosource.rst:31
+#: ../../source/audio/components/audiosource.rst:37
+msgid "Default: ``false``"
+msgstr "По умолчанию: ``false``"
+
+#: ../../source/audio/components/audiosource.rst:32
+msgid "Useful for background music or persistent ambient sounds"
+msgstr "Полезно для фоновой музыки или постоянных окружающих звуков"
+
+#: ../../source/audio/components/audiosource.rst:34
+msgid "**loop** (bool)"
+msgstr "**loop** (bool)"
+
+#: ../../source/audio/components/audiosource.rst:35
+msgid ""
+"Loops playback. If enabled, the sound will repeat indefinitely until "
+"``stop()`` is called or the component is destroyed."
+msgstr ""
+"Зацикливает воспроизведение. При включении звук будет повторяться бесконечно, "
+"пока не будет вызван ``stop()`` или компонент не будет уничтожен."
+
+#: ../../source/audio/components/audiosource.rst:38
+msgid "Use for engine sounds, wind, waterfalls, and other continuous effects"
+msgstr "Используйте для звуков двигателя, ветра, водопадов и других непрерывных эффектов"
+
+#: ../../source/audio/components/audiosource.rst:41
+msgid ""
+"Spatial attenuation settings (minDistance, maxDistance, rolloffMode) are "
+"configured at the :ref:`AudioClip` level during audio file import, not in"
+" the AudioSource component. This allows the same settings to be reused "
+"for all sources using a given clip."
+msgstr ""
+"Настройки пространственного затухания (minDistance, maxDistance, rolloffMode) "
+"настраиваются на уровне :ref:`AudioClip` при импорте аудиофайла, а не в "
+"компоненте AudioSource. Это позволяет повторно использовать одни и те же "
+"настройки для всех источников, использующих данный клип."
+
+#: ../../source/audio/components/audiosource.rst:44
+msgid "Usage Examples"
+msgstr "Примеры использования"
+
+#: ../../source/audio/components/audiosource.rst:46
+msgid "**Creating a Sound Source for an NPC**"
+msgstr "**Создание источника звука для NPC**"
+
+#: ../../source/audio/components/audiosource.rst:81
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: ../../source/audio/components/audiosource.rst:83
+msgid "**Using with 3D Sound**"
+msgstr "**Использование с 3D-звуком**"
+
+#: ../../source/audio/components/audiosource.rst:84
+msgid "For proper 3D positioning:"
+msgstr "Для корректного 3D-позиционирования:"
+
+#: ../../source/audio/components/audiosource.rst:86
+msgid "When importing AudioClip for 3D sounds, set ``forceMono = true``"
+msgstr "При импорте AudioClip для 3D-звуков установите ``forceMono = true``"
+
+#: ../../source/audio/components/audiosource.rst:88
+msgid "**Resource Management**"
+msgstr "**Управление ресурсами**"
+
+#: ../../source/audio/components/audiosource.rst:96
+msgid "**Optimization for Mobile Platforms**"
+msgstr "**Оптимизация для мобильных платформ**"
+
+#: ../../source/audio/components/audiosource.rst:97
+msgid "Use ``loop = true`` only when absolutely necessary"
+msgstr "Используйте ``loop = true`` только при абсолютной необходимости"
+
+#: ../../source/audio/components/audiosource.rst:98
+msgid "For background music, use a single AudioSource with a looped clip"
+msgstr "Для фоновой музыки используйте один AudioSource с зацикленным клипом"
+
+#: ../../source/audio/components/audiosource.rst:99
+msgid ""
+"For one-shot sounds (gunshots, footsteps), use temporary AudioSources or "
+"an object pool"
+msgstr ""
+"Для одноразовых звуков (выстрелы, шаги) используйте временные AudioSource "
+"или пул объектов"

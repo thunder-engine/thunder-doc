@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/stylesheet.rst:4
+msgid "StyleSheet"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:13
+msgid ""
+"The StyleSheet class is responsible for handling CSS style rules, which "
+"can be applied to Widget objects. It includes functionality for storing, "
+"loading, saving, and resolving styles, along with utility methods to "
+"convert CSS color and length values."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:23
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:23
+msgid ":ref:`data<api_StyleSheet_6075a3ce>` () const"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:25
+#: ../../source/reference/stylesheet.rst:27
+#: ../../source/reference/stylesheet.rst:38
+#: ../../source/reference/stylesheet.rst:40
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:25
+msgid ":ref:`resolve<api_StyleSheet_0e5dca87>` (Widget * widget)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:27
+msgid ":ref:`setData<api_StyleSheet_7423a6fc>` (const TString & data)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:35
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:38
+msgid ""
+":ref:`resolveInline<api_StyleSheet_03516bfc>` (Widget * widget, const "
+"TString & style)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:40
+msgid ""
+":ref:`setStyleProperty<api_StyleSheet_fba7149c>` (Widget * widget, const "
+"TString & key, const TString & value)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:42
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:42
+msgid ":ref:`toColor<api_StyleSheet_21306ab4>` (const TString & value)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:44
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:44
+msgid ""
+":ref:`toLength<api_StyleSheet_6837e2fc>` (const TString & value, bool & "
+"pixels)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:50
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:54
+msgid ":ref:`TString<api_TString>`  **StyleSheet::data** () const"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:56
+msgid "Returns content as a string."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:58
+msgid "**See also** setData()."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:64
+msgid "void **StyleSheet::resolve** (:ref:`Widget<api_Widget>` * *widget*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:66
+msgid ""
+"Resolves the styles for a given *widget* based on the parsed CSS rules. "
+"It iterates through the CSS selectors and applies matching rules to the "
+"widget."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:72
+msgid ""
+"void **StyleSheet::resolveInline** (:ref:`Widget<api_Widget>` * *widget*,"
+" :ref:`TString<api_TString>` & *style*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:74
+msgid ""
+"Resolves inline styles provided as a string (e.g., from the *style* "
+"attribute in XML). The method splits the inline styles into key-value "
+"pairs and applies them to the widget."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:80
+msgid "void **StyleSheet::setData** (:ref:`TString<api_TString>` & *data*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:82
+msgid "Sets a new content data."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:84
+msgid "**See also** data()."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:90
+msgid ""
+"void **StyleSheet::setStyleProperty** (:ref:`Widget<api_Widget>` * "
+"*widget*, :ref:`TString<api_TString>` & *key*, "
+":ref:`TString<api_TString>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:92
+msgid ""
+"Directly sets a style property for a widget. It adds the specified *key* "
+"and *value* pair to the widget's style rules."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:98
+msgid ""
+":ref:`Vector4<api_Vector4>`  **StyleSheet::toColor** "
+"(:ref:`TString<api_TString>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:100
+msgid ""
+"Converts a CSS color *value* (e.g., named colors like \"blue\" or "
+"hexadecimal colors like \"#ff0000\") to a Vector4 representing RGBA "
+"values. It handles both named colors and hex codes (including short hex "
+"formats like #FFF)."
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:106
+msgid ""
+"float **StyleSheet::toLength** (:ref:`TString<api_TString>` & *value*, "
+"bool & *pixels*)"
+msgstr ""
+
+#: ../../source/reference/stylesheet.rst:108
+msgid ""
+"Converts a length *value* (e.g., \"10px\" or \"50%\") into a numeric "
+"*value* and returns whether the *value* is in *pixels* or percentages."
+msgstr ""
+

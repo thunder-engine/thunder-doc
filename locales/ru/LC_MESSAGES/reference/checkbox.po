@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/checkbox.rst:4
+msgid "CheckBox"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:13
+msgid ""
+"The CheckBox class represents an option button that can be toggled "
+"between two states: \"on\" or \"off.\" It is commonly used in graphical "
+"user interfaces (GUIs) to allow users to select or deselect specific "
+"options or features, often in forms or settings."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:23
+msgid ":ref:`knobColor<api_CheckBox_2fe67089>` () const"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:25
+msgid ":ref:`Image<api_Image>` *"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:25
+msgid ":ref:`knobGraphic<api_CheckBox_4e0671bd>` () const"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:27
+#: ../../source/reference/checkbox.rst:29
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:27
+msgid ":ref:`setKnobColor<api_CheckBox_f796b425>` (const Vector4  color)"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:29
+msgid ":ref:`setKnobGraphic<api_CheckBox_a45cd680>` (Image * knob)"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:37
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:39
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:44
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:48
+msgid ":ref:`Vector4<api_Vector4>`  **CheckBox::knobColor** () const"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:50
+msgid "Returns the color of the graphical knob."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:52
+msgid "**See also** setKnobColor()."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:58
+msgid ":ref:`Image<api_Image>` * **CheckBox::knobGraphic** () const"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:60
+msgid "Returns the graphical knob component."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:62
+msgid "**See also** setKnobGraphic()."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:68
+msgid "void **CheckBox::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:70
+msgid "Sets the *color* of the graphical knob."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:72
+msgid "**See also** knobColor()."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:78
+msgid "void **CheckBox::setKnobGraphic** (:ref:`Image<api_Image>` * *knob*)"
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:80
+msgid "Sets the graphical *knob* component."
+msgstr ""
+
+#: ../../source/reference/checkbox.rst:82
+msgid "**See also** knobGraphic()."
+msgstr ""
+

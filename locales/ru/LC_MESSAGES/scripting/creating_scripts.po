@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/scripting/creating_scripts.rst:4
+msgid "Creating and Using Scripts"
+msgstr "Создание и использование скриптов"
+
+#: ../../source/scripting/creating_scripts.rst:6
+msgid ""
+"Actor behavior is controlled by components attached to them. In addition "
+"to the standard components provided by **Thunder Engine**, developers can"
+" add their own components implementing game logic and gameplay features. "
+"These components allow triggering game events, responding to user "
+"actions, and modifying the properties of other components during "
+"gameplay."
+msgstr ""
+"Поведение актёра контролируется компонентами, прикреплёнными к ним. В дополнение "
+"к стандартным компонентам, предоставляемым **Thunder Engine**, разработчики могут "
+"добавлять свои собственные компоненты, реализующие игровую логику и игровые "
+"механики. Эти компоненты позволяют запускать игровые события, реагировать на "
+"действия пользователя и изменять свойства других компонентов во время игры."
+
+#: ../../source/scripting/creating_scripts.rst:10
+msgid ""
+"At the moment, Thunder Engine supports C++ and AngelScript for "
+"implementing custom components."
+msgstr ""
+"В настоящее время Thunder Engine поддерживает C++ и AngelScript для реализации "
+"пользовательских компонентов."
+
+#: 217source/scripting/creating_scripts.rst:13
+msgid "Creating Scripts"
+msgstr "Создание скриптов"
+
+#: ../../source/scripting/creating_scripts.rst:15
+msgid ""
+"Like many other assets, scripts are typically created directly in the "
+"engine editor. Within the Content Browser window, simply right-click and "
+"select **Native Behaviour** for C++ code or **Angel Behaviour** for "
+"AngelScript code from the context menu."
+msgstr ""
+"Как и многие другие ресурсы, скрипты обычно создаются непосредственно в редакторе "
+"движка. В окне Обозревателя контента просто щёлкните правой кнопкой мыши и выберите "
+"**Native Behaviour** для кода C++ или **Angel Behaviour** для кода AngelScript "
+"из контекстного меню."
+
+#: ../../source/scripting/creating_scripts.rst:18
+msgid ""
+"A new script will be created in the **Content Browser** window in the "
+"folder you selected. You will also be prompted to choose a name for your "
+"new component."
+msgstr ""
+"Новый скрипт будет создан в окне **Обозревателя контента** в выбранной вами папке. "
+"Вам также будет предложено выбрать имя для вашего нового компонента."
+
+#: ../../source/scripting/creating_scripts.rst:20
+msgid "New Script"
+msgstr "Новый скрипт"
+
+#: ../../source/scripting/creating_scripts.rst:24
+msgid ""
+"It is good practice to give your component a meaningful name. The name "
+"you choose will be used throughout scenes and prefabs, and changing it "
+"afterward can be challenging."
+msgstr ""
+"Хорошей практикой является давать компоненту осмысленное имя. Выбранное вами имя "
+"будет использоваться во всех сценах и префабах, и его последующее изменение может "
+"быть затруднительным."
+
+#: ../../source/scripting/creating_scripts.rst:28
+msgid "Script File Content"
+msgstr "Содержимое файла скрипта"
+
+#: ../../source/scripting/creating_scripts.rst:30
+msgid ""
+"When you double-click on your new script, it will open in a text editor. "
+"By default, the Thunder Engine editor uses its built-in code editor."
+msgstr ""
+"Когда вы дважды щёлкаете по новому скрипту, он открывается в текстовом редакторе. "
+"По умолчанию редактор Thunder Engine использует свой встроенный редактор кода."
+
+#: ../../source/scripting/creating_scripts.rst:33
+msgid "The initial content will look something like this:"
+msgstr "Начальное содержимое будет выглядеть примерно так:"
+
+#: ../../source/scripting/creating_scripts.rst:79
+msgid ""
+"The code written in your script will be executed by the engine's internal"
+" systems. Now we are interested in only two functions. The **start** "
+"function is called every time an **Actor** containing our component is "
+"created in the scene. It is usually used for initializing internal "
+"variables of our component. The **update** function is called every frame"
+" and is responsible for handling events within the game, where you can "
+"write gameplay logic. Of course, you can create your own functions to "
+"simplify working with the code."
+msgstr ""
+"Код, написанный в вашем скрипте, будет выполняться внутренними системами движка. "
+"Сейчас нас интересуют только две функции. Функция **start** вызывается каждый раз, "
+"когда в сцене создаётся **Актёр**, содержащий наш компонент. Обычно она "
+"используется для инициализации внутренних переменных нашего компонента. Функция "
+"**update** вызывается каждый кадр и отвечает за обработку событий внутри игры, "
+"где вы можете писать игровую логику. Конечно, вы можете создавать свои собственные "
+"функции, чтобы упростить работу с кодом."
+
+#: ../../source/scripting/creating_scripts.rst:86
+msgid "Controlling Actors"
+msgstr "Управление актёрами"
+
+#: ../../source/scripting/creating_scripts.rst:88
+msgid "Now let's write something! Let's add the following code:"
+msgstr "А теперь давайте что-нибудь напишем! Добавим следующий код:"
+
+#: ../../source/scripting/creating_scripts.rst:105
+msgid ""
+"After saving your changes, the editor will detect them and start "
+"compiling your code. Note that compiling C++ code requires a compiler "
+"installed for your system: **Visual Studio** for Windows, **GCC** or "
+"**Clang** for Linux, **Xcode** for MacOS. No additional actions are "
+"required for AngelScript code."
+msgstr ""
+"После сохранения изменений редактор обнаружит их и начнёт компиляцию вашего кода. "
+"Обратите внимание, что компиляция кода C++ требует установленного компилятора для "
+"вашей системы: **Visual Studio** для Windows, **GCC** или **Clang** для Linux, "
+"**Xcode** для MacOS. Для кода AngelScript дополнительные действия не требуются."
+
+#: ../../source/scripting/creating_scripts.rst:109
+msgid ""
+"After compiling the code, your component will appear in the drop-down "
+"menu of the **Add Component** button:"
+msgstr ""
+"После компиляции кода ваш компонент появится в выпадающем меню кнопки "
+"**Add Component**:"
+
+#: ../../source/scripting/creating_scripts.rst:111
+#: ../../source/scripting/creating_scripts.rst:117
+msgid "Add Component"
+msgstr "Добавить компонент"
+
+#: ../../source/scripting/creating_scripts.rst:115
+msgid "Let's add it to the selected Actor and start the simulation ``Ctrl+G``:"
+msgstr "Давайте добавим его к выбранному актёру и запустим симуляцию ``Ctrl+G``:"
+
+#: ../../source/scripting/creating_scripts.rst:121
+msgid ""
+"If everything was done correctly, you will see a message in the **Console"
+" Output** window:"
+msgstr ""
+"Если всё сделано правильно, вы увидите сообщение в окне **Console Output**:"
+
+#: ../../source/scripting/creating_scripts.rst:123
+msgid "Hello World"
+msgstr "Hello World"

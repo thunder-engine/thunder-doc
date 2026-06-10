@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/vfx/custom_modules.rst:4
+msgid "Creating Custom Modules"
+msgstr "Создание пользовательских модулей"
+
+#: ../../source/rendering/vfx/custom_modules.rst:7
+msgid "Introduction"
+msgstr "Введение"
+
+#: ../../source/rendering/vfx/custom_modules.rst:9
+msgid ""
+"The VFX editor allows users to create custom modules that extend the "
+"editor's functionality by adding new types of particle modifiers, "
+"effects, and behaviors. Custom modules enable developers to create "
+"specialized visual effects tailored to the specific needs of the game."
+msgstr ""
+"Редактор VFX позволяет пользователям создавать пользовательские модули, "
+"которые расширяют функциональность редактора за счёт добавления новых типов "
+"модификаторов частиц, эффектов и поведений. Пользовательские модули позволяют "
+"разработчикам создавать специализированные визуальные эффекты, адаптированные "
+"под конкретные потребности игры."
+
+#: ../../source/rendering/vfx/custom_modules.rst:11
+msgid ""
+"This guide outlines the steps required to create, implement, and "
+"integrate custom modules into the VFX editor."
+msgstr ""
+"Это руководство описывает шаги, необходимые для создания, реализации и "
+"интеграции пользовательских модулей в редактор VFX."
+
+#: 217source/rendering/vfx/custom_modules.rst:14
+msgid "Creating a Custom Module Using XML"
+msgstr "Создание пользовательского модуля с помощью XML"
+
+#: ../../source/rendering/vfx/custom_modules.rst:16
+msgid ""
+"To create a custom module in the VFX editor, XML code is used to describe"
+" the behavior, parameters, and operations of the module. Below is an "
+"example of creating a module that initializes particles and sets their "
+"parameters (lifetime, position, color, rotation, and size)."
+msgstr ""
+"Для создания пользовательского модуля в редакторе VFX используется XML-код, "
+"который описывает поведение, параметры и операции модуля. Ниже приведён пример "
+"создания модуля, который инициализирует частицы и задаёт их параметры "
+"(время жизни, положение, цвет, поворот и размер)."
+
+#: ../../source/rendering/vfx/custom_modules.rst:18
+msgid "XML Example for Creating a Custom Module:"
+msgstr "Пример XML для создания пользовательского модуля:"
+
+#: ../../source/rendering/vfx/custom_modules.rst:35
+msgid "Breakdown of the XML Structure:"
+msgstr "Разбор структуры XML:"
+
+#: ../../source/rendering/vfx/custom_modules.rst:37
+msgid ""
+"**module**: This element specifies the name of the module, its type "
+"(e.g., \"Spawn/SampleModule\"), and the stage at which the module is "
+"applied (e.g., \"spawn\", \"update\", or \"render\")."
+msgstr ""
+"**module**: Этот элемент задаёт имя модуля, его тип (например, \"Spawn/SampleModule\") "
+"и этап, на котором модуль применяется (например, \"spawn\", \"update\" или \"render\")."
+
+#: ../../source/rendering/vfx/custom_modules.rst:38
+msgid ""
+"**options**: Each module can contain different modes (e.g., "
+"\"parameterMode\") that determine how the module parameters are applied "
+"(e.g., constant or random value)."
+msgstr ""
+"**options**: Каждый модуль может содержать различные режимы (например, "
+"\"parameterMode\"), которые определяют, как применяются параметры модуля "
+"(например, постоянное или случайное значение)."
+
+#: ../../source/rendering/vfx/custom_modules.rst:39
+msgid ""
+"**params**: The parameters used to configure particle modifiers. Each "
+"parameter has a name, type, and mode (e.g., \"lifetime\")."
+msgstr ""
+"**params**: Параметры, используемые для настройки модификаторов частиц. "
+"Каждый параметр имеет имя, тип и режим (например, \"lifetime\")."
+
+#: ../../source/rendering/vfx/custom_modules.rst:40
+msgid ""
+"**operations**: The operations performed on the parameters to configure "
+"the state of particles. For example, the \"set\" operation sets the value"
+" of a particle's parameter (e.g., \"p.lifetime\")."
+msgstr ""
+"**operations**: Операции, выполняемые над параметрами для настройки состояния "
+"частиц. Например, операция \"set\" задаёт значение параметра частицы "
+"(например, \"p.lifetime\")."
+
+#: ../../source/rendering/vfx/custom_modules.rst:42
+msgid ""
+"An interface to work with this module will be automatically generated in "
+"the editor, allowing users to modify the module's parameters through the "
+"parameters panel."
+msgstr ""
+"Интерфейс для работы с этим модулем будет автоматически сгенерирован в редакторе, "
+"позволяя пользователям изменять параметры модуля через панель параметров."
+
+#: ../../source/rendering/vfx/custom_modules.rst:45
+msgid "Available Operations"
+msgstr "Доступные операции"
+
+#: ../../source/rendering/vfx/custom_modules.rst:47
+msgid ""
+"The VFX editor supports the following operations for manipulating "
+"particle parameters:"
+msgstr ""
+"Редактор VFX поддерживает следующие операции для управления параметрами частиц:"
+
+#: ../../source/rendering/vfx/custom_modules.rst:49
+msgid ""
+"**Set**: This operation sets the value of a parameter. For example, you "
+"can set the lifetime or position of a particle."
+msgstr ""
+"**Set**: Эта операция задаёт значение параметра. Например, вы можете установить "
+"время жизни или положение частицы."
+
+#: ../../source/rendering/vfx/custom_modules.rst:51
+#: ../../source/rendering/vfx/custom_modules.rst:59
+#: ../../source/rendering/vfx/custom_modules.rst:67
+#: ../../source/rendering/vfx/custom_modules.rst:75
+#: ../../source/rendering/vfx/custom_modules.rst:83
+#: ../../source/rendering/vfx/custom_modules.rst:96
+#: ../../source/rendering/vfx/custom_modules.rst:104
+#: ../../source/rendering/vfx/custom_modules.rst:112
+#: ../../source/rendering/vfx/custom_modules.rst:120
+msgid "Example:"
+msgstr "Пример:"
+
+#: ../../source/rendering/vfx/custom_modules.rst:57
+msgid ""
+"**Add**: This operation performs addition on two values. It takes two "
+"input parameters and returns their sum."
+msgstr ""
+"**Add**: Эта операция выполняет сложение двух значений. Она принимает два "
+"входных параметра и возвращает их сумму."
+
+#: ../../source/rendering/vfx/custom_modules.rst:65
+msgid ""
+"**Subtract**: This operation subtracts the second parameter from the "
+"first. It takes two input parameters and returns their difference."
+msgstr ""
+"**Subtract**: Эта операция вычитает второй параметр из первого. Она принимает "
+"два входных параметра и возвращает их разность."
+
+#: ../../source/rendering/vfx/custom_modules.rst:73
+msgid ""
+"**Multiply**: This operation multiplies two parameters. It takes two "
+"input parameters and returns their product."
+msgstr ""
+"**Multiply**: Эта операция умножает два параметра. Она принимает два входных "
+"параметра и возвращает их произведение."
+
+#: ../../source/rendering/vfx/custom_modules.rst:81
+msgid ""
+"**Divide**: This operation divides the first parameter by the second. It "
+"takes two input parameters and returns their quotient."
+msgstr ""
+"**Divide**: Эта операция делит первый параметр на второй. Она принимает два "
+"входных параметра и возвращает их частное."
+
+#: ../../source/rendering/vfx/custom_modules.rst:90
+msgid "Parameter Spaces"
+msgstr "Пространства параметров"
+
+#: ../../source/rendering/vfx/custom_modules.rst:92
+msgid ""
+"Parameters used in custom modules can belong to different spaces. A space"
+" defines where and how the parameter values will be used. Here is a "
+"description of the available spaces:"
+msgstr ""
+"Параметры, используемые в пользовательских модулях, могут принадлежать "
+"различным пространствам. Пространство определяет, где и как будут "
+"использоваться значения параметров. Ниже приведено описание доступных пространств:"
+
+#: ../../source/rendering/vfx/custom_modules.rst:94
+msgid ""
+"**Emitter**: Parameters belonging to this space relate to the particle "
+"emitter itself. These parameters typically describe properties that "
+"affect all particles emitted by the emitter, such as emission speed or "
+"general effect settings. These parameters have the prefix \"e.\""
+msgstr ""
+"**Emitter**: Параметры, принадлежащие этому пространству, относятся к самому "
+"эмиттеру частиц. Эти параметры обычно описывают свойства, влияющие на все "
+"частицы, испускаемые эмиттером, такие как скорость эмиссии или общие настройки "
+"эффекта. Эти параметры имеют префикс \"e.\""
+
+#: ../../source/rendering/vfx/custom_modules.rst:102
+msgid ""
+"**Particle**: Parameters in this space relate to individual particles. "
+"They control aspects such as size, color, position, and other properties "
+"that may change over time for each particle. These parameters have the "
+"prefix \"p.\""
+msgstr ""
+"**Particle**: Параметры в этом пространстве относятся к отдельным частицам. "
+"Они управляют такими аспектами, как размер, цвет, положение и другие свойства, "
+"которые могут изменяться со временем для каждой частицы. Эти параметры имеют "
+"префикс \"p.\""
+
+#: ../../source/rendering/vfx/custom_modules.rst:110
+msgid ""
+"**Renderable**: Parameters in this space relate to objects that can be "
+"rendered in the game. These parameters have the prefix \"r.\" Typically, "
+"these parameters are only used in modules related to the \"render\" "
+"stage."
+msgstr ""
+"**Renderable**: Параметры в этом пространстве относятся к объектам, которые "
+"могут быть отрисованы в игре. Эти параметры имеют префикс \"r.\" Как правило, "
+"эти параметры используются только в модулях, связанных с этапом \"render\"."
+
+#: ../../source/rendering/vfx/custom_modules.rst:118
+msgid ""
+"**Local**: Parameters in this space can change relative to the particle "
+"or emitter's local position. They are used as temporary storage for "
+"intermediate calculations for subsequent operations. These parameters "
+"have no prefix and simply indicate the type of stored data."
+msgstr ""
+"**Local**: Параметры в этом пространстве могут изменяться относительно "
+"локального положения частицы или эмиттера. Они используются как временное "
+"хранилище для промежуточных вычислений для последующих операций. Эти параметры "
+"не имеют префикса и просто указывают тип хранимых данных."
+
+#: ../../source/rendering/vfx/custom_modules.rst:128
+msgid "Integrating a Custom Module into the Editor"
+msgstr "Интеграция пользовательского модуля в редактор"
+
+#: ../../source/rendering/vfx/custom_modules.rst:130
+msgid ""
+"To integrate a custom module into the editor, simply place the module in "
+"the **Content Browser**. Upon the next startup, the editor will "
+"automatically register it for use."
+msgstr ""
+"Чтобы интегрировать пользовательский модуль в редактор, просто поместите модуль "
+"в **Обозреватель контента**. При следующем запуске редактор автоматически "
+"зарегистрирует его для использования."
+
+#: ../../source/rendering/vfx/custom_modules.rst:133
+msgid "Conclusion"
+msgstr "Заключение"
+
+#: ../../source/rendering/vfx/custom_modules.rst:135
+msgid ""
+"Creating custom modules using XML allows you to extend the functionality "
+"of the VFX editor, creating unique visual effects for your game. By "
+"following the steps outlined, you can integrate new modules into the "
+"editor, configure their parameters, and optimize visual effects for "
+"specific tasks."
+msgstr ""
+"Создание пользовательских модулей с помощью XML позволяет расширить "
+"функциональность редактора VFX, создавая уникальные визуальные эффекты для "
+"вашей игры. Следуя описанным шагам, вы можете интегрировать новые модули в "
+"редактор, настраивать их параметры и оптимизировать визуальные эффекты для "
+"конкретных задач."

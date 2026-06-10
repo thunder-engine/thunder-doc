@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/floatinput.rst:4
+msgid "FloatInput"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:13
+msgid ""
+"The FloatInput class represents a user interface element designed for "
+"entering and displaying floating-point values. This class is used in "
+"graphical user interface (GUI) applications where users need to input "
+"decimal numbers, such as 3.14, 0.001, or -42.56."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:23
+msgid ":ref:`corners<api_FloatInput_e405c2d9>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:25
+#: ../../source/reference/floatinput.rst:27
+msgid ":ref:`Button<api_Button>` *"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:25
+msgid ":ref:`decreaseButton<api_FloatInput_409672ed>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:27
+msgid ":ref:`increaseButton<api_FloatInput_037f1c5a>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:29
+msgid ":ref:`LineEdit<api_LineEdit>` *"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:29
+msgid ":ref:`input<api_FloatInput_69723ea1>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:31
+#: ../../source/reference/floatinput.rst:33
+#: ../../source/reference/floatinput.rst:57
+#: ../../source/reference/floatinput.rst:59
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:31
+msgid ":ref:`maximum<api_FloatInput_703d52ab>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:33
+msgid ":ref:`minimum<api_FloatInput_89e6c15f>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:35
+#: ../../source/reference/floatinput.rst:37
+#: ../../source/reference/floatinput.rst:39
+#: ../../source/reference/floatinput.rst:41
+#: ../../source/reference/floatinput.rst:43
+#: ../../source/reference/floatinput.rst:45
+#: ../../source/reference/floatinput.rst:47
+#: ../../source/reference/floatinput.rst:49
+#: ../../source/reference/floatinput.rst:51
+#: ../../source/reference/floatinput.rst:53
+#: ../../source/reference/floatinput.rst:55
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:35
+msgid ":ref:`onDecrease<api_FloatInput_1c96748b>` ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:37
+msgid ":ref:`onEditingFinished<api_FloatInput_d075b283>` ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:39
+msgid ":ref:`onIncrease<api_FloatInput_2610e539>` ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:41
+msgid ":ref:`setCorners<api_FloatInput_0324c67a>` (Vector4  corners)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:43
+msgid ":ref:`setDecreaseButton<api_FloatInput_7fad3809>` (Button * button)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:45
+msgid ":ref:`setIncreaseButton<api_FloatInput_78a6be94>` (Button * button)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:47
+msgid ":ref:`setInput<api_FloatInput_5b3fa27d>` (LineEdit * input)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:49
+msgid ":ref:`setMaximum<api_FloatInput_836c14e7>` (float  maximum)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:51
+msgid ":ref:`setMinimum<api_FloatInput_6fcb4379>` (float  minimum)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:53
+msgid ":ref:`setSingleStep<api_FloatInput_38b41dea>` (float  step)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:55
+msgid ":ref:`setValue<api_FloatInput_3b1c2946>` (float  value)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:57
+msgid ":ref:`singleStep<api_FloatInput_c4f1372e>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:59
+msgid ":ref:`value<api_FloatInput_abe7d258>` () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:67
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:69
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:74
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:78
+msgid ":ref:`Vector4<api_Vector4>`  **FloatInput::corners** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:80
+msgid "Returns the corners radiuses."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:82
+msgid "**See also** setCorners()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:88
+msgid ":ref:`Button<api_Button>` * **FloatInput::decreaseButton** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:90
+msgid "Returns the decrease value button."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:92
+msgid "**See also** setDecreaseButton()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:98
+msgid ":ref:`Button<api_Button>` * **FloatInput::increaseButton** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:100
+msgid "Returns the increase value button."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:102
+msgid "**See also** setIncreaseButton()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:108
+msgid ":ref:`LineEdit<api_LineEdit>` * **FloatInput::input** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:110
+msgid "Returns the input field component."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:112
+msgid "**See also** setInput()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:118
+msgid "float **FloatInput::maximum** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:120
+msgid "Returns the maximum allowed value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:122
+msgid "**See also** setMaximum()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:128
+msgid "float **FloatInput::minimum** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:130
+msgid "Returns the minimum allowed value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:132
+msgid "**See also** setMinimum()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:138
+msgid "void **FloatInput::onDecrease** ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:140
+msgid ""
+"Slot method called when the decrease button is clicked. Decrements the "
+"FloatInput value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:146
+msgid "void **FloatInput::onEditingFinished** ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:148
+msgid ""
+"Slot method called when editing of the input text is finished. Updates "
+"the FloatInput value based on the entered text."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:154
+msgid "void **FloatInput::onIncrease** ()"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:156
+msgid ""
+"Slot method called when the increase button is clicked. Increments the "
+"FloatInput value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:162
+msgid "void **FloatInput::setCorners** (:ref:`Vector4<api_Vector4>`  *corners*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:164
+msgid "Sets the *corners* radiuses."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:166
+msgid "**See also** corners()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:172
+msgid ""
+"void **FloatInput::setDecreaseButton** (:ref:`Button<api_Button>` * "
+"*button*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:174
+msgid "Sets the decrease value button."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:176
+msgid "**See also** decreaseButton()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:182
+msgid ""
+"void **FloatInput::setIncreaseButton** (:ref:`Button<api_Button>` * "
+"*button*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:184
+msgid "Sets the increase value button."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:186
+msgid "**See also** increaseButton()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:192
+msgid "void **FloatInput::setInput** (:ref:`LineEdit<api_LineEdit>` * *input*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:194
+msgid "Sets the *input* field component."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:196
+msgid "**See also** input()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:202
+msgid "void **FloatInput::setMaximum** (float  *maximum*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:204
+msgid "Sets the *maximum* allowed value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:206
+msgid "**See also** maximum()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:212
+msgid "void **FloatInput::setMinimum** (float  *minimum*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:214
+msgid "Sets the *minimum* allowed value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:216
+msgid "**See also** minimum()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:222
+msgid "void **FloatInput::setSingleStep** (float  *step*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:224
+msgid ""
+"Sets the single *step* value for incrementing or decrementing the "
+"FloatInput value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:226
+msgid "**See also** singleStep()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:232
+msgid "void **FloatInput::setValue** (float  *value*)"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:234
+msgid ""
+"Sets the *value* of the FloatInput within the specified minimum and "
+"maximum limits."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:236
+msgid "**See also** value()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:242
+msgid "float **FloatInput::singleStep** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:244
+msgid ""
+"Returns the single step value for incrementing or decrementing the "
+"FloatInput value."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:246
+msgid "**See also** setSingleStep()."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:252
+msgid "float **FloatInput::value** () const"
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:254
+msgid "Returns the current value of the FloatInput."
+msgstr ""
+
+#: ../../source/reference/floatinput.rst:256
+msgid "**See also** setValue()."
+msgstr ""
+

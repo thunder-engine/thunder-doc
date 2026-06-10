@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/scripting/overview.rst:4
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/scripting/overview.rst:6
+msgid ""
+"Thunder Engine was designed to be a modular. This means developers are "
+"enable or disable a various modules. Also developers can create their own"
+" modules for their needs. In the Editor your custom module will be "
+"created automatically when you will create any Native Behaviour. The "
+"Editor will handle all required registration for your Native Behaviour "
+"automatically. The conceps below are common across programming modules."
+msgstr ""
+"Thunder Engine был разработан как модульный. Это означает, что разработчики могут "
+"включать или отключать различные модули. Также разработчики могут создавать свои "
+"собственные модули для своих нужд. В редакторе ваш пользовательский модуль будет "
+"создан автоматически, когда вы создадите любое Native Behaviour. Редактор будет "
+"автоматически обрабатывать всю необходимую регистрацию для вашего Native Behaviour. "
+"Приведённые ниже концепции являются общими для всех модулей программирования."
+
+#: 217source/scripting/overview.rst:15
+msgid "Actor"
+msgstr "Актёр"
+
+#: ../../source/scripting/overview.rst:17
+msgid "This simple object is a key ring for all related Components."
+msgstr "Этот простой объект является связкой для всех связанных компонентов."
+
+#: ../../source/scripting/overview.rst:19
+#: ../../source/scripting/overview.rst:26
+msgid "Actor Scheme"
+msgstr "Схема актёра"
+
+#: ../../source/scripting/overview.rst:23
+msgid ""
+"Actors is a main objects on the scene. They can be united into "
+"hierarchies."
+msgstr ""
+"Актёры являются основными объектами на сцене. Они могут быть объединены в иерархии."
+
+#: ../../source/scripting/overview.rst:32
+msgid "Components"
+msgstr "Компоненты"
+
+#: ../../source/scripting/overview.rst:34
+msgid ""
+"Components is a blood of any game in Thunder Engine. Components contain "
+"information how your game Actors look like or how they interact with "
+"other Actors. This information called Properties and it can be modified "
+"in Editor or right from the game code. Using Native version of API "
+"developers are able to create any type of Components. But at the same "
+"time using Scriptable API only Behaviour type of components are "
+"available."
+msgstr ""
+"Компоненты — это жизненная сила любой игры в Thunder Engine. Компоненты содержат "
+"информацию о том, как выглядят игровые актёры или как они взаимодействуют с другими "
+"актёрами. Эта информация называется свойствами, и она может быть изменена в редакторе "
+"или прямо из игрового кода. Используя нативную версию API, разработчики могут создавать "
+"компоненты любого типа. Но в то же время, используя скриптуемый API, доступны только "
+"компоненты типа Behaviour."
+
+#: ../../source/scripting/overview.rst:41
+msgid "Property"
+msgstr "Свойство"
+
+#: ../../source/scripting/overview.rst:43
+msgid "A variable that can be changed from Editor or in game."
+msgstr "Переменная, которую можно изменить в редакторе или в игре."
+
+#: ../../source/scripting/overview.rst:45
+msgid "Properties"
+msgstr "Свойства"
+
+#: ../../source/scripting/overview.rst:48
+msgid ""
+"The *Position*, *Rotation* and *Scale* are properties of the Transform "
+"component."
+msgstr ""
+"*Position*, *Rotation* и *Scale* являются свойствами компонента Transform."
+
+#: ../../source/scripting/overview.rst:50
+#: ../../source/scripting/overview.rst:67
+msgid "For a specific programming language please refer:"
+msgstr "Для конкретного языка программирования обратитесь к:"
+
+#: ../../source/scripting/overview.rst:52
+msgid ":ref:`doc_native_properties`"
+msgstr ":ref:`doc_native_properties`"
+
+#: ../../source/scripting/overview.rst:55
+#: ../../source/scripting/overview.rst:63
+msgid "Signals and Slots"
+msgstr "Сигналы и слоты"
+
+#: ../../source/scripting/overview.rst:57
+msgid ""
+"When developing gameplay, sometimes it becomes necessary for one object "
+"to communicate something to another object. For example, a player has "
+"been killed and the \"Game Over\" window needs to be displayed. There are"
+" at least two ways to do this. To call window directly or just to send a "
+"signal. The listener will catch it and will react on it."
+msgstr ""
+"При разработке игрового процесса иногда возникает необходимость передать информацию "
+"от одного объекта другому. Например, игрок был убит, и нужно отобразить окно "
+"\"Game Over\". Существует как минимум два способа сделать это. Вызвать окно напрямую "
+"или просто отправить сигнал. Слушатель перехватит его и отреагирует."
+
+#: ../../source/scripting/overview.rst:69
+msgid ":ref:`doc_native_signals`"
+msgstr ":ref:`doc_native_signals`"
+
+#: ../../source/scripting/overview.rst:72
+msgid "Resource"
+msgstr "Ресурс"
+
+#: ../../source/scripting/overview.rst:74
+msgid ""
+"Any data set that can be loaded from the file system. Some Components "
+"like MeshRender uses Resources. An asstes in the :ref:`doc_content` a "
+"good example of the resources. Any Resources must be controlled by the "
+"Resource System. This system controls the life cicle of the resource. "
+"Loads them on demand and unloads when it not needed anymore."
+msgstr ""
+"Любой набор данных, который может быть загружен из файловой системы. Некоторые "
+"компоненты, такие как MeshRender, используют ресурсы. Ресурсы в :ref:`doc_content` "
+"— хороший пример ресурсов. Любые ресурсы должны контролироваться Системой ресурсов. "
+"Эта система управляет жизненным циклом ресурса. Загружает их по требованию и выгружает, "
+"когда они больше не нужны."

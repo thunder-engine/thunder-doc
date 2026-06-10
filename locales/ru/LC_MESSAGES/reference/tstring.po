@@ -1,0 +1,1101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/tstring.rst:4
+msgid "TString"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:21
+msgid ":ref:`TString<api_TString_4b025e96>` ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:23
+msgid ":ref:`TString<api_TString_1765ab8c>` (const ByteArray & array)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:25
+msgid ":ref:`TString<api_TString_ecba6fd9>` (const char * str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:27
+msgid ":ref:`TString<api_TString_914607fb>` (const std::string & str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:29
+msgid ":ref:`TString<api_TString_a416372b>` (int  n, const char  ch)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:31 ../../source/reference/tstring.rst:33
+#: ../../source/reference/tstring.rst:35 ../../source/reference/tstring.rst:37
+#: ../../source/reference/tstring.rst:81 ../../source/reference/tstring.rst:83
+#: ../../source/reference/tstring.rst:85 ../../source/reference/tstring.rst:87
+#: ../../source/reference/tstring.rst:89 ../../source/reference/tstring.rst:91
+#: ../../source/reference/tstring.rst:131
+#: ../../source/reference/tstring.rst:133
+#: ../../source/reference/tstring.rst:135
+#: ../../source/reference/tstring.rst:137
+msgid ":ref:`TString<api_TString>` &"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:31
+msgid ":ref:`append<api_TString_d96340b2>` (const TString & str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:33
+msgid ":ref:`append<api_TString_b8f0de95>` (const char * str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:35
+msgid ":ref:`append<api_TString_49d8c1b5>` (const std::string & str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:37
+msgid ":ref:`append<api_TString_f9253e4c>` (const char  ch, int  n)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:39 ../../source/reference/tstring.rst:41
+#: ../../source/reference/tstring.rst:43 ../../source/reference/tstring.rst:45
+#: ../../source/reference/tstring.rst:47 ../../source/reference/tstring.rst:49
+#: ../../source/reference/tstring.rst:75 ../../source/reference/tstring.rst:79
+#: ../../source/reference/tstring.rst:93 ../../source/reference/tstring.rst:95
+#: ../../source/reference/tstring.rst:109
+#: ../../source/reference/tstring.rst:115
+#: ../../source/reference/tstring.rst:119
+#: ../../source/reference/tstring.rst:123
+#: ../../source/reference/tstring.rst:125
+#: ../../source/reference/tstring.rst:127
+#: ../../source/reference/tstring.rst:129
+#: ../../source/reference/tstring.rst:154
+#: ../../source/reference/tstring.rst:156
+#: ../../source/reference/tstring.rst:158
+#: ../../source/reference/tstring.rst:160
+#: ../../source/reference/tstring.rst:162
+#: ../../source/reference/tstring.rst:164
+#: ../../source/reference/tstring.rst:166
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:39
+msgid ":ref:`arg<api_TString_02675e9a>` (const TString & arg1) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:41
+msgid ""
+":ref:`arg<api_TString_7ab5921d>` (const TString & arg1, const TString & "
+"arg2) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:43
+msgid ""
+":ref:`arg<api_TString_4f6b9e01>` (const TString & arg1, const TString & "
+"arg2, const TString & arg3) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:45
+msgid ""
+":ref:`arg<api_TString_729b3a0e>` (const TString & arg1, const TString & "
+"arg2, const TString & arg3, const TString & arg4) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:47
+msgid ""
+":ref:`arg<api_TString_43d7c059>` (const TString & arg1, const TString & "
+"arg2, const TString & arg3, const TString & arg4, const TString & arg5) "
+"const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:49
+msgid ""
+":ref:`arg<api_TString_5dfc80b2>` (const TString & arg1, const TString & "
+"arg2, const TString & arg3, const TString & arg4, const TString & arg5, "
+"const TString & arg6) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:51 ../../source/reference/tstring.rst:53
+#: ../../source/reference/tstring.rst:63 ../../source/reference/tstring.rst:143
+msgid "char"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:51
+msgid ":ref:`at<api_TString_9607fec5>` (int  position) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:53
+msgid ":ref:`back<api_TString_2e507694>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:55
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:55
+msgid ":ref:`clear<api_TString_b01fac29>` ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:57 ../../source/reference/tstring.rst:65
+#: ../../source/reference/tstring.rst:67 ../../source/reference/tstring.rst:71
+#: ../../source/reference/tstring.rst:73 ../../source/reference/tstring.rst:77
+#: ../../source/reference/tstring.rst:97 ../../source/reference/tstring.rst:105
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:57
+msgid ":ref:`compare<api_TString_c9607a13>` (const TString & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:59 ../../source/reference/tstring.rst:69
+#: ../../source/reference/tstring.rst:121
+#: ../../source/reference/tstring.rst:139
+#: ../../source/reference/tstring.rst:141
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:59
+msgid ":ref:`contains<api_TString_4e75c286>` (const TString & str) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:61
+msgid "const char"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:61
+msgid ":ref:`data<api_TString_904cf712>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:63
+msgid ":ref:`front<api_TString_a639c1d0>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:65
+msgid ":ref:`indexOf<api_TString_52681f3d>` (const TString & str) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:67
+msgid ":ref:`indexOf<api_TString_d6be8c73>` (const char  ch) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:69
+msgid ":ref:`isEmpty<api_TString_d1e5bfa9>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:71
+msgid ":ref:`lastIndexOf<api_TString_5d074c89>` (const TString & str) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:73
+msgid ":ref:`lastIndexOf<api_TString_a3d6814e>` (const char  ch) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:75
+msgid ":ref:`left<api_TString_402db1ef>` (int  n) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:77
+msgid ":ref:`length<api_TString_39ab24d7>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:79
+msgid ":ref:`mid<api_TString_138dc075>` (int  position, int  n) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:81
+msgid ":ref:`remove<api_TString_903de462>` (const TString & str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:83
+msgid ":ref:`remove<api_TString_036517cb>` (const char  ch)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:85
+msgid ":ref:`removeFirst<api_TString_2c6d8e39>` ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:87
+msgid ":ref:`removeLast<api_TString_e7398d51>` ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:89
+msgid ""
+":ref:`replace<api_TString_310e7846>` (const TString & before, const "
+"TString & after)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:91
+msgid ""
+":ref:`replace<api_TString_a69fc287>` (const char  before, const char  "
+"after)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:93
+msgid ":ref:`right<api_TString_54a90e32>` (int  n) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:95
+msgid ":ref:`simplified<api_TString_05a8bc49>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:97
+msgid ":ref:`size<api_TString_c04e3a18>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:99 ../../source/reference/tstring.rst:101
+msgid "StringList"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:99
+msgid ":ref:`split<api_TString_b570f3d4>` (const TString & sep) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:101
+msgid ":ref:`split<api_TString_a067398d>` (const char  sep) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:103
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:103
+msgid ":ref:`toFloat<api_TString_6a7f5432>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:105
+msgid ":ref:`toInt<api_TString_3216d5fc>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:107
+msgid "size_t"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:107
+msgid ":ref:`toLong<api_TString_980a271d>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:109
+msgid ":ref:`toLower<api_TString_61fd3cea>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:111
+msgid "const std::string"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:111
+msgid ":ref:`toStdString<api_TString_2b3817fa>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:113
+msgid "std::wstring"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:113
+msgid ":ref:`toStdWString<api_TString_65a4e30f>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:115
+msgid ":ref:`toUpper<api_TString_a35f72e0>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:117
+msgid "std::u32string"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:117
+msgid ":ref:`toUtf32<api_TString_3107428f>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:119
+msgid ":ref:`trimmed<api_TString_e340d6a9>` () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:121
+msgid ":ref:`operator!=<api_TString_235169cb>` (const TString & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:123
+msgid ":ref:`operator+<api_TString_ae9d0421>` (char  ch) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:125
+msgid ":ref:`operator+<api_TString_f5834ba2>` (const TString & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:127
+msgid ":ref:`operator+<api_TString_7cb2f3a0>` (const char * other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:129
+msgid ":ref:`operator+<api_TString_d4635208>` (const std::string & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:131
+msgid ":ref:`operator+=<api_TString_469ad3f0>` (const TString & other)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:133
+msgid ":ref:`operator+=<api_TString_453ac82e>` (const char  ch)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:135
+msgid ":ref:`operator+=<api_TString_fe69b45d>` (const char * str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:137
+msgid ":ref:`operator+=<api_TString_e8d651c7>` (const std::string & str)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:139
+msgid ":ref:`operator\\<<api_TString_385a671d>` (const TString & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:141
+msgid ":ref:`operator==<api_TString_aec47b62>` (const TString & other) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:143
+msgid ":ref:`operator[]<api_TString_5bcf4801>` (int  position)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:151
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:154
+msgid ":ref:`fromUtf32<api_TString_f43ba972>` (const std::u32string & in)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:156
+msgid ":ref:`fromWc32<api_TString_f7b6a9d2>` (uint32_t  unicode)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:158
+msgid ":ref:`fromWString<api_TString_90857c1b>` (const std::wstring & in)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:160
+msgid ""
+":ref:`join<api_TString_3b42c591>` (const StringList & list, const char * "
+"separator)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:162
+msgid ":ref:`number<api_TString_8763ef41>` (float  in)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:164
+msgid ":ref:`number<api_TString_3f0cd6ae>` (int  in)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:166
+msgid ":ref:`number<api_TString_a390c14f>` (long long  in)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:172
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:176
+msgid "**TString::TString** ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:178
+msgid "Constructs an empty string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:184
+msgid "**TString::TString** (ByteArray & *array*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:186
+msgid "Constructs a string from a byte array."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:192
+msgid "**TString::TString** (char * *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:194
+msgid "Constructs a string from a C-style null-terminated string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:200
+msgid "**TString::TString** (std::string & *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:202
+msgid "Constructs a string from a standard string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:208
+msgid "**TString::TString** (int  *n*, char  *ch*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:210
+msgid "Constructs a string of the given *n* size with every character set to ch."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:216
+msgid ""
+":ref:`TString<api_TString>` & **TString::append** "
+"(:ref:`TString<api_TString>` & *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:218
+msgid "Appends the string *str* onto the end of this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:224
+msgid ":ref:`TString<api_TString>` & **TString::append** (char * *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:226
+msgid ""
+"Appends the string *str* to this string. The given const char pointer is "
+"converted to Unicode."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:232
+msgid ":ref:`TString<api_TString>` & **TString::append** (std::string & *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:234
+msgid "Appends the standard string *str* onto the end of this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:240
+msgid ":ref:`TString<api_TString>` & **TString::append** (char  *ch*, int  *n*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:242
+msgid "Appends a string of the given *n* size with every character set to ch."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:248
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:250
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1 "
+"replaced by string arg1."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:256
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*, :ref:`TString<api_TString>` & "
+"*arg2*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:258
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1, "
+"%2 replaced by string *arg1* and arg2."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:264
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*, :ref:`TString<api_TString>` & "
+"*arg2*, :ref:`TString<api_TString>` & *arg3*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:266
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1, "
+"%2, %3 replaced by string arg1, *arg2* and arg3."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:272
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*, :ref:`TString<api_TString>` & "
+"*arg2*, :ref:`TString<api_TString>` & *arg3*, :ref:`TString<api_TString>`"
+" & *arg4*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:274
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1, "
+"%2, %3, %4 replaced by string arg1, arg2, *arg3* and arg4."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:280
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*, :ref:`TString<api_TString>` & "
+"*arg2*, :ref:`TString<api_TString>` & *arg3*, :ref:`TString<api_TString>`"
+" & *arg4*, :ref:`TString<api_TString>` & *arg5*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:282
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1, "
+"%2, %3, %4, %5 replaced by string arg1, arg2, arg3, *arg4* and arg5."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:288
+msgid ""
+":ref:`TString<api_TString>`  **TString::arg** "
+"(:ref:`TString<api_TString>` & *arg1*, :ref:`TString<api_TString>` & "
+"*arg2*, :ref:`TString<api_TString>` & *arg3*, :ref:`TString<api_TString>`"
+" & *arg4*, :ref:`TString<api_TString>` & *arg5*, "
+":ref:`TString<api_TString>` & *arg6*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:290
+msgid ""
+"Returns a copy of this string with the lowest-numbered place-marker %1, "
+"%2, %3, %4, %5, %6 replaced by string arg1, arg2, arg3, arg4, *arg5* and "
+"arg6."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:296
+msgid "char **TString::at** (int  *position*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:298
+msgid "Returns the character at the given index *position* in the string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:304
+msgid "char **TString::back** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:306
+msgid "Returns the last character in the string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:312
+msgid "void **TString::clear** ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:314
+msgid "Clears the contents of the string and makes it empty."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:320
+msgid "int **TString::compare** (:ref:`TString<api_TString>` & *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:322
+msgid ""
+"Compares this string with *other* string and returns a negative integer "
+"if this is less than other, a positive integer if it is greater than "
+"other, and zero if they are equal."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:328
+msgid "bool **TString::contains** (:ref:`TString<api_TString>` & *str*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:330
+msgid ""
+"Returns true if this string contains an occurrence of the string str; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:336
+msgid "const char **TString::data** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:338
+msgid "Returns a pointer to the data stored in the TString."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:344
+msgid ""
+":ref:`TString<api_TString>`  **TString::fromUtf32** (std::u32string & "
+"*in*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:346
+msgid ""
+"Returns a copy of the *in* string. The given string is assumed to be "
+"encoded *in* UTF-32."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:352
+msgid ":ref:`TString<api_TString>`  **TString::fromWc32** (uint32_t  *unicode*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:354
+msgid ""
+"Returns a TString initialized with the first size characters of the "
+"Unicode string *unicode* (encoded as UTF-32)."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:360
+msgid ""
+":ref:`TString<api_TString>`  **TString::fromWString** (std::wstring & "
+"*in*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:362
+msgid ""
+"Returns a copy of the *in* string. The given string is assumed to be "
+"encoded *in* utf16 if the size of wchar_t is 2 bytes (e.g. on windows)."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:368
+msgid "char **TString::front** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:370
+msgid "Returns a reference to the first character in the string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:376
+msgid "int **TString::indexOf** (:ref:`TString<api_TString>` & *str*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:378
+msgid ""
+"Returns the index position of the first occurrence of the string *str* in"
+" this string. Returns -1 if *str* is not found."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:384
+msgid "int **TString::indexOf** (char  *ch*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:386
+msgid ""
+"Returns the index position of the first occurrence of the character *ch* "
+"in this string. Returns -1 if *ch* is not found."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:392
+msgid "bool **TString::isEmpty** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:394
+msgid "Returns true if string is empty; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:400
+msgid ""
+":ref:`TString<api_TString>`  **TString::join** (StringList & *list*, char"
+" * *separator*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:402
+msgid ""
+"Joins all the string *list* strings into a single string with each "
+"element separated by the given *separator* (which can be an empty "
+"string)."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:408
+msgid "int **TString::lastIndexOf** (:ref:`TString<api_TString>` & *str*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:410
+msgid ""
+"Returns the index position of the last occurrence of the string *str* in "
+"this string, searching backward from index position from."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:416
+msgid "int **TString::lastIndexOf** (char  *ch*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:418
+msgid ""
+"Returns the index position of the last occurrence of the character *ch* "
+"in this string, searching backward from index position from."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:424
+msgid ":ref:`TString<api_TString>`  **TString::left** (int  *n*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:426
+msgid ""
+"Returns a substring that contains the *n* leftmost characters of this "
+"string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:432
+msgid "int **TString::length** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:434
+#: ../../source/reference/tstring.rst:538
+msgid "Returns the number of characters in this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:440
+msgid ""
+":ref:`TString<api_TString>`  **TString::mid** (int  *position*, int  *n*)"
+" const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:442
+msgid ""
+"Returns a string that contains *n* characters of this string, starting at"
+" the specified *position* index up to, but not including."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:448
+msgid ":ref:`TString<api_TString>`  **TString::number** (float  *in*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:450
+msgid "Returns a string representing the floating-point number in."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:456
+msgid ":ref:`TString<api_TString>`  **TString::number** (int  *in*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:458
+msgid "Returns a string representing the integer number in."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:464
+msgid ":ref:`TString<api_TString>`  **TString::number** (long  *in*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:466
+msgid "Returns a string representing the long integer number in."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:472
+msgid ""
+":ref:`TString<api_TString>` & **TString::remove** "
+"(:ref:`TString<api_TString>` & *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:474
+msgid ""
+"Removes every occurrence of the given *str* string in this string, and "
+"returns a reference to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:480
+msgid ":ref:`TString<api_TString>` & **TString::remove** (char  *ch*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:482
+msgid ""
+"Removes every occurrence of the character *ch* in this string, and "
+"returns a reference to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:488
+msgid ":ref:`TString<api_TString>` & **TString::removeFirst** ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:490
+msgid ""
+"Removes the first character in this string. If the string is empty, this "
+"function does nothing."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:496
+msgid ":ref:`TString<api_TString>` & **TString::removeLast** ()"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:498
+msgid ""
+"Removes the last character in this string. If the string is empty, this "
+"function does nothing."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:504
+msgid ""
+":ref:`TString<api_TString>` & **TString::replace** "
+"(:ref:`TString<api_TString>` & *before*, :ref:`TString<api_TString>` & "
+"*after*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:506
+msgid ""
+"Replaces every occurrence of the string *before* with the string *after* "
+"and returns a reference to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:512
+msgid ""
+":ref:`TString<api_TString>` & **TString::replace** (char  *before*, char"
+"  *after*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:514
+msgid ""
+"Replaces every occurrence of the character *before* with the character "
+"*after* and returns a reference to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:520
+msgid ":ref:`TString<api_TString>`  **TString::right** (int  *n*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:522
+msgid ""
+"Returns a substring that contains the *n* rightmost characters of the "
+"string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:528
+msgid ":ref:`TString<api_TString>`  **TString::simplified** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:530
+msgid ""
+"Returns a string that has whitespace removed from the start and the end, "
+"and that has each sequence of internal whitespace replaced with a single "
+"space."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:536
+msgid "int **TString::size** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:544
+msgid "StringList **TString::split** (:ref:`TString<api_TString>` & *sep*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:546
+#: ../../source/reference/tstring.rst:554
+msgid ""
+"Splits the string into substrings wherever *sep* occurs, and returns the "
+"list of those strings."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:552
+msgid "StringList **TString::split** (char  *sep*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:560
+msgid "float **TString::toFloat** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:562
+msgid "Returns the string converted to a float value."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:568
+msgid "int **TString::toInt** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:570
+msgid "Returns the string converted to an int. Returns 0 if the conversion fails."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:576
+msgid "size_t **TString::toLong** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:578
+msgid "Returns the string converted to a long. Returns 0 if the conversion fails."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:584
+msgid ":ref:`TString<api_TString>`  **TString::toLower** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:586
+msgid "Returns a lowercase copy of the string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:592
+msgid "const std::string **TString::toStdString** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:594
+msgid "Returns a std::string object with the data contained in this TString."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:600
+msgid "std::wstring **TString::toStdWString** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:602
+msgid "Returns a std::wstring object with the data contained in this TString."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:608
+msgid ":ref:`TString<api_TString>`  **TString::toUpper** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:610
+msgid "Returns an uppercase copy of the string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:616
+msgid "std::u32string **TString::toUtf32** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:618
+msgid "Returns a std::u32string object with the data contained in this TString."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:624
+msgid ":ref:`TString<api_TString>`  **TString::trimmed** () const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:626
+msgid ""
+"Returns a string that has whitespace removed from the start and the end. "
+"This includes the ASCII characters '\\t', '\\n', '\\v', '\\f', '\\r', and"
+" ' '."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:632
+msgid "bool **TString::operator!=** (:ref:`TString<api_TString>` & *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:634
+msgid ""
+"Returns true if this string is NOT equal to other; otherwise returns "
+"false."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:636
+#: ../../source/reference/tstring.rst:718
+msgid "The comparison is case-sensitive."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:642
+msgid ":ref:`TString<api_TString>`  **TString::operator+** (char  *ch*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:644
+msgid ""
+"Returns a string that is the result of concatenating this string and *ch*"
+" character."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:650
+msgid ""
+":ref:`TString<api_TString>`  **TString::operator+** "
+"(:ref:`TString<api_TString>` & *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:652
+msgid ""
+"Returns a string that is the result of concatenating this string and "
+"other."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:658
+msgid ":ref:`TString<api_TString>`  **TString::operator+** (char * *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:660
+msgid ""
+"Returns a string that is the result of concatenating this string and null"
+" terminated *other* charcter string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:666
+msgid ""
+":ref:`TString<api_TString>`  **TString::operator+** (std::string & "
+"*other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:668
+msgid ""
+"Returns a string that is the result of concatenating this string and "
+"*other* standard string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:674
+msgid ""
+":ref:`TString<api_TString>` & **TString::operator+=** "
+"(:ref:`TString<api_TString>` & *other*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:676
+msgid ""
+"Appends the string *other* onto the end of this string and returns a "
+"reference to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:682
+msgid ":ref:`TString<api_TString>` & **TString::operator+=** (char  *ch*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:684
+msgid "Appends the character *ch* to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:690
+msgid ":ref:`TString<api_TString>` & **TString::operator+=** (char * *str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:692
+msgid ""
+"Appends the string *str* to this string. The const char pointer is "
+"converted to Unicode using the fromUtf8() function."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:698
+msgid ""
+":ref:`TString<api_TString>` & **TString::operator+=** (std::string & "
+"*str*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:700
+msgid "Appends the standard string *str* to this string."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:706
+msgid "bool **TString::operator<** (:ref:`TString<api_TString>` & *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:708
+msgid ""
+"Returns true if this is lexically less than other; otherwise returns "
+"false."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:714
+msgid "bool **TString::operator==** (:ref:`TString<api_TString>` & *other*) const"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:716
+msgid "Returns true if this string is equal to other; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/tstring.rst:724
+msgid "char **TString::operator[]** (int  *position*)"
+msgstr ""
+
+#: ../../source/reference/tstring.rst:726
+msgid ""
+"Returns the character at the specified *position* in the string as a "
+"modifiable reference."
+msgstr ""
+

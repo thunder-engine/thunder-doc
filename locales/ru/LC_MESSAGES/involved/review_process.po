@@ -1,0 +1,437 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/involved/review_process.rst:4
+msgid "Documentation Review Process"
+msgstr "Процесс рецензирования документации"
+
+#: ../../source/involved/review_process.rst:6
+msgid ""
+"This guide describes the pull request (PR) review process for Thunder "
+"Engine documentation."
+msgstr ""
+"Это руководство описывает процесс рецензирования pull request (PR) для "
+"документации Thunder Engine."
+
+#: ../../source/involved/review_process.rst:9
+msgid "PR Lifecycle"
+msgstr "Жизненный цикл PR"
+
+#: ../../source/involved/review_process.rst:25
+msgid "Creating a Pull Request"
+msgstr "Создание Pull Request"
+
+#: ../../source/involved/review_process.rst:27
+msgid "**PR Title**"
+msgstr "**Заголовок PR**"
+
+#: ../../source/involved/review_process.rst:29
+msgid "Use the format: ``docs: brief description of changes``"
+msgstr "Используйте формат: ``docs: краткое описание изменений``"
+
+#: 217source/involved/review_process.rst:31
+msgid "Examples:"
+msgstr "Примеры:"
+
+#: ../../source/involved/review_process.rst:33
+msgid "`docs: fix typos in Camera documentation`"
+msgstr "`docs: исправление опечаток в документации Camera`"
+
+#: ../../source/involved/review_process.rst:34
+msgid "`docs: add documentation for AudioSource`"
+msgstr "`docs: добавление документации для AudioSource`"
+
+#: ../../source/involved/review_process.rst:35
+msgid "`docs: update mesh import settings`"
+msgstr "`docs: обновление настроек импорта мешей`"
+
+#: ../../source/involved/review_process.rst:37
+msgid "**PR Description**"
+msgstr "**Описание PR**"
+
+#: ../../source/involved/review_process.rst:39
+msgid "In the description, include:"
+msgstr "В описание включите:"
+
+#: ../../source/involved/review_process.rst:41
+msgid "What was changed"
+msgstr "Что было изменено"
+
+#: ../../source/involved/review_process.rst:42
+msgid "Reason for the changes"
+msgstr "Причина изменений"
+
+#: ../../source/involved/review_process.rst:43
+msgid "Links to related issues (if any)"
+msgstr "Ссылки на связанные задачи (если есть)"
+
+#: ../../source/involved/review_process.rst:44
+msgid "Screenshots of changes (for visual changes)"
+msgstr "Скриншоты изменений (для визуальных изменений)"
+
+#: ../../source/involved/review_process.rst:46
+msgid "Description template:"
+msgstr "Шаблон описания:"
+
+#: ../../source/involved/review_process.rst:64
+msgid "Automated Checks"
+msgstr "Автоматические проверки"
+
+#: ../../source/involved/review_process.rst:66
+msgid "When a PR is created, automated checks are run:"
+msgstr "При создании PR запускаются автоматические проверки:"
+
+#: ../../source/involved/review_process.rst:68
+msgid "**Sphinx build** — verifies that the documentation builds without errors"
+msgstr "**Сборка Sphinx** — проверяет, что документация собирается без ошибок"
+
+#: ../../source/involved/review_process.rst:69
+msgid "**Link checker** — verifies that all links work"
+msgstr "**Проверка ссылок** — проверяет, что все ссылки работают"
+
+#: ../../source/involved/review_process.rst:70
+msgid "**Spell checker** — checks spelling (basic)"
+msgstr "**Проверка орфографии** — проверяет правописание (базовая)"
+
+#: ../../source/involved/review_process.rst:72
+msgid "If any of these checks fail, the PR cannot be accepted."
+msgstr "Если любая из этих проверок не проходит, PR не может быть принят."
+
+#: ../../source/involved/review_process.rst:75
+msgid "Review Process"
+msgstr "Процесс рецензирования"
+
+#: ../../source/involved/review_process.rst:77
+msgid "**What the Reviewer Checks**"
+msgstr "**Что проверяет рецензент**"
+
+#: ../../source/involved/review_process.rst:79
+msgid "Compliance with the :ref:`style_guide`"
+msgstr "Соответствие :ref:`style_guide`"
+
+#: ../../source/involved/review_process.rst:80
+msgid "Correctness of technical information"
+msgstr "Корректность технической информации"
+
+#: ../../source/involved/review_process.rst:81
+msgid "Relevance of code examples"
+msgstr "Актуальность примеров кода"
+
+#: ../../source/involved/review_process.rst:82
+msgid "Presence of all required sections"
+msgstr "Наличие всех необходимых разделов"
+
+#: ../../source/involved/review_process.rst:83
+msgid "Functionality of links"
+msgstr "Работоспособность ссылок"
+
+#: ../../source/involved/review_process.rst:84
+msgid "Spelling and grammar"
+msgstr "Орфография и грамматика"
+
+#: ../../source/involved/review_process.rst:86
+msgid "**Roles**"
+msgstr "**Роли**"
+
+#: ../../source/involved/review_process.rst:88
+msgid "**Author** — the author of the changes"
+msgstr "**Автор** — автор изменений"
+
+#: ../../source/involved/review_process.rst:89
+msgid "**Reviewer** — reviewer (documentation maintainer)"
+msgstr "**Рецензент** — проверяющий (сопровождающий документацию)"
+
+#: ../../source/involved/review_process.rst:90
+msgid "**Maintainer** — final merge (usually the same as the reviewer)"
+msgstr "**Мейнтейнер** — окончательное слияние (обычно тот же, что и рецензент)"
+
+#: ../../source/involved/review_process.rst:92
+msgid "**Timings**"
+msgstr "**Сроки**"
+
+#: ../../source/involved/review_process.rst:94
+msgid "Initial response from reviewer: within 2-3 days"
+msgstr "Первоначальный ответ от рецензента: в течение 2-3 дней"
+
+#: ../../source/involved/review_process.rst:95
+msgid "Author updates: within 5-7 days"
+msgstr "Обновления от автора: в течение 5-7 дней"
+
+#: ../../source/involved/review_process.rst:96
+msgid "Follow-up review: within 1-2 days"
+msgstr "Повторное рецензирование: в течение 1-2 дней"
+
+#: ../../source/involved/review_process.rst:99
+msgid "Acceptance Criteria"
+msgstr "Критерии принятия"
+
+#: ../../source/involved/review_process.rst:101
+msgid "A PR is accepted if:"
+msgstr "PR принимается, если:"
+
+#: ../../source/involved/review_process.rst:103
+msgid "✅ All automated checks pass"
+msgstr "✅ Все автоматические проверки пройдены"
+
+#: ../../source/involved/review_process.rst:104
+msgid "✅ Documentation builds without errors"
+msgstr "✅ Документация собирается без ошибок"
+
+#: ../../source/involved/review_process.rst:105
+msgid "✅ Style guide is followed"
+msgstr "✅ Соблюдены правила оформления"
+
+#: ../../source/involved/review_process.rst:106
+msgid "✅ Technical information is correct"
+msgstr "✅ Техническая информация верна"
+
+#: ../../source/involved/review_process.rst:107
+msgid "✅ No spelling errors"
+msgstr "✅ Нет орфографических ошибок"
+
+#: ../../source/involved/review_process.rst:108
+msgid "✅ All links work"
+msgstr "✅ Все ссылки работают"
+
+#: ../../source/involved/review_process.rst:109
+msgid "✅ PR is approved by the reviewer"
+msgstr "✅ PR одобрен рецензентом"
+
+#: ../../source/involved/review_process.rst:111
+msgid "A PR is rejected if:"
+msgstr "PR отклоняется, если:"
+
+#: ../../source/involved/review_process.rst:113
+msgid "❌ Automated checks fail"
+msgstr "❌ Автоматические проверки не пройдены"
+
+#: ../../source/involved/review_process.rst:114
+msgid "❌ Contains technically incorrect information"
+msgstr "❌ Содержит технически неверную информацию"
+
+#: ../../source/involved/review_process.rst:115
+msgid "❌ Violates the style guide"
+msgstr "❌ Нарушает правила оформления"
+
+#: ../../source/involved/review_process.rst:116
+msgid "❌ Contains plagiarism"
+msgstr "❌ Содержит плагиат"
+
+#: ../../source/involved/review_process.rst:117
+msgid "❌ Is not related to Thunder Engine documentation"
+msgstr "❌ Не относится к документации Thunder Engine"
+
+#: ../../source/involved/review_process.rst:120
+msgid "Review Comments"
+msgstr "Комментарии рецензента"
+
+#: ../../source/involved/review_process.rst:122
+msgid "**Types of Comments**"
+msgstr "**Типы комментариев**"
+
+#: ../../source/involved/review_process.rst:124
+msgid "**Blocking** — requires mandatory correction before merging"
+msgstr "**Блокирующий** — требует обязательного исправления перед слиянием"
+
+#: ../../source/involved/review_process.rst:125
+msgid "**Non-blocking** — recommendation that does not block merging"
+msgstr "**Неблокирующий** — рекомендация, которая не блокирует слияние"
+
+#: ../../source/involved/review_process.rst:126
+msgid "**Question** — requires clarification from the author"
+msgstr "**Вопрос** — требует разъяснения от автора"
+
+#: ../../source/involved/review_process.rst:128
+msgid "**Comment Examples**"
+msgstr "**Примеры комментариев**"
+
+#: ../../source/involved/review_process.rst:130
+msgid "Blocking:"
+msgstr "Блокирующий:"
+
+#: ../../source/involved/review_process.rst:132
+msgid ""
+"> ❌ The default value for the `fov` property is not specified. Please add"
+" it."
+msgstr ""
+"> ❌ Значение по умолчанию для свойства `fov` не указано. Пожалуйста, добавьте его."
+
+#: ../../source/involved/review_process.rst:134
+msgid "Non-blocking:"
+msgstr "Неблокирующий:"
+
+#: ../../source/involved/review_process.rst:136
+msgid "> 💡 You could add an example of using this method."
+msgstr "> 💡 Вы могли бы добавить пример использования этого метода."
+
+#: ../../source/involved/review_process.rst:138
+msgid "Question:"
+msgstr "Вопрос:"
+
+#: ../../source/involved/review_process.rst:140
+msgid ""
+"> ❓ What is the maximum value for `nearPlane`? Is this limited by the "
+"engine?"
+msgstr ""
+"> ❓ Каково максимальное значение для `nearPlane`? Ограничено ли оно движком?"
+
+#: ../../source/involved/review_process.rst:143
+msgid "How to Respond to Comments"
+msgstr "Как отвечать на комментарии"
+
+#: ../../source/involved/review_process.rst:145
+msgid ""
+"**Agree with the change** — make the correction and mark the comment as "
+"resolved"
+msgstr ""
+"**Согласны с изменением** — внесите исправление и отметьте комментарий как решённый"
+
+#: ../../source/involved/review_process.rst:146
+msgid "**Disagree** — explain the reason in your response"
+msgstr "**Не согласны** — объясните причину в своём ответе"
+
+#: ../../source/involved/review_process.rst:147
+msgid "**Need clarification** — ask a question in your response"
+msgstr "**Нужно разъяснение** — задайте вопрос в своём ответе"
+
+#: ../../source/involved/review_process.rst:150
+msgid "PR Updates"
+msgstr "Обновления PR"
+
+#: ../../source/involved/review_process.rst:152
+msgid "After receiving comments:"
+msgstr "После получения комментариев:"
+
+#: ../../source/involved/review_process.rst:154
+msgid "Make changes in your branch"
+msgstr "Внесите изменения в свою ветку"
+
+#: ../../source/involved/review_process.rst:155
+msgid "Create a new commit (do not use squash until final merge)"
+msgstr "Создайте новый коммит (не используйте squash до окончательного слияния)"
+
+#: ../../source/involved/review_process.rst:156
+msgid "Respond to comments, marking fixed ones as resolved"
+msgstr "Ответьте на комментарии, отмечая исправленные как решённые"
+
+#: ../../source/involved/review_process.rst:157
+msgid "Push the changes — the PR will update automatically"
+msgstr "Отправьте изменения — PR обновится автоматически"
+
+#: ../../source/involved/review_process.rst:160
+msgid "PR Merge"
+msgstr "Слияние PR"
+
+#: ../../source/involved/review_process.rst:162
+msgid "After receiving approval:"
+msgstr "После получения одобрения:"
+
+#: ../../source/involved/review_process.rst:164
+msgid "The maintainer performs squash and merge"
+msgstr "Мейнтейнер выполняет squash и слияние"
+
+#: ../../source/involved/review_process.rst:165
+msgid "The commit should have a descriptive message"
+msgstr "Коммит должен иметь описательное сообщение"
+
+#: ../../source/involved/review_process.rst:166
+msgid "The author's branch is deleted (optional)"
+msgstr "Ветка автора удаляется (опционально)"
+
+#: ../../source/involved/review_process.rst:169
+msgid "Conflict of Interest"
+msgstr "Конфликт интересов"
+
+#: ../../source/involved/review_process.rst:171
+msgid "If you are both the author and the reviewer:"
+msgstr "Если вы одновременно являетесь автором и рецензентом:"
+
+#: ../../source/involved/review_process.rst:173
+msgid "A second reviewer is required"
+msgstr "Требуется второй рецензент"
+
+#: ../../source/involved/review_process.rst:174
+msgid "Another maintainer performs the merge"
+msgstr "Слияние выполняет другой мейнтейнер"
+
+#: ../../source/involved/review_process.rst:177
+msgid "Review Etiquette"
+msgstr "Этикет рецензирования"
+
+#: ../../source/involved/review_process.rst:179
+msgid "**For Authors**"
+msgstr "**Для авторов**"
+
+#: ../../source/involved/review_process.rst:181
+msgid "Respond to comments politely and constructively"
+msgstr "Отвечайте на комментарии вежливо и конструктивно"
+
+#: ../../source/involved/review_process.rst:182
+msgid "Do not take criticism personally"
+msgstr "Не воспринимайте критику лично"
+
+#: ../../source/involved/review_process.rst:183
+msgid "Explain your decisions if you disagree with a change"
+msgstr "Объясняйте свои решения, если вы не согласны с изменением"
+
+#: ../../source/involved/review_process.rst:184
+msgid "Do not push changes during review unnecessarily"
+msgstr "Не отправляйте изменения во время рецензирования без необходимости"
+
+#: ../../source/involved/review_process.rst:186
+msgid "**For Reviewers**"
+msgstr "**Для рецензентов**"
+
+#: ../../source/involved/review_process.rst:188
+msgid "Be polite and constructive"
+msgstr "Будьте вежливы и конструктивны"
+
+#: ../../source/involved/review_process.rst:189
+msgid "Explain why you are suggesting changes"
+msgstr "Объясняйте, почему вы предлагаете изменения"
+
+#: ../../source/involved/review_process.rst:190
+msgid "Point out what was done well, not just problems"
+msgstr "Отмечайте, что сделано хорошо, а не только проблемы"
+
+#: ../../source/involved/review_process.rst:191
+msgid "Do not delay the review unnecessarily"
+msgstr "Не задерживайте рецензирование без необходимости"
+
+#: ../../source/involved/review_process.rst:194
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+#: ../../source/involved/review_process.rst:196
+msgid "`How to Write Good Commits <https://www.conventionalcommits.org/>`_"
+msgstr "`Как писать хорошие коммиты <https://www.conventionalcommits.org/>`_"
+
+#: ../../source/involved/review_process.rst:197
+msgid "`GitHub Flow <https://guides.github.com/introduction/flow/>`_"
+msgstr "`GitHub Flow <https://guides.github.com/introduction/flow/>`_"
+
+#: ../../source/involved/review_process.rst:198
+msgid ""
+"`How to Conduct Code Review <https://google.github.io/eng-"
+"practices/review/>`_ (adapted for documentation)"
+msgstr ""
+"`Как проводить рецензирование кода <https://google.github.io/eng-"
+"practices/review/>`_ (адаптировано для документации)"

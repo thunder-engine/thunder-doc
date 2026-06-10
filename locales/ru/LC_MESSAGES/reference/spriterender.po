@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/spriterender.rst:4
+msgid "SpriteRender"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:11
+#: ../../source/reference/spriterender.rst:58
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:13
+msgid ""
+"The SpriteRender component allows you to display images as sprites to use"
+" in both 2D and 3D scenes."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:23
+msgid ":ref:`color<api_SpriteRender_782fab40>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:25
+#: ../../source/reference/spriterender.rst:27
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:25
+msgid ":ref:`drawMode<api_SpriteRender_3026b719>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:27
+msgid ":ref:`layer<api_SpriteRender_1b692580>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:29
+#: ../../source/reference/spriterender.rst:31
+#: ../../source/reference/spriterender.rst:33
+#: ../../source/reference/spriterender.rst:35
+#: ../../source/reference/spriterender.rst:37
+#: ../../source/reference/spriterender.rst:39
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:29
+msgid ":ref:`setColor<api_SpriteRender_9d1a0bf3>` (const Vector4 & color)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:31
+msgid ":ref:`setDrawMode<api_SpriteRender_27b8c416>` (int  mode)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:33
+msgid ":ref:`setLayer<api_SpriteRender_7b3fc61d>` (int  layer)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:35
+msgid ":ref:`setSize<api_SpriteRender_c23b4d75>` (const Vector2 & size)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:37
+msgid ":ref:`setSprite<api_SpriteRender_b35e1c68>` (Sprite * sprite)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:39
+msgid ":ref:`setTexture<api_SpriteRender_fdb5c7e2>` (Texture * texture)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:41
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:41
+msgid ":ref:`size<api_SpriteRender_f187db59>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:43
+msgid ":ref:`Sprite<api_Sprite>` *"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:43
+msgid ":ref:`sprite<api_SpriteRender_d48502ab>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:45
+msgid ":ref:`Texture<api_Texture>` *"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:45
+msgid ":ref:`texture<api_SpriteRender_31ab5c28>` () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:51
+msgid "Public Enums"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:55
+msgid "**enum SpriteRender::DrawMode**"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:58
+msgid "Constant"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:58
+msgid "Value"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:60
+msgid "SpriteRender::Simple"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:60
+msgid "0"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:60
+msgid "The SpriteRender will draw sprite as is."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:62
+msgid "SpriteRender::Sliced"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:62
+msgid "1"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:62
+msgid "The SpriteRender will respect 9 patch slicing rules for the size property."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:64
+msgid "SpriteRender::Tiled"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:64
+msgid "2"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:64
+msgid ""
+"The SpriteRender will duplicate sprites to fill the size property "
+"rectangle."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:72
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:74
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:79
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:83
+msgid ":ref:`Vector4<api_Vector4>`  **SpriteRender::color** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:85
+msgid "Returns the color of the sprite to be drawn."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:87
+msgid "**See also** setColor()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:93
+msgid "int **SpriteRender::drawMode** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:95
+msgid ""
+"Returns a draw mode for the sprite. Please check SpriteRender::DrawMode "
+"for more details."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:97
+msgid "**See also** setDrawMode()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:103
+msgid "int **SpriteRender::layer** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:105
+msgid "Returns the redering layer for the sprite."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:107
+msgid "**See also** setLayer()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:113
+msgid "void **SpriteRender::setColor** (:ref:`Vector4<api_Vector4>` & *color*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:115
+msgid "Changes the *color* of the sprite to be drawn."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:117
+msgid "**See also** color()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:123
+msgid "void **SpriteRender::setDrawMode** (int  *mode*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:125
+msgid ""
+"Sets a draw *mode* for the sprite. Please check SpriteRender::DrawMode "
+"for more details."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:127
+msgid "**See also** drawMode()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:133
+msgid "void **SpriteRender::setLayer** (int  *layer*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:135
+msgid "Sets the redering *layer* for the sprite."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:137
+msgid "**See also** layer()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:143
+msgid "void **SpriteRender::setSize** (:ref:`Vector2<api_Vector2>` & *size*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:145
+msgid "Sets a new *size* of sprite."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:147
+msgid "**See also** size()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:153
+msgid "void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:155
+msgid "Replaces current *sprite* with a new one."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:157
+msgid "**See also** sprite()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:163
+msgid ""
+"void **SpriteRender::setTexture** (:ref:`Texture<api_Texture>` * "
+"*texture*)"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:165
+msgid "Replaces current *texture* with a new one."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:167
+msgid "**See also** texture()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:173
+msgid ":ref:`Vector2<api_Vector2>`  **SpriteRender::size** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:175
+msgid "Returns size of sprite."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:177
+msgid "**See also** setSize()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:183
+msgid ":ref:`Sprite<api_Sprite>` * **SpriteRender::sprite** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:185
+msgid "Returns a sprite sheet."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:187
+msgid "**See also** setSprite()."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:193
+msgid ":ref:`Texture<api_Texture>` * **SpriteRender::texture** () const"
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:195
+msgid "Returns current assigned texture."
+msgstr ""
+
+#: ../../source/reference/spriterender.rst:197
+msgid "**See also** setTexture()."
+msgstr ""
+

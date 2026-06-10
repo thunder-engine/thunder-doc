@@ -1,0 +1,633 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/geometry/index.rst:4
+msgid "Geometry"
+msgstr "Геометрия"
+
+#: ../../source/rendering/geometry/index.rst:6
+msgid ""
+"**Meshes** represent geometric data in Thunder Engine. The mesh system "
+"provides loading, rendering, and optimization of 3D geometry for static "
+"and animated objects."
+msgstr ""
+"**Меши** представляют геометрические данные в Thunder Engine. Система мешей "
+"обеспечивает загрузку, рендеринг и оптимизацию 3D-геометрии для статических "
+"и анимированных объектов."
+
+#: ../../source/rendering/geometry/index.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: 217source/rendering/geometry/index.rst:11
+msgid ""
+"Mesh is the fundamental building block for all visible objects in the "
+"scene. The system supports:"
+msgstr ""
+"Меш является основным строительным блоком для всех видимых объектов в сцене. "
+"Система поддерживает:"
+
+#: ../../source/rendering/geometry/index.rst:13
+msgid "**Static meshes** — for buildings, landscapes, props"
+msgstr "**Статические меши** — для зданий, ландшафтов, реквизита"
+
+#: ../../source/rendering/geometry/index.rst:14
+msgid "**Skinned meshes** — for characters and animated objects"
+msgstr "**Скелетные меши** — для персонажей и анимированных объектов"
+
+#: ../../source/rendering/geometry/index.rst:15
+msgid "**Procedural meshes** — runtime-generated geometry"
+msgstr "**Процедурные меши** — геометрия, генерируемая во время выполнения"
+
+#: ../../source/rendering/geometry/index.rst:16
+msgid "**Optimizations** — LOD, batching, instance rendering"
+msgstr "**Оптимизации** — LOD, пакетная обработка, инстансный рендеринг"
+
+#: ../../source/rendering/geometry/index.rst:17
+msgid "**File formats** — OBJ, FBX, GLTF"
+msgstr "**Форматы файлов** — OBJ, FBX, GLTF"
+
+#: ../../source/rendering/geometry/index.rst:20
+msgid "Core Components"
+msgstr "Основные компоненты"
+
+#: ../../source/rendering/geometry/index.rst:22
+msgid "The mesh system consists of several key elements:"
+msgstr "Система мешей состоит из нескольких ключевых элементов:"
+
+#: ../../source/rendering/geometry/index.rst:31
+msgid "**Mesh Resource**"
+msgstr "**Ресурс меша**"
+
+#: ../../source/rendering/geometry/index.rst:32
+msgid ""
+"A resource containing vertex and index data. Loaded from OBJ, FBX, or "
+"GLTF files."
+msgstr ""
+"Ресурс, содержащий данные вершин и индексов. Загружается из файлов OBJ, FBX или GLTF."
+
+#: ../../source/rendering/geometry/index.rst:34
+msgid "**MeshRenderer**"
+msgstr "**MeshRenderer**"
+
+#: ../../source/rendering/geometry/index.rst:35
+msgid ""
+"A component for rendering static meshes. Supports materials, shadows, and"
+" culling."
+msgstr ""
+"Компонент для рендеринга статических мешей. Поддерживает материалы, тени и отсечение."
+
+#: ../../source/rendering/geometry/index.rst:37
+msgid "**SkinnedMeshRender**"
+msgstr "**SkinnedMeshRender**"
+
+#: ../../source/rendering/geometry/index.rst:38
+msgid "A component for rendering skinned meshes with animation."
+msgstr "Компонент для рендеринга скелетных мешей с анимацией."
+
+#: ../../source/rendering/geometry/index.rst:41
+msgid "Mesh Types"
+msgstr "Типы мешей"
+
+#: ../../source/rendering/geometry/index.rst:43
+msgid "**Static Mesh**"
+msgstr "**Статический меш**"
+
+#: ../../source/rendering/geometry/index.rst:44
+msgid ""
+"Geometry that does not change during gameplay. Optimized for static "
+"objects:"
+msgstr ""
+"Геометрия, которая не изменяется во время игрового процесса. Оптимизирована для статических объектов:"
+
+#: ../../source/rendering/geometry/index.rst:46
+msgid "Buildings, landscapes, props"
+msgstr "Здания, ландшафты, реквизит"
+
+#: ../../source/rendering/geometry/index.rst:47
+msgid "Supports static batching"
+msgstr "Поддерживает статическую пакетную обработку"
+
+#: ../../source/rendering/geometry/index.rst:48
+msgid "Higher performance"
+msgstr "Более высокая производительность"
+
+#: ../../source/rendering/geometry/index.rst:50
+msgid "**Skinned Mesh**"
+msgstr "**Скелетный меш**"
+
+#: ../../source/rendering/geometry/index.rst:51
+msgid "Geometry that deforms under the influence of skeletal animation:"
+msgstr "Геометрия, которая деформируется под воздействием скелетной анимации:"
+
+#: ../../source/rendering/geometry/index.rst:53
+msgid "Characters, animals, animated objects"
+msgstr "Персонажи, животные, анимированные объекты"
+
+#: ../../source/rendering/geometry/index.rst:54
+msgid "Contains vertex weight data (bone weights)"
+msgstr "Содержит данные о весах вершин (веса костей)"
+
+#: ../../source/rendering/geometry/index.rst:55
+msgid "Updated on GPU for performance"
+msgstr "Обновляется на GPU для производительности"
+
+#: ../../source/rendering/geometry/index.rst:57
+msgid "**Dynamic Mesh**"
+msgstr "**Динамический меш**"
+
+#: ../../source/rendering/geometry/index.rst:58
+msgid "Geometry generated at runtime:"
+msgstr "Геометрия, генерируемая во время выполнения:"
+
+#: ../../source/rendering/geometry/index.rst:60
+msgid "Terrain, water, procedural objects"
+msgstr "Террейн, вода, процедурные объекты"
+
+#: ../../source/rendering/geometry/index.rst:61
+msgid "Can be updated dynamically"
+msgstr "Может динамически обновляться"
+
+#: ../../source/rendering/geometry/index.rst:62
+msgid "Requires manual buffer management"
+msgstr "Требует ручного управления буферами"
+
+#: ../../source/rendering/geometry/index.rst:65
+msgid "File Formats"
+msgstr "Форматы файлов"
+
+#: ../../source/rendering/geometry/index.rst:67
+msgid "Thunder Engine supports the following 3D model formats:"
+msgstr "Thunder Engine поддерживает следующие форматы 3D-моделей:"
+
+#: ../../source/rendering/geometry/index.rst:70
+msgid "Format"
+msgstr "Формат"
+
+#: ../../source/rendering/geometry/index.rst:70
+msgid "Features"
+msgstr "Особенности"
+
+#: ../../source/rendering/geometry/index.rst:72
+msgid "**OBJ**"
+msgstr "**OBJ**"
+
+#: ../../source/rendering/geometry/index.rst:72
+msgid ""
+"Simple text format. Suitable for static geometry. Does not support "
+"animation or skeletons."
+msgstr ""
+"Простой текстовый формат. Подходит для статической геометрии. Не поддерживает "
+"анимацию или скелеты."
+
+#: ../../source/rendering/geometry/index.rst:74
+msgid "**FBX**"
+msgstr "**FBX**"
+
+#: ../../source/rendering/geometry/index.rst:74
+msgid ""
+"Industry standard. Supports animation, skeletons, morphing, cameras, "
+"lights. Recommended for complex assets."
+msgstr ""
+"Индустриальный стандарт. Поддерживает анимацию, скелеты, морфинг, камеры, "
+"источники света. Рекомендуется для сложных ресурсов."
+
+#: ../../source/rendering/geometry/index.rst:76
+msgid "**GLTF/GLB**"
+msgstr "**GLTF/GLB**"
+
+#: ../../source/rendering/geometry/index.rst:76
+msgid ""
+"Modern format for real-time applications. Efficient loading, PBR support,"
+" animations."
+msgstr ""
+"Современный формат для приложений реального времени. Эффективная загрузка, "
+"поддержка PBR, анимации."
+
+#: ../../source/rendering/geometry/index.rst:80
+msgid ""
+"When importing assets, all data will be converted to Thunder Engine's "
+"internal formats:"
+msgstr ""
+"При импорте ресурсов все данные будут преобразованы во внутренние форматы Thunder Engine:"
+
+#: ../../source/rendering/geometry/index.rst:82
+msgid "All geometry will be converted to Mesh assets"
+msgstr "Вся геометрия будет преобразована в ресурсы Mesh"
+
+#: ../../source/rendering/geometry/index.rst:83
+msgid "Animation will be converted to AnimationClip"
+msgstr "Анимация будет преобразована в AnimationClip"
+
+#: ../../source/rendering/geometry/index.rst:84
+msgid "Material assets will also be created (currently not available)"
+msgstr "Ресурсы материалов также будут созданы (в настоящее время недоступно)"
+
+#: ../../source/rendering/geometry/index.rst:86
+msgid "All assets can be reused independently from each other in your projects."
+msgstr "Все ресурсы могут использоваться независимо друг от друга в ваших проектах."
+
+#: ../../source/rendering/geometry/index.rst:89
+msgid "Import Settings"
+msgstr "Настройки импорта"
+
+#: ../../source/rendering/geometry/index.rst:91
+msgid "The following settings are available when importing a 3D model:"
+msgstr "При импорте 3D-модели доступны следующие настройки:"
+
+#: ../../source/rendering/geometry/index.rst:93
+msgid "**Use Custom Scale** (bool)"
+msgstr "**Use Custom Scale** (bool)"
+
+#: ../../source/rendering/geometry/index.rst:94
+msgid "Enables the use of custom scale during import."
+msgstr "Включает использование пользовательского масштаба при импорте."
+
+#: ../../source/rendering/geometry/index.rst:96
+msgid "``true`` — use the value from the ``Custom Scale`` field"
+msgstr "``true`` — использовать значение из поля ``Custom Scale``"
+
+#: ../../source/rendering/geometry/index.rst:97
+msgid "``false`` — use the original model scale"
+msgstr "``false`` — использовать исходный масштаб модели"
+
+#: ../../source/rendering/geometry/index.rst:99
+msgid "Default: ``false``."
+msgstr "По умолчанию: ``false``."
+
+#: ../../source/rendering/geometry/index.rst:101
+msgid "**Custom Scale** (float)"
+msgstr "**Custom Scale** (float)"
+
+#: ../../source/rendering/geometry/index.rst:102
+msgid "Model scale during import. Applied only if ``Use Custom Scale = true``."
+msgstr "Масштаб модели при импорте. Применяется только если ``Use Custom Scale = true``."
+
+#: ../../source/rendering/geometry/index.rst:104
+msgid "Range: from ``0.001`` to ``1000.0``"
+msgstr "Диапазон: от ``0.001`` до ``1000.0``"
+
+#: ../../source/rendering/geometry/index.rst:105
+msgid "Default: ``1.0``"
+msgstr "По умолчанию: ``1.0``"
+
+#: ../../source/rendering/geometry/index.rst:108
+msgid "Use for converting units (e.g., from centimeters to meters: ``0.01``)."
+msgstr "Используйте для преобразования единиц измерения (например, из сантиметров в метры: ``0.01``)."
+
+#: ../../source/rendering/geometry/index.rst:110
+msgid "**Import Color** (bool)"
+msgstr "**Import Color** (bool)"
+
+#: ../../source/rendering/geometry/index.rst:111
+msgid "Import vertex colors from the model."
+msgstr "Импортировать цвета вершин из модели."
+
+#: ../../source/rendering/geometry/index.rst:113
+msgid "``true`` — vertex colors will be loaded and available in shaders"
+msgstr "``true`` — цвета вершин будут загружены и доступны в шейдерах"
+
+#: ../../source/rendering/geometry/index.rst:114
+msgid "``false`` — vertex colors are ignored"
+msgstr "``false`` — цвета вершин игнорируются"
+
+#: ../../source/rendering/geometry/index.rst:116
+#: ../../source/rendering/geometry/index.rst:124
+#: ../../source/rendering/geometry/index.rst:135
+msgid "Default: ``true``."
+msgstr "По умолчанию: ``true``."
+
+#: ../../source/rendering/geometry/index.rst:118
+msgid "**Import Normals** (bool)"
+msgstr "**Import Normals** (bool)"
+
+#: ../../source/rendering/geometry/index.rst:119
+msgid "Import normals from the model."
+msgstr "Импортировать нормали из модели."
+
+#: ../../source/rendering/geometry/index.rst:121
+msgid "``true`` — normals are loaded from the file"
+msgstr "``true`` — нормали загружаются из файла"
+
+#: ../../source/rendering/geometry/index.rst:122
+msgid "``false`` — normals are not imported (can be generated later)"
+msgstr "``false`` — нормали не импортируются (могут быть сгенерированы позже)"
+
+#: ../../source/rendering/geometry/index.rst:127
+msgid ""
+"Normals are required for proper lighting. If normals are missing from the"
+" model, it is recommended to enable their generation."
+msgstr ""
+"Нормали необходимы для корректного освещения. Если в модели отсутствуют нормали, "
+"рекомендуется включить их генерацию."
+
+#: ../../source/rendering/geometry/index.rst:129
+msgid "**Import Animation** (bool)"
+msgstr "**Import Animation** (bool)"
+
+#: ../../source/rendering/geometry/index.rst:130
+msgid "Import animation data from the model."
+msgstr "Импортировать анимационные данные из модели."
+
+#: ../../source/rendering/geometry/index.rst:132
+msgid "``true`` — animations will be extracted and saved as AnimationClip"
+msgstr "``true`` — анимации будут извлечены и сохранены как AnimationClip"
+
+#: ../../source/rendering/geometry/index.rst:133
+msgid "``false`` — animations are ignored (static geometry only)"
+msgstr "``false`` — анимации игнорируются (только статическая геометрия)"
+
+#: ../../source/rendering/geometry/index.rst:137
+msgid "**Compress Animation** (enum)"
+msgstr "**Compress Animation** (enum)"
+
+#: ../../source/rendering/geometry/index.rst:138
+msgid "Animation data compression method."
+msgstr "Метод сжатия анимационных данных."
+
+#: ../../source/rendering/geometry/index.rst:140
+msgid "Available values:"
+msgstr "Доступные значения:"
+
+#: ../../source/rendering/geometry/index.rst:142
+msgid "``None`` — no compression, maximum precision"
+msgstr "``None`` — без сжатия, максимальная точность"
+
+#: ../../source/rendering/geometry/index.rst:143
+msgid "``KeyframeReduction`` — removes redundant keyframes"
+msgstr "``KeyframeReduction`` — удаляет избыточные ключевые кадры"
+
+#: ../../source/rendering/geometry/index.rst:144
+msgid "``CurveOptimization`` — optimizes curves with specified precision"
+msgstr "``CurveOptimization`` — оптимизирует кривые с указанной точностью"
+
+#: ../../source/rendering/geometry/index.rst:146
+msgid "Default: ``KeyframeReduction``."
+msgstr "По умолчанию: ``KeyframeReduction``."
+
+#: ../../source/rendering/geometry/index.rst:149
+msgid ""
+"Use compression to reduce animation file size. For background characters,"
+" more aggressive compression can be used."
+msgstr ""
+"Используйте сжатие для уменьшения размера анимационных файлов. Для фоновых "
+"персонажей можно использовать более агрессивное сжатие."
+
+#: ../../source/rendering/geometry/index.rst:151
+msgid "**Position Error** (float)"
+msgstr "**Position Error** (float)"
+
+#: ../../source/rendering/geometry/index.rst:152
+msgid ""
+"Maximum allowable position error during animation compression (in world "
+"units)."
+msgstr ""
+"Максимально допустимая ошибка позиции при сжатии анимации (в мировых единицах)."
+
+#: ../../source/rendering/geometry/index.rst:154
+#: ../../source/rendering/geometry/index.rst:163
+#: ../../source/rendering/geometry/index.rst:172
+msgid "Smaller value = higher precision, larger file size"
+msgstr "Меньшее значение = выше точность, больше размер файла"
+
+#: ../../source/rendering/geometry/index.rst:155
+#: ../../source/rendering/geometry/index.rst:164
+#: ../../source/rendering/geometry/index.rst:173
+msgid "Larger value = lower precision, smaller file size"
+msgstr "Большее значение = ниже точность, меньше размер файла"
+
+#: ../../source/rendering/geometry/index.rst:157
+#: ../../source/rendering/geometry/index.rst:175
+msgid "Range: from ``0.0001`` to ``1.0``. Default: ``0.001``."
+msgstr "Диапазон: от ``0.0001`` до ``1.0``. По умолчанию: ``0.001``."
+
+#: ../../source/rendering/geometry/index.rst:160
+msgid "**Rotation Error** (float)"
+msgstr "**Rotation Error** (float)"
+
+#: ../../source/rendering/geometry/index.rst:161
+msgid ""
+"Maximum allowable rotation error during animation compression (in "
+"degrees)."
+msgstr ""
+"Максимально допустимая ошибка поворота при сжатии анимации (в градусах)."
+
+#: ../../source/rendering/geometry/index.rst:166
+msgid "Range: from ``0.001`` to ``10.0``. Default: ``0.5``."
+msgstr "Диапазон: от ``0.001`` до ``10.0``. По умолчанию: ``0.5``."
+
+#: ../../source/rendering/geometry/index.rst:169
+msgid "**Scale Error** (float)"
+msgstr "**Scale Error** (float)"
+
+#: ../../source/rendering/geometry/index.rst:170
+msgid "Maximum allowable scale error during animation compression."
+msgstr "Максимально допустимая ошибка масштаба при сжатии анимации."
+
+#: ../../source/rendering/geometry/index.rst:179
+msgid "Optimization Recommendations"
+msgstr "Рекомендации по оптимизации"
+
+#: ../../source/rendering/geometry/index.rst:181
+msgid "**For Mobile Platforms**"
+msgstr "**Для мобильных платформ**"
+
+#: ../../source/rendering/geometry/index.rst:182
+msgid "Use meshes with < 10,000 triangles"
+msgstr "Используйте меши с < 10 000 треугольников"
+
+#: ../../source/rendering/geometry/index.rst:183
+msgid "Limit the number of skeletal bones to 32-64 per character"
+msgstr "Ограничьте количество костей скелета до 32-64 на персонажа"
+
+#: ../../source/rendering/geometry/index.rst:184
+msgid "Enable LOD for all distant objects"
+msgstr "Включите LOD для всех удалённых объектов"
+
+#: ../../source/rendering/geometry/index.rst:185
+msgid "Use animation compression with higher error values"
+msgstr "Используйте сжатие анимации с большими значениями ошибок"
+
+#: ../../source/rendering/geometry/index.rst:186
+msgid "Prefer static batching over dynamic"
+msgstr "Предпочитайте статическую пакетную обработку динамической"
+
+#: ../../source/rendering/geometry/index.rst:188
+msgid "**For Desktop Platforms**"
+msgstr "**Для настольных платформ**"
+
+#: ../../source/rendering/geometry/index.rst:189
+msgid "Meshes up to 100,000 triangles are acceptable"
+msgstr "Меши до 100 000 треугольников приемлемы"
+
+#: ../../source/rendering/geometry/index.rst:190
+msgid "Up to 256 bones per skeleton"
+msgstr "До 256 костей на скелет"
+
+#: ../../source/rendering/geometry/index.rst:191
+msgid ""
+"Use occlusion culling for complex scenes (not available in current "
+"version)"
+msgstr ""
+"Используйте occlusion culling для сложных сцен (недоступно в текущей версии)"
+
+#: ../../source/rendering/geometry/index.rst:192
+msgid "Instance rendering for repeated objects"
+msgstr "Инстансный рендеринг для повторяющихся объектов"
+
+#: ../../source/rendering/geometry/index.rst:193
+msgid "Lower animation compression error values"
+msgstr "Меньшие значения ошибок сжатия анимации"
+
+#: ../../source/rendering/geometry/index.rst:195
+msgid "**General Recommendations**"
+msgstr "**Общие рекомендации**"
+
+#: ../../source/rendering/geometry/index.rst:196
+msgid "Minimize the number of materials per mesh"
+msgstr "Минимизируйте количество материалов на меш"
+
+#: ../../source/rendering/geometry/index.rst:197
+msgid "Use texture atlases to reduce material switching"
+msgstr "Используйте текстурные атласы для уменьшения переключения материалов"
+
+#: ../../source/rendering/geometry/index.rst:198
+msgid "Group static geometry"
+msgstr "Группируйте статическую геометрию"
+
+#: ../../source/rendering/geometry/index.rst:199
+msgid "Regularly profile draw call counts"
+msgstr "Регулярно профилируйте количество draw call'ов"
+
+#: ../../source/rendering/geometry/index.rst:200
+msgid "Use LOD for all objects with distance > 50"
+msgstr "Используйте LOD для всех объектов на расстоянии > 50"
+
+#: ../../source/rendering/geometry/index.rst:201
+msgid ""
+"For animations, use KeyframeReduction compression with moderate error "
+"values"
+msgstr ""
+"Для анимаций используйте сжатие KeyframeReduction с умеренными значениями ошибок"
+
+#: ../../source/rendering/geometry/index.rst:204
+msgid "Common Issues and Solutions"
+msgstr "Типичные проблемы и решения"
+
+#: ../../source/rendering/geometry/index.rst:206
+msgid "**Mesh Does Not Render**"
+msgstr "**Меш не рендерится**"
+
+#: ../../source/rendering/geometry/index.rst:207
+msgid "Verify that the mesh is loaded (mesh != nullptr)"
+msgstr "Убедитесь, что меш загружен (mesh != nullptr)"
+
+#: ../../source/rendering/geometry/index.rst:208
+msgid "Check that a material is assigned"
+msgstr "Проверьте, назначен ли материал"
+
+#: ../../source/rendering/geometry/index.rst:209
+msgid "Ensure the camera is looking at the object"
+msgstr "Убедитесь, что камера смотрит на объект"
+
+#: ../../source/rendering/geometry/index.rst:210
+msgid "Check the camera's near/far planes"
+msgstr "Проверьте ближнюю/дальнюю плоскости камеры"
+
+#: ../../source/rendering/geometry/index.rst:212
+msgid "**Low Performance with Many Meshes**"
+msgstr "**Низкая производительность с большим количеством мешей**"
+
+#: ../../source/rendering/geometry/index.rst:213
+msgid "Enable static batching for static geometry"
+msgstr "Включите статическую пакетную обработку для статической геометрии"
+
+#: ../../source/rendering/geometry/index.rst:214
+msgid "Use instance rendering for repeated objects"
+msgstr "Используйте инстансный рендеринг для повторяющихся объектов"
+
+#: ../../source/rendering/geometry/index.rst:215
+msgid "Reduce the number of materials"
+msgstr "Уменьшите количество материалов"
+
+#: ../../source/rendering/geometry/index.rst:216
+msgid "Enable LOD"
+msgstr "Включите LOD"
+
+#: ../../source/rendering/geometry/index.rst:217
+msgid "Use occlusion culling"
+msgstr "Используйте occlusion culling"
+
+#: ../../source/rendering/geometry/index.rst:219
+msgid "**Normal Issues**"
+msgstr "**Проблемы с нормалями**"
+
+#: ../../source/rendering/geometry/index.rst:220
+msgid "Ensure Import Normals is enabled"
+msgstr "Убедитесь, что Import Normals включён"
+
+#: ../../source/rendering/geometry/index.rst:221
+msgid "Verify that normals are not zero"
+msgstr "Убедитесь, что нормали не нулевые"
+
+#: ../../source/rendering/geometry/index.rst:222
+msgid "For smooth shading, use normal averaging"
+msgstr "Для плавного затенения используйте усреднение нормалей"
+
+#: ../../source/rendering/geometry/index.rst:224
+msgid "**Animations Play Incorrectly**"
+msgstr "**Анимации воспроизводятся некорректно**"
+
+#: ../../source/rendering/geometry/index.rst:225
+msgid "Verify that Import Animation is enabled"
+msgstr "Убедитесь, что Import Animation включён"
+
+#: ../../source/rendering/geometry/index.rst:226
+msgid "Ensure compression error values are not too high"
+msgstr "Убедитесь, что значения ошибок сжатия не слишком высоки"
+
+#: ../../source/rendering/geometry/index.rst:227
+msgid "Try disabling compression (Compress Animation = None) for testing"
+msgstr "Попробуйте отключить сжатие (Compress Animation = None) для тестирования"
+
+#: ../../source/rendering/geometry/index.rst:228
+msgid "Check that the skeleton matches the mesh"
+msgstr "Проверьте, соответствует ли скелет мешу"
+
+#: ../../source/rendering/geometry/index.rst:230
+msgid "**Animation File Size Too Large**"
+msgstr "**Размер анимационного файла слишком велик**"
+
+#: ../../source/rendering/geometry/index.rst:231
+msgid "Increase Position Error, Rotation Error, Scale Error values"
+msgstr "Увеличьте значения Position Error, Rotation Error, Scale Error"
+
+#: ../../source/rendering/geometry/index.rst:232
+msgid "Use a more aggressive compression method (CurveOptimization)"
+msgstr "Используйте более агрессивный метод сжатия (CurveOptimization)"
+
+#: ../../source/rendering/geometry/index.rst:233
+msgid "Remove unused animation channels"
+msgstr "Удалите неиспользуемые анимационные каналы"
+
+#: ../../source/rendering/geometry/index.rst:234
+msgid "Ensure the animation does not contain redundant keyframes"
+msgstr "Убедитесь, что анимация не содержит избыточных ключевых кадров"

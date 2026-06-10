@@ -1,0 +1,390 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/involved/style_guide.rst:4
+msgid "Documentation Style Guide"
+msgstr "Руководство по стилю документации"
+
+#: ../../source/involved/style_guide.rst:6
+msgid ""
+"This guide describes the style for text, code, and terminology for "
+"Thunder Engine documentation."
+msgstr ""
+"Это руководство описывает стиль текста, кода и терминологии для документации "
+"Thunder Engine."
+
+#: ../../source/involved/style_guide.rst:9
+msgid "General Principles"
+msgstr "Общие принципы"
+
+#: ../../source/involved/style_guide.rst:11
+msgid "**Clarity**"
+msgstr "**Ясность**"
+
+#: ../../source/involved/style_guide.rst:12
+msgid "Write in simple and understandable language. Avoid complex constructions."
+msgstr "Пишите простым и понятным языком. Избегайте сложных конструкций."
+
+#: 217source/involved/style_guide.rst:14
+msgid "**Consistency**"
+msgstr "**Согласованность**"
+
+#: ../../source/involved/style_guide.rst:15
+msgid "Use the same terminology throughout all documentation."
+msgstr "Используйте одинаковую терминологию во всей документации."
+
+#: ../../source/involved/style_guide.rst:17
+msgid "**Relevance**"
+msgstr "**Актуальность**"
+
+#: ../../source/involved/style_guide.rst:18
+msgid "Documentation should correspond to the current engine version."
+msgstr "Документация должна соответствовать текущей версии движка."
+
+#: ../../source/involved/style_guide.rst:20
+msgid "**Practicality**"
+msgstr "**Практичность**"
+
+#: ../../source/involved/style_guide.rst:21
+msgid "Each section should answer the question \"how to use this?\"."
+msgstr "Каждый раздел должен отвечать на вопрос «как это использовать?»."
+
+#: ../../source/involved/style_guide.rst:24
+msgid "Tone and Style"
+msgstr "Тон и стиль"
+
+#: ../../source/involved/style_guide.rst:26
+msgid "**Use Active Voice**"
+msgstr "**Используйте активный залог**"
+
+#: ../../source/involved/style_guide.rst:28
+msgid "✅ \"The Camera component displays the scene on the screen\""
+msgstr "✅ «Компонент Camera отображает сцену на экране»"
+
+#: ../../source/involved/style_guide.rst:29
+msgid "❌ \"The scene is displayed on the screen by the Camera component\""
+msgstr "❌ «Сцена отображается на экране компонентом Camera»"
+
+#: ../../source/involved/style_guide.rst:31
+msgid "**Address the Reader as \"you\"**"
+msgstr "**Обращайтесь к читателю на «вы»**"
+
+#: ../../source/involved/style_guide.rst:33
+msgid "✅ \"You can create a camera using the method...\""
+msgstr "✅ «Вы можете создать камеру с помощью метода...»"
+
+#: ../../source/involved/style_guide.rst:34
+msgid "❌ \"The user can create a camera...\""
+msgstr "❌ «Пользователь может создать камеру...»"
+
+#: ../../source/involved/style_guide.rst:36
+msgid "**Use Imperative Mood in Examples**"
+msgstr "**Используйте повелительное наклонение в примерах**"
+
+#: ../../source/involved/style_guide.rst:38
+msgid "✅ \"Create an actor and add the Camera component\""
+msgstr "✅ «Создайте актёр и добавьте компонент Camera»"
+
+#: ../../source/involved/style_guide.rst:39
+msgid "❌ \"One should create an actor and add the Camera component\""
+msgstr "❌ «Следует создать актёр и добавить компонент Camera»"
+
+#: ../../source/involved/style_guide.rst:42
+msgid "Terminology"
+msgstr "Терминология"
+
+#: ../../source/involved/style_guide.rst:44
+msgid "**Key Terms**"
+msgstr "**Ключевые термины**"
+
+#: ../../source/involved/style_guide.rst:47
+msgid "Term"
+msgstr "Термин"
+
+#: ../../source/involved/style_guide.rst:47
+#: ../../source/involved/style_guide.rst:61
+msgid "Usage"
+msgstr "Использование"
+
+#: ../../source/involved/style_guide.rst:49
+msgid "Actor"
+msgstr "Актёр"
+
+#: ../../source/involved/style_guide.rst:49
+msgid "Always capitalized, as a class"
+msgstr "Всегда с заглавной буквы, как класс"
+
+#: ../../source/involved/style_guide.rst:50
+msgid "Component"
+msgstr "Компонент"
+
+#: ../../source/involved/style_guide.rst:50
+msgid "Always capitalized"
+msgstr "Всегда с заглавной буквы"
+
+#: ../../source/involved/style_guide.rst:51
+msgid "Camera"
+msgstr "Камера"
+
+#: ../../source/involved/style_guide.rst:51
+msgid "Component name capitalized"
+msgstr "Название компонента с заглавной буквы"
+
+#: ../../source/involved/style_guide.rst:52
+msgid "Mesh"
+msgstr "Меш"
+
+#: ../../source/involved/style_guide.rst:52
+msgid "Geometry resource"
+msgstr "Ресурс геометрии"
+
+#: ../../source/involved/style_guide.rst:53
+msgid "Resource"
+msgstr "Ресурс"
+
+#: ../../source/involved/style_guide.rst:53
+msgid "Resource (asset)"
+msgstr "Ресурс (ассет)"
+
+#: ../../source/involved/style_guide.rst:54
+msgid "Scene"
+msgstr "Сцена"
+
+#: ../../source/involved/style_guide.rst:55
+msgid "Engine"
+msgstr "Движок"
+
+#: ../../source/involved/style_guide.rst:55
+msgid "Engine (in the context of the Engine class)"
+msgstr "Движок (в контексте класса Engine)"
+
+#: ../../source/involved/style_guide.rst:58
+msgid "**Verbs**"
+msgstr "**Глаголы**"
+
+#: ../../source/involved/style_guide.rst:61
+msgid "Verb"
+msgstr "Глагол"
+
+#: ../../source/involved/style_guide.rst:63
+msgid "create"
+msgstr "создавать"
+
+#: ../../source/involved/style_guide.rst:63
+msgid "For creating objects"
+msgstr "Для создания объектов"
+
+#: ../../source/involved/style_guide.rst:64
+msgid "load"
+msgstr "загружать"
+
+#: ../../source/involved/style_guide.rst:64
+msgid "For loading resources"
+msgstr "Для загрузки ресурсов"
+
+#: ../../source/involved/style_guide.rst:65
+msgid "set"
+msgstr "устанавливать"
+
+#: ../../source/involved/style_guide.rst:65
+msgid "For setting properties"
+msgstr "Для установки свойств"
+
+#: ../../source/involved/style_guide.rst:66
+msgid "get"
+msgstr "получать"
+
+#: ../../source/involved/style_guide.rst:66
+msgid "For retrieving values"
+msgstr "Для получения значений"
+
+#: ../../source/involved/style_guide.rst:67
+msgid "enable/disable"
+msgstr "включать/отключать"
+
+#: ../../source/involved/style_guide.rst:67
+msgid "For enabled/disabled"
+msgstr "Для состояний включено/отключено"
+
+#: ../../source/involved/style_guide.rst:70
+msgid "**Text Formatting**"
+msgstr "**Форматирование текста**"
+
+#: ../../source/involved/style_guide.rst:72
+msgid ""
+"Element           Formatting              Example ----------------- "
+"----------------------- ------------------------ Class names       "
+"``monospace``           ``Camera`` Method names      ``monospace()``"
+"         ``setFov()`` Properties        **bold**                "
+"**enabled** File names        ``monospace``           ``main.cpp`` Paths"
+"             ``monospace``           ``/resources/textures/`` Code"
+"              .. code-block::         with language specified Values"
+"            ``monospace``           ``true``, ``nullptr``"
+msgstr ""
+"Элемент               Форматирование            Пример\n"
+"--------------------- ------------------------ ------------------------\n"
+"Имена классов         ``monospace``             ``Camera``\n"
+"Имена методов         ``monospace()``           ``setFov()``\n"
+"Свойства              **жирный**                **enabled**\n"
+"Имена файлов          ``monospace``             ``main.cpp``\n"
+"Пути                  ``monospace``             ``/resources/textures/``\n"
+"Код                   .. code-block::           с указанием языка\n"
+"Значения              ``monospace``             ``true``, ``nullptr``"
+
+#: ../../source/involved/style_guide.rst:83
+msgid "Code Formatting"
+msgstr "Форматирование кода"
+
+#: ../../source/involved/style_guide.rst:85
+msgid "**Code Blocks**"
+msgstr "**Блоки кода**"
+
+#: ../../source/involved/style_guide.rst:87
+msgid "Always specify the language:"
+msgstr "Всегда указывайте язык:"
+
+#: ../../source/involved/style_guide.rst:97
+msgid "**Variable Names in Examples**"
+msgstr "**Имена переменных в примерах**"
+
+#: ../../source/involved/style_guide.rst:99
+msgid "Use meaningful names:"
+msgstr "Используйте осмысленные имена:"
+
+#: ../../source/involved/style_guide.rst:109
+msgid "**Comments in Code**"
+msgstr "**Комментарии в коде**"
+
+#: ../../source/involved/style_guide.rst:111
+msgid "Write comments in English:"
+msgstr "Пишите комментарии на английском:"
+
+#: ../../source/involved/style_guide.rst:120
+msgid "Property Formatting"
+msgstr "Форматирование свойств"
+
+#: ../../source/involved/style_guide.rst:122
+msgid "**Property Description Format**"
+msgstr "**Формат описания свойства**"
+
+#: ../../source/involved/style_guide.rst:133
+msgid "**Example**"
+msgstr "**Пример**"
+
+#: ../../source/involved/style_guide.rst:145
+msgid "Example Formatting"
+msgstr "Форматирование примеров"
+
+#: ../../source/involved/style_guide.rst:147
+msgid "**Basic Example**"
+msgstr "**Базовый пример**"
+
+#: ../../source/involved/style_guide.rst:160
+msgid "Warning Formatting"
+msgstr "Форматирование предупреждений"
+
+#: ../../source/involved/style_guide.rst:162
+msgid "**Note** — for important but non-critical information:"
+msgstr "**Примечание** — для важной, но не критической информации:"
+
+#: ../../source/involved/style_guide.rst:169
+msgid "**Tip** — for useful advice:"
+msgstr "**Совет** — для полезных рекомендаций:"
+
+#: ../../source/involved/style_guide.rst:176
+msgid "**Warning** — for potential issues:"
+msgstr "**Предупреждение** — для потенциальных проблем:"
+
+#: ../../source/involved/style_guide.rst:183
+msgid "**Caution** — for critical warnings:"
+msgstr "**Осторожно** — для критических предупреждений:"
+
+#: ../../source/involved/style_guide.rst:191
+msgid "Table Formatting"
+msgstr "Форматирование таблиц"
+
+#: ../../source/involved/style_guide.rst:193
+msgid "**Simple Table**"
+msgstr "**Простая таблица**"
+
+#: ../../source/involved/style_guide.rst:205
+msgid "**Table with Alignment**"
+msgstr "**Таблица с выравниванием**"
+
+#: ../../source/involved/style_guide.rst:220
+msgid "API References"
+msgstr "API-ссылки"
+
+#: ../../source/involved/style_guide.rst:222
+msgid "**Class References**"
+msgstr "**Ссылки на классы**"
+
+#: ../../source/involved/style_guide.rst:228
+msgid "**Method References**"
+msgstr "**Ссылки на методы**"
+
+#: ../../source/involved/style_guide.rst:234
+msgid "**Enumeration References**"
+msgstr "**Ссылки на перечисления**"
+
+#: ../../source/involved/style_guide.rst:241
+msgid "Pre-Submission Checklist"
+msgstr "Контрольный список перед отправкой"
+
+#: ../../source/involved/style_guide.rst:243
+msgid "Before submitting a pull request, verify:"
+msgstr "Перед отправкой pull request проверьте:"
+
+#: ../../source/involved/style_guide.rst:245
+msgid "[ ] The document begins with a unique anchor"
+msgstr "[ ] Документ начинается с уникального якоря"
+
+#: ../../source/involved/style_guide.rst:246
+msgid "[ ] Correct headers are used (===, ---, ~~~)"
+msgstr "[ ] Использованы правильные заголовки (===, ---, ~~~)"
+
+#: ../../source/involved/style_guide.rst:247
+msgid "[ ] All code blocks have the language specified"
+msgstr "[ ] Во всех блоках кода указан язык"
+
+#: ../../source/involved/style_guide.rst:248
+msgid "[ ] Default value is specified for each property"
+msgstr "[ ] Для каждого свойства указано значение по умолчанию"
+
+#: ../../source/involved/style_guide.rst:249
+msgid "[ ] Usage examples are added"
+msgstr "[ ] Добавлены примеры использования"
+
+#: ../../source/involved/style_guide.rst:250
+msgid "[ ] All links work (verified via ``make html``)"
+msgstr "[ ] Все ссылки работают (проверено через ``make html``)"
+
+#: ../../source/involved/style_guide.rst:251
+msgid "[ ] No spelling errors"
+msgstr "[ ] Нет орфографических ошибок"
+
+#: ../../source/involved/style_guide.rst:252
+msgid "[ ] Terminology is consistent"
+msgstr "[ ] Терминология согласована"
+
+#: ../../source/involved/style_guide.rst:253
+msgid "[ ] Unimplemented features are marked as \"*currently not implemented*\""
+msgstr "[ ] Нереализованные функции отмечены как «*currently not implemented*»"

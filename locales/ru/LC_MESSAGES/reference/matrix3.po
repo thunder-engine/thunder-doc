@@ -1,0 +1,444 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/matrix3.rst:4
+msgid "Matrix3"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:13
+msgid ""
+"Internally the data is stored as column-major format, so as to be optimal"
+" for passing to OpenGL functions, which expect column-major data."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:23
+msgid ":ref:`Matrix3<api_Matrix3_7f8da2e0>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:25 ../../source/reference/matrix3.rst:71
+#: ../../source/reference/matrix3.rst:73
+msgid "areal"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:25
+msgid ":ref:`determinant<api_Matrix3_6d7329ca>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:27 ../../source/reference/matrix3.rst:51
+msgid ":ref:`Vector3<api_Vector3>`"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:27
+msgid ":ref:`euler<api_Matrix3_edcfb018>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:29 ../../source/reference/matrix3.rst:33
+#: ../../source/reference/matrix3.rst:35 ../../source/reference/matrix3.rst:37
+#: ../../source/reference/matrix3.rst:39 ../../source/reference/matrix3.rst:43
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:29
+msgid ":ref:`identity<api_Matrix3_57c46803>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:31 ../../source/reference/matrix3.rst:41
+#: ../../source/reference/matrix3.rst:47 ../../source/reference/matrix3.rst:49
+#: ../../source/reference/matrix3.rst:59 ../../source/reference/matrix3.rst:63
+msgid ":ref:`Matrix3<api_Matrix3>`"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:31
+msgid ":ref:`inverse<api_Matrix3_153c97d6>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:33
+msgid ":ref:`orthonormalize<api_Matrix3_b350e487>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:35
+msgid ":ref:`rotate<api_Matrix3_e91b7d0a>` (const Vector3 & angles)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:37
+msgid ":ref:`rotate<api_Matrix3_b0e14d68>` (const Vector3 & axis, areal  angle)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:39
+msgid ":ref:`scale<api_Matrix3_d29746be>` (const Vector3 & vector)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:41
+msgid ":ref:`transpose<api_Matrix3_8c964320>` () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:43
+msgid ":ref:`zero<api_Matrix3_f8bc3092>` ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:45 ../../source/reference/matrix3.rst:69
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:45
+msgid ":ref:`operator!=<api_Matrix3_d0614729>` (const Matrix3 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:47
+msgid ":ref:`operator*<api_Matrix3_6a154b2f>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:49
+msgid ":ref:`operator*<api_Matrix3_350a87b2>` (const Matrix3 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:51
+msgid ":ref:`operator*<api_Matrix3_51f06439>` (const Vector3 & vector) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:53
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:53
+msgid ":ref:`operator*<api_Matrix3_8f659c7d>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:55 ../../source/reference/matrix3.rst:57
+#: ../../source/reference/matrix3.rst:61 ../../source/reference/matrix3.rst:65
+#: ../../source/reference/matrix3.rst:67
+msgid ":ref:`Matrix3<api_Matrix3>` &"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:55
+msgid ":ref:`operator*=<api_Matrix3_7b3459e2>` (areal  factor)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:57
+msgid ":ref:`operator*=<api_Matrix3_81d56e94>` (const Matrix3 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:59
+msgid ":ref:`operator+<api_Matrix3_ef1529dc>` (const Matrix3 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:61
+msgid ":ref:`operator+=<api_Matrix3_a4b50916>` (const Matrix3 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:63
+msgid ":ref:`operator-<api_Matrix3_36249f1c>` (const Matrix3 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:65
+msgid ":ref:`operator-=<api_Matrix3_38f7d905>` (const Matrix3 & matrix)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:67
+msgid ":ref:`operator=<api_Matrix3_9bad432e>` (const Matrix3 & value)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:69
+msgid ":ref:`operator==<api_Matrix3_4db26ac7>` (const Matrix3 & matrix) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:71
+msgid ":ref:`operator[]<api_Matrix3_508c7f41>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:73
+msgid ":ref:`operator[]<api_Matrix3_a0b369c5>` (int  i) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:81
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:83
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:88
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:92
+msgid "**Matrix3::Matrix3** ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:94
+msgid "Constructs a identity matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:100
+msgid "areal **Matrix3::determinant** () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:102
+msgid "Returns the matrix determinant."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:108
+msgid ":ref:`Vector3<api_Vector3>`  **Matrix3::euler** ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:110
+msgid ""
+"Returns an Euler angles represented by Vector3(pitch, yaw, roll) in "
+"rotation degrees."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:116
+msgid "void **Matrix3::identity** ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:118
+msgid "Resets this matrix to an identity matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:124
+msgid ":ref:`Matrix3<api_Matrix3>`  **Matrix3::inverse** () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:126
+msgid "Returns an inverted copy of this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:132
+msgid "void **Matrix3::orthonormalize** ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:134
+msgid "Orthonormalize this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:140
+msgid "void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *angles*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:142
+msgid ""
+"Rotate this matrix with Euler *angles* represented by Vector3(pitch, yaw,"
+" roll) in rotation degrees."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:148
+msgid ""
+"void **Matrix3::rotate** (:ref:`Vector3<api_Vector3>` & *axis*, areal  "
+"*angle*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:150
+msgid "Rotate this matrix around *axis* to *angle* in rotation degrees."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:156
+msgid "void **Matrix3::scale** (:ref:`Vector3<api_Vector3>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:158
+msgid "Scales the coordinate system by vector."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:164
+msgid ":ref:`Matrix3<api_Matrix3>`  **Matrix3::transpose** () const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:166
+msgid "Returns this matrix, transposed about its diagonal."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:172
+msgid "void **Matrix3::zero** ()"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:174
+msgid "Clear this matrix, with 0.0 value for all components."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:180
+msgid ""
+"bool **Matrix3::operator!=** (:ref:`Matrix3<api_Matrix3>` & *matrix*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:182
+msgid ""
+"Returns true if this *matrix* is NOT equal to given matrix; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:188
+msgid ""
+":ref:`Matrix3<api_Matrix3>`  **Matrix3::operator*** (areal  *factor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:190
+msgid "Returns the result of multiplying this matrix and the given factor."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:196
+msgid ""
+":ref:`Matrix3<api_Matrix3>`  **Matrix3::operator*** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:198
+#: ../../source/reference/matrix3.rst:232
+msgid "Returns the result of multiplying this *matrix* by the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:200
+msgid "Note that *matrix* multiplication is not commutative, i.e. a*b != b*a."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:206
+msgid ""
+":ref:`Vector3<api_Vector3>`  **Matrix3::operator*** "
+"(:ref:`Vector3<api_Vector3>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:208
+msgid "Returns the result of multiplying this matrix and the given 3D vector."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:214
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Matrix3::operator*** "
+"(:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:216
+msgid "Returns the result of multiplying this matrix and the given 4D vector."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:222
+msgid ":ref:`Matrix3<api_Matrix3>` & **Matrix3::operator*=** (areal  *factor*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:224
+msgid "Multiplies all elements of this matrix by factor."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:230
+msgid ""
+":ref:`Matrix3<api_Matrix3>` & **Matrix3::operator*=** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:238
+msgid ""
+":ref:`Matrix3<api_Matrix3>`  **Matrix3::operator+** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:240
+msgid "Returns the sum of this *matrix* and the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:246
+msgid ""
+":ref:`Matrix3<api_Matrix3>` & **Matrix3::operator+=** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:248
+msgid "Adds the contents of *matrix* to this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:254
+msgid ""
+":ref:`Matrix3<api_Matrix3>`  **Matrix3::operator-** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:256
+msgid "Returns the difference of this *matrix* and the given matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:262
+msgid ""
+":ref:`Matrix3<api_Matrix3>` & **Matrix3::operator-=** "
+"(:ref:`Matrix3<api_Matrix3>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:264
+msgid "Subtracts the contents of *matrix* from this matrix."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:270
+msgid ""
+":ref:`Matrix3<api_Matrix3>` & **Matrix3::operator=** "
+"(:ref:`Matrix3<api_Matrix3>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:272
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:278
+msgid ""
+"bool **Matrix3::operator==** (:ref:`Matrix3<api_Matrix3>` & *matrix*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:280
+msgid ""
+"Returns true if this *matrix* is equal to given matrix; otherwise returns"
+" false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:286
+msgid "areal **Matrix3::operator[]** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:288
+msgid ""
+"Returns the component of the matrix at index position *i* as a modifiable"
+" reference. *i* must be a valid index position in the matrix (i.e., 0 <= "
+"*i* < 9). Data is stored as column-major format so this function "
+"retrieving data from rows in colmns."
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:292
+msgid "areal **Matrix3::operator[]** (int  *i*) const"
+msgstr ""
+
+#: ../../source/reference/matrix3.rst:294
+msgid ""
+"Returns the component of the matrix at index position. *i* must be a "
+"valid index position in the matrix (i.e., 0 <= *i* < 9). Data is stored "
+"as column-major format so this function retrieving data from rows in "
+"colmns."
+msgstr ""
+

@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/uiloader.rst:4
+msgid "UiLoader"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:13
+msgid ""
+"The UiLoader class is tasked with loading user interface (UI) data from a"
+" buffer (likely an XML or similar format), managing the UI document, "
+"applying styles to the UI elements, and maintaining a hierarchy of "
+"widgets. This class appears to be part of a larger UI framework that "
+"supports widget-based layouts."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:23
+msgid ":ref:`UiDocument<api_UiDocument>` *"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:23
+msgid ":ref:`document<api_UiLoader_428bce90>` () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:25
+#: ../../source/reference/uiloader.rst:29
+#: ../../source/reference/uiloader.rst:31
+#: ../../source/reference/uiloader.rst:33
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:25
+msgid ":ref:`documentLoaded<api_UiLoader_2ed41f35>` ()"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:27
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:27
+msgid ":ref:`documentStyle<api_UiLoader_0916f57a>` () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:29
+msgid ":ref:`fromBuffer<api_UiLoader_5286df73>` (const TString & buffer)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:31
+msgid ":ref:`setDocument<api_UiLoader_a207b938>` (UiDocument * document)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:33
+msgid ":ref:`setStyleSheet<api_UiLoader_4529bae0>` (StyleSheet * style)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:35
+msgid ":ref:`StyleSheet<api_StyleSheet>` *"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:35
+msgid ":ref:`styleSheet<api_UiLoader_65103fad>` () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:43
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:45
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:50
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:54
+msgid ":ref:`UiDocument<api_UiDocument>` * **UiLoader::document** () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:56
+msgid ""
+"Returns the UiDocument associated with this UiLoader, which contains the "
+"structure of the loaded UI."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:58
+msgid "**See also** setDocument()."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:64
+msgid "void **UiLoader::documentLoaded** ()"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:66
+msgid "Emmits signal when document is loaded."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:72
+msgid ":ref:`TString<api_TString>`  **UiLoader::documentStyle** () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:74
+msgid ""
+"Returns the raw document style (as a string), which was parsed from the "
+"UI document."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:80
+msgid "void **UiLoader::fromBuffer** (:ref:`TString<api_TString>` & *buffer*)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:82
+msgid ""
+"This function loads the UI data from an XML *buffer* (likely containing "
+"UI element definitions and style information)."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:88
+msgid ""
+"void **UiLoader::setDocument** (:ref:`UiDocument<api_UiDocument>` * "
+"*document*)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:90
+msgid ""
+"Sets the UI *document* to the provided *document* pointer and reloads the"
+" UI from the document's data buffer by calling fromBuffer()."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:92
+msgid "**See also** document()."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:98
+msgid ""
+"void **UiLoader::setStyleSheet** (:ref:`StyleSheet<api_StyleSheet>` * "
+"*style*)"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:100
+msgid "Sets a *style* sheet to the hierarhy of widgets."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:102
+msgid "**See also** styleSheet()."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:108
+msgid ":ref:`StyleSheet<api_StyleSheet>` * **UiLoader::styleSheet** () const"
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:110
+msgid ""
+"Returns the style sheet assigned to the hierarchy of widgets. This "
+"contains the visual styles (like colors, margins, fonts, etc.) that "
+"should be applied to the widgets."
+msgstr ""
+
+#: ../../source/reference/uiloader.rst:112
+msgid "**See also** setStyleSheet()."
+msgstr ""
+

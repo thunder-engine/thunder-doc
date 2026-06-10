@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/geometry/meshrender.rst:4
+msgid "MeshRender"
+msgstr "MeshRender"
+
+#: ../../source/rendering/geometry/meshrender.rst:6
+msgid ""
+"**MeshRender** is a component that renders a static mesh in the scene. It"
+" attaches to an actor and provides rendering of geometry with a specified"
+" material."
+msgstr ""
+"**MeshRender** — это компонент, который выполняет рендеринг статического меша "
+"в сцене. Он прикрепляется к актёру и обеспечивает рендеринг геометрии с "
+"указанным материалом."
+
+#: ../../source/rendering/geometry/meshrender.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/rendering/geometry/meshrender.rst:11
+msgid ""
+"MeshRender is the primary component for displaying static 3D objects. It "
+"supports:"
+msgstr ""
+"MeshRender является основным компонентом для отображения статических 3D-объектов. "
+"Он поддерживает:"
+
+#: 217source/rendering/geometry/meshrender.rst:13
+msgid "Rendering static meshes"
+msgstr "Рендеринг статических мешей"
+
+#: ../../source/rendering/geometry/meshrender.rst:14
+msgid "Multiple sub-meshes with different materials"
+msgstr "Несколько суб-мешей с разными материалами"
+
+#: ../../source/rendering/geometry/meshrender.rst:15
+msgid "Shadows (cast/receive)"
+msgstr "Тени (отбрасывание/приём)"
+
+#: ../../source/rendering/geometry/meshrender.rst:16
+msgid "Frustum culling"
+msgstr "Отсечение по фрустуму"
+
+#: ../../source/rendering/geometry/meshrender.rst:17
+msgid "Static batching (for optimization)"
+msgstr "Статическая пакетная обработка (для оптимизации)"
+
+#: ../../source/rendering/geometry/meshrender.rst:20
+msgid "Component Properties"
+msgstr "Свойства компонента"
+
+#: ../../source/rendering/geometry/meshrender.rst:22
+msgid "**mesh** (Mesh)"
+msgstr "**mesh** (Mesh)"
+
+#: ../../source/rendering/geometry/meshrender.rst:23
+msgid "Reference to the Mesh resource to be rendered. Can be changed at runtime."
+msgstr "Ссылка на ресурс Mesh для рендеринга. Может быть изменена во время выполнения."
+
+#: ../../source/rendering/geometry/meshrender.rst:26
+msgid "**materials** (Material[])"
+msgstr "**materials** (Material[])"
+
+#: ../../source/rendering/geometry/meshrender.rst:27
+msgid ""
+"Array of materials for each sub-mesh. If there are fewer materials than "
+"sub-meshes, the remaining sub-meshes are not rendered."
+msgstr ""
+"Массив материалов для каждого суб-меша. Если материалов меньше, чем суб-мешей, "
+"остальные суб-меши не рендерятся."
+
+#: ../../source/rendering/geometry/meshrender.rst:29
+msgid "**castShadows** (bool) - currently not implemented"
+msgstr "**castShadows** (bool) — в настоящее время не реализовано"
+
+#: ../../source/rendering/geometry/meshrender.rst:30
+msgid "Determines whether the object casts shadows. Default: ``true``."
+msgstr "Определяет, отбрасывает ли объект тени. По умолчанию: ``true``."
+
+#: ../../source/rendering/geometry/meshrender.rst:33
+msgid "**receiveShadows** (bool) - currently not implemented"
+msgstr "**receiveShadows** (bool) — в настоящее время не реализовано"
+
+#: ../../source/rendering/geometry/meshrender.rst:34
+msgid ""
+"Determines whether the object receives shadows from other sources. "
+"Default: ``true``."
+msgstr ""
+"Определяет, получает ли объект тени от других источников. По умолчанию: ``true``."
+
+#: ../../source/rendering/geometry/meshrender.rst:37
+msgid "**enabled** (bool)"
+msgstr "**enabled** (bool)"
+
+#: ../../source/rendering/geometry/meshrender.rst:38
+msgid "Enables/disables component rendering. Default: ``true``."
+msgstr "Включает/отключает рендеринг компонента. По умолчанию: ``true``."
+
+#: ../../source/rendering/geometry/meshrender.rst:42
+msgid "Usage Examples"
+msgstr "Примеры использования"
+
+#: ../../source/rendering/geometry/meshrender.rst:44
+msgid "**Basic Creation**"
+msgstr "**Базовое создание**"
+
+#: ../../source/rendering/geometry/meshrender.rst:56
+msgid "**Configuring Materials for Sub-meshes**"
+msgstr "**Настройка материалов для суб-мешей**"
+
+#: ../../source/rendering/geometry/meshrender.rst:69
+msgid "**Dynamic Mesh Switching**"
+msgstr "**Динамическое переключение мешей**"
+
+#: ../../source/rendering/geometry/meshrender.rst:107
+msgid "**Enabling/Disabling Rendering**"
+msgstr "**Включение/отключение рендеринга**"
+
+#: ../../source/rendering/geometry/meshrender.rst:118
+msgid "Recommendations"
+msgstr "Рекомендации"
+
+#: ../../source/rendering/geometry/meshrender.rst:120
+msgid "**Optimization**"
+msgstr "**Оптимизация**"
+
+#: ../../source/rendering/geometry/meshrender.rst:121
+msgid ""
+"For static objects (that don't move), set the actor as static: "
+"``actor->setStatic(true)``. This enables static batching."
+msgstr ""
+"Для статических объектов (которые не движутся) установите актёр как статический: "
+"``actor->setStatic(true)``. Это включает статическую пакетную обработку."
+
+#: ../../source/rendering/geometry/meshrender.rst:122
+msgid ""
+"Use a single material for the entire mesh if possible. Each additional "
+"material increases the number of draw calls."
+msgstr ""
+"По возможности используйте один материал для всего меша. Каждый дополнительный "
+"материал увеличивает количество draw call'ов."
+
+#: ../../source/rendering/geometry/meshrender.rst:124
+msgid "**Shadows**"
+msgstr "**Тени**"
+
+#: ../../source/rendering/geometry/meshrender.rst:125
+msgid "Disable shadows for small objects and objects that are far away"
+msgstr "Отключайте тени для маленьких объектов и объектов, находящихся далеко"
+
+#: ../../source/rendering/geometry/meshrender.rst:126
+msgid "For mobile platforms, limit the number of objects with shadows"
+msgstr "Для мобильных платформ ограничьте количество объектов с тенями"
+
+#: ../../source/rendering/geometry/meshrender.rst:128
+msgid "**Resource Management**"
+msgstr "**Управление ресурсами**"
+
+#: ../../source/rendering/geometry/meshrender.rst:129
+msgid "Meshes and materials are automatically managed by the resource manager"
+msgstr "Меши и материалы автоматически управляются менеджером ресурсов"
+
+#: ../../source/rendering/geometry/meshrender.rst:130
+msgid ""
+"When an actor is destroyed, the component automatically releases "
+"references to resources"
+msgstr ""
+"При уничтожении актёра компонент автоматически освобождает ссылки на ресурсы"

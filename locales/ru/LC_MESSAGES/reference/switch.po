@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/switch.rst:4
+msgid "Switch"
+msgstr ""
+
+#: ../../source/reference/switch.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/switch.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/switch.rst:13
+msgid ""
+"The Switch class provides a customizable switch button with an animated "
+"graphical knob. It inherits functionality from the AbstractButton class "
+"and extends it to handle knob-related features and animations."
+msgstr ""
+
+#: ../../source/reference/switch.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/switch.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/switch.rst:23
+msgid ":ref:`knobColor<api_Switch_c7d9520f>` () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:25
+msgid ":ref:`Frame<api_Frame>` *"
+msgstr ""
+
+#: ../../source/reference/switch.rst:25
+msgid ":ref:`knobGraphic<api_Switch_64fea275>` () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:27 ../../source/reference/switch.rst:29
+#: ../../source/reference/switch.rst:31
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/switch.rst:27
+msgid ":ref:`setKnobColor<api_Switch_24c5e3f9>` (const Vector4  color)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:29
+msgid ":ref:`setKnobGraphic<api_Switch_af3bd947>` (Frame * knob)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:31
+msgid ":ref:`setSwitchDuration<api_Switch_f465d21c>` (float  duration)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:33
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/switch.rst:33
+msgid ":ref:`switchDuration<api_Switch_0923afbd>` () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:41
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/switch.rst:43
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/switch.rst:48
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/switch.rst:52
+msgid ":ref:`Vector4<api_Vector4>`  **Switch::knobColor** () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:54
+msgid "Returns the color of the graphical knob."
+msgstr ""
+
+#: ../../source/reference/switch.rst:56
+msgid "**See also** setKnobColor()."
+msgstr ""
+
+#: ../../source/reference/switch.rst:62
+msgid ":ref:`Frame<api_Frame>` * **Switch::knobGraphic** () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:64
+msgid "Returns the graphical knob component."
+msgstr ""
+
+#: ../../source/reference/switch.rst:66
+msgid "**See also** setKnobGraphic()."
+msgstr ""
+
+#: ../../source/reference/switch.rst:72
+msgid "void **Switch::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:74
+msgid "Sets the *color* of the graphical knob."
+msgstr ""
+
+#: ../../source/reference/switch.rst:76
+msgid "**See also** knobColor()."
+msgstr ""
+
+#: ../../source/reference/switch.rst:82
+msgid "void **Switch::setKnobGraphic** (:ref:`Frame<api_Frame>` * *knob*)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:84
+msgid "Sets the graphical *knob* component."
+msgstr ""
+
+#: ../../source/reference/switch.rst:86
+msgid "**See also** knobGraphic()."
+msgstr ""
+
+#: ../../source/reference/switch.rst:92
+msgid "void **Switch::setSwitchDuration** (float  *duration*)"
+msgstr ""
+
+#: ../../source/reference/switch.rst:94
+msgid "Sets the switch animation *duration* in seconds."
+msgstr ""
+
+#: ../../source/reference/switch.rst:96
+msgid "**See also** switchDuration()."
+msgstr ""
+
+#: ../../source/reference/switch.rst:102
+msgid "float **Switch::switchDuration** () const"
+msgstr ""
+
+#: ../../source/reference/switch.rst:104
+msgid "Returns the switch animation duration in seconds."
+msgstr ""
+
+#: ../../source/reference/switch.rst:106
+msgid "**See also** setSwitchDuration()."
+msgstr ""
+

@@ -1,0 +1,528 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/quaternion.rst:4
+msgid "Quaternion"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:13
+msgid ""
+"Quaternions consist of a 3D rotation axis specified by the x, y, and z "
+"coordinates, and a w representing the rotation angle."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:23
+msgid ":ref:`Quaternion<api_Quaternion_bc24d918>` ()"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:25
+msgid ":ref:`Quaternion<api_Quaternion_675ead82>` (const Matrix3 & matrix)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:27
+msgid ":ref:`Quaternion<api_Quaternion_8406925c>` (const Vector3 & euler)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:29
+msgid ""
+":ref:`Quaternion<api_Quaternion_1a63c2e8>` (const Vector3 & axis, areal  "
+"angle)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:31
+msgid ""
+":ref:`Quaternion<api_Quaternion_7c8d1e26>` (areal  x, areal  y, areal  z,"
+" areal  w)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:33
+msgid ":ref:`Quaternion<api_Quaternion_73ea0425>` (const Quaternion & quaternion)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:35
+#: ../../source/reference/quaternion.rst:47
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:35
+msgid ":ref:`axisAngle<api_Quaternion_048527e1>` (Vector3 & axis, areal & angle)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:37
+#: ../../source/reference/quaternion.rst:45
+#: ../../source/reference/quaternion.rst:49
+#: ../../source/reference/quaternion.rst:51
+#: ../../source/reference/quaternion.rst:73
+#: ../../source/reference/quaternion.rst:75
+msgid "areal"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:37
+msgid ":ref:`dot<api_Quaternion_15084fa2>` (const Quaternion & quaternion) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:39
+#: ../../source/reference/quaternion.rst:55
+#: ../../source/reference/quaternion.rst:71
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:39
+msgid ""
+":ref:`equal<api_Quaternion_cfd352ab>` (const Quaternion & quaternion) "
+"const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:41
+#: ../../source/reference/quaternion.rst:61
+msgid ":ref:`Vector3<api_Vector3>`"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:41
+msgid ":ref:`euler<api_Quaternion_19bc4e0d>` () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:43
+#: ../../source/reference/quaternion.rst:57
+#: ../../source/reference/quaternion.rst:59
+#: ../../source/reference/quaternion.rst:65
+#: ../../source/reference/quaternion.rst:86
+msgid ":ref:`Quaternion<api_Quaternion>`"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:43
+msgid ":ref:`inverse<api_Quaternion_045fa67d>` () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:45
+msgid ":ref:`length<api_Quaternion_eaf6b971>` () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:47
+msgid ""
+":ref:`mix<api_Quaternion_a9fb1d24>` (const Quaternion & q0, const "
+"Quaternion & q1, areal  t)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:49
+msgid ":ref:`normalize<api_Quaternion_df2c036e>` ()"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:51
+msgid ":ref:`sqrLength<api_Quaternion_0ebd4ca9>` () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:53
+msgid ":ref:`Matrix3<api_Matrix3>`"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:53
+msgid ":ref:`toMatrix<api_Quaternion_639b4a71>` () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:55
+msgid ""
+":ref:`operator!=<api_Quaternion_5bd0372a>` (const Quaternion & "
+"quaternion) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:57
+msgid ":ref:`operator*<api_Quaternion_208913ea>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:59
+msgid ""
+":ref:`operator*<api_Quaternion_7c2068ba>` (const Quaternion & quaternion)"
+" const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:61
+msgid ":ref:`operator*<api_Quaternion_6d70ba58>` (const Vector3 & vector) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:63
+#: ../../source/reference/quaternion.rst:67
+#: ../../source/reference/quaternion.rst:69
+msgid ":ref:`Quaternion<api_Quaternion>` &"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:63
+msgid ":ref:`operator*=<api_Quaternion_4f76e91a>` (areal  factor)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:65
+msgid ":ref:`operator/<api_Quaternion_2ca81567>` (areal  divisor) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:67
+msgid ":ref:`operator/=<api_Quaternion_519dea6f>` (areal  divisor)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:69
+msgid ":ref:`operator=<api_Quaternion_1b6924cd>` (const Quaternion & value)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:71
+msgid ""
+":ref:`operator==<api_Quaternion_6c0d8eb5>` (const Quaternion & "
+"quaternion) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:73
+msgid ":ref:`operator[]<api_Quaternion_8e645327>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:75
+msgid ":ref:`operator[]<api_Quaternion_d74658ac>` (int  i) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:83
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:86
+msgid ""
+":ref:`lookRotation<api_Quaternion_389ef67d>` (const Vector3 & forward, "
+"const Vector3 & up)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:92
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:96
+msgid "**Quaternion::Quaternion** ()"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:98
+msgid "Constructs an identity quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:104
+msgid "**Quaternion::Quaternion** (:ref:`Matrix3<api_Matrix3>` & *matrix*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:106
+msgid ""
+"Constructs a quaternion by rotation *matrix* represented by Matrix3 "
+"matrix."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:112
+msgid "**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *euler*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:114
+msgid ""
+"Constructs a quaternion by Euler angles represented by Vector3(pitch, "
+"yaw, roll) *euler* in rotation degrees."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:120
+msgid ""
+"**Quaternion::Quaternion** (:ref:`Vector3<api_Vector3>` & *axis*, areal  "
+"*angle*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:122
+msgid ""
+"Constructs a quaternion with rotation *axis* and *angle* in rotation "
+"degrees."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:128
+msgid ""
+"**Quaternion::Quaternion** (areal  *x*, areal  *y*, areal  *z*, areal  "
+"*w*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:130
+msgid "Constructs a quaternion with values (x, y, z, w)."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:136
+msgid ""
+"**Quaternion::Quaternion** (:ref:`Quaternion<api_Quaternion>` & "
+"*quaternion*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:138
+msgid "Copy constructor."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:144
+msgid ""
+"void **Quaternion::axisAngle** (:ref:`Vector3<api_Vector3>` & *axis*, "
+"areal & *angle*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:146
+msgid "Retrives a quaternion as rotation *axis* and *angle* in rotation degrees."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:152
+msgid ""
+"areal **Quaternion::dot** (:ref:`Quaternion<api_Quaternion>` & "
+"*quaternion*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:154
+msgid "Returns the dot-product of this *quaternion* and given quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:160
+msgid ""
+"bool **Quaternion::equal** (:ref:`Quaternion<api_Quaternion>` & "
+"*quaternion*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:162
+msgid "Returns true if *quaternion* approximately equal."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:168
+msgid ":ref:`Vector3<api_Vector3>`  **Quaternion::euler** () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:170
+msgid ""
+"Returns the Euler angles represented by Vector3(pitch, yaw, roll) in "
+"rotation degrees."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:176
+msgid ":ref:`Quaternion<api_Quaternion>`  **Quaternion::inverse** () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:178
+msgid "Returns the inverse of this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:184
+msgid "areal **Quaternion::length** () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:186
+msgid "Returns the length of this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:188
+msgid "**See also** sqrLength()."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:194
+msgid ""
+":ref:`Quaternion<api_Quaternion>`  **Quaternion::lookRotation** "
+"(:ref:`Vector3<api_Vector3>` & *forward*, :ref:`Vector3<api_Vector3>` & "
+"*up*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:196
+msgid "Creates a rotation with the specified *forward* and *up* directions."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:202
+msgid ""
+"void **Quaternion::mix** (:ref:`Quaternion<api_Quaternion>` & *q0*, "
+":ref:`Quaternion<api_Quaternion>` & *q1*, areal  *t*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:204
+msgid "Linear inerpolation between *q0* and *q1* with *t* factor."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:210
+msgid "areal **Quaternion::normalize** ()"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:212
+msgid ""
+"Normalizes the currect quaternion in place. Returns length of "
+"prenormalized quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:214
+#: ../../source/reference/quaternion.rst:224
+msgid "**See also** length()."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:220
+msgid "areal **Quaternion::sqrLength** () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:222
+msgid "Returns the squared length of this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:230
+msgid ":ref:`Matrix3<api_Matrix3>`  **Quaternion::toMatrix** () const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:232
+msgid "Returns the rotation matrix for this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:238
+msgid ""
+"bool **Quaternion::operator!=** (:ref:`Quaternion<api_Quaternion>` & "
+"*quaternion*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:240
+msgid ""
+"Returns true if this *quaternion* is NOT equal to given quaternion; "
+"otherwise returns false. This operator uses an exact floating-point "
+"comparison."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:246
+msgid ""
+":ref:`Quaternion<api_Quaternion>`  **Quaternion::operator*** (areal  "
+"*factor*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:248
+msgid "Returns a copy of this quaternion, multiplied by the given factor."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:250
+#: ../../source/reference/quaternion.rst:296
+msgid "**See also** operator*=()."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:256
+msgid ""
+":ref:`Quaternion<api_Quaternion>`  **Quaternion::operator*** "
+"(:ref:`Quaternion<api_Quaternion>` & *quaternion*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:258
+msgid ""
+"Multiplies this *quaternion* and *quaternion* using *quaternion* "
+"multiplication. The result corresponds to applying both of the rotations "
+"specified by this *quaternion* and quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:264
+msgid ""
+":ref:`Vector3<api_Vector3>`  **Quaternion::operator*** "
+"(:ref:`Vector3<api_Vector3>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:266
+msgid ""
+"Rotates a *vector* vec with this quaternion to produce a new *vector* in "
+"3D space."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:272
+msgid ""
+":ref:`Quaternion<api_Quaternion>` & **Quaternion::operator*=** (areal  "
+"*factor*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:274
+msgid ""
+"Multiplies this quaternion's coordinates by the given factor, and returns"
+" a reference to this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:276
+#: ../../source/reference/quaternion.rst:286
+msgid "**See also** operator/=()."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:282
+msgid ""
+":ref:`Quaternion<api_Quaternion>`  **Quaternion::operator/** (areal  "
+"*divisor*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:284
+msgid "Returns a copy of this quaternion, divided by the given divisor."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:292
+msgid ""
+":ref:`Quaternion<api_Quaternion>` & **Quaternion::operator/=** (areal  "
+"*divisor*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:294
+msgid ""
+"Divides this quaternion's coordinates by the given divisor, and returns a"
+" reference to this quaternion."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:302
+msgid ""
+":ref:`Quaternion<api_Quaternion>` & **Quaternion::operator=** "
+"(:ref:`Quaternion<api_Quaternion>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:304
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:310
+msgid ""
+"bool **Quaternion::operator==** (:ref:`Quaternion<api_Quaternion>` & "
+"*quaternion*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:312
+msgid ""
+"Returns true if this *quaternion* is equal to given quaternion; otherwise"
+" returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:318
+msgid "areal **Quaternion::operator[]** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:320
+msgid ""
+"Returns the component of the quaternion at index position *i* as a "
+"modifiable reference. *i* must be a valid index position in the "
+"quaternion (i.e., 0 <= *i* < 4)."
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:324
+msgid "areal **Quaternion::operator[]** (int  *i*) const"
+msgstr ""
+
+#: ../../source/reference/quaternion.rst:326
+msgid ""
+"Returns the component of the quaternion at index position. *i* must be a "
+"valid index position in the quaternion (i.e., 0 <= *i* < 4)."
+msgstr ""
+

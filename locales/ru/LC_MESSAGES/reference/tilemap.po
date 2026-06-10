@@ -1,0 +1,413 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/tilemap.rst:4
+msgid "TileMap"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:13
+msgid ""
+"TileMap is a fundamental resource class used to define a grid of tiles "
+"for creating the layout of a game or application. It represents a grid-"
+"based map where each cell can be assigned a specific tile ID."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:23 ../../source/reference/tilemap.rst:25
+#: ../../source/reference/tilemap.rst:27 ../../source/reference/tilemap.rst:31
+#: ../../source/reference/tilemap.rst:33 ../../source/reference/tilemap.rst:55
+#: ../../source/reference/tilemap.rst:61
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:23
+msgid ":ref:`cellHeight<api_TileMap_8dbafe25>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:25
+msgid ":ref:`cellWidth<api_TileMap_af351098>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:27
+msgid ":ref:`height<api_TileMap_ca062153>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:29
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:29
+msgid ":ref:`hexOdd<api_TileMap_bfa65de8>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:31
+msgid ":ref:`hexSideLength<api_TileMap_1ba4d5f9>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:33
+msgid ":ref:`orientation<api_TileMap_20a176d8>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:35 ../../source/reference/tilemap.rst:37
+#: ../../source/reference/tilemap.rst:39 ../../source/reference/tilemap.rst:41
+#: ../../source/reference/tilemap.rst:43 ../../source/reference/tilemap.rst:45
+#: ../../source/reference/tilemap.rst:47 ../../source/reference/tilemap.rst:49
+#: ../../source/reference/tilemap.rst:51 ../../source/reference/tilemap.rst:53
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:35
+msgid ":ref:`refreshAllTiles<api_TileMap_64b0e891>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:37
+msgid ":ref:`setCellHeight<api_TileMap_b3240918>` (int  height)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:39
+msgid ":ref:`setCellWidth<api_TileMap_4b8ce1a5>` (int  width)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:41
+msgid ":ref:`setHeight<api_TileMap_9c4f5ed0>` (int  height)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:43
+msgid ":ref:`setHexOdd<api_TileMap_804a6c3f>` (bool  odd)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:45
+msgid ":ref:`setHexSideLength<api_TileMap_5ce693f4>` (int  length)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:47
+msgid ":ref:`setOrientation<api_TileMap_57d83ec6>` (int  orientation)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:49
+msgid ":ref:`setTile<api_TileMap_820fbd1a>` (int  x, int  y, int  id)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:51
+msgid ":ref:`setTileSet<api_TileMap_c1532db4>` (TileSet * set)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:53
+msgid ":ref:`setWidth<api_TileMap_d9104aec>` (int  width)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:55
+msgid ":ref:`tile<api_TileMap_b90af76d>` (int  x, int  y) const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:57
+msgid ":ref:`Mesh<api_Mesh>` *"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:57
+msgid ":ref:`tileMesh<api_TileMap_8d301e96>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:59
+msgid ":ref:`TileSet<api_TileSet>` *"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:59
+msgid ":ref:`tileSet<api_TileMap_b81cda45>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:61
+msgid ":ref:`width<api_TileMap_5bcaf8d3>` () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:69
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:71
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:76
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:80
+msgid "int **TileMap::cellHeight** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:82
+msgid "Returns the height of a single grid cell in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:84
+msgid "**See also** setCellHeight()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:90
+msgid "int **TileMap::cellWidth** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:92
+msgid "Returns the width of a single grid cell in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:94
+msgid "**See also** setCellWidth()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:100
+msgid "int **TileMap::height** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:102
+msgid "Returns the height of the tile map in terms of grid cells."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:104
+msgid "**See also** setHeight()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:110
+msgid "bool **TileMap::hexOdd** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:112
+msgid ""
+"Returns true if the stagger index for hexagonal tiles is set to odd, "
+"false otherwise."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:114
+msgid "**See also** setHexOdd()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:120
+msgid "int **TileMap::hexSideLength** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:122
+msgid "Returns the side length of hexagonal tiles in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:124
+msgid "**See also** setHexSideLength()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:130
+msgid "int **TileMap::orientation** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:132
+msgid ""
+"Returns the orientation of the tile map. This can be one of the constants"
+" defined in the TileSet class, such as TileSet::Orthogonal, "
+"TileSet::Isometric, or TileSet::Hexagonal."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:134
+msgid "**See also** setOrientation()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:140
+msgid "void **TileMap::refreshAllTiles** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:142
+msgid ""
+"Refreshes all the tiles in the tile map, updating the tile mesh with the "
+"latest tile information based on the tile set and map data."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:148
+msgid "void **TileMap::setCellHeight** (int  *height*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:150
+msgid "Sets the *height* of a single grid cell in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:152
+msgid "**See also** cellHeight()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:158
+msgid "void **TileMap::setCellWidth** (int  *width*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:160
+msgid "Sets the *width* of a single grid cell in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:162
+msgid "**See also** cellWidth()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:168
+msgid "void **TileMap::setHeight** (int  *height*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:170
+msgid ""
+"Sets the *height* of the tile map in grid cells. It resizes the map data "
+"accordingly."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:172
+msgid "**See also** height()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:178
+msgid "void **TileMap::setHexOdd** (bool  *odd*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:180
+msgid ""
+"Sets the stagger index for hexagonal tiles. If *odd* is true, it sets the"
+" stagger index to 1; otherwise, it sets it to 0."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:182
+msgid "**See also** hexOdd()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:188
+msgid "void **TileMap::setHexSideLength** (int  *length*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:190
+msgid "Sets the side *length* of hexagonal tiles in pixels."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:192
+msgid "**See also** hexSideLength()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:198
+msgid "void **TileMap::setOrientation** (int  *orientation*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:200
+msgid ""
+"Sets the *orientation* of the tile map. This affects how the tiles are "
+"positioned within the map."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:202
+msgid "**See also** orientation()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:208
+msgid "void **TileMap::setTile** (int  *x*, int  *y*, int  *id*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:210
+msgid "Sets the tile *id* at the specified grid cell coordinates (x, y)."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:212
+msgid "**See also** tile()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:218
+msgid "void **TileMap::setTileSet** (:ref:`TileSet<api_TileSet>` * *set*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:220
+msgid "Sets the associated tile *set* for this tile map."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:222
+msgid "**See also** tileSet()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:228
+msgid "void **TileMap::setWidth** (int  *width*)"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:230
+msgid ""
+"Sets the *width* of the tile map in grid cells. It resizes the map data "
+"accordingly."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:232
+msgid "**See also** width()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:238
+msgid "int **TileMap::tile** (int  *x*, int  *y*) const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:240
+msgid "Returns the tile ID at the specified grid cell coordinates (x, y)."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:242
+msgid "**See also** setTile()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:248
+msgid ":ref:`Mesh<api_Mesh>` * **TileMap::tileMesh** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:250
+msgid ""
+"Returns a pointer to a mesh representing the tile map's geometry. This "
+"mesh is updated and regenerated as needed."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:256
+msgid ":ref:`TileSet<api_TileSet>` * **TileMap::tileSet** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:258
+msgid ""
+"Returns a pointer to the associated TileSet that defines the available "
+"tiles for this tile map."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:260
+msgid "**See also** setTileSet()."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:266
+msgid "int **TileMap::width** () const"
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:268
+msgid "Returns the width of the tile map in terms of grid cells."
+msgstr ""
+
+#: ../../source/reference/tilemap.rst:270
+msgid "**See also** setWidth()."
+msgstr ""
+

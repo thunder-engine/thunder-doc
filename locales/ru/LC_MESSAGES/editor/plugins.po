@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/editor/plugins.rst:4 ../../source/editor/plugins.rst:9
+msgid "Plugin Manager"
+msgstr "Менеджер плагинов"
+
+#: ../../source/editor/plugins.rst:6
+msgid ""
+"Plugins in the editor provide a powerful mechanism to extend and enhance "
+"the functionality of the World Editor. Whether you want to add custom "
+"tools, features, or support for specific asset types, plugins offer a "
+"flexible way to tailor the editor to your project's unique requirements."
+msgstr ""
+"Плагины в редакторе предоставляют мощный механизм для расширения и улучшения "
+"функциональности Мирового редактора. Хотите ли вы добавить пользовательские "
+"инструменты, функции или поддержку определённых типов ресурсов — плагины "
+"предлагают гибкий способ адаптировать редактор под уникальные требования "
+"вашего проекта."
+
+#: ../../source/editor/plugins.rst:13
+msgid "Installing Plugins"
+msgstr "Установка плагинов"
+
+#: ../../source/editor/plugins.rst:15
+msgid "To install a new plugin in the World Editor, follow these steps:"
+msgstr "Чтобы установить новый плагин в Мировом редакторе, выполните следующие шаги:"
+
+#: ../../source/editor/plugins.rst:17
+msgid "Navigate to the **Edit** menu."
+msgstr "Перейдите в меню **Правка**."
+
+#: ../../source/editor/plugins.rst:18
+msgid "Select **Plugin Manager**."
+msgstr "Выберите **Менеджер плагинов**."
+
+#: 217source/editor/plugins.rst:19
+msgid "In the Plugin Manager, Hit **+** button."
+msgstr "В Менеджере плагинов нажмите кнопку **+**."
+
+#: ../../source/editor/plugins.rst:20
+msgid "Choose the plugin file or directory."
+msgstr "Выберите файл или каталог плагина."
+
+#: ../../source/editor/plugins.rst:22
+msgid ""
+"The World Editor will then load and integrate the plugin into its "
+"environment."
+msgstr ""
+"Затем Мировой редактор загрузит плагин и интегрирует его в свою среду."
+
+#: ../../source/editor/plugins.rst:26
+msgid "Managing Installed Plugins"
+msgstr "Управление установленными плагинами"
+
+#: ../../source/editor/plugins.rst:28
+msgid ""
+"Once plugins are installed, you can manage them through the Plugin "
+"Manager dialog. To enable or disable a plugin:"
+msgstr ""
+"После установки плагинов вы можете управлять ими через диалоговое окно "
+"Менеджера плагинов. Чтобы включить или отключить плагин:"
+
+#: ../../source/editor/plugins.rst:31
+msgid "Open Plugin Manager."
+msgstr "Откройте Менеджер плагинов."
+
+#: ../../source/editor/plugins.rst:32
+msgid "Locate the plugin in the list."
+msgstr "Найдите плагин в списке."
+
+#: ../../source/editor/plugins.rst:33
+msgid "Toggle the switch next to the plugin to enable or disable it."
+msgstr "Переключите переключатель рядом с плагином, чтобы включить или отключить его."
+
+#: ../../source/editor/plugins.rst:34
+msgid "Hit \"Restart Now\" button to restart World Editor to apply changes."
+msgstr "Нажмите кнопку \"Перезапустить сейчас\", чтобы перезапустить Мировой редактор и применить изменения."
+
+#: ../../source/editor/plugins.rst:38
+msgid "Plugin Configuration"
+msgstr "Конфигурация плагинов"
+
+#: ../../source/editor/plugins.rst:40
+msgid ""
+"Plugins often come with configuration options to customize their "
+"behavior. Access the plugin configuration settings through the **Window >"
+" Editor Preferences** menu."
+msgstr ""
+"Плагины часто поставляются с опциями конфигурации для настройки их поведения. "
+"Получите доступ к настройкам конфигурации плагинов через меню **Окно > "
+"Настройки редактора**."
+
+#: ../../source/editor/plugins.rst:43
+msgid "Editor Preferences"
+msgstr "Настройки редактора"
+
+#: ../../source/editor/plugins.rst:46
+msgid ""
+"Here, you can fine-tune the plugin's settings to align with your "
+"project's needs."
+msgstr ""
+"Здесь вы можете точно настроить параметры плагина в соответствии с "
+"потребностями вашего проекта."
+
+#: ../../source/editor/plugins.rst:49
+msgid "Embedded Editors and Plugins"
+msgstr "Встроенные редакторы и плагины"
+
+#: ../../source/editor/plugins.rst:51
+msgid ""
+"The World Editor supports Embedded Editors, which are specialized tools "
+"for specific asset types. Some plugins may introduce new Embedded Editors"
+" to enhance the editing experience."
+msgstr ""
+"Мировой редактор поддерживает встроенные редакторы, которые являются "
+"специализированными инструментами для определённых типов ресурсов. "
+"Некоторые плагины могут добавлять новые встроенные редакторы для улучшения "
+"опыта редактирования."
+
+#: ../../source/editor/plugins.rst:55
+msgid "Plugin Development"
+msgstr "Разработка плагинов"
+
+#: ../../source/editor/plugins.rst:57
+msgid ""
+"For developers interested in creating their own plugins for the World "
+"Editor, a comprehensive plugin development guide is available. This guide"
+" covers the necessary steps, best practices, and APIs to create custom "
+"plugins seamlessly integrated into the editor."
+msgstr ""
+"Для разработчиков, заинтересованных в создании собственных плагинов для "
+"Мирового редактора, доступно подробное руководство по разработке плагинов. "
+"Это руководство охватывает необходимые шаги, лучшие практики и API для "
+"создания пользовательских плагинов, которые бесшовно интегрируются в редактор."
+
+#: ../../source/editor/plugins.rst:61
+msgid "Conclusion"
+msgstr "Заключение"
+
+#: ../../source/editor/plugins.rst:63
+msgid ""
+"Plugin management in the World Editor empowers users to extend the "
+"editor's capabilities according to project requirements. Whether you're "
+"installing pre-built plugins or developing your own, the World Editor's "
+"plugin system provides a versatile and efficient way to enhance your game"
+" development workflow."
+msgstr ""
+"Управление плагинами в Мировом редакторе позволяет пользователям расширять "
+"возможности редактора в соответствии с требованиями проекта. Устанавливаете "
+"ли вы готовые плагины или разрабатываете свои собственные, система плагинов "
+"Мирового редактора предоставляет универсальный и эффективный способ улучшить "
+"ваш рабочий процесс разработки игр."
+
+#: ../../source/editor/plugins.rst:65
+msgid ""
+"Explore the diverse range of plugins available, experiment with "
+"customization options, and consider developing your plugins to unlock the"
+" full potential of the World Editor for your projects."
+msgstr ""
+"Изучите разнообразный спектр доступных плагинов, экспериментируйте с "
+"опциями настройки и подумайте о разработке собственных плагинов, чтобы "
+"раскрыть весь потенциал Мирового редактора для ваших проектов."

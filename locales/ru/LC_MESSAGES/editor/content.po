@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/editor/content.rst:4 ../../source/editor/content.rst:8
+msgid "Content Browser"
+msgstr "Обозреватель контента"
+
+#: ../../source/editor/content.rst:6
+msgid ""
+"The Content Browser is a central component of your project, offering a "
+"convenient way to access and manage the assets available for use."
+msgstr ""
+"Обозреватель контента является центральным компонентом вашего проекта, "
+"предлагая удобный способ доступа к доступным для использования ресурсам и "
+"управления ими."
+
+#: ../../source/editor/content.rst:11
+msgid ""
+"When you open the Content Browser, you'll find a list of all the assets "
+"that are at your disposal. These assets may include images, audio files, "
+"documents, and other resources that you can utilize in your project."
+msgstr ""
+"Когда вы открываете Обозреватель контента, вы видите список всех ресурсов, "
+"которые находятся в вашем распоряжении. Эти ресурсы могут включать изображения, "
+"аудиофайлы, документы и другие материалы, которые вы можете использовать в "
+"своём проекте."
+
+#: ../../source/editor/content.rst:14
+msgid "Using the Content Browser, you can perform various tasks:"
+msgstr "С помощью Обозревателя контента вы можете выполнять различные задачи:"
+
+#: 217source/editor/content.rst:19
+msgid "**Browse**"
+msgstr "**Просмотр**"
+
+#: ../../source/editor/content.rst:20
+msgid ""
+"Navigate through the list of assets to find the one you need for your "
+"project."
+msgstr "Перемещайтесь по списку ресурсов, чтобы найти нужный для вашего проекта."
+
+#: ../../source/editor/content.rst:21
+msgid "**Search**"
+msgstr "**Поиск**"
+
+#: ../../source/editor/content.rst:22
+msgid ""
+"Use the search functionality to quickly locate specific assets by name or"
+" keyword."
+msgstr "Используйте функцию поиска для быстрого нахождения конкретных ресурсов по имени или ключевому слову."
+
+#: ../../source/editor/content.rst:23
+msgid "**Preview**"
+msgstr "**Предпросмотр**"
+
+#: ../../source/editor/content.rst:24
+msgid ""
+"Get a visual preview assets directly within the Content Browser to ensure"
+" they are suitable for your project."
+msgstr "Получите визуальный предпросмотр ресурсов прямо в Обозревателе контента, чтобы убедиться, что они подходят для вашего проекта."
+
+#: ../../source/editor/content.rst:25
+msgid "**Import**"
+msgstr "**Импорт**"
+
+#: ../../source/editor/content.rst:26
+msgid ""
+"Add new assets to your project by importing them through the Content "
+"Browser."
+msgstr "Добавляйте новые ресурсы в проект, импортируя их через Обозреватель контента."
+
+#: ../../source/editor/content.rst:27
+msgid "**Organize**"
+msgstr "**Организация**"
+
+#: ../../source/editor/content.rst:28
+msgid ""
+"Create folders and organize your assets to keep your project well-"
+"structured."
+msgstr "Создавайте папки и организуйте свои ресурсы, чтобы поддерживать хорошую структуру проекта."
+
+#: ../../source/editor/content.rst:29
+msgid "**Drag and Drop**"
+msgstr "**Перетаскивание**"
+
+#: ../../source/editor/content.rst:30
+msgid ""
+"Easily drag and drop assets from the Content Browser into your project "
+"workspace."
+msgstr "Легко перетаскивайте ресурсы из Обозревателя контента в рабочую область проекта."
+
+#: ../../source/editor/content.rst:34
+msgid "Creating New Assets"
+msgstr "Создание новых ресурсов"
+
+#: ../../source/editor/content.rst:36
+msgid ""
+"The Content Browser supports the creation of new assets directly from the"
+" context menu. Follow these steps:"
+msgstr ""
+"Обозреватель контента поддерживает создание новых ресурсов непосредственно из "
+"контекстного меню. Выполните следующие шаги:"
+
+#: ../../source/editor/content.rst:38
+msgid "Right-click in the Content Browser."
+msgstr "Щёлкните правой кнопкой мыши в Обозревателе контента."
+
+#: ../../source/editor/content.rst:39
+msgid ""
+"Select the type of asset you want to create (e.g., animation, material, "
+"behaviours)."
+msgstr "Выберите тип ресурса, который хотите создать (например, анимация, материал, поведения)."
+
+#: ../../source/editor/content.rst:41
+msgid "Asset Creation"
+msgstr "Создание ресурса"
+
+#: ../../source/editor/content.rst:44
+msgid ""
+"This functionality simplifies the asset creation process, allowing you to"
+" generate new resources seamlessly within the Content Browser."
+msgstr ""
+"Эта функция упрощает процесс создания ресурсов, позволяя вам легко создавать "
+"новые ресурсы прямо в Обозревателе контента."
+
+#: ../../source/editor/content.rst:48
+msgid "Importing Assets"
+msgstr "Импорт ресурсов"
+
+#: ../../source/editor/content.rst:50
+msgid ""
+"Effortlessly expand your project's asset library by importing assets "
+"through the Content Browser. Follow these steps:"
+msgstr ""
+"Легко расширяйте библиотеку ресурсов вашего проекта, импортируя ресурсы через "
+"Обозреватель контента. Выполните следующие шаги:"
+
+#: ../../source/editor/content.rst:52
+msgid "Open a context menu."
+msgstr "Откройте контекстное меню."
+
+#: ../../source/editor/content.rst:53
+msgid "Click on the **Import New Asset...** option."
+msgstr "Нажмите на опцию **Импортировать новый ресурс...**."
+
+#: ../../source/editor/content.rst:54
+msgid "In the prompted dialog, browse and select the assets you want to import."
+msgstr "В открывшемся диалоговом окне найдите и выберите ресурсы, которые хотите импортировать."
+
+#: ../../source/editor/content.rst:56
+msgid ""
+"The Content Browser is designed to simplify asset management, helping you"
+" efficiently work with your project's resources. Whether you're a "
+"designer, developer, or content creator, this tool is invaluable for "
+"enhancing your productivity."
+msgstr ""
+"Обозреватель контента предназначен для упрощения управления ресурсами, помогая "
+"вам эффективно работать с ресурсами вашего проекта. Будь вы дизайнер, разработчик "
+"или создатель контента, этот инструмент неоценим для повышения вашей продуктивности."
+
+#: ../../source/editor/content.rst:59
+msgid ""
+"Make the most of the Content Browser to streamline your workflow and "
+"ensure a seamless integration of assets into your project."
+msgstr ""
+"Используйте Обозреватель контента по максимуму, чтобы оптимизировать свой "
+"рабочий процесс и обеспечить бесшовную интеграцию ресурсов в ваш проект."
+
+#: ../../source/editor/content.rst:63
+msgid "Opening Assets"
+msgstr "Открытие ресурсов"
+
+#: ../../source/editor/content.rst:65
+msgid ""
+"Users can open assets for viewing and editing by double-clicking on the "
+"asset within the Content Browser. This intuitive feature provides a quick"
+" way to inspect and modify assets directly from the Editor."
+msgstr ""
+"Пользователи могут открывать ресурсы для просмотра и редактирования, дважды "
+"щёлкнув по ресурсу в Обозревателе контента. Эта интуитивно понятная функция "
+"предоставляет быстрый способ просмотра и изменения ресурсов прямо из Редактора."
+
+#: ../../source/editor/content.rst:69
+msgid ""
+"The World Editor comes equipped with a variety of embedded Editors, "
+"providing specialized tools for specific asset types. These Embedded "
+"Editors allow for a more in-depth and focused editing experience tailored"
+" to each asset category."
+msgstr ""
+"Мировой редактор поставляется с различными встроенными редакторами, "
+"предоставляющими специализированные инструменты для конкретных типов ресурсов. "
+"Эти встроенные редакторы позволяют получить более глубокий и целенаправленный "
+"опыт редактирования, адаптированный к каждой категории ресурсов."
+
+#: ../../source/editor/content.rst:72
+msgid ""
+"Additionally, the extensibility of the World Editor is enhanced through "
+"the use of :ref:`doc_plugin_manager`. Developers can create custom "
+"Plugins to add new features, tools, or support for specific asset types, "
+"expanding the capabilities of the World Editor to suit diverse project "
+"needs."
+msgstr ""
+"Кроме того, расширяемость Мирового редактора повышается за счёт использования "
+":ref:`doc_plugin_manager`. Разработчики могут создавать пользовательские плагины "
+"для добавления новых функций, инструментов или поддержки конкретных типов "
+"ресурсов, расширяя возможности Мирового редактора в соответствии с различными "
+"потребностями проектов."
+
+#: ../../source/editor/content.rst:77
+msgid "Filtering Content"
+msgstr "Фильтрация контента"
+
+#: ../../source/editor/content.rst:79
+msgid ""
+"The Content Browser allows you to filter assets based on their types. "
+"This feature enables you to focus on specific types of content, making it"
+" easier to manage and locate assets. To filter content by type:"
+msgstr ""
+"Обозреватель контента позволяет фильтровать ресурсы по их типам. Эта функция "
+"позволяет сосредоточиться на конкретных типах контента, упрощая управление и "
+"поиск ресурсов. Чтобы отфильтровать контент по типу:"
+
+#: ../../source/editor/content.rst:83
+msgid "Navigate to the **Filter** menu in the Content Browser."
+msgstr "Перейдите в меню **Фильтр** в Обозревателе контента."
+
+#: ../../source/editor/content.rst:84
+msgid "Choose the desired content type from the available options."
+msgstr "Выберите нужный тип контента из доступных опций."
+
+#: ../../source/editor/content.rst:86
+msgid ""
+"Now, you can efficiently narrow down your view to only the types of "
+"assets you currently need, enhancing your workflow and making content "
+"management even more streamlined."
+msgstr ""
+"Теперь вы можете эффективно сузить область просмотра только до тех типов "
+"ресурсов, которые вам нужны в данный момент, улучшая свой рабочий процесс и "
+"делая управление контентом ещё более удобным."

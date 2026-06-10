@@ -1,0 +1,703 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/engine.rst:4
+msgid "Engine"
+msgstr ""
+
+#: ../../source/reference/engine.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/engine.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/engine.rst:13
+msgid ""
+"The Engine class is one of the central parts of the Thunder Engine. This "
+"class is created first and removed last in your game. It is responsible "
+"for many basic functions, such as game cycle, management of game modules,"
+" loading and unloading of game resources, work with game settings."
+msgstr ""
+
+#: ../../source/reference/engine.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/engine.rst:23
+msgid ":ref:`Engine<api_Engine_7d159fe2>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:25
+msgid ":ref:`~Engine<api_Engine_f4e3857a>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:33
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/engine.rst:36 ../../source/reference/engine.rst:66
+#: ../../source/reference/engine.rst:72 ../../source/reference/engine.rst:74
+#: ../../source/reference/engine.rst:76 ../../source/reference/engine.rst:78
+#: ../../source/reference/engine.rst:82 ../../source/reference/engine.rst:86
+#: ../../source/reference/engine.rst:90 ../../source/reference/engine.rst:92
+#: ../../source/reference/engine.rst:94 ../../source/reference/engine.rst:96
+#: ../../source/reference/engine.rst:98
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/engine.rst:36
+msgid ":ref:`addModule<api_Engine_2ab6e7d4>` (Module * module)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:38 ../../source/reference/engine.rst:40
+#: ../../source/reference/engine.rst:58 ../../source/reference/engine.rst:60
+#: ../../source/reference/engine.rst:62 ../../source/reference/engine.rst:88
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/engine.rst:38
+msgid ":ref:`applicationName<api_Engine_0c4f3b29>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:40
+msgid ":ref:`applicationVersion<api_Engine_ba28f5c1>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:42
+msgid ":ref:`Actor<api_Actor>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:42
+msgid ""
+":ref:`composeActor<api_Engine_ae4b9268>` (const TString & component, "
+"const TString & name, Object * parent = nullptr)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:44 ../../source/reference/engine.rst:46
+#: ../../source/reference/engine.rst:48 ../../source/reference/engine.rst:56
+#: ../../source/reference/engine.rst:64 ../../source/reference/engine.rst:80
+#: ../../source/reference/engine.rst:84
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/engine.rst:44
+msgid ":ref:`init<api_Engine_79cfab58>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:46
+msgid ":ref:`isGameMode<api_Engine_b48501ef>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:48
+msgid ":ref:`isResourceExist<api_Engine_31b7ae5d>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:50 ../../source/reference/engine.rst:52
+msgid ":ref:`Resource<api_Resource>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:50
+msgid ":ref:`loadResource<api_Engine_e7d360b5>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:52
+msgid ":ref:`loadResourceAsync<api_Engine_d670c48e>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:54
+msgid ":ref:`Scene<api_Scene>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:54
+msgid ""
+":ref:`loadScene<api_Engine_61874a53>` (const TString & path, bool  "
+"additive)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:56
+msgid ":ref:`loadTranslator<api_Engine_4ec2b530>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:58
+msgid ":ref:`locationAppConfig<api_Engine_daf94cb2>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:60
+msgid ":ref:`organizationName<api_Engine_8d71029b>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:62
+msgid ":ref:`reference<api_Engine_157a3ec8>` (Object * object)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:64
+msgid ":ref:`reloadBundle<api_Engine_5270ae68>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:66
+msgid ":ref:`reloadResource<api_Engine_692384a1>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:68
+msgid ":ref:`RenderSystem<api_RenderSystem>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:68
+msgid ":ref:`renderSystem<api_Engine_06b327df>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:70
+msgid ":ref:`ResourceSystem<api_ResourceSystem>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:70
+msgid ":ref:`resourceSystem<api_Engine_95ea410b>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:72
+msgid ":ref:`setApplicationName<api_Engine_0ca93416>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:74
+msgid ""
+":ref:`setApplicationVersion<api_Engine_490f362e>` (const TString & "
+"version)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:76
+msgid ":ref:`setGameMode<api_Engine_4b6058ec>` (bool  flag)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:78
+msgid ":ref:`setOrganizationName<api_Engine_5dfcb426>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:80
+msgid ""
+":ref:`setPlatformAdaptor<api_Engine_c4bf5160>` (PlatformAdaptor * "
+"platform)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:82
+msgid ""
+":ref:`setValue<api_Engine_e3651a97>` (const TString & key, const Variant "
+"& value)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:84
+msgid ":ref:`start<api_Engine_0ec2bd91>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:86
+msgid ":ref:`syncValues<api_Engine_a9174d5c>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:88
+msgid ":ref:`translate<api_Engine_a52dfb37>` (const TString & source)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:90
+msgid ":ref:`unloadAllScenes<api_Engine_042fa93e>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:92
+msgid ":ref:`unloadResource<api_Engine_5d74af8e>` (Resource * resource)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:94
+msgid ":ref:`unloadResource<api_Engine_0b96d423>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:96
+msgid ":ref:`unloadScene<api_Engine_e237df85>` (Scene * scene)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:98
+msgid ":ref:`update<api_Engine_d2a6f70e>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:100
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/engine.rst:100
+msgid ""
+":ref:`value<api_Engine_d6b791e5>` (const TString & key, const Variant & "
+"defaultValue = Variant())"
+msgstr ""
+
+#: ../../source/reference/engine.rst:102
+msgid ":ref:`World<api_World>` *"
+msgstr ""
+
+#: ../../source/reference/engine.rst:102
+msgid ":ref:`world<api_Engine_e96af472>` ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:108
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/engine.rst:112
+msgid "**Engine::Engine** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:114
+msgid "Constructs Engine."
+msgstr ""
+
+#: ../../source/reference/engine.rst:120
+msgid "**Engine::~Engine** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:122
+msgid ""
+"Destructs Engine, related objects, registered object factories and "
+"platform adaptor."
+msgstr ""
+
+#: ../../source/reference/engine.rst:128
+msgid "void **Engine::addModule** (:ref:`Module<api_Module>` * *module*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:130
+msgid ""
+"Adds a game *module* to pool. This *module* will be used during update() "
+"method execution."
+msgstr ""
+
+#: ../../source/reference/engine.rst:132
+msgid "Example:"
+msgstr ""
+
+#: ../../source/reference/engine.rst:146
+msgid ":ref:`TString<api_TString>`  **Engine::applicationName** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:148
+msgid ""
+"Returns the name of this application. This name is used to create the "
+"path to the settings and logs for this application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:150
+msgid "**See also** setApplicationName()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:156
+msgid ":ref:`TString<api_TString>`  **Engine::applicationVersion** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:158
+msgid "Returns the version of this application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:160
+msgid "**See also** setApplicationVersion()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:166
+msgid ""
+":ref:`Actor<api_Actor>` * **Engine::composeActor** "
+"(:ref:`TString<api_TString>` & *component*, :ref:`TString<api_TString>` &"
+" *name*, :ref:`Object<api_Object>` * *parent* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:168
+msgid ""
+"Creates an Actor with *name* and attached component. Created Actor will "
+"be added to the hierarchy of parent. This method helps to create all "
+"dependencies for the component."
+msgstr ""
+
+#: ../../source/reference/engine.rst:171
+msgid "Warning: This method should be used only in Editor mode."
+msgstr ""
+
+#: ../../source/reference/engine.rst:178
+msgid "bool **Engine::init** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:180
+msgid ""
+"Initializes all engine systems. Returns true if successful; otherwise "
+"returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:186
+msgid "bool **Engine::isGameMode** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:188
+msgid "Returns true if game started; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:194
+msgid "bool **Engine::isResourceExist** (:ref:`TString<api_TString>` & *path*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:196
+msgid "Returns true if resource with *path* exists; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:202
+msgid ""
+":ref:`Resource<api_Resource>` * **Engine::loadResource** "
+"(:ref:`TString<api_TString>` & *path*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:204
+msgid "Returns an instance for loading resource by the provided path."
+msgstr ""
+
+#: ../../source/reference/engine.rst:207 ../../source/reference/engine.rst:221
+msgid ""
+"**Note:** In case of resource was loaded previously this function will "
+"return the same instance."
+msgstr ""
+
+#: ../../source/reference/engine.rst:210 ../../source/reference/engine.rst:224
+msgid "**See also** unloadResource()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:216
+msgid ""
+":ref:`Resource<api_Resource>` * **Engine::loadResourceAsync** "
+"(:ref:`TString<api_TString>` & *path*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:218
+msgid ""
+"Returns an instance for loading resource by the provided path. The "
+"resource will be loaded asynchronously. This means you should check the "
+"state of resource before use it."
+msgstr ""
+
+#: ../../source/reference/engine.rst:230
+msgid ""
+":ref:`Scene<api_Scene>` * **Engine::loadScene** "
+"(:ref:`TString<api_TString>` & *path*, bool  *additive*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:232
+msgid "Loads the scene stored in the .map files by the it's *path* to the Engine."
+msgstr ""
+
+#: ../../source/reference/engine.rst:235
+msgid ""
+"**Note:** The previous scenes will be not unloaded in the case of an "
+"*additive* flag is true."
+msgstr ""
+
+#: ../../source/reference/engine.rst:242
+msgid "bool **Engine::loadTranslator** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:244
+msgid ""
+"Loads translation table with provided file name. This method generates "
+"the LanguageChange event for the Engine instance. An Engine instance will"
+" propagate the event to all top-level widgets, where reimplementation of "
+"event() can re-translate user-visible Strings. Returns true on success; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:250
+msgid ":ref:`TString<api_TString>`  **Engine::locationAppConfig** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:252
+msgid "Returns path to application config directory."
+msgstr ""
+
+#: ../../source/reference/engine.rst:258
+msgid ":ref:`TString<api_TString>`  **Engine::organizationName** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:260
+msgid ""
+"Returns the name of the organization that wrote this application. This "
+"name is used to create the path to the settings and logs for this "
+"application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:262
+msgid "**See also** setOrganizationName()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:268
+msgid ""
+":ref:`TString<api_TString>`  **Engine::reference** "
+"(:ref:`Object<api_Object>` * *object*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:270
+msgid "Returns resource path for the provided resource object."
+msgstr ""
+
+#: ../../source/reference/engine.rst:276
+msgid "bool **Engine::reloadBundle** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:278
+msgid ""
+"This method reads the index file for the resource bundle. The index file "
+"helps to find required game resources. Returns true in case of success; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:284
+msgid "void **Engine::reloadResource** (:ref:`TString<api_TString>` & *path*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:286
+msgid "Reloads the resource located along the path."
+msgstr ""
+
+#: ../../source/reference/engine.rst:288 ../../source/reference/engine.rst:412
+#: ../../source/reference/engine.rst:426
+msgid "**See also** loadResource()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:294
+msgid ":ref:`RenderSystem<api_RenderSystem>` * **Engine::renderSystem** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:296
+msgid "Returns the render system which can be used in external modules."
+msgstr ""
+
+#: ../../source/reference/engine.rst:302
+msgid ":ref:`ResourceSystem<api_ResourceSystem>` * **Engine::resourceSystem** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:304
+msgid ""
+"Returns the resource management system which can be used in external "
+"modules."
+msgstr ""
+
+#: ../../source/reference/engine.rst:310
+msgid "void **Engine::setApplicationName** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:312
+msgid "Sets the *name* of this application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:314
+msgid "**See also** applicationName()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:320
+msgid ""
+"void **Engine::setApplicationVersion** (:ref:`TString<api_TString>` & "
+"*version*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:322
+msgid "Sets the *version* of this application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:324
+msgid "**See also** applicationVersion()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:330
+msgid "void **Engine::setGameMode** (bool  *flag*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:332
+msgid "Set game *flag* to true if game started; otherwise set false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:334
+msgid "**See also** isGameMode()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:340
+msgid ""
+"void **Engine::setOrganizationName** (:ref:`TString<api_TString>` & "
+"*name*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:342
+msgid "Sets the *name* of the organization that wrote this application."
+msgstr ""
+
+#: ../../source/reference/engine.rst:344
+msgid "**See also** organizationName()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:350
+msgid ""
+"bool **Engine::setPlatformAdaptor** "
+"(:ref:`PlatformAdaptor<api_PlatformAdaptor>` * *platform*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:352
+msgid ""
+"Replaces a current *platform* adaptor with new one; Returns true if "
+"replacement been succeeded; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:355
+msgid "**Note:** The previous *platform* adaptor will not be deleted."
+msgstr ""
+
+#: ../../source/reference/engine.rst:362
+msgid ""
+"void **Engine::setValue** (:ref:`TString<api_TString>` & *key*, "
+":ref:`Variant<api_Variant>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:364
+msgid ""
+"Sets the *value* of setting *key* to value. If the *key* already exists, "
+"the previous *value* will be overwritten."
+msgstr ""
+
+#: ../../source/reference/engine.rst:366
+msgid "**See also** value()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:372
+msgid "bool **Engine::start** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:374
+msgid ""
+"Starts the main game cycle. Also this method loads the first level of "
+"your game. Returns true if successful; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/engine.rst:380
+msgid "void **Engine::syncValues** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:382
+msgid "Applies all unsaved settings."
+msgstr ""
+
+#: ../../source/reference/engine.rst:388
+msgid ""
+":ref:`TString<api_TString>`  **Engine::translate** "
+"(:ref:`TString<api_TString>` & *source*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:390
+msgid "Returns the translation text for the *source* String."
+msgstr ""
+
+#: ../../source/reference/engine.rst:396
+msgid "void **Engine::unloadAllScenes** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:398
+msgid "Unloads all scenes from the World."
+msgstr ""
+
+#: ../../source/reference/engine.rst:404
+msgid ""
+"void **Engine::unloadResource** (:ref:`Resource<api_Resource>` * "
+"*resource*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:406
+msgid "Forcely unloads the *resource* from memory."
+msgstr ""
+
+#: ../../source/reference/engine.rst:409
+msgid ""
+"Warning: After this call, the reference on the *resource* may become an "
+"invalid at any time and must not be used anymore."
+msgstr ""
+
+#: ../../source/reference/engine.rst:418
+msgid "void **Engine::unloadResource** (:ref:`TString<api_TString>` & *path*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:420
+msgid "Forcely unloads the resource located along the *path* from memory."
+msgstr ""
+
+#: ../../source/reference/engine.rst:423
+msgid ""
+"Warning: After this call, the reference on the resource may become an "
+"invalid at any time and must not be used anymore."
+msgstr ""
+
+#: ../../source/reference/engine.rst:432
+msgid "void **Engine::unloadScene** (:ref:`Scene<api_Scene>` * *scene*)"
+msgstr ""
+
+#: ../../source/reference/engine.rst:434
+msgid "Unloads the *scene* from the World."
+msgstr ""
+
+#: ../../source/reference/engine.rst:440
+msgid "void **Engine::update** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:442
+msgid ""
+"This method launches all your game modules responsible for processing all"
+" the game logic. It calls on each iteration of the game cycle."
+msgstr ""
+
+#: ../../source/reference/engine.rst:445
+msgid ""
+"**Note:** Usually, this method calls internally and must not be called "
+"manually."
+msgstr ""
+
+#: ../../source/reference/engine.rst:452
+msgid ""
+":ref:`Variant<api_Variant>`  **Engine::value** "
+"(:ref:`TString<api_TString>` & *key*, :ref:`Variant<api_Variant>` & "
+"*defaultValue* = Variant())"
+msgstr ""
+
+#: ../../source/reference/engine.rst:454
+msgid ""
+"Returns the value for setting key. If the setting doesn't exist, returns "
+"defaultValue."
+msgstr ""
+
+#: ../../source/reference/engine.rst:456
+msgid "**See also** setValue()."
+msgstr ""
+
+#: ../../source/reference/engine.rst:462
+msgid ":ref:`World<api_World>` * **Engine::world** ()"
+msgstr ""
+
+#: ../../source/reference/engine.rst:464
+msgid "Returns game World."
+msgstr ""
+
+#: ../../source/reference/engine.rst:467
+msgid ""
+"**Note:** The game can have only one scene graph. World is a root object,"
+" all map loads on this World."
+msgstr ""
+

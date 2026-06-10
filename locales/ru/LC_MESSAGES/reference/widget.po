@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/widget.rst:4
+msgid "Widget"
+msgstr ""
+
+#: ../../source/reference/widget.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/widget.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/widget.rst:13
+msgid ""
+"The Widget class serves as the base class for all user interface objects,"
+" providing basic functionality for handling updates, drawing, and "
+"interaction. Internal methods are marked as internal and are intended for"
+" use within the framework rather than by external code."
+msgstr ""
+
+#: ../../source/reference/widget.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/widget.rst:23 ../../source/reference/widget.rst:25
+#: ../../source/reference/widget.rst:27 ../../source/reference/widget.rst:35
+#: ../../source/reference/widget.rst:39
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/widget.rst:23
+msgid ":ref:`addClass<api_Widget_562ecbf7>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/widget.rst:25
+msgid ":ref:`applyStyle<api_Widget_c1b4e082>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:27
+msgid ":ref:`boundChanged<api_Widget_e895c1f7>` (const Vector2 & size)"
+msgstr ""
+
+#: ../../source/reference/widget.rst:29
+msgid "std::list<Widget :ref:`*><api_*>>` &"
+msgstr ""
+
+#: ../../source/reference/widget.rst:29
+msgid ":ref:`childWidgets<api_Widget_ca8b2d70>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:31
+msgid "const StringList"
+msgstr ""
+
+#: ../../source/reference/widget.rst:31
+msgid ":ref:`classes<api_Widget_46d01e75>` () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:33
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/widget.rst:33
+msgid ":ref:`isSubWidget<api_Widget_86cefb94>` () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:35
+msgid ":ref:`lower<api_Widget_becdf742>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:37 ../../source/reference/widget.rst:45
+#: ../../source/reference/widget.rst:56
+msgid ":ref:`Widget<api_Widget>` *"
+msgstr ""
+
+#: ../../source/reference/widget.rst:37
+msgid ":ref:`parentWidget<api_Widget_7b29013e>` () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:39
+msgid ":ref:`raise<api_Widget_04d3f75e>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:41
+msgid ":ref:`RectTransform<api_RectTransform>` *"
+msgstr ""
+
+#: ../../source/reference/widget.rst:41
+msgid ":ref:`rectTransform<api_Widget_f039a64c>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:43
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/widget.rst:43
+msgid ":ref:`style<api_Widget_8d2a7934>` () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:45
+msgid ":ref:`subWidget<api_Widget_ebf9d0ca>` (const TString & name) const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:53
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/widget.rst:56
+msgid ":ref:`focusWidget<api_Widget_2bfe718d>` ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:62
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/widget.rst:66
+msgid "void **Widget::addClass** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/widget.rst:68
+msgid "Adds a stylesheet class *name* attached to this widget."
+msgstr ""
+
+#: ../../source/reference/widget.rst:74
+msgid "void **Widget::applyStyle** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:76
+msgid "Applies style settings assigned to widget."
+msgstr ""
+
+#: ../../source/reference/widget.rst:82
+msgid "void **Widget::boundChanged** (:ref:`Vector2<api_Vector2>` & *size*)"
+msgstr ""
+
+#: ../../source/reference/widget.rst:84
+msgid "Callback to respond to changes in the widget's size."
+msgstr ""
+
+#: ../../source/reference/widget.rst:90
+msgid "std::list<Widget :ref:`*><api_*>>` & **Widget::childWidgets** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:92
+msgid "Returns a list of child widgets;"
+msgstr ""
+
+#: ../../source/reference/widget.rst:98
+msgid "const StringList **Widget::classes** () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:100
+msgid "Returns a list of stylesheet class names attached to this widget."
+msgstr ""
+
+#: ../../source/reference/widget.rst:106
+msgid ":ref:`Widget<api_Widget>` * **Widget::focusWidget** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:108
+msgid ""
+"Returns the application widget that has the keyboard input focus, or "
+"nullptr if no widget in this application has the focus."
+msgstr ""
+
+#: ../../source/reference/widget.rst:114
+msgid "bool **Widget::isSubWidget** () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:116
+msgid ""
+"Returns true if widget is a part of complex widget; otherwise returns "
+"false."
+msgstr ""
+
+#: ../../source/reference/widget.rst:122
+msgid "void **Widget::lower** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:124
+msgid "Lowers the widget to the bottom of the widget's stack."
+msgstr ""
+
+#: ../../source/reference/widget.rst:126
+msgid "**See also** raise()."
+msgstr ""
+
+#: ../../source/reference/widget.rst:132
+msgid ":ref:`Widget<api_Widget>` * **Widget::parentWidget** () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:134
+msgid "Returns the parent Widget."
+msgstr ""
+
+#: ../../source/reference/widget.rst:140
+msgid "void **Widget::raise** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:142
+msgid "Raises this widget to the top of the widget's stack."
+msgstr ""
+
+#: ../../source/reference/widget.rst:144
+msgid "**See also** lower()."
+msgstr ""
+
+#: ../../source/reference/widget.rst:150
+msgid ":ref:`RectTransform<api_RectTransform>` * **Widget::rectTransform** ()"
+msgstr ""
+
+#: ../../source/reference/widget.rst:152
+msgid "Returns RectTransform component attached to parent Actor."
+msgstr ""
+
+#: ../../source/reference/widget.rst:158
+msgid ":ref:`TString<api_TString>`  **Widget::style** () const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:160
+msgid "Returns a textual description of widget style."
+msgstr ""
+
+#: ../../source/reference/widget.rst:166
+msgid ""
+":ref:`Widget<api_Widget>` * **Widget::subWidget** "
+"(:ref:`TString<api_TString>` & *name*) const"
+msgstr ""
+
+#: ../../source/reference/widget.rst:168
+msgid "Return a sub widget (a part of more complex widget) with specified name."
+msgstr ""
+

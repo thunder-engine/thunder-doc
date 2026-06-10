@@ -1,0 +1,537 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/vector4.rst:4
+msgid "Vector4"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:13
+msgid ""
+"Vectors are one of the main building blocks of 4D representation and "
+"drawing. They consist of three coordinates, traditionally called x, y, z "
+"and w."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:15
+msgid ""
+"The Vector4 class can also be used to represent vertices in 4D space. We "
+"therefore do not need to provide a separate vertex class."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:18
+msgid ""
+"Note: By design values in the Vector4 instance are stored as float. This "
+"means that on platforms where the areal arguments to Vector4 functions "
+"are represented by double values, it is possible to lose precision."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:26
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:29
+msgid ":ref:`Vector4<api_Vector4_94c5fa61>` ()"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:31
+msgid ":ref:`Vector4<api_Vector4_95c0631e>` (areal  v)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:33
+msgid ":ref:`Vector4<api_Vector4_ecb75041>` (const Vector2 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:35
+msgid ":ref:`Vector4<api_Vector4_6c0ea893>` (const Vector3 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:37
+msgid ":ref:`Vector4<api_Vector4_bf6045e8>` (const Vector3 & vector, areal  w)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:39
+msgid ""
+":ref:`Vector4<api_Vector4_42c6ba39>` (const Vector2 & vector, areal  z, "
+"areal  w)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:41
+msgid ""
+":ref:`Vector4<api_Vector4_80dbe479>` (areal  x, areal  y, areal  z, areal"
+"  w)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:43
+msgid ":ref:`Vector4<api_Vector4_5729bc3f>` (const Vector4 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:45 ../../source/reference/vector4.rst:47
+#: ../../source/reference/vector4.rst:49 ../../source/reference/vector4.rst:51
+#: ../../source/reference/vector4.rst:83 ../../source/reference/vector4.rst:85
+msgid "areal"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:45
+msgid ":ref:`dot<api_Vector4_0e3f9c1d>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:47
+msgid ":ref:`length<api_Vector4_f72548bd>` () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:49
+msgid ":ref:`normalize<api_Vector4_528a173c>` ()"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:51
+msgid ":ref:`sqrLength<api_Vector4_b36da5ec>` () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:53 ../../source/reference/vector4.rst:75
+#: ../../source/reference/vector4.rst:79 ../../source/reference/vector4.rst:81
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:53
+msgid ":ref:`operator!=<api_Vector4_658e7c9f>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:55 ../../source/reference/vector4.rst:57
+#: ../../source/reference/vector4.rst:61 ../../source/reference/vector4.rst:65
+#: ../../source/reference/vector4.rst:67 ../../source/reference/vector4.rst:71
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:55
+msgid ":ref:`operator*<api_Vector4_1f97c65a>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:57
+msgid ":ref:`operator*<api_Vector4_78bed960>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:59 ../../source/reference/vector4.rst:63
+#: ../../source/reference/vector4.rst:69 ../../source/reference/vector4.rst:73
+#: ../../source/reference/vector4.rst:77
+msgid ":ref:`Vector4<api_Vector4>` &"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:59
+msgid ":ref:`operator*=<api_Vector4_3c86741a>` (areal  factor)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:61
+msgid ":ref:`operator+<api_Vector4_dbf17694>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:63
+msgid ":ref:`operator+=<api_Vector4_bd619c07>` (const Vector4 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:65
+msgid ":ref:`operator-<api_Vector4_42cab7e0>` () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:67
+msgid ":ref:`operator-<api_Vector4_24e1f395>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:69
+msgid ":ref:`operator-=<api_Vector4_f836ce07>` (const Vector4 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:71
+msgid ":ref:`operator/<api_Vector4_b3a698e7>` (areal  divisor) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:73
+msgid ":ref:`operator/=<api_Vector4_71c4b5e0>` (areal  divisor)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:75
+msgid ":ref:`operator\\<<api_Vector4_b564e08a>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:77
+msgid ":ref:`operator=<api_Vector4_e89a3d0c>` (const Vector4 & value)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:79
+msgid ":ref:`operator==<api_Vector4_791b503f>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:81
+msgid ":ref:`operator><api_Vector4_207ef9cd>` (const Vector4 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:83
+msgid ":ref:`operator[]<api_Vector4_6503b8de>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:85
+msgid ":ref:`operator[]<api_Vector4_e296d07c>` (int  i) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:93
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:95
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:100
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:104
+msgid "**Vector4::Vector4** ()"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:106
+msgid "Constructs a null vector, i.e. with coordinates (0, 0, 0, 1)."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:112
+msgid "**Vector4::Vector4** (areal  *v*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:114
+msgid "Constructs a vector with coordinates (v)."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:120
+msgid "**Vector4::Vector4** (:ref:`Vector2<api_Vector2>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:122
+msgid "Constructs a 4D *vector* from the specified 2D vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:128
+msgid "**Vector4::Vector4** (:ref:`Vector3<api_Vector3>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:130
+msgid "Constructs a 4D *vector* from the specified 3D vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:132
+#: ../../source/reference/vector4.rst:142
+msgid "**See also** Vector3::Vector3()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:138
+msgid "**Vector4::Vector4** (:ref:`Vector3<api_Vector3>` & *vector*, areal  *w*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:140
+msgid ""
+"Constructs a 4D *vector* from the specified 3D vector. The *w* coordinate"
+" is set to w."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:148
+msgid ""
+"**Vector4::Vector4** (:ref:`Vector2<api_Vector2>` & *vector*, areal  *z*,"
+" areal  *w*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:150
+msgid ""
+"Constructs a 4D *vector* from the specified 2D vector. The *z* and *w* "
+"coordinates is set to *z* and w."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:156
+msgid "**Vector4::Vector4** (areal  *x*, areal  *y*, areal  *z*, areal  *w*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:158
+msgid "Constructs a vector with coordinates (x, y, z, w)."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:164
+msgid "**Vector4::Vector4** (:ref:`Vector4<api_Vector4>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:166
+msgid "Copy constructor."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:172
+msgid "areal **Vector4::dot** (:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:174
+msgid "Returns the dot-product of this *vector* and given vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:180
+msgid "areal **Vector4::length** () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:182
+msgid "Returns the length of this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:184
+msgid "**See also** sqrLength()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:190
+msgid "areal **Vector4::normalize** ()"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:192
+msgid ""
+"Normalizes the currect vector in place. Returns length of prenormalized "
+"vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:194
+#: ../../source/reference/vector4.rst:204
+msgid "**See also** length()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:200
+msgid "areal **Vector4::sqrLength** () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:202
+msgid "Returns the squared length of this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:210
+msgid ""
+"bool **Vector4::operator!=** (:ref:`Vector4<api_Vector4>` & *vector*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:212
+msgid ""
+"Returns true if this *vector* is NOT equal to given vector; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:218
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Vector4::operator*** (areal  *factor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:220
+msgid "Returns a copy of this vector, multiplied by the given factor."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:222
+#: ../../source/reference/vector4.rst:232
+#: ../../source/reference/vector4.rst:312
+msgid "**See also** operator*=()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:228
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Vector4::operator*** "
+"(:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:230
+msgid "Returns a copy of this vector, multiplied by the given vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:238
+msgid ":ref:`Vector4<api_Vector4>` & **Vector4::operator*=** (areal  *factor*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:240
+msgid ""
+"Multiplies this vector's coordinates by the given factor, and returns a "
+"reference to this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:242
+#: ../../source/reference/vector4.rst:302
+msgid "**See also** operator/=()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:248
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Vector4::operator+** "
+"(:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:250
+msgid ""
+"Returns a Vector4 object that is the sum of the this *vector* and vector;"
+" each component is added separately."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:252
+#: ../../source/reference/vector4.rst:292
+msgid "**See also** operator+=()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:258
+msgid ""
+":ref:`Vector4<api_Vector4>` & **Vector4::operator+=** "
+"(:ref:`Vector4<api_Vector4>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:260
+msgid ""
+"Adds the given *vector* to this *vector* and returns a reference to this "
+"vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:262
+#: ../../source/reference/vector4.rst:282
+msgid "**See also** operator-=()."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:268
+msgid ":ref:`Vector4<api_Vector4>`  **Vector4::operator-** () const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:270
+msgid ""
+"Returns a Vector4 object that is formed by changing the sign of all three"
+" components of the this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:272
+msgid "Equivalent to Vector4(0,0,0,1) - vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:278
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Vector4::operator-** "
+"(:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:280
+msgid ""
+"Returns a Vector4 object that is formed by subtracting *vector* from this"
+" vector; each component is subtracted separately."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:288
+msgid ""
+":ref:`Vector4<api_Vector4>` & **Vector4::operator-=** "
+"(:ref:`Vector4<api_Vector4>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:290
+msgid ""
+"Subtracts the given *vector* from this *vector* and returns a reference "
+"to this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:298
+msgid ""
+":ref:`Vector4<api_Vector4>`  **Vector4::operator/** (areal  *divisor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:300
+msgid "Returns a copy of this vector, divided by the given divisor."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:308
+msgid ":ref:`Vector4<api_Vector4>` & **Vector4::operator/=** (areal  *divisor*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:310
+msgid ""
+"Divides this vector's coordinates by the given divisor, and returns a "
+"reference to this vector."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:318
+msgid "bool **Vector4::operator<** (:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:320
+msgid ""
+"Returns true if this *vector* is less than vector; otherwise returns "
+"false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:326
+msgid ""
+":ref:`Vector4<api_Vector4>` & **Vector4::operator=** "
+"(:ref:`Vector4<api_Vector4>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:328
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:334
+msgid ""
+"bool **Vector4::operator==** (:ref:`Vector4<api_Vector4>` & *vector*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:336
+msgid ""
+"Returns true if this *vector* is equal to given vector; otherwise returns"
+" false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:342
+msgid "bool **Vector4::operator>** (:ref:`Vector4<api_Vector4>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:344
+msgid ""
+"Returns true if this *vector* is bigger than given vector; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:350
+msgid "areal **Vector4::operator[]** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:352
+msgid ""
+"Returns the component of the vector at index position *i* as a modifiable"
+" reference. *i* must be a valid index position in the vector (i.e., 0 <= "
+"*i* < 4)."
+msgstr ""
+
+#: ../../source/reference/vector4.rst:356
+msgid "areal **Vector4::operator[]** (int  *i*) const"
+msgstr ""
+
+#: ../../source/reference/vector4.rst:358
+msgid ""
+"Returns the component of the vector at index position. *i* must be a "
+"valid index position in the vector (i.e., 0 <= *i* < 4)."
+msgstr ""
+

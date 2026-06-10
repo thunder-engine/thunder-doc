@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/scripting/native_introspection.rst:4
+msgid "Native Introspection"
+msgstr "Нативная интроспекция"
+
+#: ../../source/scripting/native_introspection.rst:6
+msgid ""
+"The introspection mechanism allows making Script bindings in transparent "
+"mode. Unfortunately, not all programming languages provide it out of the "
+"box. Thunder Engine uses a Meta Object approach to define a class "
+"structure to be able to retrieve this information on runtime. To make "
+"properties visible in the Editor and in the Scripts the engine developers"
+" need to define a special construction inside a class body."
+msgstr ""
+"Механизм интроспекции позволяет создавать привязки скриптов в прозрачном режиме. "
+"К сожалению, не все языки программирования предоставляют эту возможность из коробки. "
+"Thunder Engine использует подход Meta Object для определения структуры класса, "
+"чтобы иметь возможность получать эту информацию во время выполнения. Чтобы сделать "
+"свойства видимыми в редакторе и в скриптах, разработчикам движка необходимо "
+"определить специальную конструкцию внутри тела класса."
+
+#: 217source/scripting/native_introspection.rst:11
+msgid "In the example below developer defines all required fields:"
+msgstr "В приведённом ниже примере разработчик определяет все необходимые поля:"
+
+#: ../../source/scripting/native_introspection.rst:48
+msgid "Meta Object"
+msgstr "Meta Object"
+
+#: ../../source/scripting/native_introspection.rst:50
+msgid ""
+"Thunder Engine Meta-object system provides runtime type information like "
+"methods, properties, signals, and slots for inter-object communication."
+msgstr ""
+"Система мета-объектов Thunder Engine предоставляет информацию о типах во время "
+"выполнения, такую как методы, свойства, сигналы и слоты для межобъектного взаимодействия."
+
+#: ../../source/scripting/native_introspection.rst:52
+msgid "The meta-object system is based on two things:"
+msgstr "Система мета-объектов основана на двух вещах:"
+
+#: ../../source/scripting/native_introspection.rst:54
+msgid ""
+"The Object class provides a base class for objects that can take "
+"advantage of the meta-object system."
+msgstr ""
+"Класс Object предоставляет базовый класс для объектов, которые могут использовать "
+"преимущества системы мета-объектов."
+
+#: ../../source/scripting/native_introspection.rst:55
+msgid ""
+"The A_REGISTER macro inside the private section of the class declaration "
+"is used to enable meta-object features, such as properties, signals, and "
+"slots."
+msgstr ""
+"Макрос A_REGISTER внутри приватной секции объявления класса используется для "
+"включения функций мета-объектов, таких как свойства, сигналы и слоты."
+
+#: ../../source/scripting/native_introspection.rst:61
+msgid "Native Properties"
+msgstr "Нативные свойства"
+
+#: ../../source/scripting/native_introspection.rst:63
+msgid ""
+"In the provided example developer specified an introspection definition "
+"of property *speed*."
+msgstr ""
+"В предоставленном примере разработчик указал определение интроспекции свойства *speed*."
+
+#: ../../source/scripting/native_introspection.rst:71
+#: ../../source/scripting/native_introspection.rst:97
+msgid "Please find the description of parameters for A_PROPERTY bellow:"
+msgstr "Ниже приведено описание параметров для A_PROPERTY:"
+
+#: ../../source/scripting/native_introspection.rst:73
+msgid "*int* - The return type of the property"
+msgstr "*int* — тип возвращаемого значения свойства"
+
+#: ../../source/scripting/native_introspection.rst:74
+msgid ""
+"*speed* - The name of the property that will be visible in the editor and"
+" in Scripts."
+msgstr ""
+"*speed* — имя свойства, которое будет видно в редакторе и в скриптах."
+
+#: ../../source/scripting/native_introspection.rst:75
+msgid "*MyComponent::speed* - The getter function of the property."
+msgstr "*MyComponent::speed* — функция-геттер свойства."
+
+#: ../../source/scripting/native_introspection.rst:76
+msgid "*MyComponent::setSpeed* - The setter function of the property."
+msgstr "*MyComponent::setSpeed* — функция-сеттер свойства."
+
+#: ../../source/scripting/native_introspection.rst:79
+msgid ""
+"In case of no any public properties provided in native component. It will"
+" be a good practice to set *A_NOPROPERTIES()* in the class body. This "
+"will help to escape issues in introspection in case inhiritance."
+msgstr ""
+"В случае, если в нативном компоненте не предоставлено ни одного открытого свойства, "
+"хорошей практикой будет установить *A_NOPROPERTIES()* в теле класса. Это поможет "
+"избежать проблем с интроспекцией в случае наследования."
+
+#: ../../source/scripting/native_introspection.rst:86
+msgid "Native Methods"
+msgstr "Нативные методы"
+
+#: ../../source/scripting/native_introspection.rst:88
+msgid ""
+"In scripts, the developer can use not only properties but also call some "
+"functions for the component. In the example above, the developer has "
+"specified a *jump* method for introspection."
+msgstr ""
+"В скриптах разработчик может использовать не только свойства, но и вызывать "
+"некоторые функции для компонента. В приведённом выше примере разработчик указал "
+"метод *jump* для интроспекции."
+
+#: ../../source/scripting/native_introspection.rst:99
+msgid "*void* - The return type of the method"
+msgstr "*void* — тип возвращаемого значения метода"
+
+#: ../../source/scripting/native_introspection.rst:100
+msgid "*MyComponent::jump* - The function which will be registered."
+msgstr "*MyComponent::jump* — функция, которая будет зарегистрирована."
+
+#: ../../source/scripting/native_introspection.rst:103
+msgid ""
+"In case of no public properties provided in the native component. It will"
+" be a good practice to set *A_NOMETHODS()* in the class body. This will "
+"help to escape issues in introspection in the case of inheritance."
+msgstr ""
+"В случае, если в нативном компоненте не предоставлено ни одного открытого свойства, "
+"хорошей практикой будет установить *A_NOMETHODS()* в теле класса. Это поможет "
+"избежать проблем с интроспекцией в случае наследования."
+
+#: ../../source/scripting/native_introspection.rst:110
+msgid "Native Signals and Slots"
+msgstr "Нативные сигналы и слоты"
+
+#: ../../source/scripting/native_introspection.rst:112
+msgid ""
+"In gameplay programming, if one object was changed, we often want another"
+" object will be notified. Signals and slots are used for communication "
+"between objects. The signals and slots are made possible by the Thunder "
+"introspection system."
+msgstr ""
+"В игровом программировании, если один объект изменился, мы часто хотим, чтобы "
+"другой объект был уведомлён об этом. Сигналы и слоты используются для связи "
+"между объектами. Сигналы и слоты стали возможны благодаря системе интроспекции Thunder."
+
+#: ../../source/scripting/native_introspection.rst:137
+msgid "To connect objects we will need to call the *connect* function."
+msgstr "Чтобы соединить объекты, нам нужно вызвать функцию *connect*."
+
+#: ../../source/scripting/native_introspection.rst:139
+msgid "For example:"
+msgstr "Например:"
+
+#: ../../source/scripting/native_introspection.rst:148
+msgid ""
+"In this code we connect the signal from the object *component1* with a "
+"slot in object *component2* This means when the signal of object "
+"*component1* will be emitted. The slot of object *component2* will be "
+"called."
+msgstr ""
+"В этом коде мы соединяем сигнал от объекта *component1* со слотом в объекте "
+"*component2*. Это означает, что когда сигнал объекта *component1* будет отправлен, "
+"будет вызван слот объекта *component2*."
+
+#: ../../source/scripting/native_introspection.rst:152
+msgid "The connection has to follow a few rules:"
+msgstr "Соединение должно соответствовать нескольким правилам:"
+
+#: ../../source/scripting/native_introspection.rst:154
+msgid "The signature of a signal must match the signature of the receiving slot."
+msgstr "Сигнатура сигнала должна совпадать с сигнатурой принимающего слота."
+
+#: ../../source/scripting/native_introspection.rst:155
+msgid "The signal can be connected to a signal to relay the event."
+msgstr "Сигнал может быть соединён с сигналом для ретрансляции события."
+
+#: ../../source/scripting/native_introspection.rst:157
+msgid "To emmit a signal we need to call:"
+msgstr "Чтобы отправить сигнал, нам нужно вызвать:"

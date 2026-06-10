@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/obbox.rst:4
+msgid "OBBox"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:13
+msgid ""
+"An arbitrarily oriented bounded volume in space in the form of a "
+"rectangular parallelepiped (Bounding Box). Unlike AABB, OBB rotates with "
+"the object and does not change its size. Collision testing with OBB is "
+"somewhat more complicated and slower than AABB, but more often it is more"
+" preferable. Oriented Bounding Box represented by center of box, size and"
+" rotation quaternion."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:23
+msgid ":ref:`OBBox<api_OBBox_9bc76e1f>` ()"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:25
+msgid ""
+":ref:`OBBox<api_OBBox_b157c9f8>` (const Vector3 & center, const Vector3 &"
+" extent)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:27
+msgid ""
+":ref:`OBBox<api_OBBox_89bd1f64>` (const Vector3 & center, const Vector3 &"
+" extent, const Quaternion & rotation)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:29 ../../source/reference/obbox.rst:31
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:29
+msgid ":ref:`box<api_OBBox_7fd1bea6>` (Vector3 & min, Vector3 & max) const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:31
+msgid ""
+":ref:`setBox<api_OBBox_d4168e7a>` (const Vector3 & min, const Vector3 & "
+"max)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:33 ../../source/reference/obbox.rst:35
+msgid "const :ref:`OBBox<api_OBBox>`"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:33
+msgid ":ref:`operator*<api_OBBox_281de4cf>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:35
+msgid ":ref:`operator*<api_OBBox_fd563e72>` (const Vector3 & vector) const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:37
+msgid ":ref:`OBBox<api_OBBox>` &"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:37
+msgid ":ref:`operator=<api_OBBox_a6b5827d>` (const OBBox & value)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:45
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:47
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:52
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:56
+msgid "**OBBox::OBBox** ()"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:58
+msgid ""
+"Constructs an bounding box with center (0, 0, 0), size (1, 1, 1) and "
+"identity rotation."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:64
+msgid ""
+"**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, "
+":ref:`Vector3<api_Vector3>` & *extent*)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:66
+msgid "Constructs a bounding box with center, *extent* and identity rotation."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:72
+msgid ""
+"**OBBox::OBBox** (:ref:`Vector3<api_Vector3>` & *center*, "
+":ref:`Vector3<api_Vector3>` & *extent*, :ref:`Quaternion<api_Quaternion>`"
+" & *rotation*)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:74
+msgid "Constructs a bounding box with center, *extent* and rotation."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:80
+msgid ""
+"void **OBBox::box** (:ref:`Vector3<api_Vector3>` & *min*, "
+":ref:`Vector3<api_Vector3>` & *max*) const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:82
+msgid "Returns *min* and *max* points of bounding box as output arguments."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:84
+msgid "**See also** setBox()."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:90
+msgid ""
+"void **OBBox::setBox** (:ref:`Vector3<api_Vector3>` & *min*, "
+":ref:`Vector3<api_Vector3>` & *max*)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:92
+msgid "Set curent bounding box by *min* and *max* points."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:94
+msgid "**See also** box()."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:100
+msgid ""
+"const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** (areal  *factor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:102
+msgid "Returns a copy of this vector, multiplied by the given factor."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:108
+msgid ""
+"const :ref:`OBBox<api_OBBox>`  **OBBox::operator*** "
+"(:ref:`Vector3<api_Vector3>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:110
+msgid "Returns a copy of this vector, multiplied by the given vector."
+msgstr ""
+
+#: ../../source/reference/obbox.rst:116
+msgid ""
+":ref:`OBBox<api_OBBox>` & **OBBox::operator=** (:ref:`OBBox<api_OBBox>` &"
+" *value*)"
+msgstr ""
+
+#: ../../source/reference/obbox.rst:118
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+

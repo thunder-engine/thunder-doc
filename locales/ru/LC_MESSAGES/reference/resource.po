@@ -1,0 +1,325 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/resource.rst:4
+msgid "Resource"
+msgstr ""
+
+#: ../../source/reference/resource.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/resource.rst:11
+#: ../../source/reference/resource.rst:56
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/resource.rst:14
+msgid ""
+"Note: This class must be a superclass only and shouldn't be created "
+"manually."
+msgstr ""
+
+#: ../../source/reference/resource.rst:22
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/resource.rst:25
+#: ../../source/reference/resource.rst:27
+#: ../../source/reference/resource.rst:31
+#: ../../source/reference/resource.rst:33
+#: ../../source/reference/resource.rst:37
+#: ../../source/reference/resource.rst:39
+#: ../../source/reference/resource.rst:41
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/resource.rst:25
+msgid ":ref:`decRef<api_Resource_374d29c1>` ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:27
+msgid ":ref:`incRef<api_Resource_cf5d1b69>` ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:29
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/resource.rst:29
+msgid ":ref:`isUnloadable<api_Resource_fd6ce473>` ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:31
+msgid ":ref:`notifyCurrentState<api_Resource_ed75a246>` ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:33
+msgid ":ref:`setState<api_Resource_708f2b1c>` (Resource::State  state)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:35
+msgid ":ref:`Resource::State<api_Resource_State>`"
+msgstr ""
+
+#: ../../source/reference/resource.rst:35
+msgid ":ref:`state<api_Resource_ec423fb9>` () const"
+msgstr ""
+
+#: ../../source/reference/resource.rst:37
+msgid ""
+":ref:`subscribe<api_Resource_5f0eb431>` "
+"(Resource::ResourceUpdatedCallback  callback, void * object)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:39
+msgid ":ref:`switchState<api_Resource_52681ae7>` (Resource::State  state)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:41
+msgid ":ref:`unsubscribe<api_Resource_e0bdf649>` (void * object)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:47
+msgid "Public Enums"
+msgstr ""
+
+#: ../../source/reference/resource.rst:51
+msgid "**enum Resource::State**"
+msgstr ""
+
+#: ../../source/reference/resource.rst:53
+msgid "Status for the resource."
+msgstr ""
+
+#: ../../source/reference/resource.rst:56
+msgid "Constant"
+msgstr ""
+
+#: ../../source/reference/resource.rst:56
+msgid "Value"
+msgstr ""
+
+#: ../../source/reference/resource.rst:58
+msgid "Resource::Invalid"
+msgstr ""
+
+#: ../../source/reference/resource.rst:58
+msgid "0"
+msgstr ""
+
+#: ../../source/reference/resource.rst:58
+msgid "The state is invalid (Unable to load resource)."
+msgstr ""
+
+#: ../../source/reference/resource.rst:60
+msgid "Resource::Loading"
+msgstr ""
+
+#: ../../source/reference/resource.rst:60
+msgid "1"
+msgstr ""
+
+#: ../../source/reference/resource.rst:60
+msgid "This resource is loading from the disc."
+msgstr ""
+
+#: ../../source/reference/resource.rst:62
+msgid "Resource::ToBeUpdated"
+msgstr ""
+
+#: ../../source/reference/resource.rst:62
+msgid "2"
+msgstr ""
+
+#: ../../source/reference/resource.rst:62
+msgid ""
+"This resource must be updated. Mostly used for the graphical resources to"
+" upload resouce to the graphical system. In case of resource doesn't "
+"require updating internal data. The resource must switch state to Ready "
+"immediately."
+msgstr ""
+
+#: ../../source/reference/resource.rst:64
+msgid "Resource::Ready"
+msgstr ""
+
+#: ../../source/reference/resource.rst:64
+msgid "3"
+msgstr ""
+
+#: ../../source/reference/resource.rst:64
+msgid "This resource is ready to use."
+msgstr ""
+
+#: ../../source/reference/resource.rst:66
+msgid "Resource::Suspend"
+msgstr ""
+
+#: ../../source/reference/resource.rst:66
+msgid "4"
+msgstr ""
+
+#: ../../source/reference/resource.rst:66
+msgid ""
+"This resource is not needed at this moment. In case of resource system "
+"will require additional memory suspended resources will be unloaded."
+msgstr ""
+
+#: ../../source/reference/resource.rst:68
+msgid "Resource::Unloading"
+msgstr ""
+
+#: ../../source/reference/resource.rst:68
+msgid "5"
+msgstr ""
+
+#: ../../source/reference/resource.rst:68
+msgid ""
+"This resource is marked to be unloaded. Mostly used for the graphical "
+"resources to unload resources from the graphical system. In case of "
+"resource doesn't require to unload internal data. The resource must "
+"switch state to ToBeDeleted immediately."
+msgstr ""
+
+#: ../../source/reference/resource.rst:70
+msgid "Resource::ToBeDeleted"
+msgstr ""
+
+#: ../../source/reference/resource.rst:70
+msgid "6"
+msgstr ""
+
+#: ../../source/reference/resource.rst:70
+msgid ""
+"This resource will be deleted soon. Resources with this state must not be"
+" used anywhere."
+msgstr ""
+
+#: ../../source/reference/resource.rst:78
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/resource.rst:80
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/resource.rst:85
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/resource.rst:89
+msgid "void **Resource::decRef** ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:91
+msgid ""
+"Decreases the reference counter for the resource. In case of the "
+"reference count becomes zero the resource set to ResourceState::Suspend "
+"state."
+msgstr ""
+
+#: ../../source/reference/resource.rst:97
+msgid "void **Resource::incRef** ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:99
+msgid "Increases the reference counter for the resource."
+msgstr ""
+
+#: ../../source/reference/resource.rst:105
+msgid "bool **Resource::isUnloadable** ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:107
+msgid ""
+"Returns true in case of resource can be unloaded from GPU; otherwise "
+"returns false."
+msgstr ""
+
+#: ../../source/reference/resource.rst:113
+msgid "void **Resource::notifyCurrentState** ()"
+msgstr ""
+
+#: ../../source/reference/resource.rst:115
+msgid "Notifies subscribers about the current state of the resource."
+msgstr ""
+
+#: ../../source/reference/resource.rst:121
+msgid ""
+"void **Resource::setState** (:ref:`Resource::State<api_Resource_State>`  "
+"*state*)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:123
+msgid "Sets new *state* for the resource."
+msgstr ""
+
+#: ../../source/reference/resource.rst:125
+msgid "**See also** state()."
+msgstr ""
+
+#: ../../source/reference/resource.rst:131
+msgid ":ref:`Resource::State<api_Resource::State>`  **Resource::state** () const"
+msgstr ""
+
+#: ../../source/reference/resource.rst:133
+msgid ""
+"Returns state for the resource. For possible states please see "
+"Resource::ResourceState."
+msgstr ""
+
+#: ../../source/reference/resource.rst:135
+msgid "**See also** setState()."
+msgstr ""
+
+#: ../../source/reference/resource.rst:141
+msgid ""
+"void **Resource::subscribe** "
+"(:ref:`Resource::ResourceUpdatedCallback<api_Resource_ResourceUpdatedCallback>`"
+"  *callback*, void * *object*)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:143
+msgid ""
+"Subscribes *callback* for *object* to handle resource status. Increases "
+"reference count."
+msgstr ""
+
+#: ../../source/reference/resource.rst:149
+msgid ""
+"void **Resource::switchState** "
+"(:ref:`Resource::State<api_Resource_State>`  *state*)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:151
+msgid "Switches the current *state* to a new *state* for the resource."
+msgstr ""
+
+#: ../../source/reference/resource.rst:157
+msgid "void **Resource::unsubscribe** (void * *object*)"
+msgstr ""
+
+#: ../../source/reference/resource.rst:159
+msgid ""
+"Unsubscribes an *object* to stop handle resource status. Decreases "
+"reference count."
+msgstr ""
+

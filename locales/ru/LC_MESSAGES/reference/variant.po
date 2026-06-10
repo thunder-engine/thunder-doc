@@ -1,0 +1,773 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/variant.rst:4
+msgid "Variant"
+msgstr ""
+
+#: ../../source/reference/variant.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/variant.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/variant.rst:13
+msgid ""
+"Variant can contain values with common data types and return information "
+"about this types. Also Variant can convert cantained values to another "
+"data types using MetaType::convert function. Example:"
+msgstr ""
+
+#: ../../source/reference/variant.rst:22
+msgid ""
+"Object based classes can be automatically registered in meta type system "
+"to be using as Variant objects. Example:"
+msgstr ""
+
+#: ../../source/reference/variant.rst:28
+msgid "And then:"
+msgstr ""
+
+#: ../../source/reference/variant.rst:42
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/variant.rst:45
+msgid ":ref:`Variant<api_Variant_b56c8e01>` ()"
+msgstr ""
+
+#: ../../source/reference/variant.rst:47
+msgid ":ref:`Variant<api_Variant_5b0843e9>` (MetaType::Type  type)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:49
+msgid ":ref:`Variant<api_Variant_2e054c7f>` (bool  value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:51
+msgid ":ref:`Variant<api_Variant_473f086e>` (const ByteArray & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:53
+msgid ":ref:`Variant<api_Variant_01263bd5>` (const Matrix3 & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:55
+msgid ":ref:`Variant<api_Variant_abd91c32>` (const Matrix4 & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:57
+msgid ":ref:`Variant<api_Variant_a216d5e3>` (const Quaternion & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:59
+msgid ":ref:`Variant<api_Variant_29da5be1>` (const TString & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:61
+msgid ":ref:`Variant<api_Variant_f5c9a786>` (const VariantList & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:63
+msgid ":ref:`Variant<api_Variant_fb850cad>` (const VariantMap & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:65
+msgid ":ref:`Variant<api_Variant_e679d012>` (const Vector2 & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:67
+msgid ":ref:`Variant<api_Variant_6db3a295>` (const Vector3 & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:69
+msgid ":ref:`Variant<api_Variant_78394b6e>` (const Vector4 & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:71
+msgid ":ref:`Variant<api_Variant_0182d6a7>` (const char * value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:73
+msgid ":ref:`Variant<api_Variant_6a4f8bd7>` (float  value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:75
+msgid ":ref:`Variant<api_Variant_4806e71f>` (int  value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:77
+msgid ":ref:`Variant<api_Variant_6b2583ea>` (unsigned int  value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:79
+msgid ":ref:`Variant<api_Variant_9fa6b7c4>` (uint32_t  type, void * copy)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:81
+msgid ":ref:`Variant<api_Variant_3ad5fce2>` (const Variant & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:83
+msgid "template <typename T> bool"
+msgstr ""
+
+#: ../../source/reference/variant.rst:83
+msgid ":ref:`canConvert<api_Variant_a127308c>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:85 ../../source/reference/variant.rst:89
+#: ../../source/reference/variant.rst:93 ../../source/reference/variant.rst:95
+#: ../../source/reference/variant.rst:127
+#: ../../source/reference/variant.rst:131
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/variant.rst:85
+msgid ":ref:`canConvert<api_Variant_7f3edc69>` (uint32_t  type) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:87 ../../source/reference/variant.rst:91
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/variant.rst:87
+msgid ":ref:`clear<api_Variant_b8f73a16>` ()"
+msgstr ""
+
+#: ../../source/reference/variant.rst:89
+msgid ":ref:`convert<api_Variant_0c92ba16>` (uint32_t  type)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:91
+msgid ":ref:`data<api_Variant_89d6cf42>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:93
+msgid ":ref:`isValid<api_Variant_6df10bea>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:95
+msgid ":ref:`toBool<api_Variant_ab5d7038>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:97
+msgid "const ByteArray"
+msgstr ""
+
+#: ../../source/reference/variant.rst:97
+msgid ":ref:`toByteArray<api_Variant_3c14d9e8>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:99
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/variant.rst:99
+msgid ":ref:`toFloat<api_Variant_73254e10>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:101
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/variant.rst:101
+msgid ":ref:`toInt<api_Variant_dca7b96e>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:103
+msgid "const VariantList"
+msgstr ""
+
+#: ../../source/reference/variant.rst:103
+msgid ":ref:`toList<api_Variant_79152af6>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:105
+msgid "const VariantMap"
+msgstr ""
+
+#: ../../source/reference/variant.rst:105
+msgid ":ref:`toMap<api_Variant_3abd689e>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:107
+msgid "const :ref:`Matrix3<api_Matrix3>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:107
+msgid ":ref:`toMatrix3<api_Variant_a15ed7b4>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:109
+msgid "const :ref:`Matrix4<api_Matrix4>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:109
+msgid ":ref:`toMatrix4<api_Variant_f7132ba0>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:111
+msgid "const :ref:`Quaternion<api_Quaternion>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:111
+msgid ":ref:`toQuaternion<api_Variant_492ced06>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:113
+msgid "const :ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:113
+msgid ":ref:`toString<api_Variant_56a37b14>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:115
+msgid "const :ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:115
+msgid ":ref:`toVector2<api_Variant_7902d34a>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:117
+msgid "const :ref:`Vector3<api_Vector3>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:117
+msgid ":ref:`toVector3<api_Variant_60321b98>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:119
+msgid "const :ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:119
+msgid ":ref:`toVector4<api_Variant_50469f2e>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:121
+#: ../../source/reference/variant.rst:123
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/variant.rst:121
+msgid ":ref:`type<api_Variant_90a273c8>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:123
+msgid ":ref:`userType<api_Variant_d950aec6>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:125
+msgid "template <typename T> T"
+msgstr ""
+
+#: ../../source/reference/variant.rst:125
+msgid ":ref:`value<api_Variant_d76bce9a>` () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:127
+msgid ":ref:`operator!=<api_Variant_de1a67f2>` (const Variant & right) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:129
+msgid ":ref:`Variant<api_Variant>` &"
+msgstr ""
+
+#: ../../source/reference/variant.rst:129
+msgid ":ref:`operator=<api_Variant_cdbe5792>` (const Variant & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:131
+msgid ":ref:`operator==<api_Variant_2641df09>` (const Variant & right) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:139
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/variant.rst:142
+msgid "template <typename T> :ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/variant.rst:142
+msgid ":ref:`fromValue<api_Variant_4560cd19>` (const T & value)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:148
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/variant.rst:152
+msgid "**Variant::Variant** ()"
+msgstr ""
+
+#: ../../source/reference/variant.rst:154
+msgid "Constructs an invalid variant."
+msgstr ""
+
+#: ../../source/reference/variant.rst:160
+msgid "**Variant::Variant** (:ref:`MetaType::Type<api_MetaType_Type>`  *type*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:162
+msgid "Constructs an uninitialized variant of type."
+msgstr ""
+
+#: ../../source/reference/variant.rst:168
+msgid "**Variant::Variant** (bool  *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:170
+msgid "Constructs a new variant with a boolean value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:176
+msgid "**Variant::Variant** (ByteArray & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:178
+msgid "Constructs a new variant with a ByteArray value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:184
+msgid "**Variant::Variant** (:ref:`Matrix3<api_Matrix3>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:186
+msgid "Constructs a new variant with a Matrix3 value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:192
+msgid "**Variant::Variant** (:ref:`Matrix4<api_Matrix4>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:194
+msgid "Constructs a new variant with a Matrix4 value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:200
+msgid "**Variant::Variant** (:ref:`Quaternion<api_Quaternion>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:202
+msgid "Constructs a new variant with a Quaternion value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:208
+msgid "**Variant::Variant** (:ref:`TString<api_TString>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:210
+#: ../../source/reference/variant.rst:258
+msgid "Constructs a new variant with a string value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:216
+msgid "**Variant::Variant** (VariantList & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:218
+msgid "Constructs a new variant with a list of variants value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:224
+msgid "**Variant::Variant** (VariantMap & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:226
+msgid "Constructs a new variant with a map of variants value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:232
+msgid "**Variant::Variant** (:ref:`Vector2<api_Vector2>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:234
+msgid "Constructs a new variant with a Vector2 value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:240
+msgid "**Variant::Variant** (:ref:`Vector3<api_Vector3>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:242
+msgid "Constructs a new variant with a Vector3 value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:248
+msgid "**Variant::Variant** (:ref:`Vector4<api_Vector4>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:250
+msgid "Constructs a new variant with a Vector4 value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:256
+msgid "**Variant::Variant** (char * *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:264
+msgid "**Variant::Variant** (float  *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:266
+msgid "Constructs a new variant with a floating point value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:272
+#: ../../source/reference/variant.rst:280
+msgid "**Variant::Variant** (int  *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:274
+#: ../../source/reference/variant.rst:282
+msgid "Constructs a new variant with an integer value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:288
+msgid "**Variant::Variant** (uint32_t  *type*, void * *copy*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:290
+msgid "Constructs a new variant of *type* and initialized with *copy* value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:296
+msgid "**Variant::Variant** (:ref:`Variant<api_Variant>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:298
+msgid "Constructs a copy of variant value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:304
+msgid "template <typename T> bool **Variant::canConvert** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:306
+msgid "Returns the possibility of conversion for this variant to type T."
+msgstr ""
+
+#: ../../source/reference/variant.rst:308
+msgid "**See also** value and MetaType::convert."
+msgstr ""
+
+#: ../../source/reference/variant.rst:314
+msgid "bool **Variant::canConvert** (uint32_t  *type*) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:316
+msgid "Returns true if variant converted to a type; otherwise return false."
+msgstr ""
+
+#: ../../source/reference/variant.rst:322
+msgid "void **Variant::clear** ()"
+msgstr ""
+
+#: ../../source/reference/variant.rst:324
+msgid "Frees used resources and make this variant an invalid."
+msgstr ""
+
+#: ../../source/reference/variant.rst:330
+msgid "bool **Variant::convert** (uint32_t  *type*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:332
+msgid "Casts the variant to the requested type."
+msgstr ""
+
+#: ../../source/reference/variant.rst:334
+msgid ""
+"Returns true if the current *type* of the variant was successfully cast; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/variant.rst:340
+msgid "void **Variant::data** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:342
+msgid "Returns pure pointer to value data."
+msgstr ""
+
+#: ../../source/reference/variant.rst:348
+msgid ""
+"template <typename T> :ref:`Variant<api_Variant>`  **Variant::fromValue**"
+" (T & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:350
+msgid "Returns the variant containing provided value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:352
+msgid "Returns an invalid variant if unknown *value* type."
+msgstr ""
+
+#: ../../source/reference/variant.rst:354
+#: ../../source/reference/variant.rst:372
+#: ../../source/reference/variant.rst:382
+#: ../../source/reference/variant.rst:392
+#: ../../source/reference/variant.rst:402
+#: ../../source/reference/variant.rst:412
+#: ../../source/reference/variant.rst:422
+#: ../../source/reference/variant.rst:432
+#: ../../source/reference/variant.rst:442
+#: ../../source/reference/variant.rst:452
+#: ../../source/reference/variant.rst:462
+#: ../../source/reference/variant.rst:472
+#: ../../source/reference/variant.rst:482
+#: ../../source/reference/variant.rst:492
+msgid "**See also** value, canConvert, and MetaType::convert."
+msgstr ""
+
+#: ../../source/reference/variant.rst:360
+msgid "bool **Variant::isValid** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:362
+msgid "Returns true if variant value is valid; otherwise return false."
+msgstr ""
+
+#: ../../source/reference/variant.rst:368
+msgid "bool **Variant::toBool** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:370
+msgid ""
+"Returns variant as a bool value if variant has a type MetaType::BOOLEAN. "
+"Otherwise it tries to convert existing value to a bool."
+msgstr ""
+
+#: ../../source/reference/variant.rst:378
+msgid "const ByteArray **Variant::toByteArray** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:380
+msgid ""
+"Returns variant as a ByteArray value if variant has a type "
+"MetaType::BYTEARRAY. Otherwise it tries to convert existing value to a "
+"ByteArray."
+msgstr ""
+
+#: ../../source/reference/variant.rst:388
+msgid "float **Variant::toFloat** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:390
+msgid ""
+"Returns variant as a float value if variant has a type MetaType::FLOAT. "
+"Otherwise it tries to convert existing value to a float."
+msgstr ""
+
+#: ../../source/reference/variant.rst:398
+msgid "int **Variant::toInt** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:400
+msgid ""
+"Returns variant as an integer value if variant has a type "
+"MetaType::INTEGER. Otherwise it tries to convert existing value to an "
+"integer."
+msgstr ""
+
+#: ../../source/reference/variant.rst:408
+msgid "const VariantList **Variant::toList** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:410
+msgid ""
+"Returns variant as a variant list value if variant has a type "
+"MetaType::VARIANTLIST. Otherwise it tries to convert existing value to a "
+"variant list."
+msgstr ""
+
+#: ../../source/reference/variant.rst:418
+msgid "const VariantMap **Variant::toMap** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:420
+msgid ""
+"Returns variant as a variant map value if variant has a type "
+"MetaType::VARIANTMAP. Otherwise it tries to convert existing value to a "
+"variant map."
+msgstr ""
+
+#: ../../source/reference/variant.rst:428
+msgid "const :ref:`Matrix3<api_Matrix3>`  **Variant::toMatrix3** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:430
+msgid ""
+"Returns variant as a Matrix3 value if variant has a type "
+"MetaType::MATRIX3. Otherwise it tries to convert existing value to a "
+"Matrix3."
+msgstr ""
+
+#: ../../source/reference/variant.rst:438
+msgid "const :ref:`Matrix4<api_Matrix4>`  **Variant::toMatrix4** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:440
+msgid ""
+"Returns variant as a Matrix4 value if variant has a type "
+"MetaType::MATRIX4. Otherwise it tries to convert existing value to a "
+"Matrix4."
+msgstr ""
+
+#: ../../source/reference/variant.rst:448
+msgid ""
+"const :ref:`Quaternion<api_Quaternion>`  **Variant::toQuaternion** () "
+"const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:450
+msgid ""
+"Returns variant as a Quaternion value if variant has a type "
+"MetaType::QUATERNION. Otherwise it tries to convert existing value to a "
+"Quaternion."
+msgstr ""
+
+#: ../../source/reference/variant.rst:458
+msgid "const :ref:`TString<api_TString>`  **Variant::toString** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:460
+msgid ""
+"Returns variant as a string value if variant has a type MetaType::STRING."
+" Otherwise it tries to convert existing value to a string."
+msgstr ""
+
+#: ../../source/reference/variant.rst:468
+msgid "const :ref:`Vector2<api_Vector2>`  **Variant::toVector2** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:470
+msgid ""
+"Returns variant as a Vector2 value if variant has a type "
+"MetaType::VECTOR2. Otherwise it tries to convert existing value to a "
+"Vector2."
+msgstr ""
+
+#: ../../source/reference/variant.rst:478
+msgid "const :ref:`Vector3<api_Vector3>`  **Variant::toVector3** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:480
+msgid ""
+"Returns variant as a Vector3 value if variant has a type "
+"MetaType::VECTOR3. Otherwise it tries to convert existing value to a "
+"Vector3."
+msgstr ""
+
+#: ../../source/reference/variant.rst:488
+msgid "const :ref:`Vector4<api_Vector4>`  **Variant::toVector4** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:490
+msgid ""
+"Returns variant as a Vector4 value if variant has a type "
+"MetaType::VECTOR4. Otherwise it tries to convert existing value to a "
+"Vector4."
+msgstr ""
+
+#: ../../source/reference/variant.rst:498
+msgid "uint32_t **Variant::type** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:500
+msgid "Returns type of variant value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:503
+msgid ""
+"**Note:** If type of variant is user defined then fonction return "
+"MetaType::USERTYPE. To get the real type id use userType."
+msgstr ""
+
+#: ../../source/reference/variant.rst:506
+msgid "**See also** userType."
+msgstr ""
+
+#: ../../source/reference/variant.rst:512
+msgid "uint32_t **Variant::userType** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:514
+msgid "Returns user type of variant value."
+msgstr ""
+
+#: ../../source/reference/variant.rst:516
+msgid "**See also** type."
+msgstr ""
+
+#: ../../source/reference/variant.rst:522
+msgid "template <typename T> T **Variant::value** () const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:524
+msgid "Returns contained value which cast or converted to type T."
+msgstr ""
+
+#: ../../source/reference/variant.rst:526
+msgid ""
+"Returns default T value if invalid variant or variant can not be "
+"converted to type T."
+msgstr ""
+
+#: ../../source/reference/variant.rst:528
+msgid "**See also** fromValue, canConvert, and MetaType::convert."
+msgstr ""
+
+#: ../../source/reference/variant.rst:534
+msgid "bool **Variant::operator!=** (:ref:`Variant<api_Variant>` & *right*) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:536
+msgid ""
+"Compares a this variant with variant *right* value. Returns true if "
+"variants are NOT equal; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/variant.rst:542
+msgid ""
+":ref:`Variant<api_Variant>` & **Variant::operator=** "
+"(:ref:`Variant<api_Variant>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/variant.rst:544
+msgid "Assigns the *value* of the variant to this variant."
+msgstr ""
+
+#: ../../source/reference/variant.rst:550
+msgid "bool **Variant::operator==** (:ref:`Variant<api_Variant>` & *right*) const"
+msgstr ""
+
+#: ../../source/reference/variant.rst:552
+msgid ""
+"Compares a this variant with variant *right* value. Returns true if "
+"variants are equal; otherwise returns false."
+msgstr ""
+

@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/basics/features.rst:4
+msgid "Thunder Engine Features"
+msgstr "Возможности Thunder Engine"
+
+#: ../../source/basics/features.rst:9
+msgid "Supported Platforms"
+msgstr "Поддерживаемые платформы"
+
+#: ../../source/basics/features.rst:10
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../source/basics/features.rst:11
+msgid "MacOS X"
+msgstr "macOS X"
+
+#: ../../source/basics/features.rst:12
+msgid "Linux"
+msgstr "Linux"
+
+#: ../../source/basics/features.rst:13
+msgid "Android"
+msgstr "Android"
+
+#: ../../source/basics/features.rst:14
+msgid "iOS"
+msgstr "iOS"
+
+#: 217source/basics/features.rst:15
+msgid "tvOS"
+msgstr "tvOS"
+
+#: ../../source/basics/features.rst:16
+msgid "HTML5"
+msgstr "HTML5"
+
+#: ../../source/basics/features.rst:21
+msgid "Engine"
+msgstr "Движок"
+
+#: ../../source/basics/features.rst:22
+msgid "Module based architecture"
+msgstr "Модульная архитектура"
+
+#: ../../source/basics/features.rst:23
+msgid "Entity Component System based Object Management System"
+msgstr "Система управления объектами на основе Entity Component System"
+
+#: ../../source/basics/features.rst:24
+msgid "Scene Graph object management approach"
+msgstr "Подход к управлению объектами через граф сцены"
+
+#: ../../source/basics/features.rst:25
+msgid "MetaObject introspection model for Objects"
+msgstr "Модель интроспекции MetaObject для объектов"
+
+#: ../../source/basics/features.rst:26
+msgid "Event driven Inter Object Communication System"
+msgstr "Событийно-ориентированная система межобъектного взаимодействия"
+
+#: ../../source/basics/features.rst:31
+msgid "Render"
+msgstr "Рендеринг"
+
+#: ../../source/basics/features.rst:32
+msgid "Flexible render pipeline"
+msgstr "Гибкий конвейер рендеринга"
+
+#: ../../source/basics/features.rst:33
+msgid "Rendering System Based on Physical Principles"
+msgstr "Система рендеринга на основе физических принципов"
+
+#: ../../source/basics/features.rst:34
+msgid "Particle system"
+msgstr "Система частиц"
+
+#: ../../source/basics/features.rst:35
+msgid "Deferred Shading"
+msgstr "Отложенное затенение (Deferred Shading)"
+
+#: ../../source/basics/features.rst:36
+msgid "CookTorance Lighting model"
+msgstr "Модель освещения Cook–Torrance"
+
+#: ../../source/basics/features.rst:37
+msgid "Cascaded Shadow Maps (PPSM)"
+msgstr "Каскадные карты теней (PPSM)"
+
+#: ../../source/basics/features.rst:38
+msgid "Frustum culling rendering optimization"
+msgstr "Оптимизация рендеринга с отсечением по frustum'у"
+
+#: ../../source/basics/features.rst:39
+msgid "SDF Fonts"
+msgstr "SDF-шрифты"
+
+#: ../../source/basics/features.rst:44
+msgid "Scripting"
+msgstr "Скриптинг"
+
+#: ../../source/basics/features.rst:45
+msgid "AngelScipt script engine (Technical Preview)"
+msgstr "Движок скриптов AngelScript (технический предварительный просмотр)"
+
+#: ../../source/basics/features.rst:50
+msgid "Animation"
+msgstr "Анимация"
+
+#: ../../source/basics/features.rst:51
+msgid "Animation engine is based on \"Animate Everything\" principles"
+msgstr "Анимационный движок основан на принципах «Анимируй всё»"
+
+#: ../../source/basics/features.rst:52
+msgid "Animation state machine"
+msgstr "Конечный автомат анимации"
+
+#: ../../source/basics/features.rst:57
+msgid "Audio"
+msgstr "Аудио"
+
+#: ../../source/basics/features.rst:58
+msgid "2D/3D Audio engine"
+msgstr "2D/3D аудиодвижок"
+
+#: ../../source/basics/features.rst:59
+msgid "Ogg/Vorbis, MP3, WAV file formats support"
+msgstr "Поддержка форматов Ogg/Vorbis, MP3, WAV"
+
+#: ../../source/basics/features.rst:64
+msgid "Physics Engine"
+msgstr "Физический движок"
+
+#: ../../source/basics/features.rst:65
+msgid "Rigid Body"
+msgstr "Твёрдое тело"
+
+#: ../../source/basics/features.rst:66
+msgid "Bunch of volume colliders and triggers like Sphere, Box, Capsule and more"
+msgstr "Набор объемных коллайдеров и триггеров: сфера, куб, капсула и другие"
+
+#: ../../source/basics/features.rst:71
+msgid "Set of Tools"
+msgstr "Набор инструментов"
+
+#: ../../source/basics/features.rst:72
+msgid "Multi-functional scene editor"
+msgstr "Многофункциональный редактор сцен"
+
+#: ../../source/basics/features.rst:73
+msgid "Node based material editor with shader converter"
+msgstr "Узловой редактор материалов с конвертером шейдеров"
+
+#: ../../source/basics/features.rst:74
+msgid "Animation graph editor and timeline"
+msgstr "Редактор графа анимации и временная шкала"
+
+#: ../../source/basics/features.rst:75
+msgid "Plug-ins mechanism"
+msgstr "Механизм плагинов"
+
+#: ../../source/basics/features.rst:76
+msgid "Resource Management system with bunch of converters"
+msgstr "Система управления ресурсами с набором конвертеров"
+
+#: ../../source/basics/features.rst:77
+msgid "Ready for CI project builder"
+msgstr "Готовый для CI сборщик проектов"

@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/editor/viewport.rst:4 ../../source/editor/viewport.rst:8
+msgid "Viewport"
+msgstr "Область просмотра"
+
+#: ../../source/editor/viewport.rst:6
+msgid ""
+"Viewport allows you to add and remove objects on scene, control their "
+"positions, rotations and do other basic operations."
+msgstr ""
+"Область просмотра позволяет добавлять и удалять объекты на сцене, управлять "
+"их положением, поворотом и выполнять другие базовые операции."
+
+#: ../../source/editor/viewport.rst:12
+msgid "Creation/Selection Objects"
+msgstr "Создание/выбор объектов"
+
+#: ../../source/editor/viewport.rst:14
+msgid ""
+"The empty game doesn't look fun. To make it visually appealing we need to"
+" add various game objects. Thunder Engine supports many visual components"
+" like 2D sprites and 3D meshes."
+msgstr ""
+"Пустая игра не выглядит интересной. Чтобы сделать её визуально привлекательной, "
+"нам нужно добавить различные игровые объекты. Thunder Engine поддерживает "
+"множество визуальных компонентов, таких как 2D-спрайты и 3D-модели."
+
+#: ../../source/editor/viewport.rst:18
+msgid ""
+"Now let's create something! There are a few methods how to placing "
+"objects on the scene. The simplest way is to just drag and drop objects "
+"from a :ref:`doc_content`."
+msgstr ""
+"А теперь давайте что-нибудь создадим! Существует несколько способов размещения "
+"объектов на сцене. Самый простой способ — просто перетащить объекты из "
+":ref:`doc_content`."
+
+#: ../../source/editor/viewport.rst:22
+msgid "Create Object"
+msgstr "Создание объекта"
+
+#: ../../source/editor/viewport.rst:25
+msgid ""
+"As you probably noticed the created object is automatically selected. The"
+" selected object has an orange highlight around it. A developer has the "
+"ability to change the color and thickness of a highlighter or completely "
+"disable it. During development, you would need to select objects on the "
+"scene. Just click by ``LBM`` on an object and it will be selected."
+msgstr ""
+"Как вы, вероятно, заметили, созданный объект автоматически выделяется. "
+"Выбранный объект имеет оранжевую подсветку вокруг себя. Разработчик имеет "
+"возможность изменить цвет и толщину подсветки или полностью отключить её. "
+"Во время разработки вам потребуется выбирать объекты на сцене. Просто щёлкните "
+"``ЛКМ`` по объекту, и он будет выбран."
+
+#: ../../source/editor/viewport.rst:32 ../../source/editor/viewport.rst:34
+msgid "Toolbar"
+msgstr "Панель инструментов"
+
+#: ../../source/editor/viewport.rst:37
+msgid ""
+"The toolbar contains a various controls to move, rotate and scale "
+"selected objects."
+msgstr ""
+"Панель инструментов содержит различные элементы управления для перемещения, "
+"поворота и масштабирования выбранных объектов."
+
+#: ../../source/editor/viewport.rst:42
+msgid "**Select**"
+msgstr "**Выбрать**"
+
+#: ../../source/editor/viewport.rst:43
+msgid ""
+"Selects objects and nothing else. Can be used to prevent not intentional "
+"changes."
+msgstr ""
+"Выбирает объекты и ничего более. Можно использовать для предотвращения "
+"непреднамеренных изменений."
+
+#: ../../source/editor/viewport.rst:44
+msgid "**Move**"
+msgstr "**Переместить**"
+
+#: 217source/editor/viewport.rst:45
+msgid "Select and Move. Allows moving selected objects by axes."
+msgstr "Выбрать и переместить. Позволяет перемещать выбранные объекты по осям."
+
+#: ../../source/editor/viewport.rst:46
+msgid "**Rotate**"
+msgstr "**Повернуть**"
+
+#: ../../source/editor/viewport.rst:47
+msgid "Select and Rotate. Allows rotate selected objects by axes."
+msgstr "Выбрать и повернуть. Позволяет поворачивать выбранные объекты по осям."
+
+#: ../../source/editor/viewport.rst:48
+msgid "**Scale**"
+msgstr "**Масштабировать**"
+
+#: ../../source/editor/viewport.rst:49
+msgid "Select and Scale. Allows scale selected objects by axes."
+msgstr "Выбрать и масштабировать. Позволяет масштабировать выбранные объекты по осям."
+
+#: ../../source/editor/viewport.rst:50
+msgid "**Transform**"
+msgstr "**Трансформировать**"
+
+#: ../../source/editor/viewport.rst:51
+msgid "Select and Transform. Allows move and scale selected 2D objects."
+msgstr "Выбрать и трансформировать. Позволяет перемещать и масштабировать выбранные 2D-объекты."
+
+#: ../../source/editor/viewport.rst:52
+msgid "**2D**"
+msgstr "**2D**"
+
+#: ../../source/editor/viewport.rst:53
+msgid "Switches the Viewport between 2D and 3D modes."
+msgstr "Переключает область просмотра между 2D и 3D режимами."
+
+#: ../../source/editor/viewport.rst:54
+msgid "**Orientations**"
+msgstr "**Ориентации**"
+
+#: ../../source/editor/viewport.rst:55
+msgid "Switches between Global and Local axes orientations:"
+msgstr "Переключает между глобальной и локальной ориентациями осей:"
+
+#: ../../source/editor/viewport.rst:57
+msgid "*Global* - Align the transformation axes to world space."
+msgstr "*Глобальная* — выравнивает оси трансформации по мировому пространству."
+
+#: ../../source/editor/viewport.rst:58
+msgid "*Local* - Align the transformation axes to the selected objects’ space."
+msgstr "*Локальная* — выравнивает оси трансформации по пространству выбранного объекта."
+
+#: ../../source/editor/viewport.rst:59
+msgid "**Show**"
+msgstr "**Показать**"
+
+#: ../../source/editor/viewport.rst:60
+msgid ""
+"Switches the viewport position and shows various buffers used during "
+"rendering."
+msgstr ""
+"Переключает положение области просмотра и показывает различные буферы, "
+"используемые во время рендеринга."
+
+#: ../../source/editor/viewport.rst:63
+msgid "Positioning Actors"
+msgstr "Позиционирование акторов"
+
+#: ../../source/editor/viewport.rst:65
+msgid ""
+"After an object has been placed on the scene, we may want to move, "
+"rotate, or resize it. Using Toolbar we can do this right in the Viewport."
+msgstr ""
+"После того как объект размещён на сцене, мы можем захотеть переместить, "
+"повернуть или изменить его размер. Используя панель инструментов, мы можем "
+"сделать это прямо в области просмотра."
+
+#: ../../source/editor/viewport.rst:68
+msgid "Move Object"
+msgstr "Перемещение объекта"
+
+#: ../../source/editor/viewport.rst:71
+msgid "Moving"
+msgstr "Перемещение"
+
+#: ../../source/editor/viewport.rst:73
+msgid "Rotate Object"
+msgstr "Поворот объекта"
+
+#: ../../source/editor/viewport.rst:76
+msgid "Rotation"
+msgstr "Поворот"
+
+#: ../../source/editor/viewport.rst:78
+msgid "Scale Object"
+msgstr "Масштабирование объекта"
+
+#: ../../source/editor/viewport.rst:81
+msgid "Scaling"
+msgstr "Масштабирование"
+
+#: ../../source/editor/viewport.rst:84
+msgid "Key Scheme"
+msgstr "Схема клавиш"
+
+#: ../../source/editor/viewport.rst:86
+msgid "Hold :kbd:`RMB` and move the mouse in the direction you want to look."
+msgstr "Удерживайте :kbd:`ПКМ` и перемещайте мышь в направлении, в котором хотите смотреть."
+
+#: ../../source/editor/viewport.rst:91
+msgid "``W``/``Up``"
+msgstr "``W``/``Вверх``"
+
+#: ../../source/editor/viewport.rst:92
+msgid "Accelerate forward."
+msgstr "Ускорение вперёд."
+
+#: ../../source/editor/viewport.rst:93
+msgid "``S``/``Down``"
+msgstr "``S``/``Вниз``"
+
+#: ../../source/editor/viewport.rst:94
+msgid "Accelerate backwards."
+msgstr "Ускорение назад."
+
+#: ../../source/editor/viewport.rst:95
+msgid "``A``/``Left``"
+msgstr "``A``/``Влево``"
+
+#: ../../source/editor/viewport.rst:96
+msgid "Accelerate left."
+msgstr "Ускорение влево."
+
+#: ../../source/editor/viewport.rst:97
+msgid "``D``/``Right``"
+msgstr "``D``/``Вправо``"
+
+#: ../../source/editor/viewport.rst:98
+msgid "Accelerate right."
+msgstr "Ускорение вправо."
+
+#: ../../source/editor/viewport.rst:99
+msgid "``MMB``"
+msgstr "``Средняя кнопка мыши``"
+
+#: ../../source/editor/viewport.rst:100
+msgid ""
+"Drag to pan the view. In this case the view can move laterally on its "
+"local axis at the moment you drag the mouse."
+msgstr ""
+"Перетаскивайте для панорамирования вида. В этом случае вид может перемещаться "
+"боком по своей локальной оси в момент перетаскивания мыши."
+
+#: ../../source/editor/viewport.rst:102
+msgid "``WheelUp``"
+msgstr "``Колёсико вверх``"
+
+#: ../../source/editor/viewport.rst:103
+msgid "Zoom viewport camera In."
+msgstr "Приблизить камеру области просмотра."
+
+#: ../../source/editor/viewport.rst:104
+msgid "``WheelDown``"
+msgstr "``Колёсико вниз``"
+
+#: ../../source/editor/viewport.rst:105
+msgid "Zoom viewport camera Out."
+msgstr "Отдалить камеру области просмотра."
+
+#: ../../source/editor/viewport.rst:106
+msgid "``Del``"
+msgstr "``Del``"
+
+#: ../../source/editor/viewport.rst:107
+msgid "To delete selected object"
+msgstr "Удалить выбранный объект"

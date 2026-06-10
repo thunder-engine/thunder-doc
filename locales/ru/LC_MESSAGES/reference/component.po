@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/component.rst:4
+msgid "Component"
+msgstr ""
+
+#: ../../source/reference/component.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/component.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/component.rst:13
+msgid ""
+"The Component class is a base class for each aspect of the actor, and how"
+" it interacts with the world."
+msgstr ""
+
+#: ../../source/reference/component.rst:16
+msgid ""
+"Note: This class must be a superclass only and shouldn't be created "
+"manually."
+msgstr ""
+
+#: ../../source/reference/component.rst:24
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/component.rst:27
+#: ../../source/reference/component.rst:35
+msgid ":ref:`Actor<api_Actor>` *"
+msgstr ""
+
+#: ../../source/reference/component.rst:27
+msgid ":ref:`actor<api_Component_30c8d6a4>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:29
+msgid ":ref:`Component<api_Component>` *"
+msgstr ""
+
+#: ../../source/reference/component.rst:29
+msgid ":ref:`component<api_Component_15896ea4>` (const TString & type)"
+msgstr ""
+
+#: ../../source/reference/component.rst:31
+#: ../../source/reference/component.rst:33
+#: ../../source/reference/component.rst:43
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/component.rst:31
+msgid ":ref:`drawGizmos<api_Component_64b1782a>` ()"
+msgstr ""
+
+#: ../../source/reference/component.rst:33
+msgid ":ref:`drawGizmosSelected<api_Component_0cf38b92>` ()"
+msgstr ""
+
+#: ../../source/reference/component.rst:35
+msgid ""
+":ref:`instantiate<api_Component_8bd7e521>` (Prefab * prefab, Vector3  "
+"position, Quaternion  rotation)"
+msgstr ""
+
+#: ../../source/reference/component.rst:37
+#: ../../source/reference/component.rst:39
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/component.rst:37
+msgid ":ref:`isEnabled<api_Component_539fb018>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:39
+msgid ":ref:`isEnabledInHierarchy<api_Component_c50fd91e>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:41
+msgid ":ref:`Scene<api_Scene>` *"
+msgstr ""
+
+#: ../../source/reference/component.rst:41
+msgid ":ref:`scene<api_Component_db31c82f>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:43
+msgid ":ref:`setEnabled<api_Component_8024319d>` (bool  enabled)"
+msgstr ""
+
+#: ../../source/reference/component.rst:45
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/component.rst:45
+msgid ":ref:`tr<api_Component_baf10cd6>` (const TString & source)"
+msgstr ""
+
+#: ../../source/reference/component.rst:47
+msgid ":ref:`Transform<api_Transform>` *"
+msgstr ""
+
+#: ../../source/reference/component.rst:47
+msgid ":ref:`transform<api_Component_514a637b>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:49
+msgid ":ref:`World<api_World>` *"
+msgstr ""
+
+#: ../../source/reference/component.rst:49
+msgid ":ref:`world<api_Component_f043851e>` () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:57
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/component.rst:59
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/component.rst:64
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/component.rst:68
+msgid ":ref:`Actor<api_Actor>` * **Component::actor** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:70
+msgid "Returns an Actor which the Component is attached to."
+msgstr ""
+
+#: ../../source/reference/component.rst:76
+msgid ""
+":ref:`Component<api_Component>` * **Component::component** "
+"(:ref:`TString<api_TString>` & *type*)"
+msgstr ""
+
+#: ../../source/reference/component.rst:78
+msgid ""
+"Returns a component with *type* attached to the same Actor. If no such "
+"component with this *type* returns nullptr."
+msgstr ""
+
+#: ../../source/reference/component.rst:84
+msgid "void **Component::drawGizmos** ()"
+msgstr ""
+
+#: ../../source/reference/component.rst:86
+msgid "Implement drawGizmos if you want to draw gizmos that are always drawn."
+msgstr ""
+
+#: ../../source/reference/component.rst:92
+msgid "void **Component::drawGizmosSelected** ()"
+msgstr ""
+
+#: ../../source/reference/component.rst:94
+msgid "Implement drawGizmosSelected to draw a gizmo if the object is selected."
+msgstr ""
+
+#: ../../source/reference/component.rst:100
+msgid ""
+":ref:`Actor<api_Actor>` * **Component::instantiate** "
+"(:ref:`Prefab<api_Prefab>` * *prefab*, :ref:`Vector3<api_Vector3>`  "
+"*position*, :ref:`Quaternion<api_Quaternion>`  *rotation*)"
+msgstr ""
+
+#: ../../source/reference/component.rst:102
+msgid ""
+"Clones the actor represented by *prefab* asset. This Actor will be a "
+"sibling of caller Actor and has local *position* and rotation."
+msgstr ""
+
+#: ../../source/reference/component.rst:108
+msgid "bool **Component::isEnabled** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:110
+msgid "Returns true if the component is enabled; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/component.rst:116
+msgid "bool **Component::isEnabledInHierarchy** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:118
+msgid ""
+"Returns false in case of one of Actors in top hierarchy or this component"
+" was disabled; otherwise returns true."
+msgstr ""
+
+#: ../../source/reference/component.rst:124
+msgid ":ref:`Scene<api_Scene>` * **Component::scene** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:126
+msgid "Returns a Scene which the Component is attached to."
+msgstr ""
+
+#: ../../source/reference/component.rst:132
+msgid "void **Component::setEnabled** (bool  *enabled*)"
+msgstr ""
+
+#: ../../source/reference/component.rst:134
+msgid "Sets current state of component to *enabled* or disabled."
+msgstr ""
+
+#: ../../source/reference/component.rst:137
+msgid ""
+"**Note:** The disabled component will be created but not affect the "
+"Actor. For example, MeshRender component will not draw a mesh."
+msgstr ""
+
+#: ../../source/reference/component.rst:140
+msgid "**See also** isEnabled()."
+msgstr ""
+
+#: ../../source/reference/component.rst:146
+msgid ""
+":ref:`TString<api_TString>`  **Component::tr** "
+"(:ref:`TString<api_TString>` & *source*)"
+msgstr ""
+
+#: ../../source/reference/component.rst:148
+msgid ""
+"Returns a translated version of *source* text; otherwise returns *source*"
+" text if no appropriate translated std::string is available."
+msgstr ""
+
+#: ../../source/reference/component.rst:154
+msgid ":ref:`Transform<api_Transform>` * **Component::transform** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:156
+msgid "Returns a transform attached to this Actor."
+msgstr ""
+
+#: ../../source/reference/component.rst:162
+msgid ":ref:`World<api_World>` * **Component::world** () const"
+msgstr ""
+
+#: ../../source/reference/component.rst:164
+msgid "Returns a World which the Component is attached to."
+msgstr ""
+

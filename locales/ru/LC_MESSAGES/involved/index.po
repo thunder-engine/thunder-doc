@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/involved/index.rst:8
+msgid "Contents"
+msgstr "Содержание"
+
+#: ../../source/involved/index.rst:4
+msgid "Contribute Documentation"
+msgstr "Внести вклад в документацию"
+
+#: ../../source/involved/index.rst:6
+msgid ""
+"Thunder Engine documentation is an open project, and we welcome community"
+" contributions. This section contains guides on contributing to the "
+"documentation, style guidelines, and the review process."
+msgstr ""
+"Документация Thunder Engine — это открытый проект, и мы приветствуем вклад "
+"сообщества. Этот раздел содержит руководства по участию в написании "
+"документации, правила оформления текста и описание процесса рецензирования."
+
+#: ../../source/involved/index.rst:17
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/involved/index.rst:19
+msgid ""
+"Thunder Engine documentation is written in **reStructuredText** (RST) "
+"format and built using **Sphinx**. All documentation files are located in"
+" the `thunder-engine/thunder-doc` repository."
+msgstr ""
+"Документация Thunder Engine написана в формате **reStructuredText** (RST) и "
+"собирается с помощью **Sphinx**. Все файлы документации находятся в "
+"репозитории `thunder-engine/thunder-doc`."
+
+#: ../../source/involved/index.rst:22
+msgid "Ways to Contribute"
+msgstr "Способы внести вклад"
+
+#: ../../source/involved/index.rst:24
+msgid "You can contribute in several ways:"
+msgstr "Вы можете внести вклад несколькими способами:"
+
+#: ../../source/involved/index.rst:26
+msgid "**Fix typos and errors** — the easiest way to help"
+msgstr "**Исправление опечаток и ошибок** — самый простой способ помочь"
+
+#: 217source/involved/index.rst:27
+msgid "**Expand existing sections** — add examples, clarify descriptions"
+msgstr "**Расширение существующих разделов** — добавление примеров, уточнение описаний"
+
+#: ../../source/involved/index.rst:28
+msgid "**Create new documentation** — for missing features or components"
+msgstr "**Создание новой документации** — для отсутствующих функций или компонентов"
+
+#: ../../source/involved/index.rst:29
+msgid "**Translations** — help with translating to other languages"
+msgstr "**Переводы** — помощь с переводом на другие языки"
+
+#: ../../source/involved/index.rst:30
+msgid "**Reviews** — review pull requests from other contributors"
+msgstr "**Рецензирование** — проверка pull request от других участников"
+
+#: ../../source/involved/index.rst:33
+msgid "Getting Started"
+msgstr "Начало работы"
+
+#: ../../source/involved/index.rst:35
+msgid "**Clone the repository**"
+msgstr "**Клонируйте репозиторий**"
+
+#: ../../source/involved/index.rst:41
+msgid "**Install build tools**"
+msgstr "**Установите инструменты сборки**"
+
+#: ../../source/involved/index.rst:46
+msgid "**Build the documentation locally**"
+msgstr "**Соберите документацию локально**"
+
+#: ../../source/involved/index.rst:54
+msgid ""
+"The build result will be in the ``_build/html/`` folder. Open "
+"``index.html`` in your browser to view it."
+msgstr ""
+"Результат сборки будет находиться в папке ``_build/html/``. Откройте "
+"``index.html`` в вашем браузере, чтобы просмотреть его."
+
+#: ../../source/involved/index.rst:56
+msgid "**Create a branch for your changes**"
+msgstr "**Создайте ветку для ваших изменений**"
+
+#: ../../source/involved/index.rst:61
+msgid "**Make changes and submit a pull request**"
+msgstr "**Внесите изменения и отправьте pull request**"
+
+#: ../../source/involved/index.rst:69
+msgid "Documentation Structure"
+msgstr "Структура документации"
+
+#: ../../source/involved/index.rst:71
+msgid "The documentation is organized in the following structure:"
+msgstr "Документация организована в следующей структуре:"
+
+#: ../../source/involved/index.rst:88
+msgid "Files and Their Purpose"
+msgstr "Файлы и их назначение"
+
+#: ../../source/involved/index.rst:91
+msgid "File"
+msgstr "Файл"
+
+#: ../../source/involved/index.rst:91
+msgid "Purpose"
+msgstr "Назначение"
+
+#: ../../source/involved/index.rst:93
+msgid "``index.rst``"
+msgstr "``index.rst``"
+
+#: ../../source/involved/index.rst:93
+msgid "Section entry point, contains toctree and general description"
+msgstr "Точка входа в раздел, содержит toctree и общее описание"
+
+#: ../../source/involved/index.rst:94
+msgid "``*.rst``"
+msgstr "``*.rst``"
+
+#: ../../source/involved/index.rst:94
+msgid "Documentation in reStructuredText format"
+msgstr "Документация в формате reStructuredText"
+
+#: ../../source/involved/index.rst:95
+msgid "``conf.py``"
+msgstr "``conf.py``"
+
+#: ../../source/involved/index.rst:95
+msgid "Sphinx settings (theme, extensions, paths)"
+msgstr "Настройки Sphinx (тема, расширения, пути)"
+
+#: ../../source/involved/index.rst:96
+msgid "``_static/``"
+msgstr "``_static/``"
+
+#: ../../source/involved/index.rst:96
+msgid "Images, CSS, JavaScript files"
+msgstr "Изображения, CSS, JavaScript файлы"
+
+#: ../../source/involved/index.rst:97
+msgid "``_build/``"
+msgstr "``_build/``"
+
+#: ../../source/involved/index.rst:97
+msgid "Generated HTML documentation (in .gitignore)"
+msgstr "Сгенерированная HTML-документация (в .gitignore)"
+
+#: ../../source/involved/index.rst:100
+msgid "The following pages contain detailed guides:"
+msgstr "Следующие страницы содержат подробные руководства:"
+
+#: ../../source/involved/index.rst:102
+msgid ":ref:`documentation_guide` — how to write and format documentation"
+msgstr ":ref:`documentation_guide` — как писать и оформлять документацию"
+
+#: ../../source/involved/index.rst:103
+msgid ":ref:`style_guide` — text and code style guidelines"
+msgstr ":ref:`style_guide` — правила оформления текста и кода"
+
+#: ../../source/involved/index.rst:104
+msgid ":ref:`review_process` — pull request review process"
+msgstr ":ref:`review_process` — процесс рецензирования pull request"
+
+#: ../../source/involved/index.rst:107
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+#: ../../source/involved/index.rst:109
+msgid ""
+"`Documentation Repository <https://github.com/thunder-engine/thunder-"
+"doc>`_"
+msgstr ""
+"`Репозиторий документации <https://github.com/thunder-engine/thunder-"
+"doc>`_"
+
+#: ../../source/involved/index.rst:110
+msgid "`Engine Repository <https://github.com/thunder-engine/thunder>`_"
+msgstr "`Репозиторий движка <https://github.com/thunder-engine/thunder>`_"

@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/armature.rst:4
+msgid "Armature"
+msgstr ""
+
+#: ../../source/reference/armature.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/armature.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/armature.rst:13
+msgid ""
+"An armature in Thunder Engine can be thought of as similar to the "
+"armature of a real skeleton, and just like a real skeleton. These bones "
+"can be moved around and anything that they are attached to or associated "
+"with will move and deform in a similar way. An armature uses the "
+"Transform component in a child object like a bone structure."
+msgstr ""
+
+#: ../../source/reference/armature.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/armature.rst:23
+msgid ":ref:`Pose<api_Pose>` *"
+msgstr ""
+
+#: ../../source/reference/armature.rst:23
+msgid ":ref:`bindPose<api_Armature_fc120379>` () const"
+msgstr ""
+
+#: ../../source/reference/armature.rst:25
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/armature.rst:25
+msgid ":ref:`setBindPose<api_Armature_6b3a187e>` (Pose * pose)"
+msgstr ""
+
+#: ../../source/reference/armature.rst:33
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/armature.rst:35
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/armature.rst:40
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/armature.rst:44
+msgid ":ref:`Pose<api_Pose>` * **Armature::bindPose** () const"
+msgstr ""
+
+#: ../../source/reference/armature.rst:46
+msgid "Returns a bind pose of the bone structure."
+msgstr ""
+
+#: ../../source/reference/armature.rst:48
+msgid "**See also** setBindPose()."
+msgstr ""
+
+#: ../../source/reference/armature.rst:54
+msgid "void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)"
+msgstr ""
+
+#: ../../source/reference/armature.rst:56
+msgid "Sets a bind (initial) *pose* of the bone structure."
+msgstr ""
+
+#: ../../source/reference/armature.rst:58
+msgid "**See also** bindPose()."
+msgstr ""
+

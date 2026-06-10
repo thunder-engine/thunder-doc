@@ -1,0 +1,859 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/object.rst:4
+msgid "Object"
+msgstr ""
+
+#: ../../source/reference/object.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/object.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/object.rst:13
+msgid ""
+"The object is the central part of the Next library. For communication "
+"between objects two mechanisms was implemented the signals and slots also"
+" event based approach. To connect two objects between use connect() "
+"method and the sender object will notify the receiver object about "
+"necessary events."
+msgstr ""
+
+#: ../../source/reference/object.rst:15
+msgid ""
+"Objects can be organized into an object trees. Each object can have an "
+"unlimited number of children objects. When you assign parent to an object"
+" it automatically add itself to the parent children list. Parent object "
+"takes ownership of the child object. This means that the child will be "
+"automatically deleted if the parent object is deleted. Child object can "
+"be found in hierarchy of objects by path or by the type using find(), "
+"findChild() or findChildren()."
+msgstr ""
+
+#: ../../source/reference/object.rst:17
+msgid ""
+"Each Object has name() and this name must be unique in space of object "
+"level in hierarchy i.e. parent with name \"House\" can't has two childs "
+"with name \"Roof\". This names is used to reach objects by its paths "
+"land.find(\"House/Roof\") will return \"Roof\" object."
+msgstr ""
+
+#: ../../source/reference/object.rst:19
+msgid ""
+"Each Object has MetaObject declaration. MetaObject system can be used to "
+"declare and retrieve structure of object at runtime."
+msgstr ""
+
+#: ../../source/reference/object.rst:21
+msgid "Based on Actor model the object can't be copied only clone()."
+msgstr ""
+
+#: ../../source/reference/object.rst:28
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/object.rst:31
+msgid ":ref:`Object<api_Object_92105c63>` ()"
+msgstr ""
+
+#: ../../source/reference/object.rst:33 ../../source/reference/object.rst:35
+#: ../../source/reference/object.rst:37 ../../source/reference/object.rst:43
+#: ../../source/reference/object.rst:49 ../../source/reference/object.rst:67
+#: ../../source/reference/object.rst:69 ../../source/reference/object.rst:71
+#: ../../source/reference/object.rst:73 ../../source/reference/object.rst:79
+#: ../../source/reference/object.rst:83 ../../source/reference/object.rst:91
+#: ../../source/reference/object.rst:93 ../../source/reference/object.rst:95
+#: ../../source/reference/object.rst:97 ../../source/reference/object.rst:99
+#: ../../source/reference/object.rst:118
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/object.rst:33
+msgid ""
+":ref:`addChild<api_Object_4298bec7>` (Object * child, int32_t  position ="
+" -1)"
+msgstr ""
+
+#: ../../source/reference/object.rst:35
+msgid ":ref:`blockSerialization<api_Object_7e219c04>` (bool  block)"
+msgstr ""
+
+#: ../../source/reference/object.rst:37
+msgid ":ref:`blockSignals<api_Object_d31c8960>` (bool  block)"
+msgstr ""
+
+#: ../../source/reference/object.rst:39 ../../source/reference/object.rst:53
+#: ../../source/reference/object.rst:77 ../../source/reference/object.rst:89
+msgid ":ref:`Object<api_Object>` *"
+msgstr ""
+
+#: ../../source/reference/object.rst:39
+msgid ":ref:`clone<api_Object_26a17c9b>` (Object * parent = nullptr)"
+msgstr ""
+
+#: ../../source/reference/object.rst:41 ../../source/reference/object.rst:105
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/object.rst:41
+msgid ":ref:`clonedFrom<api_Object_057a38d6>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:43
+msgid ":ref:`deleteLater<api_Object_df0983a6>` ()"
+msgstr ""
+
+#: ../../source/reference/object.rst:45 ../../source/reference/object.rst:75
+#: ../../source/reference/object.rst:103
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/object.rst:45
+msgid ":ref:`dynamicPropertyInfo<api_Object_c50a2d79>` (const char * property)"
+msgstr ""
+
+#: ../../source/reference/object.rst:47
+msgid "const StringList"
+msgstr ""
+
+#: ../../source/reference/object.rst:47
+msgid ":ref:`dynamicPropertyNames<api_Object_5afde32b>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:49
+msgid ""
+":ref:`emitSignal<api_Object_64bf85ae>` (const char * signal, const "
+"Variant & args = Variant())"
+msgstr ""
+
+#: ../../source/reference/object.rst:51 ../../source/reference/object.rst:63
+#: ../../source/reference/object.rst:65 ../../source/reference/object.rst:116
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/object.rst:51
+msgid ":ref:`event<api_Object_26a38097>` (Event * event)"
+msgstr ""
+
+#: ../../source/reference/object.rst:53
+msgid ":ref:`find<api_Object_72094c1b>` (const TString & path)"
+msgstr ""
+
+#: ../../source/reference/object.rst:55
+msgid "template <typename T> T"
+msgstr ""
+
+#: ../../source/reference/object.rst:55
+msgid ":ref:`findChild<api_Object_5a729edc>` (bool  recursive = true)"
+msgstr ""
+
+#: ../../source/reference/object.rst:57
+msgid "template <typename T> :ref:`std::list<T><api_std_list<T>>`"
+msgstr ""
+
+#: ../../source/reference/object.rst:57
+msgid ":ref:`findChildren<api_Object_f6a2d84e>` (bool  recursive = true)"
+msgstr ""
+
+#: ../../source/reference/object.rst:59
+msgid "const Object::ObjectList"
+msgstr ""
+
+#: ../../source/reference/object.rst:59
+msgid ":ref:`getChildren<api_Object_2b7fe014>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:61
+msgid "const :ref:`Object::LinkList<api_Object_LinkList>` &"
+msgstr ""
+
+#: ../../source/reference/object.rst:61
+msgid ":ref:`getReceivers<api_Object_69174de3>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:63
+msgid ":ref:`isSerializable<api_Object_8f19b742>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:65
+msgid ":ref:`isSignalsBlocked<api_Object_6e25b39f>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:67
+msgid ":ref:`loadData<api_Object_de29c076>` (const VariantList & data)"
+msgstr ""
+
+#: ../../source/reference/object.rst:69
+msgid ":ref:`loadObjectData<api_Object_78e5d92c>` (const VariantMap & data)"
+msgstr ""
+
+#: ../../source/reference/object.rst:71
+msgid ":ref:`loadUserData<api_Object_3caf871e>` (const VariantMap & data)"
+msgstr ""
+
+#: ../../source/reference/object.rst:73
+msgid ":ref:`methodCallEvent<api_Object_fe72a04d>` (MethodCallEvent * event)"
+msgstr ""
+
+#: ../../source/reference/object.rst:75
+msgid ":ref:`name<api_Object_42fc51ae>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:77
+msgid ":ref:`parent<api_Object_c1964de3>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:79
+msgid ":ref:`postEvent<api_Object_4f5e391b>` (Event * event)"
+msgstr ""
+
+#: ../../source/reference/object.rst:81
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/object.rst:81
+msgid ":ref:`property<api_Object_f24537c8>` (const char * name) const"
+msgstr ""
+
+#: ../../source/reference/object.rst:83
+msgid ":ref:`removeChild<api_Object_21976048>` (Object * child)"
+msgstr ""
+
+#: ../../source/reference/object.rst:85
+msgid "VariantList"
+msgstr ""
+
+#: ../../source/reference/object.rst:85
+msgid ":ref:`saveData<api_Object_8251f674>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:87
+msgid "VariantMap"
+msgstr ""
+
+#: ../../source/reference/object.rst:87
+msgid ":ref:`saveUserData<api_Object_c2489ebd>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:89
+msgid ":ref:`sender<api_Object_31259dab>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:91
+msgid ""
+":ref:`setDynamicPropertyInfo<api_Object_cab87f96>` (const char * "
+"property, const char * info)"
+msgstr ""
+
+#: ../../source/reference/object.rst:93
+msgid ":ref:`setName<api_Object_295b4c6f>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/object.rst:95
+msgid ""
+":ref:`setParent<api_Object_d6b02194>` (Object * parent, int32_t  position"
+" = -1, bool  force = false)"
+msgstr ""
+
+#: ../../source/reference/object.rst:97
+msgid ""
+":ref:`setProperty<api_Object_71fecba3>` (const char * name, const Variant"
+" & value)"
+msgstr ""
+
+#: ../../source/reference/object.rst:99
+msgid ":ref:`setType<api_Object_510723e9>` (const TString & type)"
+msgstr ""
+
+#: ../../source/reference/object.rst:101
+msgid ":ref:`ObjectSystem<api_ObjectSystem>` *"
+msgstr ""
+
+#: ../../source/reference/object.rst:101
+msgid ":ref:`system<api_Object_a78db34f>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:103
+msgid ":ref:`typeName<api_Object_5138cfeb>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:105
+msgid ":ref:`uuid<api_Object_93b82da5>` () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:113
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/object.rst:116
+msgid ""
+":ref:`connect<api_Object_c4391702>` (Object * sender, const char * "
+"signal, Object * receiver, const char * method)"
+msgstr ""
+
+#: ../../source/reference/object.rst:118
+msgid ""
+":ref:`disconnect<api_Object_a1e34205>` (Object * sender, const char * "
+"signal, Object * receiver, const char * method)"
+msgstr ""
+
+#: ../../source/reference/object.rst:124
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/object.rst:128
+msgid "**Object::Object** ()"
+msgstr ""
+
+#: ../../source/reference/object.rst:130
+msgid "Constructs an object."
+msgstr ""
+
+#: ../../source/reference/object.rst:132
+msgid ""
+"By default Object create without parent to assign the parent object use "
+"setParent()."
+msgstr ""
+
+#: ../../source/reference/object.rst:138
+msgid ""
+"void **Object::addChild** (:ref:`Object<api_Object>` * *child*, int32_t  "
+"*position* = -1)"
+msgstr ""
+
+#: ../../source/reference/object.rst:140
+msgid ""
+"Pushes a *child* object to the internal list of children at given "
+"position."
+msgstr ""
+
+#: ../../source/reference/object.rst:146
+msgid "void **Object::blockSerialization** (bool  *block*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:148
+msgid ""
+"If *block* is true, the object will be serialized. This flag will be "
+"applied to all children in hierarchy."
+msgstr ""
+
+#: ../../source/reference/object.rst:154
+msgid "void **Object::blockSignals** (bool  *block*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:156
+msgid ""
+"If *block* is true, signals emitted by this object will be discarded "
+"(i.e., emitting a signal will not invoke anything connected to it)."
+msgstr ""
+
+#: ../../source/reference/object.rst:162
+msgid ""
+":ref:`Object<api_Object>` * **Object::clone** (:ref:`Object<api_Object>` "
+"* *parent* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/object.rst:164
+msgid "Clones this object. Returns pointer to clone object."
+msgstr ""
+
+#: ../../source/reference/object.rst:166
+msgid ""
+"When you clone the Object or subclasses of it, all child objects also "
+"will be cloned. By default the *parent* for the new object will be "
+"nullptr. This clone will not have the unique name so you will need to set"
+" it manualy if required."
+msgstr ""
+
+#: ../../source/reference/object.rst:169
+msgid ""
+"Warning: Connections will NOT be transferred and the developer must "
+"create them manually."
+msgstr ""
+
+#: ../../source/reference/object.rst:172 ../../source/reference/object.rst:270
+#: ../../source/reference/object.rst:304
+msgid "**See also** connect()."
+msgstr ""
+
+#: ../../source/reference/object.rst:178
+msgid "uint32_t **Object::clonedFrom** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:180
+msgid "Returns the UUID of cloned object."
+msgstr ""
+
+#: ../../source/reference/object.rst:186
+msgid ""
+"bool **Object::connect** (:ref:`Object<api_Object>` * *sender*, char * "
+"*signal*, :ref:`Object<api_Object>` * *receiver*, char * *method*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:188
+msgid ""
+"Creates connection beteen the *signal* of the *sender* and the *method* "
+"of the receiver. Returns true if successful; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/object.rst:190
+msgid ""
+"You must use the _SIGNAL() and _SLOT() macros when specifying *signal* "
+"and the method."
+msgstr ""
+
+#: ../../source/reference/object.rst:193
+msgid ""
+"**Note:** The _SIGNAL() and _SLOT() must not contain any parameter values"
+" only parameter types."
+msgstr ""
+
+#: ../../source/reference/object.rst:220
+msgid ""
+"**Note:** Mehod *signal* in MyObject class may not have the "
+"implementation. It used only in description purposes in A_SIGNAL(signal) "
+"macros."
+msgstr ""
+
+#: ../../source/reference/object.rst:223
+msgid "Signal can also be conected to another signal."
+msgstr ""
+
+#: ../../source/reference/object.rst:236
+msgid "void **Object::deleteLater** ()"
+msgstr ""
+
+#: ../../source/reference/object.rst:238
+msgid ""
+"Marks this object to be deleted. This object will be deleted when event "
+"loop will call processEvents() method for this object."
+msgstr ""
+
+#: ../../source/reference/object.rst:244
+msgid ""
+"void **Object::disconnect** (:ref:`Object<api_Object>` * *sender*, char *"
+" *signal*, :ref:`Object<api_Object>` * *receiver*, char * *method*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:246
+msgid "Disconnects *signal* in object *sender* from *method* in object receiver."
+msgstr ""
+
+#: ../../source/reference/object.rst:248
+msgid "A connection is removed when either of the objects are destroyed."
+msgstr ""
+
+#: ../../source/reference/object.rst:250
+msgid "disconnect() can be used in three ways:"
+msgstr ""
+
+#: ../../source/reference/object.rst:252
+msgid "Disconnect everything from a specific sender..."
+msgstr ""
+
+#: ../../source/reference/object.rst:258
+msgid "Disconnect everything connected to a specific signal..."
+msgstr ""
+
+#: ../../source/reference/object.rst:264
+msgid "Disconnect all connections from the receiver..."
+msgstr ""
+
+#: ../../source/reference/object.rst:276
+msgid ""
+":ref:`TString<api_TString>`  **Object::dynamicPropertyInfo** (char * "
+"*property*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:278
+msgid "Returns an additional information for the dynamic property."
+msgstr ""
+
+#: ../../source/reference/object.rst:280
+msgid "**See also** setDynamicPropertyInfo()."
+msgstr ""
+
+#: ../../source/reference/object.rst:286
+msgid "const StringList **Object::dynamicPropertyNames** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:288
+msgid ""
+"Returns the names of all properties that were dynamically added to the "
+"object using setProperty()"
+msgstr ""
+
+#: ../../source/reference/object.rst:294
+msgid ""
+"void **Object::emitSignal** (char * *signal*, :ref:`Variant<api_Variant>`"
+" & *args* = Variant())"
+msgstr ""
+
+#: ../../source/reference/object.rst:296
+msgid "Send specific *signal* with *args* for all connected receivers."
+msgstr ""
+
+#: ../../source/reference/object.rst:298
+msgid ""
+"For now it places *signal* directly to receivers queues. In case of "
+"another *signal* connected as method this *signal* will be emitted "
+"immediately."
+msgstr ""
+
+#: ../../source/reference/object.rst:301
+msgid "**Note:** Receiver should be in event loop to process incoming message."
+msgstr ""
+
+#: ../../source/reference/object.rst:310
+msgid "bool **Object::event** (:ref:`Event<api_Event>` * *event*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:312
+msgid ""
+"Abstract *event* handler. Developers should reimplement this method to "
+"handle events manually. Returns true in case of *event* was handled "
+"otherwise return false."
+msgstr ""
+
+#: ../../source/reference/object.rst:318
+msgid ""
+":ref:`Object<api_Object>` * **Object::find** (:ref:`TString<api_TString>`"
+" & *path*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:320
+msgid "Returns an object located along the path."
+msgstr ""
+
+#: ../../source/reference/object.rst:334 ../../source/reference/object.rst:346
+msgid "Returns nullptr if no such object."
+msgstr ""
+
+#: ../../source/reference/object.rst:336
+msgid "**See also** findChild()."
+msgstr ""
+
+#: ../../source/reference/object.rst:342
+msgid "template <typename T> T **Object::findChild** (bool  *recursive* = true)"
+msgstr ""
+
+#: ../../source/reference/object.rst:344
+msgid ""
+"Returns the first child of this object that can be cast to type T. The "
+"search is performed recursively, unless *recursive* option is false."
+msgstr ""
+
+#: ../../source/reference/object.rst:348 ../../source/reference/object.rst:360
+msgid "**See also** find() and findChildren()."
+msgstr ""
+
+#: ../../source/reference/object.rst:354
+msgid ""
+"template <typename T> :ref:`std::list<T><api_std::list<T>>`  "
+"**Object::findChildren** (bool  *recursive* = true)"
+msgstr ""
+
+#: ../../source/reference/object.rst:356
+msgid ""
+"Returns all children of this object that can be cast to type T. The "
+"search is performed recursively, unless *recursive* option is false."
+msgstr ""
+
+#: ../../source/reference/object.rst:358
+msgid "Returns empty list if no such objects."
+msgstr ""
+
+#: ../../source/reference/object.rst:366
+msgid "const Object::ObjectList **Object::getChildren** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:368
+msgid "Returns list of child objects for this object."
+msgstr ""
+
+#: ../../source/reference/object.rst:374
+msgid ""
+"const :ref:`Object::LinkList<api_Object::LinkList>` & "
+"**Object::getReceivers** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:376
+msgid "Returns list of links to receivers objects for this object."
+msgstr ""
+
+#: ../../source/reference/object.rst:382
+msgid "bool **Object::isSerializable** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:384
+msgid "Returns true if the object can be serialized; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/object.rst:390
+msgid "bool **Object::isSignalsBlocked** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:392
+msgid "Returns true if emission of signals is blocked; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/object.rst:398
+msgid "void **Object::loadData** (VariantList & *data*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:400
+msgid ""
+"This method allows to DESERIALIZE *data* of object like properties, "
+"connections and user data."
+msgstr ""
+
+#: ../../source/reference/object.rst:406
+msgid "void **Object::loadObjectData** (VariantMap & *data*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:408
+msgid ""
+"This method allows to DESERIALIZE data. It can be used to DESERIALIZE "
+"some specific *data* like prefabs."
+msgstr ""
+
+#: ../../source/reference/object.rst:414
+msgid "void **Object::loadUserData** (VariantMap & *data*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:416
+msgid ""
+"This method allows to DESERIALIZE *data* which not present as "
+"A_PROPERTY() in object."
+msgstr ""
+
+#: ../../source/reference/object.rst:422
+msgid ""
+"void **Object::methodCallEvent** "
+"(:ref:`MethodCallEvent<api_MethodCallEvent>` * *event*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:424
+msgid ""
+"Method call *event* handler. Can be reimplemented to support different "
+"logic."
+msgstr ""
+
+#: ../../source/reference/object.rst:430
+msgid ":ref:`TString<api_TString>`  **Object::name** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:432
+msgid "Returns name of the object."
+msgstr ""
+
+#: ../../source/reference/object.rst:434
+msgid "**See also** setName()."
+msgstr ""
+
+#: ../../source/reference/object.rst:440
+msgid ":ref:`Object<api_Object>` * **Object::parent** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:442
+msgid "Returns a pointer to the parent object."
+msgstr ""
+
+#: ../../source/reference/object.rst:444
+msgid "**See also** setParent()."
+msgstr ""
+
+#: ../../source/reference/object.rst:450
+msgid "void **Object::postEvent** (:ref:`Event<api_Event>` * *event*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:452
+msgid "Place *event* to internal *event* queue to be processed in *event* loop."
+msgstr ""
+
+#: ../../source/reference/object.rst:458
+msgid ":ref:`Variant<api_Variant>`  **Object::property** (char * *name*) const"
+msgstr ""
+
+#: ../../source/reference/object.rst:460
+msgid "Returns the value of the object's property by name."
+msgstr ""
+
+#: ../../source/reference/object.rst:462
+msgid ""
+"If property not found returns invalid Variant. Information of all "
+"properties which provided by this object can be found in MetaObject."
+msgstr ""
+
+#: ../../source/reference/object.rst:464
+msgid "**See also** setProperty() and Variant::isValid()."
+msgstr ""
+
+#: ../../source/reference/object.rst:470
+msgid "void **Object::removeChild** (:ref:`Object<api_Object>` * *child*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:472
+msgid "Removes a *child* object from the internal list of children."
+msgstr ""
+
+#: ../../source/reference/object.rst:478
+msgid "VariantList **Object::saveData** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:480
+msgid ""
+"This method allows to SERIALIZE all object data like properties "
+"connections and user data. Returns serialized data as VariantList."
+msgstr ""
+
+#: ../../source/reference/object.rst:486
+msgid "VariantMap **Object::saveUserData** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:488
+msgid ""
+"This method allows to SERIALIZE data which not present as A_PROPERTY() in"
+" object. Returns serialized data as VariantMap."
+msgstr ""
+
+#: ../../source/reference/object.rst:494
+msgid ":ref:`Object<api_Object>` * **Object::sender** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:496
+msgid "Returns object which sent signal."
+msgstr ""
+
+#: ../../source/reference/object.rst:499
+msgid ""
+"**Note:** This method returns a valid object only in receiver slot "
+"otherwise it's return nullptr"
+msgstr ""
+
+#: ../../source/reference/object.rst:506
+msgid "void **Object::setDynamicPropertyInfo** (char * *property*, char * *info*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:508
+msgid "Adds additional *info* for the dynamic property."
+msgstr ""
+
+#: ../../source/reference/object.rst:510
+msgid "Can be used to store meta information mostly used for the editor."
+msgstr ""
+
+#: ../../source/reference/object.rst:512
+msgid "**See also** dynamicPropertyInfo()."
+msgstr ""
+
+#: ../../source/reference/object.rst:518
+msgid "void **Object::setName** (:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:520
+msgid "Set object *name* by provided name."
+msgstr ""
+
+#: ../../source/reference/object.rst:522
+msgid "**See also** name()."
+msgstr ""
+
+#: ../../source/reference/object.rst:528
+msgid ""
+"void **Object::setParent** (:ref:`Object<api_Object>` * *parent*, int32_t"
+"  *position* = -1, bool  *force* = false)"
+msgstr ""
+
+#: ../../source/reference/object.rst:530
+msgid "Makes the object a child of *parent* at given position."
+msgstr ""
+
+#: ../../source/reference/object.rst:533
+msgid ""
+"**Note:** Please ignore the *force* flag it will be provided by the "
+"default."
+msgstr ""
+
+#: ../../source/reference/object.rst:536
+msgid "**See also** parent()."
+msgstr ""
+
+#: ../../source/reference/object.rst:542
+msgid ""
+"void **Object::setProperty** (char * *name*, :ref:`Variant<api_Variant>` "
+"& *value*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:544
+msgid "Sets the property with *name* to value."
+msgstr ""
+
+#: ../../source/reference/object.rst:546
+msgid ""
+"If property not found the object adds dynamic property. Property must be "
+"defined as A_PROPERTY(). Information of all properties which provided by "
+"this object can be found in MetaObject. An invalid *value* will bring to "
+"deletion of dynamic property."
+msgstr ""
+
+#: ../../source/reference/object.rst:548
+msgid "**See also** property(), Variant::isValid(), and dynamicPropertyNames()."
+msgstr ""
+
+#: ../../source/reference/object.rst:554
+msgid "void **Object::setType** (:ref:`TString<api_TString>` & *type*)"
+msgstr ""
+
+#: ../../source/reference/object.rst:556
+msgid "Specify an additional *type* for the object."
+msgstr ""
+
+#: ../../source/reference/object.rst:559
+msgid "**Note:** Most of the time this method does nothing."
+msgstr ""
+
+#: ../../source/reference/object.rst:566
+msgid ":ref:`ObjectSystem<api_ObjectSystem>` * **Object::system** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:568
+msgid "Returns System which handles this object."
+msgstr ""
+
+#: ../../source/reference/object.rst:574
+msgid ":ref:`TString<api_TString>`  **Object::typeName** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:576
+msgid "Returns class name the object."
+msgstr ""
+
+#: ../../source/reference/object.rst:582
+msgid "uint32_t **Object::uuid** () const"
+msgstr ""
+
+#: ../../source/reference/object.rst:584
+msgid "Returns unique ID of the object."
+msgstr ""
+

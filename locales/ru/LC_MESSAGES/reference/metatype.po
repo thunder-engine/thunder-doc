@@ -1,0 +1,532 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/metatype.rst:4
+msgid "MetaType"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:13
+msgid ""
+"This class is designed for retrieving of runtime type information with "
+"additional functionality."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:15
+msgid ""
+"Some of registered types can be automatically converted to different "
+"types with MetaType::convert functunction. The following conversions are "
+"predefined:"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:18
+msgid "TypeConvert to"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:19
+msgid ""
+"MetaType::BOOLEANMetaType::INTEGER, MetaType::FLOAT, MetaType::STRING "
+"MetaType::INTEGERMetaType::BOOLEAN, MetaType::FLOAT, MetaType::STRING, "
+"MetaType::VECTOR2, MetaType::VECTOR3, MetaType::VECTOR4 "
+"MetaType::FLOATMetaType::BOOLEAN, MetaType::INTEGER, MetaType::STRING, "
+"MetaType::VECTOR2, MetaType::VECTOR3, MetaType::VECTOR4 "
+"MetaType::STRINGMetaType::BOOLEAN, MetaType::INTEGER, MetaType::FLOAT "
+"MetaType::VARIANTMAP MetaType::VARIANTLISTMetaType::VECTOR2, "
+"MetaType::VECTOR3, MetaType::VECTOR4, MetaType::MATRIX3, "
+"MetaType::MATRIX4, MetaType::QUATERNION "
+"MetaType::VECTOR2MetaType::VARIANTLIST, MetaType::VECTOR3, "
+"MetaType::VECTOR4 MetaType::VECTOR3MetaType::VARIANTLIST, "
+"MetaType::VECTOR4 MetaType::VECTOR4MetaType::VARIANTLIST "
+"MetaType::QUATERNIONMetaType::VARIANTLIST "
+"MetaType::MATRIX3MetaType::VARIANTLIST "
+"MetaType::MATRIX4MetaType::VARIANTLIST"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:33
+msgid ""
+"To convert values to other types developer should define own conversion "
+"type function using MetaType::registerConverter() function"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:40
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:43
+msgid ":ref:`MetaType<api_MetaType_c3f8d7a4>` (const MetaType::Table * table)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:45
+#: ../../source/reference/metatype.rst:57
+#: ../../source/reference/metatype.rst:72
+#: ../../source/reference/metatype.rst:76
+#: ../../source/reference/metatype.rst:84
+#: ../../source/reference/metatype.rst:88
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:45
+msgid ""
+":ref:`compare<api_MetaType_a3cd0b6f>` (const void * left, const void * "
+"right) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:47
+#: ../../source/reference/metatype.rst:49
+#: ../../source/reference/metatype.rst:51
+#: ../../source/reference/metatype.rst:53
+#: ../../source/reference/metatype.rst:74
+#: ../../source/reference/metatype.rst:78
+#: ../../source/reference/metatype.rst:80
+#: ../../source/reference/metatype.rst:82
+#: ../../source/reference/metatype.rst:102
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:47
+msgid ""
+":ref:`construct<api_MetaType_7cb6f152>` (void * where, const void * copy "
+"= nullptr) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:49
+msgid ":ref:`create<api_MetaType_531d7b6c>` (const void * copy = nullptr) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:51
+msgid ":ref:`destroy<api_MetaType_689f375e>` (void * data) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:53
+msgid ":ref:`destruct<api_MetaType_4920b367>` (void * data) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:55
+#: ../../source/reference/metatype.rst:61
+#: ../../source/reference/metatype.rst:92
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:55
+msgid ":ref:`flags<api_MetaType_c60258a1>` () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:57
+msgid ":ref:`isValid<api_MetaType_2a7e4190>` () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:59
+#: ../../source/reference/metatype.rst:86
+msgid "const char"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:59
+msgid ":ref:`name<api_MetaType_6e892347>` () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:61
+msgid ":ref:`size<api_MetaType_ae573102>` () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:69
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:72
+msgid ""
+":ref:`compare<api_MetaType_1f0ed5c7>` (const void * left, const void * "
+"right, uint32_t  type)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:74
+msgid ""
+":ref:`construct<api_MetaType_c07d96ab>` (uint32_t  type, void * where, "
+"const void * copy = nullptr)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:76
+msgid ""
+":ref:`convert<api_MetaType_b0438adc>` (const void * from, uint32_t  "
+"fromType, void * to, uint32_t  toType)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:78
+msgid ""
+":ref:`create<api_MetaType_c9318467>` (uint32_t  type, const void * copy ="
+" nullptr)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:80
+msgid ":ref:`destroy<api_MetaType_f6748bac>` (uint32_t  type, void * data)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:82
+msgid ":ref:`destruct<api_MetaType_bdc20a85>` (uint32_t  type, void * data)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:84
+msgid ":ref:`hasConverter<api_MetaType_f74baecd>` (uint32_t  from, uint32_t  to)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:86
+msgid ":ref:`name<api_MetaType_1bed8253>` (uint32_t  type)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:88
+msgid ""
+":ref:`registerConverter<api_MetaType_db318c0f>` (uint32_t  from, uint32_t"
+"  to, MetaType::converterCallback  function)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:90
+#: ../../source/reference/metatype.rst:96
+#: ../../source/reference/metatype.rst:98
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:90
+msgid ":ref:`registerType<api_MetaType_0b4675fe>` (MetaType::Table & table)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:92
+msgid ":ref:`size<api_MetaType_7a12be85>` (uint32_t  type)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:94
+msgid ":ref:`MetaType::Table<api_MetaType_Table>` *"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:94
+msgid ":ref:`table<api_MetaType_67f25a04>` (uint32_t  type)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:96
+msgid ":ref:`type<api_MetaType_d5c3148e>` (const char * name)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:98
+msgid ":ref:`type<api_MetaType_51036748>` (const type_info & type)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:100
+msgid ":ref:`MetaType::TypeMap<api_MetaType_TypeMap>`"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:100
+msgid ":ref:`types<api_MetaType_01e9f6ab>` ()"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:102
+msgid ":ref:`unregisterType<api_MetaType_bcfe7926>` (MetaType::Table & table)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:108
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:112
+msgid ""
+"**MetaType::MetaType** (:ref:`MetaType::Table<api_MetaType_Table>` * "
+"*table*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:114
+msgid ""
+"Constructs MetaType object which will contain information provided in a "
+"table."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:120
+msgid "bool **MetaType::compare** (void * *left*, void * *right*) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:122
+msgid ""
+"Returns true in case of *left* value is equal to *right* value; otherwise"
+" returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:128
+msgid ""
+"bool **MetaType::compare** (void * *left*, void * *right*, uint32_t  "
+"*type*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:130
+msgid ""
+"Returns true in case of *left* value is equal to *right* value with type;"
+" otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:136
+msgid ""
+"void **MetaType::construct** (void * *where*, void * *copy* = nullptr) "
+"const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:138
+msgid ""
+"Constructs a value of the given type, which represented by current "
+"MetaType object in the existing memory addressed by where, that is a "
+"*copy* of copy, and returns where. If *copy* is zero, the value is "
+"default constructed."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:144
+msgid ""
+"void **MetaType::construct** (uint32_t  *type*, void * *where*, void * "
+"*copy* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:146
+msgid ""
+"Constructs a value of the given *type* in the existing memory addressed "
+"by where, that is a *copy* of copy, and returns where. If *copy* is zero,"
+" the value is default constructed."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:152
+msgid ""
+"bool **MetaType::convert** (void * *from*, uint32_t  *fromType*, void * "
+"*to*, uint32_t  *toType*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:154
+msgid ""
+"Tries *to* convert value *from* with type *fromType* *to* type *toType* "
+"and place the result *to* output value to. Returns true if conversion "
+"succeed; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:156
+#: ../../source/reference/metatype.rst:254
+msgid "**See also** hasConverter()."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:162
+msgid "void **MetaType::create** (void * *copy* = nullptr) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:164
+msgid ""
+"Returns a *copy* of *copy* value, with type, which represented by current"
+" MetaType object. If *copy* is null, creates a default constructed "
+"instance."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:170
+msgid "void **MetaType::create** (uint32_t  *type*, void * *copy* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:172
+msgid ""
+"Returns a *copy* of *copy* value, with type. If *copy* is null, creates a"
+" default constructed instance."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:178
+msgid "void **MetaType::destroy** (void * *data*) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:180
+msgid ""
+"Destroys the value with type, which represented by current MetaType "
+"object, located at data. This function calls delete operator."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:186
+msgid "void **MetaType::destroy** (uint32_t  *type*, void * *data*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:188
+msgid ""
+"Destroys the value with type, located at data. This function calls delete"
+" operator."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:194
+msgid "void **MetaType::destruct** (void * *data*) const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:196
+msgid ""
+"Destructs the value with type, which represented by current MetaType "
+"object, located at data. Unlike destroy(), this function only invokes the"
+" type's destructor, it doesn't invoke the delete operator."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:202
+msgid "void **MetaType::destruct** (uint32_t  *type*, void * *data*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:204
+msgid ""
+"Destructs the value with type, located at data. Unlike destroy(), this "
+"function only invokes the type's destructor, it doesn't invoke the delete"
+" operator."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:210
+msgid "int **MetaType::flags** () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:212
+msgid "Returns flags for the type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:218
+msgid "bool **MetaType::hasConverter** (uint32_t  *from*, uint32_t  *to*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:220
+msgid ""
+"Returns true in case of type *from* can be converted *to* type to; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:226
+msgid "bool **MetaType::isValid** () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:228
+msgid ""
+"Returns true in case of this MetaType object contain valid information; "
+"otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:234
+msgid "const char **MetaType::name** () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:236
+msgid "Returns the name of type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:242
+msgid "const char **MetaType::name** (uint32_t  *type*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:244
+msgid ""
+"Returns a name of *type* with *type* ID. Returns nullptr for unregistered"
+" type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:250
+msgid ""
+"bool **MetaType::registerConverter** (uint32_t  *from*, uint32_t  *to*, "
+":ref:`MetaType::converterCallback<api_MetaType_converterCallback>`  "
+"*function*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:252
+msgid ""
+"Registers the possibility *to* convert value type *from* *to* type *to* "
+"with conversion function. Returns true in case of converter successfully "
+"registered; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:260
+msgid ""
+"uint32_t **MetaType::registerType** "
+"(:ref:`MetaType::Table<api_MetaType_Table>` & *table*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:262
+msgid ""
+"Registers type by type MetaType::Table table. Use registerMetaType() "
+"instead this function. Returns an ID of registered type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:268
+msgid "int **MetaType::size** () const"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:270
+msgid "Returns the size of type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:276
+msgid "int **MetaType::size** (uint32_t  *type*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:278
+msgid "Returns a size of *type* with *type* ID. Returns 0 for unregistered type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:284
+msgid ""
+":ref:`MetaType::Table<api_MetaType::Table>` * **MetaType::table** "
+"(uint32_t  *type*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:286
+msgid ""
+"Returns *type* information table if *type* registered; otherwise returns "
+"nullptr."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:292
+msgid "uint32_t **MetaType::type** (char * *name*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:294
+msgid ""
+"Returns an ID of type with type name. Returns MetaType::INVALID for "
+"unregistered type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:300
+msgid "uint32_t **MetaType::type** (:ref:`type_info<api_type_info>` & *type*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:302
+msgid ""
+"Returns an ID of *type* with *type* info. Returns MetaType::INVALID for "
+"unregistered type."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:308
+msgid ":ref:`MetaType::TypeMap<api_MetaType::TypeMap>`  **MetaType::types** ()"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:310
+msgid "Returns a table of registered types."
+msgstr ""
+
+#: ../../source/reference/metatype.rst:316
+msgid ""
+"void **MetaType::unregisterType** "
+"(:ref:`MetaType::Table<api_MetaType_Table>` & *table*)"
+msgstr ""
+
+#: ../../source/reference/metatype.rst:318
+msgid ""
+"Unregisters type by type MetaType::Table table. Use unregisterMetaType() "
+"instead this function."
+msgstr ""
+

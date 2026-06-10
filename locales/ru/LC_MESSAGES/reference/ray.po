@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/ray.rst:4
+msgid "Ray"
+msgstr ""
+
+#: ../../source/reference/ray.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/ray.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/ray.rst:13
+msgid ""
+"Ray is an infinity line starting from position pos and going to some "
+"direction"
+msgstr ""
+
+#: ../../source/reference/ray.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/ray.rst:23
+msgid ":ref:`Ray<api_Ray_1c928d45>` ()"
+msgstr ""
+
+#: ../../source/reference/ray.rst:25
+msgid ""
+":ref:`Ray<api_Ray_4865e92a>` (const Vector3 & position, const Vector3 & "
+"direction)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:27 ../../source/reference/ray.rst:37
+#: ../../source/reference/ray.rst:39
+msgid ":ref:`Ray<api_Ray>`"
+msgstr ""
+
+#: ../../source/reference/ray.rst:27
+msgid ""
+":ref:`diffuse<api_Ray_d01e7839>` (const Vector3 & normal, const Vector3 &"
+" point, areal  min, areal  max)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:29 ../../source/reference/ray.rst:31
+#: ../../source/reference/ray.rst:33 ../../source/reference/ray.rst:35
+#: ../../source/reference/ray.rst:41 ../../source/reference/ray.rst:45
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/ray.rst:29
+msgid ":ref:`intersect<api_Ray_7d18652f>` (const AABBox & box, Ray::Hit * hit)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:31
+msgid ""
+":ref:`intersect<api_Ray_18a53e46>` (const Plane & plane, Ray::Hit * hit, "
+"bool  back = false)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:33
+msgid ""
+":ref:`intersect<api_Ray_3db250f4>` (const Vector3 & position, areal  "
+"radius, Ray::Hit * hit)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:35
+msgid ""
+":ref:`intersect<api_Ray_bcd58961>` (const Vector3 & v1, const Vector3 & "
+"v2, const Vector3 & v3, Ray::Hit * hit, bool  back = false)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:37
+msgid ""
+":ref:`reflect<api_Ray_c607d9b8>` (const Vector3 & normal, const Vector3 &"
+" point)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:39
+msgid ""
+":ref:`refract<api_Ray_7d9f4bc6>` (const Vector3 & normal, const Vector3 &"
+" point, areal  ior)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:41
+msgid ":ref:`operator!=<api_Ray_ec2134fa>` (const Ray & ray) const"
+msgstr ""
+
+#: ../../source/reference/ray.rst:43
+msgid ":ref:`Ray<api_Ray>` &"
+msgstr ""
+
+#: ../../source/reference/ray.rst:43
+msgid ":ref:`operator=<api_Ray_40f15239>` (const Ray & value)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:45
+msgid ":ref:`operator==<api_Ray_5eb91d68>` (const Ray & ray) const"
+msgstr ""
+
+#: ../../source/reference/ray.rst:53
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/ray.rst:55
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/ray.rst:60
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/ray.rst:64
+msgid "**Ray::Ray** ()"
+msgstr ""
+
+#: ../../source/reference/ray.rst:66
+msgid "Constructs an identity ray. pos at [0, 0, 0] and dir to [0, 0, 1]"
+msgstr ""
+
+#: ../../source/reference/ray.rst:72
+msgid ""
+"**Ray::Ray** (:ref:`Vector3<api_Vector3>` & *position*, "
+":ref:`Vector3<api_Vector3>` & *direction*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:74
+msgid "Constructs a ray with *position* and direction."
+msgstr ""
+
+#: ../../source/reference/ray.rst:80
+msgid ""
+":ref:`Ray<api_Ray>`  **Ray::diffuse** (:ref:`Vector3<api_Vector3>` & "
+"*normal*, :ref:`Vector3<api_Vector3>` & *point*, areal  *min*, areal  "
+"*max*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:82
+msgid ""
+"Returns a new Ray object which result of random directed reflection of "
+"current ray. Diffuse reflection calculating by *normal* vector of "
+"reflection surface and intersection point. With *min* and *max* "
+"constraints."
+msgstr ""
+
+#: ../../source/reference/ray.rst:88
+msgid ""
+"bool **Ray::intersect** (:ref:`AABBox<api_AABBox>` & *box*, "
+":ref:`Ray::Hit<api_Ray_Hit>` * *hit*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:90
+msgid ""
+"Returns true if this ray intersects the given Axis Aligned Bounding box; "
+"otherwise returns false. Output argument *hit* contain a *hit* data."
+msgstr ""
+
+#: ../../source/reference/ray.rst:96
+msgid ""
+"bool **Ray::intersect** (:ref:`Plane<api_Plane>` & *plane*, "
+":ref:`Ray::Hit<api_Ray_Hit>` * *hit*, bool  *back* = false)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:98
+msgid ""
+"Returns true if this ray intersects the given plane; otherwise returns "
+"false. Output argument *hit* contain a *hit* data. Argument *back* is a "
+"flag to ignore backface culling."
+msgstr ""
+
+#: ../../source/reference/ray.rst:104
+msgid ""
+"bool **Ray::intersect** (:ref:`Vector3<api_Vector3>` & *position*, areal"
+"  *radius*, :ref:`Ray::Hit<api_Ray_Hit>` * *hit*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:106
+msgid ""
+"Returns true if this ray intersects the given sphere at *position* and "
+"radius; otherwise returns false. Output argument *hit* contain a *hit* "
+"data."
+msgstr ""
+
+#: ../../source/reference/ray.rst:112
+msgid ""
+"bool **Ray::intersect** (:ref:`Vector3<api_Vector3>` & *v1*, "
+":ref:`Vector3<api_Vector3>` & *v2*, :ref:`Vector3<api_Vector3>` & *v3*, "
+":ref:`Ray::Hit<api_Ray_Hit>` * *hit*, bool  *back* = false)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:114
+msgid ""
+"Returns true if this ray intersects the given triangle between v1, *v2* "
+"and *v3* points; otherwise returns false. Output argument *hit* contain a"
+" *hit* data. Argument *back* is a flag to use backface culling."
+msgstr ""
+
+#: ../../source/reference/ray.rst:120
+msgid ""
+":ref:`Ray<api_Ray>`  **Ray::reflect** (:ref:`Vector3<api_Vector3>` & "
+"*normal*, :ref:`Vector3<api_Vector3>` & *point*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:122
+msgid ""
+"Returns a new Ray object which result of reflection of current ray. "
+"Reflection calculating by *normal* vector of reflection surface and "
+"intersection point."
+msgstr ""
+
+#: ../../source/reference/ray.rst:128
+msgid ""
+":ref:`Ray<api_Ray>`  **Ray::refract** (:ref:`Vector3<api_Vector3>` & "
+"*normal*, :ref:`Vector3<api_Vector3>` & *point*, areal  *ior*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:130
+msgid ""
+"Returns a new Ray object which result of refraction of current ray. "
+"Refraction calculating by *normal* vector of reflection surface and "
+"intersection *point* with *ior* (Index of Refraction)."
+msgstr ""
+
+#: ../../source/reference/ray.rst:136
+msgid "bool **Ray::operator!=** (:ref:`Ray<api_Ray>` & *ray*) const"
+msgstr ""
+
+#: ../../source/reference/ray.rst:138
+msgid ""
+"Returns true if this *ray* is NOT equal to given ray; otherwise returns "
+"false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/ray.rst:144
+msgid ":ref:`Ray<api_Ray>` & **Ray::operator=** (:ref:`Ray<api_Ray>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/ray.rst:146
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/ray.rst:152
+msgid "bool **Ray::operator==** (:ref:`Ray<api_Ray>` & *ray*) const"
+msgstr ""
+
+#: ../../source/reference/ray.rst:154
+msgid ""
+"Returns true if this *ray* is equal to given ray; otherwise returns "
+"false. This operator uses an exact floating-point comparison."
+msgstr ""
+

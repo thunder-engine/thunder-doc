@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/audio/resources/audioclip.rst:4
+msgid "AudioClip"
+msgstr "AudioClip"
+
+#: 217source/audio/resources/audioclip.rst:6
+msgid ""
+"**AudioClip** is a resource that represents audio data that can be played"
+" in the game. It serves as a container for imported audio files and "
+"provides an interface for playback management."
+msgstr ""
+"**AudioClip** — это ресурс, представляющий аудиоданные, которые могут "
+"воспроизводиться в игре. Он служит контейнером для импортированных "
+"аудиофайлов и предоставляет интерфейс для управления воспроизведением."
+
+#: ../../source/audio/resources/audioclip.rst:9
+msgid "Overview"
+msgstr "Обзор"
+
+#: ../../source/audio/resources/audioclip.rst:11
+msgid ""
+"AudioClip is the fundamental building block of Thunder Engine's audio "
+"system. When an audio file is imported, an AudioClip resource is created,"
+" which can then be used by ``AudioSource`` components for 3D spatial "
+"playback or directly through the audio mixer."
+msgstr ""
+"AudioClip является основным строительным блоком аудиосистемы Thunder Engine. "
+"При импорте аудиофайла создаётся ресурс AudioClip, который затем может "
+"использоваться компонентами ``AudioSource`` для 3D-пространственного "
+"воспроизведения или напрямую через аудиомикшер."
+
+#: ../../source/audio/resources/audioclip.rst:14
+msgid ""
+"AudioClip itself does not play sound. It only stores data and settings. "
+"For playback, use the :ref:`AudioSource` component."
+msgstr ""
+"AudioClip сам по себе не воспроизводит звук. Он только хранит данные и настройки. "
+"Для воспроизведения используйте компонент :ref:`AudioSource`."
+
+#: ../../source/audio/resources/audioclip.rst:17
+msgid "Supported Formats"
+msgstr "Поддерживаемые форматы"
+
+#: ../../source/audio/resources/audioclip.rst:19
+msgid "Thunder Engine supports the following audio formats:"
+msgstr "Thunder Engine поддерживает следующие аудиоформаты:"
+
+#: ../../source/audio/resources/audioclip.rst:22
+msgid "Format"
+msgstr "Формат"
+
+#: ../../source/audio/resources/audioclip.rst:22
+msgid "Features"
+msgstr "Особенности"
+
+#: ../../source/audio/resources/audioclip.rst:24
+msgid "**WAV**"
+msgstr "**WAV**"
+
+#: ../../source/audio/resources/audioclip.rst:24
+msgid ""
+"Uncompressed format, minimal playback latency. Recommended for short "
+"sounds (gunshots, footsteps, UI effects)."
+msgstr ""
+"Несжатый формат, минимальная задержка воспроизведения. Рекомендуется для "
+"коротких звуков (выстрелы, шаги, эффекты интерфейса)."
+
+#: ../../source/audio/resources/audioclip.rst:26
+msgid "**OGG Vorbis**"
+msgstr "**OGG Vorbis**"
+
+#: ../../source/audio/resources/audioclip.rst:26
+msgid ""
+"Compressed format with good quality/size ratio. Ideal for music and long "
+"sound effects."
+msgstr ""
+"Сжатый формат с хорошим соотношением качества и размера. Идеально подходит "
+"для музыки и длинных звуковых эффектов."
+
+#: ../../source/audio/resources/audioclip.rst:28
+msgid "**MP3**"
+msgstr "**MP3**"
+
+#: ../../source/audio/resources/audioclip.rst:28
+msgid ""
+"Supported, but not recommended due to patent restrictions. Use OGG as an "
+"alternative."
+msgstr ""
+"Поддерживается, но не рекомендуется из-за патентных ограничений. Используйте "
+"OGG в качестве альтернативы."
+
+#: ../../source/audio/resources/audioclip.rst:33
+msgid ""
+"Using stereo files for 3D sounds may lead to incorrect spatial "
+"positioning. For spatial sounds, use mono files."
+msgstr ""
+"Использование стереофайлов для 3D-звуков может привести к некорректному "
+"пространственному позиционированию. Для пространственных звуков используйте "
+"монофайлы."
+
+#: ../../source/audio/resources/audioclip.rst:36
+msgid "Properties"
+msgstr "Свойства"
+
+#: ../../source/audio/resources/audioclip.rst:39
+msgid "Import Properties"
+msgstr "Свойства импорта"
+
+#: ../../source/audio/resources/audioclip.rst:41
+msgid ""
+"The following settings are available when importing an audio file into "
+"Thunder Engine:"
+msgstr ""
+"При импорте аудиофайла в Thunder Engine доступны следующие настройки:"
+
+#: ../../source/audio/resources/audioclip.rst:43
+msgid "**streamed** (bool)"
+msgstr "**streamed** (bool)"
+
+#: ../../source/audio/resources/audioclip.rst:44
+msgid ""
+"Enables streaming playback of audio data. When ``true``, the audio file "
+"is not fully loaded into memory but is read from disk as needed."
+msgstr ""
+"Включает потоковое воспроизведение аудиоданных. При значении ``true`` "
+"аудиофайл не загружается полностью в память, а читается с диска по мере необходимости."
+
+#: ../../source/audio/resources/audioclip.rst:46
+msgid "Use ``true`` for long tracks (music, dialogue, podcasts) to save RAM"
+msgstr ""
+"Используйте ``true`` для длинных треков (музыка, диалоги, подкасты) для экономии ОЗУ"
+
+#: ../../source/audio/resources/audioclip.rst:47
+msgid ""
+"Use ``false`` for short sounds (gunshots, footsteps, UI effects) that "
+"should play with minimal latency"
+msgstr ""
+"Используйте ``false`` для коротких звуков (выстрелы, шаги, эффекты интерфейса), "
+"которые должны воспроизводиться с минимальной задержкой"
+
+#: ../../source/audio/resources/audioclip.rst:50
+msgid "OGG Vorbis format is recommended for streaming playback."
+msgstr "Формат OGG Vorbis рекомендуется для потокового воспроизведения."
+
+#: ../../source/audio/resources/audioclip.rst:52
+msgid "**forceMono** (bool)"
+msgstr "**forceMono** (bool)"
+
+#: ../../source/audio/resources/audioclip.rst:53
+msgid "Forcefully converts stereo audio to mono format during loading."
+msgstr "Принудительно преобразует стереоаудио в моноформат во время загрузки."
+
+#: ../../source/audio/resources/audioclip.rst:55
+msgid ""
+"**Must be enabled** for sounds that will be used in 3D space (via the "
+"AudioSource component). Spatial positioning only works correctly with "
+"mono sounds"
+msgstr ""
+"**Обязательно должен быть включён** для звуков, которые будут использоваться "
+"в 3D-пространстве (через компонент AudioSource). Пространственное "
+"позиционирование корректно работает только с монофоническими звуками"
+
+#: ../../source/audio/resources/audioclip.rst:56
+msgid ""
+"Leave ``false`` for music and sounds that always play in stereo (e.g., "
+"background music, cutscenes)"
+msgstr ""
+"Оставьте ``false`` для музыки и звуков, которые всегда воспроизводятся в "
+"стереорежиме (например, фоновая музыка, кат-сцены)"
+
+#: ../../source/audio/resources/audioclip.rst:59
+msgid ""
+"Using stereo files in 3D scenes without enabling ``forceMono`` may cause "
+"incorrect positioning and phase distortion."
+msgstr ""
+"Использование стереофайлов в 3D-сценах без включения ``forceMono`` может "
+"вызвать некорректное позиционирование и фазовые искажения."
+
+#: ../../source/audio/resources/audioclip.rst:61
+msgid "**quality** (float)"
+msgstr "**quality** (float)"
+
+#: ../../source/audio/resources/audioclip.rst:62
+msgid ""
+"Compression quality for audio data. The value range depends on the source"
+" file format:"
+msgstr ""
+"Качество сжатия аудиоданных. Диапазон значений зависит от формата исходного файла:"
+
+#: ../../source/audio/resources/audioclip.rst:64
+msgid "**0.0** — minimum quality, maximum compression (smallest file size)"
+msgstr "**0.0** — минимальное качество, максимальное сжатие (наименьший размер файла)"
+
+#: ../../source/audio/resources/audioclip.rst:65
+msgid "**1.0** — maximum quality, minimum compression (largest file size)"
+msgstr "**1.0** — максимальное качество, минимальное сжатие (наибольший размер файла)"
+
+#: ../../source/audio/resources/audioclip.rst:68
+msgid "Recommended values:"
+msgstr "Рекомендуемые значения:"
+
+#: ../../source/audio/resources/audioclip.rst:70
+msgid "For sound effects: ``0.5`` — 0.7 (good balance of quality and size)"
+msgstr "Для звуковых эффектов: ``0.5`` — 0.7 (хороший баланс качества и размера)"
+
+#: ../../source/audio/resources/audioclip.rst:71
+msgid "For music: ``0.7`` — 0.9 (quality matters more than size)"
+msgstr "Для музыки: ``0.7`` — 0.9 (качество важнее размера)"
+
+#: ../../source/audio/resources/audioclip.rst:72
+msgid ""
+"For speech/dialogue: ``0.4`` — 0.6 (speech is less sensitive to "
+"compression)"
+msgstr ""
+"Для речи/диалогов: ``0.4`` — 0.6 (речь менее чувствительна к сжатию)"
+
+#: ../../source/audio/resources/audioclip.rst:75
+msgid "Usage Example"
+msgstr "Пример использования"
+
+#: ../../source/audio/resources/audioclip.rst:77
+msgid "**Basic Playback in Code**"
+msgstr "**Базовое воспроизведение в коде**"
+
+#: ../../source/audio/resources/audioclip.rst:93
+msgid "Optimization Recommendations"
+msgstr "Рекомендации по оптимизации"
+
+#: ../../source/audio/resources/audioclip.rst:95
+msgid "**Use the right format**"
+msgstr "**Используйте правильный формат**"
+
+#: ../../source/audio/resources/audioclip.rst:96
+msgid "Short sounds (up to 5 seconds): WAV (uncompressed) or OGG with low bitrate"
+msgstr "Короткие звуки (до 5 секунд): WAV (несжатый) или OGG с низким битрейтом"
+
+#: ../../source/audio/resources/audioclip.rst:97
+msgid "Music and long sounds: OGG with quality 5-7 (q=5-7)"
+msgstr "Музыка и длинные звуки: OGG с качеством 5-7 (q=5-7)"
+
+#: ../../source/audio/resources/audioclip.rst:98
+msgid "Dialogue: OGG mono, 64-96 kbps"
+msgstr "Диалоги: OGG моно, 64-96 кбит/с"
+
+#: ../../source/audio/resources/audioclip.rst:100
+msgid "**3D sounds**"
+msgstr "**3D-звуки**"
+
+#: ../../source/audio/resources/audioclip.rst:101
+msgid "Always use mono files for 3D positioning"
+msgstr "Всегда используйте монофайлы для 3D-позиционирования"
+
+#: ../../source/audio/resources/audioclip.rst:102
+msgid "Don't create more than 20-30 active AudioSource instances simultaneously"
+msgstr "Не создавайте одновременно более 20-30 активных экземпляров AudioSource"

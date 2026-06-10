@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/prefab.rst:4
+msgid "Prefab"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:21
+msgid "Object::ObjectList"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:21
+msgid ""
+":ref:`absentInCloned<api_Prefab_a721db4f>` (const Prefab::ConstObjectList"
+" & cloned)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:23
+msgid ":ref:`Actor<api_Actor>` *"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:23
+msgid ":ref:`actor<api_Prefab_320bcea7>` () const"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:25
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:25
+msgid ":ref:`contains<api_Prefab_9a032e14>` (uint32_t  uuid)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:27
+msgid ":ref:`Object<api_Object>` *"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:27
+msgid ":ref:`protoObject<api_Prefab_e50d849c>` (uint32_t  uuid)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:35
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:37
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:42
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:46
+msgid ""
+"Object::ObjectList **Prefab::absentInCloned** "
+"(:ref:`Prefab::ConstObjectList<api_Prefab_ConstObjectList>` & *cloned*)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:48
+msgid "Compares with prefab and returns a list of abset objects in *cloned* list"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:54
+msgid ":ref:`Actor<api_Actor>` * **Prefab::actor** () const"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:56
+msgid "Returns prototype Actor which will should be instanced"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:62
+msgid "bool **Prefab::contains** (uint32_t  *uuid*)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:64
+msgid "Returns true if prefab contains an object with provided uuid"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:70
+msgid ":ref:`Object<api_Object>` * **Prefab::protoObject** (uint32_t  *uuid*)"
+msgstr ""
+
+#: ../../source/reference/prefab.rst:72
+msgid "Returns a prototype of object with provided uuid"
+msgstr ""
+

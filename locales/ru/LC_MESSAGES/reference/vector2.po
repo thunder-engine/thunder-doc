@@ -1,0 +1,494 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/vector2.rst:4
+msgid "Vector2"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:13
+msgid ""
+"Vectors are one of the main building blocks of 2D representation and "
+"drawing. They consist of three coordinates, traditionally called x and y."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:15
+msgid ""
+"The Vector2 class can also be used to represent vertices in 2D space. We "
+"therefore do not need to provide a separate vertex class."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:18
+msgid ""
+"Note: By design values in the Vector2 instance are stored as float. This "
+"means that on platforms where the areal arguments to Vector2 functions "
+"are represented by double values, it is possible to lose precision."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:26
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:29
+msgid ":ref:`Vector2<api_Vector2_c4f8b913>` ()"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:31
+msgid ":ref:`Vector2<api_Vector2_cb654d89>` (areal  v)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:33
+msgid ":ref:`Vector2<api_Vector2_46a3b98f>` (areal  x, areal  y)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:35
+msgid ":ref:`Vector2<api_Vector2_168df743>` (const Vector2 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:37 ../../source/reference/vector2.rst:39
+#: ../../source/reference/vector2.rst:41 ../../source/reference/vector2.rst:43
+#: ../../source/reference/vector2.rst:45 ../../source/reference/vector2.rst:77
+#: ../../source/reference/vector2.rst:79
+msgid "areal"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:37
+msgid ":ref:`cross<api_Vector2_72b463ed>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:39
+msgid ":ref:`dot<api_Vector2_c64d32fe>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:41
+msgid ":ref:`length<api_Vector2_cd90ea72>` () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:43
+msgid ":ref:`normalize<api_Vector2_842c9157>` ()"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:45
+msgid ":ref:`sqrLength<api_Vector2_10de4987>` () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:47 ../../source/reference/vector2.rst:69
+#: ../../source/reference/vector2.rst:73 ../../source/reference/vector2.rst:75
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:47
+msgid ":ref:`operator!=<api_Vector2_fc0ade76>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:49 ../../source/reference/vector2.rst:51
+#: ../../source/reference/vector2.rst:55 ../../source/reference/vector2.rst:59
+#: ../../source/reference/vector2.rst:61 ../../source/reference/vector2.rst:65
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:49
+msgid ":ref:`operator*<api_Vector2_659d28eb>` (areal  factor) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:51
+msgid ":ref:`operator*<api_Vector2_8694be57>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:53 ../../source/reference/vector2.rst:57
+#: ../../source/reference/vector2.rst:63 ../../source/reference/vector2.rst:67
+#: ../../source/reference/vector2.rst:71
+msgid ":ref:`Vector2<api_Vector2>` &"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:53
+msgid ":ref:`operator*=<api_Vector2_c0d735b2>` (areal  factor)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:55
+msgid ":ref:`operator+<api_Vector2_7cb49ad0>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:57
+msgid ":ref:`operator+=<api_Vector2_72e15fa6>` (const Vector2 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:59
+msgid ":ref:`operator-<api_Vector2_7e0a3d5c>` () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:61
+msgid ":ref:`operator-<api_Vector2_b4790ef5>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:63
+msgid ":ref:`operator-=<api_Vector2_5fab92ec>` (const Vector2 & vector)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:65
+msgid ":ref:`operator/<api_Vector2_52b71e4f>` (areal  divisor) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:67
+msgid ":ref:`operator/=<api_Vector2_8f9e02a6>` (areal  divisor)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:69
+msgid ":ref:`operator\\<<api_Vector2_5d0f4b9a>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:71
+msgid ":ref:`operator=<api_Vector2_3df02691>` (const Vector2 & value)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:73
+msgid ":ref:`operator==<api_Vector2_da849fe0>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:75
+msgid ":ref:`operator><api_Vector2_f09de573>` (const Vector2 & vector) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:77
+msgid ":ref:`operator[]<api_Vector2_3056fdb1>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:79
+msgid ":ref:`operator[]<api_Vector2_39d45160>` (int  i) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:87
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:89
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:94
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:98
+msgid "**Vector2::Vector2** ()"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:100
+msgid "Constructs a null vector, i.e. with coordinates (0, 0)."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:106
+msgid "**Vector2::Vector2** (areal  *v*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:108
+msgid "Constructs a vector with coordinates (v)."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:114
+msgid "**Vector2::Vector2** (areal  *x*, areal  *y*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:116
+msgid "Constructs a vector with coordinates (x, y)."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:122
+msgid "**Vector2::Vector2** (:ref:`Vector2<api_Vector2>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:124
+msgid "Copy constructor."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:130
+msgid "areal **Vector2::cross** (:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:132
+msgid "Returns the cross-product of this *vector* and given vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:134
+msgid "**See also** dot()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:140
+msgid "areal **Vector2::dot** (:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:142
+msgid "Returns the dot-product of this *vector* and given vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:144
+msgid "**See also** cross()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:150
+msgid "areal **Vector2::length** () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:152
+msgid "Returns the length of this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:154
+msgid "**See also** sqrLength()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:160
+msgid "areal **Vector2::normalize** ()"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:162
+msgid ""
+"Normalizes the currect vector in place. Returns length of prenormalized "
+"vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:164
+#: ../../source/reference/vector2.rst:174
+msgid "**See also** length()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:170
+msgid "areal **Vector2::sqrLength** () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:172
+msgid "Returns the squared length of this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:180
+msgid ""
+"bool **Vector2::operator!=** (:ref:`Vector2<api_Vector2>` & *vector*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:182
+msgid ""
+"Returns true if this *vector* is NOT equal to given vector; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:188
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Vector2::operator*** (areal  *factor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:190
+msgid "Returns a copy of this vector, multiplied by the given factor."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:192
+#: ../../source/reference/vector2.rst:202
+#: ../../source/reference/vector2.rst:282
+msgid "**See also** operator*=()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:198
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Vector2::operator*** "
+"(:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:200
+msgid "Returns a copy of this vector, multiplied by the given vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:208
+msgid ":ref:`Vector2<api_Vector2>` & **Vector2::operator*=** (areal  *factor*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:210
+msgid ""
+"Multiplies this vector's coordinates by the given factor, and returns a "
+"reference to this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:212
+#: ../../source/reference/vector2.rst:272
+msgid "**See also** operator/=()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:218
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Vector2::operator+** "
+"(:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:220
+msgid ""
+"Returns a Vector2 object that is the sum of the this *vector* and vector;"
+" each component is added separately."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:222
+#: ../../source/reference/vector2.rst:262
+msgid "**See also** operator+=()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:228
+msgid ""
+":ref:`Vector2<api_Vector2>` & **Vector2::operator+=** "
+"(:ref:`Vector2<api_Vector2>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:230
+msgid ""
+"Adds the given *vector* to this *vector* and returns a reference to this "
+"vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:232
+#: ../../source/reference/vector2.rst:252
+msgid "**See also** operator-=()."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:238
+msgid ":ref:`Vector2<api_Vector2>`  **Vector2::operator-** () const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:240
+msgid ""
+"Returns a Vector2 object that is formed by changing the sign of all three"
+" components of the this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:242
+msgid "Equivalent to Vector2(0,0) - vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:248
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Vector2::operator-** "
+"(:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:250
+msgid ""
+"Returns a Vector2 object that is formed by subtracting *vector* from this"
+" vector; each component is subtracted separately."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:258
+msgid ""
+":ref:`Vector2<api_Vector2>` & **Vector2::operator-=** "
+"(:ref:`Vector2<api_Vector2>` & *vector*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:260
+msgid ""
+"Subtracts the given *vector* from this *vector* and returns a reference "
+"to this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:268
+msgid ""
+":ref:`Vector2<api_Vector2>`  **Vector2::operator/** (areal  *divisor*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:270
+msgid "Returns a copy of this vector, divided by the given divisor."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:278
+msgid ":ref:`Vector2<api_Vector2>` & **Vector2::operator/=** (areal  *divisor*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:280
+msgid ""
+"Divides this vector's coordinates by the given divisor, and returns a "
+"reference to this vector."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:288
+msgid "bool **Vector2::operator<** (:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:290
+msgid ""
+"Returns true if this *vector* is less than vector; otherwise returns "
+"false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:296
+msgid ""
+":ref:`Vector2<api_Vector2>` & **Vector2::operator=** "
+"(:ref:`Vector2<api_Vector2>` & *value*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:298
+msgid "Assignment operator. The *value* will be assigned to this object."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:304
+msgid ""
+"bool **Vector2::operator==** (:ref:`Vector2<api_Vector2>` & *vector*) "
+"const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:306
+msgid ""
+"Returns true if this *vector* is equal to given vector; otherwise returns"
+" false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:312
+msgid "bool **Vector2::operator>** (:ref:`Vector2<api_Vector2>` & *vector*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:314
+msgid ""
+"Returns true if this *vector* is bigger than given vector; otherwise "
+"returns false. This operator uses an exact floating-point comparison."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:320
+msgid "areal **Vector2::operator[]** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:322
+msgid ""
+"Returns the component of the vector at index position *i* as a modifiable"
+" reference. *i* must be a valid index position in the vector (i.e., 0 <= "
+"*i* < 2)."
+msgstr ""
+
+#: ../../source/reference/vector2.rst:326
+msgid "areal **Vector2::operator[]** (int  *i*) const"
+msgstr ""
+
+#: ../../source/reference/vector2.rst:328
+msgid ""
+"Returns the component of the vector at index position. *i* must be a "
+"valid index position in the vector (i.e., 0 <= *i* < 2)."
+msgstr ""
+

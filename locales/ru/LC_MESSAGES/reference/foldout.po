@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/foldout.rst:4
+msgid "Foldout"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:13
+msgid ""
+"The Foldout class manages a UI widget that can show or hide additional "
+"content based on its expanded state. It includes functionality for adding"
+" widgets to the foldout, toggling its expanded state."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:23
+msgid ":ref:`Frame<api_Frame>` *"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:23
+msgid ":ref:`container<api_Foldout_6790fc2d>` () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:25
+msgid ":ref:`CheckBox<api_CheckBox>` *"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:25
+msgid ":ref:`indicator<api_Foldout_28d436a5>` () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:27 ../../source/reference/foldout.rst:31
+#: ../../source/reference/foldout.rst:33 ../../source/reference/foldout.rst:35
+#: ../../source/reference/foldout.rst:37 ../../source/reference/foldout.rst:39
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:27
+msgid ":ref:`insertWidget<api_Foldout_18b0d3e5>` (int  index, Widget * widget)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:29
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:29
+msgid ":ref:`isExpanded<api_Foldout_b7cefa25>` () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:31
+msgid ":ref:`onExpand<api_Foldout_5f604cd3>` ()"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:33
+msgid ":ref:`setContainer<api_Foldout_b65a4d03>` (Frame * container)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:35
+msgid ":ref:`setExpanded<api_Foldout_c72d46b8>` (bool  expanded)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:37
+msgid ":ref:`setIndicator<api_Foldout_f1c82945>` (CheckBox * indicator)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:39
+msgid ":ref:`setText<api_Foldout_653ed82c>` (const TString  text)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:41
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:41
+msgid ":ref:`text<api_Foldout_a40f1572>` () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:49
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:51
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:56
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:60
+msgid ":ref:`Frame<api_Frame>` * **Foldout::container** () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:62
+msgid "Returns container component attached to this widget."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:64
+msgid "**See also** setContainer()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:70
+msgid ":ref:`CheckBox<api_CheckBox>` * **Foldout::indicator** () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:72
+msgid "Returns indicator button to fold and unfold container with content."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:74
+msgid "**See also** setIndicator()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:80
+msgid ""
+"void **Foldout::insertWidget** (int  *index*, :ref:`Widget<api_Widget>` *"
+" *widget*)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:82
+msgid ""
+"Inserts *widget* to the foldout's container, at given position index. "
+"Effectively placing it inside the foldout's expanded content area."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:88
+msgid "bool **Foldout::isExpanded** () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:90
+msgid "Returns true id foldout is currently expanded; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:96
+msgid "void **Foldout::onExpand** ()"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:98
+msgid "Toggles the expanded state of the foldout when the indicator is clicked."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:104
+msgid "void **Foldout::setContainer** (:ref:`Frame<api_Frame>` * *container*)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:106
+msgid "Sets *container* component attached to this widget."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:108
+msgid "**See also** container()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:114
+msgid "void **Foldout::setExpanded** (bool  *expanded*)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:116
+msgid "Expands or collapses the foldout based on the *expanded* parameter."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:118
+msgid "**See also** isExpanded()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:124
+msgid ""
+"void **Foldout::setIndicator** (:ref:`CheckBox<api_CheckBox>` * "
+"*indicator*)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:126
+msgid "Sets *indicator* button to fold and unfold container with content."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:128
+msgid "**See also** indicator()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:134
+msgid "void **Foldout::setText** (:ref:`TString<api_TString>`  *text*)"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:136
+msgid "Sets the label *text* for the foldout."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:138
+msgid "**See also** text()."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:144
+msgid ":ref:`TString<api_TString>`  **Foldout::text** () const"
+msgstr ""
+
+#: ../../source/reference/foldout.rst:146
+msgid "Returns the current text of the foldout's label."
+msgstr ""
+
+#: ../../source/reference/foldout.rst:148
+msgid "**See also** setText()."
+msgstr ""
+

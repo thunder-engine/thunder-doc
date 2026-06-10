@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/scripting/instantiating_prefabs.rst:4
+msgid "Instantiating Prefabs"
+msgstr "Создание экземпляров префабов"
+
+#: ../../source/scripting/instantiating_prefabs.rst:6
+msgid ""
+"Prefabs can be very useful if you want to create complex Actors during "
+"gameplay. Instantiating game objects from Prefabs instead of creating "
+"game objects from scratch during runtime has several advantages:"
+msgstr ""
+"Префабы могут быть очень полезны, если вы хотите создавать сложных актёров во "
+"время игры. Создание экземпляров игровых объектов из префабов вместо создания "
+"игровых объектов с нуля во время выполнения имеет несколько преимуществ:"
+
+#: 217source/scripting/instantiating_prefabs.rst:9
+msgid ""
+"Create a complex object with just one line instead of describing all "
+"components and their properties in detail in code."
+msgstr ""
+"Создавайте сложный объект всего одной строкой вместо подробного описания всех "
+"компонентов и их свойств в коде."
+
+#: ../../source/scripting/instantiating_prefabs.rst:10
+msgid ""
+"Modify the Prefab in the Editor and get updates without needing to update"
+" the code."
+msgstr ""
+"Изменяйте префаб в редакторе и получайте обновления без необходимости обновлять код."
+
+#: ../../source/scripting/instantiating_prefabs.rst:11
+msgid "Easily replace one Prefab with another without changing the code."
+msgstr "Легко заменяйте один префаб на другой без изменения кода."
+
+#: ../../source/scripting/instantiating_prefabs.rst:14
+msgid "Let's Get Started"
+msgstr "Давайте начнём"
+
+#: ../../source/scripting/instantiating_prefabs.rst:16
+msgid ""
+"To instantiate a Prefab, you need to have a reference to it in your code."
+" You can use a public variable to hold this reference. This variable will"
+" appear in the Properties editor, allowing you to assign the desired "
+"Prefab from the editor:"
+msgstr ""
+"Чтобы создать экземпляр префаба, вам нужно иметь на него ссылку в вашем коде. "
+"Вы можете использовать открытую переменную для хранения этой ссылки. Эта "
+"переменная появится в редакторе свойств, позволяя вам назначить нужный префаб "
+"из редактора:"
+
+#: ../../source/scripting/instantiating_prefabs.rst:63
+msgid "Now, add this script to any Actor in the scene and assign a cube Prefab."
+msgstr "Теперь добавьте этот скрипт к любому актёру в сцене и назначьте префаб куба."
+
+#: ../../source/scripting/instantiating_prefabs.rst:65
+msgid "My Prefab"
+msgstr "Мой префаб"
+
+#: ../../source/scripting/instantiating_prefabs.rst:69
+msgid ""
+"Once you've assigned the Prefab, you can press ``Ctrl+G`` to start the "
+"simulation."
+msgstr ""
+"После того как вы назначили префаб, вы можете нажать ``Ctrl+G``, чтобы запустить симуляцию."
+
+#: ../../source/scripting/instantiating_prefabs.rst:71
+msgid "If you've done everything correctly, a cube will appear in your scene."
+msgstr "Если вы всё сделали правильно, в вашей сцене появится куб."
+
+#: ../../source/scripting/instantiating_prefabs.rst:73
+msgid "Instantiated Cube"
+msgstr "Созданный экземпляр куба"
+
+#: ../../source/scripting/instantiating_prefabs.rst:78
+msgid "Creating Structures"
+msgstr "Создание структур"
+
+#: ../../source/scripting/instantiating_prefabs.rst:80
+msgid ""
+"You can create many copies of a Prefab almost instantly. Using code to "
+"create structures is called **Procedural Generation**. Create a new "
+"script and name it **Wall**. The code below describes creating a wall "
+"from blocks."
+msgstr ""
+"Вы можете создавать множество копий префаба практически мгновенно. Использование "
+"кода для создания структур называется **процедурной генерацией**. Создайте новый "
+"скрипт и назовите его **Wall**. Приведённый ниже код описывает создание стены из блоков."
+
+#: ../../source/scripting/instantiating_prefabs.rst:157
+msgid ""
+"Once you've set up your Actor and run the simulation, you'll see your "
+"wall on the screen:"
+msgstr ""
+"После того как вы настроили актёра и запустили симуляцию, вы увидите свою стену на экране:"
+
+#: ../../source/scripting/instantiating_prefabs.rst:159
+msgid "Wall of bricks"
+msgstr "Стена из кирпичей"
+
+#: ../../source/scripting/instantiating_prefabs.rst:163
+msgid "White Walkers shall not pass! The Seven Kingdoms can sleep peacefully now."
+msgstr "Белые ходоки не пройдут! Семь королевств теперь могут спать спокойно."

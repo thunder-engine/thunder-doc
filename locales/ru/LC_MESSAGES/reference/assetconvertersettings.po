@@ -1,0 +1,668 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/assetconvertersettings.rst:4
+msgid "AssetConverterSettings"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:13
+msgid ""
+"The AssetConverterSettings class provides configuration and state "
+"management for asset conversion processes. It handles metadata storage, "
+"version control, and file management for converted assets."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:23
+#: ../../source/reference/assetconvertersettings.rst:29
+#: ../../source/reference/assetconvertersettings.rst:31
+#: ../../source/reference/assetconvertersettings.rst:33
+#: ../../source/reference/assetconvertersettings.rst:69
+#: ../../source/reference/assetconvertersettings.rst:79
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:23
+msgid ":ref:`absoluteDestination<api_AssetConverterSettings_045be368>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:25
+msgid ":ref:`AssetConverter<api_AssetConverter>` *"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:25
+msgid ":ref:`converter<api_AssetConverterSettings_92f1b0a3>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:27
+#: ../../source/reference/assetconvertersettings.rst:77
+#: ../../source/reference/assetconvertersettings.rst:83
+msgid "uint32_t"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:27
+msgid ":ref:`currentVersion<api_AssetConverterSettings_b20d37f9>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:29
+msgid ""
+":ref:`defaultIconPath<api_AssetConverterSettings_05cf3418>` (const "
+"TString & type)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:31
+msgid ":ref:`destination<api_AssetConverterSettings_6b48e90c>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:33
+msgid ":ref:`hash<api_AssetConverterSettings_7d24905b>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:35
+#: ../../source/reference/assetconvertersettings.rst:94
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:35
+msgid ":ref:`icon<api_AssetConverterSettings_7f25a0ec>` (const TString & uuid)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:37
+#: ../../source/reference/assetconvertersettings.rst:39
+#: ../../source/reference/assetconvertersettings.rst:41
+#: ../../source/reference/assetconvertersettings.rst:43
+#: ../../source/reference/assetconvertersettings.rst:45
+#: ../../source/reference/assetconvertersettings.rst:47
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:37
+msgid ":ref:`isCode<api_AssetConverterSettings_a2bf1098>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:39
+msgid ":ref:`isDir<api_AssetConverterSettings_acf9d04b>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:41
+msgid ":ref:`isModified<api_AssetConverterSettings_cb2f5ae1>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:43
+msgid ":ref:`isOutdated<api_AssetConverterSettings_cb1ef52a>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:45
+msgid ":ref:`isReadOnly<api_AssetConverterSettings_db897410>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:47
+msgid ":ref:`loadSettings<api_AssetConverterSettings_d815f42e>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:49
+#: ../../source/reference/assetconvertersettings.rst:51
+#: ../../source/reference/assetconvertersettings.rst:53
+#: ../../source/reference/assetconvertersettings.rst:55
+#: ../../source/reference/assetconvertersettings.rst:57
+#: ../../source/reference/assetconvertersettings.rst:59
+#: ../../source/reference/assetconvertersettings.rst:61
+#: ../../source/reference/assetconvertersettings.rst:63
+#: ../../source/reference/assetconvertersettings.rst:65
+#: ../../source/reference/assetconvertersettings.rst:67
+#: ../../source/reference/assetconvertersettings.rst:96
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:49
+msgid ":ref:`saveSettings<api_AssetConverterSettings_438156d7>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:51
+msgid ""
+":ref:`setConverter<api_AssetConverterSettings_e69f8d23>` (AssetConverter "
+"* converter)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:53
+msgid ""
+":ref:`setCurrentVersion<api_AssetConverterSettings_c6a85bf2>` (uint32_t  "
+"version)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:55
+msgid ":ref:`setDirectory<api_AssetConverterSettings_ec70946a>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:57
+msgid ":ref:`setModified<api_AssetConverterSettings_ba6475f8>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:59
+msgid ""
+":ref:`setSource<api_AssetConverterSettings_cbf89724>` (const TString & "
+"source)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:61
+msgid ""
+":ref:`setSubItem<api_AssetConverterSettings_1c4382d5>` (const TString & "
+"name, const ResourceSystem::ResourceInfo & info)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:63
+msgid ""
+":ref:`setSubItemData<api_AssetConverterSettings_5c13dba2>` (const TString"
+" & name, const Variant & data)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:65
+msgid ":ref:`setSubItemsDirty<api_AssetConverterSettings_e29daf6c>` ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:67
+msgid ":ref:`setVersion<api_AssetConverterSettings_62371ecf>` (uint32_t  version)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:69
+msgid ":ref:`source<api_AssetConverterSettings_be74c1a6>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:71
+msgid ":ref:`ResourceSystem::ResourceInfo<api_ResourceSystem_ResourceInfo>`"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:71
+msgid ""
+":ref:`subItem<api_AssetConverterSettings_48a1db6c>` (const TString & key,"
+" bool  create = false) const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:73
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:73
+msgid ""
+":ref:`subItemData<api_AssetConverterSettings_5e264b98>` (const TString & "
+"key) const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:75
+msgid "const StringList"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:75
+msgid ":ref:`subKeys<api_AssetConverterSettings_6ed703c5>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:77
+msgid ":ref:`type<api_AssetConverterSettings_892cd037>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:79
+msgid ":ref:`typeName<api_AssetConverterSettings_9568a3f4>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:81
+msgid "StringList"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:81
+msgid ":ref:`typeNames<api_AssetConverterSettings_42a530e6>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:83
+msgid ":ref:`version<api_AssetConverterSettings_27ad86eb>` () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:91
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:94
+msgid ""
+":ref:`documentIcon<api_AssetConverterSettings_b5fce743>` (const TString &"
+" type)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:96
+msgid ""
+":ref:`setDefaultIconPath<api_AssetConverterSettings_2abc9e58>` (const "
+"TString & type, const TString & path)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:102
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:106
+msgid ""
+":ref:`TString<api_TString>`  "
+"**AssetConverterSettings::absoluteDestination** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:108
+msgid "Returns the absolute destination file path."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:114
+msgid ""
+":ref:`AssetConverter<api_AssetConverter>` * "
+"**AssetConverterSettings::converter** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:116
+msgid "Returns assotiated AssetConverter."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:118
+msgid "**See also** setConverter()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:124
+msgid "uint32_t **AssetConverterSettings::currentVersion** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:126
+msgid "Returns the current asset format version."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:128
+msgid "**See also** setCurrentVersion()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:134
+msgid ""
+":ref:`TString<api_TString>`  **AssetConverterSettings::defaultIconPath** "
+"(:ref:`TString<api_TString>` & *type*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:136
+msgid ""
+"Returns path to default icon for asset *type* (default returns "
+"\":/Style/styles/dark/images/unknown.svg\")."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:138
+msgid "**See also** setDefaultIconPath()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:144
+msgid ""
+":ref:`TString<api_TString>`  **AssetConverterSettings::destination** () "
+"const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:146
+msgid "Returns the destination file path (relative)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:152
+msgid ""
+"int **AssetConverterSettings::documentIcon** (:ref:`TString<api_TString>`"
+" & *type*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:154
+msgid "Returns icon associated with document type."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:160
+msgid ":ref:`TString<api_TString>`  **AssetConverterSettings::hash** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:162
+msgid ""
+"Returns the md5 checksum of the source file (formatted as a GUID-like "
+"string)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:168
+msgid ""
+"int **AssetConverterSettings::icon** (:ref:`TString<api_TString>` & "
+"*uuid*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:170
+msgid "Returns icon assotiatited with current asset uuid."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:176
+msgid "bool **AssetConverterSettings::isCode** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:178
+msgid "Returns whether this asset represents code (default returns false)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:184
+msgid "bool **AssetConverterSettings::isDir** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:186
+msgid "Returns true if asset represents directory; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:192
+msgid "bool **AssetConverterSettings::isModified** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:194
+msgid "Returns true if import setting has been modified; otherwise return false."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:200
+msgid "bool **AssetConverterSettings::isOutdated** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:202
+msgid ""
+"Returns true if the asset needs to be reimported; otherwise returns "
+"false. This method compares asset version, file md5 checksum or file "
+"existance."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:208
+msgid "bool **AssetConverterSettings::isReadOnly** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:210
+msgid ""
+"Returns true if asset cannot be cahnged using any embedded editor; "
+"returns true by the default."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:216
+msgid "bool **AssetConverterSettings::loadSettings** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:218
+msgid "Loads asset settings from the metadata file."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:220
+msgid ""
+"This method reads the settings from a metadata file located at "
+"\"[source].[ext]\", where [ext] is defined by gMetaExt (typically "
+"\"set\"). The metadata file contains all meta-information and import "
+"settings for an asset in the Content directory."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:222
+msgid "Returns true if settings was successfully loaded; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:228
+msgid "void **AssetConverterSettings::saveSettings** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:230
+msgid ""
+"Saves current import settings to metadata file to ([source].set) file. "
+"Serializes properties via reflection, version and hash information and "
+"stores sub items information in JSON format."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:236
+msgid ""
+"void **AssetConverterSettings::setConverter** "
+"(:ref:`AssetConverter<api_AssetConverter>` * *converter*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:238
+msgid "Sets assotiated asset converter."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:240
+msgid "**See also** converter()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:246
+msgid "void **AssetConverterSettings::setCurrentVersion** (uint32_t  *version*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:248
+msgid "Sets the current asset format version."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:250
+msgid "**See also** currentVersion()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:256
+msgid ""
+"void **AssetConverterSettings::setDefaultIconPath** "
+"(:ref:`TString<api_TString>` & *type*, :ref:`TString<api_TString>` & "
+"*path*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:258
+msgid "Adds a new *path* default icon for the asset type."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:261
+msgid "**Note:** Icon must be in SVG format."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:264
+msgid "**See also** defaultIconPath()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:270
+msgid "void **AssetConverterSettings::setDirectory** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:272
+msgid "Marks the asset as directory."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:278
+msgid "void **AssetConverterSettings::setModified** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:280
+msgid ""
+"Marks the asset as modified. This allows to user decide to save setting "
+"and re-import the asset or revert the settings back."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:282
+msgid "**See also** isModified()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:288
+msgid ""
+"void **AssetConverterSettings::setSource** (:ref:`TString<api_TString>` &"
+" *source*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:290
+msgid "Sets the *source* file path."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:292
+msgid "**See also** source()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:298
+msgid ""
+"void **AssetConverterSettings::setSubItem** (:ref:`TString<api_TString>` "
+"& *name*, "
+":ref:`ResourceSystem::ResourceInfo<api_ResourceSystem_ResourceInfo>` & "
+"*info*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:300
+msgid "Sets a sub-item with name, info."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:302
+msgid "**See also** subItem()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:308
+msgid ""
+"void **AssetConverterSettings::setSubItemData** "
+"(:ref:`TString<api_TString>` & *name*, :ref:`Variant<api_Variant>` & "
+"*data*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:310
+msgid ""
+"Sets additional *data* for a sub-item with given *name* (default does "
+"nothing)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:312
+msgid "**See also** subItemData()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:318
+msgid "void **AssetConverterSettings::setSubItemsDirty** ()"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:320
+msgid "Marks all sub-items as dirty (modified)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:326
+msgid "void **AssetConverterSettings::setVersion** (uint32_t  *version*)"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:328
+msgid "Sets the asset converter asset format version."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:330
+msgid "**See also** version()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:336
+msgid ":ref:`TString<api_TString>`  **AssetConverterSettings::source** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:338
+msgid "Returns the source file path."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:340
+msgid "**See also** setSource()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:346
+msgid ""
+":ref:`ResourceSystem::ResourceInfo<api_ResourceSystem::ResourceInfo>`  "
+"**AssetConverterSettings::subItem** (:ref:`TString<api_TString>` & *key*,"
+" bool  *create* = false) const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:348
+msgid "Returns the resource information for a sub-item identified by key."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:350
+msgid ""
+"This method retrieves the ResourceInfo associated with the given sub-item"
+" key. If the sub-item doesn't exist and *create* is true, a new sub-item "
+"is created with a generated UUID and the parent's MD5 hash."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:352
+msgid "**See also** setSubItem()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:358
+msgid ""
+":ref:`Variant<api_Variant>`  **AssetConverterSettings::subItemData** "
+"(:ref:`TString<api_TString>` & *key*) const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:360
+msgid ""
+"Returns additional data for a sub-item by it's *key* (default returns "
+"empty object)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:362
+msgid "**See also** setSubItemData()."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:368
+msgid "const StringList **AssetConverterSettings::subKeys** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:370
+msgid "Returns list of all sub-item keys."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:376
+msgid "uint32_t **AssetConverterSettings::type** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:378
+msgid "Returns the asset type for conversion for more details see MetaType."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:384
+msgid ":ref:`TString<api_TString>`  **AssetConverterSettings::typeName** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:386
+msgid "Reimplements: Object::typeName() const."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:388
+msgid "Returns primary type name (first from typeNames())."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:394
+msgid "StringList **AssetConverterSettings::typeNames** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:396
+msgid ""
+"Returns list of type names for this asset (default returns \"Invalid\" if"
+" type is invalid)."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:402
+msgid "uint32_t **AssetConverterSettings::version** () const"
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:404
+msgid "Returns the asset converter asset format version."
+msgstr ""
+
+#: ../../source/reference/assetconvertersettings.rst:406
+msgid "**See also** setVersion()."
+msgstr ""
+

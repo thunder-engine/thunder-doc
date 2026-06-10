@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/pipeline.rst:4
+msgid "Graphics Pipeline"
+msgstr "Графический конвейер"
+
+#: ../../source/rendering/pipeline.rst:7
+msgid ""
+"Please note that the entire graphics pipeline module is currently in "
+"development."
+msgstr ""
+"Обратите внимание, что весь модуль графического конвейера в настоящее время "
+"находится в разработке."
+
+#: ../../source/rendering/pipeline.rst:8
+msgid ""
+"API changes may occur in future releases, and some features may not be "
+"fully functional. Exercise caution when relying on this module in "
+"production environments."
+msgstr ""
+"В будущих выпусках возможны изменения API, а некоторые функции могут быть "
+"реализованы не полностью. Будьте осторожны, полагаясь на этот модуль в "
+"продукционных средах."
+
+#: 217source/rendering/pipeline.rst:11
+msgid ""
+"Thunder Engine employs a flexible graphics pipeline that allows you to "
+"fine-tune the balance between quality and performance on an individual "
+"project basis. This flexibility ensures that you can tailor the graphical"
+" settings to meet the specific requirements of your project, providing a "
+"versatile solution for achieving the desired visual fidelity while "
+"maintaining optimal performance."
+msgstr ""
+"Thunder Engine использует гибкий графический конвейер, который позволяет "
+"настраивать баланс между качеством и производительностью для каждого отдельного "
+"проекта. Эта гибкость гарантирует, что вы можете адаптировать графические "
+"настройки в соответствии с конкретными требованиями вашего проекта, предоставляя "
+"универсальное решение для достижения желаемого визуального качества при "
+"сохранении оптимальной производительности."
+
+#: ../../source/rendering/pipeline.rst:14
+msgid ""
+"The graphics pipeline in Thunder Engine is task-based, representing each "
+"graphical feature as a task in the pipeline. This task-oriented approach "
+"forms a graph that efficiently processes and renders graphics tasks. This"
+" system allows for a modular and scalable approach to handling graphics "
+"tasks, contributing to the engine's adaptability and efficiency in "
+"managing complex visual scenarios."
+msgstr ""
+"Графический конвейер в Thunder Engine основан на задачах, представляя каждую "
+"графическую функцию как задачу в конвейере. Этот подход, ориентированный на "
+"задачи, формирует граф, который эффективно обрабатывает и выполняет рендеринг "
+"графических задач. Эта система позволяет использовать модульный и масштабируемый "
+"подход к обработке графических задач, способствуя адаптивности и эффективности "
+"движка при управлении сложными визуальными сценариями."
+
+#: ../../source/rendering/pipeline.rst:19
+msgid "Graphics Pipeline Entities"
+msgstr "Сущности графического конвейера"
+
+#: ../../source/rendering/pipeline.rst:21
+msgid ""
+"Thunder Engine's graphics pipeline is composed of key entities that work "
+"together to facilitate rendering tasks efficiently."
+msgstr ""
+"Графический конвейер Thunder Engine состоит из ключевых сущностей, которые "
+"работают вместе для эффективного выполнения задач рендеринга."
+
+#: ../../source/rendering/pipeline.rst:23
+msgid ""
+"**PipelineContext:** The `PipelineContext` serves as the execution "
+"environment for tasks related to scene rendering. It provides the runtime"
+" context for rendering tasks, coordinating the flow of information "
+"between various stages of the rendering process."
+msgstr ""
+"**PipelineContext:** `PipelineContext` служит средой выполнения для задач, "
+"связанных с рендерингом сцены. Он предоставляет контекст выполнения для задач "
+"рендеринга, координируя поток информации между различными этапами процесса "
+"рендеринга."
+
+#: ../../source/rendering/pipeline.rst:27
+msgid ""
+"**Pipeline:** A `Pipeline` in Thunder Engine represents a loadable "
+"resource, forming the graphical rendering graph. Users have the "
+"flexibility to customize this graph according to their project "
+"requirements."
+msgstr ""
+"**Pipeline:** `Pipeline` в Thunder Engine представляет собой загружаемый ресурс, "
+"формирующий граф графического рендеринга. Пользователи имеют возможность "
+"настраивать этот граф в соответствии с требованиями своего проекта."
+
+#: ../../source/rendering/pipeline.rst:31
+msgid ""
+"**PipelineTask:** Individual atomic units within the graphics pipeline "
+"are known as `PipelineTask`. These tasks form the building blocks of the "
+"rendering graph. When executed by the `PipelineContext`, each task "
+"processes specific aspects of the rendering process."
+msgstr ""
+"**PipelineTask:** Отдельные атомарные единицы в графическом конвейере называются "
+"`PipelineTask`. Эти задачи формируют строительные блоки графа рендеринга. При "
+"выполнении `PipelineContext` каждая задача обрабатывает определённые аспекты "
+"процесса рендеринга."
+
+#: ../../source/rendering/pipeline.rst:36
+msgid "Custom Tasks"
+msgstr "Пользовательские задачи"
+
+#: ../../source/rendering/pipeline.rst:38
+msgid ""
+"Developers have the ability to extend and customize Thunder Engine's "
+"graphics pipeline by creating their own tasks based on the `PipelineTask`"
+" class. These custom tasks allow for the seamless integration of user-"
+"specific rendering functionality, providing a means to enhance or extend "
+"the engine's rendering capabilities."
+msgstr ""
+"Разработчики имеют возможность расширять и настраивать графический конвейер "
+"Thunder Engine, создавая свои собственные задачи на основе класса `PipelineTask`. "
+"Эти пользовательские задачи позволяют легко интегрировать специфическую для "
+"пользователя функциональность рендеринга, предоставляя способ улучшить или "
+"расширить возможности рендеринга движка."
+
+#: ../../source/rendering/pipeline.rst:42
+msgid "Editor Integration"
+msgstr "Интеграция с редактором"
+
+#: ../../source/rendering/pipeline.rst:44
+msgid ""
+"Users can edit the graphics pipeline using a dedicated editor, allowing "
+"for easy customization of the rendering process. This integrated editor "
+"provides a user-friendly interface for modifying the graphical rendering "
+"graph according to the specific needs of the project."
+msgstr ""
+"Пользователи могут редактировать графический конвейер с помощью специального "
+"редактора, что позволяет легко настраивать процесс рендеринга. Этот встроенный "
+"редактор предоставляет удобный интерфейс для изменения графа графического "
+"рендеринга в соответствии с конкретными потребностями проекта."
+
+#: ../../source/rendering/pipeline.rst:48
+msgid "Available PipelineTasks"
+msgstr "Доступные PipelineTask"
+
+#: ../../source/rendering/pipeline.rst:50
+msgid "**AmbientOcclusion:** Handles the Ambient Occlusion effect in 3D scenes."
+msgstr "**AmbientOcclusion:** Обрабатывает эффект Ambient Occlusion в 3D-сценах."
+
+#: ../../source/rendering/pipeline.rst:53
+msgid "**AntiAliasing:** Manages edge smoothing for enhanced visual quality."
+msgstr "**AntiAliasing:** Управляет сглаживанием краёв для улучшения визуального качества."
+
+#: ../../source/rendering/pipeline.rst:56
+msgid "**Bloom:** Creates a glowing effect for bright objects."
+msgstr "**Bloom:** Создаёт эффект свечения для ярких объектов."
+
+#: ../../source/rendering/pipeline.rst:59
+msgid ""
+"**DeferredLighting:** Used in conjunction with GBuffer for on-screen "
+"lighting calculations."
+msgstr ""
+"**DeferredLighting:** Используется вместе с GBuffer для расчётов освещения на экране."
+
+#: ../../source/rendering/pipeline.rst:62
+msgid ""
+"**GBuffer:** Renders opaque objects on the scene, preserving essential "
+"material parameters for later use in other tasks."
+msgstr ""
+"**GBuffer:** Выполняет рендеринг непрозрачных объектов на сцене, сохраняя "
+"основные параметры материалов для последующего использования в других задачах."
+
+#: ../../source/rendering/pipeline.rst:65
+msgid "**GuiLayer:** Responsible for rendering the user interface."
+msgstr "**GuiLayer:** Отвечает за рендеринг пользовательского интерфейса."
+
+#: ../../source/rendering/pipeline.rst:68
+msgid ""
+"**Reflections:** Calculates material reflection capabilities for "
+"realistic image rendering."
+msgstr ""
+"**Reflections:** Рассчитывает возможности отражения материалов для реалистичного "
+"рендеринга изображения."
+
+#: ../../source/rendering/pipeline.rst:71
+msgid ""
+"**ShadowMap:** Forms shadow maps for subsequent use in lighting "
+"calculations."
+msgstr ""
+"**ShadowMap:** Формирует карты теней для последующего использования в расчётах "
+"освещения."
+
+#: ../../source/rendering/pipeline.rst:74
+msgid ""
+"**Translucent:** Handles the rendering of semi-transparent objects on the"
+" scene. Due to the nature of Deferred Shading, these objects must be "
+"drawn after lighting calculations."
+msgstr ""
+"**Translucent:** Обрабатывает рендеринг полупрозрачных объектов на сцене. "
+"Из-за особенностей отложенного затенения эти объекты должны отрисовываться "
+"после расчётов освещения."
+
+#: ../../source/rendering/pipeline.rst:78
+msgid ""
+"Please note that the availability and functionality of these tasks may be"
+" subject to change in future releases. Refer to the corresponding "
+"sections in the documentation for detailed information on each "
+"`PipelineTask`."
+msgstr ""
+"Обратите внимание, что доступность и функциональность этих задач могут "
+"измениться в будущих выпусках. Обратитесь к соответствующим разделам "
+"документации для получения подробной информации о каждой `PipelineTask`."# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/pipeline.rst:4
+msgid "Graphics Pipeline"
+msgstr "Графический конвейер"
+
+#: ../../source/rendering/pipeline.rst:7
+msgid ""
+"Please note that the entire graphics pipeline module is currently in "
+"development."
+msgstr ""
+"Обратите внимание, что весь модуль графического конвейера в настоящее время "
+"находится в разработке."
+
+#: ../../source/rendering/pipeline.rst:8
+msgid ""
+"API changes may occur in future releases, and some features may not be "
+"fully functional. Exercise caution when relying on this module in "
+"production environments."
+msgstr ""
+"В будущих выпусках возможны изменения API, а некоторые функции могут быть "
+"реализованы не полностью. Будьте осторожны, полагаясь на этот модуль в "
+"продукционных средах."
+
+#: 217source/rendering/pipeline.rst:11
+msgid ""
+"Thunder Engine employs a flexible graphics pipeline that allows you to "
+"fine-tune the balance between quality and performance on an individual "
+"project basis. This flexibility ensures that you can tailor the graphical"
+" settings to meet the specific requirements of your project, providing a "
+"versatile solution for achieving the desired visual fidelity while "
+"maintaining optimal performance."
+msgstr ""
+"Thunder Engine использует гибкий графический конвейер, который позволяет "
+"настраивать баланс между качеством и производительностью для каждого отдельного "
+"проекта. Эта гибкость гарантирует, что вы можете адаптировать графические "
+"настройки в соответствии с конкретными требованиями вашего проекта, предоставляя "
+"универсальное решение для достижения желаемого визуального качества при "
+"сохранении оптимальной производительности."
+
+#: ../../source/rendering/pipeline.rst:14
+msgid ""
+"The graphics pipeline in Thunder Engine is task-based, representing each "
+"graphical feature as a task in the pipeline. This task-oriented approach "
+"forms a graph that efficiently processes and renders graphics tasks. This"
+" system allows for a modular and scalable approach to handling graphics "
+"tasks, contributing to the engine's adaptability and efficiency in "
+"managing complex visual scenarios."
+msgstr ""
+"Графический конвейер в Thunder Engine основан на задачах, представляя каждую "
+"графическую функцию как задачу в конвейере. Этот подход, ориентированный на "
+"задачи, формирует граф, который эффективно обрабатывает и выполняет рендеринг "
+"графических задач. Эта система позволяет использовать модульный и масштабируемый "
+"подход к обработке графических задач, способствуя адаптивности и эффективности "
+"движка при управлении сложными визуальными сценариями."
+
+#: ../../source/rendering/pipeline.rst:19
+msgid "Graphics Pipeline Entities"
+msgstr "Сущности графического конвейера"
+
+#: ../../source/rendering/pipeline.rst:21
+msgid ""
+"Thunder Engine's graphics pipeline is composed of key entities that work "
+"together to facilitate rendering tasks efficiently."
+msgstr ""
+"Графический конвейер Thunder Engine состоит из ключевых сущностей, которые "
+"работают вместе для эффективного выполнения задач рендеринга."
+
+#: ../../source/rendering/pipeline.rst:23
+msgid ""
+"**PipelineContext:** The `PipelineContext` serves as the execution "
+"environment for tasks related to scene rendering. It provides the runtime"
+" context for rendering tasks, coordinating the flow of information "
+"between various stages of the rendering process."
+msgstr ""
+"**PipelineContext:** `PipelineContext` служит средой выполнения для задач, "
+"связанных с рендерингом сцены. Он предоставляет контекст выполнения для задач "
+"рендеринга, координируя поток информации между различными этапами процесса "
+"рендеринга."
+
+#: ../../source/rendering/pipeline.rst:27
+msgid ""
+"**Pipeline:** A `Pipeline` in Thunder Engine represents a loadable "
+"resource, forming the graphical rendering graph. Users have the "
+"flexibility to customize this graph according to their project "
+"requirements."
+msgstr ""
+"**Pipeline:** `Pipeline` в Thunder Engine представляет собой загружаемый ресурс, "
+"формирующий граф графического рендеринга. Пользователи имеют возможность "
+"настраивать этот граф в соответствии с требованиями своего проекта."
+
+#: ../../source/rendering/pipeline.rst:31
+msgid ""
+"**PipelineTask:** Individual atomic units within the graphics pipeline "
+"are known as `PipelineTask`. These tasks form the building blocks of the "
+"rendering graph. When executed by the `PipelineContext`, each task "
+"processes specific aspects of the rendering process."
+msgstr ""
+"**PipelineTask:** Отдельные атомарные единицы в графическом конвейере называются "
+"`PipelineTask`. Эти задачи формируют строительные блоки графа рендеринга. При "
+"выполнении `PipelineContext` каждая задача обрабатывает определённые аспекты "
+"процесса рендеринга."
+
+#: ../../source/rendering/pipeline.rst:36
+msgid "Custom Tasks"
+msgstr "Пользовательские задачи"
+
+#: ../../source/rendering/pipeline.rst:38
+msgid ""
+"Developers have the ability to extend and customize Thunder Engine's "
+"graphics pipeline by creating their own tasks based on the `PipelineTask`"
+" class. These custom tasks allow for the seamless integration of user-"
+"specific rendering functionality, providing a means to enhance or extend "
+"the engine's rendering capabilities."
+msgstr ""
+"Разработчики имеют возможность расширять и настраивать графический конвейер "
+"Thunder Engine, создавая свои собственные задачи на основе класса `PipelineTask`. "
+"Эти пользовательские задачи позволяют легко интегрировать специфическую для "
+"пользователя функциональность рендеринга, предоставляя способ улучшить или "
+"расширить возможности рендеринга движка."
+
+#: ../../source/rendering/pipeline.rst:42
+msgid "Editor Integration"
+msgstr "Интеграция с редактором"
+
+#: ../../source/rendering/pipeline.rst:44
+msgid ""
+"Users can edit the graphics pipeline using a dedicated editor, allowing "
+"for easy customization of the rendering process. This integrated editor "
+"provides a user-friendly interface for modifying the graphical rendering "
+"graph according to the specific needs of the project."
+msgstr ""
+"Пользователи могут редактировать графический конвейер с помощью специального "
+"редактора, что позволяет легко настраивать процесс рендеринга. Этот встроенный "
+"редактор предоставляет удобный интерфейс для изменения графа графического "
+"рендеринга в соответствии с конкретными потребностями проекта."
+
+#: ../../source/rendering/pipeline.rst:48
+msgid "Available PipelineTasks"
+msgstr "Доступные PipelineTask"
+
+#: ../../source/rendering/pipeline.rst:50
+msgid "**AmbientOcclusion:** Handles the Ambient Occlusion effect in 3D scenes."
+msgstr "**AmbientOcclusion:** Обрабатывает эффект Ambient Occlusion в 3D-сценах."
+
+#: ../../source/rendering/pipeline.rst:53
+msgid "**AntiAliasing:** Manages edge smoothing for enhanced visual quality."
+msgstr "**AntiAliasing:** Управляет сглаживанием краёв для улучшения визуального качества."
+
+#: ../../source/rendering/pipeline.rst:56
+msgid "**Bloom:** Creates a glowing effect for bright objects."
+msgstr "**Bloom:** Создаёт эффект свечения для ярких объектов."
+
+#: ../../source/rendering/pipeline.rst:59
+msgid ""
+"**DeferredLighting:** Used in conjunction with GBuffer for on-screen "
+"lighting calculations."
+msgstr ""
+"**DeferredLighting:** Используется вместе с GBuffer для расчётов освещения на экране."
+
+#: ../../source/rendering/pipeline.rst:62
+msgid ""
+"**GBuffer:** Renders opaque objects on the scene, preserving essential "
+"material parameters for later use in other tasks."
+msgstr ""
+"**GBuffer:** Выполняет рендеринг непрозрачных объектов на сцене, сохраняя "
+"основные параметры материалов для последующего использования в других задачах."
+
+#: ../../source/rendering/pipeline.rst:65
+msgid "**GuiLayer:** Responsible for rendering the user interface."
+msgstr "**GuiLayer:** Отвечает за рендеринг пользовательского интерфейса."
+
+#: ../../source/rendering/pipeline.rst:68
+msgid ""
+"**Reflections:** Calculates material reflection capabilities for "
+"realistic image rendering."
+msgstr ""
+"**Reflections:** Рассчитывает возможности отражения материалов для реалистичного "
+"рендеринга изображения."
+
+#: ../../source/rendering/pipeline.rst:71
+msgid ""
+"**ShadowMap:** Forms shadow maps for subsequent use in lighting "
+"calculations."
+msgstr ""
+"**ShadowMap:** Формирует карты теней для последующего использования в расчётах "
+"освещения."
+
+#: ../../source/rendering/pipeline.rst:74
+msgid ""
+"**Translucent:** Handles the rendering of semi-transparent objects on the"
+" scene. Due to the nature of Deferred Shading, these objects must be "
+"drawn after lighting calculations."
+msgstr ""
+"**Translucent:** Обрабатывает рендеринг полупрозрачных объектов на сцене. "
+"Из-за особенностей отложенного затенения эти объекты должны отрисовываться "
+"после расчётов освещения."
+
+#: ../../source/rendering/pipeline.rst:78
+msgid ""
+"Please note that the availability and functionality of these tasks may be"
+" subject to change in future releases. Refer to the corresponding "
+"sections in the documentation for detailed information on each "
+"`PipelineTask`."
+msgstr ""
+"Обратите внимание, что доступность и функциональность этих задач могут "
+"измениться в будущих выпусках. Обратитесь к соответствующим разделам "
+"документации для получения подробной информации о каждой `PipelineTask`."

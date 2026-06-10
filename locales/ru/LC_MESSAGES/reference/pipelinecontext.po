@@ -1,0 +1,547 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/pipelinecontext.rst:4
+msgid "PipelineContext"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:13
+msgid ""
+"PipelineContext is a class responsible for managing the rendering "
+"pipeline context, including rendering tasks, camera settings, and post-"
+"processing effects."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:23
+#: ../../source/reference/pipelinecontext.rst:27
+#: ../../source/reference/pipelinecontext.rst:37
+#: ../../source/reference/pipelinecontext.rst:39
+#: ../../source/reference/pipelinecontext.rst:41
+#: ../../source/reference/pipelinecontext.rst:47
+#: ../../source/reference/pipelinecontext.rst:55
+#: ../../source/reference/pipelinecontext.rst:57
+#: ../../source/reference/pipelinecontext.rst:59
+#: ../../source/reference/pipelinecontext.rst:61
+#: ../../source/reference/pipelinecontext.rst:65
+#: ../../source/reference/pipelinecontext.rst:69
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:23
+msgid ":ref:`addTextureBuffer<api_PipelineContext_1492503b>` (Texture * texture)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:25
+msgid ":ref:`CommandBuffer<api_CommandBuffer>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:25
+msgid ":ref:`buffer<api_PipelineContext_153b8097>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:27
+msgid ":ref:`cameraReset<api_PipelineContext_fcd87415>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:29
+msgid ""
+"std::list<std::pair<const PostProcessSettings *, "
+":ref:`float>><api_float>>>` &"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:29
+msgid ":ref:`culledPostEffectSettings<api_PipelineContext_be0f7dc4>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:31
+#: ../../source/reference/pipelinecontext.rst:53
+msgid "RenderList"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:31
+msgid ":ref:`culledRenderables<api_PipelineContext_dc219fbe>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:33
+msgid ":ref:`Camera<api_Camera>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:33
+msgid ":ref:`currentCamera<api_PipelineContext_e4f0126a>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:35
+msgid ":ref:`RenderTarget<api_RenderTarget>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:35
+msgid ":ref:`defaultTarget<api_PipelineContext_4db03c91>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:37
+msgid ""
+":ref:`frustumCulling<api_PipelineContext_6f5be801>` (const Frustum & "
+"frustum, const RenderList & in, RenderList & out, AABBox * box = nullptr)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:39
+msgid ""
+":ref:`insertRenderTask<api_PipelineContext_7091cab8>` (PipelineTask * "
+"task, PipelineTask * before = nullptr)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:41
+msgid ":ref:`invalidateTasks<api_PipelineContext_4e920b1d>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:43
+msgid "const std::list<PipelineTask :ref:`*><api_*>>` &"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:43
+msgid ":ref:`renderTasks<api_PipelineContext_7adb2f40>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:45
+msgid "StringList"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:45
+msgid ":ref:`renderTextures<api_PipelineContext_9abf012e>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:47
+msgid ""
+":ref:`resize<api_PipelineContext_c9be7286>` (int32_t  width, int32_t  "
+"height)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:49
+#: ../../source/reference/pipelinecontext.rst:67
+#: ../../source/reference/pipelinecontext.rst:88
+msgid ":ref:`Texture<api_Texture>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:49
+msgid ":ref:`resultTexture<api_PipelineContext_cb54f312>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:51
+msgid "LightList"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:51
+msgid ":ref:`sceneLights<api_PipelineContext_84b7a130>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:53
+msgid ":ref:`sceneRenderables<api_PipelineContext_12fb7e43>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:55
+msgid ":ref:`setCurrentCamera<api_PipelineContext_7432ad81>` (Camera * camera)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:57
+msgid ""
+":ref:`setDefaultTarget<api_PipelineContext_d4ba28f1>` (RenderTarget * "
+"target)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:59
+msgid ":ref:`setPipeline<api_PipelineContext_45637fda>` (Pipeline * pipeline)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:61
+msgid ":ref:`setWorld<api_PipelineContext_85364e1a>` (World * world)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:63
+msgid ":ref:`Vector2<api_Vector2>`"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:63
+msgid ":ref:`size<api_PipelineContext_6d503e14>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:65
+msgid ""
+":ref:`subscribePost<api_PipelineContext_28c705e4>` "
+"(PipelineContext::RenderCallback  callback, void * object)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:67
+msgid ":ref:`textureBuffer<api_PipelineContext_9d602eb1>` (const TString & name)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:69
+msgid ":ref:`unsubscribePost<api_PipelineContext_36720adb>` (void * object)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:71
+msgid ":ref:`World<api_World>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:71
+msgid ":ref:`world<api_PipelineContext_629451eb>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:73
+msgid ":ref:`AABBox<api_AABBox>`"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:73
+msgid ":ref:`worldBound<api_PipelineContext_743e861a>` () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:81
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:84
+#: ../../source/reference/pipelinecontext.rst:86
+msgid ":ref:`Mesh<api_Mesh>` *"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:84
+msgid ":ref:`defaultCube<api_PipelineContext_0e4b8512>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:86
+msgid ":ref:`defaultPlane<api_PipelineContext_7f481ba0>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:88
+msgid ":ref:`whiteTexture<api_PipelineContext_f920d7ce>` ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:94
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:98
+msgid ""
+"void **PipelineContext::addTextureBuffer** (:ref:`Texture<api_Texture>` *"
+" *texture*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:100
+msgid "Adds a *texture* buffer to the global textures in the command buffer."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:106
+msgid ""
+":ref:`CommandBuffer<api_CommandBuffer>` * **PipelineContext::buffer** () "
+"const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:108
+msgid "Retrieves the command buffer associated with the pipeline context."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:114
+msgid "void **PipelineContext::cameraReset** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:116
+msgid "Resets the camera view and projection matrices in the command buffer."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:122
+msgid ""
+"std::list<std::pair<const PostProcessSettings *, "
+":ref:`float>><api_float>>>` & "
+"**PipelineContext::culledPostEffectSettings** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:124
+msgid ""
+"Returns the list of filtered scene post effect settings relevant for "
+"rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:130
+msgid "RenderList **PipelineContext::culledRenderables** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:132
+msgid "Returns the list of culled scene components based on frustum culling."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:138
+msgid ":ref:`Camera<api_Camera>` * **PipelineContext::currentCamera** () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:140
+msgid "Returns the currently set camera for rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:142
+msgid "**See also** setCurrentCamera()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:148
+msgid ":ref:`Mesh<api_Mesh>` * **PipelineContext::defaultCube** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:150
+msgid "Return the default cube mesh used in rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:156
+msgid ":ref:`Mesh<api_Mesh>` * **PipelineContext::defaultPlane** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:158
+msgid "Retrieves the default plane mesh used in rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:164
+msgid ""
+":ref:`RenderTarget<api_RenderTarget>` * "
+"**PipelineContext::defaultTarget** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:166
+msgid "Returns the default render target associated with the pipeline context."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:168
+msgid "**See also** setDefaultTarget()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:174
+msgid ""
+"void **PipelineContext::frustumCulling** (:ref:`Frustum<api_Frustum>` & "
+"*frustum*, RenderList & *in*, RenderList & *out*, "
+":ref:`AABBox<api_AABBox>` * *box* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:176
+msgid ""
+"Filters *out* an incoming *in* list which are not *in* the frustum. "
+"Returns filtered list. The output parameter returns a bounding *box* for "
+"filtered objects."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:182
+msgid ""
+"void **PipelineContext::insertRenderTask** "
+"(:ref:`PipelineTask<api_PipelineTask>` * *task*, "
+":ref:`PipelineTask<api_PipelineTask>` * *before* = nullptr)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:184
+msgid ""
+"Inserts a rendering *task* into the pipeline context. Optionally, "
+"specifies the *task* to insert before."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:190
+msgid "void **PipelineContext::invalidateTasks** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:192
+msgid "Invalidates all the pipeline tasks to let them to reestablish connections."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:198
+msgid ""
+"const std::list<PipelineTask :ref:`*><api_*>>` & "
+"**PipelineContext::renderTasks** () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:200
+msgid "Returns the list of rendering tasks associated with the pipeline context."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:206
+msgid "StringList **PipelineContext::renderTextures** () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:208
+msgid "Returns a list of names of the global textures."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:214
+msgid "void **PipelineContext::resize** (int32_t  *width*, int32_t  *height*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:216
+msgid ""
+"Resizes the pipeline context to the specified *width* and height. Updates"
+" render tasks accordingly."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:222
+msgid ":ref:`Texture<api_Texture>` * **PipelineContext::resultTexture** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:224
+msgid "Returns the resulting texture containing the rendering result."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:230
+msgid "LightList **PipelineContext::sceneLights** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:232
+msgid "Returns the list of scene lights relevant for rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:238
+msgid "RenderList **PipelineContext::sceneRenderables** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:240
+msgid "Returns the list of scene components relevant for rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:246
+msgid ""
+"void **PipelineContext::setCurrentCamera** (:ref:`Camera<api_Camera>` * "
+"*camera*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:248
+msgid ""
+"Sets the current *camera* and updates associated matrices in the command "
+"buffer."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:250
+msgid "**See also** currentCamera()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:256
+msgid ""
+"void **PipelineContext::setDefaultTarget** "
+"(:ref:`RenderTarget<api_RenderTarget>` * *target*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:258
+msgid "Sets the default render *target* for the pipeline context."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:260
+msgid "**See also** defaultTarget()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:266
+msgid ""
+"void **PipelineContext::setPipeline** (:ref:`Pipeline<api_Pipeline>` * "
+"*pipeline*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:268
+msgid ""
+"Sets the rendering *pipeline* for the context, creating and linking "
+"associated rendering tasks."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:274
+msgid "void **PipelineContext::setWorld** (:ref:`World<api_World>` * *world*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:276
+msgid "Sets the curent *world* instance to process."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:278
+msgid "**See also** world()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:284
+msgid ":ref:`Vector2<api_Vector2>`  **PipelineContext::size** () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:286
+msgid "Returns screen size"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:292
+msgid ""
+"void **PipelineContext::subscribePost** "
+"(:ref:`PipelineContext::RenderCallback<api_PipelineContext_RenderCallback>`"
+"  *callback*, void * *object*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:294
+msgid "Subscribes *callback* for *object* to handle post rendering step."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:300
+msgid ""
+":ref:`Texture<api_Texture>` * **PipelineContext::textureBuffer** "
+"(:ref:`TString<api_TString>` & *name*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:302
+msgid "Returns a texture buffer based on its name."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:308
+msgid "void **PipelineContext::unsubscribePost** (void * *object*)"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:310
+msgid "Unsubscribes an *object* to stop handle post rendering step."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:316
+msgid ":ref:`Texture<api_Texture>` * **PipelineContext::whiteTexture** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:318
+msgid "Return the white texture used in rendering."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:324
+msgid ":ref:`World<api_World>` * **PipelineContext::world** ()"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:326
+msgid "Returns the curent world instance to process."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:328
+msgid "**See also** setWorld()."
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:334
+msgid ":ref:`AABBox<api_AABBox>`  **PipelineContext::worldBound** () const"
+msgstr ""
+
+#: ../../source/reference/pipelinecontext.rst:336
+msgid "Returns the bounding box representing the world-bound."
+msgstr ""
+

@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+"Language: ru\n"
+
+#: ../../source/rendering/vfx/editor.rst:4
+#: ../../source/rendering/vfx/editor.rst:17
+msgid "VFX Editor"
+msgstr "Редактор VFX"
+
+#: ../../source/rendering/vfx/editor.rst:7
+msgid "Introduction"
+msgstr "Введение"
+
+#: ../../source/rendering/vfx/editor.rst:9
+msgid ""
+"The VFX editor is a tool designed for creating and editing visual effects"
+" (VFX) in the game engine. Using this editor, you can create particle "
+"effects, lighting, shadows, animations, and other graphical elements that"
+" enhance the visual experience of the game."
+msgstr ""
+"Редактор VFX — это инструмент, предназначенный для создания и редактирования "
+"визуальных эффектов (VFX) в игровом движке. С помощью этого редактора вы можете "
+"создавать эффекты частиц, освещение, тени, анимации и другие графические "
+"элементы, которые улучшают визуальное восприятие игры."
+
+#: ../../source/rendering/vfx/editor.rst:11
+msgid ""
+"This documentation is intended for users who want to learn how to use the"
+" VFX editor to create, configure, and optimize visual effects in their "
+"games."
+msgstr ""
+"Эта документация предназначена для пользователей, которые хотят научиться "
+"использовать редактор VFX для создания, настройки и оптимизации визуальных "
+"эффектов в своих играх."
+
+#: 217source/rendering/vfx/editor.rst:15
+msgid "Getting Started with the VFX Editor"
+msgstr "Начало работы с редактором VFX"
+
+#: ../../source/rendering/vfx/editor.rst:21
+msgid "The editor consists of several key areas:"
+msgstr "Редактор состоит из нескольких ключевых областей:"
+
+#: ../../source/rendering/vfx/editor.rst:23
+msgid ""
+"**Workspace**: The area where VFX are visualized and edited, allowing you"
+" to configure and preview the effect in real time."
+msgstr ""
+"**Рабочая область**: Область, где визуализируются и редактируются VFX, "
+"позволяющая настраивать эффект и просматривать его в реальном времени."
+
+#: ../../source/rendering/vfx/editor.rst:25
+msgid ""
+"**Parameter Editor**: A panel located next to the workspace, where you "
+"can adjust the parameters of each particle modifier. Here, you can "
+"configure properties such as particle emission, trajectory, size, speed, "
+"and lifetime."
+msgstr ""
+"**Редактор параметров**: Панель, расположенная рядом с рабочей областью, где "
+"вы можете настраивать параметры каждого модификатора частиц. Здесь вы можете "
+"настраивать такие свойства, как эмиссия частиц, траектория, размер, скорость "
+"и время жизни."
+
+#: ../../source/rendering/vfx/editor.rst:27
+msgid ""
+"**Preview Window**: The area where you can preview the effect in real "
+"time. The Preview Window updates as you change the parameters, allowing "
+"you to immediately see the results."
+msgstr ""
+"**Окно предпросмотра**: Область, где вы можете просматривать эффект в реальном "
+"времени. Окно предпросмотра обновляется по мере изменения параметров, позволяя "
+"вам сразу видеть результаты."
+
+#: ../../source/rendering/vfx/editor.rst:29
+msgid ""
+"In the editor, effects are represented as a cascade of particle "
+"modifiers, which allow you to fine-tune every aspect of the effect."
+msgstr ""
+"В редакторе эффекты представлены в виде каскада модификаторов частиц, которые "
+"позволяют точно настраивать каждый аспект эффекта."
+
+#: ../../source/rendering/vfx/editor.rst:33
+msgid "Creating a New Effect"
+msgstr "Создание нового эффекта"
+
+#: ../../source/rendering/vfx/editor.rst:35
+msgid "Go to the **Content Browser**."
+msgstr "Перейдите в **Обозреватель контента**."
+
+#: ../../source/rendering/vfx/editor.rst:37
+msgid "Right-click and select **Visual Effect** from the context menu."
+msgstr "Щёлкните правой кнопкой мыши и выберите **Визуальный эффект** из контекстного меню."
+
+#: ../../source/rendering/vfx/editor.rst:39
+msgid "Create Effect"
+msgstr "Создание эффекта"
+
+#: ../../source/rendering/vfx/editor.rst:42
+msgid ""
+"Confirm the creation. The new effect will appear in the **Content "
+"Browser** and will be available for further editing."
+msgstr ""
+"Подтвердите создание. Новый эффект появится в **Обозревателе контента** и будет "
+"доступен для дальнейшего редактирования."
+
+#: ../../source/rendering/vfx/editor.rst:44
+msgid "New Effect"
+msgstr "Новый эффект"
+
+#: ../../source/rendering/vfx/editor.rst:48
+#: ../../source/rendering/vfx/editor.rst:63
+msgid "Cascade of Particle Modifiers"
+msgstr "Каскад модификаторов частиц"
+
+#: ../../source/rendering/vfx/editor.rst:50
+msgid ""
+"An effect consists of a series of modifiers that control different "
+"aspects of particle behavior. The cascade of modifiers allows you to "
+"configure:"
+msgstr ""
+"Эффект состоит из серии модификаторов, которые управляют различными аспектами "
+"поведения частиц. Каскад модификаторов позволяет настраивать:"
+
+#: ../../source/rendering/vfx/editor.rst:52
+msgid ""
+"**Particle Emission**: Set the quantity and frequency of particle "
+"generation."
+msgstr ""
+"**Эмиссия частиц**: Установите количество и частоту генерации частиц."
+
+#: ../../source/rendering/vfx/editor.rst:54
+msgid ""
+"**Motion Trajectory**: Define the direction and speed of the particles' "
+"movement."
+msgstr ""
+"**Траектория движения**: Определите направление и скорость движения частиц."
+
+#: ../../source/rendering/vfx/editor.rst:56
+msgid "**Particle Lifetime**: Specify how long each particle lasts."
+msgstr "**Время жизни частиц**: Укажите, как долго существует каждая частица."
+
+#: ../../source/rendering/vfx/editor.rst:58
+msgid ""
+"**Particle Size and Textures**: Configure the appearance, including "
+"textures, transparency and other visual properties."
+msgstr ""
+"**Размер и текстуры частиц**: Настройте внешний вид, включая текстуры, "
+"прозрачность и другие визуальные свойства."
+
+#: ../../source/rendering/vfx/editor.rst:60
+msgid ""
+"Each modifier can be adjusted using a settings available in the "
+"**Parameter Editor**."
+msgstr ""
+"Каждый модификатор можно настроить с помощью параметров, доступных в "
+"**Редакторе параметров**."
+
+#: ../../source/rendering/vfx/editor.rst:65
+msgid ""
+"An effect consists of a series of modifiers that control different "
+"aspects of particle behavior. These modifiers can be divided into three "
+"types:"
+msgstr ""
+"Эффект состоит из серии модификаторов, которые управляют различными аспектами "
+"поведения частиц. Эти модификаторы можно разделить на три типа:"
+
+#: ../../source/rendering/vfx/editor.rst:67
+msgid "**Spawn** - Modifier applied when a new particle is created:"
+msgstr "**Spawn** — модификатор, применяемый при создании новой частицы:"
+
+#: ../../source/rendering/vfx/editor.rst:69
+msgid ""
+"These modifiers define the initial properties of a particle, such as its "
+"position, velocity, and other starting attributes when the particle is "
+"spawned."
+msgstr ""
+"Эти модификаторы определяют начальные свойства частицы, такие как её положение, "
+"скорость и другие стартовые атрибуты при порождении частицы."
+
+#: ../../source/rendering/vfx/editor.rst:71
+msgid "**Update** - Modifier applied to update the particle state every frame:"
+msgstr "**Update** — модификатор, применяемый для обновления состояния частицы каждый кадр:"
+
+#: ../../source/rendering/vfx/editor.rst:73
+msgid ""
+"These modifiers are responsible for changing the state of the particle "
+"over time, affecting its movement, size, color, and other dynamic "
+"properties during its lifetime."
+msgstr ""
+"Эти модификаторы отвечают за изменение состояния частицы со временем, влияя на "
+"её движение, размер, цвет и другие динамические свойства в течение её жизни."
+
+#: ../../source/rendering/vfx/editor.rst:75
+msgid "**Render** - Modifier responsible for rendering the particle:"
+msgstr "**Render** — модификатор, отвечающий за рендеринг частицы:"
+
+#: ../../source/rendering/vfx/editor.rst:77
+msgid ""
+"These modifiers control how the particle is drawn or rendered, including "
+"its appearance, texture, and any other visual characteristics that are "
+"applied during its display."
+msgstr ""
+"Эти модификаторы управляют тем, как частица рисуется или рендерится, включая её "
+"внешний вид, текстуру и любые другие визуальные характеристики, которые "
+"применяются при её отображении."
+
+#: ../../source/rendering/vfx/editor.rst:79
+msgid ""
+"Each modifier can be adjusted using the settings available in the "
+"**Parameter Editor**."
+msgstr ""
+"Каждый модификатор можно настроить с помощью параметров, доступных в "
+"**Редакторе параметров**."
+
+#: ../../source/rendering/vfx/editor.rst:82
+msgid "Adding Modifiers to the Cascade"
+msgstr "Добавление модификаторов в каскад"
+
+#: ../../source/rendering/vfx/editor.rst:84
+msgid ""
+"Modifiers in the cascade control various aspects of particle behavior and"
+" their interaction with the environment. Properly configuring the "
+"modifiers is essential for achieving the desired visual effect."
+msgstr ""
+"Модификаторы в каскаде управляют различными аспектами поведения частиц и их "
+"взаимодействием с окружением. Правильная настройка модификаторов необходима "
+"для достижения желаемого визуального эффекта."
+
+#: ../../source/rendering/vfx/editor.rst:86
+msgid ""
+"**Adding a Modifier** To add a new modifier, click on **Add Modificator**"
+" button in **Properties** and seclect one of the available modifier types"
+msgstr ""
+"**Добавление модификатора** Чтобы добавить новый модификатор, нажмите кнопку "
+"**Add Modificator** в **Свойствах** и выберите один из доступных типов модификаторов"
+
+#: ../../source/rendering/vfx/editor.rst:89
+msgid "Add Modificator"
+msgstr "Добавить модификатор"
+
+#: ../../source/rendering/vfx/editor.rst:92
+msgid "Some of available modificators:"
+msgstr "Некоторые из доступных модификаторов:"
+
+#: ../../source/rendering/vfx/editor.rst:94
+msgid "**Add Velocity** – to modify the particle speed."
+msgstr "**Add Velocity** – для изменения скорости частиц."
+
+#: ../../source/rendering/vfx/editor.rst:96
+msgid "**Rotation Rate** – to control the particle rotation angle."
+msgstr "**Rotation Rate** – для управления углом поворота частиц."
+
+#: ../../source/rendering/vfx/editor.rst:98
+msgid ""
+"**Color Scale** – to smoothly change the color of the particles from "
+"birth to death."
+msgstr ""
+"**Color Scale** – для плавного изменения цвета частиц от рождения до гибели."
+
+#: ../../source/rendering/vfx/editor.rst:100
+msgid "**Size Scale** – to modify the size of the particles over time."
+msgstr "**Size Scale** – для изменения размера частиц со временем."
+
+#: ../../source/rendering/vfx/editor.rst:102
+msgid ""
+"**Configuring Modifier Parameters** After adding a modifier, you can "
+"adjust its parameters in the **Parameter Editor**. Depending on the "
+"modifier type, different settings will be available. For example: - For "
+"the **Velocity** modifier, you can set the speed and direction."
+msgstr ""
+"**Настройка параметров модификатора** После добавления модификатора вы можете "
+"настроить его параметры в **Редакторе параметров**. В зависимости от типа "
+"модификатора будут доступны разные настройки. Например: - Для модификатора "
+"**Velocity** вы можете установить скорость и направление."
+
+#: ../../source/rendering/vfx/editor.rst:106
+msgid ""
+"For **Color Scale**, you can select the initial and final particle "
+"colors, as well as the duration of the color change."
+msgstr ""
+"Для **Color Scale** вы можете выбрать начальный и конечный цвета частиц, "
+"а также продолжительность изменения цвета."
+
+#: ../../source/rendering/vfx/editor.rst:108
+msgid ""
+"**Previewing Changes** After adding and configuring the modifiers, you "
+"can immediately see the result in the **Preview** window. This will help "
+"you assess the impact of each change in real-time and fine-tune the "
+"parameters to achieve the desired outcome."
+msgstr ""
+"**Предпросмотр изменений** После добавления и настройки модификаторов вы можете "
+"сразу увидеть результат в окне **Предпросмотра**. Это поможет вам оценить "
+"влияние каждого изменения в реальном времени и точно настроить параметры для "
+"достижения желаемого результата."
+
+#: ../../source/rendering/vfx/editor.rst:111
+msgid ""
+"**Removing a Modifier** To remove a modifier, click on \"X\" button in "
+"**Properties** window. Removing the modifier will not affect other "
+"elements of the effect."
+msgstr ""
+"**Удаление модификатора** Чтобы удалить модификатор, нажмите кнопку \"X\" в окне "
+"**Свойства**. Удаление модификатора не повлияет на другие элементы эффекта."
+
+#: ../../source/rendering/vfx/editor.rst:114
+msgid "Delete Modificator"
+msgstr "Удалить модификатор"
+
+#: ../../source/rendering/vfx/editor.rst:117
+msgid ""
+"By following these steps, you can efficiently add and configure modifiers"
+" in the cascade to create complex and realistic visual effects."
+msgstr ""
+"Следуя этим шагам, вы сможете эффективно добавлять и настраивать модификаторы "
+"в каскаде для создания сложных и реалистичных визуальных эффектов."

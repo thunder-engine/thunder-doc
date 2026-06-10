@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/animationtrack.rst:4
+msgid "AnimationTrack"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:21
+msgid ":ref:`AnimationCurve<api_AnimationCurve>` &"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:21
+msgid ":ref:`curve<api_AnimationTrack_3bcf6e19>` ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:23
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:23
+msgid ":ref:`duration<api_AnimationTrack_ea94d012>` () const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:25
+#: ../../source/reference/animationtrack.rst:29
+#: ../../source/reference/animationtrack.rst:31
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:25
+msgid ":ref:`fixCurves<api_AnimationTrack_b917a65f>` ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:27
+msgid ":ref:`AnimationTrack::Frames<api_AnimationTrack_Frames>` &"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:27
+msgid ":ref:`frames<api_AnimationTrack_82179cdf>` ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:29
+msgid ":ref:`fromVariant<api_AnimationTrack_43acfd75>` (const Variant & variant)"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:31
+msgid ":ref:`setDuration<api_AnimationTrack_13527db6>` (int  duration)"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:33
+msgid ":ref:`Variant<api_Variant>`"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:33
+msgid ":ref:`toVariant<api_AnimationTrack_fe8cb53a>` () const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:35
+msgid ":ref:`Quaternion<api_Quaternion>`"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:35
+msgid ":ref:`valueQuaternion<api_AnimationTrack_4f7b2ed3>` (float  time) const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:37
+msgid ":ref:`TString<api_TString>`"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:37
+msgid ":ref:`valueString<api_AnimationTrack_061af4c9>` (float  time) const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:39
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:39
+msgid ":ref:`valueVector4<api_AnimationTrack_927dfc38>` (float  time) const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:47
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:49
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:54
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:58
+msgid ":ref:`AnimationCurve<api_AnimationCurve>` & **AnimationTrack::curve** ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:60
+msgid "Returns curve used for interpolation based animation."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:66
+msgid "int **AnimationTrack::duration** () const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:68
+msgid "Returns a duration of track in milliseconds."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:70
+msgid "**See also** setDuration()."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:76
+msgid "void **AnimationTrack::fixCurves** ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:78
+msgid ""
+"Tries to fix animation curves in the animation track. Renormalizes "
+"existant keyframes and checks the duration."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:84
+msgid ""
+":ref:`AnimationTrack::Frames<api_AnimationTrack::Frames>` & "
+"**AnimationTrack::frames** ()"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:86
+msgid "Returns set of frames for frame-by-frame animation (e.g. sprites)."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:92
+msgid ""
+"void **AnimationTrack::fromVariant** (:ref:`Variant<api_Variant>` & "
+"*variant*)"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:94
+msgid "Deserializes current track from variant."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:100
+msgid "void **AnimationTrack::setDuration** (int  *duration*)"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:102
+msgid "Sets a *duration* of track in milliseconds."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:104
+msgid "**See also** duration()."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:110
+msgid ":ref:`Variant<api_Variant>`  **AnimationTrack::toVariant** () const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:112
+msgid "Serializes current track to Variant."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:118
+msgid ""
+":ref:`Quaternion<api_Quaternion>`  **AnimationTrack::valueQuaternion** "
+"(float  *time*) const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:120
+#: ../../source/reference/animationtrack.rst:136
+msgid ""
+"Returns current value for the animation curve. Parameter normalized "
+"*time* is used to interpolate value between key frames."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:126
+msgid ""
+":ref:`TString<api_TString>`  **AnimationTrack::valueString** (float  "
+"*time*) const"
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:128
+msgid "Returns current value at normalized *time* position."
+msgstr ""
+
+#: ../../source/reference/animationtrack.rst:134
+msgid ""
+":ref:`Vector4<api_Vector4>`  **AnimationTrack::valueVector4** (float  "
+"*time*) const"
+msgstr ""
+

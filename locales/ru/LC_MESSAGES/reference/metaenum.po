@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/metaenum.rst:4
+msgid "MetaEnum"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:13
+msgid ""
+"This class is a part of Object-Introspection-Mechanism. MetaEnum provides"
+" information about one particular class enumerator."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:15
+msgid ""
+"To make enumerators visible in introspection mechanism, developers must "
+"declare those under A_ENUMS() macro."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:22
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:25
+msgid ":ref:`MetaEnum<api_MetaEnum_28ba0563>` (const MetaEnum::Table * table)"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:27
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:27
+msgid ":ref:`isValid<api_MetaEnum_d1ba4798>` () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:29
+#: ../../source/reference/metaenum.rst:35
+#: ../../source/reference/metaenum.rst:41
+msgid "const char"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:29
+msgid ":ref:`key<api_MetaEnum_685f4d97>` (int  index) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:31
+#: ../../source/reference/metaenum.rst:33
+#: ../../source/reference/metaenum.rst:39
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:31
+msgid ":ref:`keyCount<api_MetaEnum_beaf928d>` () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:33
+msgid ":ref:`keyToValue<api_MetaEnum_fc2b89a0>` (const char * key) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:35
+msgid ":ref:`name<api_MetaEnum_d91f53eb>` () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:37
+msgid "const :ref:`MetaEnum::Table<api_MetaEnum_Table>` *"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:37
+msgid ":ref:`table<api_MetaEnum_742a1e05>` () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:39
+msgid ":ref:`value<api_MetaEnum_270f4eab>` (int  index) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:41
+msgid ":ref:`valueToKey<api_MetaEnum_a69d17e8>` (int  value) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:49
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:51
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:56
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:60
+msgid ""
+"**MetaEnum::MetaEnum** (:ref:`MetaEnum::Table<api_MetaEnum_Table>` * "
+"*table*)"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:62
+msgid ""
+"Constructs MetaEnum object which will contain information provided in a "
+"table."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:68
+msgid "bool **MetaEnum::isValid** () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:70
+msgid "Returns true if enumerator is valid; otherwise returns false."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:76
+msgid "const char **MetaEnum::key** (int  *index*) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:78
+msgid "Returns the key with the given index, or nullptr if no such key exists."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:84
+msgid "int **MetaEnum::keyCount** () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:86
+msgid "Returns the number of keys."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:92
+msgid "int **MetaEnum::keyToValue** (char * *key*) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:94
+msgid ""
+"Returns the integer value of the given enumeration key, or -1 if *key* is"
+" not defined"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:100
+msgid "const char **MetaEnum::name** () const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:102
+msgid "Returns a name of enumerator."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:108
+msgid ""
+"const :ref:`MetaEnum::Table<api_MetaEnum::Table>` * **MetaEnum::table** "
+"() const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:110
+msgid "Returns enumerator information table."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:116
+msgid "int **MetaEnum::value** (int  *index*) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:118
+msgid ""
+"Returns the value with the given index; or returns -1 if there is no such"
+" value."
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:124
+msgid "const char **MetaEnum::valueToKey** (int  *value*) const"
+msgstr ""
+
+#: ../../source/reference/metaenum.rst:126
+msgid ""
+"Returns the string that is used as the name of the given enumeration "
+"value, or nullptr if *value* is not defined."
+msgstr ""
+

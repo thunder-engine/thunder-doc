@@ -1,0 +1,385 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/log.rst:4
+msgid "Log"
+msgstr ""
+
+#: ../../source/reference/log.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/log.rst:11 ../../source/reference/log.rst:74
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/log.rst:13
+msgid ""
+"The Log is used whenever the developer needs to write out debugging or "
+"tracing information to a file or console."
+msgstr ""
+
+#: ../../source/reference/log.rst:15
+msgid "Common usecase:"
+msgstr ""
+
+#: ../../source/reference/log.rst:26
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/log.rst:29
+msgid ":ref:`Log<api_Log_f18954e6>` (Log::LogTypes  type)"
+msgstr ""
+
+#: ../../source/reference/log.rst:31
+msgid ":ref:`~Log<api_Log_9467ba2c>` ()"
+msgstr ""
+
+#: ../../source/reference/log.rst:33 ../../source/reference/log.rst:35
+#: ../../source/reference/log.rst:37 ../../source/reference/log.rst:39
+#: ../../source/reference/log.rst:41 ../../source/reference/log.rst:43
+#: ../../source/reference/log.rst:45 ../../source/reference/log.rst:47
+#: ../../source/reference/log.rst:49 ../../source/reference/log.rst:51
+#: ../../source/reference/log.rst:53 ../../source/reference/log.rst:55
+#: ../../source/reference/log.rst:57 ../../source/reference/log.rst:59
+msgid ":ref:`Log<api_Log>` &"
+msgstr ""
+
+#: ../../source/reference/log.rst:33
+msgid ":ref:`operator\\<\\<<api_Log_19eac27f>` (bool  b)"
+msgstr ""
+
+#: ../../source/reference/log.rst:35
+msgid ":ref:`operator\\<\\<<api_Log_bf79e2d0>` (char  c)"
+msgstr ""
+
+#: ../../source/reference/log.rst:37
+msgid ":ref:`operator\\<\\<<api_Log_4073c615>` (const TString & string)"
+msgstr ""
+
+#: ../../source/reference/log.rst:39
+msgid ":ref:`operator\\<\\<<api_Log_23a9815b>` (const char * string)"
+msgstr ""
+
+#: ../../source/reference/log.rst:41
+msgid ":ref:`operator\\<\\<<api_Log_de7a4c13>` (const void * value)"
+msgstr ""
+
+#: ../../source/reference/log.rst:43
+msgid ":ref:`operator\\<\\<<api_Log_89275d6f>` (double  d)"
+msgstr ""
+
+#: ../../source/reference/log.rst:45
+msgid ":ref:`operator\\<\\<<api_Log_6fe70835>` (float  f)"
+msgstr ""
+
+#: ../../source/reference/log.rst:47
+msgid ":ref:`operator\\<\\<<api_Log_5c348ae7>` (int  i)"
+msgstr ""
+
+#: ../../source/reference/log.rst:49
+msgid ":ref:`operator\\<\\<<api_Log_9d07f2ce>` (long long  i)"
+msgstr ""
+
+#: ../../source/reference/log.rst:51
+msgid ":ref:`operator\\<\\<<api_Log_de53760a>` (short  s)"
+msgstr ""
+
+#: ../../source/reference/log.rst:53
+msgid ":ref:`operator\\<\\<<api_Log_a1df7ce6>` (unsigned char  c)"
+msgstr ""
+
+#: ../../source/reference/log.rst:55
+msgid ":ref:`operator\\<\\<<api_Log_83791e64>` (unsigned int  i)"
+msgstr ""
+
+#: ../../source/reference/log.rst:57
+msgid ":ref:`operator\\<\\<<api_Log_49635cfe>` (unsigned long long  i)"
+msgstr ""
+
+#: ../../source/reference/log.rst:59
+msgid ":ref:`operator\\<\\<<api_Log_625fbd4e>` (unsigned short  s)"
+msgstr ""
+
+#: ../../source/reference/log.rst:65
+msgid "Public Enums"
+msgstr ""
+
+#: ../../source/reference/log.rst:69
+msgid "**enum Log::LogTypes**"
+msgstr ""
+
+#: ../../source/reference/log.rst:71
+msgid "This enum defines the lavel of logging."
+msgstr ""
+
+#: ../../source/reference/log.rst:74
+msgid "Constant"
+msgstr ""
+
+#: ../../source/reference/log.rst:74
+msgid "Value"
+msgstr ""
+
+#: ../../source/reference/log.rst:76
+msgid "Log::CRT"
+msgstr ""
+
+#: ../../source/reference/log.rst:76
+msgid "0"
+msgstr ""
+
+#: ../../source/reference/log.rst:76
+msgid "Critical logging. For use with critical failures."
+msgstr ""
+
+#: ../../source/reference/log.rst:78
+msgid "Log::ERR"
+msgstr ""
+
+#: ../../source/reference/log.rst:78
+msgid "1"
+msgstr ""
+
+#: ../../source/reference/log.rst:78
+msgid "Error logging. For use with unrecoverable failures."
+msgstr ""
+
+#: ../../source/reference/log.rst:80
+msgid "Log::WRN"
+msgstr ""
+
+#: ../../source/reference/log.rst:80
+msgid "2"
+msgstr ""
+
+#: ../../source/reference/log.rst:80
+msgid "Warning logging. For use with recoverable failures."
+msgstr ""
+
+#: ../../source/reference/log.rst:82
+msgid "Log::INF"
+msgstr ""
+
+#: ../../source/reference/log.rst:82
+msgid "3"
+msgstr ""
+
+#: ../../source/reference/log.rst:82
+msgid "Informational logging. Should be desabled in release."
+msgstr ""
+
+#: ../../source/reference/log.rst:84
+msgid "Log::DBG"
+msgstr ""
+
+#: ../../source/reference/log.rst:84
+msgid "4"
+msgstr ""
+
+#: ../../source/reference/log.rst:84
+msgid "Debug logging. Should be desabled in release."
+msgstr ""
+
+#: ../../source/reference/log.rst:92
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/log.rst:95 ../../source/reference/log.rst:97
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/log.rst:95
+msgid ":ref:`addHandler<api_Log_0218e963>` (LogHandler * handler)"
+msgstr ""
+
+#: ../../source/reference/log.rst:97
+msgid ":ref:`setLogLevel<api_Log_b1356092>` (Log::LogTypes  level)"
+msgstr ""
+
+#: ../../source/reference/log.rst:103
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/log.rst:107
+msgid "**Log::Log** (:ref:`Log::LogTypes<api_Log_LogTypes>`  *type*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:109
+msgid "Constructs a log stream that writes to the handler for the message type."
+msgstr ""
+
+#: ../../source/reference/log.rst:115
+msgid "**Log::~Log** ()"
+msgstr ""
+
+#: ../../source/reference/log.rst:117
+msgid "Flushes any pending data to be written and destroys the log stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:123
+msgid "void **Log::addHandler** (:ref:`LogHandler<api_LogHandler>` * *handler*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:125
+msgid ""
+"Adds a new Log handler. This method can be used in case if a developer "
+"would need to move logging stream to someplace. For example to the "
+"console."
+msgstr ""
+
+#: ../../source/reference/log.rst:131
+msgid ""
+"void **Log::setLogLevel** (:ref:`Log::LogTypes<api_Log_LogTypes>`  "
+"*level*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:133
+msgid ""
+"Set current log *level* output. Messages wich are below this *level* will"
+" be descarded."
+msgstr ""
+
+#: ../../source/reference/log.rst:139
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (bool  *b*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:141
+msgid ""
+"Writes the boolean value, b, to the stream and returns a reference to the"
+" stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:145 ../../source/reference/log.rst:199
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (char  *c*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:147
+msgid ""
+"Writes the singed 8 bit integer value, c, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:151
+msgid ""
+":ref:`Log<api_Log>` & **Log::operator<<** (:ref:`TString<api_TString>` & "
+"*string*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:153
+msgid ""
+"Writes the text string, to the stream and returns a reference to the "
+"stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:157
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (char * *string*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:159
+msgid ""
+"Writes the '\\0'-terminated string, to the stream and returns a reference"
+" to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:163
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (void * *value*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:165
+msgid ""
+"Writes the pointer value, to the stream and returns a reference to the "
+"stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:169
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (double  *d*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:171
+msgid ""
+"Writes the float value with double precision, d, to the stream and "
+"returns a reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:175
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (float  *f*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:177
+msgid ""
+"Writes the float value, f, to the stream and returns a reference to the "
+"stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:181 ../../source/reference/log.rst:205
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (int  *i*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:183
+msgid ""
+"Writes the singed 32 bit integer value, i, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:187 ../../source/reference/log.rst:211
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (long  *i*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:189
+msgid ""
+"Writes the singed 64 bit integer value, i, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:193 ../../source/reference/log.rst:217
+msgid ":ref:`Log<api_Log>` & **Log::operator<<** (short  *s*)"
+msgstr ""
+
+#: ../../source/reference/log.rst:195
+msgid ""
+"Writes the singed 16 bit integer value, s, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:201
+msgid ""
+"Writes the unsinged 8 bit integer value, c, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:207
+msgid ""
+"Writes the unsinged 32 bit integer value, i, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:213
+msgid ""
+"Writes the unsinged 64 bit integer value, i, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+
+#: ../../source/reference/log.rst:219
+msgid ""
+"Writes the unsinged 16 bit integer value, s, to the stream and returns a "
+"reference to the stream."
+msgstr ""
+

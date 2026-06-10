@@ -1,0 +1,503 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/camera.rst:4
+msgid "Camera"
+msgstr ""
+
+#: ../../source/reference/camera.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/camera.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/camera.rst:18
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/camera.rst:21
+msgid ":ref:`Ray<api_Ray>`"
+msgstr ""
+
+#: ../../source/reference/camera.rst:21
+msgid ":ref:`castRay<api_Camera_26cdef80>` (float  x, float  y)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:23
+msgid ":ref:`Vector4<api_Vector4>`"
+msgstr ""
+
+#: ../../source/reference/camera.rst:23
+msgid ":ref:`color<api_Camera_20914a8d>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:25 ../../source/reference/camera.rst:27
+#: ../../source/reference/camera.rst:29 ../../source/reference/camera.rst:33
+#: ../../source/reference/camera.rst:35 ../../source/reference/camera.rst:43
+msgid "float"
+msgstr ""
+
+#: ../../source/reference/camera.rst:25
+msgid ":ref:`farPlane<api_Camera_7acb01d6>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:27
+msgid ":ref:`focalDistance<api_Camera_69a0b4cd>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:29
+msgid ":ref:`fov<api_Camera_c90e86fd>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:31 ../../source/reference/camera.rst:37
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/camera.rst:31
+msgid ":ref:`isScreenSpace<api_Camera_50a8def2>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:33
+msgid ":ref:`nearPlane<api_Camera_a7159bf6>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:35
+msgid ":ref:`orthoSize<api_Camera_d5f76924>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:37
+msgid ":ref:`orthographic<api_Camera_6f2e8b34>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:39 ../../source/reference/camera.rst:63
+msgid ":ref:`Vector3<api_Vector3>`"
+msgstr ""
+
+#: ../../source/reference/camera.rst:39
+msgid ":ref:`project<api_Camera_e6238c5a>` (const Vector3 & worldSpace)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:41 ../../source/reference/camera.rst:65
+msgid ":ref:`Matrix4<api_Matrix4>`"
+msgstr ""
+
+#: ../../source/reference/camera.rst:41
+msgid ":ref:`projectionMatrix<api_Camera_f389b517>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:43
+msgid ":ref:`ratio<api_Camera_362cd071>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:45 ../../source/reference/camera.rst:47
+#: ../../source/reference/camera.rst:49 ../../source/reference/camera.rst:51
+#: ../../source/reference/camera.rst:53 ../../source/reference/camera.rst:55
+#: ../../source/reference/camera.rst:57 ../../source/reference/camera.rst:59
+#: ../../source/reference/camera.rst:61 ../../source/reference/camera.rst:82
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/camera.rst:45
+msgid ":ref:`setColor<api_Camera_8af71540>` (const Vector4  color)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:47
+msgid ":ref:`setFar<api_Camera_0b8f356e>` (const float  distance)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:49
+msgid ":ref:`setFocalDistance<api_Camera_753f8db6>` (const float  focal)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:51
+msgid ":ref:`setFov<api_Camera_a835e640>` (const float  angle)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:53
+msgid ":ref:`setNear<api_Camera_9e061d7f>` (const float  distance)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:55
+msgid ":ref:`setOrthoSize<api_Camera_6e234afd>` (const float  size)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:57
+msgid ":ref:`setOrthographic<api_Camera_93c0f78d>` (const bool  mode)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:59
+msgid ":ref:`setRatio<api_Camera_3562978d>` (float  ratio)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:61
+msgid ":ref:`setScreenSpace<api_Camera_61d3a459>` (bool  mode)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:63
+msgid ":ref:`unproject<api_Camera_db1af865>` (const Vector3 & screenSpace)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:65
+msgid ":ref:`viewMatrix<api_Camera_e7a53d41>` () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:73
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/camera.rst:76
+msgid ":ref:`Camera<api_Camera>` *"
+msgstr ""
+
+#: ../../source/reference/camera.rst:76
+msgid ":ref:`current<api_Camera_5c0e28a4>` ()"
+msgstr ""
+
+#: ../../source/reference/camera.rst:78 ../../source/reference/camera.rst:80
+msgid "std::array<Vector3, :ref:`8><api_8>>`"
+msgstr ""
+
+#: ../../source/reference/camera.rst:78
+msgid ":ref:`frustumCorners<api_Camera_48c7316b>` (const Camera & camera)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:80
+msgid ""
+":ref:`frustumCorners<api_Camera_e15cab38>` (bool  ortho, float  sigma, "
+"float  ratio, const Vector3 & position, const Quaternion & rotation, "
+"float  nearPlane, float  farPlane)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:82
+msgid ":ref:`setCurrent<api_Camera_03cf82a4>` (Camera * current)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:88
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/camera.rst:92
+msgid ":ref:`Ray<api_Ray>`  **Camera::castRay** (float  *x*, float  *y*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:94
+msgid ""
+"Returns ray with origin point in camera position and direction to "
+"projection plane with *x* and *y* coordinates."
+msgstr ""
+
+#: ../../source/reference/camera.rst:100
+msgid ":ref:`Vector4<api_Vector4>`  **Camera::color** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:102
+msgid "Returns the color with which the screen will be cleared."
+msgstr ""
+
+#: ../../source/reference/camera.rst:104
+msgid "**See also** setColor()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:110
+msgid ":ref:`Camera<api_Camera>` * **Camera::current** ()"
+msgstr ""
+
+#: ../../source/reference/camera.rst:112
+msgid "Returns current active camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:114
+msgid "**See also** setCurrent()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:120
+msgid "float **Camera::farPlane** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:122
+msgid "Returns a distance to far cut plane."
+msgstr ""
+
+#: ../../source/reference/camera.rst:128
+msgid "float **Camera::focalDistance** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:130
+msgid "Returns a focal distance for the camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:132
+msgid "**See also** setFocalDistance()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:138
+msgid "float **Camera::fov** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:140
+msgid "Returns field of view angle for the camera in degrees."
+msgstr ""
+
+#: ../../source/reference/camera.rst:142
+msgid "**See also** setFov()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:148
+msgid ""
+"std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** "
+"(:ref:`Camera<api_Camera>` & *camera*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:150
+msgid "Returns frustum corners for the camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:156
+msgid ""
+"std::array<Vector3, :ref:`8><api_8>>`  **Camera::frustumCorners** (bool  "
+"*ortho*, float  *sigma*, float  *ratio*, :ref:`Vector3<api_Vector3>` & "
+"*position*, :ref:`Quaternion<api_Quaternion>` & *rotation*, float  "
+"*nearPlane*, float  *farPlane*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:158
+msgid ""
+"Returns frustum corners with provided parameters. This function accepts a"
+" list of parameters: *ortho* is a flag that points orthographic or "
+"perspective camera. *sigma* is an angle of frustum or *ortho* size in the"
+" case of an orthographic camera. *ratio* is an aspect ratio. *position* "
+"of the frustum in world space. *rotation* of frustum in world space. "
+"*nearPlane* clipping plane. *farPlane* clipping plane."
+msgstr ""
+
+#: ../../source/reference/camera.rst:164
+msgid "bool **Camera::isScreenSpace** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:166
+msgid ""
+"Returns true is this camera in the screen space mode. Typically used for "
+"Editor."
+msgstr ""
+
+#: ../../source/reference/camera.rst:172
+msgid "float **Camera::nearPlane** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:174
+msgid "Returns a distance to near cut plane."
+msgstr ""
+
+#: ../../source/reference/camera.rst:180
+msgid "float **Camera::orthoSize** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:182
+msgid "Returns camera size for orthographic mode."
+msgstr ""
+
+#: ../../source/reference/camera.rst:184
+msgid "**See also** setOrthoSize()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:190
+msgid "bool **Camera::orthographic** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:192
+msgid ""
+"Returns true for the orthographic mode; for the perspective mode, returns"
+" false."
+msgstr ""
+
+#: ../../source/reference/camera.rst:194
+msgid "**See also** setOrthographic()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:200
+msgid ""
+":ref:`Vector3<api_Vector3>`  **Camera::project** "
+"(:ref:`Vector3<api_Vector3>` & *worldSpace*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:202
+msgid ""
+"Transforms position from *worldSpace* into screen space. Returns result "
+"of transformation."
+msgstr ""
+
+#: ../../source/reference/camera.rst:208
+msgid ":ref:`Matrix4<api_Matrix4>`  **Camera::projectionMatrix** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:210
+msgid "Returns projection matrix for the camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:216
+msgid "float **Camera::ratio** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:218
+msgid "Returns the aspect ratio (width divided by height)."
+msgstr ""
+
+#: ../../source/reference/camera.rst:220
+msgid "**See also** setRatio()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:226
+msgid "void **Camera::setColor** (:ref:`Vector4<api_Vector4>`  *color*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:228
+msgid "Sets the *color* with which the screen will be cleared."
+msgstr ""
+
+#: ../../source/reference/camera.rst:230
+msgid "**See also** color()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:236
+msgid "void **Camera::setCurrent** (:ref:`Camera<api_Camera>` * *current*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:238
+msgid "Sets *current* active camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:240
+msgid "**See also** current()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:246
+msgid "void **Camera::setFar** (float  *distance*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:248
+msgid "Sets a *distance* to far cut plane."
+msgstr ""
+
+#: ../../source/reference/camera.rst:254
+msgid "void **Camera::setFocalDistance** (float  *focal*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:256
+msgid "Sets a *focal* distance for the camera."
+msgstr ""
+
+#: ../../source/reference/camera.rst:258
+msgid "**See also** focalDistance()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:264
+msgid "void **Camera::setFov** (float  *angle*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:266
+msgid "Sets field of view *angle* for the camera in degrees."
+msgstr ""
+
+#: ../../source/reference/camera.rst:269
+msgid "**Note:** Applicable only for the perspective mode."
+msgstr ""
+
+#: ../../source/reference/camera.rst:272
+msgid "**See also** fov()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:278
+msgid "void **Camera::setNear** (float  *distance*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:280
+msgid "Sets a *distance* to near cut plane."
+msgstr ""
+
+#: ../../source/reference/camera.rst:286
+msgid "void **Camera::setOrthoSize** (float  *size*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:288
+msgid "Sets camera *size* for orthographic mode."
+msgstr ""
+
+#: ../../source/reference/camera.rst:290
+msgid "**See also** orthoSize()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:296
+msgid "void **Camera::setOrthographic** (bool  *mode*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:298
+msgid "Sets orthographic mode."
+msgstr ""
+
+#: ../../source/reference/camera.rst:300
+msgid "**See also** orthographic()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:306
+msgid "void **Camera::setRatio** (float  *ratio*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:308
+msgid "Sets the aspect *ratio* (width divided by height)."
+msgstr ""
+
+#: ../../source/reference/camera.rst:310
+msgid "**See also** ratio()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:316
+msgid "void **Camera::setScreenSpace** (bool  *mode*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:318
+msgid "Sets the screen space *mode* for the camera. Typically used for Editor."
+msgstr ""
+
+#: ../../source/reference/camera.rst:320
+msgid "**See also** isScreenSpace()."
+msgstr ""
+
+#: ../../source/reference/camera.rst:326
+msgid ""
+":ref:`Vector3<api_Vector3>`  **Camera::unproject** "
+"(:ref:`Vector3<api_Vector3>` & *screenSpace*)"
+msgstr ""
+
+#: ../../source/reference/camera.rst:328
+msgid ""
+"Transforms position from *screenSpace* into world space. Returns result "
+"of transformation."
+msgstr ""
+
+#: ../../source/reference/camera.rst:334
+msgid ":ref:`Matrix4<api_Matrix4>`  **Camera::viewMatrix** () const"
+msgstr ""
+
+#: ../../source/reference/camera.rst:336
+msgid "Returns view matrix for the camera."
+msgstr ""
+

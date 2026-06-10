@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/visualeffect.rst:4
+msgid "VisualEffect"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:13
+msgid "VisualEffect alows developer to create a complex visual effects."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:20
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:23
+msgid ":ref:`AABBox<api_AABBox>`"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:23
+msgid ":ref:`bound<api_VisualEffect_9fa28654>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:25
+#: ../../source/reference/visualeffect.rst:29
+#: ../../source/reference/visualeffect.rst:33
+#: ../../source/reference/visualeffect.rst:37
+#: ../../source/reference/visualeffect.rst:47
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:25
+msgid ":ref:`capacity<api_VisualEffect_8ba6975e>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:27
+#: ../../source/reference/visualeffect.rst:31
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:27
+msgid ":ref:`continous<api_VisualEffect_cdfb09a2>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:29
+msgid ":ref:`emitterStride<api_VisualEffect_6d27e309>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:31
+msgid ":ref:`gpu<api_VisualEffect_5f02b697>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:33
+msgid ":ref:`particleStride<api_VisualEffect_f10ac8b7>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:35
+msgid "const :ref:`VisualEffect::Renderable<api_VisualEffect_Renderable>` *"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:35
+msgid ":ref:`renderable<api_VisualEffect_c37d4e95>` (int  index) const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:37
+msgid ":ref:`renderablesCount<api_VisualEffect_d5a7c904>` ()"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:39
+#: ../../source/reference/visualeffect.rst:41
+#: ../../source/reference/visualeffect.rst:43
+#: ../../source/reference/visualeffect.rst:45
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:39
+msgid ":ref:`setCapacity<api_VisualEffect_1d6f847c>` (int  capacity)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:41
+msgid ":ref:`setContinous<api_VisualEffect_a3df925c>` (bool  continuous)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:43
+msgid ":ref:`setGpu<api_VisualEffect_09b4c12a>` (bool  gpu)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:45
+msgid ":ref:`setLocal<api_VisualEffect_de6849ab>` (bool  local)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:47
+msgid ":ref:`systemStride<api_VisualEffect_fadc063e>` () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:55
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:57
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:62
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:66
+msgid ":ref:`AABBox<api_AABBox>`  **VisualEffect::bound** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:68
+msgid "Returns bounding box for the emitter."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:74
+msgid "int **VisualEffect::capacity** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:76
+msgid "Returns a maximum number of particles to emit."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:78
+msgid "**See also** setCapacity()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:84
+msgid "bool **VisualEffect::continous** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:86
+msgid "Returns true for continuous emission, false for one time emission."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:88
+msgid "**See also** setContinous()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:94
+msgid "int **VisualEffect::emitterStride** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:96
+msgid "Return a size for emitter atributes structure."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:102
+msgid "bool **VisualEffect::gpu** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:104
+msgid "Returns true if GPU particle simulation is enabled, false otherwise."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:107
+#: ../../source/reference/visualeffect.rst:165
+msgid "**Note:** Gpu simulation is not supported yet."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:110
+msgid "**See also** setGpu()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:116
+msgid "int **VisualEffect::particleStride** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:118
+msgid "Return a size for particle atributes structure."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:124
+msgid ""
+"const :ref:`VisualEffect::Renderable<api_VisualEffect::Renderable>` * "
+"**VisualEffect::renderable** (int  *index*) const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:126
+msgid ""
+"Returns renderable parameters with *index* associated with the particle "
+"emitter."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:132
+msgid "int **VisualEffect::renderablesCount** ()"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:134
+msgid "Returns renderables count."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:140
+msgid "void **VisualEffect::setCapacity** (int  *capacity*)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:142
+msgid "Sets a maximum *capacity* of particles to emit."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:144
+msgid "**See also** capacity()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:150
+msgid "void **VisualEffect::setContinous** (bool  *continuous*)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:152
+msgid ""
+"Setter for the *continuous* flag indicating *continuous* particle "
+"emission."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:154
+msgid "**See also** continous()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:160
+msgid "void **VisualEffect::setGpu** (bool  *gpu*)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:162
+msgid "Setter for the *gpu* flag indicating GPU particle simulation."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:168
+msgid "**See also** gpu()."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:174
+msgid "void **VisualEffect::setLocal** (bool  *local*)"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:176
+msgid "Setter for the *local* flag indicating *local* particle space."
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:182
+msgid "int **VisualEffect::systemStride** () const"
+msgstr ""
+
+#: ../../source/reference/visualeffect.rst:184
+msgid "Return a size for system atributes structure."
+msgstr ""
+

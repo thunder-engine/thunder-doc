@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Thunder Engine
+# This file is distributed under the same license as the Thunder Engine
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thunder Engine \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 10:44+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../source/reference/editortool.rst:4
+msgid "EditorTool"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:6
+msgid "Inherited: None"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:11
+msgid "Description"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:13
+msgid ""
+"The EditorTool class is an abstract base class that defines the interface"
+" for editor tools in the application. It provides common functionality "
+"and virtual methods that must be implemented by specific tool "
+"implementations."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:15
+msgid "Example:"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:49
+msgid "Public Methods"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:52
+#: ../../source/reference/editortool.rst:56
+#: ../../source/reference/editortool.rst:60
+#: ../../source/reference/editortool.rst:68
+msgid "void"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:52
+msgid ":ref:`beginControl<api_EditorTool_f4b9e813>` ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:54
+msgid "bool"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:54
+msgid ":ref:`blockSelection<api_EditorTool_0ec3f59a>` () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:56
+msgid ":ref:`cancelControl<api_EditorTool_90e8d7c3>` ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:58
+#: ../../source/reference/editortool.rst:64
+#: ../../source/reference/editortool.rst:66
+msgid "std::string"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:58
+msgid ":ref:`component<api_EditorTool_5da61042>` () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:60
+msgid ":ref:`endControl<api_EditorTool_60ad3912>` ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:62
+msgid "int"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:62
+msgid ":ref:`panel<api_EditorTool_bd1ec230>` ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:64
+msgid ":ref:`shortcut<api_EditorTool_4a78f9b0>` () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:66
+msgid ":ref:`toolTip<api_EditorTool_9460dabc>` () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:68
+msgid ""
+":ref:`update<api_EditorTool_9bde2a36>` (bool  center, bool  local, bool  "
+"snap)"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:76
+msgid "Static Methods"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:78
+msgid "None"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:83
+msgid "Methods Description"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:87
+msgid "void **EditorTool::beginControl** ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:89
+msgid ""
+"Called when the tool begins active control. Can be used to store the "
+"initial state of controlled Component."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:95
+msgid "bool **EditorTool::blockSelection** () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:97
+msgid ""
+"Determines whether the tool blocks regular selection behavior (default "
+"returns false)."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:103
+msgid "void **EditorTool::cancelControl** ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:105
+msgid ""
+"Cancels the current control operation. Can be used to restore the state "
+"of contolled Component."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:107
+msgid "**See also** EditorTool::beginControl()."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:113
+msgid "std::string **EditorTool::component** () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:115
+msgid ""
+"Returns the associated component type for the tool (default "
+"implementation returns empty string)."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:121
+msgid "void **EditorTool::endControl** ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:123
+msgid ""
+"Called when the tool ends active control. Can be used to store current "
+"operation to Undo/Redo system."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:129
+msgid "int **EditorTool::panel** ()"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:131
+msgid ""
+"Returns a custom panel widget for tool options (default implementation "
+"returns nullptr)."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:137
+msgid "std::string **EditorTool::shortcut** () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:139
+msgid ""
+"Returns the keyboard shortcut for the tool (default implementation "
+"returns empty string)."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:145
+msgid "std::string **EditorTool::toolTip** () const"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:147
+msgid ""
+"Returns the tooltip text for the tool (default implementation returns "
+"empty string)."
+msgstr ""
+
+#: ../../source/reference/editortool.rst:153
+msgid "void **EditorTool::update** (bool  *center*, bool  *local*, bool  *snap*)"
+msgstr ""
+
+#: ../../source/reference/editortool.rst:155
+msgid ""
+"Updates the controled Component state and performs any necessary "
+"operations. Parameter *center* used for center-based or origin-based "
+"transformations. Parameter *local* used for *local* space or world space "
+"coordinates. Parameter *snap* enables stepping transform operations."
+msgstr ""
+
