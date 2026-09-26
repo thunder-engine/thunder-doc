@@ -14,6 +14,7 @@
 #
 import os
 import sys
+import shutil
 
 
 # -- Project information -----------------------------------------------------
@@ -38,8 +39,32 @@ release = u''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_tabs.tabs'
+    'sphinx_tabs.tabs',
+    'sphinxcontrib.mermaid'
 ]
+
+# -- Mermaid -------------------------------------------------------------
+#
+# Render diagrams client-side from a locally vendored bundle instead of the
+# default jsDelivr CDN, which is unreachable from some reader networks
+# (the diagram then shows up as raw text).
+# _static/mermaid.min.js    = self-contained Mermaid 11.12.1 IIFE (from cdnjs);
+#                             sets globalThis.mermaid
+# _static/mermaid.local.js  = ESM shim re-exporting that global, because
+#                             sphinxcontrib-mermaid does `import mermaid from`.
+#                             Named .js (not .mjs) so every static host serves it
+#                             with a JavaScript MIME type (module imports reject
+#                             text/plain). Bonus: the IIFE auto-renders .mermaid
+#                             elements on window load (startOnLoad default true),
+#                             so the diagram still renders on hosts where the
+#                             module import is rejected; where the module works,
+#                             the extension's initialize({startOnLoad:false})
+#                             disables the IIFE auto-run before the load event.
+mermaid_use_local = 'mermaid.local.js'
+# Sphinx 9 no longer defaults html_static_path to ['_static']; set it
+# explicitly so _static/ (the vendored Mermaid bundle) is copied to the
+# built site.
+html_static_path = ['_static']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -148,3 +173,204 @@ texinfo_documents = [
 
 locale_dirs = ['_build/locales']
 gettext_compact = False
+
+# -- Language switcher ---------------------------------------------------------
+#
+# The docs are deployed as per-language subdirectories of ONE web root
+# (https://docs.thunderengine.org/en/, .../ru/, ...). Furo's "announcement"
+# banner is reused as a language switcher.
+#
+# The banner links are generated PER PAGE (html-page-context event), so
+# switching language opens the SAME page in the other language instead of
+# the language root page.
+
+DOC_LANGUAGES = (
+    ('en', 'English'),
+    ('ru', 'Русский'),
+)
+
+# URL prefix where the docs are published ('' = at the domain root).
+SITE_URL_PREFIX = ''
+
+
+def _build_lang_switcher(pagename, current_lang, builder_name):
+    page_path = pagename.replace('.', '/') + '.html'
+    if page_path.endswith('index.html'):
+        # section index (or the root page): use the directory URL with a
+        # trailing slash; root 'index.html' -> ''
+        page_path = page_path[:-len('index.html')]
+    elif builder_name == 'dirhtml':
+        # dirhtml emits one directory per page: 'editor.html' -> 'editor/'
+        page_path = page_path[:-len('.html')] + '/'
+    parts = []
+    for code, label in DOC_LANGUAGES:
+        if code == current_lang:
+            parts.append('<span style="opacity:.55" aria-current="page">%s</span>' % label)
+        else:
+            parts.append('<a href="%s/%s/%s">%s</a>' % (SITE_URL_PREFIX, code, page_path, label))
+    return '🌐 ' + ' | '.join(parts)
+
+
+def _update_lang_switcher(app, pagename, templatename, context, doctree):
+    if templatename != 'page.html':
+        return
+    context['theme_announcement'] = _build_lang_switcher(
+        pagename, app.config.language, app.builder.name)
+
+
+def _absolutize_urls(app, exception):
+    """Rewrite every relative URL in the built pages to a site-absolute
+    path (/<lang>/...).
+
+    Replaces the former <base href> approach: a <base> element also
+    rewrites fragment-only references ("On this page" TOC links,
+    headerlinks), turning in-page anchors into navigations to the parent
+    section index. With all non-fragment URLs absolute, fragments resolve
+    against the document URL, and the .html / clean-URL (dir-index) forms
+    behave identically.
+
+    Must run BEFORE _emit_dir_indexes so the X/index.html copies made
+    there are already absolute and byte-identical to their X.html sources.
+    """
+    if exception or app.builder.name != "html" or on_rtd:
+        return
+    import re
+    from posixpath import normpath
+    from pathlib import Path
+
+    outdir = Path(app.outdir)
+    lang_root = SITE_URL_PREFIX.rstrip('/') + '/' + app.config.language + '/'
+    attr_re = re.compile(
+        r'(?<![A-Za-z0-9_-])((?:href|src|action)\s*=\s*)(["\'])([^"\']*)\2')
+    root_re = re.compile(r'(data-content_root\s*=\s*)(["\'])([^"\']*)\2')
+    scheme_re = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.\-]*:")
+    import_re = re.compile(
+        r'(import\s+mermaid\s+from\s+["\'])(?:\.\./)*(?:\./)?'
+        r'_static/mermaid\.local\.js(["\'])')
+
+    changed = 0
+    for html in sorted(outdir.rglob("*.html")):
+        rel_dir = html.parent.relative_to(outdir).as_posix()
+        base = lang_root.rstrip('/') + ('/' + rel_dir if rel_dir != '.' else '')
+        text = html.read_text(encoding='utf-8')
+
+        def _abs(m, _base=base):
+            url = m.group(3)
+            if (not url or url.startswith(('#', '/', '//'))
+                    or scheme_re.match(url)):
+                return m.group(0)
+            return m.group(1) + m.group(2) + normpath(_base + '/' + url) + m.group(2)
+
+        new = attr_re.sub(_abs, text)
+        new = root_re.sub(
+            lambda m: m.group(1) + m.group(2) + lang_root + m.group(2), new)
+        new = import_re.sub(
+            lambda m: m.group(1) + lang_root + '_static/mermaid.local.js'
+            + m.group(2), new)
+        if new != text:
+            html.write_text(new, encoding='utf-8')
+            changed += 1
+
+    # Sphinx's searchtools.js builds result hrefs relative to the search
+    # page (linkUrl = docName + docLinkSuffix).  That resolves correctly
+    # from /<lang>/search.html but breaks from the clean URL /<lang>/search/
+    # (dir-index copy): the relative link then resolves one level too deep.
+    # Prefix with contentRoot, the same absolute root the summary fetch
+    # (requestUrl) already uses.  The pattern must stay in sync with the
+    # bundled Sphinx version; warn loudly if it stops matching.
+    st = outdir / '_static' / 'searchtools.js'
+    if st.is_file():
+        st_text = st.read_text(encoding='utf-8')
+        st_old = 'linkUrl = docName + docLinkSuffix;'
+        st_new = 'linkUrl = contentRoot + docName + docLinkSuffix;'
+        if st_old in st_text:
+            st.write_text(st_text.replace(st_old, st_new), encoding='utf-8')
+            print('[thunder_doc] absolutized search result links '
+                  'in searchtools.js')
+        else:
+            print('[thunder_doc] WARNING: searchtools.js linkUrl pattern '
+                  'not found; search result links may be relative. '
+                  'Check Sphinx version.')
+    print('[thunder_doc] absolutized relative URLs in %d html files' % changed)
+
+
+def _emit_dir_indexes(app, exception):
+    """Make every page reachable at /page/ as well as /page.html.
+
+    The flat html builder emits only page.html files, but GitHub Pages
+    serves a /page/ URL exclusively from a real directory
+    page/index.html, so clean URLs 404 on the production site.
+    At the end of every html build we copy each X.html to
+    X/index.html. Real section directories (editor/index.html etc.)
+    are never touched: X.html is skipped whenever the docname
+    X/index is a real document in app.env.all_docs.
+    """
+    if exception or app.builder.name != "html":
+        return
+    from pathlib import Path
+
+    outdir = Path(app.outdir)
+    for html in sorted(outdir.rglob("*.html")):
+        if html.name == "index.html":
+            continue
+        target_dir = html.parent / html.stem
+        docname = html.with_suffix("").relative_to(outdir).as_posix()
+        if (docname + "/index") in app.env.all_docs:
+            continue  # real section directory - never clobber
+        target_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(html, target_dir / "index.html")
+
+
+def _add_mermaid_umd(app, pagename, templatename, context, doctree):
+    """Attach the vendored Mermaid IIFE to pages that contain diagrams.
+
+    The IIFE must run as a classic <script> before the extension's inline
+    module (import mermaid from ...mermaid.local.js) is evaluated. Classic
+    scripts execute during parsing, module scripts are deferred, so
+    globalThis.mermaid is set by the time the shim re-exports it."""
+    if app.config.mermaid_output_format != "raw":
+        return
+    if doctree is None or doctree.next_node(lambda n: n.tagname == "mermaid") is None:
+        return
+    app.add_js_file("mermaid.min.js", priority=400)
+
+
+def _harden_searchindex_write():
+    """Make the final searchindex.js.tmp -> searchindex.js rename resilient
+    to transient Windows file locks.
+
+    Real-time antivirus (Defender) or the Windows search indexer can hold
+    the freshly written .tmp (or the existing target) briefly at exactly
+    the moment of the rename, failing the build with
+    PermissionError: [WinError 5] Access is denied.  Retry the dump with
+    backoff before giving up.  No-op on non-Windows or if the class
+    layout changes on a Sphinx upgrade.
+    """
+    if os.name != 'nt':
+        return
+    import time
+    try:
+        from sphinx.builders.html import StandaloneHTMLBuilder
+    except ImportError:
+        return
+    orig = StandaloneHTMLBuilder.dump_search_index
+
+    def _with_retry(self, _attempts=10, _delay=1.0):
+        for attempt in range(_attempts):
+            try:
+                orig(self)
+                return
+            except PermissionError:
+                if attempt == _attempts - 1:
+                    raise
+                time.sleep(_delay * (attempt + 1))
+
+    StandaloneHTMLBuilder.dump_search_index = _with_retry
+
+
+def setup(app):
+    _harden_searchindex_write()
+    app.connect('html-page-context', _update_lang_switcher)
+    app.connect('html-page-context', _add_mermaid_umd)
+    app.connect('build-finished', _absolutize_urls)
+    app.connect('build-finished', _emit_dir_indexes)

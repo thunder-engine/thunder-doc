@@ -69,15 +69,17 @@ enable/disable    For enabled/disabled
 
 **Text Formatting**
 
+================= ======================= ==========================
 Element           Formatting              Example
------------------ ----------------------- ------------------------
+----------------- ----------------------- --------------------------
 Class names       ``monospace``           ``Camera``
 Method names      ``monospace()``         ``setFov()``
 Properties        **bold**                **enabled**
 File names        ``monospace``           ``main.cpp``
 Paths             ``monospace``           ``/resources/textures/``
-Code              .. code-block::         with language specified
+Code              \.. code-block\:\:         with language specified
 Values            ``monospace``           ``true``, ``nullptr``
+================= ======================= ==========================
 
 Code Formatting
 ---------------
