@@ -35,17 +35,20 @@ Getting Started
 1. **Clone the repository**
 
    .. code-block:: bash
+
       git clone https://github.com/thunder-engine/thunder-doc.git
       cd thunder-doc
 
 2. **Install build tools**
 
    .. code-block:: bash
+
       pip install sphinx sphinx-rtd-theme m2r2
 
 3. **Build the documentation locally**
 
    .. code-block:: bash
+
       make html
       
       # Or on Windows
@@ -56,11 +59,13 @@ Getting Started
 4. **Create a branch for your changes**
 
    .. code-block:: bash
+
       git checkout -b docs/my-improvements
 
 5. **Make changes and submit a pull request**
 
    .. code-block:: bash
+
       git add .
       git commit -m "docs: description of your changes"
       git push origin docs/my-improvements
@@ -71,6 +76,7 @@ Documentation Structure
 The documentation is organized in the following structure:
 
 .. code-block::
+
    thunder-doc/
    ├── index.rst                 # Main page
    ├── conf.py                   # Sphinx configuration

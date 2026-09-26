@@ -94,6 +94,7 @@ The documentation is written in **reStructuredText** (RST) format. Here are the 
         }
     
     .. code-block:: bash
+
         git clone https://github.com/thunder-engine/thunder.git
 
 **Tables**
@@ -272,6 +273,7 @@ Before submitting a pull request:
     Use folowing command:
 
     .. code-block:: bash
+
         make clean
         make html
 
