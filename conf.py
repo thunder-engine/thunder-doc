@@ -241,7 +241,7 @@ def _absolutize_urls(app, exception):
     outdir = Path(app.outdir)
     lang_root = SITE_URL_PREFIX.rstrip('/') + '/' + app.config.language + '/'
     attr_re = re.compile(
-        r'(?<![A-Za-z0-9_-])((?:href|src)\s*=\s*)(["\'])([^"\']*)\2')
+        r'(?<![A-Za-z0-9_-])((?:href|src|action)\s*=\s*)(["\'])([^"\']*)\2')
     root_re = re.compile(r'(data-content_root\s*=\s*)(["\'])([^"\']*)\2')
     scheme_re = re.compile(r"^[a-zA-Z][a-zA-Z0-9+.\-]*:")
     import_re = re.compile(
@@ -270,6 +270,27 @@ def _absolutize_urls(app, exception):
         if new != text:
             html.write_text(new, encoding='utf-8')
             changed += 1
+
+    # Sphinx's searchtools.js builds result hrefs relative to the search
+    # page (linkUrl = docName + docLinkSuffix).  That resolves correctly
+    # from /<lang>/search.html but breaks from the clean URL /<lang>/search/
+    # (dir-index copy): the relative link then resolves one level too deep.
+    # Prefix with contentRoot, the same absolute root the summary fetch
+    # (requestUrl) already uses.  The pattern must stay in sync with the
+    # bundled Sphinx version; warn loudly if it stops matching.
+    st = outdir / '_static' / 'searchtools.js'
+    if st.is_file():
+        st_text = st.read_text(encoding='utf-8')
+        st_old = 'linkUrl = docName + docLinkSuffix;'
+        st_new = 'linkUrl = contentRoot + docName + docLinkSuffix;'
+        if st_old in st_text:
+            st.write_text(st_text.replace(st_old, st_new), encoding='utf-8')
+            print('[thunder_doc] absolutized search result links '
+                  'in searchtools.js')
+        else:
+            print('[thunder_doc] WARNING: searchtools.js linkUrl pattern '
+                  'not found; search result links may be relative. '
+                  'Check Sphinx version.')
     print('[thunder_doc] absolutized relative URLs in %d html files' % changed)
 
 
@@ -314,7 +335,41 @@ def _add_mermaid_umd(app, pagename, templatename, context, doctree):
     app.add_js_file("mermaid.min.js", priority=400)
 
 
+def _harden_searchindex_write():
+    """Make the final searchindex.js.tmp -> searchindex.js rename resilient
+    to transient Windows file locks.
+
+    Real-time antivirus (Defender) or the Windows search indexer can hold
+    the freshly written .tmp (or the existing target) briefly at exactly
+    the moment of the rename, failing the build with
+    PermissionError: [WinError 5] Access is denied.  Retry the dump with
+    backoff before giving up.  No-op on non-Windows or if the class
+    layout changes on a Sphinx upgrade.
+    """
+    if os.name != 'nt':
+        return
+    import time
+    try:
+        from sphinx.builders.html import StandaloneHTMLBuilder
+    except ImportError:
+        return
+    orig = StandaloneHTMLBuilder.dump_search_index
+
+    def _with_retry(self, _attempts=10, _delay=1.0):
+        for attempt in range(_attempts):
+            try:
+                orig(self)
+                return
+            except PermissionError:
+                if attempt == _attempts - 1:
+                    raise
+                time.sleep(_delay * (attempt + 1))
+
+    StandaloneHTMLBuilder.dump_search_index = _with_retry
+
+
 def setup(app):
+    _harden_searchindex_write()
     app.connect('html-page-context', _update_lang_switcher)
     app.connect('html-page-context', _add_mermaid_umd)
     app.connect('build-finished', _absolutize_urls)
