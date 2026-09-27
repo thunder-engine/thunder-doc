@@ -28,81 +28,81 @@ Public Methods
 --------------
 
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                            | :ref:`Object<api_Object_92105c63>` ()                                                                |
+|                                                            | :ref:`Object<api_Object_1c529fb8>` ()                                                                |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`addChild<api_Object_4298bec7>` (Object * child, int32_t  position = -1)                        |
+|                                                       void | :ref:`addChild<api_Object_b9a32fe1>` (Object * child, int32_t  position = -1)                        |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`blockSerialization<api_Object_7e219c04>` (bool  block)                                         |
+|                                                       void | :ref:`blockSerialization<api_Object_a401be26>` (bool  block)                                         |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`blockSignals<api_Object_d31c8960>` (bool  block)                                               |
+|                                                       void | :ref:`blockSignals<api_Object_bfe670d8>` (bool  block)                                               |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`Object<api_Object>` * | :ref:`clone<api_Object_26a17c9b>` (Object * parent = nullptr)                                        |
+|                                :ref:`Object<api_Object>` * | :ref:`clone<api_Object_9b75460a>` (Object * parent = nullptr)                                        |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                   uint32_t | :ref:`clonedFrom<api_Object_057a38d6>` () const                                                      |
+|                                                   uint32_t | :ref:`clonedFrom<api_Object_ce908afb>` () const                                                      |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`deleteLater<api_Object_df0983a6>` ()                                                           |
+|                                                       void | :ref:`deleteLater<api_Object_1dfc5647>` ()                                                           |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`TString<api_TString>` | :ref:`dynamicPropertyInfo<api_Object_c50a2d79>` (const char * property)                              |
+|                                :ref:`TString<api_TString>` | :ref:`dynamicPropertyInfo<api_Object_345c6e8f>` (const char * property)                              |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                           const StringList | :ref:`dynamicPropertyNames<api_Object_5afde32b>` () const                                            |
+|                                           const StringList | :ref:`dynamicPropertyNames<api_Object_29dfb8a5>` () const                                            |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`emitSignal<api_Object_64bf85ae>` (const char * signal, const Variant & args = Variant())       |
+|                                                       void | :ref:`emitSignal<api_Object_70a83fe2>` (const char * signal, const Variant & args = Variant())       |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`event<api_Object_26a38097>` (Event * event)                                                    |
+|                                                       bool | :ref:`event<api_Object_32e815f9>` (Event * event)                                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`Object<api_Object>` * | :ref:`find<api_Object_72094c1b>` (const TString & path)                                              |
+|                                :ref:`Object<api_Object>` * | :ref:`find<api_Object_2b87acf6>` (const TString & path)                                              |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                    template <typename T> T | :ref:`findChild<api_Object_5a729edc>` (bool  recursive = true)                                       |
+|                                    template <typename T> T | :ref:`findChild<api_Object_0236e1bf>` (bool  recursive = true)                                       |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-| template <typename T> :ref:`std::list<T><api_std_list<T>>` | :ref:`findChildren<api_Object_f6a2d84e>` (bool  recursive = true)                                    |
+| template <typename T> :ref:`std::list<T><api_std_list<T>>` | :ref:`findChildren<api_Object_34c687b1>` (bool  recursive = true)                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                   const Object::ObjectList | :ref:`getChildren<api_Object_2b7fe014>` () const                                                     |
+|                                   const Object::ObjectList | :ref:`getChildren<api_Object_7fb2c0d5>` () const                                                     |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|       const :ref:`Object::LinkList<api_Object_LinkList>` & | :ref:`getReceivers<api_Object_69174de3>` () const                                                    |
+|       const :ref:`Object::LinkList<api_Object_LinkList>` & | :ref:`getReceivers<api_Object_ed507b23>` () const                                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`isSerializable<api_Object_8f19b742>` () const                                                  |
+|                                                       bool | :ref:`isSerializable<api_Object_3bdca962>` () const                                                  |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       bool | :ref:`isSignalsBlocked<api_Object_6e25b39f>` () const                                                |
+|                                                       bool | :ref:`isSignalsBlocked<api_Object_70fd1c63>` () const                                                |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`loadData<api_Object_de29c076>` (const VariantList & data)                                      |
+|                                                       void | :ref:`loadData<api_Object_3c0a85bf>` (const VariantList & data)                                      |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`loadObjectData<api_Object_78e5d92c>` (const VariantMap & data)                                 |
+|                                                       void | :ref:`loadObjectData<api_Object_c0612aeb>` (const VariantMap & data)                                 |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`loadUserData<api_Object_3caf871e>` (const VariantMap & data)                                   |
+|                                                       void | :ref:`loadUserData<api_Object_8f0bd253>` (const VariantMap & data)                                   |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`methodCallEvent<api_Object_fe72a04d>` (MethodCallEvent * event)                                |
+|                                                       void | :ref:`methodCallEvent<api_Object_da6e4b71>` (MethodCallEvent * event)                                |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`TString<api_TString>` | :ref:`name<api_Object_42fc51ae>` () const                                                            |
+|                                :ref:`TString<api_TString>` | :ref:`name<api_Object_12e6a07b>` () const                                                            |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`Object<api_Object>` * | :ref:`parent<api_Object_c1964de3>` () const                                                          |
+|                                :ref:`Object<api_Object>` * | :ref:`parent<api_Object_81fb3c75>` () const                                                          |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`postEvent<api_Object_4f5e391b>` (Event * event)                                                |
+|                                                       void | :ref:`postEvent<api_Object_b52d73e8>` (Event * event)                                                |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`Variant<api_Variant>` | :ref:`property<api_Object_f24537c8>` (const char * name) const                                       |
+|                                :ref:`Variant<api_Variant>` | :ref:`property<api_Object_cbd91684>` (const char * name) const                                       |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`removeChild<api_Object_21976048>` (Object * child)                                             |
+|                                                       void | :ref:`removeChild<api_Object_2fe57bd1>` (Object * child)                                             |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                VariantList | :ref:`saveData<api_Object_8251f674>` () const                                                        |
+|                                                VariantList | :ref:`saveData<api_Object_e69058c2>` () const                                                        |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                 VariantMap | :ref:`saveUserData<api_Object_c2489ebd>` () const                                                    |
+|                                                 VariantMap | :ref:`saveUserData<api_Object_25b9df14>` () const                                                    |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`Object<api_Object>` * | :ref:`sender<api_Object_31259dab>` () const                                                          |
+|                                :ref:`Object<api_Object>` * | :ref:`sender<api_Object_b71e90dc>` () const                                                          |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setDynamicPropertyInfo<api_Object_cab87f96>` (const char * property, const char * info)        |
+|                                                       void | :ref:`setDynamicPropertyInfo<api_Object_46c8f0a7>` (const char * property, const char * info)        |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setName<api_Object_295b4c6f>` (const TString & name)                                           |
+|                                                       void | :ref:`setName<api_Object_16cbfd73>` (const TString & name)                                           |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setParent<api_Object_d6b02194>` (Object * parent, int32_t  position = -1, bool  force = false) |
+|                                                       void | :ref:`setParent<api_Object_8320de47>` (Object * parent, int32_t  position = -1, bool  force = false) |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setProperty<api_Object_71fecba3>` (const char * name, const Variant & value)                   |
+|                                                       void | :ref:`setProperty<api_Object_1ba6f95d>` (const char * name, const Variant & value)                   |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                       void | :ref:`setType<api_Object_510723e9>` (const TString & type)                                           |
+|                                                       void | :ref:`setType<api_Object_c810f726>` (const TString & type)                                           |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                    :ref:`ObjectSystem<api_ObjectSystem>` * | :ref:`system<api_Object_a78db34f>` () const                                                          |
+|                    :ref:`ObjectSystem<api_ObjectSystem>` * | :ref:`system<api_Object_0f74d3b9>` () const                                                          |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                :ref:`TString<api_TString>` | :ref:`typeName<api_Object_5138cfeb>` () const                                                        |
+|                                :ref:`TString<api_TString>` | :ref:`typeName<api_Object_abfe9674>` () const                                                        |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                                   uint32_t | :ref:`uuid<api_Object_93b82da5>` () const                                                            |
+|                                                   uint32_t | :ref:`uuid<api_Object_3a825d40>` () const                                                            |
 +------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
 
 
@@ -113,9 +113,9 @@ Static Methods
 --------------
 
 +-------+-----------------------------------------------------------------------------------------------------------------------+
-|  bool | :ref:`connect<api_Object_c4391702>` (Object * sender, const char * signal, Object * receiver, const char * method)    |
+|  bool | :ref:`connect<api_Object_2d57aebc>` (Object * sender, const char * signal, Object * receiver, const char * method)    |
 +-------+-----------------------------------------------------------------------------------------------------------------------+
-|  void | :ref:`disconnect<api_Object_a1e34205>` (Object * sender, const char * signal, Object * receiver, const char * method) |
+|  void | :ref:`disconnect<api_Object_380c7e6a>` (Object * sender, const char * signal, Object * receiver, const char * method) |
 +-------+-----------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Object_methods:
@@ -123,7 +123,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_Object_92105c63:
+.. _api_Object_1c529fb8:
 
 **Object::Object** ()
 
@@ -133,7 +133,7 @@ By default Object create without parent to assign the parent object use setParen
 
 ----
 
-.. _api_Object_4298bec7:
+.. _api_Object_b9a32fe1:
 
  void **Object::addChild** (:ref:`Object<api_Object>` * *child*, int32_t  *position* = -1)
 
@@ -141,7 +141,7 @@ Pushes a *child* object to the internal list of children at given position.
 
 ----
 
-.. _api_Object_7e219c04:
+.. _api_Object_a401be26:
 
  void **Object::blockSerialization** (bool  *block*)
 
@@ -149,7 +149,7 @@ If *block* is true, the object will be serialized. This flag will be applied to 
 
 ----
 
-.. _api_Object_d31c8960:
+.. _api_Object_bfe670d8:
 
  void **Object::blockSignals** (bool  *block*)
 
@@ -157,7 +157,7 @@ If *block* is true, signals emitted by this object will be discarded (i.e., emit
 
 ----
 
-.. _api_Object_26a17c9b:
+.. _api_Object_9b75460a:
 
  :ref:`Object<api_Object>` * **Object::clone** (:ref:`Object<api_Object>` * *parent* = nullptr)
 
@@ -173,7 +173,7 @@ Warning: Connections will NOT be transferred and the developer must create them 
 
 ----
 
-.. _api_Object_057a38d6:
+.. _api_Object_ce908afb:
 
  uint32_t **Object::clonedFrom** () const
 
@@ -181,7 +181,7 @@ Returns the UUID of cloned object.
 
 ----
 
-.. _api_Object_c4391702:
+.. _api_Object_2d57aebc:
 
  bool **Object::connect** (:ref:`Object<api_Object>` * *sender*, char * *signal*, :ref:`Object<api_Object>` * *receiver*, char * *method*)
 
@@ -231,7 +231,7 @@ Signal can also be conected to another signal.
 
 ----
 
-.. _api_Object_df0983a6:
+.. _api_Object_1dfc5647:
 
  void **Object::deleteLater** ()
 
@@ -239,7 +239,7 @@ Marks this object to be deleted. This object will be deleted when event loop wil
 
 ----
 
-.. _api_Object_a1e34205:
+.. _api_Object_380c7e6a:
 
  void **Object::disconnect** (:ref:`Object<api_Object>` * *sender*, char * *signal*, :ref:`Object<api_Object>` * *receiver*, char * *method*)
 
@@ -271,7 +271,7 @@ Disconnect all connections from the receiver...
 
 ----
 
-.. _api_Object_c50a2d79:
+.. _api_Object_345c6e8f:
 
  :ref:`TString<api_TString>`  **Object::dynamicPropertyInfo** (char * *property*)
 
@@ -281,7 +281,7 @@ Returns an additional information for the dynamic property.
 
 ----
 
-.. _api_Object_5afde32b:
+.. _api_Object_29dfb8a5:
 
 const StringList **Object::dynamicPropertyNames** () const
 
@@ -289,7 +289,7 @@ Returns the names of all properties that were dynamically added to the object us
 
 ----
 
-.. _api_Object_64bf85ae:
+.. _api_Object_70a83fe2:
 
  void **Object::emitSignal** (char * *signal*, :ref:`Variant<api_Variant>` & *args* = Variant())
 
@@ -305,7 +305,7 @@ For now it places *signal* directly to receivers queues. In case of another *sig
 
 ----
 
-.. _api_Object_26a38097:
+.. _api_Object_32e815f9:
 
  bool **Object::event** (:ref:`Event<api_Event>` * *event*)
 
@@ -313,7 +313,7 @@ Abstract *event* handler. Developers should reimplement this method to handle ev
 
 ----
 
-.. _api_Object_72094c1b:
+.. _api_Object_2b87acf6:
 
  :ref:`Object<api_Object>` * **Object::find** (:ref:`TString<api_TString>` & *path*)
 
@@ -337,7 +337,7 @@ Returns nullptr if no such object.
 
 ----
 
-.. _api_Object_5a729edc:
+.. _api_Object_0236e1bf:
 
 template <typename T> T **Object::findChild** (bool  *recursive* = true)
 
@@ -349,7 +349,7 @@ Returns nullptr if no such object.
 
 ----
 
-.. _api_Object_f6a2d84e:
+.. _api_Object_34c687b1:
 
 template <typename T> :ref:`std::list<T><api_std::list<T>>`  **Object::findChildren** (bool  *recursive* = true)
 
@@ -361,7 +361,7 @@ Returns empty list if no such objects.
 
 ----
 
-.. _api_Object_2b7fe014:
+.. _api_Object_7fb2c0d5:
 
 const Object::ObjectList **Object::getChildren** () const
 
@@ -369,7 +369,7 @@ Returns list of child objects for this object.
 
 ----
 
-.. _api_Object_69174de3:
+.. _api_Object_ed507b23:
 
 const :ref:`Object::LinkList<api_Object::LinkList>` & **Object::getReceivers** () const
 
@@ -377,7 +377,7 @@ Returns list of links to receivers objects for this object.
 
 ----
 
-.. _api_Object_8f19b742:
+.. _api_Object_3bdca962:
 
  bool **Object::isSerializable** () const
 
@@ -385,7 +385,7 @@ Returns true if the object can be serialized; otherwise returns false.
 
 ----
 
-.. _api_Object_6e25b39f:
+.. _api_Object_70fd1c63:
 
  bool **Object::isSignalsBlocked** () const
 
@@ -393,7 +393,7 @@ Returns true if emission of signals is blocked; otherwise returns false.
 
 ----
 
-.. _api_Object_de29c076:
+.. _api_Object_3c0a85bf:
 
  void **Object::loadData** (VariantList & *data*)
 
@@ -401,7 +401,7 @@ This method allows to DESERIALIZE *data* of object like properties, connections 
 
 ----
 
-.. _api_Object_78e5d92c:
+.. _api_Object_c0612aeb:
 
  void **Object::loadObjectData** (VariantMap & *data*)
 
@@ -409,7 +409,7 @@ This method allows to DESERIALIZE data. It can be used to DESERIALIZE some speci
 
 ----
 
-.. _api_Object_3caf871e:
+.. _api_Object_8f0bd253:
 
  void **Object::loadUserData** (VariantMap & *data*)
 
@@ -417,7 +417,7 @@ This method allows to DESERIALIZE *data* which not present as A_PROPERTY() in ob
 
 ----
 
-.. _api_Object_fe72a04d:
+.. _api_Object_da6e4b71:
 
  void **Object::methodCallEvent** (:ref:`MethodCallEvent<api_MethodCallEvent>` * *event*)
 
@@ -425,7 +425,7 @@ Method call *event* handler. Can be reimplemented to support different logic.
 
 ----
 
-.. _api_Object_42fc51ae:
+.. _api_Object_12e6a07b:
 
  :ref:`TString<api_TString>`  **Object::name** () const
 
@@ -435,7 +435,7 @@ Returns name of the object.
 
 ----
 
-.. _api_Object_c1964de3:
+.. _api_Object_81fb3c75:
 
  :ref:`Object<api_Object>` * **Object::parent** () const
 
@@ -445,7 +445,7 @@ Returns a pointer to the parent object.
 
 ----
 
-.. _api_Object_4f5e391b:
+.. _api_Object_b52d73e8:
 
  void **Object::postEvent** (:ref:`Event<api_Event>` * *event*)
 
@@ -453,7 +453,7 @@ Place *event* to internal *event* queue to be processed in *event* loop.
 
 ----
 
-.. _api_Object_f24537c8:
+.. _api_Object_cbd91684:
 
  :ref:`Variant<api_Variant>`  **Object::property** (char * *name*) const
 
@@ -465,7 +465,7 @@ If property not found returns invalid Variant. Information of all properties whi
 
 ----
 
-.. _api_Object_21976048:
+.. _api_Object_2fe57bd1:
 
  void **Object::removeChild** (:ref:`Object<api_Object>` * *child*)
 
@@ -473,7 +473,7 @@ Removes a *child* object from the internal list of children.
 
 ----
 
-.. _api_Object_8251f674:
+.. _api_Object_e69058c2:
 
  VariantList **Object::saveData** () const
 
@@ -481,7 +481,7 @@ This method allows to SERIALIZE all object data like properties connections and 
 
 ----
 
-.. _api_Object_c2489ebd:
+.. _api_Object_25b9df14:
 
  VariantMap **Object::saveUserData** () const
 
@@ -489,7 +489,7 @@ This method allows to SERIALIZE data which not present as A_PROPERTY() in object
 
 ----
 
-.. _api_Object_31259dab:
+.. _api_Object_b71e90dc:
 
  :ref:`Object<api_Object>` * **Object::sender** () const
 
@@ -501,7 +501,7 @@ Returns object which sent signal.
 
 ----
 
-.. _api_Object_cab87f96:
+.. _api_Object_46c8f0a7:
 
  void **Object::setDynamicPropertyInfo** (char * *property*, char * *info*)
 
@@ -513,7 +513,7 @@ Can be used to store meta information mostly used for the editor.
 
 ----
 
-.. _api_Object_295b4c6f:
+.. _api_Object_16cbfd73:
 
  void **Object::setName** (:ref:`TString<api_TString>` & *name*)
 
@@ -523,7 +523,7 @@ Set object *name* by provided name.
 
 ----
 
-.. _api_Object_d6b02194:
+.. _api_Object_8320de47:
 
  void **Object::setParent** (:ref:`Object<api_Object>` * *parent*, int32_t  *position* = -1, bool  *force* = false)
 
@@ -537,7 +537,7 @@ Makes the object a child of *parent* at given position.
 
 ----
 
-.. _api_Object_71fecba3:
+.. _api_Object_1ba6f95d:
 
  void **Object::setProperty** (char * *name*, :ref:`Variant<api_Variant>` & *value*)
 
@@ -549,7 +549,7 @@ If property not found the object adds dynamic property. Property must be defined
 
 ----
 
-.. _api_Object_510723e9:
+.. _api_Object_c810f726:
 
  void **Object::setType** (:ref:`TString<api_TString>` & *type*)
 
@@ -561,7 +561,7 @@ Specify an additional *type* for the object.
 
 ----
 
-.. _api_Object_a78db34f:
+.. _api_Object_0f74d3b9:
 
  :ref:`ObjectSystem<api_ObjectSystem>` * **Object::system** () const
 
@@ -569,7 +569,7 @@ Returns System which handles this object.
 
 ----
 
-.. _api_Object_5138cfeb:
+.. _api_Object_abfe9674:
 
  :ref:`TString<api_TString>`  **Object::typeName** () const
 
@@ -577,7 +577,7 @@ Returns class name the object.
 
 ----
 
-.. _api_Object_93b82da5:
+.. _api_Object_3a825d40:
 
  uint32_t **Object::uuid** () const
 

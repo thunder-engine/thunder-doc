@@ -3,7 +3,7 @@
 AudioClip
 =========
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_AudioClip_description:
 
@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`channels<api_AudioClip_e2f3a086>` () const  |
+|  uint32_t | :ref:`channels<api_AudioClip_49cad5f3>` () const  |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`duration<api_AudioClip_a52c83fb>` () const  |
+|  uint32_t | :ref:`duration<api_AudioClip_cf74d382>` () const  |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`frequency<api_AudioClip_bde41386>` () const |
+|  uint32_t | :ref:`frequency<api_AudioClip_48bcf157>` () const |
 +-----------+---------------------------------------------------+
-|      bool | :ref:`isStream<api_AudioClip_12dcb956>` () const  |
+|      bool | :ref:`isStream<api_AudioClip_87934e26>` () const  |
 +-----------+---------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AudioClip_e2f3a086:
+.. _api_AudioClip_49cad5f3:
 
  uint32_t **AudioClip::channels** () const
 
@@ -51,7 +51,7 @@ Returns the number of audio channels.
 
 ----
 
-.. _api_AudioClip_a52c83fb:
+.. _api_AudioClip_cf74d382:
 
  uint32_t **AudioClip::duration** () const
 
@@ -59,7 +59,7 @@ Returns the duration of audio clip.
 
 ----
 
-.. _api_AudioClip_bde41386:
+.. _api_AudioClip_48bcf157:
 
  uint32_t **AudioClip::frequency** () const
 
@@ -67,7 +67,7 @@ Returns frequency of audio clip in Hz.
 
 ----
 
-.. _api_AudioClip_12dcb956:
+.. _api_AudioClip_87934e26:
 
  bool **AudioClip::isStream** () const
 

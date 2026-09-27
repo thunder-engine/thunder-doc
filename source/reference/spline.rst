@@ -3,7 +3,7 @@
 Spline
 ======
 
-Inherited: None
+Inherited: :ref:`Component<api_Component>`
 
 .. _api_Spline_description:
 
@@ -18,21 +18,21 @@ Public Methods
 --------------
 
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                    bool | :ref:`closed<api_Spline_450ac7b6>` () const                                       |
+|                                    bool | :ref:`closed<api_Spline_8d2eb5a4>` () const                                       |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                    void | :ref:`insertPoint<api_Spline_3b467acd>` (int  index, const Spline::Point & point) |
+|                                    void | :ref:`insertPoint<api_Spline_4fbe682c>` (int  index, const Spline::Point & point) |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|  :ref:`Spline::Point<api_Spline_Point>` | :ref:`point<api_Spline_fae69cb0>` (int  index) const                              |
+|  :ref:`Spline::Point<api_Spline_Point>` | :ref:`point<api_Spline_ac204f53>` (int  index) const                              |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                     int | :ref:`pointsCount<api_Spline_876d935a>` () const                                  |
+|                                     int | :ref:`pointsCount<api_Spline_9ce57348>` () const                                  |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                    void | :ref:`removePoint<api_Spline_6fb871ca>` (int  index)                              |
+|                                    void | :ref:`removePoint<api_Spline_98e1756a>` (int  index)                              |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                    void | :ref:`setClosed<api_Spline_8bd0a6c4>` (bool  closed)                              |
+|                                    void | :ref:`setClosed<api_Spline_cfa91627>` (bool  closed)                              |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|                                    void | :ref:`setPoint<api_Spline_5fe16a90>` (int  index, const Spline::Point & point)    |
+|                                    void | :ref:`setPoint<api_Spline_530bf1a7>` (int  index, const Spline::Point & point)    |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
-|             :ref:`Vector3<api_Vector3>` | :ref:`value<api_Spline_b83529e4>` (float  position)                               |
+|             :ref:`Vector3<api_Vector3>` | :ref:`value<api_Spline_2f83d0cb>` (float  position)                               |
 +-----------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -49,7 +49,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Spline_450ac7b6:
+.. _api_Spline_8d2eb5a4:
 
  bool **Spline::closed** () const
 
@@ -59,7 +59,7 @@ Returns true if is the spline is closed; otherwise false.
 
 ----
 
-.. _api_Spline_3b467acd:
+.. _api_Spline_4fbe682c:
 
  void **Spline::insertPoint** (int  *index*, :ref:`Spline::Point<api_Spline_Point>` & *point*)
 
@@ -67,7 +67,7 @@ Inserts a *point* at the given index.
 
 ----
 
-.. _api_Spline_fae69cb0:
+.. _api_Spline_ac204f53:
 
  :ref:`Spline::Point<api_Spline::Point>`  **Spline::point** (int  *index*) const
 
@@ -77,7 +77,7 @@ Returns the point at the given index.
 
 ----
 
-.. _api_Spline_876d935a:
+.. _api_Spline_9ce57348:
 
  int **Spline::pointsCount** () const
 
@@ -85,7 +85,7 @@ Returns the number of points in the spline.
 
 ----
 
-.. _api_Spline_6fb871ca:
+.. _api_Spline_98e1756a:
 
  void **Spline::removePoint** (int  *index*)
 
@@ -93,7 +93,7 @@ Removes the point at the given index.
 
 ----
 
-.. _api_Spline_8bd0a6c4:
+.. _api_Spline_cfa91627:
 
  void **Spline::setClosed** (bool  *closed*)
 
@@ -103,7 +103,7 @@ Sets whether the spline is closed.
 
 ----
 
-.. _api_Spline_5fe16a90:
+.. _api_Spline_530bf1a7:
 
  void **Spline::setPoint** (int  *index*, :ref:`Spline::Point<api_Spline_Point>` & *point*)
 
@@ -113,7 +113,7 @@ Sets the *point* at the given index.
 
 ----
 
-.. _api_Spline_b83529e4:
+.. _api_Spline_2f83d0cb:
 
  :ref:`Vector3<api_Vector3>`  **Spline::value** (float  *position*)
 

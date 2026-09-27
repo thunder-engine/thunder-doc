@@ -3,7 +3,7 @@
 MeshRender
 ==========
 
-Inherited: None
+Inherited: :ref:`Renderable<api_Renderable>`
 
 .. _api_MeshRender_description:
 
@@ -19,15 +19,19 @@ The MeshRender component allows you to display 3D Mesh to use in both 2D and 3D 
 Public Methods
 --------------
 
-+--------------------------+-----------------------------------------------------------------------+
-|              VariantList | :ref:`materials<api_MeshRender_a63c2e97>` () const                    |
-+--------------------------+-----------------------------------------------------------------------+
-|  :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshRender_ecbd2053>` () const                         |
-+--------------------------+-----------------------------------------------------------------------+
-|                     void | :ref:`setMaterials<api_MeshRender_c3d1f28b>` (VariantList  materials) |
-+--------------------------+-----------------------------------------------------------------------+
-|                     void | :ref:`setMesh<api_MeshRender_647d35cf>` (Mesh * mesh)                 |
-+--------------------------+-----------------------------------------------------------------------+
++--------------------------+------------------------------------------------------------------------------------+
+|                    float | :ref:`blendShapeWeight<api_MeshRender_9dafe3c5>` (size_t  index) const             |
++--------------------------+------------------------------------------------------------------------------------+
+|              VariantList | :ref:`materials<api_MeshRender_7c231e9f>` () const                                 |
++--------------------------+------------------------------------------------------------------------------------+
+|  :ref:`Mesh<api_Mesh>` * | :ref:`mesh<api_MeshRender_f4695d78>` () const                                      |
++--------------------------+------------------------------------------------------------------------------------+
+|                     void | :ref:`setBlendShapeWeight<api_MeshRender_837f15ce>` (size_t  index, float  weight) |
++--------------------------+------------------------------------------------------------------------------------+
+|                     void | :ref:`setMaterials<api_MeshRender_30d9ce45>` (VariantList  materials)              |
++--------------------------+------------------------------------------------------------------------------------+
+|                     void | :ref:`setMesh<api_MeshRender_986274d3>` (Mesh * mesh)                              |
++--------------------------+------------------------------------------------------------------------------------+
 
 
 
@@ -43,7 +47,17 @@ None
 Methods Description
 -------------------
 
-.. _api_MeshRender_a63c2e97:
+.. _api_MeshRender_9dafe3c5:
+
+ float **MeshRender::blendShapeWeight** (size_t  *index*) const
+
+Returns weight of a blend shape with specified index.
+
+**See also** setBlendShapeWeight().
+
+----
+
+.. _api_MeshRender_7c231e9f:
 
  VariantList **MeshRender::materials** () const
 
@@ -53,7 +67,7 @@ Returns a list of assigned materials.
 
 ----
 
-.. _api_MeshRender_ecbd2053:
+.. _api_MeshRender_f4695d78:
 
  :ref:`Mesh<api_Mesh>` * **MeshRender::mesh** () const
 
@@ -63,7 +77,17 @@ Returns a Mesh assigned to this component.
 
 ----
 
-.. _api_MeshRender_c3d1f28b:
+.. _api_MeshRender_837f15ce:
+
+ void **MeshRender::setBlendShapeWeight** (size_t  *index*, float  *weight*)
+
+Sets the *weight* of a blend shape with specified *index* for this renderer.
+
+**See also** blendShapeWeight().
+
+----
+
+.. _api_MeshRender_30d9ce45:
 
  void **MeshRender::setMaterials** (VariantList  *materials*)
 
@@ -73,7 +97,7 @@ Assigns an array of the *materials* to the mesh.
 
 ----
 
-.. _api_MeshRender_647d35cf:
+.. _api_MeshRender_986274d3:
 
  void **MeshRender::setMesh** (:ref:`Mesh<api_Mesh>` * *mesh*)
 

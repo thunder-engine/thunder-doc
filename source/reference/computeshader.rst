@@ -3,7 +3,7 @@
 ComputeShader
 =============
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_ComputeShader_description:
 
@@ -18,7 +18,7 @@ Public Methods
 --------------
 
 +------------------------------------------------+------------------------------------------------------+
-|  :ref:`ComputeInstance<api_ComputeInstance>` * | :ref:`createInstance<api_ComputeShader_1350befd>` () |
+|  :ref:`ComputeInstance<api_ComputeInstance>` * | :ref:`createInstance<api_ComputeShader_51b8d963>` () |
 +------------------------------------------------+------------------------------------------------------+
 
 
@@ -35,7 +35,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ComputeShader_1350befd:
+.. _api_ComputeShader_51b8d963:
 
  :ref:`ComputeInstance<api_ComputeInstance>` * **ComputeShader::createInstance** ()
 

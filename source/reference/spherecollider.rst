@@ -3,7 +3,7 @@
 SphereCollider
 ==============
 
-Inherited: None
+Inherited: :ref:`VolumeCollider<api_VolumeCollider>`
 
 .. _api_SphereCollider_description:
 
@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------+---------------------------------------------------------------+
-|  float | :ref:`radius<api_SphereCollider_26f9875a>` () const           |
+|  float | :ref:`radius<api_SphereCollider_42eb18c9>` () const           |
 +--------+---------------------------------------------------------------+
-|   void | :ref:`setRadius<api_SphereCollider_a23fb81d>` (float  radius) |
+|   void | :ref:`setRadius<api_SphereCollider_de1ca037>` (float  radius) |
 +--------+---------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SphereCollider_26f9875a:
+.. _api_SphereCollider_42eb18c9:
 
  float **SphereCollider::radius** () const
 
@@ -49,7 +49,7 @@ Returns the radius of the sphere collider.
 
 ----
 
-.. _api_SphereCollider_a23fb81d:
+.. _api_SphereCollider_de1ca037:
 
  void **SphereCollider::setRadius** (float  *radius*)
 

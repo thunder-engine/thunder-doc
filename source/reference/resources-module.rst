@@ -10,7 +10,6 @@ Resources Module
    animationclip
    animationstatemachine
    animationtrack
-   audioclip
    bone
    computebuffer
    computeinstance
@@ -21,7 +20,6 @@ Resources Module
    material
    materialinstance
    mesh
-   meshgroup
    pipeline
    pose
    prefab

@@ -3,7 +3,7 @@
 TileMap
 =======
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_TileMap_description:
 
@@ -20,45 +20,45 @@ Public Methods
 --------------
 
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`cellHeight<api_TileMap_8dbafe25>` () const               |
+|                            int | :ref:`cellHeight<api_TileMap_e9d3468c>` () const               |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`cellWidth<api_TileMap_af351098>` () const                |
+|                            int | :ref:`cellWidth<api_TileMap_1aeb6fd0>` () const                |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`height<api_TileMap_ca062153>` () const                   |
+|                            int | :ref:`height<api_TileMap_032487ad>` () const                   |
 +--------------------------------+----------------------------------------------------------------+
-|                           bool | :ref:`hexOdd<api_TileMap_bfa65de8>` () const                   |
+|                           bool | :ref:`hexOdd<api_TileMap_f0b8e24c>` () const                   |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`hexSideLength<api_TileMap_1ba4d5f9>` () const            |
+|                            int | :ref:`hexSideLength<api_TileMap_3c6d0954>` () const            |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`orientation<api_TileMap_20a176d8>` () const              |
+|                            int | :ref:`orientation<api_TileMap_6495c8df>` () const              |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`refreshAllTiles<api_TileMap_64b0e891>` () const          |
+|                           void | :ref:`refreshAllTiles<api_TileMap_ebf8957c>` () const          |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setCellHeight<api_TileMap_b3240918>` (int  height)       |
+|                           void | :ref:`setCellHeight<api_TileMap_bc7618de>` (int  height)       |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setCellWidth<api_TileMap_4b8ce1a5>` (int  width)         |
+|                           void | :ref:`setCellWidth<api_TileMap_9641efc2>` (int  width)         |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHeight<api_TileMap_9c4f5ed0>` (int  height)           |
+|                           void | :ref:`setHeight<api_TileMap_9f401c86>` (int  height)           |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHexOdd<api_TileMap_804a6c3f>` (bool  odd)             |
+|                           void | :ref:`setHexOdd<api_TileMap_d8f915ea>` (bool  odd)             |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setHexSideLength<api_TileMap_5ce693f4>` (int  length)    |
+|                           void | :ref:`setHexSideLength<api_TileMap_d68f53a0>` (int  length)    |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setOrientation<api_TileMap_57d83ec6>` (int  orientation) |
+|                           void | :ref:`setOrientation<api_TileMap_27c40afe>` (int  orientation) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setTile<api_TileMap_820fbd1a>` (int  x, int  y, int  id) |
+|                           void | :ref:`setTile<api_TileMap_b231d578>` (int  x, int  y, int  id) |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setTileSet<api_TileMap_c1532db4>` (TileSet * set)        |
+|                           void | :ref:`setTileSet<api_TileMap_2f594d87>` (TileSet * set)        |
 +--------------------------------+----------------------------------------------------------------+
-|                           void | :ref:`setWidth<api_TileMap_d9104aec>` (int  width)             |
+|                           void | :ref:`setWidth<api_TileMap_f84acdb2>` (int  width)             |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`tile<api_TileMap_b90af76d>` (int  x, int  y) const       |
+|                            int | :ref:`tile<api_TileMap_26a910cb>` (int  x, int  y) const       |
 +--------------------------------+----------------------------------------------------------------+
-|        :ref:`Mesh<api_Mesh>` * | :ref:`tileMesh<api_TileMap_8d301e96>` () const                 |
+|        :ref:`Mesh<api_Mesh>` * | :ref:`tileMesh<api_TileMap_2c1e5b40>` () const                 |
 +--------------------------------+----------------------------------------------------------------+
-|  :ref:`TileSet<api_TileSet>` * | :ref:`tileSet<api_TileMap_b81cda45>` () const                  |
+|  :ref:`TileSet<api_TileSet>` * | :ref:`tileSet<api_TileMap_6e5412ba>` () const                  |
 +--------------------------------+----------------------------------------------------------------+
-|                            int | :ref:`width<api_TileMap_5bcaf8d3>` () const                    |
+|                            int | :ref:`width<api_TileMap_16fec0d9>` () const                    |
 +--------------------------------+----------------------------------------------------------------+
 
 
@@ -75,7 +75,7 @@ None
 Methods Description
 -------------------
 
-.. _api_TileMap_8dbafe25:
+.. _api_TileMap_e9d3468c:
 
  int **TileMap::cellHeight** () const
 
@@ -85,7 +85,7 @@ Returns the height of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_af351098:
+.. _api_TileMap_1aeb6fd0:
 
  int **TileMap::cellWidth** () const
 
@@ -95,7 +95,7 @@ Returns the width of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_ca062153:
+.. _api_TileMap_032487ad:
 
  int **TileMap::height** () const
 
@@ -105,7 +105,7 @@ Returns the height of the tile map in terms of grid cells.
 
 ----
 
-.. _api_TileMap_bfa65de8:
+.. _api_TileMap_f0b8e24c:
 
  bool **TileMap::hexOdd** () const
 
@@ -115,7 +115,7 @@ Returns true if the stagger index for hexagonal tiles is set to odd, false other
 
 ----
 
-.. _api_TileMap_1ba4d5f9:
+.. _api_TileMap_3c6d0954:
 
  int **TileMap::hexSideLength** () const
 
@@ -125,7 +125,7 @@ Returns the side length of hexagonal tiles in pixels.
 
 ----
 
-.. _api_TileMap_20a176d8:
+.. _api_TileMap_6495c8df:
 
  int **TileMap::orientation** () const
 
@@ -135,7 +135,7 @@ Returns the orientation of the tile map. This can be one of the constants define
 
 ----
 
-.. _api_TileMap_64b0e891:
+.. _api_TileMap_ebf8957c:
 
  void **TileMap::refreshAllTiles** () const
 
@@ -143,7 +143,7 @@ Refreshes all the tiles in the tile map, updating the tile mesh with the latest 
 
 ----
 
-.. _api_TileMap_b3240918:
+.. _api_TileMap_bc7618de:
 
  void **TileMap::setCellHeight** (int  *height*)
 
@@ -153,7 +153,7 @@ Sets the *height* of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_4b8ce1a5:
+.. _api_TileMap_9641efc2:
 
  void **TileMap::setCellWidth** (int  *width*)
 
@@ -163,7 +163,7 @@ Sets the *width* of a single grid cell in pixels.
 
 ----
 
-.. _api_TileMap_9c4f5ed0:
+.. _api_TileMap_9f401c86:
 
  void **TileMap::setHeight** (int  *height*)
 
@@ -173,7 +173,7 @@ Sets the *height* of the tile map in grid cells. It resizes the map data accordi
 
 ----
 
-.. _api_TileMap_804a6c3f:
+.. _api_TileMap_d8f915ea:
 
  void **TileMap::setHexOdd** (bool  *odd*)
 
@@ -183,7 +183,7 @@ Sets the stagger index for hexagonal tiles. If *odd* is true, it sets the stagge
 
 ----
 
-.. _api_TileMap_5ce693f4:
+.. _api_TileMap_d68f53a0:
 
  void **TileMap::setHexSideLength** (int  *length*)
 
@@ -193,7 +193,7 @@ Sets the side *length* of hexagonal tiles in pixels.
 
 ----
 
-.. _api_TileMap_57d83ec6:
+.. _api_TileMap_27c40afe:
 
  void **TileMap::setOrientation** (int  *orientation*)
 
@@ -203,7 +203,7 @@ Sets the *orientation* of the tile map. This affects how the tiles are positione
 
 ----
 
-.. _api_TileMap_820fbd1a:
+.. _api_TileMap_b231d578:
 
  void **TileMap::setTile** (int  *x*, int  *y*, int  *id*)
 
@@ -213,7 +213,7 @@ Sets the tile *id* at the specified grid cell coordinates (x, y).
 
 ----
 
-.. _api_TileMap_c1532db4:
+.. _api_TileMap_2f594d87:
 
  void **TileMap::setTileSet** (:ref:`TileSet<api_TileSet>` * *set*)
 
@@ -223,7 +223,7 @@ Sets the associated tile *set* for this tile map.
 
 ----
 
-.. _api_TileMap_d9104aec:
+.. _api_TileMap_f84acdb2:
 
  void **TileMap::setWidth** (int  *width*)
 
@@ -233,7 +233,7 @@ Sets the *width* of the tile map in grid cells. It resizes the map data accordin
 
 ----
 
-.. _api_TileMap_b90af76d:
+.. _api_TileMap_26a910cb:
 
  int **TileMap::tile** (int  *x*, int  *y*) const
 
@@ -243,7 +243,7 @@ Returns the tile ID at the specified grid cell coordinates (x, y).
 
 ----
 
-.. _api_TileMap_8d301e96:
+.. _api_TileMap_2c1e5b40:
 
  :ref:`Mesh<api_Mesh>` * **TileMap::tileMesh** () const
 
@@ -251,7 +251,7 @@ Returns a pointer to a mesh representing the tile map's geometry. This mesh is u
 
 ----
 
-.. _api_TileMap_b81cda45:
+.. _api_TileMap_6e5412ba:
 
  :ref:`TileSet<api_TileSet>` * **TileMap::tileSet** () const
 
@@ -261,7 +261,7 @@ Returns a pointer to the associated TileSet that defines the available tiles for
 
 ----
 
-.. _api_TileMap_5bcaf8d3:
+.. _api_TileMap_16fec0d9:
 
  int **TileMap::width** () const
 

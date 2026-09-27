@@ -3,7 +3,7 @@
 Animation
 =========
 
-Inherited: None
+Inherited: :ref:`Object<api_Object>`
 
 .. _api_Animation_description:
 
@@ -20,35 +20,35 @@ Public Methods
 --------------
 
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                      uint32_t | :ref:`currentLoop<api_Animation_13ea2497>` () const             |
+|                                      uint32_t | :ref:`currentLoop<api_Animation_9f61a5d0>` () const             |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                      uint32_t | :ref:`currentTime<api_Animation_75da31c0>` () const             |
+|                                      uint32_t | :ref:`currentTime<api_Animation_ebf73249>` () const             |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                       int32_t | :ref:`duration<api_Animation_39458b10>` () const                |
+|                                       int32_t | :ref:`duration<api_Animation_4d12ebfc>` () const                |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          bool | :ref:`isValid<api_Animation_a1b9c834>` () const                 |
+|                                          bool | :ref:`isValid<api_Animation_46a03792>` () const                 |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                       int32_t | :ref:`loopCount<api_Animation_a12efd9c>` () const               |
+|                                       int32_t | :ref:`loopCount<api_Animation_4bd5fe71>` () const               |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                      uint32_t | :ref:`loopTime<api_Animation_a840b79f>` () const                |
+|                                      uint32_t | :ref:`loopTime<api_Animation_cd6efb01>` () const                |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`pause<api_Animation_3cd10b4a>` ()                         |
+|                                          void | :ref:`pause<api_Animation_5dae7430>` ()                         |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`resume<api_Animation_1be9c5da>` (bool  ignore = false)    |
+|                                          void | :ref:`resume<api_Animation_924ec7d0>` (bool  ignore = false)    |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`setCurrentTime<api_Animation_d1ec2074>` (uint32_t  msecs) |
+|                                          void | :ref:`setCurrentTime<api_Animation_049c26d7>` (uint32_t  msecs) |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`setLoopCount<api_Animation_d4c9f768>` (int32_t  loops)    |
+|                                          void | :ref:`setLoopCount<api_Animation_084c6afe>` (int32_t  loops)    |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`setValid<api_Animation_ef07429b>` (bool  valid)           |
+|                                          void | :ref:`setValid<api_Animation_9dc1f506>` (bool  valid)           |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`start<api_Animation_210e983b>` ()                         |
+|                                          void | :ref:`start<api_Animation_531f9e08>` ()                         |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|  :ref:`Animation::State<api_Animation_State>` | :ref:`state<api_Animation_392e7458>` () const                   |
+|  :ref:`Animation::State<api_Animation_State>` | :ref:`state<api_Animation_1fa254e0>` () const                   |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                          void | :ref:`stop<api_Animation_1a9c7bde>` ()                          |
+|                                          void | :ref:`stop<api_Animation_2f86ba7c>` ()                          |
 +-----------------------------------------------+-----------------------------------------------------------------+
-|                                       int32_t | :ref:`totalDuration<api_Animation_2d3f1458>` () const           |
+|                                       int32_t | :ref:`totalDuration<api_Animation_a53db10c>` () const           |
 +-----------------------------------------------+-----------------------------------------------------------------+
 
 .. _api_Animation_enums:
@@ -86,7 +86,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Animation_13ea2497:
+.. _api_Animation_9f61a5d0:
 
  uint32_t **Animation::currentLoop** () const
 
@@ -94,7 +94,7 @@ Returns the number of repetitions of animation which already has played.
 
 ----
 
-.. _api_Animation_75da31c0:
+.. _api_Animation_ebf73249:
 
  uint32_t **Animation::currentTime** () const
 
@@ -104,7 +104,7 @@ Returns the current time (in milliseconds) in scope of current loop.
 
 ----
 
-.. _api_Animation_39458b10:
+.. _api_Animation_4d12ebfc:
 
  int32_t **Animation::duration** () const
 
@@ -112,7 +112,7 @@ Returns the duration of the animation (in milliseconds).
 
 ----
 
-.. _api_Animation_a1b9c834:
+.. _api_Animation_46a03792:
 
  bool **Animation::isValid** () const
 
@@ -120,7 +120,7 @@ Returns true in case of animation is valid; otherwise returns false.
 
 ----
 
-.. _api_Animation_a12efd9c:
+.. _api_Animation_4bd5fe71:
 
  int32_t **Animation::loopCount** () const
 
@@ -130,7 +130,7 @@ Returns the number of repetitions of animation; -1 in case of infinite animation
 
 ----
 
-.. _api_Animation_a840b79f:
+.. _api_Animation_cd6efb01:
 
  uint32_t **Animation::loopTime** () const
 
@@ -138,7 +138,7 @@ Returns the current time for the current loop (in milliseconds).
 
 ----
 
-.. _api_Animation_3cd10b4a:
+.. _api_Animation_5dae7430:
 
  void **Animation::pause** ()
 
@@ -150,7 +150,7 @@ Stops the animation.
 
 ----
 
-.. _api_Animation_1be9c5da:
+.. _api_Animation_924ec7d0:
 
  void **Animation::resume** (bool  *ignore* = false)
 
@@ -158,7 +158,7 @@ Continues the animation which was paused earlier. Flag *ignore* can help to skip
 
 ----
 
-.. _api_Animation_d1ec2074:
+.. _api_Animation_049c26d7:
 
  void **Animation::setCurrentTime** (uint32_t  *msecs*)
 
@@ -172,7 +172,7 @@ Sets the new position of animation to provided *msecs* position.
 
 ----
 
-.. _api_Animation_d4c9f768:
+.. _api_Animation_084c6afe:
 
  void **Animation::setLoopCount** (int32_t  *loops*)
 
@@ -182,7 +182,7 @@ Sets the new number of *loops* of animation; -1 in case of infinite animation.
 
 ----
 
-.. _api_Animation_ef07429b:
+.. _api_Animation_9dc1f506:
 
  void **Animation::setValid** (bool  *valid*)
 
@@ -192,7 +192,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 ----
 
-.. _api_Animation_210e983b:
+.. _api_Animation_531f9e08:
 
  void **Animation::start** ()
 
@@ -200,7 +200,7 @@ Starts the animation from the beginning.
 
 ----
 
-.. _api_Animation_392e7458:
+.. _api_Animation_1fa254e0:
 
  :ref:`Animation::State<api_Animation::State>`  **Animation::state** () const
 
@@ -208,7 +208,7 @@ Returns the current state of animation.
 
 ----
 
-.. _api_Animation_1a9c7bde:
+.. _api_Animation_2f86ba7c:
 
  void **Animation::stop** ()
 
@@ -220,7 +220,7 @@ Stops the animation.
 
 ----
 
-.. _api_Animation_2d3f1458:
+.. _api_Animation_a53db10c:
 
  int32_t **Animation::totalDuration** () const
 

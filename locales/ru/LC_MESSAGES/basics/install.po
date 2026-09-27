@@ -112,8 +112,8 @@ msgstr ""
 "studio/?sku=Community&rel=15#>`_)"
 
 #: ../../source/basics/install.rst:42
-msgid "Qt 5.15.2 and QtCreator 4.9.2"
-msgstr "Qt 5.15.2 и QtCreator 4.9.2"
+msgid "Qt 6.7.3 and Qt Creator 13.0.1"
+msgstr "Qt 6.7.3 и Qt Creator 13.0.1"
 
 #: ../../source/basics/install.rst:44
 msgid ""

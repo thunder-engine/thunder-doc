@@ -3,7 +3,7 @@
 ToolButton
 ==========
 
-Inherited: None
+Inherited: :ref:`Button<api_Button>`
 
 .. _api_ToolButton_description:
 
@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`hideMenu<api_ToolButton_6ef720d9>` ()           |
+|                     void | :ref:`hideMenu<api_ToolButton_ec20d347>` ()           |
 +--------------------------+-------------------------------------------------------+
-|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_684adf97>` () const         |
+|  :ref:`Menu<api_Menu>` * | :ref:`menu<api_ToolButton_eaf95102>` () const         |
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`setMenu<api_ToolButton_75fcb063>` (Menu * menu) |
+|                     void | :ref:`setMenu<api_ToolButton_da402f87>` (Menu * menu) |
 +--------------------------+-------------------------------------------------------+
-|                     void | :ref:`showMenu<api_ToolButton_d85e206b>` ()           |
+|                     void | :ref:`showMenu<api_ToolButton_235fb1d7>` ()           |
 +--------------------------+-------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ToolButton_6ef720d9:
+.. _api_ToolButton_ec20d347:
 
  void **ToolButton::hideMenu** ()
 
@@ -51,7 +51,7 @@ Hides the associated popup menu.
 
 ----
 
-.. _api_ToolButton_684adf97:
+.. _api_ToolButton_eaf95102:
 
  :ref:`Menu<api_Menu>` * **ToolButton::menu** () const
 
@@ -61,7 +61,7 @@ Returns the associated menu, or nullptr if no menu has been defined.
 
 ----
 
-.. _api_ToolButton_75fcb063:
+.. _api_ToolButton_da402f87:
 
  void **ToolButton::setMenu** (:ref:`Menu<api_Menu>` * *menu*)
 
@@ -71,7 +71,7 @@ Associates the given *menu* with this tool button. Ownership of the *menu* is no
 
 ----
 
-.. _api_ToolButton_d85e206b:
+.. _api_ToolButton_235fb1d7:
 
  void **ToolButton::showMenu** ()
 

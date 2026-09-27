@@ -3,7 +3,7 @@
 LineEdit
 ========
 
-Inherited: None
+Inherited: :ref:`Frame<api_Frame>`
 
 .. _api_LineEdit_description:
 
@@ -20,17 +20,25 @@ Public Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setText<api_LineEdit_51fb7ead>` (const TString & text)       |
+|                        float | :ref:`cursorAt<api_LineEdit_036da8be>` (int  position) const       |
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setTextColor<api_LineEdit_7be6df09>` (const Vector4 & color) |
+|                         void | :ref:`editingFinished<api_LineEdit_f3e87c04>` ()                   |
 +------------------------------+--------------------------------------------------------------------+
-|                         void | :ref:`setTextComponent<api_LineEdit_9f4ca8d7>` (Label * label)     |
+|                         void | :ref:`focusIn<api_LineEdit_36f5a4c7>` ()                           |
 +------------------------------+--------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_LineEdit_cae2d79f>` () const                        |
+|                         void | :ref:`focusOut<api_LineEdit_7bf9a580>` ()                          |
 +------------------------------+--------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`textColor<api_LineEdit_73c0f2ea>` () const                   |
+|      :ref:`Font<api_Font>` * | :ref:`font<api_LineEdit_9d238b07>` () const                        |
 +------------------------------+--------------------------------------------------------------------+
-|    :ref:`Label<api_Label>` * | :ref:`textComponent<api_LineEdit_ae2d6058>` () const               |
+|                         void | :ref:`setFont<api_LineEdit_e21b43f8>` (Font * font)                |
++------------------------------+--------------------------------------------------------------------+
+|                         void | :ref:`setText<api_LineEdit_bc369e52>` (const TString & text)       |
++------------------------------+--------------------------------------------------------------------+
+|                         void | :ref:`setTextColor<api_LineEdit_20df98a7>` (const Vector4 & color) |
++------------------------------+--------------------------------------------------------------------+
+|  :ref:`TString<api_TString>` | :ref:`text<api_LineEdit_02ad86ec>` () const                        |
++------------------------------+--------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`textColor<api_LineEdit_0da256e4>` () const                   |
 +------------------------------+--------------------------------------------------------------------+
 
 
@@ -47,7 +55,59 @@ None
 Methods Description
 -------------------
 
-.. _api_LineEdit_51fb7ead:
+.. _api_LineEdit_036da8be:
+
+ float **LineEdit::cursorAt** (int  *position*) const
+
+Returns a *position* for virtual cursor.
+
+----
+
+.. _api_LineEdit_f3e87c04:
+
+ void **LineEdit::editingFinished** ()
+
+Called when editing is finished (Enter key pressed). Emits a signal indicating editing has completed.
+
+----
+
+.. _api_LineEdit_36f5a4c7:
+
+ void **LineEdit::focusIn** ()
+
+Called when the component receives focus. Emits a signal indicating focus has been gained.
+
+----
+
+.. _api_LineEdit_7bf9a580:
+
+ void **LineEdit::focusOut** ()
+
+Called when the component loses focus. Emits a signal indicating focus has been lost.
+
+----
+
+.. _api_LineEdit_9d238b07:
+
+ :ref:`Font<api_Font>` * **LineEdit::font** () const
+
+Returns the font which will be used to draw a text.
+
+**See also** setFont().
+
+----
+
+.. _api_LineEdit_e21b43f8:
+
+ void **LineEdit::setFont** (:ref:`Font<api_Font>` * *font*)
+
+Changes the *font* which will be used to draw a text.
+
+**See also** font().
+
+----
+
+.. _api_LineEdit_bc369e52:
 
  void **LineEdit::setText** (:ref:`TString<api_TString>` & *text*)
 
@@ -57,7 +117,7 @@ Sets the *text* in the TextInput.
 
 ----
 
-.. _api_LineEdit_7be6df09:
+.. _api_LineEdit_20df98a7:
 
  void **LineEdit::setTextColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -67,17 +127,7 @@ Sets the *color* of the text.
 
 ----
 
-.. _api_LineEdit_9f4ca8d7:
-
- void **LineEdit::setTextComponent** (:ref:`Label<api_Label>` * *label*)
-
-Sets the text *label* component.
-
-**See also** textComponent().
-
-----
-
-.. _api_LineEdit_cae2d79f:
+.. _api_LineEdit_02ad86ec:
 
  :ref:`TString<api_TString>`  **LineEdit::text** () const
 
@@ -87,22 +137,12 @@ Returns the current text entered into the TextInput.
 
 ----
 
-.. _api_LineEdit_73c0f2ea:
+.. _api_LineEdit_0da256e4:
 
  :ref:`Vector4<api_Vector4>`  **LineEdit::textColor** () const
 
-Returns the color of the text.
+Returns color of the text.
 
 **See also** setTextColor().
-
-----
-
-.. _api_LineEdit_ae2d6058:
-
- :ref:`Label<api_Label>` * **LineEdit::textComponent** () const
-
-Returns the text label component.
-
-**See also** setTextComponent().
 
 

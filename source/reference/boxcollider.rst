@@ -3,7 +3,7 @@
 BoxCollider
 ===========
 
-Inherited: None
+Inherited: :ref:`VolumeCollider<api_VolumeCollider>`
 
 .. _api_BoxCollider_description:
 
@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +-------------------------------------+----------------------------------------------------------------+
-|                                void | :ref:`setSize<api_BoxCollider_7cfeab38>` (const Vector3  size) |
+|                                void | :ref:`setSize<api_BoxCollider_cba5236d>` (const Vector3  size) |
 +-------------------------------------+----------------------------------------------------------------+
-| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_eab819d5>` () const                 |
+| const :ref:`Vector3<api_Vector3>` & | :ref:`size<api_BoxCollider_f35a6487>` () const                 |
 +-------------------------------------+----------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_BoxCollider_7cfeab38:
+.. _api_BoxCollider_cba5236d:
 
  void **BoxCollider::setSize** (:ref:`Vector3<api_Vector3>`  *size*)
 
@@ -49,7 +49,7 @@ Sets the *size* of the box collider.
 
 ----
 
-.. _api_BoxCollider_eab819d5:
+.. _api_BoxCollider_f35a6487:
 
 const :ref:`Vector3<api_Vector3>` & **BoxCollider::size** () const
 

@@ -3,7 +3,7 @@
 Resource
 ========
 
-Inherited: None
+Inherited: :ref:`Object<api_Object>`
 
 .. _api_Resource_description:
 
@@ -22,23 +22,23 @@ Public Methods
 --------------
 
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`decRef<api_Resource_374d29c1>` ()                                                              |
+|                                        void | :ref:`decRef<api_Resource_4c8dbe36>` ()                                                              |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`incRef<api_Resource_cf5d1b69>` ()                                                              |
+|                                        void | :ref:`incRef<api_Resource_a176c052>` ()                                                              |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        bool | :ref:`isUnloadable<api_Resource_fd6ce473>` ()                                                        |
+|                                        bool | :ref:`isUnloadable<api_Resource_0f6ecad5>` ()                                                        |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`notifyCurrentState<api_Resource_ed75a246>` ()                                                  |
+|                                        void | :ref:`notifyCurrentState<api_Resource_2490bf3d>` ()                                                  |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`setState<api_Resource_708f2b1c>` (Resource::State  state)                                      |
+|                                        void | :ref:`setState<api_Resource_c931ea70>` (Resource::State  state)                                      |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|  :ref:`Resource::State<api_Resource_State>` | :ref:`state<api_Resource_ec423fb9>` () const                                                         |
+|  :ref:`Resource::State<api_Resource_State>` | :ref:`state<api_Resource_021a453d>` () const                                                         |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`subscribe<api_Resource_5f0eb431>` (Resource::ResourceUpdatedCallback  callback, void * object) |
+|                                        void | :ref:`subscribe<api_Resource_7fd9cae4>` (Resource::ResourceUpdatedCallback  callback, void * object) |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`switchState<api_Resource_52681ae7>` (Resource::State  state)                                   |
+|                                        void | :ref:`switchState<api_Resource_8c0dfb39>` (Resource::State  state)                                   |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
-|                                        void | :ref:`unsubscribe<api_Resource_e0bdf649>` (void * object)                                            |
+|                                        void | :ref:`unsubscribe<api_Resource_31dc9a72>` (void * object)                                            |
 +---------------------------------------------+------------------------------------------------------------------------------------------------------+
 
 .. _api_Resource_enums:
@@ -84,7 +84,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Resource_374d29c1:
+.. _api_Resource_4c8dbe36:
 
  void **Resource::decRef** ()
 
@@ -92,7 +92,7 @@ Decreases the reference counter for the resource. In case of the reference count
 
 ----
 
-.. _api_Resource_cf5d1b69:
+.. _api_Resource_a176c052:
 
  void **Resource::incRef** ()
 
@@ -100,7 +100,7 @@ Increases the reference counter for the resource.
 
 ----
 
-.. _api_Resource_fd6ce473:
+.. _api_Resource_0f6ecad5:
 
  bool **Resource::isUnloadable** ()
 
@@ -108,7 +108,7 @@ Returns true in case of resource can be unloaded from GPU; otherwise returns fal
 
 ----
 
-.. _api_Resource_ed75a246:
+.. _api_Resource_2490bf3d:
 
  void **Resource::notifyCurrentState** ()
 
@@ -116,7 +116,7 @@ Notifies subscribers about the current state of the resource.
 
 ----
 
-.. _api_Resource_708f2b1c:
+.. _api_Resource_c931ea70:
 
  void **Resource::setState** (:ref:`Resource::State<api_Resource_State>`  *state*)
 
@@ -126,7 +126,7 @@ Sets new *state* for the resource.
 
 ----
 
-.. _api_Resource_ec423fb9:
+.. _api_Resource_021a453d:
 
  :ref:`Resource::State<api_Resource::State>`  **Resource::state** () const
 
@@ -136,7 +136,7 @@ Returns state for the resource. For possible states please see Resource::Resourc
 
 ----
 
-.. _api_Resource_5f0eb431:
+.. _api_Resource_7fd9cae4:
 
  void **Resource::subscribe** (:ref:`Resource::ResourceUpdatedCallback<api_Resource_ResourceUpdatedCallback>`  *callback*, void * *object*)
 
@@ -144,7 +144,7 @@ Subscribes *callback* for *object* to handle resource status. Increases referenc
 
 ----
 
-.. _api_Resource_52681ae7:
+.. _api_Resource_8c0dfb39:
 
  void **Resource::switchState** (:ref:`Resource::State<api_Resource_State>`  *state*)
 
@@ -152,7 +152,7 @@ Switches the current *state* to a new *state* for the resource.
 
 ----
 
-.. _api_Resource_e0bdf649:
+.. _api_Resource_31dc9a72:
 
  void **Resource::unsubscribe** (void * *object*)
 

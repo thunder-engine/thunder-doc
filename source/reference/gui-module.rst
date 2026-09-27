@@ -8,7 +8,9 @@ Gui Module
    :name: toc-api
    
    abstractbutton
+   abstractslider
    button
+   canvas
    checkbox
    floatinput
    foldout
@@ -20,8 +22,13 @@ Gui Module
    menu
    progressbar
    recttransform
+   scrollbar
+   slider
+   splitter
    stylesheet
    switch
+   tabbar
+   tabwidget
    toolbutton
    uidocument
    uiloader

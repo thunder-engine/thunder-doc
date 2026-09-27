@@ -3,7 +3,7 @@
 NativeBehaviour
 ===============
 
-Inherited: None
+Inherited: :ref:`Component<api_Component>`
 
 .. _api_NativeBehaviour_description:
 
@@ -40,9 +40,9 @@ Public Methods
 --------------
 
 +-------+------------------------------------------------+
-|  void | :ref:`start<api_NativeBehaviour_5d4be218>` ()  |
+|  void | :ref:`start<api_NativeBehaviour_a3609184>` ()  |
 +-------+------------------------------------------------+
-|  void | :ref:`update<api_NativeBehaviour_ec036bfa>` () |
+|  void | :ref:`update<api_NativeBehaviour_2173eaf4>` () |
 +-------+------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_NativeBehaviour_5d4be218:
+.. _api_NativeBehaviour_a3609184:
 
  void **NativeBehaviour::start** ()
 
@@ -67,7 +67,7 @@ Start is called on the same frame when a script is enabled just before the updat
 
 ----
 
-.. _api_NativeBehaviour_ec036bfa:
+.. _api_NativeBehaviour_2173eaf4:
 
  void **NativeBehaviour::update** ()
 

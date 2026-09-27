@@ -3,7 +3,7 @@
 AbstractButton
 ==============
 
-Inherited: None
+Inherited: :ref:`Frame<api_Frame>`
 
 .. _api_AbstractButton_description:
 
@@ -20,53 +20,31 @@ Public Methods
 --------------
 
 +------------------------------+---------------------------------------------------------------------------------+
-|    :ref:`Frame<api_Frame>` * | :ref:`background<api_AbstractButton_9a017b4e>` () const                         |
+|                         void | :ref:`clicked<api_AbstractButton_bd271608>` ()                                  |
 +------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_AbstractButton_1362acdb>` () const                              |
+|  :ref:`Vector4<api_Vector4>` | :ref:`highlightedColor<api_AbstractButton_081263c4>` () const                   |
 +------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`highlightedColor<api_AbstractButton_eb07d9ca>` () const                   |
+|                         bool | :ref:`isCheckable<api_AbstractButton_a67f519c>` () const                        |
 +------------------------------+---------------------------------------------------------------------------------+
-|    :ref:`Image<api_Image>` * | :ref:`icon<api_AbstractButton_caf6247e>` () const                               |
+|                         bool | :ref:`isChecked<api_AbstractButton_52496f83>` () const                          |
 +------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`iconSize<api_AbstractButton_6d1ba984>` () const                           |
+|                         bool | :ref:`isExclusive<api_AbstractButton_230d91ae>` () const                        |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         bool | :ref:`isCheckable<api_AbstractButton_53b728a9>` () const                        |
+|                         void | :ref:`pressed<api_AbstractButton_d1f94e35>` ()                                  |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         bool | :ref:`isChecked<api_AbstractButton_8d536417>` () const                          |
+|  :ref:`Vector4<api_Vector4>` | :ref:`pressedColor<api_AbstractButton_bcd20648>` () const                       |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         bool | :ref:`isExclusive<api_AbstractButton_7d643b08>` () const                        |
+|                         void | :ref:`setCheckable<api_AbstractButton_9d41bf8e>` (bool  checkable)              |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         bool | :ref:`isMirrored<api_AbstractButton_b7895f01>` () const                         |
+|                         void | :ref:`setChecked<api_AbstractButton_b5e20638>` (bool  checked)                  |
 +------------------------------+---------------------------------------------------------------------------------+
-|    :ref:`Label<api_Label>` * | :ref:`label<api_AbstractButton_bce97fd8>` () const                              |
+|                         void | :ref:`setExclusive<api_AbstractButton_3a85e714>` (bool  exclusive)              |
 +------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`pressedColor<api_AbstractButton_92fc4506>` () const                       |
+|                         void | :ref:`setHighlightedColor<api_AbstractButton_0ec479f2>` (const Vector4 & color) |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setBackground<api_AbstractButton_81fed43a>` (Frame * frame)               |
+|                         void | :ref:`setPressedColor<api_AbstractButton_f5926b30>` (const Vector4 & color)     |
 +------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setCheckable<api_AbstractButton_963bc851>` (bool  checkable)              |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setChecked<api_AbstractButton_913c2da7>` (bool  checked)                  |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setColor<api_AbstractButton_8415e0ad>` (const Vector4 & color)            |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setExclusive<api_AbstractButton_4ea1d28b>` (bool  exclusive)              |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setHighlightedColor<api_AbstractButton_a7eb26cd>` (const Vector4 & color) |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setIcon<api_AbstractButton_fe24d78a>` (Image * image)                     |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setIconSize<api_AbstractButton_5d43b629>` (const Vector2 & size)          |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setLabel<api_AbstractButton_1697083e>` (Label * label)                    |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setMirrored<api_AbstractButton_81f0762e>` (bool  mirrored)                |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setPressedColor<api_AbstractButton_0bc832e6>` (const Vector4 & color)     |
-+------------------------------+---------------------------------------------------------------------------------+
-|                         void | :ref:`setText<api_AbstractButton_1b9ef4a2>` (const TString  text)               |
-+------------------------------+---------------------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_AbstractButton_f2b9138c>` () const                               |
+|                         void | :ref:`toggled<api_AbstractButton_b8fe62c7>` (bool  checked)                     |
 +------------------------------+---------------------------------------------------------------------------------+
 
 
@@ -83,27 +61,15 @@ None
 Methods Description
 -------------------
 
-.. _api_AbstractButton_9a017b4e:
+.. _api_AbstractButton_bd271608:
 
- :ref:`Frame<api_Frame>` * **AbstractButton::background** () const
+ void **AbstractButton::clicked** ()
 
-Returns the background frame object associated with the button.
-
-**See also** setBackground().
+This signal is emitted when the button is activated (i.e., pressed down then released while the mouse cursor is inside the button).
 
 ----
 
-.. _api_AbstractButton_1362acdb:
-
- :ref:`Vector4<api_Vector4>`  **AbstractButton::color** () const
-
-Returns the normal color of the button.
-
-**See also** setColor().
-
-----
-
-.. _api_AbstractButton_eb07d9ca:
+.. _api_AbstractButton_081263c4:
 
  :ref:`Vector4<api_Vector4>`  **AbstractButton::highlightedColor** () const
 
@@ -113,27 +79,7 @@ Returns the color used when the button is highlighted.
 
 ----
 
-.. _api_AbstractButton_caf6247e:
-
- :ref:`Image<api_Image>` * **AbstractButton::icon** () const
-
-Returns the icon associated with the button.
-
-**See also** setIcon().
-
-----
-
-.. _api_AbstractButton_6d1ba984:
-
- :ref:`Vector2<api_Vector2>`  **AbstractButton::iconSize** () const
-
-Returns the size of the icon.
-
-**See also** setIconSize().
-
-----
-
-.. _api_AbstractButton_53b728a9:
+.. _api_AbstractButton_a67f519c:
 
  bool **AbstractButton::isCheckable** () const
 
@@ -141,7 +87,7 @@ Returns true if the button is checkable; otherwise, false.
 
 ----
 
-.. _api_AbstractButton_8d536417:
+.. _api_AbstractButton_52496f83:
 
  bool **AbstractButton::isChecked** () const
 
@@ -149,7 +95,7 @@ Returns true if the button is checked; otherwise, false.
 
 ----
 
-.. _api_AbstractButton_7d643b08:
+.. _api_AbstractButton_230d91ae:
 
  bool **AbstractButton::isExclusive** () const
 
@@ -157,25 +103,15 @@ Returns true if the button is in exclusive mode; otherwise, false.
 
 ----
 
-.. _api_AbstractButton_b7895f01:
+.. _api_AbstractButton_d1f94e35:
 
- bool **AbstractButton::isMirrored** () const
+ void **AbstractButton::pressed** ()
 
-Returns true if the button is mirrored; otherwise, false.
-
-----
-
-.. _api_AbstractButton_bce97fd8:
-
- :ref:`Label<api_Label>` * **AbstractButton::label** () const
-
-Returns the label object associated with the button.
-
-**See also** setLabel().
+This signal is emitted when the button is pressed down.
 
 ----
 
-.. _api_AbstractButton_92fc4506:
+.. _api_AbstractButton_bcd20648:
 
  :ref:`Vector4<api_Vector4>`  **AbstractButton::pressedColor** () const
 
@@ -185,17 +121,7 @@ Returns the color used when the button is pressed.
 
 ----
 
-.. _api_AbstractButton_81fed43a:
-
- void **AbstractButton::setBackground** (:ref:`Frame<api_Frame>` * *frame*)
-
-Sets the background *frame* of the button.
-
-**See also** background().
-
-----
-
-.. _api_AbstractButton_963bc851:
+.. _api_AbstractButton_9d41bf8e:
 
  void **AbstractButton::setCheckable** (bool  *checkable*)
 
@@ -205,7 +131,7 @@ Sets whether the button is checkable.
 
 ----
 
-.. _api_AbstractButton_913c2da7:
+.. _api_AbstractButton_b5e20638:
 
  void **AbstractButton::setChecked** (bool  *checked*)
 
@@ -215,17 +141,7 @@ Sets the *checked* state of the button.
 
 ----
 
-.. _api_AbstractButton_8415e0ad:
-
- void **AbstractButton::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
-
-Sets the normal *color* of the button.
-
-**See also** color().
-
-----
-
-.. _api_AbstractButton_4ea1d28b:
+.. _api_AbstractButton_3a85e714:
 
  void **AbstractButton::setExclusive** (bool  *exclusive*)
 
@@ -235,7 +151,7 @@ Sets whether the button is in *exclusive* mode.
 
 ----
 
-.. _api_AbstractButton_a7eb26cd:
+.. _api_AbstractButton_0ec479f2:
 
  void **AbstractButton::setHighlightedColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -245,47 +161,7 @@ Sets the *color* used when the button is highlighted.
 
 ----
 
-.. _api_AbstractButton_fe24d78a:
-
- void **AbstractButton::setIcon** (:ref:`Image<api_Image>` * *image*)
-
-Sets the icon *image* associated with the button.
-
-**See also** icon().
-
-----
-
-.. _api_AbstractButton_5d43b629:
-
- void **AbstractButton::setIconSize** (:ref:`Vector2<api_Vector2>` & *size*)
-
-Sets the *size* of the icon.
-
-**See also** iconSize().
-
-----
-
-.. _api_AbstractButton_1697083e:
-
- void **AbstractButton::setLabel** (:ref:`Label<api_Label>` * *label*)
-
-Sets the *label* associated with the button.
-
-**See also** label().
-
-----
-
-.. _api_AbstractButton_81f0762e:
-
- void **AbstractButton::setMirrored** (bool  *mirrored*)
-
-Sets whether the button should be mirrored.
-
-**See also** isMirrored().
-
-----
-
-.. _api_AbstractButton_0bc832e6:
+.. _api_AbstractButton_f5926b30:
 
  void **AbstractButton::setPressedColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -295,22 +171,10 @@ Sets the *color* used when the button is pressed.
 
 ----
 
-.. _api_AbstractButton_1b9ef4a2:
+.. _api_AbstractButton_b8fe62c7:
 
- void **AbstractButton::setText** (:ref:`TString<api_TString>`  *text*)
+ void **AbstractButton::toggled** (bool  *checked*)
 
-Sets the *text* displayed on the button.
-
-**See also** text().
-
-----
-
-.. _api_AbstractButton_f2b9138c:
-
- :ref:`TString<api_TString>`  **AbstractButton::text** () const
-
-Returns the text displayed on the button.
-
-**See also** setText().
+This signal is emitted whenever a checkable button changes its state. *checked* is true if the button is checked, or false if the button is unchecked.
 
 

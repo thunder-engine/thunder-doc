@@ -3,7 +3,7 @@
 Armature
 ========
 
-Inherited: None
+Inherited: :ref:`NativeBehaviour<api_NativeBehaviour>`
 
 .. _api_Armature_description:
 
@@ -19,11 +19,15 @@ An armature in Thunder Engine can be thought of as similar to the armature of a 
 Public Methods
 --------------
 
-+--------------------------+---------------------------------------------------------+
-|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_fc120379>` () const         |
-+--------------------------+---------------------------------------------------------+
-|                     void | :ref:`setBindPose<api_Armature_6b3a187e>` (Pose * pose) |
-+--------------------------+---------------------------------------------------------+
++--------------------------+----------------------------------------------------------------------------+
+|                     void | :ref:`addInstance<api_Armature_e06b7c5f>` (MaterialInstance * instance)    |
++--------------------------+----------------------------------------------------------------------------+
+|  :ref:`Pose<api_Pose>` * | :ref:`bindPose<api_Armature_b0846c9e>` () const                            |
++--------------------------+----------------------------------------------------------------------------+
+|                     void | :ref:`removeInstance<api_Armature_4e6381a5>` (MaterialInstance * instance) |
++--------------------------+----------------------------------------------------------------------------+
+|                     void | :ref:`setBindPose<api_Armature_42d96e38>` (Pose * pose)                    |
++--------------------------+----------------------------------------------------------------------------+
 
 
 
@@ -39,7 +43,15 @@ None
 Methods Description
 -------------------
 
-.. _api_Armature_fc120379:
+.. _api_Armature_e06b7c5f:
+
+ void **Armature::addInstance** (:ref:`MaterialInstance<api_MaterialInstance>` * *instance*)
+
+Add material *instance* to upload updated skeletal data to GPU
+
+----
+
+.. _api_Armature_b0846c9e:
 
  :ref:`Pose<api_Pose>` * **Armature::bindPose** () const
 
@@ -49,7 +61,15 @@ Returns a bind pose of the bone structure.
 
 ----
 
-.. _api_Armature_6b3a187e:
+.. _api_Armature_4e6381a5:
+
+ void **Armature::removeInstance** (:ref:`MaterialInstance<api_MaterialInstance>` * *instance*)
+
+Remove material *instance* to stop uploading data to GPU
+
+----
+
+.. _api_Armature_42d96e38:
 
  void **Armature::setBindPose** (:ref:`Pose<api_Pose>` * *pose*)
 

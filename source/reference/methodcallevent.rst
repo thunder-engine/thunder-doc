@@ -3,7 +3,7 @@
 MethodCallEvent
 ===============
 
-Inherited: None
+Inherited: :ref:`Event<api_Event>`
 
 .. _api_MethodCallEvent_description:
 
@@ -18,11 +18,11 @@ Public Methods
 --------------
 
 +-------------------------------------+------------------------------------------------------+
-| const :ref:`Variant<api_Variant>` * | :ref:`args<api_MethodCallEvent_510ac736>` () const   |
+| const :ref:`Variant<api_Variant>` * | :ref:`args<api_MethodCallEvent_b21604fd>` () const   |
 +-------------------------------------+------------------------------------------------------+
-|                             int32_t | :ref:`method<api_MethodCallEvent_6da8145e>` () const |
+|                             int32_t | :ref:`method<api_MethodCallEvent_45ce0d9a>` () const |
 +-------------------------------------+------------------------------------------------------+
-|         :ref:`Object<api_Object>` * | :ref:`sender<api_MethodCallEvent_2f0497a1>` () const |
+|         :ref:`Object<api_Object>` * | :ref:`sender<api_MethodCallEvent_078a5db9>` () const |
 +-------------------------------------+------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_MethodCallEvent_510ac736:
+.. _api_MethodCallEvent_b21604fd:
 
 const :ref:`Variant<api_Variant>` * **MethodCallEvent::args** () const
 
@@ -47,7 +47,7 @@ Returns an arguments array for method invocation.
 
 ----
 
-.. _api_MethodCallEvent_6da8145e:
+.. _api_MethodCallEvent_45ce0d9a:
 
  int32_t **MethodCallEvent::method** () const
 
@@ -55,7 +55,7 @@ Returns an index of method.
 
 ----
 
-.. _api_MethodCallEvent_2f0497a1:
+.. _api_MethodCallEvent_078a5db9:
 
  :ref:`Object<api_Object>` * **MethodCallEvent::sender** () const
 

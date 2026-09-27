@@ -3,7 +3,7 @@
 PlayerInput
 ===========
 
-Inherited: None
+Inherited: :ref:`NativeBehaviour<api_NativeBehaviour>`
 
 .. _api_PlayerInput_description:
 
@@ -22,13 +22,13 @@ Public Methods
 --------------
 
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                      float | :ref:`axis<api_PlayerInput_f253d610>` (const TString & name)               |
+|                                      float | :ref:`axis<api_PlayerInput_9edc341b>` (const TString & name)               |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                       bool | :ref:`button<api_PlayerInput_fc03ab8d>` (const TString & name)             |
+|                                       bool | :ref:`button<api_PlayerInput_e6c019d5>` (const TString & name)             |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|  :ref:`ControlScheme<api_ControlScheme>` * | :ref:`controlScheme<api_PlayerInput_391ec47b>` () const                    |
+|  :ref:`ControlScheme<api_ControlScheme>` * | :ref:`controlScheme<api_PlayerInput_1306dba2>` () const                    |
 +--------------------------------------------+----------------------------------------------------------------------------+
-|                                       void | :ref:`setControlScheme<api_PlayerInput_028bda36>` (ControlScheme * scheme) |
+|                                       void | :ref:`setControlScheme<api_PlayerInput_31c5bfa8>` (ControlScheme * scheme) |
 +--------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PlayerInput_f253d610:
+.. _api_PlayerInput_9edc341b:
 
  float **PlayerInput::axis** (:ref:`TString<api_TString>` & *name*)
 
@@ -53,7 +53,7 @@ Returns the value of the virtual axis identified by name. The value will be in t
 
 ----
 
-.. _api_PlayerInput_fc03ab8d:
+.. _api_PlayerInput_e6c019d5:
 
  bool **PlayerInput::button** (:ref:`TString<api_TString>` & *name*)
 
@@ -61,7 +61,7 @@ Returns true in case of virtual button identified by *name* is pressed; otherwis
 
 ----
 
-.. _api_PlayerInput_391ec47b:
+.. _api_PlayerInput_1306dba2:
 
  :ref:`ControlScheme<api_ControlScheme>` * **PlayerInput::controlScheme** () const
 
@@ -71,7 +71,7 @@ Returns the current assigned control scheme.
 
 ----
 
-.. _api_PlayerInput_028bda36:
+.. _api_PlayerInput_31c5bfa8:
 
  void **PlayerInput::setControlScheme** (:ref:`ControlScheme<api_ControlScheme>` * *scheme*)
 

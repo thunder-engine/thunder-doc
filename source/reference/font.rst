@@ -3,7 +3,7 @@
 Font
 ====
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_Font_description:
 
@@ -20,7 +20,7 @@ Public Methods
 --------------
 
 +--------------------------------+-----------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Font_36a2bd79>` () |
+|  :ref:`Texture<api_Texture>` * | :ref:`page<api_Font_4a03659f>` () |
 +--------------------------------+-----------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Font_36a2bd79:
+.. _api_Font_4a03659f:
 
  :ref:`Texture<api_Texture>` * **Font::page** ()
 

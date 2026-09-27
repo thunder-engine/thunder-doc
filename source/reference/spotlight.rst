@@ -3,7 +3,7 @@
 SpotLight
 =========
 
-Inherited: None
+Inherited: :ref:`BaseLight<api_BaseLight>`
 
 .. _api_SpotLight_description:
 
@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +--------+-------------------------------------------------------------------------+
-|  float | :ref:`attenuationDistance<api_SpotLight_7ac4fdb5>` () const             |
+|  float | :ref:`attenuationDistance<api_SpotLight_4862b130>` () const             |
 +--------+-------------------------------------------------------------------------+
-|  float | :ref:`outerAngle<api_SpotLight_5864e90b>` () const                      |
+|  float | :ref:`outerAngle<api_SpotLight_a689fb41>` () const                      |
 +--------+-------------------------------------------------------------------------+
-|   void | :ref:`setAttenuationDistance<api_SpotLight_6f87bd12>` (float  distance) |
+|   void | :ref:`setAttenuationDistance<api_SpotLight_ca3f1e75>` (float  distance) |
 +--------+-------------------------------------------------------------------------+
-|   void | :ref:`setOuterAngle<api_SpotLight_6b5dc01a>` (float  angle)             |
+|   void | :ref:`setOuterAngle<api_SpotLight_d62097a4>` (float  angle)             |
 +--------+-------------------------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_SpotLight_7ac4fdb5:
+.. _api_SpotLight_4862b130:
 
  float **SpotLight::attenuationDistance** () const
 
@@ -53,7 +53,7 @@ Returns the attenuation distance of the light cone.
 
 ----
 
-.. _api_SpotLight_5864e90b:
+.. _api_SpotLight_a689fb41:
 
  float **SpotLight::outerAngle** () const
 
@@ -63,7 +63,7 @@ Returns the angle of the light cone in degrees.
 
 ----
 
-.. _api_SpotLight_6f87bd12:
+.. _api_SpotLight_ca3f1e75:
 
  void **SpotLight::setAttenuationDistance** (float  *distance*)
 
@@ -73,7 +73,7 @@ Changes the attenuation *distance* of the light cone.
 
 ----
 
-.. _api_SpotLight_6b5dc01a:
+.. _api_SpotLight_d62097a4:
 
  void **SpotLight::setOuterAngle** (float  *angle*)
 

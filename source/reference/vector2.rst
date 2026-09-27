@@ -26,57 +26,57 @@ Public Methods
 --------------
 
 +--------------------------------+------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_c4f8b913>` ()                                |
+|                                | :ref:`Vector2<api_Vector2_5ed8c6a9>` ()                                |
 +--------------------------------+------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_cb654d89>` (areal  v)                        |
+|                                | :ref:`Vector2<api_Vector2_598dc03b>` (areal  v)                        |
 +--------------------------------+------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_46a3b98f>` (areal  x, areal  y)              |
+|                                | :ref:`Vector2<api_Vector2_d7154e3c>` (areal  x, areal  y)              |
 +--------------------------------+------------------------------------------------------------------------+
-|                                | :ref:`Vector2<api_Vector2_168df743>` (const Vector2 & vector)          |
+|                                | :ref:`Vector2<api_Vector2_10495bed>` (const Vector2 & vector)          |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`cross<api_Vector2_72b463ed>` (const Vector2 & vector) const      |
+|                          areal | :ref:`cross<api_Vector2_eb8301ad>` (const Vector2 & vector) const      |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`dot<api_Vector2_c64d32fe>` (const Vector2 & vector) const        |
+|                          areal | :ref:`dot<api_Vector2_253e6da1>` (const Vector2 & vector) const        |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`length<api_Vector2_cd90ea72>` () const                           |
+|                          areal | :ref:`length<api_Vector2_3f1cbd47>` () const                           |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`normalize<api_Vector2_842c9157>` ()                              |
+|                          areal | :ref:`normalize<api_Vector2_9781bc20>` ()                              |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`sqrLength<api_Vector2_10de4987>` () const                        |
+|                          areal | :ref:`sqrLength<api_Vector2_98e4df2b>` () const                        |
 +--------------------------------+------------------------------------------------------------------------+
-|                           bool | :ref:`operator!=<api_Vector2_fc0ade76>` (const Vector2 & vector) const |
+|                           bool | :ref:`operator!=<api_Vector2_f621c8d3>` (const Vector2 & vector) const |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_659d28eb>` (areal  factor) const           |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_4cd8b0a1>` (areal  factor) const           |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_8694be57>` (const Vector2 & vector) const  |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator*<api_Vector2_4e95362a>` (const Vector2 & vector) const  |
 +--------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator*=<api_Vector2_c0d735b2>` (areal  factor)                |
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator*=<api_Vector2_b143ae86>` (areal  factor)                |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator+<api_Vector2_7cb49ad0>` (const Vector2 & vector) const  |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator+<api_Vector2_f7309da1>` (const Vector2 & vector) const  |
 +--------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator+=<api_Vector2_72e15fa6>` (const Vector2 & vector)       |
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator+=<api_Vector2_b90e85dc>` (const Vector2 & vector)       |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_7e0a3d5c>` () const                        |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_86ea2d19>` () const                        |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_b4790ef5>` (const Vector2 & vector) const  |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator-<api_Vector2_f9c1574b>` (const Vector2 & vector) const  |
 +--------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator-=<api_Vector2_5fab92ec>` (const Vector2 & vector)       |
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator-=<api_Vector2_81ed7a46>` (const Vector2 & vector)       |
 +--------------------------------+------------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`operator/<api_Vector2_52b71e4f>` (areal  divisor) const          |
+|    :ref:`Vector2<api_Vector2>` | :ref:`operator/<api_Vector2_d4591680>` (areal  divisor) const          |
 +--------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator/=<api_Vector2_8f9e02a6>` (areal  divisor)               |
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator/=<api_Vector2_ab865147>` (areal  divisor)               |
 +--------------------------------+------------------------------------------------------------------------+
-|                           bool | :ref:`operator\<<api_Vector2_5d0f4b9a>` (const Vector2 & vector) const |
+|                           bool | :ref:`operator\<<api_Vector2_3f759a6b>` (const Vector2 & vector) const |
 +--------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` & | :ref:`operator=<api_Vector2_3df02691>` (const Vector2 & value)         |
+|  :ref:`Vector2<api_Vector2>` & | :ref:`operator=<api_Vector2_a029d75b>` (const Vector2 & value)         |
 +--------------------------------+------------------------------------------------------------------------+
-|                           bool | :ref:`operator==<api_Vector2_da849fe0>` (const Vector2 & vector) const |
+|                           bool | :ref:`operator==<api_Vector2_10e597ad>` (const Vector2 & vector) const |
 +--------------------------------+------------------------------------------------------------------------+
-|                           bool | :ref:`operator><api_Vector2_f09de573>` (const Vector2 & vector) const  |
+|                           bool | :ref:`operator><api_Vector2_a53c91b4>` (const Vector2 & vector) const  |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Vector2_3056fdb1>` (int  i)                       |
+|                          areal | :ref:`operator[]<api_Vector2_e3f98a5c>` (int  i)                       |
 +--------------------------------+------------------------------------------------------------------------+
-|                          areal | :ref:`operator[]<api_Vector2_39d45160>` (int  i) const                 |
+|                          areal | :ref:`operator[]<api_Vector2_4ce73061>` (int  i) const                 |
 +--------------------------------+------------------------------------------------------------------------+
 
 
@@ -93,7 +93,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Vector2_c4f8b913:
+.. _api_Vector2_5ed8c6a9:
 
 **Vector2::Vector2** ()
 
@@ -101,7 +101,7 @@ Constructs a null vector, i.e. with coordinates (0, 0).
 
 ----
 
-.. _api_Vector2_cb654d89:
+.. _api_Vector2_598dc03b:
 
 **Vector2::Vector2** (areal  *v*)
 
@@ -109,7 +109,7 @@ Constructs a vector with coordinates (v).
 
 ----
 
-.. _api_Vector2_46a3b98f:
+.. _api_Vector2_d7154e3c:
 
 **Vector2::Vector2** (areal  *x*, areal  *y*)
 
@@ -117,7 +117,7 @@ Constructs a vector with coordinates (x, y).
 
 ----
 
-.. _api_Vector2_168df743:
+.. _api_Vector2_10495bed:
 
 **Vector2::Vector2** (:ref:`Vector2<api_Vector2>` & *vector*)
 
@@ -125,7 +125,7 @@ Copy constructor.
 
 ----
 
-.. _api_Vector2_72b463ed:
+.. _api_Vector2_eb8301ad:
 
  areal **Vector2::cross** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -135,7 +135,7 @@ Returns the cross-product of this *vector* and given vector.
 
 ----
 
-.. _api_Vector2_c64d32fe:
+.. _api_Vector2_253e6da1:
 
  areal **Vector2::dot** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -145,7 +145,7 @@ Returns the dot-product of this *vector* and given vector.
 
 ----
 
-.. _api_Vector2_cd90ea72:
+.. _api_Vector2_3f1cbd47:
 
  areal **Vector2::length** () const
 
@@ -155,7 +155,7 @@ Returns the length of this vector.
 
 ----
 
-.. _api_Vector2_842c9157:
+.. _api_Vector2_9781bc20:
 
  areal **Vector2::normalize** ()
 
@@ -165,7 +165,7 @@ Normalizes the currect vector in place. Returns length of prenormalized vector.
 
 ----
 
-.. _api_Vector2_10de4987:
+.. _api_Vector2_98e4df2b:
 
  areal **Vector2::sqrLength** () const
 
@@ -175,7 +175,7 @@ Returns the squared length of this vector.
 
 ----
 
-.. _api_Vector2_fc0ade76:
+.. _api_Vector2_f621c8d3:
 
  bool **Vector2::operator!=** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -183,7 +183,7 @@ Returns true if this *vector* is NOT equal to given vector; otherwise returns fa
 
 ----
 
-.. _api_Vector2_659d28eb:
+.. _api_Vector2_4cd8b0a1:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator*** (areal  *factor*) const
 
@@ -193,7 +193,7 @@ Returns a copy of this vector, multiplied by the given factor.
 
 ----
 
-.. _api_Vector2_8694be57:
+.. _api_Vector2_4e95362a:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator*** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -203,7 +203,7 @@ Returns a copy of this vector, multiplied by the given vector.
 
 ----
 
-.. _api_Vector2_c0d735b2:
+.. _api_Vector2_b143ae86:
 
  :ref:`Vector2<api_Vector2>` & **Vector2::operator*=** (areal  *factor*)
 
@@ -213,7 +213,7 @@ Multiplies this vector's coordinates by the given factor, and returns a referenc
 
 ----
 
-.. _api_Vector2_7cb49ad0:
+.. _api_Vector2_f7309da1:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator+** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -223,7 +223,7 @@ Returns a Vector2 object that is the sum of the this *vector* and vector; each c
 
 ----
 
-.. _api_Vector2_72e15fa6:
+.. _api_Vector2_b90e85dc:
 
  :ref:`Vector2<api_Vector2>` & **Vector2::operator+=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
@@ -233,7 +233,7 @@ Adds the given *vector* to this *vector* and returns a reference to this vector.
 
 ----
 
-.. _api_Vector2_7e0a3d5c:
+.. _api_Vector2_86ea2d19:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator-** () const
 
@@ -243,7 +243,7 @@ Equivalent to Vector2(0,0) - vector.
 
 ----
 
-.. _api_Vector2_b4790ef5:
+.. _api_Vector2_f9c1574b:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator-** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -253,7 +253,7 @@ Returns a Vector2 object that is formed by subtracting *vector* from this vector
 
 ----
 
-.. _api_Vector2_5fab92ec:
+.. _api_Vector2_81ed7a46:
 
  :ref:`Vector2<api_Vector2>` & **Vector2::operator-=** (:ref:`Vector2<api_Vector2>` & *vector*)
 
@@ -263,7 +263,7 @@ Subtracts the given *vector* from this *vector* and returns a reference to this 
 
 ----
 
-.. _api_Vector2_52b71e4f:
+.. _api_Vector2_d4591680:
 
  :ref:`Vector2<api_Vector2>`  **Vector2::operator/** (areal  *divisor*) const
 
@@ -273,7 +273,7 @@ Returns a copy of this vector, divided by the given divisor.
 
 ----
 
-.. _api_Vector2_8f9e02a6:
+.. _api_Vector2_ab865147:
 
  :ref:`Vector2<api_Vector2>` & **Vector2::operator/=** (areal  *divisor*)
 
@@ -283,7 +283,7 @@ Divides this vector's coordinates by the given divisor, and returns a reference 
 
 ----
 
-.. _api_Vector2_5d0f4b9a:
+.. _api_Vector2_3f759a6b:
 
  bool **Vector2::operator<** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -291,7 +291,7 @@ Returns true if this *vector* is less than vector; otherwise returns false. This
 
 ----
 
-.. _api_Vector2_3df02691:
+.. _api_Vector2_a029d75b:
 
  :ref:`Vector2<api_Vector2>` & **Vector2::operator=** (:ref:`Vector2<api_Vector2>` & *value*)
 
@@ -299,7 +299,7 @@ Assignment operator. The *value* will be assigned to this object.
 
 ----
 
-.. _api_Vector2_da849fe0:
+.. _api_Vector2_10e597ad:
 
  bool **Vector2::operator==** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -307,7 +307,7 @@ Returns true if this *vector* is equal to given vector; otherwise returns false.
 
 ----
 
-.. _api_Vector2_f09de573:
+.. _api_Vector2_a53c91b4:
 
  bool **Vector2::operator>** (:ref:`Vector2<api_Vector2>` & *vector*) const
 
@@ -315,13 +315,13 @@ Returns true if this *vector* is bigger than given vector; otherwise returns fal
 
 ----
 
-.. _api_Vector2_3056fdb1:
+.. _api_Vector2_e3f98a5c:
 
  areal **Vector2::operator[]** (int  *i*)
 
 Returns the component of the vector at index position *i* as a modifiable reference. *i* must be a valid index position in the vector (i.e., 0 <= *i* < 2).
 
-.. _api_Vector2_39d45160:
+.. _api_Vector2_4ce73061:
 
  areal **Vector2::operator[]** (int  *i*) const
 

@@ -191,7 +191,7 @@ For editing ``.po`` files, it is recommended to use:
 *   **Poedit** (recommended for beginners)
     
     .. code-block:: bash
-	
+
         # Install on Ubuntu
         sudo apt install poedit
         
@@ -250,13 +250,13 @@ Before submitting a translation, verify:
 *   [ ] ``.po`` file syntax is correct:
 
     .. code-block:: bash
-	
+
         msgfmt --check locales/ru/LC_MESSAGES/*.po
 
 *   [ ] Documentation builds without errors:
 
     .. code-block:: bash
-	
+
         make clean
         make html-ru
 

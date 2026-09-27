@@ -3,7 +3,7 @@
 Foldout
 =======
 
-Inherited: None
+Inherited: :ref:`Widget<api_Widget>`
 
 .. _api_Foldout_description:
 
@@ -20,25 +20,25 @@ Public Methods
 --------------
 
 +----------------------------------+-------------------------------------------------------------------------+
-|        :ref:`Frame<api_Frame>` * | :ref:`container<api_Foldout_6790fc2d>` () const                         |
+|        :ref:`Frame<api_Frame>` * | :ref:`container<api_Foldout_6723e1a0>` () const                         |
 +----------------------------------+-------------------------------------------------------------------------+
-|  :ref:`CheckBox<api_CheckBox>` * | :ref:`indicator<api_Foldout_28d436a5>` () const                         |
+|  :ref:`CheckBox<api_CheckBox>` * | :ref:`indicator<api_Foldout_7e358d2c>` () const                         |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`insertWidget<api_Foldout_18b0d3e5>` (int  index, Widget * widget) |
+|                             void | :ref:`insertWidget<api_Foldout_1ca38607>` (int  index, Widget * widget) |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             bool | :ref:`isExpanded<api_Foldout_b7cefa25>` () const                        |
+|                             bool | :ref:`isExpanded<api_Foldout_569cead2>` () const                        |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`onExpand<api_Foldout_5f604cd3>` ()                                |
+|                             void | :ref:`onExpand<api_Foldout_308d1fea>` ()                                |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`setContainer<api_Foldout_b65a4d03>` (Frame * container)           |
+|                             void | :ref:`setContainer<api_Foldout_f721a3ec>` (Frame * container)           |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`setExpanded<api_Foldout_c72d46b8>` (bool  expanded)               |
+|                             void | :ref:`setExpanded<api_Foldout_480fc2d3>` (bool  expanded)               |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`setIndicator<api_Foldout_f1c82945>` (CheckBox * indicator)        |
+|                             void | :ref:`setIndicator<api_Foldout_c8975b2a>` (CheckBox * indicator)        |
 +----------------------------------+-------------------------------------------------------------------------+
-|                             void | :ref:`setText<api_Foldout_653ed82c>` (const TString  text)              |
+|                             void | :ref:`setText<api_Foldout_586c3d02>` (const TString & text)             |
 +----------------------------------+-------------------------------------------------------------------------+
-|      :ref:`TString<api_TString>` | :ref:`text<api_Foldout_a40f1572>` () const                              |
+|      :ref:`TString<api_TString>` | :ref:`text<api_Foldout_f816c7e4>` () const                              |
 +----------------------------------+-------------------------------------------------------------------------+
 
 
@@ -55,7 +55,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Foldout_6790fc2d:
+.. _api_Foldout_6723e1a0:
 
  :ref:`Frame<api_Frame>` * **Foldout::container** () const
 
@@ -65,7 +65,7 @@ Returns container component attached to this widget.
 
 ----
 
-.. _api_Foldout_28d436a5:
+.. _api_Foldout_7e358d2c:
 
  :ref:`CheckBox<api_CheckBox>` * **Foldout::indicator** () const
 
@@ -75,7 +75,7 @@ Returns indicator button to fold and unfold container with content.
 
 ----
 
-.. _api_Foldout_18b0d3e5:
+.. _api_Foldout_1ca38607:
 
  void **Foldout::insertWidget** (int  *index*, :ref:`Widget<api_Widget>` * *widget*)
 
@@ -83,7 +83,7 @@ Inserts *widget* to the foldout's container, at given position index. Effectivel
 
 ----
 
-.. _api_Foldout_b7cefa25:
+.. _api_Foldout_569cead2:
 
  bool **Foldout::isExpanded** () const
 
@@ -91,7 +91,7 @@ Returns true id foldout is currently expanded; otherwise returns false.
 
 ----
 
-.. _api_Foldout_5f604cd3:
+.. _api_Foldout_308d1fea:
 
  void **Foldout::onExpand** ()
 
@@ -99,7 +99,7 @@ Toggles the expanded state of the foldout when the indicator is clicked.
 
 ----
 
-.. _api_Foldout_b65a4d03:
+.. _api_Foldout_f721a3ec:
 
  void **Foldout::setContainer** (:ref:`Frame<api_Frame>` * *container*)
 
@@ -109,7 +109,7 @@ Sets *container* component attached to this widget.
 
 ----
 
-.. _api_Foldout_c72d46b8:
+.. _api_Foldout_480fc2d3:
 
  void **Foldout::setExpanded** (bool  *expanded*)
 
@@ -119,7 +119,7 @@ Expands or collapses the foldout based on the *expanded* parameter.
 
 ----
 
-.. _api_Foldout_f1c82945:
+.. _api_Foldout_c8975b2a:
 
  void **Foldout::setIndicator** (:ref:`CheckBox<api_CheckBox>` * *indicator*)
 
@@ -129,9 +129,9 @@ Sets *indicator* button to fold and unfold container with content.
 
 ----
 
-.. _api_Foldout_653ed82c:
+.. _api_Foldout_586c3d02:
 
- void **Foldout::setText** (:ref:`TString<api_TString>`  *text*)
+ void **Foldout::setText** (:ref:`TString<api_TString>` & *text*)
 
 Sets the label *text* for the foldout.
 
@@ -139,7 +139,7 @@ Sets the label *text* for the foldout.
 
 ----
 
-.. _api_Foldout_a40f1572:
+.. _api_Foldout_f816c7e4:
 
  :ref:`TString<api_TString>`  **Foldout::text** () const
 

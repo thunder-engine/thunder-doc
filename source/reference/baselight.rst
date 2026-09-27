@@ -3,7 +3,7 @@
 BaseLight
 =========
 
-Inherited: None
+Inherited: :ref:`NativeBehaviour<api_NativeBehaviour>`
 
 .. _api_BaseLight_description:
 
@@ -21,21 +21,25 @@ Note: This class must be a superclass only and shouldn't be created manually.
 Public Methods
 --------------
 
-+------------------------------+------------------------------------------------------------------------+
-|                        float | :ref:`brightness<api_BaseLight_9f35240d>` () const                     |
-+------------------------------+------------------------------------------------------------------------+
-|                         bool | :ref:`castShadows<api_BaseLight_80e13246>` () const                    |
-+------------------------------+------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_fd27bc8a>` () const                          |
-+------------------------------+------------------------------------------------------------------------+
-|                          int | :ref:`lightType<api_BaseLight_eb365c48>` () const                      |
-+------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setBrightness<api_BaseLight_4375069e>` (const float  brightness) |
-+------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setCastShadows<api_BaseLight_e81ba073>` (const bool  shadows)    |
-+------------------------------+------------------------------------------------------------------------+
-|                         void | :ref:`setColor<api_BaseLight_be069581>` (const Vector4  color)         |
-+------------------------------+------------------------------------------------------------------------+
++-------------------------------------+------------------------------------------------------------------------+
+|                               float | :ref:`brightness<api_BaseLight_26af0951>` () const                     |
++-------------------------------------+------------------------------------------------------------------------+
+|                                bool | :ref:`castShadows<api_BaseLight_a2c836fd>` () const                    |
++-------------------------------------+------------------------------------------------------------------------+
+|         :ref:`Vector4<api_Vector4>` | :ref:`color<api_BaseLight_b18fda70>` () const                          |
++-------------------------------------+------------------------------------------------------------------------+
+| const :ref:`Matrix4<api_Matrix4>` & | :ref:`cropMatrix<api_BaseLight_f840bc91>` (int  index)                 |
++-------------------------------------+------------------------------------------------------------------------+
+|                                 int | :ref:`lightType<api_BaseLight_fc769521>` () const                      |
++-------------------------------------+------------------------------------------------------------------------+
+|                                void | :ref:`setBrightness<api_BaseLight_57069e8f>` (const float  brightness) |
++-------------------------------------+------------------------------------------------------------------------+
+|                                void | :ref:`setCastShadows<api_BaseLight_0691ed28>` (const bool  shadows)    |
++-------------------------------------+------------------------------------------------------------------------+
+|                                void | :ref:`setColor<api_BaseLight_6d32471b>` (const Vector4  color)         |
++-------------------------------------+------------------------------------------------------------------------+
+|                                 int | :ref:`tilesCount<api_BaseLight_72eb3c58>` () const                     |
++-------------------------------------+------------------------------------------------------------------------+
 
 
 
@@ -51,7 +55,7 @@ None
 Methods Description
 -------------------
 
-.. _api_BaseLight_9f35240d:
+.. _api_BaseLight_26af0951:
 
  float **BaseLight::brightness** () const
 
@@ -61,7 +65,7 @@ Returns a brightness of emitting light.
 
 ----
 
-.. _api_BaseLight_80e13246:
+.. _api_BaseLight_a2c836fd:
 
  bool **BaseLight::castShadows** () const
 
@@ -71,7 +75,7 @@ Returns true if the light source can cast shadows; otherwise returns false.
 
 ----
 
-.. _api_BaseLight_fd27bc8a:
+.. _api_BaseLight_b18fda70:
 
  :ref:`Vector4<api_Vector4>`  **BaseLight::color** () const
 
@@ -81,7 +85,15 @@ Returns a color of emitting light.
 
 ----
 
-.. _api_BaseLight_eb365c48:
+.. _api_BaseLight_f840bc91:
+
+const :ref:`Matrix4<api_Matrix4>` & **BaseLight::cropMatrix** (int  *index*)
+
+Returns the crop matrix at cascade index.
+
+----
+
+.. _api_BaseLight_fc769521:
 
  int **BaseLight::lightType** () const
 
@@ -89,7 +101,7 @@ Return a type of the light. Fot more details refer to BaseLight::LightType
 
 ----
 
-.. _api_BaseLight_4375069e:
+.. _api_BaseLight_57069e8f:
 
  void **BaseLight::setBrightness** (float  *brightness*)
 
@@ -99,7 +111,7 @@ Changes a *brightness* of emitting light.
 
 ----
 
-.. _api_BaseLight_e81ba073:
+.. _api_BaseLight_0691ed28:
 
  void **BaseLight::setCastShadows** (bool  *shadows*)
 
@@ -109,12 +121,20 @@ Enables or disables cast *shadows* ability for the light source.
 
 ----
 
-.. _api_BaseLight_be069581:
+.. _api_BaseLight_6d32471b:
 
  void **BaseLight::setColor** (:ref:`Vector4<api_Vector4>`  *color*)
 
 Changes a *color* of emitting light.
 
 **See also** color().
+
+----
+
+.. _api_BaseLight_72eb3c58:
+
+ int **BaseLight::tilesCount** () const
+
+Returns number of shadow map atlas tiles required for this light source.
 
 

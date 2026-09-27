@@ -12,6 +12,7 @@ Thunder Engine documentation is an open project, and we welcome community contri
    documentation_guide
    style_guide
    review_process
+   build_from_source
 
 Overview
 --------
@@ -35,17 +36,20 @@ Getting Started
 1. **Clone the repository**
 
    .. code-block:: bash
+
       git clone https://github.com/thunder-engine/thunder-doc.git
       cd thunder-doc
 
 2. **Install build tools**
 
    .. code-block:: bash
+
       pip install sphinx sphinx-rtd-theme m2r2
 
 3. **Build the documentation locally**
 
    .. code-block:: bash
+
       make html
       
       # Or on Windows
@@ -56,11 +60,13 @@ Getting Started
 4. **Create a branch for your changes**
 
    .. code-block:: bash
+
       git checkout -b docs/my-improvements
 
 5. **Make changes and submit a pull request**
 
    .. code-block:: bash
+
       git add .
       git commit -m "docs: description of your changes"
       git push origin docs/my-improvements
@@ -71,18 +77,27 @@ Documentation Structure
 The documentation is organized in the following structure:
 
 .. code-block::
+
    thunder-doc/
-   ├── index.rst                 # Main page
-   ├── conf.py                   # Sphinx configuration
-   ├── audio                     # Audio section
-   ├── basics/                   # Engine basics
-   ├── scripting/                # Scripting
-   ├── rendering/                # Rendering
-   └── involved/                 # This section
-       ├── index.rst
-       ├── documentation_guide.rst
-       ├── style_guide.rst
-       └── review_process.rst
+   ├── make.bat
+   ├── Makefile
+   ├── requirements.txt
+   ├── locales/                 # Translations (gettext)
+   ├── _build/                  # Generated output (ignored)
+   └── source/                  # Sphinx sources and content
+      ├── index.rst            # Main page
+      ├── conf.py              # Sphinx configuration
+      ├── _static/             # Static assets for Sphinx
+      ├── audio/               # Audio section
+      ├── basics/              # Engine basics (Getting Started)
+      ├── editor/              # Editor & tooling docs
+      ├── involved/            # Contribution & process (this folder)
+      │   ├── index.rst
+      │   ├── documentation_guide.rst
+      │   ├── style_guide.rst
+      │   └── review_process.rst
+      ├── rendering/           # Rendering docs
+      └── scripting/           # Scripting docs
 
 Files and Their Purpose
 -----------------------

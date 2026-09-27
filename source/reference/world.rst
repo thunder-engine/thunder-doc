@@ -3,7 +3,7 @@
 World
 =====
 
-Inherited: None
+Inherited: :ref:`Object<api_Object>`
 
 .. _api_World_description:
 
@@ -11,7 +11,7 @@ Description
 -----------
 
 
-Note: A scene object creating automatically by the engine. Only one World instance can be created in the game. A scene object must be set as a parent for other game hierarchies to show them on the screen. The main scene graph object can be retrieved using Engine::sceneGraph()
+Note: A World object creating automatically by the engine. Only one World instance can be created in the game. A World object must be set as a parent for other game hierarchies to show them on the screen. The main scene graph object can be retrieved using Engine::world()
 
 
 
@@ -22,39 +22,37 @@ Public Methods
 --------------
 
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_d6b72a08>` () const                                           |
+|    :ref:`Scene<api_Scene>` * | :ref:`activeScene<api_World_c8250d74>` () const                                           |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`activeSceneChanged<api_World_187ef203>` ()                                          |
+|                         void | :ref:`activeSceneChanged<api_World_e63c592a>` ()                                          |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_102594ba>` (const TString & name)                             |
+|    :ref:`Scene<api_Scene>` * | :ref:`createScene<api_World_d9f5b20a>` (const TString & name)                             |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|  :ref:`Object<api_Object>` * | :ref:`gameController<api_World_4a27893e>` () const                                        |
+|  :ref:`Object<api_Object>` * | :ref:`gameController<api_World_2d37c85a>` () const                                        |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`graphUpdated<api_World_2093fce6>` ()                                                |
+|                         void | :ref:`graphUpdated<api_World_29b571df>` ()                                                |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         bool | :ref:`isToBeUpdated<api_World_6a587d1c>` ()                                               |
+|                         bool | :ref:`isActive<api_World_8e36509d>` ()                                                    |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_65dc9187>` (const TString & path, bool  additive)               |
+|    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_World_4a25dc19>` (const TString & path, bool  additive)               |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`makeDirty<api_World_c341bd07>` ()                                                   |
+|                         bool | :ref:`rayCast<api_World_4ef1a708>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)  |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         bool | :ref:`rayCast<api_World_9c04f635>` (const Ray & ray, float  maxDistance, Ray::Hit * hit)  |
+|                         void | :ref:`sceneLoaded<api_World_ed74c2f9>` ()                                                 |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`sceneLoaded<api_World_84a63b75>` ()                                                 |
+|                         void | :ref:`sceneUnloaded<api_World_b1d85fe9>` ()                                               |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`sceneUnloaded<api_World_af890654>` ()                                               |
+|                         void | :ref:`setActive<api_World_52e894cd>` (bool  flag)                                         |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setActiveScene<api_World_e910a8b7>` (Scene * scene)                                 |
+|                         void | :ref:`setActiveScene<api_World_c986273f>` (Scene * scene)                                 |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setGameController<api_World_f69c3701>` (Object * controller)                        |
+|                         void | :ref:`setGameController<api_World_9edac71f>` (Object * controller)                        |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setRayCastHandler<api_World_0ec8fa49>` (RayCastCallback  callback, System * system) |
+|                         void | :ref:`setRayCastHandler<api_World_13864fdc>` (RayCastCallback  callback, System * system) |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`setToBeUpdated<api_World_c1f79a80>` (bool  flag)                                    |
+|                         void | :ref:`unloadAll<api_World_9dcfb756>` ()                                                   |
 +------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`unloadAll<api_World_916c3e8d>` ()                                                   |
-+------------------------------+-------------------------------------------------------------------------------------------+
-|                         void | :ref:`unloadScene<api_World_8ea0c9f4>` (Scene * scene)                                    |
+|                         void | :ref:`unloadScene<api_World_d829f657>` (Scene * scene)                                    |
 +------------------------------+-------------------------------------------------------------------------------------------+
 
 
@@ -71,7 +69,7 @@ None
 Methods Description
 -------------------
 
-.. _api_World_d6b72a08:
+.. _api_World_c8250d74:
 
  :ref:`Scene<api_Scene>` * **World::activeScene** () const
 
@@ -83,7 +81,7 @@ There must always be one Scene marked as the active at the same time.
 
 ----
 
-.. _api_World_187ef203:
+.. _api_World_e63c592a:
 
  void **World::activeSceneChanged** ()
 
@@ -91,7 +89,7 @@ Emmits signal when active scene has been changed.
 
 ----
 
-.. _api_World_102594ba:
+.. _api_World_d9f5b20a:
 
  :ref:`Scene<api_Scene>` * **World::createScene** (:ref:`TString<api_TString>` & *name*)
 
@@ -99,7 +97,7 @@ Create an empty new Scene at runtime with the given name.
 
 ----
 
-.. _api_World_4a27893e:
+.. _api_World_2d37c85a:
 
  :ref:`Object<api_Object>` * **World::gameController** () const
 
@@ -111,7 +109,7 @@ Game controller is abstract object respocible for various gameplay aspects.
 
 ----
 
-.. _api_World_2093fce6:
+.. _api_World_29b571df:
 
  void **World::graphUpdated** ()
 
@@ -119,15 +117,15 @@ Emmits signal when graph has been updated.
 
 ----
 
-.. _api_World_6a587d1c:
+.. _api_World_8e36509d:
 
- bool **World::isToBeUpdated** ()
+ bool **World::isActive** ()
 
-Returns in case of scene must be updated in the current frame; otherwise returns false.
+Returns in case of world is active and must be updated in the current frame; otherwise returns false.
 
 ----
 
-.. _api_World_65dc9187:
+.. _api_World_4a25dc19:
 
  :ref:`Scene<api_Scene>` * **World::loadScene** (:ref:`TString<api_TString>` & *path*, bool  *additive*)
 
@@ -139,15 +137,7 @@ Loads the scene stored in the .map files by the it's path.
 
 ----
 
-.. _api_World_c341bd07:
-
- void **World::makeDirty** ()
-
-Marks World as dirty. Mainly used to detect scene graph configuration changes.
-
-----
-
-.. _api_World_9c04f635:
+.. _api_World_4ef1a708:
 
  bool **World::rayCast** (:ref:`Ray<api_Ray>` & *ray*, float  *maxDistance*, :ref:`Ray::Hit<api_Ray_Hit>` * *hit*)
 
@@ -155,7 +145,7 @@ Casts a ray, of length maxDistance, against all colliders in the World. Returns 
 
 ----
 
-.. _api_World_84a63b75:
+.. _api_World_ed74c2f9:
 
  void **World::sceneLoaded** ()
 
@@ -163,7 +153,7 @@ Emmits signal when scene has been loaded.
 
 ----
 
-.. _api_World_af890654:
+.. _api_World_b1d85fe9:
 
  void **World::sceneUnloaded** ()
 
@@ -171,7 +161,17 @@ Emmits signal when scene has been unloaded.
 
 ----
 
-.. _api_World_e910a8b7:
+.. _api_World_52e894cd:
+
+ void **World::setActive** (bool  *flag*)
+
+Sets an active flag. For active worlds engine launches the simulation.
+
+**See also** isActive().
+
+----
+
+.. _api_World_c986273f:
 
  void **World::setActiveScene** (:ref:`Scene<api_Scene>` * *scene*)
 
@@ -183,7 +183,7 @@ There must always be one Scene marked as the active at the same time.
 
 ----
 
-.. _api_World_f69c3701:
+.. _api_World_9edac71f:
 
  void **World::setGameController** (:ref:`Object<api_Object>` * *controller*)
 
@@ -195,7 +195,7 @@ Game *controller* is abstract object respocible for various gameplay aspects.
 
 ----
 
-.. _api_World_0ec8fa49:
+.. _api_World_13864fdc:
 
  void **World::setRayCastHandler** (:ref:`RayCastCallback<api_RayCastCallback>`  *callback*, :ref:`System<api_System>` * *system*)
 
@@ -205,17 +205,7 @@ This function will be used to check intersections with in game geometry. In the 
 
 ----
 
-.. _api_World_c1f79a80:
-
- void **World::setToBeUpdated** (bool  *flag*)
-
-Sets an update flag.
-
-**See also** isToBeUpdated().
-
-----
-
-.. _api_World_916c3e8d:
+.. _api_World_9dcfb756:
 
  void **World::unloadAll** ()
 
@@ -223,7 +213,7 @@ Unloads all from the World.
 
 ----
 
-.. _api_World_8ea0c9f4:
+.. _api_World_d829f657:
 
  void **World::unloadScene** (:ref:`Scene<api_Scene>` * *scene*)
 

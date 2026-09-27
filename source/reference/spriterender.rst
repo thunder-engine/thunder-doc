@@ -3,7 +3,7 @@
 SpriteRender
 ============
 
-Inherited: None
+Inherited: :ref:`Renderable<api_Renderable>`
 
 .. _api_SpriteRender_description:
 
@@ -19,31 +19,35 @@ The SpriteRender component allows you to display images as sprites to use in bot
 Public Methods
 --------------
 
-+--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector4<api_Vector4>` | :ref:`color<api_SpriteRender_782fab40>` () const                   |
-+--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`drawMode<api_SpriteRender_3026b719>` () const                |
-+--------------------------------+--------------------------------------------------------------------+
-|                            int | :ref:`layer<api_SpriteRender_1b692580>` () const                   |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setColor<api_SpriteRender_9d1a0bf3>` (const Vector4 & color) |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setDrawMode<api_SpriteRender_27b8c416>` (int  mode)          |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setLayer<api_SpriteRender_7b3fc61d>` (int  layer)            |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setSize<api_SpriteRender_c23b4d75>` (const Vector2 & size)   |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setSprite<api_SpriteRender_b35e1c68>` (Sprite * sprite)      |
-+--------------------------------+--------------------------------------------------------------------+
-|                           void | :ref:`setTexture<api_SpriteRender_fdb5c7e2>` (Texture * texture)   |
-+--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Vector2<api_Vector2>` | :ref:`size<api_SpriteRender_f187db59>` () const                    |
-+--------------------------------+--------------------------------------------------------------------+
-|    :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_SpriteRender_d48502ab>` () const                  |
-+--------------------------------+--------------------------------------------------------------------+
-|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_SpriteRender_31ab5c28>` () const                 |
-+--------------------------------+--------------------------------------------------------------------+
++--------------------------------+--------------------------------------------------------------------------------------+
+|                          float | :ref:`blendShapeWeight<api_SpriteRender_82f6ad43>` (size_t  index) const             |
++--------------------------------+--------------------------------------------------------------------------------------+
+|    :ref:`Vector4<api_Vector4>` | :ref:`color<api_SpriteRender_0ed5a2f4>` () const                                     |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                            int | :ref:`drawMode<api_SpriteRender_1f567e08>` () const                                  |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                            int | :ref:`layer<api_SpriteRender_1dc579ba>` () const                                     |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setBlendShapeWeight<api_SpriteRender_d32a097c>` (size_t  index, float  weight) |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setColor<api_SpriteRender_e018372d>` (const Vector4 & color)                   |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setDrawMode<api_SpriteRender_cd2937e1>` (int  mode)                            |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setLayer<api_SpriteRender_8c6d2ea7>` (int  layer)                              |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setSize<api_SpriteRender_8cf0b913>` (const Vector2 & size)                     |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setSprite<api_SpriteRender_2b94cd8e>` (Sprite * sprite)                        |
++--------------------------------+--------------------------------------------------------------------------------------+
+|                           void | :ref:`setTexture<api_SpriteRender_1e53b8a2>` (Texture * texture)                     |
++--------------------------------+--------------------------------------------------------------------------------------+
+|    :ref:`Vector2<api_Vector2>` | :ref:`size<api_SpriteRender_da4c29b6>` () const                                      |
++--------------------------------+--------------------------------------------------------------------------------------+
+|    :ref:`Sprite<api_Sprite>` * | :ref:`sprite<api_SpriteRender_765d4ea9>` () const                                    |
++--------------------------------+--------------------------------------------------------------------------------------+
+|  :ref:`Texture<api_Texture>` * | :ref:`texture<api_SpriteRender_59edbaf7>` () const                                   |
++--------------------------------+--------------------------------------------------------------------------------------+
 
 .. _api_SpriteRender_enums:
 
@@ -78,7 +82,17 @@ None
 Methods Description
 -------------------
 
-.. _api_SpriteRender_782fab40:
+.. _api_SpriteRender_82f6ad43:
+
+ float **SpriteRender::blendShapeWeight** (size_t  *index*) const
+
+Returns weight of a blend shape with specified index.
+
+**See also** setBlendShapeWeight().
+
+----
+
+.. _api_SpriteRender_0ed5a2f4:
 
  :ref:`Vector4<api_Vector4>`  **SpriteRender::color** () const
 
@@ -88,7 +102,7 @@ Returns the color of the sprite to be drawn.
 
 ----
 
-.. _api_SpriteRender_3026b719:
+.. _api_SpriteRender_1f567e08:
 
  int **SpriteRender::drawMode** () const
 
@@ -98,7 +112,7 @@ Returns a draw mode for the sprite. Please check SpriteRender::DrawMode for more
 
 ----
 
-.. _api_SpriteRender_1b692580:
+.. _api_SpriteRender_1dc579ba:
 
  int **SpriteRender::layer** () const
 
@@ -108,7 +122,17 @@ Returns the redering layer for the sprite.
 
 ----
 
-.. _api_SpriteRender_9d1a0bf3:
+.. _api_SpriteRender_d32a097c:
+
+ void **SpriteRender::setBlendShapeWeight** (size_t  *index*, float  *weight*)
+
+Sets the *weight* of a blend shape with specified *index* for this renderer.
+
+**See also** blendShapeWeight().
+
+----
+
+.. _api_SpriteRender_e018372d:
 
  void **SpriteRender::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -118,7 +142,7 @@ Changes the *color* of the sprite to be drawn.
 
 ----
 
-.. _api_SpriteRender_27b8c416:
+.. _api_SpriteRender_cd2937e1:
 
  void **SpriteRender::setDrawMode** (int  *mode*)
 
@@ -128,7 +152,7 @@ Sets a draw *mode* for the sprite. Please check SpriteRender::DrawMode for more 
 
 ----
 
-.. _api_SpriteRender_7b3fc61d:
+.. _api_SpriteRender_8c6d2ea7:
 
  void **SpriteRender::setLayer** (int  *layer*)
 
@@ -138,7 +162,7 @@ Sets the redering *layer* for the sprite.
 
 ----
 
-.. _api_SpriteRender_c23b4d75:
+.. _api_SpriteRender_8cf0b913:
 
  void **SpriteRender::setSize** (:ref:`Vector2<api_Vector2>` & *size*)
 
@@ -148,7 +172,7 @@ Sets a new *size* of sprite.
 
 ----
 
-.. _api_SpriteRender_b35e1c68:
+.. _api_SpriteRender_2b94cd8e:
 
  void **SpriteRender::setSprite** (:ref:`Sprite<api_Sprite>` * *sprite*)
 
@@ -158,7 +182,7 @@ Replaces current *sprite* with a new one.
 
 ----
 
-.. _api_SpriteRender_fdb5c7e2:
+.. _api_SpriteRender_1e53b8a2:
 
  void **SpriteRender::setTexture** (:ref:`Texture<api_Texture>` * *texture*)
 
@@ -168,7 +192,7 @@ Replaces current *texture* with a new one.
 
 ----
 
-.. _api_SpriteRender_f187db59:
+.. _api_SpriteRender_da4c29b6:
 
  :ref:`Vector2<api_Vector2>`  **SpriteRender::size** () const
 
@@ -178,7 +202,7 @@ Returns size of sprite.
 
 ----
 
-.. _api_SpriteRender_d48502ab:
+.. _api_SpriteRender_765d4ea9:
 
  :ref:`Sprite<api_Sprite>` * **SpriteRender::sprite** () const
 
@@ -188,7 +212,7 @@ Returns a sprite sheet.
 
 ----
 
-.. _api_SpriteRender_31ab5c28:
+.. _api_SpriteRender_59edbaf7:
 
  :ref:`Texture<api_Texture>` * **SpriteRender::texture** () const
 

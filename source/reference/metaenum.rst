@@ -22,23 +22,23 @@ Public Methods
 --------------
 
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                                    | :ref:`MetaEnum<api_MetaEnum_28ba0563>` (const MetaEnum::Table * table) |
+|                                                    | :ref:`MetaEnum<api_MetaEnum_f72516b9>` (const MetaEnum::Table * table) |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                               bool | :ref:`isValid<api_MetaEnum_d1ba4798>` () const                         |
+|                                               bool | :ref:`isValid<api_MetaEnum_4b6fe012>` () const                         |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                         const char | :ref:`key<api_MetaEnum_685f4d97>` (int  index) const                   |
+|                                         const char | :ref:`key<api_MetaEnum_24d0cab7>` (int  index) const                   |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                                int | :ref:`keyCount<api_MetaEnum_beaf928d>` () const                        |
+|                                                int | :ref:`keyCount<api_MetaEnum_0f761acb>` () const                        |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                                int | :ref:`keyToValue<api_MetaEnum_fc2b89a0>` (const char * key) const      |
+|                                                int | :ref:`keyToValue<api_MetaEnum_623570a1>` (const char * key) const      |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                         const char | :ref:`name<api_MetaEnum_d91f53eb>` () const                            |
+|                                         const char | :ref:`name<api_MetaEnum_a7f45691>` () const                            |
 +----------------------------------------------------+------------------------------------------------------------------------+
-| const :ref:`MetaEnum::Table<api_MetaEnum_Table>` * | :ref:`table<api_MetaEnum_742a1e05>` () const                           |
+| const :ref:`MetaEnum::Table<api_MetaEnum_Table>` * | :ref:`table<api_MetaEnum_af12068e>` () const                           |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                                int | :ref:`value<api_MetaEnum_270f4eab>` (int  index) const                 |
+|                                                int | :ref:`value<api_MetaEnum_847b012a>` (int  index) const                 |
 +----------------------------------------------------+------------------------------------------------------------------------+
-|                                         const char | :ref:`valueToKey<api_MetaEnum_a69d17e8>` (int  value) const            |
+|                                         const char | :ref:`valueToKey<api_MetaEnum_d64e2fa1>` (int  value) const            |
 +----------------------------------------------------+------------------------------------------------------------------------+
 
 
@@ -55,7 +55,7 @@ None
 Methods Description
 -------------------
 
-.. _api_MetaEnum_28ba0563:
+.. _api_MetaEnum_f72516b9:
 
 **MetaEnum::MetaEnum** (:ref:`MetaEnum::Table<api_MetaEnum_Table>` * *table*)
 
@@ -63,7 +63,7 @@ Constructs MetaEnum object which will contain information provided in a table.
 
 ----
 
-.. _api_MetaEnum_d1ba4798:
+.. _api_MetaEnum_4b6fe012:
 
  bool **MetaEnum::isValid** () const
 
@@ -71,7 +71,7 @@ Returns true if enumerator is valid; otherwise returns false.
 
 ----
 
-.. _api_MetaEnum_685f4d97:
+.. _api_MetaEnum_24d0cab7:
 
 const char **MetaEnum::key** (int  *index*) const
 
@@ -79,7 +79,7 @@ Returns the key with the given index, or nullptr if no such key exists.
 
 ----
 
-.. _api_MetaEnum_beaf928d:
+.. _api_MetaEnum_0f761acb:
 
  int **MetaEnum::keyCount** () const
 
@@ -87,7 +87,7 @@ Returns the number of keys.
 
 ----
 
-.. _api_MetaEnum_fc2b89a0:
+.. _api_MetaEnum_623570a1:
 
  int **MetaEnum::keyToValue** (char * *key*) const
 
@@ -95,7 +95,7 @@ Returns the integer value of the given enumeration key, or -1 if *key* is not de
 
 ----
 
-.. _api_MetaEnum_d91f53eb:
+.. _api_MetaEnum_a7f45691:
 
 const char **MetaEnum::name** () const
 
@@ -103,7 +103,7 @@ Returns a name of enumerator.
 
 ----
 
-.. _api_MetaEnum_742a1e05:
+.. _api_MetaEnum_af12068e:
 
 const :ref:`MetaEnum::Table<api_MetaEnum::Table>` * **MetaEnum::table** () const
 
@@ -111,7 +111,7 @@ Returns enumerator information table.
 
 ----
 
-.. _api_MetaEnum_270f4eab:
+.. _api_MetaEnum_847b012a:
 
  int **MetaEnum::value** (int  *index*) const
 
@@ -119,7 +119,7 @@ Returns the value with the given index; or returns -1 if there is no such value.
 
 ----
 
-.. _api_MetaEnum_a69d17e8:
+.. _api_MetaEnum_d64e2fa1:
 
 const char **MetaEnum::valueToKey** (int  *value*) const
 

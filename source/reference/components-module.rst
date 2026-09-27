@@ -11,32 +11,28 @@ Components Module
    animator
    arealight
    armature
-   audiosource
    baselight
-   boxcollider
    camera
-   capsulecollider
-   charactercontroller
-   collider
    component
    directlight
    effectrender
-   meshcollider
+   fixedjoint
+   hingejoint
+   joint
    meshrender
    nativebehaviour
    playerinput
    pointlight
    postprocessvolume
    renderable
-   rigidbody
    scene
    skinnedmeshrender
-   spherecollider
+   skinnedspriterender
    spline
    spotlight
+   springjoint
    spriterender
    textrender
    tilemaprender
    transform
-   volumecollider
    world

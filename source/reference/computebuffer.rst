@@ -3,7 +3,7 @@
 ComputeBuffer
 =============
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_ComputeBuffer_description:
 
@@ -20,15 +20,15 @@ Public Methods
 --------------
 
 +------------+---------------------------------------------------------------------+
-|   uint32_t | :ref:`count<api_ComputeBuffer_26387ebd>` () const                   |
+|   uint32_t | :ref:`count<api_ComputeBuffer_1632bce0>` () const                   |
 +------------+---------------------------------------------------------------------+
-|  ByteArray | :ref:`data<api_ComputeBuffer_79edacb3>` () const                    |
+|  ByteArray | :ref:`data<api_ComputeBuffer_3b915f0d>` () const                    |
 +------------+---------------------------------------------------------------------+
-|       void | :ref:`setData<api_ComputeBuffer_345a62bf>` (const ByteArray & data) |
+|       void | :ref:`setData<api_ComputeBuffer_53210e6c>` (const ByteArray & data) |
 +------------+---------------------------------------------------------------------+
-|       void | :ref:`setStride<api_ComputeBuffer_da2159e4>` (uint32_t  stride)     |
+|       void | :ref:`setStride<api_ComputeBuffer_150b367e>` (uint32_t  stride)     |
 +------------+---------------------------------------------------------------------+
-|   uint32_t | :ref:`stride<api_ComputeBuffer_b07fe9ad>` () const                  |
+|   uint32_t | :ref:`stride<api_ComputeBuffer_abde3145>` () const                  |
 +------------+---------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ComputeBuffer_26387ebd:
+.. _api_ComputeBuffer_1632bce0:
 
  uint32_t **ComputeBuffer::count** () const
 
@@ -53,7 +53,7 @@ Gets the number of elements in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_79edacb3:
+.. _api_ComputeBuffer_3b915f0d:
 
  ByteArray **ComputeBuffer::data** () const
 
@@ -63,7 +63,7 @@ Gets the data stored in the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_345a62bf:
+.. _api_ComputeBuffer_53210e6c:
 
  void **ComputeBuffer::setData** (ByteArray & *data*)
 
@@ -77,7 +77,7 @@ Sets the *data* of the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_da2159e4:
+.. _api_ComputeBuffer_150b367e:
 
  void **ComputeBuffer::setStride** (uint32_t  *stride*)
 
@@ -87,7 +87,7 @@ Sets the *stride* of the compute buffer.
 
 ----
 
-.. _api_ComputeBuffer_b07fe9ad:
+.. _api_ComputeBuffer_abde3145:
 
  uint32_t **ComputeBuffer::stride** () const
 

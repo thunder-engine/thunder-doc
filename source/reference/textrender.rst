@@ -3,7 +3,7 @@
 TextRender
 ==========
 
-Inherited: None
+Inherited: :ref:`Renderable<api_Renderable>`
 
 .. _api_TextRender_description:
 
@@ -20,47 +20,47 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------------+
-|                          int | :ref:`align<api_TextRender_b05436cd>` () const                       |
+|                          int | :ref:`align<api_TextRender_d17e6f54>` () const                       |
 +------------------------------+----------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_TextRender_f73bd85c>` () const                       |
+|  :ref:`Vector4<api_Vector4>` | :ref:`color<api_TextRender_c09fe72d>` () const                       |
 +------------------------------+----------------------------------------------------------------------+
-|      :ref:`Font<api_Font>` * | :ref:`font<api_TextRender_3db45c17>` () const                        |
+|      :ref:`Font<api_Font>` * | :ref:`font<api_TextRender_230cf69b>` () const                        |
 +------------------------------+----------------------------------------------------------------------+
-|                          int | :ref:`fontSize<api_TextRender_6be52c90>` () const                    |
+|                          int | :ref:`fontSize<api_TextRender_0afc2b14>` () const                    |
 +------------------------------+----------------------------------------------------------------------+
-|                         bool | :ref:`kerning<api_TextRender_f2a36748>` () const                     |
+|                         bool | :ref:`kerning<api_TextRender_92ca8b51>` () const                     |
 +------------------------------+----------------------------------------------------------------------+
-|                          int | :ref:`layer<api_TextRender_8c9d14fe>` () const                       |
+|                          int | :ref:`layer<api_TextRender_2c7403d5>` () const                       |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setAlign<api_TextRender_409d8b13>` (int  alignment)            |
+|                         void | :ref:`setAlign<api_TextRender_2d8016ea>` (int  alignment)            |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setColor<api_TextRender_b2c8a104>` (const Vector4 & color)     |
+|                         void | :ref:`setColor<api_TextRender_b64d97ce>` (const Vector4 & color)     |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setFont<api_TextRender_cd58a1f2>` (Font * font)                |
+|                         void | :ref:`setFont<api_TextRender_9d2e817f>` (Font * font)                |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setFontSize<api_TextRender_9de54867>` (int  size)              |
+|                         void | :ref:`setFontSize<api_TextRender_6a19f5bd>` (int  size)              |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setKerning<api_TextRender_3ad18e49>` (const bool  enable)      |
+|                         void | :ref:`setKerning<api_TextRender_cfae085d>` (const bool  enable)      |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setLayer<api_TextRender_acbf047e>` (int  layer)                |
+|                         void | :ref:`setLayer<api_TextRender_a40bc563>` (int  layer)                |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setMaterial<api_TextRender_cd956aeb>` (Material * material)    |
+|                         void | :ref:`setMaterial<api_TextRender_5dc9a2b8>` (Material * material)    |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setSize<api_TextRender_7fc9e035>` (const Vector2 & boundaries) |
+|                         void | :ref:`setSize<api_TextRender_ca138be0>` (const Vector2 & boundaries) |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setText<api_TextRender_1a04e5fb>` (const TString & text)       |
+|                         void | :ref:`setText<api_TextRender_fce31850>` (const TString & text)       |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setTranslated<api_TextRender_e5caf183>` (bool  enable)         |
+|                         void | :ref:`setTranslated<api_TextRender_1e3795cd>` (bool  enable)         |
 +------------------------------+----------------------------------------------------------------------+
-|                         void | :ref:`setWordWrap<api_TextRender_ad651c3b>` (bool  wrap)             |
+|                         void | :ref:`setWordWrap<api_TextRender_4b8e3260>` (bool  wrap)             |
 +------------------------------+----------------------------------------------------------------------+
-|  :ref:`Vector2<api_Vector2>` | :ref:`size<api_TextRender_731e52c6>` () const                        |
+|  :ref:`Vector2<api_Vector2>` | :ref:`size<api_TextRender_a8d3f26e>` () const                        |
 +------------------------------+----------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`text<api_TextRender_283dcef7>` () const                        |
+|  :ref:`TString<api_TString>` | :ref:`text<api_TextRender_7b2948d1>` () const                        |
 +------------------------------+----------------------------------------------------------------------+
-|                         bool | :ref:`translated<api_TextRender_cd56f91b>` () const                  |
+|                         bool | :ref:`translated<api_TextRender_14b29de5>` () const                  |
 +------------------------------+----------------------------------------------------------------------+
-|                         bool | :ref:`wordWrap<api_TextRender_b98e23d7>` () const                    |
+|                         bool | :ref:`wordWrap<api_TextRender_216bef5a>` () const                    |
 +------------------------------+----------------------------------------------------------------------+
 
 
@@ -77,7 +77,7 @@ None
 Methods Description
 -------------------
 
-.. _api_TextRender_b05436cd:
+.. _api_TextRender_d17e6f54:
 
  int **TextRender::align** () const
 
@@ -87,7 +87,7 @@ Returns text alignment policy.
 
 ----
 
-.. _api_TextRender_f73bd85c:
+.. _api_TextRender_c09fe72d:
 
  :ref:`Vector4<api_Vector4>`  **TextRender::color** () const
 
@@ -97,7 +97,7 @@ Returns the color of the text to be drawn.
 
 ----
 
-.. _api_TextRender_3db45c17:
+.. _api_TextRender_230cf69b:
 
  :ref:`Font<api_Font>` * **TextRender::font** () const
 
@@ -107,7 +107,7 @@ Returns the font which will be used to draw a text.
 
 ----
 
-.. _api_TextRender_6be52c90:
+.. _api_TextRender_0afc2b14:
 
  int **TextRender::fontSize** () const
 
@@ -117,7 +117,7 @@ Returns the size of the font.
 
 ----
 
-.. _api_TextRender_f2a36748:
+.. _api_TextRender_92ca8b51:
 
  bool **TextRender::kerning** () const
 
@@ -127,7 +127,7 @@ Returns true if glyph kerning enabled; otherwise returns false.
 
 ----
 
-.. _api_TextRender_8c9d14fe:
+.. _api_TextRender_2c7403d5:
 
  int **TextRender::layer** () const
 
@@ -137,7 +137,7 @@ Returns the redering layer.
 
 ----
 
-.. _api_TextRender_409d8b13:
+.. _api_TextRender_2d8016ea:
 
  void **TextRender::setAlign** (int  *alignment*)
 
@@ -147,7 +147,7 @@ Sets text *alignment* policy.
 
 ----
 
-.. _api_TextRender_b2c8a104:
+.. _api_TextRender_b64d97ce:
 
  void **TextRender::setColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
@@ -157,7 +157,7 @@ Changes the *color* of the text to be drawn.
 
 ----
 
-.. _api_TextRender_cd58a1f2:
+.. _api_TextRender_9d2e817f:
 
  void **TextRender::setFont** (:ref:`Font<api_Font>` * *font*)
 
@@ -167,7 +167,7 @@ Sets the new *font* asset used to render a text.
 
 ----
 
-.. _api_TextRender_9de54867:
+.. _api_TextRender_6a19f5bd:
 
  void **TextRender::setFontSize** (int  *size*)
 
@@ -177,7 +177,7 @@ Changes the *size* of the font.
 
 ----
 
-.. _api_TextRender_3ad18e49:
+.. _api_TextRender_cfae085d:
 
  void **TextRender::setKerning** (bool  *enable*)
 
@@ -191,7 +191,7 @@ Set true to *enable* glyph kerning and false to disable.
 
 ----
 
-.. _api_TextRender_acbf047e:
+.. _api_TextRender_a40bc563:
 
  void **TextRender::setLayer** (int  *layer*)
 
@@ -201,7 +201,7 @@ Sets the redering layer.
 
 ----
 
-.. _api_TextRender_cd956aeb:
+.. _api_TextRender_5dc9a2b8:
 
  void **TextRender::setMaterial** (:ref:`Material<api_Material>` * *material*)
 
@@ -211,7 +211,7 @@ Creates a new instance of *material* and assigns it.
 
 ----
 
-.. _api_TextRender_7fc9e035:
+.. _api_TextRender_ca138be0:
 
  void **TextRender::setSize** (:ref:`Vector2<api_Vector2>` & *boundaries*)
 
@@ -221,7 +221,7 @@ Changes the size of *boundaries* of the text area. This parameter is involved in
 
 ----
 
-.. _api_TextRender_1a04e5fb:
+.. _api_TextRender_fce31850:
 
  void **TextRender::setText** (:ref:`TString<api_TString>` & *text*)
 
@@ -231,7 +231,7 @@ Changes the *text* which will be drawn.
 
 ----
 
-.. _api_TextRender_e5caf183:
+.. _api_TextRender_1e3795cd:
 
  void **TextRender::setTranslated** (bool  *enable*)
 
@@ -241,7 +241,7 @@ Sets *enable* or disable translation from dictionary for current text render.
 
 ----
 
-.. _api_TextRender_ad651c3b:
+.. _api_TextRender_4b8e3260:
 
  void **TextRender::setWordWrap** (bool  *wrap*)
 
@@ -251,7 +251,7 @@ Sets the word *wrap* policy. Set true to enable word *wrap* and false to disable
 
 ----
 
-.. _api_TextRender_731e52c6:
+.. _api_TextRender_a8d3f26e:
 
  :ref:`Vector2<api_Vector2>`  **TextRender::size** () const
 
@@ -261,7 +261,7 @@ Returns the boundaries of the text area. This parameter is involved in Word Wrap
 
 ----
 
-.. _api_TextRender_283dcef7:
+.. _api_TextRender_7b2948d1:
 
  :ref:`TString<api_TString>`  **TextRender::text** () const
 
@@ -271,7 +271,7 @@ Returns the text which will be drawn.
 
 ----
 
-.. _api_TextRender_cd56f91b:
+.. _api_TextRender_14b29de5:
 
  bool **TextRender::translated** () const
 
@@ -281,7 +281,7 @@ Returns true if text in text render must be translated; othewise returns false.
 
 ----
 
-.. _api_TextRender_b98e23d7:
+.. _api_TextRender_216bef5a:
 
  bool **TextRender::wordWrap** () const
 

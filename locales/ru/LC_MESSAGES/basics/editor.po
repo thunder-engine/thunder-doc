@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "World Editor является центральным инструментом разработки игр в "
 "Thunder Engine, предоставляя важнейшую платформу для совместной работы "
-"дизайнеров и разработчиков. С помощью Мирового редактора команды могут "
+"дизайнеров и разработчиков. С помощью World Editor команды могут "
 "легко обмениваться проектами на разных платформах разработки, используя "
 "единый инструмент для целей дизайна и разработки."
 
@@ -71,7 +71,7 @@ msgid ""
 "Upon launching the World Editor, you'll be greeted by the **Welcome** "
 "screen, offering the following options:"
 msgstr ""
-"При запуске Мирового редактора вы увидите экран **Приветствия**, "
+"При запуске World Editor вы увидите экран **Приветствия**, "
 "предлагающий следующие варианты:"
 
 #: ../../source/basics/editor.rst:24
@@ -149,7 +149,7 @@ msgid ""
 "Explore the full capabilities of Thunder Engine and the World Editor by "
 "delving into the following resources:"
 msgstr ""
-"Изучите полные возможности Thunder Engine и Мирового редактора, "
+"Изучите полные возможности Thunder Engine и World Editor, "
 "обратившись к следующим ресурсам:"
 
 #: ../../source/basics/editor.rst:61
@@ -175,7 +175,7 @@ msgid ""
 "the most of the World Editor features."
 msgstr ""
 "Учебные пособия: Найдите пошаговые руководства, чтобы улучшить свои "
-"навыки и максимально эффективно использовать функции Мирового редактора."
+"навыки и максимально эффективно использовать функции World Editor."
 
 #: ../../source/basics/editor.rst:65
 msgid ""

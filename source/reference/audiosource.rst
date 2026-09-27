@@ -3,7 +3,7 @@
 AudioSource
 ===========
 
-Inherited: None
+Inherited: :ref:`NativeBehaviour<api_NativeBehaviour>`
 
 .. _api_AudioSource_description:
 
@@ -20,21 +20,21 @@ Public Methods
 --------------
 
 +------------------------------------+-------------------------------------------------------------+
-|                               bool | :ref:`autoPlay<api_AudioSource_154f6392>` () const          |
+|                               bool | :ref:`autoPlay<api_AudioSource_46c82f01>` () const          |
 +------------------------------------+-------------------------------------------------------------+
-|  :ref:`AudioClip<api_AudioClip>` * | :ref:`clip<api_AudioSource_2a380d4c>` () const              |
+|  :ref:`AudioClip<api_AudioClip>` * | :ref:`clip<api_AudioSource_0df37c96>` () const              |
 +------------------------------------+-------------------------------------------------------------+
-|                               bool | :ref:`loop<api_AudioSource_6d23c97f>` () const              |
+|                               bool | :ref:`loop<api_AudioSource_a3dc410b>` () const              |
 +------------------------------------+-------------------------------------------------------------+
-|                               void | :ref:`play<api_AudioSource_90b5a846>` ()                    |
+|                               void | :ref:`play<api_AudioSource_4d5a3871>` ()                    |
 +------------------------------------+-------------------------------------------------------------+
-|                               void | :ref:`setAutoPlay<api_AudioSource_94b3ca82>` (bool  play)   |
+|                               void | :ref:`setAutoPlay<api_AudioSource_5f67201e>` (bool  play)   |
 +------------------------------------+-------------------------------------------------------------+
-|                               void | :ref:`setClip<api_AudioSource_cd38a204>` (AudioClip * clip) |
+|                               void | :ref:`setClip<api_AudioSource_7281b605>` (AudioClip * clip) |
 +------------------------------------+-------------------------------------------------------------+
-|                               void | :ref:`setLoop<api_AudioSource_80971fba>` (bool  loop)       |
+|                               void | :ref:`setLoop<api_AudioSource_ed2c6450>` (bool  loop)       |
 +------------------------------------+-------------------------------------------------------------+
-|                               void | :ref:`stop<api_AudioSource_3d54a9e1>` ()                    |
+|                               void | :ref:`stop<api_AudioSource_a1f39dc6>` ()                    |
 +------------------------------------+-------------------------------------------------------------+
 
 
@@ -51,7 +51,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AudioSource_154f6392:
+.. _api_AudioSource_46c82f01:
 
  bool **AudioSource::autoPlay** () const
 
@@ -61,7 +61,7 @@ Returns true if auto-play is enabled; otherwise, returns false.
 
 ----
 
-.. _api_AudioSource_2a380d4c:
+.. _api_AudioSource_0df37c96:
 
  :ref:`AudioClip<api_AudioClip>` * **AudioSource::clip** () const
 
@@ -71,7 +71,7 @@ Returns the audio clip associated with the audio source.
 
 ----
 
-.. _api_AudioSource_6d23c97f:
+.. _api_AudioSource_a3dc410b:
 
  bool **AudioSource::loop** () const
 
@@ -81,7 +81,7 @@ Returns true if looping is enabled; otherwise, returns false.
 
 ----
 
-.. _api_AudioSource_90b5a846:
+.. _api_AudioSource_4d5a3871:
 
  void **AudioSource::play** ()
 
@@ -89,7 +89,7 @@ Plays the audio clip in the specific position in 3D space.
 
 ----
 
-.. _api_AudioSource_94b3ca82:
+.. _api_AudioSource_5f67201e:
 
  void **AudioSource::setAutoPlay** (bool  *play*)
 
@@ -99,7 +99,7 @@ Sets the auto *play* state.
 
 ----
 
-.. _api_AudioSource_cd38a204:
+.. _api_AudioSource_7281b605:
 
  void **AudioSource::setClip** (:ref:`AudioClip<api_AudioClip>` * *clip*)
 
@@ -109,7 +109,7 @@ Sets the audio *clip* for the audio source.
 
 ----
 
-.. _api_AudioSource_80971fba:
+.. _api_AudioSource_ed2c6450:
 
  void **AudioSource::setLoop** (bool  *loop*)
 
@@ -119,7 +119,7 @@ Sets the *loop* state.
 
 ----
 
-.. _api_AudioSource_3d54a9e1:
+.. _api_AudioSource_a1f39dc6:
 
  void **AudioSource::stop** ()
 

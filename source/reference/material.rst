@@ -3,7 +3,7 @@
 Material
 ========
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_Material_description:
 
@@ -18,29 +18,27 @@ Public Methods
 --------------
 
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|  :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`createInstance<api_Material_837c46af>` (Material::SurfaceType  type = SurfaceType::Static) |
+|  :ref:`MaterialInstance<api_MaterialInstance>` * | :ref:`createInstance<api_Material_097d1f6a>` (Material::SurfaceType  type = SurfaceType::Static) |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             bool | :ref:`doubleSided<api_Material_9b6238dc>` () const                                               |
+|                                             bool | :ref:`doubleSided<api_Material_e731a2b4>` () const                                               |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                              int | :ref:`layers<api_Material_8904c61d>` () const                                                    |
+|                                              int | :ref:`layers<api_Material_e95140bc>` () const                                                    |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                              int | :ref:`lightModel<api_Material_c2430e86>` () const                                                |
+|                                              int | :ref:`lightModel<api_Material_70c8694e>` () const                                                |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                              int | :ref:`materialType<api_Material_6da09ec5>` () const                                              |
+|                                              int | :ref:`materialType<api_Material_4e1fc690>` () const                                              |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setDoubleSided<api_Material_df925478>` (bool  flag)                                        |
+|                                              int | :ref:`priority<api_Material_da6428ef>` () const                                                  |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setLightModel<api_Material_c5912b48>` (int  model)                                         |
+|                                             void | :ref:`setDoubleSided<api_Material_e86097c4>` (bool  flag)                                        |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setMaterialType<api_Material_b7216ced>` (int  type)                                        |
+|                                             void | :ref:`setLightModel<api_Material_02598d4f>` (int  model)                                         |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setPriority<api_Material_92768ae4>` (int  priority)                                        |
+|                                             void | :ref:`setMaterialType<api_Material_30f81c5e>` (int  type)                                        |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             void | :ref:`setWireframe<api_Material_f719804e>` (bool  wireframe)                                     |
+|                                             void | :ref:`setPriority<api_Material_a9bd4106>` (int  priority)                                        |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                              int | :ref:`uniformSize<api_Material_8e37c46d>` () const                                               |
-+--------------------------------------------------+--------------------------------------------------------------------------------------------------+
-|                                             bool | :ref:`wireframe<api_Material_8f547edb>` () const                                                 |
+|                                              int | :ref:`uniformSize<api_Material_8a4cf917>` () const                                               |
 +--------------------------------------------------+--------------------------------------------------------------------------------------------------+
 
 
@@ -57,7 +55,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Material_837c46af:
+.. _api_Material_097d1f6a:
 
  :ref:`MaterialInstance<api_MaterialInstance>` * **Material::createInstance** (:ref:`Material::SurfaceType<api_Material_SurfaceType>`  *type* = SurfaceType::Static)
 
@@ -65,7 +63,7 @@ Returns a new instance for the material with the provided surface type.
 
 ----
 
-.. _api_Material_9b6238dc:
+.. _api_Material_e731a2b4:
 
  bool **Material::doubleSided** () const
 
@@ -75,7 +73,7 @@ Returns true if mas marked as double-sided; otherwise returns false.
 
 ----
 
-.. _api_Material_8904c61d:
+.. _api_Material_e95140bc:
 
  int **Material::layers** () const
 
@@ -83,7 +81,7 @@ Returns layers that supported by this material.
 
 ----
 
-.. _api_Material_c2430e86:
+.. _api_Material_70c8694e:
 
  int **Material::lightModel** () const
 
@@ -93,7 +91,7 @@ Returns current light model for the material. For more detalse please refer to M
 
 ----
 
-.. _api_Material_6da09ec5:
+.. _api_Material_4e1fc690:
 
  int **Material::materialType** () const
 
@@ -103,7 +101,17 @@ Returns current material type. For more detalse please refer to Material::Type e
 
 ----
 
-.. _api_Material_df925478:
+.. _api_Material_da6428ef:
+
+ int **Material::priority** () const
+
+Returns rendering priority for the material. This parameter is used alpha rendering sorting
+
+**See also** setPriority().
+
+----
+
+.. _api_Material_e86097c4:
 
  void **Material::setDoubleSided** (bool  *flag*)
 
@@ -113,7 +121,7 @@ Enables or disables the double-sided *flag* for the material.
 
 ----
 
-.. _api_Material_c5912b48:
+.. _api_Material_02598d4f:
 
  void **Material::setLightModel** (int  *model*)
 
@@ -123,7 +131,7 @@ Sets a new light *model* for the material. For more detalse please refer to Mate
 
 ----
 
-.. _api_Material_b7216ced:
+.. _api_Material_30f81c5e:
 
  void **Material::setMaterialType** (int  *type*)
 
@@ -133,38 +141,20 @@ Sets new material type. For more detalse please refer to Material::Type enum.
 
 ----
 
-.. _api_Material_92768ae4:
+.. _api_Material_a9bd4106:
 
  void **Material::setPriority** (int  *priority*)
 
 Sets a rendering *priority* for the material. This parameter is used alpha rendering sorting
 
-----
-
-.. _api_Material_f719804e:
-
- void **Material::setWireframe** (bool  *wireframe*)
-
-Enables or disables a *wireframe* mode for the material.
-
-**See also** wireframe().
+**See also** priority().
 
 ----
 
-.. _api_Material_8e37c46d:
+.. _api_Material_8a4cf917:
 
  int **Material::uniformSize** () const
 
 Returns size uniform buffer for single instance. This value can be used as stride for instances.
-
-----
-
-.. _api_Material_8f547edb:
-
- bool **Material::wireframe** () const
-
-Returns true if material must be rendered as wireframe.
-
-**See also** setWireframe().
 
 

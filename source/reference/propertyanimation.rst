@@ -3,7 +3,7 @@
 PropertyAnimation
 =================
 
-Inherited: None
+Inherited: :ref:`VariantAnimation<api_VariantAnimation>`
 
 .. _api_PropertyAnimation_description:
 
@@ -32,17 +32,17 @@ Public Methods
 --------------
 
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_1546ef27>` () const                              |
+|       :ref:`Variant<api_Variant>` | :ref:`defaultValue<api_PropertyAnimation_b9ead38f>` () const                              |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setCurrentValue<api_PropertyAnimation_6c9f1845>` (const Variant & value)            |
+|                              void | :ref:`setCurrentValue<api_PropertyAnimation_e25b74c3>` (const Variant & value)            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setTarget<api_PropertyAnimation_d253abc6>` (Object * object, const char * property) |
+|                              void | :ref:`setTarget<api_PropertyAnimation_2ae07453>` (Object * object, const char * property) |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                              void | :ref:`setValid<api_PropertyAnimation_ac15b97f>` (bool  valid)                             |
+|                              void | :ref:`setValid<api_PropertyAnimation_2a3b7c80>` (bool  valid)                             |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_7fb985c6>` () const                                    |
+| const :ref:`Object<api_Object>` * | :ref:`target<api_PropertyAnimation_29c348fa>` () const                                    |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
-|                        const char | :ref:`targetProperty<api_PropertyAnimation_32804169>` () const                            |
+|                        const char | :ref:`targetProperty<api_PropertyAnimation_659d17b4>` () const                            |
 +-----------------------------------+-------------------------------------------------------------------------------------------+
 
 
@@ -59,7 +59,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PropertyAnimation_1546ef27:
+.. _api_PropertyAnimation_b9ead38f:
 
  :ref:`Variant<api_Variant>`  **PropertyAnimation::defaultValue** () const
 
@@ -67,7 +67,7 @@ Returns the default value of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_6c9f1845:
+.. _api_PropertyAnimation_e25b74c3:
 
  void **PropertyAnimation::setCurrentValue** (:ref:`Variant<api_Variant>` & *value*)
 
@@ -79,7 +79,7 @@ Sets the new current *value* for the animated Variant. And updates animated prop
 
 ----
 
-.. _api_PropertyAnimation_d253abc6:
+.. _api_PropertyAnimation_2ae07453:
 
  void **PropertyAnimation::setTarget** (:ref:`Object<api_Object>` * *object*, char * *property*)
 
@@ -89,7 +89,7 @@ Sets the new animated *property* of the object.
 
 ----
 
-.. _api_PropertyAnimation_ac15b97f:
+.. _api_PropertyAnimation_2a3b7c80:
 
  void **PropertyAnimation::setValid** (bool  *valid*)
 
@@ -101,7 +101,7 @@ Sets the *valid* state of animation. The invalid animations will not affect anyt
 
 ----
 
-.. _api_PropertyAnimation_7fb985c6:
+.. _api_PropertyAnimation_29c348fa:
 
 const :ref:`Object<api_Object>` * **PropertyAnimation::target** () const
 
@@ -111,7 +111,7 @@ Returns the root object of the animated property.
 
 ----
 
-.. _api_PropertyAnimation_32804169:
+.. _api_PropertyAnimation_659d17b4:
 
 const char **PropertyAnimation::targetProperty** () const
 

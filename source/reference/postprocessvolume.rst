@@ -3,7 +3,7 @@
 PostProcessVolume
 =================
 
-Inherited: None
+Inherited: :ref:`Component<api_Component>`
 
 .. _api_PostProcessVolume_description:
 
@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +--------+-----------------------------------------------------------------------+
-|  float | :ref:`blendWeight<api_PostProcessVolume_3f51e207>` () const           |
+|  float | :ref:`blendWeight<api_PostProcessVolume_15ab0f73>` () const           |
 +--------+-----------------------------------------------------------------------+
-|    int | :ref:`priority<api_PostProcessVolume_0edf3684>` () const              |
+|    int | :ref:`priority<api_PostProcessVolume_0f893c25>` () const              |
 +--------+-----------------------------------------------------------------------+
-|   void | :ref:`setBlendWeight<api_PostProcessVolume_42671039>` (float  weight) |
+|   void | :ref:`setBlendWeight<api_PostProcessVolume_ebd568c0>` (float  weight) |
 +--------+-----------------------------------------------------------------------+
-|   void | :ref:`setPriority<api_PostProcessVolume_aef52067>` (int  priority)    |
+|   void | :ref:`setPriority<api_PostProcessVolume_56f87a1e>` (int  priority)    |
 +--------+-----------------------------------------------------------------------+
-|   void | :ref:`setUnbound<api_PostProcessVolume_5cd0e1b8>` (bool  unbound)     |
+|   void | :ref:`setUnbound<api_PostProcessVolume_bc1046e2>` (bool  unbound)     |
 +--------+-----------------------------------------------------------------------+
-|   bool | :ref:`unbound<api_PostProcessVolume_1cd475a2>` () const               |
+|   bool | :ref:`unbound<api_PostProcessVolume_b2ef9681>` () const               |
 +--------+-----------------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_PostProcessVolume_3f51e207:
+.. _api_PostProcessVolume_15ab0f73:
 
  float **PostProcessVolume::blendWeight** () const
 
@@ -57,7 +57,7 @@ Returns the weight of settings for blending process.
 
 ----
 
-.. _api_PostProcessVolume_0edf3684:
+.. _api_PostProcessVolume_0f893c25:
 
  int **PostProcessVolume::priority** () const
 
@@ -67,7 +67,7 @@ Returns the priority of volume in the list.
 
 ----
 
-.. _api_PostProcessVolume_42671039:
+.. _api_PostProcessVolume_ebd568c0:
 
  void **PostProcessVolume::setBlendWeight** (float  *weight*)
 
@@ -77,7 +77,7 @@ Sets the *weight* of settings for blending process.
 
 ----
 
-.. _api_PostProcessVolume_aef52067:
+.. _api_PostProcessVolume_56f87a1e:
 
  void **PostProcessVolume::setPriority** (int  *priority*)
 
@@ -87,7 +87,7 @@ Sets the *priority* of volume in the list.
 
 ----
 
-.. _api_PostProcessVolume_5cd0e1b8:
+.. _api_PostProcessVolume_bc1046e2:
 
  void **PostProcessVolume::setUnbound** (bool  *unbound*)
 
@@ -97,7 +97,7 @@ Sets flag *unbound* if current settings must be applied entire scene.
 
 ----
 
-.. _api_PostProcessVolume_1cd475a2:
+.. _api_PostProcessVolume_b2ef9681:
 
  bool **PostProcessVolume::unbound** () const
 

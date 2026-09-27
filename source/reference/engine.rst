@@ -3,7 +3,7 @@
 Engine
 ======
 
-Inherited: None
+Inherited: :ref:`ObjectSystem<api_ObjectSystem>`
 
 .. _api_Engine_description:
 
@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--+----------------------------------------+
-|  | :ref:`Engine<api_Engine_7d159fe2>` ()  |
+|  | :ref:`Engine<api_Engine_9be40783>` ()  |
 +--+----------------------------------------+
-|  | :ref:`~Engine<api_Engine_f4e3857a>` () |
+|  | :ref:`~Engine<api_Engine_62e3db4a>` () |
 +--+----------------------------------------+
 
 
@@ -32,82 +32,80 @@ Public Methods
 Static Methods
 --------------
 
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`addModule<api_Engine_2ab6e7d4>` (Module * module)                                                               |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`applicationName<api_Engine_0c4f3b29>` ()                                                                        |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`applicationVersion<api_Engine_ba28f5c1>` ()                                                                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                    :ref:`Actor<api_Actor>` * | :ref:`composeActor<api_Engine_ae4b9268>` (const TString & component, const TString & name, Object * parent = nullptr) |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`init<api_Engine_79cfab58>` ()                                                                                   |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`isGameMode<api_Engine_b48501ef>` ()                                                                             |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`isResourceExist<api_Engine_31b7ae5d>` (const TString & path)                                                    |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|              :ref:`Resource<api_Resource>` * | :ref:`loadResource<api_Engine_e7d360b5>` (const TString & path)                                                       |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|              :ref:`Resource<api_Resource>` * | :ref:`loadResourceAsync<api_Engine_d670c48e>` (const TString & path)                                                  |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                    :ref:`Scene<api_Scene>` * | :ref:`loadScene<api_Engine_61874a53>` (const TString & path, bool  additive)                                          |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`loadTranslator<api_Engine_4ec2b530>` (const TString & name)                                                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`locationAppConfig<api_Engine_daf94cb2>` ()                                                                      |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`organizationName<api_Engine_8d71029b>` ()                                                                       |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`reference<api_Engine_157a3ec8>` (Object * object)                                                               |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`reloadBundle<api_Engine_5270ae68>` ()                                                                           |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`reloadResource<api_Engine_692384a1>` (const TString & path)                                                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|      :ref:`RenderSystem<api_RenderSystem>` * | :ref:`renderSystem<api_Engine_06b327df>` ()                                                                           |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|  :ref:`ResourceSystem<api_ResourceSystem>` * | :ref:`resourceSystem<api_Engine_95ea410b>` ()                                                                         |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setApplicationName<api_Engine_0ca93416>` (const TString & name)                                                 |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setApplicationVersion<api_Engine_490f362e>` (const TString & version)                                           |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setGameMode<api_Engine_4b6058ec>` (bool  flag)                                                                  |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setOrganizationName<api_Engine_5dfcb426>` (const TString & name)                                                |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`setPlatformAdaptor<api_Engine_c4bf5160>` (PlatformAdaptor * platform)                                           |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`setValue<api_Engine_e3651a97>` (const TString & key, const Variant & value)                                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         bool | :ref:`start<api_Engine_0ec2bd91>` ()                                                                                  |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`syncValues<api_Engine_a9174d5c>` ()                                                                             |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`TString<api_TString>` | :ref:`translate<api_Engine_a52dfb37>` (const TString & source)                                                        |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`unloadAllScenes<api_Engine_042fa93e>` ()                                                                        |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`unloadResource<api_Engine_5d74af8e>` (Resource * resource)                                                      |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`unloadResource<api_Engine_0b96d423>` (const TString & path)                                                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`unloadScene<api_Engine_e237df85>` (Scene * scene)                                                               |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                                         void | :ref:`update<api_Engine_d2a6f70e>` ()                                                                                 |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                  :ref:`Variant<api_Variant>` | :ref:`value<api_Engine_d6b791e5>` (const TString & key, const Variant & defaultValue = Variant())                     |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-|                    :ref:`World<api_World>` * | :ref:`world<api_Engine_e96af472>` ()                                                                                  |
-+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`addModule<api_Engine_fe641ac3>` (Module * module)                                                               |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`applicationName<api_Engine_675839bd>` ()                                                                        |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`applicationVersion<api_Engine_1ac94d02>` ()                                                                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                      :ref:`Actor<api_Actor>` * | :ref:`composeActor<api_Engine_9f34c785>` (const TString & component, const TString & name, Object * parent = nullptr) |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`System<api_System>` * | :ref:`getSystem<api_Engine_10d89735>` (const TString & name)                                                          |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`init<api_Engine_03c5fb87>` ()                                                                                   |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`Engine<api_Engine>` & | :ref:`instance<api_Engine_f7e2c501>` ()                                                                               |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`isGameMode<api_Engine_d6921fa3>` ()                                                                             |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`isResourceExist<api_Engine_f0b46a91>` (const TString & path)                                                    |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                :ref:`Resource<api_Resource>` * | :ref:`loadResource<api_Engine_cbdf6e01>` (const TString & path)                                                       |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                :ref:`Resource<api_Resource>` * | :ref:`loadResourceAsync<api_Engine_2c7b4f3d>` (const TString & path)                                                  |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`loadTranslator<api_Engine_2f3ac1b0>` (const TString & name)                                                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`locationAppConfig<api_Engine_5487a3dc>` ()                                                                      |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`organizationName<api_Engine_c43f89a5>` ()                                                                       |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|  :ref:`PlatformAdaptor<api_PlatformAdaptor>` * | :ref:`platformAdaptor<api_Engine_7e2a0b3c>` ()                                                                        |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`reference<api_Engine_1f06d5c9>` (Object * object)                                                               |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`reloadResource<api_Engine_62c4fab5>` (const TString & path)                                                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|        :ref:`RenderSystem<api_RenderSystem>` * | :ref:`renderSystem<api_Engine_a456c0b9>` ()                                                                           |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|    :ref:`ResourceSystem<api_ResourceSystem>` * | :ref:`resourceSystem<api_Engine_2c6f81b3>` ()                                                                         |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`setApplicationName<api_Engine_d41b8207>` (const TString & name)                                                 |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`setApplicationVersion<api_Engine_a85e7649>` (const TString & version)                                           |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`setGameMode<api_Engine_fde78c0a>` (bool  flag)                                                                  |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`setOrganizationName<api_Engine_e27a689b>` (const TString & name)                                                |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`setPlatformAdaptor<api_Engine_8de2bcfa>` (PlatformAdaptor * platform)                                           |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`setValue<api_Engine_1fabc706>` (const TString & key, const Variant & value)                                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           bool | :ref:`start<api_Engine_90f51abc>` ()                                                                                  |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`syncValues<api_Engine_b83679e2>` ()                                                                             |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`TString<api_TString>` | :ref:`translate<api_Engine_20f8756b>` (const TString & text)                                                          |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`unloadResource<api_Engine_625be879>` (const TString & path)                                                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`unloadResource<api_Engine_6c3e2750>` (Resource * resource)                                                      |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                                           void | :ref:`update<api_Engine_6d2eb50a>` (World * world)                                                                    |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                    :ref:`Variant<api_Variant>` | :ref:`value<api_Engine_b20f6e31>` (const TString & key, const Variant & defaultValue = Variant())                     |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+|                      :ref:`World<api_World>` * | :ref:`world<api_Engine_078cf14b>` ()                                                                                  |
++------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 .. _api_Engine_methods:
 
 Methods Description
 -------------------
 
-.. _api_Engine_7d159fe2:
+.. _api_Engine_9be40783:
 
 **Engine::Engine** ()
 
@@ -115,7 +113,7 @@ Constructs Engine.
 
 ----
 
-.. _api_Engine_f4e3857a:
+.. _api_Engine_62e3db4a:
 
 **Engine::~Engine** ()
 
@@ -123,7 +121,7 @@ Destructs Engine, related objects, registered object factories and platform adap
 
 ----
 
-.. _api_Engine_2ab6e7d4:
+.. _api_Engine_fe641ac3:
 
  void **Engine::addModule** (:ref:`Module<api_Module>` * *module*)
 
@@ -141,7 +139,7 @@ Example:
 
 ----
 
-.. _api_Engine_0c4f3b29:
+.. _api_Engine_675839bd:
 
  :ref:`TString<api_TString>`  **Engine::applicationName** ()
 
@@ -151,7 +149,7 @@ Returns the name of this application. This name is used to create the path to th
 
 ----
 
-.. _api_Engine_ba28f5c1:
+.. _api_Engine_1ac94d02:
 
  :ref:`TString<api_TString>`  **Engine::applicationVersion** ()
 
@@ -161,7 +159,7 @@ Returns the version of this application.
 
 ----
 
-.. _api_Engine_ae4b9268:
+.. _api_Engine_9f34c785:
 
  :ref:`Actor<api_Actor>` * **Engine::composeActor** (:ref:`TString<api_TString>` & *component*, :ref:`TString<api_TString>` & *name*, :ref:`Object<api_Object>` * *parent* = nullptr)
 
@@ -173,7 +171,15 @@ Warning: This method should be used only in Editor mode.
 
 ----
 
-.. _api_Engine_79cfab58:
+.. _api_Engine_10d89735:
+
+ :ref:`System<api_System>` * **Engine::getSystem** (:ref:`TString<api_TString>` & *name*)
+
+Returns a sub system with specific name.
+
+----
+
+.. _api_Engine_03c5fb87:
 
  bool **Engine::init** ()
 
@@ -181,7 +187,15 @@ Initializes all engine systems. Returns true if successful; otherwise returns fa
 
 ----
 
-.. _api_Engine_b48501ef:
+.. _api_Engine_f7e2c501:
+
+ :ref:`Engine<api_Engine>` & **Engine::instance** ()
+
+Returns Engine object instance.
+
+----
+
+.. _api_Engine_d6921fa3:
 
  bool **Engine::isGameMode** ()
 
@@ -189,7 +203,7 @@ Returns true if game started; otherwise returns false.
 
 ----
 
-.. _api_Engine_31b7ae5d:
+.. _api_Engine_f0b46a91:
 
  bool **Engine::isResourceExist** (:ref:`TString<api_TString>` & *path*)
 
@@ -197,7 +211,7 @@ Returns true if resource with *path* exists; otherwise returns false.
 
 ----
 
-.. _api_Engine_e7d360b5:
+.. _api_Engine_cbdf6e01:
 
  :ref:`Resource<api_Resource>` * **Engine::loadResource** (:ref:`TString<api_TString>` & *path*)
 
@@ -211,7 +225,7 @@ Returns an instance for loading resource by the provided path.
 
 ----
 
-.. _api_Engine_d670c48e:
+.. _api_Engine_2c7b4f3d:
 
  :ref:`Resource<api_Resource>` * **Engine::loadResourceAsync** (:ref:`TString<api_TString>` & *path*)
 
@@ -225,19 +239,7 @@ Returns an instance for loading resource by the provided path. The resource will
 
 ----
 
-.. _api_Engine_61874a53:
-
- :ref:`Scene<api_Scene>` * **Engine::loadScene** (:ref:`TString<api_TString>` & *path*, bool  *additive*)
-
-Loads the scene stored in the .map files by the it's *path* to the Engine.
-
-
-**Note:** The previous scenes will be not unloaded in the case of an *additive* flag is true.
-
-
-----
-
-.. _api_Engine_4ec2b530:
+.. _api_Engine_2f3ac1b0:
 
  bool **Engine::loadTranslator** (:ref:`TString<api_TString>` & *name*)
 
@@ -245,7 +247,7 @@ Loads translation table with provided file name. This method generates the Langu
 
 ----
 
-.. _api_Engine_daf94cb2:
+.. _api_Engine_5487a3dc:
 
  :ref:`TString<api_TString>`  **Engine::locationAppConfig** ()
 
@@ -253,7 +255,7 @@ Returns path to application config directory.
 
 ----
 
-.. _api_Engine_8d71029b:
+.. _api_Engine_c43f89a5:
 
  :ref:`TString<api_TString>`  **Engine::organizationName** ()
 
@@ -263,7 +265,17 @@ Returns the name of the organization that wrote this application. This name is u
 
 ----
 
-.. _api_Engine_157a3ec8:
+.. _api_Engine_7e2a0b3c:
+
+ :ref:`PlatformAdaptor<api_PlatformAdaptor>` * **Engine::platformAdaptor** ()
+
+Return the current platform adaptor.
+
+**See also** setPlatformAdaptor().
+
+----
+
+.. _api_Engine_1f06d5c9:
 
  :ref:`TString<api_TString>`  **Engine::reference** (:ref:`Object<api_Object>` * *object*)
 
@@ -271,15 +283,7 @@ Returns resource path for the provided resource object.
 
 ----
 
-.. _api_Engine_5270ae68:
-
- bool **Engine::reloadBundle** ()
-
-This method reads the index file for the resource bundle. The index file helps to find required game resources. Returns true in case of success; otherwise returns false.
-
-----
-
-.. _api_Engine_692384a1:
+.. _api_Engine_62c4fab5:
 
  void **Engine::reloadResource** (:ref:`TString<api_TString>` & *path*)
 
@@ -289,7 +293,7 @@ Reloads the resource located along the path.
 
 ----
 
-.. _api_Engine_06b327df:
+.. _api_Engine_a456c0b9:
 
  :ref:`RenderSystem<api_RenderSystem>` * **Engine::renderSystem** ()
 
@@ -297,7 +301,7 @@ Returns the render system which can be used in external modules.
 
 ----
 
-.. _api_Engine_95ea410b:
+.. _api_Engine_2c6f81b3:
 
  :ref:`ResourceSystem<api_ResourceSystem>` * **Engine::resourceSystem** ()
 
@@ -305,7 +309,7 @@ Returns the resource management system which can be used in external modules.
 
 ----
 
-.. _api_Engine_0ca93416:
+.. _api_Engine_d41b8207:
 
  void **Engine::setApplicationName** (:ref:`TString<api_TString>` & *name*)
 
@@ -315,7 +319,7 @@ Sets the *name* of this application.
 
 ----
 
-.. _api_Engine_490f362e:
+.. _api_Engine_a85e7649:
 
  void **Engine::setApplicationVersion** (:ref:`TString<api_TString>` & *version*)
 
@@ -325,7 +329,7 @@ Sets the *version* of this application.
 
 ----
 
-.. _api_Engine_4b6058ec:
+.. _api_Engine_fde78c0a:
 
  void **Engine::setGameMode** (bool  *flag*)
 
@@ -335,7 +339,7 @@ Set game *flag* to true if game started; otherwise set false.
 
 ----
 
-.. _api_Engine_5dfcb426:
+.. _api_Engine_e27a689b:
 
  void **Engine::setOrganizationName** (:ref:`TString<api_TString>` & *name*)
 
@@ -345,7 +349,7 @@ Sets the *name* of the organization that wrote this application.
 
 ----
 
-.. _api_Engine_c4bf5160:
+.. _api_Engine_8de2bcfa:
 
  bool **Engine::setPlatformAdaptor** (:ref:`PlatformAdaptor<api_PlatformAdaptor>` * *platform*)
 
@@ -355,9 +359,11 @@ Replaces a current *platform* adaptor with new one; Returns true if replacement 
 **Note:** The previous *platform* adaptor will not be deleted.
 
 
+**See also** platformAdaptor().
+
 ----
 
-.. _api_Engine_e3651a97:
+.. _api_Engine_1fabc706:
 
  void **Engine::setValue** (:ref:`TString<api_TString>` & *key*, :ref:`Variant<api_Variant>` & *value*)
 
@@ -367,7 +373,7 @@ Sets the *value* of setting *key* to value. If the *key* already exists, the pre
 
 ----
 
-.. _api_Engine_0ec2bd91:
+.. _api_Engine_90f51abc:
 
  bool **Engine::start** ()
 
@@ -375,7 +381,7 @@ Starts the main game cycle. Also this method loads the first level of your game.
 
 ----
 
-.. _api_Engine_a9174d5c:
+.. _api_Engine_b83679e2:
 
  void **Engine::syncValues** ()
 
@@ -383,37 +389,15 @@ Applies all unsaved settings.
 
 ----
 
-.. _api_Engine_a52dfb37:
+.. _api_Engine_20f8756b:
 
- :ref:`TString<api_TString>`  **Engine::translate** (:ref:`TString<api_TString>` & *source*)
+ :ref:`TString<api_TString>`  **Engine::translate** (:ref:`TString<api_TString>` & *text*)
 
-Returns the translation text for the *source* String.
-
-----
-
-.. _api_Engine_042fa93e:
-
- void **Engine::unloadAllScenes** ()
-
-Unloads all scenes from the World.
+Returns the translation of text.
 
 ----
 
-.. _api_Engine_5d74af8e:
-
- void **Engine::unloadResource** (:ref:`Resource<api_Resource>` * *resource*)
-
-Forcely unloads the *resource* from memory.
-
-
-Warning: After this call, the reference on the *resource* may become an invalid at any time and must not be used anymore.
-
-
-**See also** loadResource().
-
-----
-
-.. _api_Engine_0b96d423:
+.. _api_Engine_625be879:
 
  void **Engine::unloadResource** (:ref:`TString<api_TString>` & *path*)
 
@@ -427,19 +411,25 @@ Warning: After this call, the reference on the resource may become an invalid at
 
 ----
 
-.. _api_Engine_e237df85:
+.. _api_Engine_6c3e2750:
 
- void **Engine::unloadScene** (:ref:`Scene<api_Scene>` * *scene*)
+ void **Engine::unloadResource** (:ref:`Resource<api_Resource>` * *resource*)
 
-Unloads the *scene* from the World.
+Forcely unloads the *resource* from memory.
+
+
+Warning: After this call, the reference on the *resource* may become an invalid at any time and must not be used anymore.
+
+
+**See also** loadResource().
 
 ----
 
-.. _api_Engine_d2a6f70e:
+.. _api_Engine_6d2eb50a:
 
- void **Engine::update** ()
+ void **Engine::update** (:ref:`World<api_World>` * *world*)
 
-This method launches all your game modules responsible for processing all the game logic. It calls on each iteration of the game cycle.
+This method launches all your game modules responsible for processing all the game logic. It calls on each iteration of the game cycle for the particular world.
 
 
 **Note:** Usually, this method calls internally and must not be called manually.
@@ -447,7 +437,7 @@ This method launches all your game modules responsible for processing all the ga
 
 ----
 
-.. _api_Engine_d6b791e5:
+.. _api_Engine_b20f6e31:
 
  :ref:`Variant<api_Variant>`  **Engine::value** (:ref:`TString<api_TString>` & *key*, :ref:`Variant<api_Variant>` & *defaultValue* = Variant())
 
@@ -457,7 +447,7 @@ Returns the value for setting key. If the setting doesn't exist, returns default
 
 ----
 
-.. _api_Engine_e96af472:
+.. _api_Engine_078cf14b:
 
  :ref:`World<api_World>` * **Engine::world** ()
 

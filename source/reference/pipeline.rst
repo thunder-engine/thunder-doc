@@ -3,7 +3,7 @@
 Pipeline
 ========
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_Pipeline_description:
 
@@ -20,13 +20,13 @@ Public Methods
 --------------
 
 +-------------------------------------------+-----------------------------------------------------------------+
-|  :ref:`Pipeline::Link<api_Pipeline_Link>` | :ref:`renderTaskLink<api_Pipeline_5f7cab6d>` (int  index) const |
+|  :ref:`Pipeline::Link<api_Pipeline_Link>` | :ref:`renderTaskLink<api_Pipeline_9f30ac16>` (int  index) const |
 +-------------------------------------------+-----------------------------------------------------------------+
-|               :ref:`TString<api_TString>` | :ref:`renderTaskName<api_Pipeline_deb92583>` (int  index) const |
+|               :ref:`TString<api_TString>` | :ref:`renderTaskName<api_Pipeline_601dfc58>` (int  index) const |
 +-------------------------------------------+-----------------------------------------------------------------+
-|                                       int | :ref:`renderTasksCount<api_Pipeline_f5c7038d>` () const         |
+|                                       int | :ref:`renderTasksCount<api_Pipeline_b3d6c8fe>` () const         |
 +-------------------------------------------+-----------------------------------------------------------------+
-|                                       int | :ref:`renderTasksLinksCount<api_Pipeline_dc5f721a>` () const    |
+|                                       int | :ref:`renderTasksLinksCount<api_Pipeline_436bf1ca>` () const    |
 +-------------------------------------------+-----------------------------------------------------------------+
 
 
@@ -43,7 +43,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Pipeline_5f7cab6d:
+.. _api_Pipeline_9f30ac16:
 
  :ref:`Pipeline::Link<api_Pipeline::Link>`  **Pipeline::renderTaskLink** (int  *index*) const
 
@@ -51,7 +51,7 @@ Returns the link information for the render task at the specified index.
 
 ----
 
-.. _api_Pipeline_deb92583:
+.. _api_Pipeline_601dfc58:
 
  :ref:`TString<api_TString>`  **Pipeline::renderTaskName** (int  *index*) const
 
@@ -59,7 +59,7 @@ Returns the name of the render task at the specified index.
 
 ----
 
-.. _api_Pipeline_f5c7038d:
+.. _api_Pipeline_b3d6c8fe:
 
  int **Pipeline::renderTasksCount** () const
 
@@ -67,7 +67,7 @@ Returns the number of render tasks in the pipeline.
 
 ----
 
-.. _api_Pipeline_dc5f721a:
+.. _api_Pipeline_436bf1ca:
 
  int **Pipeline::renderTasksLinksCount** () const
 

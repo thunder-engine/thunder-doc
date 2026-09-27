@@ -3,7 +3,7 @@
 Map
 ===
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_Map_description:
 
@@ -18,7 +18,7 @@ Public Methods
 --------------
 
 +----------------------------+-----------------------------------------+
-|  :ref:`Scene<api_Scene>` * | :ref:`scene<api_Map_73e2b68a>` () const |
+|  :ref:`Scene<api_Scene>` * | :ref:`scene<api_Map_1d9cabf5>` () const |
 +----------------------------+-----------------------------------------+
 
 
@@ -35,7 +35,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Map_73e2b68a:
+.. _api_Map_1d9cabf5:
 
  :ref:`Scene<api_Scene>` * **Map::scene** () const
 

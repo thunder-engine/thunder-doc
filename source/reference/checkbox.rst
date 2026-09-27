@@ -3,7 +3,7 @@
 CheckBox
 ========
 
-Inherited: None
+Inherited: :ref:`AbstractButton<api_AbstractButton>`
 
 .. _api_CheckBox_description:
 
@@ -19,15 +19,19 @@ The CheckBox class represents an option button that can be toggled between two s
 Public Methods
 --------------
 
-+------------------------------+-------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`knobColor<api_CheckBox_2fe67089>` () const                  |
-+------------------------------+-------------------------------------------------------------------+
-|    :ref:`Image<api_Image>` * | :ref:`knobGraphic<api_CheckBox_4e0671bd>` () const                |
-+------------------------------+-------------------------------------------------------------------+
-|                         void | :ref:`setKnobColor<api_CheckBox_f796b425>` (const Vector4  color) |
-+------------------------------+-------------------------------------------------------------------+
-|                         void | :ref:`setKnobGraphic<api_CheckBox_a45cd680>` (Image * knob)       |
-+------------------------------+-------------------------------------------------------------------+
++------------------------------+-------------------------------------------------------------------------+
+|  :ref:`Sprite<api_Sprite>` * | :ref:`indicator<api_CheckBox_d59be32f>` () const                        |
++------------------------------+-------------------------------------------------------------------------+
+|  :ref:`Vector4<api_Vector4>` | :ref:`indicatorColor<api_CheckBox_592bc8d0>` () const                   |
++------------------------------+-------------------------------------------------------------------------+
+|  :ref:`Vector2<api_Vector2>` | :ref:`indicatorSize<api_CheckBox_763cf24d>` () const                    |
++------------------------------+-------------------------------------------------------------------------+
+|                         void | :ref:`setIndicator<api_CheckBox_0e17adc3>` (Sprite * icon)              |
++------------------------------+-------------------------------------------------------------------------+
+|                         void | :ref:`setIndicatorColor<api_CheckBox_f70d8613>` (const Vector4 & color) |
++------------------------------+-------------------------------------------------------------------------+
+|                         void | :ref:`setIndicatorSize<api_CheckBox_623eb0fa>` (const Vector2 & size)   |
++------------------------------+-------------------------------------------------------------------------+
 
 
 
@@ -43,42 +47,62 @@ None
 Methods Description
 -------------------
 
-.. _api_CheckBox_2fe67089:
+.. _api_CheckBox_d59be32f:
 
- :ref:`Vector4<api_Vector4>`  **CheckBox::knobColor** () const
+ :ref:`Sprite<api_Sprite>` * **CheckBox::indicator** () const
+
+Returns indicator icon.
+
+**See also** setIndicator().
+
+----
+
+.. _api_CheckBox_592bc8d0:
+
+ :ref:`Vector4<api_Vector4>`  **CheckBox::indicatorColor** () const
 
 Returns the color of the graphical knob.
 
-**See also** setKnobColor().
+**See also** setIndicatorColor().
 
 ----
 
-.. _api_CheckBox_4e0671bd:
+.. _api_CheckBox_763cf24d:
 
- :ref:`Image<api_Image>` * **CheckBox::knobGraphic** () const
+ :ref:`Vector2<api_Vector2>`  **CheckBox::indicatorSize** () const
 
-Returns the graphical knob component.
+Returns the size of indicator.
 
-**See also** setKnobGraphic().
+**See also** setIndicatorSize().
 
 ----
 
-.. _api_CheckBox_f796b425:
+.. _api_CheckBox_0e17adc3:
 
- void **CheckBox::setKnobColor** (:ref:`Vector4<api_Vector4>`  *color*)
+ void **CheckBox::setIndicator** (:ref:`Sprite<api_Sprite>` * *icon*)
+
+Sets indicator icon.
+
+**See also** indicator().
+
+----
+
+.. _api_CheckBox_f70d8613:
+
+ void **CheckBox::setIndicatorColor** (:ref:`Vector4<api_Vector4>` & *color*)
 
 Sets the *color* of the graphical knob.
 
-**See also** knobColor().
+**See also** indicatorColor().
 
 ----
 
-.. _api_CheckBox_a45cd680:
+.. _api_CheckBox_623eb0fa:
 
- void **CheckBox::setKnobGraphic** (:ref:`Image<api_Image>` * *knob*)
+ void **CheckBox::setIndicatorSize** (:ref:`Vector2<api_Vector2>` & *size*)
 
-Sets the graphical *knob* component.
+Sets the *size* of indicator.
 
-**See also** knobGraphic().
+**See also** indicatorSize().
 
 

@@ -3,7 +3,7 @@
 AreaLight
 =========
 
-Inherited: None
+Inherited: :ref:`BaseLight<api_BaseLight>`
 
 .. _api_AreaLight_description:
 
@@ -20,17 +20,17 @@ Public Methods
 --------------
 
 +--------+----------------------------------------------------------------+
-|  float | :ref:`radius<api_AreaLight_650d1ca9>` () const                 |
+|  float | :ref:`radius<api_AreaLight_283ec0b9>` () const                 |
 +--------+----------------------------------------------------------------+
-|   void | :ref:`setRadius<api_AreaLight_d375e81f>` (float  radius)       |
+|   void | :ref:`setRadius<api_AreaLight_9142bfed>` (float  radius)       |
 +--------+----------------------------------------------------------------+
-|   void | :ref:`setSourceHeight<api_AreaLight_c75fa834>` (float  height) |
+|   void | :ref:`setSourceHeight<api_AreaLight_fae97625>` (float  height) |
 +--------+----------------------------------------------------------------+
-|   void | :ref:`setSourceWidth<api_AreaLight_d42ef913>` (float  width)   |
+|   void | :ref:`setSourceWidth<api_AreaLight_efd07ac6>` (float  width)   |
 +--------+----------------------------------------------------------------+
-|  float | :ref:`sourceHeight<api_AreaLight_75f8ac69>` () const           |
+|  float | :ref:`sourceHeight<api_AreaLight_9f7d683e>` () const           |
 +--------+----------------------------------------------------------------+
-|  float | :ref:`sourceWidth<api_AreaLight_07ca6459>` () const            |
+|  float | :ref:`sourceWidth<api_AreaLight_6c412ad9>` () const            |
 +--------+----------------------------------------------------------------+
 
 
@@ -47,7 +47,7 @@ None
 Methods Description
 -------------------
 
-.. _api_AreaLight_650d1ca9:
+.. _api_AreaLight_283ec0b9:
 
  float **AreaLight::radius** () const
 
@@ -57,7 +57,7 @@ Returns the attenuation radius of the light.
 
 ----
 
-.. _api_AreaLight_d375e81f:
+.. _api_AreaLight_9142bfed:
 
  void **AreaLight::setRadius** (float  *radius*)
 
@@ -67,7 +67,7 @@ Changes the attenuation *radius* of the light.
 
 ----
 
-.. _api_AreaLight_c75fa834:
+.. _api_AreaLight_fae97625:
 
  void **AreaLight::setSourceHeight** (float  *height*)
 
@@ -77,7 +77,7 @@ Changes the source *height* of the light.
 
 ----
 
-.. _api_AreaLight_d42ef913:
+.. _api_AreaLight_efd07ac6:
 
  void **AreaLight::setSourceWidth** (float  *width*)
 
@@ -87,7 +87,7 @@ Changes the source *width* of the light.
 
 ----
 
-.. _api_AreaLight_75f8ac69:
+.. _api_AreaLight_9f7d683e:
 
  float **AreaLight::sourceHeight** () const
 
@@ -97,7 +97,7 @@ Returns the source height of the light.
 
 ----
 
-.. _api_AreaLight_07ca6459:
+.. _api_AreaLight_6c412ad9:
 
  float **AreaLight::sourceWidth** () const
 

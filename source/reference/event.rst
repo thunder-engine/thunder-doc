@@ -22,9 +22,9 @@ Public Methods
 --------------
 
 +-----------+---------------------------------------------------+
-|           | :ref:`Event<api_Event_c2690e51>` (uint32_t  type) |
+|           | :ref:`Event<api_Event_376514fe>` (uint32_t  type) |
 +-----------+---------------------------------------------------+
-|  uint32_t | :ref:`type<api_Event_2c5401eb>` () const          |
+|  uint32_t | :ref:`type<api_Event_795e3fca>` () const          |
 +-----------+---------------------------------------------------+
 
 .. _api_Event_enums:
@@ -38,21 +38,35 @@ Public Enums
 
 This enum type defines base event types and can be extended by the user defined types. User Defined type of Event should be bigger than Event::UserType.
 
-+-----------------------+-------+---------------------------------------------------------+
-|              Constant | Value | Description                                             |
-+-----------------------+-------+---------------------------------------------------------+
-|        Event::Invalid | 0     | Invalid event.                                          |
-+-----------------------+-------+---------------------------------------------------------+
-|     Event::MethodCall | 1     | Receiver object should invoke method (MethodCallEvent). |
-+-----------------------+-------+---------------------------------------------------------+
-|     Event::TimerEvent | 2     | Timer event (TimerEvent).                               |
-+-----------------------+-------+---------------------------------------------------------+
-|        Event::Destroy | 3     | Reseiver object must be deleted immediately.            |
-+-----------------------+-------+---------------------------------------------------------+
-| Event::LanguageChange | 4     | The application translation changed.                    |
-+-----------------------+-------+---------------------------------------------------------+
-|       Event::UserType | 100   | User defined event.                                     |
-+-----------------------+-------+---------------------------------------------------------+
++--------------------------+-------+---------------------------------------------------------+
+|                 Constant | Value | Description                                             |
++--------------------------+-------+---------------------------------------------------------+
+|           Event::Invalid | 0     | Invalid event.                                          |
++--------------------------+-------+---------------------------------------------------------+
+|        Event::MethodCall | 1     | Receiver object should invoke method (MethodCallEvent). |
++--------------------------+-------+---------------------------------------------------------+
+|        Event::TimerEvent | 2     | Timer event (TimerEvent).                               |
++--------------------------+-------+---------------------------------------------------------+
+|           Event::Destroy | 3     | Reseiver object must be deleted immediately.            |
++--------------------------+-------+---------------------------------------------------------+
+|    Event::LanguageChange | 4     | The application translation changed.                    |
++--------------------------+-------+---------------------------------------------------------+
+| Event::FileSystemWatcher | 5     | Some file or directory was chanded.                     |
++--------------------------+-------+---------------------------------------------------------+
+|         Event::MouseDown | 6     | A mouse button was pressed.                             |
++--------------------------+-------+---------------------------------------------------------+
+|           Event::MouseUp | 7     | A mouse button was released.                            |
++--------------------------+-------+---------------------------------------------------------+
+|         Event::MouseMove | 8     | The mouse cursor moved.                                 |
++--------------------------+-------+---------------------------------------------------------+
+|  Event::MouseDoubleClick | 9     | A mouse button was double-clicked.                      |
++--------------------------+-------+---------------------------------------------------------+
+|        Event::MouseWheel | 10    | The mouse wheel was moved.                              |
++--------------------------+-------+---------------------------------------------------------+
+|          Event::KeyEvent | 11    | A keyboard key event occurred.                          |
++--------------------------+-------+---------------------------------------------------------+
+|          Event::UserType | 100   | User defined event.                                     |
++--------------------------+-------+---------------------------------------------------------+
 
 
 
@@ -68,7 +82,7 @@ None
 Methods Description
 -------------------
 
-.. _api_Event_c2690e51:
+.. _api_Event_376514fe:
 
 **Event::Event** (uint32_t  *type*)
 
@@ -76,7 +90,7 @@ Constructs an Event with *type* of event.
 
 ----
 
-.. _api_Event_2c5401eb:
+.. _api_Event_795e3fca:
 
  uint32_t **Event::type** () const
 

@@ -3,7 +3,7 @@
 UiDocument
 ==========
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_UiDocument_description:
 
@@ -18,9 +18,9 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`data<api_UiDocument_7a915e6f>` () const                  |
+|  :ref:`TString<api_TString>` | :ref:`data<api_UiDocument_7f58a3c2>` () const                  |
 +------------------------------+----------------------------------------------------------------+
-|                         void | :ref:`setData<api_UiDocument_f3a0598d>` (const TString & data) |
+|                         void | :ref:`setData<api_UiDocument_e4adf2b8>` (const TString & data) |
 +------------------------------+----------------------------------------------------------------+
 
 
@@ -37,7 +37,7 @@ None
 Methods Description
 -------------------
 
-.. _api_UiDocument_7a915e6f:
+.. _api_UiDocument_7f58a3c2:
 
  :ref:`TString<api_TString>`  **UiDocument::data** () const
 
@@ -47,7 +47,7 @@ Returns content as a string.
 
 ----
 
-.. _api_UiDocument_f3a0598d:
+.. _api_UiDocument_e4adf2b8:
 
  void **UiDocument::setData** (:ref:`TString<api_TString>` & *data*)
 

@@ -3,7 +3,7 @@
 ControlScheme
 =============
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_ControlScheme_description:
 
@@ -20,15 +20,15 @@ Public Methods
 --------------
 
 +------------------------------+--------------------------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`actionName<api_ControlScheme_2edb5c94>` (int  action) const              |
+|  :ref:`TString<api_TString>` | :ref:`actionName<api_ControlScheme_0cf732d8>` (int  action) const              |
 +------------------------------+--------------------------------------------------------------------------------+
-|                          int | :ref:`actionsCount<api_ControlScheme_47269cbd>` () const                       |
+|                          int | :ref:`actionsCount<api_ControlScheme_a51f0837>` () const                       |
 +------------------------------+--------------------------------------------------------------------------------+
-|                          int | :ref:`bindingCode<api_ControlScheme_a47eb098>` (int  action, int  binding)     |
+|                          int | :ref:`bindingCode<api_ControlScheme_2cdb59fe>` (int  action, int  binding)     |
 +------------------------------+--------------------------------------------------------------------------------+
-|                         bool | :ref:`bindingNegative<api_ControlScheme_56fa9032>` (int  action, int  binding) |
+|                         bool | :ref:`bindingNegative<api_ControlScheme_aec7d9f6>` (int  action, int  binding) |
 +------------------------------+--------------------------------------------------------------------------------+
-|                          int | :ref:`bindingsCount<api_ControlScheme_face130d>` (int  action) const           |
+|                          int | :ref:`bindingsCount<api_ControlScheme_c1fbd873>` (int  action) const           |
 +------------------------------+--------------------------------------------------------------------------------+
 
 
@@ -45,7 +45,7 @@ None
 Methods Description
 -------------------
 
-.. _api_ControlScheme_2edb5c94:
+.. _api_ControlScheme_0cf732d8:
 
  :ref:`TString<api_TString>`  **ControlScheme::actionName** (int  *action*) const
 
@@ -53,7 +53,7 @@ Returns The name of the specified *action* or an empty string if the index is ou
 
 ----
 
-.. _api_ControlScheme_47269cbd:
+.. _api_ControlScheme_a51f0837:
 
  int **ControlScheme::actionsCount** () const
 
@@ -61,7 +61,7 @@ Gets the total number of actions in the control scheme.
 
 ----
 
-.. _api_ControlScheme_a47eb098:
+.. _api_ControlScheme_2cdb59fe:
 
  int **ControlScheme::bindingCode** (int  *action*, int  *binding*)
 
@@ -69,7 +69,7 @@ Returns the input code for the specified *binding* *action* or Input::KEY_UNKNOW
 
 ----
 
-.. _api_ControlScheme_56fa9032:
+.. _api_ControlScheme_aec7d9f6:
 
  bool **ControlScheme::bindingNegative** (int  *action*, int  *binding*)
 
@@ -77,7 +77,7 @@ Returns true if the *binding* *action* is negative, false otherwise. Returns fal
 
 ----
 
-.. _api_ControlScheme_face130d:
+.. _api_ControlScheme_c1fbd873:
 
  int **ControlScheme::bindingsCount** (int  *action*) const
 

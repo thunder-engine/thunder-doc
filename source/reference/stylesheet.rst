@@ -3,7 +3,7 @@
 StyleSheet
 ==========
 
-Inherited: None
+Inherited: :ref:`Resource<api_Resource>`
 
 .. _api_StyleSheet_description:
 
@@ -20,11 +20,11 @@ Public Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------+
-|  :ref:`TString<api_TString>` | :ref:`data<api_StyleSheet_6075a3ce>` () const                  |
+|  :ref:`TString<api_TString>` | :ref:`data<api_StyleSheet_9b827fe0>` () const                  |
 +------------------------------+----------------------------------------------------------------+
-|                         void | :ref:`resolve<api_StyleSheet_0e5dca87>` (Widget * widget)      |
+|                         void | :ref:`resolve<api_StyleSheet_b08a35f2>` (Widget * widget)      |
 +------------------------------+----------------------------------------------------------------+
-|                         void | :ref:`setData<api_StyleSheet_7423a6fc>` (const TString & data) |
+|                         void | :ref:`setData<api_StyleSheet_d329f5e7>` (const TString & data) |
 +------------------------------+----------------------------------------------------------------+
 
 
@@ -35,13 +35,13 @@ Static Methods
 --------------
 
 +------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`resolveInline<api_StyleSheet_03516bfc>` (Widget * widget, const TString & style)                         |
+|                         void | :ref:`resolveInline<api_StyleSheet_6839bae1>` (Widget * widget, const TString & style)                         |
 +------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                         void | :ref:`setStyleProperty<api_StyleSheet_fba7149c>` (Widget * widget, const TString & key, const TString & value) |
+|                         void | :ref:`setStyleProperty<api_StyleSheet_1384be7a>` (Widget * widget, const TString & key, const TString & value) |
 +------------------------------+----------------------------------------------------------------------------------------------------------------+
-|  :ref:`Vector4<api_Vector4>` | :ref:`toColor<api_StyleSheet_21306ab4>` (const TString & value)                                                |
+|  :ref:`Vector4<api_Vector4>` | :ref:`toColor<api_StyleSheet_c235a84e>` (const TString & value)                                                |
 +------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                        float | :ref:`toLength<api_StyleSheet_6837e2fc>` (const TString & value, bool & pixels)                                |
+|                        float | :ref:`toLength<api_StyleSheet_1527de90>` (const TString & value, bool & pixels)                                |
 +------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 .. _api_StyleSheet_methods:
@@ -49,7 +49,7 @@ Static Methods
 Methods Description
 -------------------
 
-.. _api_StyleSheet_6075a3ce:
+.. _api_StyleSheet_9b827fe0:
 
  :ref:`TString<api_TString>`  **StyleSheet::data** () const
 
@@ -59,7 +59,7 @@ Returns content as a string.
 
 ----
 
-.. _api_StyleSheet_0e5dca87:
+.. _api_StyleSheet_b08a35f2:
 
  void **StyleSheet::resolve** (:ref:`Widget<api_Widget>` * *widget*)
 
@@ -67,7 +67,7 @@ Resolves the styles for a given *widget* based on the parsed CSS rules. It itera
 
 ----
 
-.. _api_StyleSheet_03516bfc:
+.. _api_StyleSheet_6839bae1:
 
  void **StyleSheet::resolveInline** (:ref:`Widget<api_Widget>` * *widget*, :ref:`TString<api_TString>` & *style*)
 
@@ -75,7 +75,7 @@ Resolves inline styles provided as a string (e.g., from the *style* attribute in
 
 ----
 
-.. _api_StyleSheet_7423a6fc:
+.. _api_StyleSheet_d329f5e7:
 
  void **StyleSheet::setData** (:ref:`TString<api_TString>` & *data*)
 
@@ -85,7 +85,7 @@ Sets a new content data.
 
 ----
 
-.. _api_StyleSheet_fba7149c:
+.. _api_StyleSheet_1384be7a:
 
  void **StyleSheet::setStyleProperty** (:ref:`Widget<api_Widget>` * *widget*, :ref:`TString<api_TString>` & *key*, :ref:`TString<api_TString>` & *value*)
 
@@ -93,7 +93,7 @@ Directly sets a style property for a widget. It adds the specified *key* and *va
 
 ----
 
-.. _api_StyleSheet_21306ab4:
+.. _api_StyleSheet_c235a84e:
 
  :ref:`Vector4<api_Vector4>`  **StyleSheet::toColor** (:ref:`TString<api_TString>` & *value*)
 
@@ -101,7 +101,7 @@ Converts a CSS color *value* (e.g., named colors like "blue" or hexadecimal colo
 
 ----
 
-.. _api_StyleSheet_6837e2fc:
+.. _api_StyleSheet_1527de90:
 
  float **StyleSheet::toLength** (:ref:`TString<api_TString>` & *value*, bool & *pixels*)
 

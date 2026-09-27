@@ -3,7 +3,7 @@
 CapsuleCollider
 ===============
 
-Inherited: None
+Inherited: :ref:`SphereCollider<api_SphereCollider>`
 
 .. _api_CapsuleCollider_description:
 
@@ -20,9 +20,9 @@ Public Methods
 --------------
 
 +--------+----------------------------------------------------------------+
-|  float | :ref:`height<api_CapsuleCollider_c90d7132>` () const           |
+|  float | :ref:`height<api_CapsuleCollider_2f435db9>` () const           |
 +--------+----------------------------------------------------------------+
-|   void | :ref:`setHeight<api_CapsuleCollider_ef2509c8>` (float  height) |
+|   void | :ref:`setHeight<api_CapsuleCollider_4967d025>` (float  height) |
 +--------+----------------------------------------------------------------+
 
 
@@ -39,7 +39,7 @@ None
 Methods Description
 -------------------
 
-.. _api_CapsuleCollider_c90d7132:
+.. _api_CapsuleCollider_2f435db9:
 
  float **CapsuleCollider::height** () const
 
@@ -49,7 +49,7 @@ Returns the height of the capsule collider.
 
 ----
 
-.. _api_CapsuleCollider_ef2509c8:
+.. _api_CapsuleCollider_4967d025:
 
  void **CapsuleCollider::setHeight** (float  *height*)
 

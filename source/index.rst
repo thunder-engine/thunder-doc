@@ -1,3 +1,5 @@
+.. _doc_index:
+
 Thunder Documentation
 =====================
 
